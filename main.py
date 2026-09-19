@@ -1,4 +1,4 @@
-"""Two-cow/two-sheep/two-goose champion with zone-locked hands, wheat feed, fertilizer collection, and a conditional fertilized strawberry plot.
+"""Two-cow/four-sheep/two-goose champion: YARN-triggered second sheep pair with a fifth exclusive hand, zone-locked labor, and a conditional fertilized strawberry plot.
 
 Clones the fertilized-strawberry champion and adds exactly one conservative scale
 step: two sheep on two new west pastures, serviced by a dedicated third hand.
@@ -18,6 +18,7 @@ STOP_PLANT_DAY = 25
 SHED_ACCESS = (4, 4)
 COW_PASTURES = ((4, 4), (3, 4))
 SHEEP_PASTURES = ((0, 3), (0, 2))
+SHEEP2_PASTURES = ((3, 2), (4, 2))
 WHEAT_FIELD = ((2, 4), (1, 4), (0, 4))
 
 STRAW_SEED_COST = 100
@@ -243,6 +244,21 @@ def agent(observation):
     sheep_carried = sum(inv.get("SHEEP", 0) for inv in inventories)
     sheep_total = sheep_placed + sheep_carried + shed.get("SHEEP", 0)
     sheep_active = sheep_total >= 1 or (3 <= day <= 6)
+    # Second sheep pair (fifth hand): only on early YARN draw. Wool break-even
+    # needs yarn-driven drain: 2 sheep x ~6 events x ~2.5u x ~230 = ~7k gross
+    # for ~1.1k capital+hire. Placed by ~day 8 for 6 productions (P+6..P+21).
+    yarn_seen = "YARN_STORE" in shops
+    sheep2_bare = []
+    sheep2_placed = 0
+    for point in SHEEP2_PASTURES:
+        tile = tiles[point[1]][point[0]]
+        if tile is None:
+            sheep2_bare.append(point)
+            bare.append(point)
+        elif isinstance(tile, dict) and tile.get("animal") == "SHEEP":
+            sheep2_placed += 1
+    sheep2_total = sheep2_placed + sheep_carried + shed.get("SHEEP", 0)
+    sheep2_active = sheep2_total >= 1 or (yarn_seen and 3 <= day <= 8)
     # Goose coops: built days 9+, stocked days 10-12.
     goose_bare = []
     goose_placed = 0
@@ -280,15 +296,17 @@ def agent(observation):
     if hour == 0 and not farm.get("hands"):
         market.append(["HIRE"])
     # Hands reset daily: queue together for index-stable roles (1 wheat,
-    # 2 straw, 3 sheep, 4+ geese). Placeholders keep roles stable: straw
-    # placeholder fires whenever sheep/geese are active; sheep placeholder
-    # fires whenever geese are active. Fourth hire costs fib=3 coins/day.
+    # 2 straw, 3 sheep, 4 geese, 5 sheep2). Placeholders keep roles stable:
+    # each earlier role is hired whenever any later role is active, so the
+    # sheep2 hand is always index 5. Fifth hire costs fib=5 coins/day.
     geese_active = goose_total >= 1 or (10 <= day <= 12)
-    if (straw_active or sheep_active or geese_active) and hour == 0 and not farm.get("hands"):
+    if (straw_active or sheep_active or geese_active or sheep2_active) and hour == 0 and not farm.get("hands"):
         market.append(["HIRE"])
-    if (sheep_active or geese_active) and hour == 0 and not farm.get("hands"):
+    if (sheep_active or geese_active or sheep2_active) and hour == 0 and not farm.get("hands"):
         market.append(["HIRE"])
-    if geese_active and hour == 0 and not farm.get("hands"):
+    if (geese_active or sheep2_active) and hour == 0 and not farm.get("hands"):
+        market.append(["HIRE"])
+    if sheep2_active and hour == 0 and not farm.get("hands"):
         market.append(["HIRE"])
     if shed.get("MILK", 0):
         market.append(["SELL", "MILK", shed["MILK"]])
@@ -323,12 +341,15 @@ def agent(observation):
             market.append(["BUY_SEED", "STRAWBERRY", min(straw_shortfall, int(farm["money"] // STRAW_SEED_COST))])
     if day == 0 and total_cows < len(COW_PASTURES) and farm["money"] >= COW_COST:
         market.append(["BUY_ANIMAL", "COW", 1])
-    if 3 <= day <= 6 and sheep_total < 2 and farm["money"] >= SHEEP_COST + 100:
+    all_sheep = sheep_placed + sheep2_placed + sheep_carried + shed.get("SHEEP", 0)
+    if 3 <= day <= 6 and all_sheep < 2 and farm["money"] >= SHEEP_COST + 100:
+        market.append(["BUY_ANIMAL", "SHEEP", 1])
+    if yarn_seen and 3 <= day <= 10 and all_sheep < 4 and farm["money"] >= SHEEP_COST + 100:
         market.append(["BUY_ANIMAL", "SHEEP", 1])
     if 10 <= day <= 12 and goose_total < 2 and farm["money"] >= GOOSE_COST + 100:
         market.append(["BUY_ANIMAL", "GOOSE", 1])
     # Feed buffer maintained all season: ~4 days cover for every placed animal.
-    placed_total = placed_cows + sheep_placed + goose_placed
+    placed_total = placed_cows + sheep_placed + goose_placed + sheep2_placed
     feed_have = shed_wheat + carried_wheat
     # Day-0 reserve buys once: stock-gated so it cannot repeat every turn.
     # (Unconditional day-gated orders repeat 24x and bankrupt the farm.)
@@ -364,7 +385,7 @@ def agent(observation):
         farmer = ["PLACE", "COW"] if farmer_position == target else _move_toward(farmer_position, target)
     elif carried_sheep:
         sheep_empty = [
-            point for point in SHEEP_PASTURES
+            point for point in SHEEP_PASTURES + SHEEP2_PASTURES
             if isinstance(tiles[point[1]][point[0]], dict)
             and tiles[point[1]][point[0]].get("kind") == "PASTURE"
             and "animal" not in tiles[point[1]][point[0]]
@@ -411,9 +432,9 @@ def agent(observation):
             else _move_toward(farmer_position, SHED_ACCESS)
         )
     elif shed.get("SHEEP", 0):
-        # Ferry shed sheep to built empty sheep pastures.
+        # Ferry shed sheep to built empty sheep pastures (either pair).
         sheep_empty = [
-            point for point in SHEEP_PASTURES
+            point for point in SHEEP_PASTURES + SHEEP2_PASTURES
             if isinstance(tiles[point[1]][point[0]], dict)
             and tiles[point[1]][point[0]].get("kind") == "PASTURE"
             and "animal" not in tiles[point[1]][point[0]]
@@ -438,7 +459,9 @@ def agent(observation):
             hand_actions.append(_straw_action(tuple(position), hand_inventory, tiles, straw_seeds, day, hand_inventory.get("FERTILIZER", 0), shed_fert))
         elif index == 3:
             hand_actions.append(_flock_action(tuple(position), hand_inventory, tiles, shed, day, fert_price_ok, SHEEP_PASTURES))
-        else:
+        elif index == 4:
             hand_actions.append(_flock_action(tuple(position), hand_inventory, tiles, shed, day, fert_price_ok, GOOSE_COOPS))
+        else:
+            hand_actions.append(_flock_action(tuple(position), hand_inventory, tiles, shed, day, fert_price_ok, SHEEP2_PASTURES))
 
     return {"farmer": farmer, "hands": hand_actions, "market": market}
