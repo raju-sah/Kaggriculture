@@ -25,6 +25,8 @@ STRAW_SEED_COST = 100
 STRAW_FIRST_YIELD_DAY = 10
 STRAW_PLANT_BY_DAY = 8
 STRAW_FIELD = ((1, 3), (2, 3), (3, 3), (4, 3))
+STRAW2_FIELD = ((1, 1), (2, 1), (3, 1), (4, 1))
+STRAW_SHOPS = ("BRUNCH_SPOT", "ICE_CREAM_SHOP", "SMOOTHIE_SHOP", "FARMERS_MARKET")
 MILK_SHOPS = ("PIZZA_SHOP", "ICE_CREAM_SHOP", "SMOOTHIE_SHOP")
 
 
@@ -79,10 +81,10 @@ def _wheat_action(position, inventory, tiles, seeds, day):
     return ["PASS"]
 
 
-def _straw_fert_due(tiles, day):
-    """Return STRAW_FIELD points with a strawberry production tomorrow that is not yet fertilized for today."""
+def _straw_fert_due(tiles, day, field=STRAW_FIELD):
+    """Return field points with a strawberry production tomorrow that is not yet fertilized for today."""
     due = []
-    for point in STRAW_FIELD:
+    for point in field:
         tile = tiles[point[1]][point[0]]
         if isinstance(tile, dict) and tile.get("kind") == "PLANT" and tile.get("crop") == "STRAWBERRY":
             planted_day = tile["planted_day"]
@@ -93,9 +95,9 @@ def _straw_fert_due(tiles, day):
     return due
 
 
-def _straw_action(position, inventory, tiles, seeds, day, carried_fert, shed_fert):
+def _straw_action(position, inventory, tiles, seeds, day, carried_fert, shed_fert, field=STRAW_FIELD):
     mature, dry, weeds, empty = [], [], [], []
-    for point in STRAW_FIELD:
+    for point in field:
         tile = tiles[point[1]][point[0]]
         if tile is None:
             empty.append(point)
@@ -107,7 +109,7 @@ def _straw_action(position, inventory, tiles, seeds, day, carried_fert, shed_fer
             elif not tile.get("watered_today", False):
                 dry.append(point)
 
-    due = _straw_fert_due(tiles, day)
+    due = _straw_fert_due(tiles, day, field)
 
     if mature:
         target = _nearest(position, mature)
@@ -212,6 +214,35 @@ def agent(observation):
         or straw_seeds > 0
         or (day >= 6 and day <= STRAW_PLANT_BY_DAY and milk_shops == 0)
     )
+    # Second 4-tile strawberry plot (exp-0043a): disjoint NW row y=1 with its
+    # own dedicated hand (hand-6). exp-0023 proved one hand cannot clear/water
+    # 8 tiles, so capacity doubles only with doubled plot labor. One planter
+    # per crop/plot is preserved: hand-2 plants STRAW_FIELD only, hand-6
+    # plants STRAW2_FIELD only. Single causal trigger from engine economics
+    # and public shop demand: the first town unlock is public from day 3 and
+    # reads the season demand mix. A strawberry consumer
+    # (BRUNCH/ICE_CREAM/SMOOTHIE/FARMERS) means the drain side we sell into
+    # is deep, so +32 units stay on the scarcity branch (~269/unit, +8.6k
+    # gross for ~400 seed + fib-8 hire). Otherwise the plot never activates
+    # and the policy is byte-identical to the champion. The trigger is read
+    # from day 3 on (first unlock exists from day 3; later unlocks only add
+    # shops) but planting still respects the champion's day<=8 deadline and
+    # the same animal-care-first capital order, so days 0-2 commitment is
+    # untouched.
+    d3_straw = any(s in STRAW_SHOPS for s in shops) and day >= 3
+    straw2_tiles_live = any(
+        isinstance(tiles[point[1]][point[0]], dict)
+        and tiles[point[1]][point[0]].get("kind") == "PLANT"
+        and tiles[point[1]][point[0]].get("crop") == "STRAWBERRY"
+        for point in STRAW2_FIELD
+    )
+    straw2_active = bool(straw2_tiles_live or (d3_straw and (straw_seeds > 0 or (6 <= day <= STRAW_PLANT_BY_DAY))))
+    # Keep STRAW2 strictly staged behind days 0-2 commitment: no hires/seeds
+    # before day 3 even if shops arrive early in edge configs. Hires/seed
+    # buys additionally stage to day 6+ (see hire ladder + seed queue) so
+    # days 3-5 cash funds the sheep pair first.
+    if day < 3:
+        straw2_active = bool(straw2_tiles_live)
 
     # Cow zone (farmer): original two pastures only.
     bare, empty_pasture, hungry, uncared, milk_ready = [], [], [], [], []
@@ -285,6 +316,13 @@ def agent(observation):
             if tile is None:
                 straw_empty.append(point)
 
+    straw2_empty = []
+    if straw2_active:
+        for point in STRAW2_FIELD:
+            tile = tiles[point[1]][point[0]]
+            if tile is None:
+                straw2_empty.append(point)
+
     carried_cows = sum(inv.get("COW", 0) for inv in inventories)
     total_cows = placed_cows + carried_cows + shed.get("COW", 0)
     carried_wheat = farmer_inventory.get("WHEAT", 0)
@@ -296,17 +334,23 @@ def agent(observation):
     if hour == 0 and not farm.get("hands"):
         market.append(["HIRE"])
     # Hands reset daily: queue together for index-stable roles (1 wheat,
-    # 2 straw, 3 sheep, 4 geese, 5 sheep2). Placeholders keep roles stable:
-    # each earlier role is hired whenever any later role is active, so the
-    # sheep2 hand is always index 5. Fifth hire costs fib=5 coins/day.
+    # 2 straw, 3 sheep, 4 geese, 5 sheep2, 6 straw2). Placeholders keep roles
+    # stable: each earlier role is hired whenever any later role is active, so
+    # the sheep2 hand is always index 5 and the straw2 hand is always index 6.
+    # Sixth hire costs fib=8 coins/day; it is ordered only on the d3_straw
+    # trigger AND from day 6+ so days 3-5 hires match the champion exactly
+    # (non-trigger days keep the champion's hire ladder every day).
+    _straw2_hire = straw2_active and day >= 6
     geese_active = goose_total >= 1 or (10 <= day <= 12)
-    if (straw_active or sheep_active or geese_active or sheep2_active) and hour == 0 and not farm.get("hands"):
+    if (straw_active or sheep_active or geese_active or sheep2_active or _straw2_hire) and hour == 0 and not farm.get("hands"):
         market.append(["HIRE"])
-    if (sheep_active or geese_active or sheep2_active) and hour == 0 and not farm.get("hands"):
+    if (sheep_active or geese_active or sheep2_active or _straw2_hire) and hour == 0 and not farm.get("hands"):
         market.append(["HIRE"])
-    if (geese_active or sheep2_active) and hour == 0 and not farm.get("hands"):
+    if (geese_active or sheep2_active or _straw2_hire) and hour == 0 and not farm.get("hands"):
         market.append(["HIRE"])
-    if sheep2_active and hour == 0 and not farm.get("hands"):
+    if (sheep2_active or _straw2_hire) and hour == 0 and not farm.get("hands"):
+        market.append(["HIRE"])
+    if _straw2_hire and hour == 0 and not farm.get("hands"):
         market.append(["HIRE"])
     if shed.get("MILK", 0):
         market.append(["SELL", "MILK", shed["MILK"]])
@@ -320,10 +364,14 @@ def agent(observation):
         and tiles[point[1]][point[0]].get("kind") == "PLANT"
         and tiles[point[1]][point[0]].get("crop") == "STRAWBERRY"
         and tiles[point[1]][point[0]].get("planted_day", 0) + 16 >= day
-        for point in STRAW_FIELD
+        for point in STRAW_FIELD + STRAW2_FIELD
     )
     if straw_open and day <= 24:
-        sell_fert = max(0, shed_fert - 16)
+        # Reserve 16/process: 8 waves x 2 plots. The deeper reserve applies
+        # only when the second plot actually exists; non-trigger games keep
+        # the champion's exact 16 so behavior is identical there.
+        _reserve = 24 if straw2_active else 16
+        sell_fert = max(0, shed_fert - _reserve)
     else:
         sell_fert = shed_fert
     if sell_fert > 0:
@@ -348,6 +396,21 @@ def agent(observation):
         market.append(["BUY_ANIMAL", "SHEEP", 1])
     if 10 <= day <= 12 and goose_total < 2 and farm["money"] >= GOOSE_COST + 100:
         market.append(["BUY_ANIMAL", "GOOSE", 1])
+    if straw2_active and day >= 6 and day <= STRAW_PLANT_BY_DAY:
+        # Queued AFTER animals so sheep/goose capital is never crowded out.
+        # Covers only the second plot net of seeds already held/queued for
+        # plot 1; plot 1 keeps its champion priority. Staged to day 6+:
+        # days 3-5 cash is reserved for the sheep pair (SHEEP_COST+100
+        # floor) and the feed buffer, so plot-2 seed commits only after the
+        # core opening is funded. Same day<=8 deadline as plot 1.
+        straw2_net = max(0, len(straw2_empty) - max(0, straw_seeds - len(straw_empty)))
+        if straw2_net and farm["money"] >= STRAW_SEED_COST + 100:
+            market.append(["BUY_SEED", "STRAWBERRY", min(straw2_net, int((farm["money"] - 100) // STRAW_SEED_COST))])
+    # Capital schedule (animal care + early cash stay safe): animals first,
+    # then plot-1 seeds, then plot-2 seeds. Plot-2 seed buys require the
+    # d3_straw trigger AND a +100 reserve above the animal floor so sheep
+    # days 3-6 are never crowded out. No late low-yield plants: both plots
+    # share the champion day<=8 deadline.
     # Feed buffer maintained all season: ~4 days cover for every placed animal.
     placed_total = placed_cows + sheep_placed + goose_placed + sheep2_placed
     feed_have = shed_wheat + carried_wheat
@@ -461,7 +524,17 @@ def agent(observation):
             hand_actions.append(_flock_action(tuple(position), hand_inventory, tiles, shed, day, fert_price_ok, SHEEP_PASTURES))
         elif index == 4:
             hand_actions.append(_flock_action(tuple(position), hand_inventory, tiles, shed, day, fert_price_ok, GOOSE_COOPS))
-        else:
+        elif index == 5:
             hand_actions.append(_flock_action(tuple(position), hand_inventory, tiles, shed, day, fert_price_ok, SHEEP2_PASTURES))
+        else:
+            # Hand-6: sole planter of STRAW2_FIELD. Fixed tile ownership:
+            # hand-2 never enters STRAW2_FIELD and hand-6 never enters
+            # STRAW_FIELD, so full watering/fertilizing holds on both plots.
+            # Plant serialization: the engine drops ALL same-crop PLANTs on a
+            # turn when demand exceeds seeds, so hand-6 plants only after
+            # plot 1 is full (seeds=0 keeps it on water/weed/fertilize duty).
+            # This keeps one effective planter per crop per turn.
+            _s6_seeds = 0 if straw_empty else straw_seeds
+            hand_actions.append(_straw_action(tuple(position), hand_inventory, tiles, _s6_seeds, day, hand_inventory.get("FERTILIZER", 0), shed_fert, STRAW2_FIELD))
 
     return {"farmer": farmer, "hands": hand_actions, "market": market}
