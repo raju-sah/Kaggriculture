@@ -1,0 +1,48 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+dist/
+build/
+
+# Generated experiment artifacts.
+experiments/runs/
+# Downloaded Kaggle replay blobs (large; local path experiments/kaggle/... kept out of git).
+experiments/kaggle/
+*.tar.gz
+
+
+# Command Code session artifacts.
+.commandcode/
+experiments/v63_elite_panel/replays/
+
+# V101 raw replay evidence (1.5 GB). The derived metrics that back REPORT.md --
+# lifecycle_results.json, model_deltas.json, dev_results.json -- are tracked.
+experiments/v101_commandcode/lifecycle_replays/
+experiments/v101_commandcode/micro_replays/
+
+# --- Push hygiene (2026-09-29) -------------------------------------------
+# Raw evidence blobs and dependency trees. Derived metrics (report.json,
+# games.jsonl summaries, profiles.json) stay tracked; the raw frames do not.
+node_modules/
+*-replay.json
+**/replays/
+**/runs/
+**/dev*/
+*.log
+
+# Raw replay dumps scattered outside experiments/.
+/replay.json
+/actions_dump.json
+/extracted_v55/
+/leaderboard_data/
+
+# Raw episode frame dumps and scratch teacher shards. The aggregate rows and
+# trained models stay tracked; the per-frame dumps are regenerable.
+experiments/**/*93400*.json
+experiments/**/tmp_*.jsonl
+
+# Local tooling scratch: browser session dumps and agent skill caches.
+/.playwright-cli/
+/.agents/
