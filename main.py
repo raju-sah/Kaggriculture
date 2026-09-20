@@ -21,6 +21,46 @@ SHEEP_PASTURES = ((0, 3), (0, 2))
 SHEEP2_PASTURES = ((3, 2), (4, 2))
 WHEAT_FIELD = ((2, 4), (1, 4), (0, 4))
 
+# --- exp-0044: state-derived top opener + day-2 bridge (milestone 1) ---
+# Exact replay geometry from the five public top-vs-top replays
+# (docs/TOP_REPLAY_ANALYSIS.md; episode 111058336 end-of-day maps, identical
+# for both agents). Single source of truth: an earlier partial implementation
+# duplicated these constants and used y=5 coordinates, which are SW-quadrant
+# LOCKED tiles on the 10x10 board (NW unlocked quadrant is x,y in 0..4).
+# (4,4) is a shed-access corner and legally holds a pasture. The opening
+# occupies the whole NW quadrant, so the champion tile constants above are
+# NOT reserved for it: duties are derived from live tile state every turn
+# ("monotone ownership" — whatever structures/crops exist get serviced), and
+# the champion body is kept only as an anomaly fallback.
+# Engine-verified mechanics baked into the planner:
+#   - a fresh plant counts 1 unwatered day at creation, so EVERY plant must
+#     be watered on its planting day or it dies that night (replay-verified);
+#   - animals escape after 2 consecutive unfed days; care bonuses need
+#     fed+cared on the same day; each animal yields 1 fertilizer/day;
+#   - one-shot crops die to decay after max_yield_day+1 (wheat day 5,
+#     melon day 13), so harvests are deadline tasks;
+#   - aggregate PLANT orders for a crop exceeding held seeds are ALL
+#     rejected that turn, so plant tasks are guarded by seed stock.
+MELON_SEED_COST = 80  # engine CROPS["MELON"]["seed"]
+MELON_MAX_YIELD_DAY = 12
+OPENER_WHEAT_TILES = ((0, 0), (1, 0), (2, 0), (0, 1), (1, 1), (2, 1), (0, 2), (2, 2), (0, 3), (0, 4))
+OPENER_MELON_TILES = ((3, 1), (4, 1), (1, 2), (3, 2), (1, 3), (1, 4))
+OPENER_MELON_DAY1_TILES = ((3, 0), (4, 0), (2, 3), (3, 3))
+OPENER_COW_SPOTS = ((4, 4), (4, 2))
+OPENER_SHEEP_SPOTS = ((4, 3), (3, 4), (2, 4))
+OPENER_PASTURES = OPENER_COW_SPOTS + OPENER_SHEEP_SPOTS
+OPENER_HANDS_TARGET = 4   # public pattern, days 0-1
+BRIDGE_HANDS_TARGET = 5   # extra hand funds the mid-season watering load
+WHEAT_MAX_YIELD_DAY = 4
+MELON_WATER_WINDOW_LAST = 10  # 5 waters saturate the 6-unit yield
+WHEAT_REPLANT_BY_DAY = 25
+MELON_REPLANT_BY_DAY = 16
+GOOSE_BUILD_FIRST_DAY = 4
+GOOSE_BUILD_LAST_DAY = 14  # the (3,2) melon tile only frees on day 13
+GOOSE_BUY_FIRST_DAY = 10
+GOOSE_BUY_LAST_DAY = 14
+SHED_TILES = ((4, 4), (5, 4), (4, 5), (5, 5))  # engine _shed_access_tiles(10)
+
 STRAW_SEED_COST = 100
 STRAW_FIRST_YIELD_DAY = 10
 STRAW_PLANT_BY_DAY = 8
@@ -188,7 +228,7 @@ def _flock_action(position, inventory, tiles, shed, day, fert_price_ok, zones=No
     return ["PASS"]
 
 
-def agent(observation):
+def _champion_agent(observation):
     player = observation["player"]
     farm = observation["farms"][player]
     private = observation["private"]
@@ -261,6 +301,22 @@ def agent(observation):
                 hungry.append(point)
             if not tile.get("cared_today", False):
                 uncared.append(point)
+
+    # exp-0044: care for ALL placed animals, not just COW_PASTURES. The
+    # scripted top-opener places cows/sheep at tiles outside the champion's
+    # zones (e.g. cow2 at (3,1), sheep at (3,3)/(2,3)/(3,4)); animals escape
+    # after 2 consecutive unfed days, so off-zone livestock must be covered
+    # or the opener's roster bleeds away on days 2-3.
+    for _y in range(len(tiles)):
+        for _x in range(len(tiles[_y])):
+            if (_x, _y) in COW_PASTURES:
+                continue
+            _tile = tiles[_y][_x]
+            if isinstance(_tile, dict) and "animal" in _tile:
+                if not _tile.get("fed_today", False):
+                    hungry.append((_x, _y))
+                if not _tile.get("cared_today", False):
+                    uncared.append((_x, _y))
 
     # Sheep zone (third hand): two west pastures.
     sheep_bare = []
@@ -538,3 +594,525 @@ def agent(observation):
             hand_actions.append(_straw_action(tuple(position), hand_inventory, tiles, _s6_seeds, day, hand_inventory.get("FERTILIZER", 0), shed_fert, STRAW2_FIELD))
 
     return {"farmer": farmer, "hands": hand_actions, "market": market}
+
+
+def _dist(a, b):
+    return abs(a[0] - b[0]) + abs(a[1] - b[1])
+
+
+def _nearest_shed(pos):
+    return min(SHED_TILES, key=lambda p: (_dist(pos, p), p))
+
+
+def _go(pos, target, op):
+    return list(op) if pos == target else _move_toward(pos, target)
+
+
+def _empty_structures(tiles, kind):
+    out = []
+    for y in range(5):
+        for x in range(5):
+            tile = tiles[y][x]
+            if isinstance(tile, dict) and tile.get("kind") == kind and "animal" not in tile:
+                out.append((x, y))
+    return out
+
+
+def _bridge_state(observation):
+    player = observation["player"]
+    farm = observation["farms"][player]
+    private = observation.get("private", None) or {}
+    inventories = private.get("inventories", None) or [{}]
+    units = [["farmer", tuple(farm["farmer"]), dict(inventories[0] if inventories else {})]]
+    for i, pos in enumerate(farm.get("hands", None) or []):
+        inv = inventories[i + 1] if i + 1 < len(inventories) else {}
+        units.append([f"hand{i + 1}", tuple(pos), dict(inv)])
+    return {
+        "tiles": farm["tiles"],
+        "day": observation["day"],
+        "hour": observation.get("hour", 0),
+        "units": units,
+        "shed": dict(private.get("shed", None) or {}),
+        "seeds": dict(private.get("seeds", None) or {}),
+        "money": float(farm["money"]),
+        "prices": ((observation.get("market", None) or {}).get("prices", None) or {}),
+    }
+
+
+def _emit_task(task, unit, shed):
+    _pri, _seq, pos, kind, payload, _bound = task
+    _name, upos, uinv = unit
+    if kind == "place":
+        return _go(upos, pos, ["PLACE", payload])
+    if kind == "build":
+        return _go(upos, pos, ["BUILD_COOP" if payload["structure"] == "COOP" else "BUILD_PASTURE"])
+    if kind == "fetch":
+        target = _nearest_shed(upos)
+        if upos == target:
+            return ["PICKUP", payload, 1]
+        return _move_toward(upos, target)
+    if kind == "feed":
+        if uinv.get("WHEAT"):
+            return _go(upos, pos, ["FEED"])
+        target = _nearest_shed(upos)
+        if upos == target:
+            if shed.get("WHEAT", 0) > 0:
+                return ["PICKUP", "WHEAT", min(3, shed["WHEAT"])]
+            return ["PASS"]
+        return _move_toward(upos, target)
+    if kind == "care":
+        return _go(upos, pos, ["CARE"])
+    if kind == "harvest":
+        return _go(upos, pos, ["HARVEST"])
+    if kind == "water":
+        return _go(upos, pos, ["WATER"])
+    if kind == "collect":
+        return _go(upos, pos, ["COLLECT_FERTILIZER"])
+    if kind == "drop":
+        target = _nearest_shed(upos)
+        if upos == target:
+            return ["DROP"]
+        return _move_toward(upos, target)
+    if kind == "plant":
+        return _go(upos, pos, ["PLANT", payload])
+    if kind == "dig":
+        return _go(upos, pos, ["DIG"])
+    return ["PASS"]
+
+
+def _bridge_market(s, stats, day):
+    shed = s["shed"]
+    seeds = s["seeds"]
+    money = s["money"]
+    prices = s["prices"]
+    market = []
+
+    # Sells first (orders execute in order): continuous cash flow.
+    for item in ("FERTILIZER", "MILK", "WOOL", "EGG", "MELON"):
+        if shed.get(item, 0) > 0:
+            market.append(["SELL", item, shed[item]])
+    shed_wheat = shed.get("WHEAT", 0)
+    wheat_buffer = stats["animals_placed"] + 2
+    if day >= 2 and shed_wheat - wheat_buffer >= 5:
+        market.append(["SELL", "WHEAT", shed_wheat - wheat_buffer])
+    # Day-0 cash bridge: the capital ladder needs the last wheat seeds, which
+    # the public transcript funded by selling surplus feed one unit at a time.
+    if day == 0 and money < 100 and shed_wheat > 2:
+        market.append(["SELL", "WHEAT", 1])
+
+    # Hires: hands reset daily, n-th hire of the day costs fib(n).
+    target = OPENER_HANDS_TARGET if day <= 1 else BRIDGE_HANDS_TARGET
+    n_hands = len(s["units"]) - 1
+    if n_hands < target and money >= 15:
+        market.extend([["HIRE"]] * (target - n_hands))
+
+    # Day-0 all-in capital ladder (mirrors the public transcript, guarded).
+    if day == 0:
+        cow_want = 2 - stats["cow_total"]
+        if cow_want > 0 and money >= COW_COST * cow_want:
+            market.append(["BUY_ANIMAL", "COW", cow_want])
+        sheep_want = 3 - stats["sheep_total"]
+        if sheep_want > 0 and money >= SHEEP_COST * sheep_want:
+            market.append(["BUY_ANIMAL", "SHEEP", sheep_want])
+
+    # Geese once coop slots exist (coops are built by the duty planner).
+    slots = len(_empty_structures(s["tiles"], "COOP"))
+    slots += sum(1 for p in GOOSE_COOPS if s["tiles"][p[1]][p[0]] is None)
+    if (
+        GOOSE_BUY_FIRST_DAY <= day <= GOOSE_BUY_LAST_DAY
+        and stats["goose_total"] < 2
+        and slots > 0
+        and money >= GOOSE_COST + 50
+    ):
+        market.append(["BUY_ANIMAL", "GOOSE", min(2 - stats["goose_total"], slots)])
+
+    # Feed buffer before seed money (survival first): one day of cover per
+    # placed animal. Day 0 buys nothing — animals can wait a day without
+    # escaping and fertilizer income funds day-1 feeding. The day-1 reserve
+    # is low on purpose: the first wheat must be bought at h0 because the
+    # animals' two-day escape clock started during the day-0 build rush.
+    if day >= 1 and stats["animals_placed"] > 0:
+        feed_have = shed_wheat + stats["carried_wheat"]
+        feed_need = stats["animals_placed"] - feed_have
+        reserve = 25 if day == 1 else 60
+        if feed_need > 0 and money >= reserve + 1:
+            price = max(1, int(prices.get("WHEAT", 25)))
+            n = min(feed_need, 3, int((money - reserve) // price))
+            if n > 0:
+                market.append(["BUY_PRODUCT", "WHEAT", n])
+
+    # Seeds. Melon pairs on the opener days (public transcript pattern) with
+    # a single-seed fallback when cash is tight, then continuous replenishment
+    # for replant cycles; reserves protect feed cash.
+    melon_target = 6 if day == 0 else 10
+    melon_want = melon_target - stats["melon_planted"] - seeds.get("MELON", 0)
+    if day <= MELON_REPLANT_BY_DAY and melon_want > 0:
+        n = min(2, melon_want)
+        reserve = 20 if day <= 1 else 120
+        if money >= n * MELON_SEED_COST + reserve:
+            market.append(["BUY_SEED", "MELON", n])
+        elif money >= MELON_SEED_COST + reserve:
+            market.append(["BUY_SEED", "MELON", 1])
+    wheat_want = (
+        len(OPENER_WHEAT_TILES) + (6 if day == 0 else 0)
+        - stats["wheat_planted"] - seeds.get("WHEAT", 0)
+    )
+    if day <= WHEAT_REPLANT_BY_DAY and wheat_want > 0:
+        reserve = 20 if day <= 1 else 60
+        n = min(wheat_want, int((money - reserve) // WHEAT_SEED_COST))
+        if n > 0:
+            market.append(["BUY_SEED", "WHEAT", n])
+    return market
+
+
+# Sticky per-unit goals (per player): carriers keep their build/place spot
+# across turns and open tasks keep their unit, so re-deriving the same plan
+# each turn does not make units oscillate between equally-distant targets.
+_UNIT_GOALS = {}
+
+
+def _bridge_agent(observation):
+    """exp-0044: state-derived top opener (days 0-1) + monotone day-2 bridge.
+
+    Every turn derives duties from live tile state: place/fetch/build the
+    five-pasture roster, feed/care all animals, harvest before crop decay,
+    water every unwatered plant (planting-day watering is mandatory), plant
+    the fixed wheat/melon footprints from seed stock, collect and sell the
+    daily fertilizer flow. The day-0 capital ladder reproduces the public
+    all-in opening (2 cows, 3 sheep, 4 hands, 10 wheat, 6 melon, ~5 coins).
+    """
+    s = _bridge_state(observation)
+    tiles = s["tiles"]
+    day = s["day"]
+    shed = s["shed"]
+    seeds = s["seeds"]
+    prices = s["prices"]
+    units = s["units"]
+
+    melon_tiles = OPENER_MELON_TILES if day == 0 else OPENER_MELON_TILES + OPENER_MELON_DAY1_TILES
+    wheat_tiles = OPENER_WHEAT_TILES
+
+    animal_tiles = {}
+    for y in range(5):
+        for x in range(5):
+            tile = tiles[y][x]
+            if isinstance(tile, dict) and "animal" in tile:
+                animal_tiles[(x, y)] = tile
+
+    cows_placed = sum(1 for t in animal_tiles.values() if t["animal"] == "COW")
+    sheep_placed = sum(1 for t in animal_tiles.values() if t["animal"] == "SHEEP")
+    goose_placed = sum(1 for t in animal_tiles.values() if t["animal"] == "GOOSE")
+    animals_placed = cows_placed + sheep_placed + goose_placed
+    carried = {"COW": 0, "SHEEP": 0, "GOOSE": 0}
+    carried_wheat = 0
+    for _name, _pos, inv in units:
+        for animal in carried:
+            carried[animal] += inv.get(animal, 0)
+        carried_wheat += inv.get("WHEAT", 0)
+    melon_planted = sum(
+        1
+        for p in melon_tiles
+        if isinstance(tiles[p[1]][p[0]], dict)
+        and tiles[p[1]][p[0]].get("kind") == "PLANT"
+        and tiles[p[1]][p[0]].get("crop") == "MELON"
+    )
+    wheat_planted = sum(
+        1
+        for p in wheat_tiles
+        if isinstance(tiles[p[1]][p[0]], dict)
+        and tiles[p[1]][p[0]].get("kind") == "PLANT"
+        and tiles[p[1]][p[0]].get("crop") == "WHEAT"
+    )
+    stats = {
+        "cow_total": cows_placed + carried["COW"] + shed.get("COW", 0),
+        "sheep_total": sheep_placed + carried["SHEEP"] + shed.get("SHEEP", 0),
+        "goose_total": goose_placed + carried["GOOSE"] + shed.get("GOOSE", 0),
+        "goose_placed": goose_placed,
+        "animals_placed": animals_placed,
+        "melon_planted": melon_planted,
+        "wheat_planted": wheat_planted,
+        "carried_wheat": carried_wheat,
+    }
+
+    # Priorities (lower = first). Day 0: builds, animal placement and the
+    # plant/water pair own the whole day — feeding/care slip to day 1 (one
+    # unfed day is recoverable; a missed planting-day watering kills the
+    # plant that night). Day 1+: feeding and care are escape/bonus-critical
+    # and outrank the watering wave, which has until nightfall anyway;
+    # fertilizer collection follows right behind (it funds feed and seeds).
+    plant_pri = 1 if day <= 1 else 4
+    water_pri = 1 if day == 0 else 3
+    fresh_water_pri = 0.5  # a plant from TODAY dies tonight unless watered now
+    collect_pri = 0.45 if day <= 1 else 4
+    feed_pri = 6 if day == 0 else 0.4
+    care_pri = 7 if day == 0 else 2
+    harvest_animal_pri = 2 if day <= 1 else 2.5
+
+    tasks = []
+
+    def add(pri, pos, kind, payload=None, bound=None):
+        tasks.append([pri, len(tasks), pos, kind, payload, bound])
+
+    # Per-turn target claims: bound tasks pick distinct structures/spots so
+    # two carriers never converge on the same tile (the second PLACE/BUILD
+    # would no-op and strand the animal or waste the hand).
+    claimed = set()
+
+    # 0: carried animals -> place on an empty structure or build their spot.
+    # Carriers keep their chosen spot across turns (sticky goal) so a build
+    # target never switches mid-walk.
+    goals = _UNIT_GOALS.setdefault(observation["player"], {})
+    for ui, (_name, pos, inv) in enumerate(units):
+        for animal in ("COW", "SHEEP", "GOOSE"):
+            if not inv.get(animal):
+                goals.pop(ui, None)
+                continue
+            structure = "COOP" if animal == "GOOSE" else "PASTURE"
+            spots = (
+                GOOSE_COOPS
+                if animal == "GOOSE"
+                else (OPENER_COW_SPOTS if animal == "COW" else OPENER_SHEEP_SPOTS)
+            )
+            goal = goals.get(ui)
+            tile = tiles[goal[1]][goal[0]] if goal else None
+            goal_valid = (
+                goal in spots
+                and (
+                    (isinstance(tile, dict) and tile.get("kind") == structure and "animal" not in tile)
+                    or tile is None
+                )
+            )
+            if not goal_valid:
+                empty = [p for p in _empty_structures(tiles, structure) if p not in claimed]
+                buildable = [p for p in spots if tiles[p[1]][p[0]] is None and p not in claimed]
+                if empty:
+                    goal = min(empty, key=lambda p: (_dist(pos, p), p))
+                    claimed.add(goal)
+                    add(0, goal, "place", animal, ui)
+                    goals[ui] = goal
+                    continue
+                if buildable:
+                    goal = min(buildable, key=lambda p: (_dist(pos, p), p))
+                    claimed.add(goal)
+                    goals[ui] = goal
+                    add(0, goal, "build", {"structure": structure}, ui)
+                    continue
+                continue  # no slot this turn; keep carrying
+            claimed.add(goal)
+            if isinstance(tile, dict):
+                add(0, goal, "place", animal, ui)
+            else:
+                add(0, goal, "build", {"structure": structure}, ui)
+
+    # 1: fetch shed animals while placement slots exist. Geese are fetched on
+    # any day a free coop exists (their buy window is days 10-14; an unfetched
+    # goose strands in the shed and produces nothing).
+    if day <= 2:
+        for animal in ("COW", "SHEEP"):
+            n_shed = shed.get(animal, 0)
+            if n_shed <= 0:
+                continue
+            spots = OPENER_COW_SPOTS if animal == "COW" else OPENER_SHEEP_SPOTS
+            slots = len([p for p in _empty_structures(tiles, "PASTURE") if p not in claimed])
+            slots += sum(1 for p in spots if tiles[p[1]][p[0]] is None and p not in claimed)
+            slots -= carried[animal]
+            for _ in range(min(n_shed, max(0, slots))):
+                add(1, (4, 4), "fetch", animal)
+    goose_shed = shed.get("GOOSE", 0)
+    if goose_shed > 0:
+        free_coops = len([p for p in _empty_structures(tiles, "COOP") if p not in claimed])
+        for _ in range(min(goose_shed, max(0, free_coops - carried["GOOSE"]))):
+            add(1, (4, 4), "fetch", "GOOSE")
+
+    # 1: day-0 pastures (the farmer builds its own spawn corner while the
+    # market buys the first cow).
+    if day == 0:
+        for p in OPENER_PASTURES:
+            if tiles[p[1]][p[0]] is None and p not in claimed:
+                claimed.add(p)
+                add(1, p, "build", {"structure": "PASTURE"})
+
+    # 2: feed hungry animals (escape needs 2 consecutive unfed days). Only as
+    # many tasks as there is wheat to actually deliver, and skipped entirely
+    # when no wheat exists anywhere — a pickup shuttle with an empty shed
+    # must not occupy units.
+    feed_have = stats["carried_wheat"] + shed.get("WHEAT", 0)
+    if feed_have > 0:
+        for p, t in sorted(animal_tiles.items()):
+            if not t.get("fed_today", False) and feed_have > 0:
+                feed_have -= 1
+                add(feed_pri, p, "feed")
+
+    # 2: deadline harvests (decay kills one-shot crops after max_yield_day+1).
+    for p in wheat_tiles:
+        tile = tiles[p[1]][p[0]]
+        if (
+            isinstance(tile, dict)
+            and tile.get("kind") == "PLANT"
+            and tile.get("crop") == "WHEAT"
+            and tile.get("yield_units", 0) > 0
+            and (day - tile["planted_day"] >= WHEAT_MAX_YIELD_DAY or tile["yield_units"] >= 4)
+        ):
+            add(2, p, "harvest")
+    for p in melon_tiles:
+        tile = tiles[p[1]][p[0]]
+        if (
+            isinstance(tile, dict)
+            and tile.get("kind") == "PLANT"
+            and tile.get("crop") == "MELON"
+            and tile.get("yield_units", 0) > 0
+            and (tile["yield_units"] >= 5 or day - tile["planted_day"] >= MELON_MAX_YIELD_DAY)
+        ):
+            add(2, p, "harvest")
+
+    # 3: care (fed+cared same day accrues the production bonus).
+    for p, t in sorted(animal_tiles.items()):
+        if not t.get("cared_today", False):
+            add(care_pri, p, "care")
+
+    # 4: harvest animal products (milk day 8+, wool day 6+, eggs).
+    for p, t in sorted(animal_tiles.items()):
+        if t.get("yield_units", 0) > 0:
+            add(harvest_animal_pri, p, "harvest")
+
+    # 3: goose coops (day 4+; outranks replanting so the coop spots are not
+    # recropped). Window extends to day 14: the (3,2) melon tile only frees
+    # on day 13 (its day-1 planting reaches age 12 then).
+    if GOOSE_BUILD_FIRST_DAY <= day <= GOOSE_BUILD_LAST_DAY and stats["goose_placed"] < 2:
+        for p in GOOSE_COOPS:
+            if tiles[p[1]][p[0]] is None:
+                add(3, p, "build", {"structure": "COOP"})
+
+    # 3: water every unwatered plant while its window is open. A plant from
+    # TODAY gets the fresh-water priority: it counts 1 unwatered day at
+    # creation, so missing tonight kills it regardless of the yield window.
+    for p in wheat_tiles:
+        tile = tiles[p[1]][p[0]]
+        if (
+            isinstance(tile, dict)
+            and tile.get("kind") == "PLANT"
+            and tile.get("crop") == "WHEAT"
+            and not tile.get("watered_today", False)
+            and day - tile["planted_day"] <= WHEAT_MAX_YIELD_DAY
+        ):
+            add(fresh_water_pri if tile["planted_day"] == day else water_pri, p, "water")
+    for p in melon_tiles:
+        tile = tiles[p[1]][p[0]]
+        if (
+            isinstance(tile, dict)
+            and tile.get("kind") == "PLANT"
+            and tile.get("crop") == "MELON"
+            and not tile.get("watered_today", False)
+            and day - tile["planted_day"] <= MELON_WATER_WINDOW_LAST
+        ):
+            add(fresh_water_pri if tile["planted_day"] == day else water_pri, p, "water")
+
+    # 6: collect fertilizer (1/animal/day) and ship products to the shed so
+    # same-turn sells can see them.
+    if prices.get("FERTILIZER", 0) >= 40:
+        for p, t in sorted(animal_tiles.items()):
+            if t.get("fertilizer_available", False):
+                add(collect_pri, p, "collect")
+    for ui, (_name, pos, inv) in enumerate(units):
+        if any(v for k, v in inv.items() if k not in ("WHEAT", "COW", "SHEEP", "GOOSE")):
+            add(6, _nearest_shed(pos), "drop", None, ui)
+
+    # Plant the fixed footprints from seed stock (aggregate-PLANT safe).
+    # Per-tile deadline: a plant only pays if it can still be watered today
+    # (plant + water + travel must fit before hour 23); as that slack closes
+    # the task's priority is boosted so it jumps the watering queue.
+    def _plant_task(p, crop, stock):
+        if stock <= 0 or not (tiles[p[1]][p[0]] is None):
+            return stock
+        mind = min(_dist(u[1], p) for u in units)
+        slack = 21 - s["hour"] - mind
+        if slack < -1:
+            return stock
+        # Urgency: as the plant+water window closes, jump the normal watering
+        # queue — but never ahead of a fresh-plant water (floor 0.5).
+        add(max(0.5, plant_pri - max(0, 6 - slack)), p, "plant", crop)
+        return stock - 1
+
+    # While the coop build window is open with geese still owed, reserve the
+    # coop spots from replanting: the same-turn harvest->replant pipeline
+    # otherwise never leaves those tiles None, so BUILD_COOP can never fire
+    # (this stranded two bought geese in the shed in the regression audit).
+    reserve_coop_spots = (
+        GOOSE_BUILD_FIRST_DAY <= day <= GOOSE_BUILD_LAST_DAY and stats["goose_placed"] < 2
+    )
+    melon_stock = seeds.get("MELON", 0)
+    if day <= MELON_REPLANT_BY_DAY:
+        for p in melon_tiles:
+            if reserve_coop_spots and p in GOOSE_COOPS:
+                continue
+            melon_stock = _plant_task(p, "MELON", melon_stock)
+    wheat_stock = seeds.get("WHEAT", 0)
+    if day <= WHEAT_REPLANT_BY_DAY:
+        for p in wheat_tiles:
+            if reserve_coop_spots and p in GOOSE_COOPS:
+                continue
+            wheat_stock = _plant_task(p, "WHEAT", wheat_stock)
+
+    # 7: weeds block planting on the planned footprints.
+    for p in melon_tiles + wheat_tiles:
+        tile = tiles[p[1]][p[0]]
+        if isinstance(tile, dict) and tile.get("kind") == "WEED":
+            add(7, p, "dig")
+
+    # Assignment: bound tasks first. Open tasks are swept by priority and
+    # then by proximity (nearest task first) so units work outward from the
+    # shed instead of convoying across the map to far tasks while near ones
+    # starve. Feed tasks prefer wheat carriers; each unit keeps tile affinity.
+    goals = _UNIT_GOALS.setdefault(observation["player"], {})
+    last_task = goals.setdefault("_last", {})
+    plan = {}
+    free = set(range(len(units)))
+
+    def _task_order(task):
+        if task[5] is not None:
+            return (0, task[0], 0, task[1])
+        kind, pos = task[3], task[2]
+        mindist = min(_dist(units[ui][1], pos) for ui in range(len(units)))
+        return (1, task[0], mindist, task[1])
+
+    for task in sorted(tasks, key=_task_order):
+        if task[5] is not None:
+            if task[5] in free:
+                plan[task[5]] = _emit_task(task, units[task[5]], shed)
+                free.discard(task[5])
+            continue
+        if not free:
+            break
+        kind, pos = task[3], task[2]
+        best, best_cost = None, None
+        for ui in sorted(free):
+            _name, upos, uinv = units[ui]
+            cost = _dist(upos, pos)
+            if kind == "feed" and not uinv.get("WHEAT"):
+                cost += _dist(upos, _nearest_shed(upos)) + 3
+            if kind == "build" and ui == 0 and pos != (4, 4):
+                cost += 4  # the farmer keeps shed-corner duties on day 0
+            if last_task.get(ui) == pos:
+                cost -= 2.5  # affinity: keep a unit on its previous tile
+            if best_cost is None or cost < best_cost:
+                best, best_cost = ui, cost
+        plan[best] = _emit_task(task, units[best], shed)
+        last_task[best] = pos
+        free.discard(best)
+
+    actions = [plan.get(ui, ["PASS"]) for ui in range(len(units))]
+    return {
+        "farmer": actions[0],
+        "hands": actions[1:],
+        "market": _bridge_market(s, stats, day),
+    }
+
+
+
+def agent(observation):
+    # exp-0044: the state-derived top opener + day-2 bridge drives every
+    # turn; the champion body remains only as an anomaly fallback.
+    try:
+        return _bridge_agent(observation)
+    except Exception:
+        return _champion_agent(observation)
