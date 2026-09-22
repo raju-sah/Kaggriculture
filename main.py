@@ -1,6 +1,7 @@
-"""exp-3cow candidate: animal-forward d0 (3C2S opener).
+"""exp-s5 straw-late candidate: exp-3cow + late-strawberry scale.
 
-(4,3) converts sheep->cow; day-0 ladder buys 3C2S. Vs exp-s3 champion.
+24-tile expansion field (NE+SW free tiles), plant d9-16, +2 hands,
+SELL strawberry. Vs exp-3cow champion.
 """
 
 COW_COST = 400
@@ -13,6 +14,17 @@ NE_PASTURES = ((5, 3), (5, 4), (6, 3), (6, 4))
 # exp-s3: SW second expansion (replay: winners hold 3 quadrants by d11-15;
 # Sarthak SW belt (2,5),(3,5),(3,6),(4,6)). Sequenced strictly after NE.
 SW_PASTURES = ((3, 5), (4, 5), (3, 6), (4, 6))
+# exp-s5: late-strawberry scale (replay: 91.6k game plants ~70 straw d10-12
+# across NW+NE; ongoing crop, no decay, plantable to ~d16, 4 waves).
+# NE free tiles minus belt pastures + SW free tiles; capped by labor.
+STRAW_LATE_FIELD = (
+    (5, 0), (6, 0), (7, 0), (8, 0), (9, 0),
+    (5, 1), (6, 1), (7, 1), (8, 1), (9, 1),
+    (7, 2), (8, 2), (9, 2), (8, 3), (9, 3), (8, 4), (9, 4),
+    (0, 5), (1, 5), (2, 5), (0, 6), (1, 6), (2, 6), (0, 7),
+)
+STRAW_LATE_SEED = 100
+STRAW_LATE_LAST_DAY = 16
 WHEAT_SEED_COST = 10
 WHEAT_HARVEST_DAY = 4
 STOP_PLANT_DAY = 25
@@ -691,26 +703,25 @@ def _bridge_market(s, stats, day):
     seeds = s["seeds"]
     money = s["money"]
     prices = s["prices"]
+    shed_wheat = shed.get("WHEAT", 0)
     market = []
 
-    # Sells first (orders execute in order): continuous cash flow.
-    for item in ("FERTILIZER", "MILK", "WOOL", "EGG", "MELON"):
-        if shed.get(item, 0) > 0:
-            market.append(["SELL", item, shed[item]])
-    shed_wheat = shed.get("WHEAT", 0)
-    wheat_buffer = stats["animals_placed"] + 2
-    if day >= 2 and shed_wheat - wheat_buffer >= 5:
-        market.append(["SELL", "WHEAT", shed_wheat - wheat_buffer])
     # Day-0 cash bridge: the capital ladder needs the last wheat seeds, which
     # the public transcript funded by selling surplus feed one unit at a time.
     if day == 0 and money < 100 and shed_wheat > 2:
         market.append(["SELL", "WHEAT", 1])
 
+    # Labor first: engine caps 10 market orders/turn and truncates the tail.
+    # HIREs starved behind sells once straw SELLs+seeds were added (d9 hand
+    # collapse -> crop deaths -> -27k). Time-critical buys precede sells;
+    # delayed sells are harmless (shed keeps).
     # Hires: hands reset daily, n-th hire of the day costs fib(n).
     # exp-s2: +1 hand once NE is unlocked (herd 4-6 needs the labor).
     _base_target = OPENER_HANDS_TARGET if day <= 1 else BRIDGE_HANDS_TARGET
     _exp_hands = (1 if ("NE" in s["unlocked"] and day >= 7) else 0) + (1 if ("SW" in s["unlocked"] and day >= 11) else 0)
-    target = _base_target + _exp_hands
+    # exp-s5: strawberry water/harvest load needs its own labor.
+    _straw_hands = 2 if stats["straw_late_active"] and day >= 9 else 0
+    target = _base_target + _exp_hands + _straw_hands
     n_hands = len(s["units"]) - 1
     if n_hands < target and money >= 15:
         market.extend([["HIRE"]] * (target - n_hands))
@@ -777,6 +788,18 @@ def _bridge_market(s, stats, day):
             market.append(["BUY_SEED", "MELON", n])
         elif money >= MELON_SEED_COST + reserve:
             market.append(["BUY_SEED", "MELON", 1])
+    # exp-s5: late-strawberry seeds (100 each): pairs like melon, staged
+    # behind feed+hands, day<=16 hard deadline (4 waves need plant by ~d16).
+    straw_late_empty = sum(1 for p in STRAW_LATE_FIELD if s["tiles"][p[1]][p[0]] is None)
+    straw_late_want = (
+        min(12, straw_late_empty + stats["straw_late_planted"]) - stats["straw_late_planted"] - seeds.get("STRAWBERRY", 0)
+        if stats["straw_late_active"] and day <= STRAW_LATE_LAST_DAY
+        else 0
+    )
+    if straw_late_want > 0:
+        n = min(2, straw_late_want)
+        if money >= n * STRAW_LATE_SEED + 500:
+            market.append(["BUY_SEED", "STRAWBERRY", n])
     wheat_want = (
         len(OPENER_WHEAT_TILES) + (6 if day == 0 else 0)
         - stats["wheat_planted"] - seeds.get("WHEAT", 0)
@@ -786,6 +809,15 @@ def _bridge_market(s, stats, day):
         n = min(wheat_want, int((money - reserve) // WHEAT_SEED_COST))
         if n > 0:
             market.append(["BUY_SEED", "WHEAT", n])
+    # Bulk sells LAST so the 10-order cap truncates delay-tolerant sells,
+    # never hires/feed/animals/seeds.
+    for item in ("FERTILIZER", "MILK", "WOOL", "EGG", "MELON", "STRAWBERRY"):
+        if shed.get(item, 0) > 0:
+            market.append(["SELL", item, shed[item]])
+    shed_wheat = shed.get("WHEAT", 0)
+    wheat_buffer = stats["animals_placed"] + 2
+    if day >= 2 and shed_wheat - wheat_buffer >= 5:
+        market.append(["SELL", "WHEAT", shed_wheat - wheat_buffer])
     return market
 
 
@@ -847,6 +879,20 @@ def _bridge_agent(observation):
         and tiles[p[1]][p[0]].get("kind") == "PLANT"
         and tiles[p[1]][p[0]].get("crop") == "WHEAT"
     )
+    # exp-s5: late-strawberry census on the expansion field.
+    straw_late_planted = sum(
+        1
+        for p in STRAW_LATE_FIELD
+        if isinstance(tiles[p[1]][p[0]], dict)
+        and tiles[p[1]][p[0]].get("kind") == "PLANT"
+        and tiles[p[1]][p[0]].get("crop") == "STRAWBERRY"
+    )
+    straw_late_live = straw_late_planted > 0
+    straw_late_active = bool(
+        straw_late_live
+        or (seeds.get("STRAWBERRY", 0) > 0)
+        or (9 <= day <= STRAW_LATE_LAST_DAY and "NE" in s["unlocked"])
+    )
     stats = {
         "cow_total": cows_placed + carried["COW"] + shed.get("COW", 0),
         "sheep_total": sheep_placed + carried["SHEEP"] + shed.get("SHEEP", 0),
@@ -855,6 +901,8 @@ def _bridge_agent(observation):
         "animals_placed": animals_placed,
         "melon_planted": melon_planted,
         "wheat_planted": wheat_planted,
+        "straw_late_planted": straw_late_planted,
+        "straw_late_active": straw_late_active,
         "carried_wheat": carried_wheat,
     }
 
@@ -1004,6 +1052,17 @@ def _bridge_agent(observation):
             and (tile["yield_units"] >= 5 or day - tile["planted_day"] >= MELON_MAX_YIELD_DAY)
         ):
             add(2, p, "harvest")
+    # exp-s5: strawberry has no decay deadline; harvest below deadline crops.
+    if stats["straw_late_active"]:
+        for p in STRAW_LATE_FIELD:
+            tile = tiles[p[1]][p[0]]
+            if (
+                isinstance(tile, dict)
+                and tile.get("kind") == "PLANT"
+                and tile.get("crop") == "STRAWBERRY"
+                and tile.get("yield_units", 0) > 0
+            ):
+                add(6, p, "harvest")
 
     # 3: care (fed+cared same day accrues the production bonus).
     for p, t in sorted(animal_tiles.items()):
@@ -1046,6 +1105,17 @@ def _bridge_agent(observation):
             and day - tile["planted_day"] <= MELON_WATER_WINDOW_LAST
         ):
             add(fresh_water_pri if tile["planted_day"] == day else water_pri, p, "water")
+    # exp-s5: ongoing crop needs daily water for yields.
+    if stats["straw_late_active"]:
+        for p in STRAW_LATE_FIELD:
+            tile = tiles[p[1]][p[0]]
+            if (
+                isinstance(tile, dict)
+                and tile.get("kind") == "PLANT"
+                and tile.get("crop") == "STRAWBERRY"
+                and not tile.get("watered_today", False)
+            ):
+                add(fresh_water_pri if tile["planted_day"] == day else 3.5, p, "water")
 
     # 6: collect fertilizer (1/animal/day) and ship products to the shed so
     # same-turn sells can see them.
@@ -1080,6 +1150,10 @@ def _bridge_agent(observation):
     reserve_coop_spots = (
         GOOSE_BUILD_FIRST_DAY <= day <= GOOSE_BUILD_LAST_DAY and stats["goose_placed"] < 2
     )
+    straw_late_stock = seeds.get("STRAWBERRY", 0)
+    if stats["straw_late_active"] and day <= STRAW_LATE_LAST_DAY:
+        for p in STRAW_LATE_FIELD:
+            straw_late_stock = _plant_task(p, "STRAWBERRY", straw_late_stock)
     melon_stock = seeds.get("MELON", 0)
     if day <= MELON_REPLANT_BY_DAY:
         for p in melon_tiles:
@@ -1094,7 +1168,7 @@ def _bridge_agent(observation):
             wheat_stock = _plant_task(p, "WHEAT", wheat_stock)
 
     # 7: weeds block planting on the planned footprints.
-    for p in melon_tiles + wheat_tiles:
+    for p in melon_tiles + wheat_tiles + (STRAW_LATE_FIELD if stats["straw_late_active"] else ()):
         tile = tiles[p[1]][p[0]]
         if isinstance(tile, dict) and tile.get("kind") == "WEED":
             add(7, p, "dig")
