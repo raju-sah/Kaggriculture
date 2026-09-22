@@ -1,17 +1,19 @@
-"""Two-cow/four-sheep/two-goose champion: YARN-triggered second sheep pair with a fifth exclusive hand, zone-locked labor, and a conditional fertilized strawberry plot.
+"""exp-s2 NE-expansion champion: exp-0044 top opener + day-2 bridge + NE belt.
 
-Clones the fertilized-strawberry champion and adds exactly one conservative scale
-step: two sheep on two new west pastures, serviced by a dedicated third hand.
-Zones never overlap (farmer: cow pastures + build/place; hand-1: wheat, sole
-planter; hand-2: strawberries; hand-3: sheep). Role order is index-stable: the
-straw placeholder is always hired second when sheep are active. Exactly one
-planter per crop (demand-cap rule). Feed buffer is maintained, never gated by day.
+Extends the exp-0044 state-derived top opener with exactly one scale step:
+BUY_LAND NE on days 7-11 (1000 coins, 2200 cash buffer), four shed-belt
+pastures at (5,3),(5,4),(6,3),(6,4), herd scale to 4 cows, +1 hand while
+expanded. Replay-backed (ladder winners expand d7-11, herd 7-8). All other
+seeds/trigger paths byte-identical in behavior to exp-0044.
 """
 
 COW_COST = 400
 SHEEP_COST = 500
 GOOSE_COST = 300
 GOOSE_COOPS = ((2, 2), (3, 2))
+# exp-s2: NE expansion belt around the shed (replay geometry: winners pasture
+# (5,3),(5,4),(6,3),(6,4) after NE unlock d7-11, herd to 7-8 cows).
+NE_PASTURES = ((5, 3), (5, 4), (6, 3), (6, 4))
 WHEAT_SEED_COST = 10
 WHEAT_HARVEST_DAY = 4
 STOP_PLANT_DAY = 25
@@ -636,6 +638,7 @@ def _bridge_state(observation):
         "seeds": dict(private.get("seeds", None) or {}),
         "money": float(farm["money"]),
         "prices": ((observation.get("market", None) or {}).get("prices", None) or {}),
+        "unlocked": list(farm.get("unlocked_quadrants", None) or ["NW"]),
     }
 
 
@@ -701,7 +704,9 @@ def _bridge_market(s, stats, day):
         market.append(["SELL", "WHEAT", 1])
 
     # Hires: hands reset daily, n-th hire of the day costs fib(n).
-    target = OPENER_HANDS_TARGET if day <= 1 else BRIDGE_HANDS_TARGET
+    # exp-s2: +1 hand once NE is unlocked (herd 4-6 needs the labor).
+    _base_target = OPENER_HANDS_TARGET if day <= 1 else BRIDGE_HANDS_TARGET
+    target = _base_target + (1 if ("NE" in s["unlocked"] and day >= 7) else 0)
     n_hands = len(s["units"]) - 1
     if n_hands < target and money >= 15:
         market.extend([["HIRE"]] * (target - n_hands))
@@ -715,6 +720,14 @@ def _bridge_market(s, stats, day):
         if sheep_want > 0 and money >= SHEEP_COST * sheep_want:
             market.append(["BUY_ANIMAL", "SHEEP", sheep_want])
 
+    # exp-s2: NE unlock d7-11 with a cash buffer; engine applies one quadrant
+    # per order, so a single order per turn stages SW/SE later (not planned).
+    if 7 <= day <= 11 and "NE" not in s["unlocked"] and money >= 2200:
+        market.append(["BUY_LAND"])
+    # exp-s2: scale cows to 4 on the NE belt once unlocked (replay: 7-8 cows).
+    # One per turn, staged behind the land purchase (same-turn money guard).
+    if day >= 7 and "NE" in s["unlocked"] and stats["cow_total"] < 4 and money >= COW_COST + 400:
+        market.append(["BUY_ANIMAL", "COW", 1])
     # Geese once coop slots exist (coops are built by the duty planner).
     slots = len(_empty_structures(s["tiles"], "COOP"))
     slots += sum(1 for p in GOOSE_COOPS if s["tiles"][p[1]][p[0]] is None)
@@ -871,7 +884,11 @@ def _bridge_agent(observation):
             spots = (
                 GOOSE_COOPS
                 if animal == "GOOSE"
-                else (OPENER_COW_SPOTS if animal == "COW" else OPENER_SHEEP_SPOTS)
+                else (
+                    (OPENER_COW_SPOTS + NE_PASTURES if "NE" in s["unlocked"] else OPENER_COW_SPOTS)
+                    if animal == "COW"
+                    else OPENER_SHEEP_SPOTS
+                )
             )
             goal = goals.get(ui)
             tile = tiles[goal[1]][goal[0]] if goal else None
@@ -931,6 +948,12 @@ def _bridge_agent(observation):
             if tiles[p[1]][p[0]] is None and p not in claimed:
                 claimed.add(p)
                 add(1, p, "build", {"structure": "PASTURE"})
+    # exp-s2: NE belt pastures once unlocked (priority below daily care feed).
+    if day >= 7 and "NE" in s["unlocked"]:
+        for p in NE_PASTURES:
+            if tiles[p[1]][p[0]] is None and p not in claimed:
+                claimed.add(p)
+                add(2.5, p, "build", {"structure": "PASTURE"})
 
     # 2: feed hungry animals (escape needs 2 consecutive unfed days). Only as
     # many tasks as there is wheat to actually deliver, and skipped entirely
