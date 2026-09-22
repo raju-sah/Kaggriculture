@@ -1,8 +1,6 @@
-"""exp-s3 SW-expansion candidate: exp-s2 + SW belt (sequenced scale).
+"""exp-3cow candidate: animal-forward d0 (3C2S opener).
 
-Adds a second expansion step: BUY_LAND SW d11-15 (sequenced after NE,
-4000 guard), four SW-belt pastures (3,5),(4,5),(3,6),(4,6), herd to 6 cows,
-+1 hand while SW unlocked. Vs exp-s2 champion.
+(4,3) converts sheep->cow; day-0 ladder buys 3C2S. Vs exp-s3 champion.
 """
 
 COW_COST = 400
@@ -51,6 +49,10 @@ OPENER_MELON_TILES = ((3, 1), (4, 1), (1, 2), (3, 2), (1, 3), (1, 4))
 OPENER_MELON_DAY1_TILES = ((3, 0), (4, 0), (2, 3), (3, 3))
 OPENER_COW_SPOTS = ((4, 4), (4, 2))
 OPENER_SHEEP_SPOTS = ((4, 3), (3, 4), (2, 4))
+# exp-3cow: animal-forward d0 (replay: winners 3-4 cows d0-3). (4,3) converts
+# sheep->cow: opener becomes 3C2S. Pasture tiles unchanged.
+COW3_SPOTS = ((4, 4), (4, 2), (4, 3))
+SHEEP2_SPOTS = ((3, 4), (2, 4))
 OPENER_PASTURES = OPENER_COW_SPOTS + OPENER_SHEEP_SPOTS
 OPENER_HANDS_TARGET = 4   # public pattern, days 0-1
 BRIDGE_HANDS_TARGET = 5   # extra hand funds the mid-season watering load
@@ -715,10 +717,11 @@ def _bridge_market(s, stats, day):
 
     # Day-0 all-in capital ladder (mirrors the public transcript, guarded).
     if day == 0:
-        cow_want = 2 - stats["cow_total"]
+        # exp-3cow: 3rd cow first (milk+fert compounding from d1), 2 sheep.
+        cow_want = 3 - stats["cow_total"]
         if cow_want > 0 and money >= COW_COST * cow_want:
             market.append(["BUY_ANIMAL", "COW", cow_want])
-        sheep_want = 3 - stats["sheep_total"]
+        sheep_want = 2 - stats["sheep_total"]
         if sheep_want > 0 and money >= SHEEP_COST * sheep_want:
             market.append(["BUY_ANIMAL", "SHEEP", sheep_want])
 
