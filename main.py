@@ -1,10 +1,8 @@
-"""exp-s2 NE-expansion champion: exp-0044 top opener + day-2 bridge + NE belt.
+"""exp-s3 SW-expansion candidate: exp-s2 + SW belt (sequenced scale).
 
-Extends the exp-0044 state-derived top opener with exactly one scale step:
-BUY_LAND NE on days 7-11 (1000 coins, 2200 cash buffer), four shed-belt
-pastures at (5,3),(5,4),(6,3),(6,4), herd scale to 4 cows, +1 hand while
-expanded. Replay-backed (ladder winners expand d7-11, herd 7-8). All other
-seeds/trigger paths byte-identical in behavior to exp-0044.
+Adds a second expansion step: BUY_LAND SW d11-15 (sequenced after NE,
+4000 guard), four SW-belt pastures (3,5),(4,5),(3,6),(4,6), herd to 6 cows,
++1 hand while SW unlocked. Vs exp-s2 champion.
 """
 
 COW_COST = 400
@@ -14,6 +12,9 @@ GOOSE_COOPS = ((2, 2), (3, 2))
 # exp-s2: NE expansion belt around the shed (replay geometry: winners pasture
 # (5,3),(5,4),(6,3),(6,4) after NE unlock d7-11, herd to 7-8 cows).
 NE_PASTURES = ((5, 3), (5, 4), (6, 3), (6, 4))
+# exp-s3: SW second expansion (replay: winners hold 3 quadrants by d11-15;
+# Sarthak SW belt (2,5),(3,5),(3,6),(4,6)). Sequenced strictly after NE.
+SW_PASTURES = ((3, 5), (4, 5), (3, 6), (4, 6))
 WHEAT_SEED_COST = 10
 WHEAT_HARVEST_DAY = 4
 STOP_PLANT_DAY = 25
@@ -706,7 +707,8 @@ def _bridge_market(s, stats, day):
     # Hires: hands reset daily, n-th hire of the day costs fib(n).
     # exp-s2: +1 hand once NE is unlocked (herd 4-6 needs the labor).
     _base_target = OPENER_HANDS_TARGET if day <= 1 else BRIDGE_HANDS_TARGET
-    target = _base_target + (1 if ("NE" in s["unlocked"] and day >= 7) else 0)
+    _exp_hands = (1 if ("NE" in s["unlocked"] and day >= 7) else 0) + (1 if ("SW" in s["unlocked"] and day >= 11) else 0)
+    target = _base_target + _exp_hands
     n_hands = len(s["units"]) - 1
     if n_hands < target and money >= 15:
         market.extend([["HIRE"]] * (target - n_hands))
@@ -727,6 +729,12 @@ def _bridge_market(s, stats, day):
     # exp-s2: scale cows to 4 on the NE belt once unlocked (replay: 7-8 cows).
     # One per turn, staged behind the land purchase (same-turn money guard).
     if day >= 7 and "NE" in s["unlocked"] and stats["cow_total"] < 4 and money >= COW_COST + 400:
+        market.append(["BUY_ANIMAL", "COW", 1])
+    # exp-s3: SW second expansion d11-15, sequenced after NE (2000 + buffer).
+    if 11 <= day <= 15 and "NE" in s["unlocked"] and "SW" not in s["unlocked"] and money >= 4000:
+        market.append(["BUY_LAND"])
+    # exp-s3: herd to 6 on the SW belt, one per turn.
+    if day >= 11 and "SW" in s["unlocked"] and stats["cow_total"] < 6 and money >= COW_COST + 400:
         market.append(["BUY_ANIMAL", "COW", 1])
     # Geese once coop slots exist (coops are built by the duty planner).
     slots = len(_empty_structures(s["tiles"], "COOP"))
@@ -885,7 +893,7 @@ def _bridge_agent(observation):
                 GOOSE_COOPS
                 if animal == "GOOSE"
                 else (
-                    (OPENER_COW_SPOTS + NE_PASTURES if "NE" in s["unlocked"] else OPENER_COW_SPOTS)
+                    (OPENER_COW_SPOTS + NE_PASTURES + (SW_PASTURES if "SW" in s["unlocked"] else ()) if "NE" in s["unlocked"] else OPENER_COW_SPOTS)
                     if animal == "COW"
                     else OPENER_SHEEP_SPOTS
                 )
@@ -951,6 +959,12 @@ def _bridge_agent(observation):
     # exp-s2: NE belt pastures once unlocked (priority below daily care feed).
     if day >= 7 and "NE" in s["unlocked"]:
         for p in NE_PASTURES:
+            if tiles[p[1]][p[0]] is None and p not in claimed:
+                claimed.add(p)
+                add(2.5, p, "build", {"structure": "PASTURE"})
+    # exp-s3: SW belt pastures once unlocked.
+    if day >= 11 and "SW" in s["unlocked"]:
+        for p in SW_PASTURES:
             if tiles[p[1]][p[0]] is None and p not in claimed:
                 claimed.add(p)
                 add(2.5, p, "build", {"structure": "PASTURE"})
