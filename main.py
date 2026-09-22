@@ -1,7 +1,6 @@
-"""exp-s5 straw-late candidate: exp-3cow + late-strawberry scale.
+"""exp-s9 hands candidate: exp-s5 + BRIDGE 5->6 hands.
 
-24-tile expansion field (NE+SW free tiles), plant d9-16, +2 hands,
-SELL strawberry. Vs exp-3cow champion.
+Vs exp-s5 champion.
 """
 
 COW_COST = 400
@@ -67,7 +66,8 @@ COW3_SPOTS = ((4, 4), (4, 2), (4, 3))
 SHEEP2_SPOTS = ((3, 4), (2, 4))
 OPENER_PASTURES = OPENER_COW_SPOTS + OPENER_SHEEP_SPOTS
 OPENER_HANDS_TARGET = 4   # public pattern, days 0-1
-BRIDGE_HANDS_TARGET = 5   # extra hand funds the mid-season watering load
+# exp-s9: elites run 9-10 hands from day 9; labor is ~30 coins/day total.
+BRIDGE_HANDS_TARGET = 6   # extra hands fund water/harvest parallelism
 WHEAT_MAX_YIELD_DAY = 4
 MELON_WATER_WINDOW_LAST = 10  # 5 waters saturate the 6-unit yield
 WHEAT_REPLANT_BY_DAY = 25
