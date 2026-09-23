@@ -1,616 +1,425 @@
-# SPDX-License-Identifier: MIT
-# SPDX-FileCopyrightText: 2026 Rayk Kretzschmar
-#
-# The MIT grant covers the code in this file -- the market/SELL layer and the scheduler.
-# It does NOT cover the base85 `_TRACE` field plan below, which is the shared public meta
-# line reconstructed from public competition replays and is not the author's to license.
-# See NOTICE, and the "Provenance" section of the dataset description.
-"""Broker Bea -- tier 6 of the Kaggriculture reference ladder.
-
-Meta field plan with opportunistic wheat timing.
-
-STRATEGY
-Runs the shared meta field plan -- an 8-cow / 5-sheep / 6-strawberry build across three quadrants with a full crew -- and layers on a market schedule that times wheat purchases against the opponent's cash position rather than buying on a fixed cadence.
-
-WHAT THIS TIER TEACHES
-The first thing to notice is how far above the authored ladder this sits. The second is that the production plan is not what makes it strong: tiers 6-9 all share the same field plan and differ only in when they sell, and that alone spreads them by thousands of coins.
-
-FIELD PLAN -- READ THIS BEFORE REUSING
-This agent does not use an original field plan. It executes the shared public
-meta line: `scripts/cross_team_identity.py` over 530 downloaded replays finds
-identical 712-turn farmer/hand sequences played by large groups of unrelated
-teams -- one group of 29, another of 15, another of 8, with 104 distinct teams
-appearing in at least one shared plan. No single team is credited because the
-line demonstrably belongs to none of them.
-
-What is the author's own, and what separates tiers 6-9 from each other, is the
-market layer: which product takes the earliest slot in the order queue, when to
-hold, and when to liquidate. Their head-to-head ordering differs from their
-standalone bank ordering, which is the whole point.
-
-Measured end-of-season bank: about 164,265 coins against the built-in
-`starter` baseline over a 720-turn season.
-
-This file is self-contained. Rename it to `main.py` and it is a valid
-competition submission; or import it and call `agent(obs)` directly.
-
-Part of the Kaggriculture Reference Agents dataset:
-https://www.kaggle.com/datasets/raykkretzschmar/kaggriculture-reference-agents
-"""
+"""v50: High-Velocity 5-Hand/2-Cow Opening + Closed-Loop Weed Repair + Market Impact Ordering + Late-Collision Terminal Overlay."""
 
 import base64
-import copy
 import json
+import sys
+import types
 import zlib
 
-_TRACE = json.loads(zlib.decompress(base64.b85decode(
-    'c-rk<%Wfn|a{L#b>%e;Or5m@qcBZkMW`oUEVKrzB2G9xugw<iBo1lMJPqQj3Gu_<W+#`w)?c9hWSsCwiw=gsR`G3y-?bqM_{<q)G{^{qlPq&{xpM71N{rj)~`LF-=?SpSW{{7eA{^M`|{q5(U&wl*yu>JPi(GP$6^4DK(KYsY>_U>$P_U?XnwpboM{=D73|MuZe+q?UZXN$|($Gac5w~zaeKX32ujvp=UM{D#~U;lS8Zuy_Se7Jl6%eVGFe)-<Ep$k8s?Y5sEzqj_|{lnvrXJ4nC`n^$~9`4_NdG|PLSE85uf4i8s>eGjJfBEuh^k1W9?OU@L|Mb*Up@A!}UGoOq-M-uIe>-{le7rif;`5K&?I+ZZ!$2JWbJUp6_h0spw#}M-BD89KoV-~p{`~uFO`bfRpw)C7wzvC*BM-<@SgFG!hp`$r=-sWEj^U%HAEf0wd*<QG;PU&nMm|0cTXp*ErvqX9$oQM5Ywp|V-9By~!tafi*z`Pc7y8qn;vpRlg5!Ea?U>Hr&;YQ`!sRu35E*26E`d|gAE0@YXARqr09yCsZ$T5a?}0Q^v#0Kd8?L!wDuy3&D<axs`_X>-{iF^1NkTK?&JkJvhcSbbejL!zPwH8sy!Gr5+ku_^K>9*PZN8_K!JB<ut;=>**#RG>6pr`PPizX!Alefn|0>v^I7T1v<GwKCI<$oha6D+oWibrZyg6|2^zN>Nw-7jz*;Yv{*jZofC-!vKm+D4XmuNYfe)3a45k{$#G>hWHcNh<!!ON0AfJcJISm*xkZu{=>mp^YG9zWcD_?O9&NX7E&);58+7K+`&P)Y51Fa+J6IEpZ%Ck<_C?IeEC>~swy#p$Bkq@vyT5BHx6&l<JZJ`il0<DvSLQsV<xjd_-tqZB-`5M))l=)ORdm2)^5d6#A{ho(NEC)!Spw!hvP5}4)sQkjNQi}!mFCoi_iJcZI0@f>Y}ojE>;Ju>{}W6;$3i)oV+<F7RN_;s`2y^<D}S4`!bhaqSg3p>Wj*TT0#L$C(EZPh<ilS4ugaXDcir$R6{rw!>6K<KGsy*L-@9_z*6M=96?Bc6aLW=~v3;717&pwU$f<S89tFLEC?YHocB9#Y@qT3-k(R*VXdX@eam9k*Pj!ouO1D9C#HWhyK@jtc0_{3;^<4q}kB&AM1m=7;jt*D!z_9&pUL>^Pz)Rl`RRF{L2?Z%5z5efd#cf-@GUHpOPc9P|!=kJ;bb{o+b2DMxpGqqs?k7KC#UyI6$y$+JUr%YWc7ZkUZRQz8J;pC#6tH|*kTSEx^l{?bd;i3h<8hz22W>s*&WxbD#*!;geJg^Ny5;)%jVdLQ)WqD2bHRc<CJ!otGE3{`<3)^VFj7|24UXAc9zAu7gvUA|X~`Lt82UnnTTUVlW09q_*;iql>c5^Rb|y1;?^KxE@azsqO3>MacF=|fA(Cp&on$%dpy+(@V4bok+qw-5gu{oDzWLq}Jf!%RW?HRdG?OhvDA1GlO~(6IrG&&xr8>hSdAM?>S>vH1M>aJ&1{_Tk~LmOiR;6;Y;eXzJ(*&OJN$L$|#J5+m9JHmc1nQpOP*f756oY(IO{s&HlSu-W;(d7l!UBScB^So;YWiQJgl<<9w{l!_b1-W0e78BrL$GMa$<eX00ZdO}+#*!^;!PLLqq5|BXjDhA)HHlW)5s9XAy>zd1x%|_CPFIqY%=qtEgkAyp~fhO5U-E+F2dVQjx+P=`AF{HK<s1l-H8<}A*JI!QDt=2I*o`-YQ976H>r91YyM`c#P+Y93kG2Z~Y06~XQP?fv+FLj7#4!-oOQ+JN*4+!Ntb!b>(J_?u0IYFokV(4r)3fiEtaAYEu(}<U;K^!u-VV)FnU@Npw1CIufpIuq7hi5tnf_HL#1^Op)L{<boYvYc3U}-N#=JS7lUq-1#mHT7JKv@40f$vo-5(@>Y654nw8Bh~2nMoO{fn^ZXf){3M<OJZkM4&5(Yl(t*9CjelJbikfcL3=A&NPV%{xSg%0Ib3wz2Sa>90UBiUI*paE8T~i`;ZVA;EVA0Fl8(Rnp$Ux^jHTu0oT*xMU+O9iC-!CW`>60ciR2^9ebr^b`i)!T!hSyL;%`=Clf9Li1<(Bwm`WevxcQ|4CcC%Q5hwp^92ic5|YW$vapbYPbH{A{}~NhcTy62xEHhL&Td^x)x`G!Pqu`X<dZc5Mqh>3x`oDYvLJomrn}pZ?|Ve-49Y9<gCn)t`0{t-xpdi?J@1RZi;%ZI0vFAM7S~UT<tsgNgqTZ`1ml}i2%iTHN2xMzOEqX=2wE^M#ot%lj;ON&$PXax)%~+t@XVMrZ0*$Y6Xk|}LD>Z}@<{zfsQGJIoKpCxDqOUqJiMCO<72vvvV{nMD%?vXM@5fKZ)&kALlRgLlONQKT@%{bTY(i_8p;ZXho&9FVzkarsin89S+fCvLE=ud_;LyDLP>~%VmBQc<%e!#^RotXPI^}dRx<<nd(N8HF0^*c5A;q-_nllO^uM_VineTeL(Q~bKSSFylMNcU2z6V}n0(f=&<59KIn7&j$WtM$v`I^v8AmbM9A00Qt0+1DJcunm-2G+05Ko?wLUu2{>QQ<|aN9An$3+c_`K?J9d6Xfrtz2Kc{(=*9g@qdh;QZku#$ubH4P?<RGZcm7<cMUi0xE(2ux%wKI}4g*Xnl-FM>zKC{kp^!C2{=ZQrCqoX51yV=s<!byrQE?(yxeT<Ty{&a9o}&b%IOwXnxF9F?v4Wsa!ygW!F{AUIjQwy3q`T01Fy4irNy{;4h~-S|*^0;N8dgn`S4>7syIVl!CFANTqgdhp+D=i@}~!-o^}?YKIxT05tdsqj|@V=G>1CZ4INksKNa3Fqvx9a=N1J4kQ8QB4Sry&||i`-TP3by&{%NhmhXZ&V`aynh$(Pv_LhCu);y5I1M~Sw<KRSbLydiwIxU!%LpI#li8t^n@tdFM0>Y0?G-(Qq8rSjO#r!sOAUxZbfUX1uR1{oc1^Wi|8+zGoNyQxa;YZ$<1333qZ%Uu5+x464-J$BzRdvkZ8z}CZZHm~Hhb*dwEe?ruJeOw<L!w$dBj6*o&4=o?FLj{mLco>4_mV<m($ziZ@eCHkp2F{4-O(#<zU3v2B_Fq18|lRECr^@c?*TzVs$49I`!jZA!ayb4(#T0H?&lY*(>~Yu)+fq5>T-q3QhA4U+dIGG%zTkDLtamAGXJI(7#Vb=aJ@dz75N!Ez(g*&48qGsi(0$s639M8%*i=od>>gYKAt?4OO#5Q$s2IEaZZ>a=h9ojbLe_%U{p7kLX~~jIY(ol+vlBxI%`l<*$pP3nL|%*;WrH4S`7m)o(jjhET)Mp;WN(kAVhO7#E!Fl;}eb7FY`>H~$P2LCcF`AuQq6YQt&Q_%|5{nhq)_H8Lebn_-cnjR^22&9h8&*6}JS2hbgH(A7q<sq#nI&#NZ7M;kb@dXwM?y`6p)=*aj(mQt4{?Yuv)C1m8J70o&YrV&=iEIbg{L>+^)BvPHWzZDJyNroRH0?Uq*c}|X=Yz5kbr2Wu|A^9m-Dl5v4eWVZ3rv%&{WdK7GS%~=tRgPrHZUuL8hAR>IG>R*QoT{IBqwY$I_nzGw(}cE3&<@%Q%t-Of^WZvh)M>C0h#$euzy_%3U*@?~F|nipZn!yQ7_Uu&Re%F|!i0WeyqMy(EK7koWdSf9lS#%<<|X4mZ1yUvVr*||`B1ZDb6k{$+;GO2)nHJqyObTbD6M@$?yG4|p3`&*?hl&ObixQU$>HQ0$Eeza^gN!&<t3>crF%Q@O)S)Y9se-yvJXVrd4dvkO`w|geW2I^VwUP$!S&Z9cO!b;Ge0(F-^uiHqLyj4*gWy`I%OXNE_jfufV9@K7JcXlTQ!qb4qtTTj1NH=Rxb$GtltP+ld(5`NoWRq(f9SdYVYmMGl4Wk)(Q^?rJqhuU_m}jGZ}f>cP_dQ-ya6h#H3Z><5NjOaOc)nQwRnl?eGmlZ6IWz+F5rXzI2%ygF)!7Db({p5I3~X4!?E{WDP`_G@s(ixYOHk5LpZ#S$7n6fn#w($~a18*$gk^W`xxEf^n2(AqM4VGvNrh*(JB-%z4t`V-!kpqiqwQR@9E%o<bR<l4X<jh-N$lXORd%Jl?w%s3>B+v*MhL!U42&te#Xa(9ps!BIA$KR_N{H(F9Ya0<jH9P3}WxWtwsU^>gh?M3C5V{LW2eIl59i0ND{kDL2|IF*viS-Aq`MSR~=>rL{%Ou!Pnm)k-jE=pt>kNP}sj^Rbrm+7&Wa*R@hB(xh0aD;})^Fv`WnYpcDjOzTA-K!z7$$Fc6o=`;EbGE1eO6|P9Ot%%pWFmXn2vRz+7)JJpsENN=I^)8z&N%ZnmnvtjKAv3WjxhZ;(5QJs;L}5M2HF-0gTBZ!eabmy*n5wCQbH*`Wn6!U&u4@2n&p`AZAux9CT3AD|_xk20;l4!~J<%o#9dF`1m}<kWbwqRDkBmtI7<0SdNZt%NGHT#yJAj(20U}g{!MFjgyoSxn#brf8076GQ*piuvUQP{M7BW4CdpjG!$?kg3yc&+HDafWA7M7I@B(56ln&KzvVS|nh(x3Wu8LJ7x<RTPl9<f(OAYfTNes;6|U<?3ZIUcHRsAY~hW1)4MaV53M<vka3$2eg!N92BGb7#{84h0k!nIxVv8dg?&xEg=<c>mMw<Grmsz!T71HR^^*O!j(Q#JJuWXX=0#b9pxHGChL7YE{H@bLg!~<q$Q5QS-`1bNDoF1R}mjS*4P-hu|<$M0Sgdq%#X$Ep4u@FfId2PQ~=(r%ybURBO4cn%pep!7W2nL9<%R96lpLmF>yR8$_s1JX<XQRmte4fKNH5#*GA(P&N(1UG2tLF9Qg!{Rjq?$R{Y(Mxy`J5t_uZ0E5TII(M`**A-nSU>tDI&#uQAI|2+3Nj>5jvd9cUFaXK{VjR2rr!U>g9Z43CL2a0KD}g;zN*4c~O7CP(QG&lvjuyLnrdV0kZHCuY+6qNY*$m{piB={{SSO4YL{kL~0z~Ffer|AR?4n1>d(;ot4u`BF*5!t60Pf5s1ytb3&EQXJvRdE1R0RlrnRtauNI{>%(IHTGFg>&H2~IpY)kN$h$QDpUv-T-M1!$4fAV=<^=rl{xVbl@bdCAr!gDS$MeuKo&MUf{>XK;YAhBd6tU)YyT2CT7rYz~1%J(10Q6DD(hRiiPmap4ZZbshX6n=|-{`16qe6zN?Jlg+uK1a_m^IPzu;=MqN}o4yRIa{={=hm)7);Hib%s(FR3LPN8ahj)2ToYO&H>khC`0)MCgVdgCq+SZ<W1`FOzaH(diVs%x~VKA?tBH+eGx|(iRMluQ=r3^Vj^8znh0D$@o8YkoAJ@9LmxH>KGXW9R{)kb=ht*XY-s}jo#Oif_vc+`9~t<9OI+}hv@$mVwCRElh`7flpJc0Eg)EqhL#%(NN>MmkT7<uLRm%O><ve`iLJBt2{xeg|&Y?Xkn1#YON)Q62&47yShOjOvLL5hSBHe7`ck0=uu#ScLy%;V#|8%ez%c*Lj1aWBn$J0~>;jj|3kPZBBCyqv%<TeCNcY<V+O7(5*`-*6;r8d1<AJ6vr9<92Jy^Y0Nw;o=F+wEygG)fDsv&kXF}BLW1c!TUnkeq6rf5nN@Z1L$T~|4YwN`d(aV0g68jG(ma6YGb3neB$-N>faJwi?tD)#0LdVwTMV?)_gkW^c4Q<UC2jt-17g3W#yn(Wi85nm_A+JiJegMK&mr_nV-K&FMg@j7-Mb<*28_b`F{^k{k8~G%6t55ZTi{r|B#Kn1!Of&5IVu&ifSgsK>CjVFFAAjH<d!-GBiTASj(UY&r0-N2X(bhJ`%bFRS=5PHlxoEyd2AodmS$+3#Zqhv`7tgW^%|-GIt>)1Xe|KuB^A08sa$09B$km<`&%y!AYKB3Az_{JG{ANXfYXR(Cmg+s<~UPJCh2w)zZW7bp$pYSF;OS7Rn3@Qf;cR)oUul7{pEOT<-4IoUS6td2kgYa*$qG3ZT(H>vte=y*YGs39GheQ#<(GY*k}*@=w>zvL^xpLWlRhaD+O4CMHTN|?9@&Ox0#}NBkdSK;siFvDmUH?hU89D;Lm2ts2MVpTju<3Ai&fmYr`2Nlf!dj*0WsLQ(zh8+GfE&umJ?RuEgj|%yPb@yRGtRK5?lyra0cI5u0pDwO&BLD;C5p<HRysw(0p5ayDsv5om{x0JnG26Yw{I?a(YwHF7!`B`AsI=<Gdv38;8!iV}!$W#IUnaxlcMF)yd<fcs)j+miq~toA(ddfFBIyNWmu)78nkHK#ORQ>lnj@mZ$~d#Q#1yWQ8b^^3S40CP(;Sgp=g;V6)hMy$@Rls6+L2}SSxWr}*E<^-%xmVlk~;jU?pG*M+f)^43CLQ@E;GITuA8I8`o!%id;<+b3sZCUEfNmTh`Ldqbq_N$+Z<?00JV7bZIh93YS&C{yD22sF{1P7Qw4AiNIvbZ!1UU%b8oP4xYs%Ug2o|LoksUkVBtf+2u$nJO<nIxgD6<yXvXfnXas?LTMily<mD&-XQF-HVOShjiY&G)eXf^y);G5>WFvXd5mwSWK@#d2F!^WRg#I;}oOV41cdH*uNO<%=OVVNv@@AyE1a2Gq2eh>{IGi`YwY+YVPTQY`4k$vsMPaov~wK`Ebh(n$hwqqo{BQx|3F^?6_bhgxthr$SR@hJwbMg5P7#>P1P7g@Qcdvy`|c)_5Vb2a-06QS+!CQMjWl89*7|DjrzUn|~S`PWK03fK{3gnfj>q)Hcq+y{1YA870rKK<S2&NEukAQLtjABy0hTOJ8U@&7~e!u>+CaA4?)9o~H<x_C%J&tn<w(8|V$_J%T4}uJ}>OtxusK5Y*l{0%KTGO4r%iG!A5#K%J>^xUdM4b6h54<8?8kpbmgG=`uw?VkxY4TsEAaEbR+!HJBRg@-AmqW2D?jupr`_x!i@6T@~yd4^(<ubvwxsuEr=jKq*XLCprV^#dIkl%gEA>nB>q%ul9hr0f&iDjrtWVmAzFI)1(l`M7=+izxMhMh1aVDkY11l^yWA}VNR?RcMId->#wgx<^^~%1Z5FArjy#%&(9iy$aR8lpcGQGPBa%^yON7ELYGGB2n#Y@JcHZ|3IyP7IY6Fd*Qd?bCSs6uzwJ<ga<3F*60iC`O*~Dnx(GUo!W0&yW;9g^(;SIh1U=!H)0l(Ty19^eLHF%zAMQ0lljzUG?TILoApxPa;*l%ELtm8)zf~zHK2`+(|8PI8&LgC1-@O*>ig2D_e|YkOe(Nn`$;gTTbT>`jY8F-w<{AGwP!-XfG`c>LOHpd%G)-!sbi>0NOuHe9L2Rvrn0FdAwm4zUPLBnEAad?#%xt)H?yQz7P{=5Gyn=(Bo5{7fP+Uv{23Vm-t$+$OQI>#>CNPsggPh<)#;{dgO-B%{PPYzRcrOv6YrH6|WMIXd&;xflVr4YmH<xvy6agZ*EeQdt0B#W7sJs+<MG9)m<dm0YKUL7HLS3_L$F5Jsb?WX#lox^sAoqL&ExTHpCshaZsMG_f%}EX0nK2QuuCz0cOoMY*Q51;M{h0%eL&B5gIjX}^&v9~1$RvfXLvU&b(Zawih!>3Gk#)KbK;dtamz^ISYm-RqV(D37@jM!?u+>{SF5JmIFPW{Y40@a!J98K;op>70ThI+wCX8BcN$iCD1x6dqD6AF;rznz$ZDZI~(J5UCS!!4%V4d^z)(oxqYWDOmTIUU$$&?e~P77#bVliPbx2kBBYRARhnC+4`*sMAd2t(?wm)a|kfTJAb3s6H!!?0Vi0V5Re5F)@TI6bt?dOXxO`mrZoUP`)3y~w;K$@FaaM6E7GI%$)$)@uoB5aKz~wu>VwDMp_L^qQmndL38VMx~-&oYrxI)_BcdX3B@sL8Y^hA?clpnRWF{dcQO%wDw|>)vJ~L;nptRoE}hfR{Vb`{u8y)Te+@JR->A1uLXXDztw9S<05&v`~QiE!!$~>hUp?FOju=arNU*BR(8e`=m-%4@QJ~PIN4Xc%`-t>G}=lfyi!59)~a~pd0Mv++W;+v(wulO%(K9dRYW#loU4o3IICet_fMZHcC6v{haqAv+=eN=fpc--b2ahRWH2G2ycJQV(k9CIowG9-{1HCNJS=E_I8h+%Cg5?=9ul%zAi4}f)aZ0%_CVo80qx#Z0$qtI#1RtD;M%ACnj@bO0u0_ej_H=Ou*BGSj+*N2_C=X;r8(-$C6gMRcgH59Uh+UgHt9_2&QQ9rM_094nw%G$EPF7k87OQ|MW#+jT-u5WdaGM|Gib+w$3bQ?Q`89;j--XD)qPnssE;DwG%w37|3_b7&G4pbJ|DqX3CHy`el-DDHqU59ZXfKuPz%tAQPuacEob8DI>&3?(#2b$eF=2y*9vlR)>jJE0)u4!O#{512i{6Sx8kj%<cx4aTXT`h#-dnOqb|LLPeEUszC%FFL~U0~h<(zRS6U$)0r7GP)FY?Bc$4~v_@gmQCRCHw%XD1SWF`SAjTLF!CCu2qdsI{igP_13)7jctsCfE|_5ywEo<q!tBFh{lhg*YFD0<j|%f^U7s-e}nqqW(Gn@weRK+pkfV@70jvv2p(U#5u>x!)#p-5+L$ac@$}_H3zkt=w2Jv;lYMV44%+`I4?Vu!N@h8(#X-y#;Nycng7Nfcm$4T)?dlE-3hMNwpO{VwXqjRcG-=m050Z`2RJk`UR^riRu#zoIOk~_QNzb|BHrBMDBBRuy?+mlS%xXd(VX1UPxD@G5#>(#bzHYsL$2AnGP7!o3XXJc(t}xvkTEuHNUGOY%~I3DPiPv1@Cm&@}$^OFc1QuB)F$5uu^vXsD)mOO;+aqRrmg4T!NP>pvTZJA}7>K>L~^EO2`t#k(_oh!}yFlQ=qcQ5Thv0l<=>Rs*`8*g`y+d@}g9N3&iP+*#RV9NMo5~Al_Ibo|NMk2yUG9h&-aaB`SD^Y03GaN2H#M_9B%?N4Bq;_%-4fX-oE^4}~f?%srqXoTfY`+z0IvJghP<Q55P>j1E_ugaI4Z*or)tc;p4K?gsgDB}C&|63Q6mG>dlZczk+86$NJ79xfse9*F$syOch#?Z=gx?Tdt(YB4ej&r!8zL#!)tK>+N4+NVJY-zXu5yZLaKVCx(CONz9qf@|TwKqOMzR>7=A8`IcgZ@@w3n!dbNjg^tuZB_V&(#8zvG}pjULpLu_$@GKU9k2?MeR{E6Wfly@+ymjUU+c!U+tOuI+_&~>gHMBV?V8(>0wAwZgSaV54F$lU7XwQk$J5cUKpazW+_L|2qW(UM2(ij^(pfMXs+8&~x|Whsy3~3Xd3QY)s|A9XSkB^JT7^Vz?UblZSE?}={(DrpW(res6$3ff;e2gMW=70>OP(9Xi{LrzzU`M~`)yXAQ-V$K{a=KaI3y-VM!&9?kP{XfHE0S_bc!3rH!Ew9#cu-UimizZkkHVwdu=(~mzlcb)X$fu8k89!QZ)_@){C)`h?f)d9Db-w+6tt@Tp`g?Y%bJ-aS&~r!iR+3taFa?i>UC0W0p))+8rhJv1FbS9&)$xhb~?ktbdKSdD&f%Z9Zl%2qrizV=9p#Zkkp!j1KHnl|mD`KLn;ErCm(_G=X;pz#E`U(*<tPL5@$WxQ^F(@ZMVLw<3%J52$h>K`ySqKyODXAwR7|m@qQduMz0l)-Q5a8CNOv6NQn2X=rM>KycIg;=Q=z0uvD*RjI+~0mOqhT*I9Sy}6-WI1ZVMGEmJ(M{0I}M+Qa|sPLu$PZB!$N<ZD2SbnP;6uvL=u4z3yZ#x5-%hyf`obXUD>_l8w27L7*3e(_!dV8v!p9;?8)i5I-oT>^s0cNR7@l#~I7eXu<bQy}oLcbHmlYYMiuhf!7y8AT_P?S2V5k`{G!B)Wzu=1FBNJLs>IA68~TN$|oi%lu*C{l-H&~lT-CPBRmMq*)vJ@8c;J$VSayrWvd0`(HF#WEUdbk~s9C|VayC5wK7PS+|uO~00a<1CjLq!@@C3$*dNB;6FJhRcE^)s{*3gp-8y0g-6OD_yvJI&GQTx|GqD9Z|OSicjz>5$7+2BCGn1592IqRhM`P##notFi)g)C&*+F!K3CQGAAWz7+)1}07s%&x1h`oE`yc{-gW@bqEKV1pN?P)3vzR@XBk*kZ-u}Nnezeiz5-CWT(lv3oyCfNGhct{UA@%qTl1cI)O0@}P0(7LuBJ7-ch&4UFP*A9<%`ZX*vu<s`y|e7#%$giNOl^(wYO%jCi!o?y^5NQMjR5~=<D<(equUEM~$zYbH2C4QvkdK1d@0|5vp5<>X*Z}A70*++<^lAB<!A$%q&b<@`S93yzl|w6%M;faj^x|ouXw-yJ>%bk?xLrK}RzV(N)r^o0hm=maP*PxD*~MPFvMO4bIGN?v0cz%@QErePox>1UQaX%=v|jj3f|vv~R-G;E5uo?5ObmeLqjCe>Oq}a&pZZa5BgxW%N4==IX5i9dKo*4CJqxijT77Eh4(m3ztf{GOc|g8XQ@xQRyQb@a+#j%*xvBX@nJ-9WXQyMW-wdBRq;dm1P6=_`>JGl=;5mY9er_Q<o@+?b_-l#<qx*%|q|F3;In_j2D%gRi(GG1kn<B;$f#~QbaK#Ww)U&d%vm@&C|z_GMz0yR-|qP!67Fd<(QBn4b6g86xp7a0Z8P4*Dk6=P=J;ny!K3W-z+h`;;Ow}RLYFxLW=APtcSh&*oRC$|Nh=QhTrFjGE8BKa`kl9bPntWD^*FHzJx%qZRTPEuHW5$JiY|wTdKXZT_0@w9Q#S+#!9**>H8FvoYsno5}>H)VDw)s;S6tMnNtxx<M@R>z|2bKs{z|y_W$OK*M8!^AyRe+tnwjS$w(}2{+t^<1hu;gbvTJC6{X=(9!sNm3j?T;;_AF)%O+AXgB!2xG9!PVjL+NyGlkWGjX;%^uANJ<zJvnjOe3w-3!?N|rS0WQ0Kjr!?36wXQM|uM=H=vF*WdGmNg*K(umed2A>4zvR?Lu{<Lq~6*@Ynv`ag@9P9x1_t+pQBA90b!+$M>07G|x-6691fDD3P0W5_vmuK$B+VldXM0vuU3biIKA^RK~bF9+~_qzW*Mv$UY4(n|L3XGe`(!(7|sinp5%i!-VZgUprcDN?D!b><3_Gn#bMoq#4co3SnfJ>7)%y-SlCdfm*q=KrY3&L#mCkel&XPvgRTmlYSZJc>h*5sBMN;E;(t=p512bPrNyN@eji4hCrmR&LvN9e6-+7wOW~JM7>VN~*#}|EfCF<ZZ84wwHt_j?6)KekT`Wq60jRZbcPIgLf{;k7AQ1n#kJtLn*E>6>m`njgJ4-lvF{Yr;1I5o-9I>&I9USxRABRX$j^TKO9K3)4-Y!Gzp?OG$<W!-{uunB6|xHw`tEO%`*d%sirJw#w&;*4g&uxu6rqViBTEO>-&S8ZhU2XXI~KhHx+tWC+0?=N_a5n)I=oMSx|LSR8(I$^LQ<s3G6C|1}m&{ZsHmO@z+jQ)(J4)*(7?EQsQInpOJ!qD~@=bri0S~Xnv>$)%j*esHx`=(Wpy~T?_5_AZOX8R4Y|4xtH}L^j<#dh17M;1Zr3nZElJ_xRhVz>^5_Tf|^aXBf7lIN9-kd5r=-3$fGpX^}hG#$+q?nct}tF34A1;9HzRH=g2&a%H*rA6O8;k(I-DL8V%ZMJ9|5^1Crm}iFtX=*dS9a3Y~wscu&W89o@Dbl<ID#p}nEDIP_>=H+Y0Br;02~DvW)d7+xNugs)QJnxK<<d>0jsPS9tRV(RRYXmyjQ13@;eT85iKqUIFJ6!cmr>|NsEmZ7=+KHe$foQXyADr2KX^(Bf2E4^i}LCt7tx0+`Q;}V7UgA^F^<~Qlr;(bkgZr#)qVCFC;YQi*1XH2JCI~K4rZ{-%ymA07O(#}6BvbY4=p;pt6r~3KRD>9moq?3##5!;dUD5|FTgwxo@-G1p)b|c)d+78IUJ=&Hk{eDNKw*}+4s9uP8J<m+a%vi3{b#Ii54(>3QA)tg1b*8rohdGGU@_kG8Cizve#>Yk#P_bEI2X=I$D3JyQO#}63dkHAT<|mC#0(!Nu^gCzim8-gm`xzByt!&py33xaB%v_BJYJQFE6J^7A!r3xlLaLmnUn~ttHCp&%qP4Bc*y?wB{4Q*#IxYx#QnvDM!WAI^-=aBT;JH=-M%91eR?DSN5~8b>ExWPK6~D%f(VaQ?_hgnnD>A;#hcPnILwDx!Oq#hWQg;)I(O$t$yB0iaE{^=25NP)$VS6T*Rwx)OtY<GXnLd-qv{}+AReKZuiVHMx&5Y^lzW&;$OX)K2z#v1=wX83($IrB%Yqc<eW=_$yx6Cgg+#dU(g3YCC37C=&9|5!A;UlTF`<K%>N6%(Xpz|x)rw0W+15KUP5>jul6D5c?fUmxaKHJaW1vA<47wzHQzEBJ9UaBiz8)s?ca^uV>4Tk{;+xqG5_T6?^ahpA@`1?nrAv-=3{JGGL#J|Z0Fb>v84@Vri*=JX<v9SL_AIHy0b#e~@UA6Sm)NVigVhR<LhNnAhADQX3X_s0LJ06l;(^qo8qaR|uPSp5mfb{kM0CG?phX'
+
+def _v50_package(name):
+    module = sys.modules.get(name)
+    if module is None:
+        module = types.ModuleType(name)
+        module.__file__ = "<bundled-package:" + name + ">"
+        module.__package__ = name
+        module.__path__ = []
+        sys.modules[name] = module
+    return module
+
+
+def _v50_load(name, source):
+    parent, _, child = name.rpartition(".")
+    if parent:
+        _v50_package(parent)
+    module = types.ModuleType(name)
+    module.__file__ = "<bundled:" + name + ">"
+    module.__package__ = parent
+    sys.modules[name] = module
+    exec(compile(source, module.__file__, "exec"), module.__dict__)
+    if parent:
+        setattr(sys.modules[parent], child, module)
+    return module
+
+
+_V50_MODULES = json.loads(zlib.decompress(base64.b85decode(
+(
+    'c-rlKiFO-DlHjkD<(=1n1VA9=tJ#L%&=PIySu(YhJiR?69#jMhWR1Wo7*&u&YxM6MM;?(!6#&Yf+3AI6+9oP9Bd^HF$T&aTtEQ`b'
+    'SyzL%hX<2YxvsOxO?FeRZYNciuBO-bj*@%xRe6(4Ci8W@US*R>lHV-LRh^_oQPydlmqm3^sBhD9d3#a3IDYvu86_Vs?#<KHO}4rK'
+    'DCZaV@bksJaWA>JcbyiqiayiNn{@RitNHiGi(;0|lU24{q_>l0xyYxtopeh5bdN5I1pdJas-(O$U-6%+&X&;iO<r_v()XQVFUgA<'
+    'D-Eu)x^r<4%P;Qrl3_O~SMcv{FIi-TfuHn~gRX_P%3#U`&1x{qvL*hZ>z*U1F+#z4sYa>+kL{v>j_$oZ`0J$3RxqM;fvb5z|95&>'
+    'WvjQedi}Ck+$Oq8QohYrF!L%|SJ^DNgp%tl0U$|wxuE(9@66z$xF}vh87%!GyU7aPizKgb%J36@qzizY!+I_=_*YRU<s7!{RxNH)'
+    'uhMBYNRp?paVbE1w@R1L)i=E)O{VMB3R?7UvN}y}vRRqWdN|n>HvKwVCCl|C%n_ERs8{78d6(DMfIZ2ZqI{PZS2*a4qFgS^0=vzz'
+    '^Sr*rG4ldIZ`+`ihgj;zO<G@L*+ud4<k_?1@1LE(mUnmuF7Ca2b$0ys?@!Lo{(&2Paqs!bv(sPHpHH9t%zyp;^z<43b@Jnn@P}^v'
+    '>h$^Xt5Ys{e0+9x`byRR>Eu}b`NPTCtEbPN{`<)pwS%31ad!IT*T=6W-~VHB{L9nl$Ilq~AD{jmQCfEU@~4xN7yQwV;K$R`mnZy@'
+    '1_LMH$7jF3n*9Cb>5o6XB3O~B9VLf@p&7TD<Wcfy@Rj{Y{kj#oTda3zzEQ77$-&^uU>)%5BlA_S2!0hHd2QT}a+P!mOzipb|CyYg'
+    'Jvli;0&y^e9sKF!$>j0zi{r;nU;Tr=4S8$vj8BU7&1JUgyiFJDtcS-wT`%g<a4^(ozFyrP$@5x4IY5~&%CzQY>SSi`r`fVjI<Ib*'
+    '*~w~Eu6oJ8VKM#PJqpge>dQIS3Vc2%3>@UuJTLM(>+tt(k}aytHZ+r{uCv)Boldi=>RguTYBs6z-!t9kb-I|th;2dg@L_W3^!ve%'
+    'u0z#<O7#-`SGVUCw-niy4XyO&k9Pd&BEKpoM6ng^143Y_E+6RUX+6CrQnkq6W(n4YGrNYfuPMVSyGfTzMH>>>ntYblK;f3FY@WX#'
+    'Xu5zP;jrgWGKvyjBtjoPs$E4g2E+)^26x3J^;{;2eKNv|v`a&7kM~mr&220Cf{o6{)ara}Ya(J{@i~JYW1ngS-_kWgr3w!|eAI}y'
+    '%%(L>2dhvWH3!wDx(r2^U5y%0fbH_C?(m|xP2B1*8tj3}x-cT$vp{Yt8)Wa{ewcO6?VX&=0T7U2!11)W$~tDyeF3toJK~|7+v|NC'
+    '9i%ShQJTJdAZjiM<D7t$s~N1Q+lB_n1u#fza(<*oIUai;H9z6O^q{z-)ot{ej-4aORqdfzuFC(QzUg!$*1@Go`01XD7hDfk@e1zt'
+    'CugTG9=>>X{P+aO#ImgN8k)Vk&f(}}@3SdzU&&<#W6bD`@Q9p~@jn3Hm#ZB3n#}1$eZy`5?HT)ZZMBZ}n!|tIWVc6&VBm<7D~`?9'
+    '!rg?Ly@ZQlOK17C?x@~0#|Qi4ble>P&AzERT|?>U@Dy)>M=4i%W=@<7M^uQNRoYEtS`g)MUA#j8EnqIgF)*C>JEA;t_|*<5J`>^b'
+    'pCLqhJ`k!?%cBqqW}Po+eqsRhDS`mvLSo8A6{*U>P>&GrG$?Mm;_$TSjY2l`eJ@$VjX6=295yV28$MgXD*G(HB52eq`Hn|m)|f`&'
+    '6p7uD5SS_e?^&!f`&Gk%ksFZb1a9nf4vZ+U(|J+VX)(=A_r0Wp_|Z%1HE`Zt8jKts(%!?3gMhWTg#jRT>xSoq9?qA8an~7A2b*<y'
+    'WQE=U=pR3HhRL@h0Q#-mF1(28`+NEQ{C3>kyiT7dFLRhUY|>R;WXK5~4!-UsxY?4F0sB)f-U40;+V$-8@y{nu`q-I-ceMuGfEUNB'
+    '>s6K|Q`oW<kVOR8S94(uz09D;WKmAv;2Q|IhZNveP_~fJn5g3J%#g3JM-cH1Mgdf*Tq1Vi$3ffH3asqW;qU526(t+jOC#Z}OU$+>'
+    'Xe~rdAh<%+C^ZulP0dtH0PqX1go}H)dBB#t9qSv3kWx(~1fDG#U=l7|+#`fTJQH=gcuM^ffsmmq3F=_%RzX~VDjH+Y-+SdLJP6ap'
+    'q^eizDLx{-XBW`MSHGT}1TQb=yLfy(KE+k}NOTcL=WPt0KKDy>4DkL&y!i!QzOmXfiFP=%9_?>8UKcAUI{gNA9qBnNw%=#G?ZrK='
+    '2YaH(g?k$DAD;%q@j85H*~ijv>#XAI8_`<s<{{iCiY4`N;SsY82QI*^pJ?qP6?ojCee6kbkQp&iT8-v<%aM2Lc6$!KSJ}pcPxl)&'
+    '|81R;q=U|_8i?0?RhEeOYCP`yx1Ut&n~q_M21Enk{P{#efu?o$WL;(iTE2z-g{W*GMAp^xe~yzvCfbfju2k~Cf^p?vy1HeUwJc}?'
+    'OnX@Y(sqJ3<OvY?8)O~d!V$TIqi<wl)q1&H+?uDP7AN5pHM<EX3Rt!O9$wkVxir6g02?WIX2B{WAq?J!v>r&jaAA*<;b3Sm3h_t_'
+    'xjtHEYE{0Y7mVrIc~FKd-I0r{L|E~$hhXNCBEc7Z0n#YX;lubSz#i}V6m)FsV>(@xD5(V^))7<=zcOJ4TGt)GzGtgWh`rPp*+;c_'
+    'kzRGtIo2H~5BS8PAj*i9M8CIrwwO(jPF0K*{)uB+8V*>~*!CgAftUfUhUS5+kl-+saGt7N+w@cwnjy>%&Lk0oyUr6j71ih23Vs1A'
+    'znY|P(|nP_vBY*iq<|dVwqdyvKs`E#O6a;mRK`+ecsyJcDc)>!Y;->)PpTph#bNLyq{HEk&XM6t(XJHvHpz~CP{d;hwnA_cJ)gs1'
+    'wt|GnCnrxFVD1xC9_&y`^grTI<2dGsV!Q$3ILmXQSeXb^=6StCMgZH-mzsfLnHg0g9aua%r^<|&@p_l5EPdl(tU#&lWqG}gjn)Of'
+    'bS7|j&sK1KH$$K&XGhHd5Pd8$zA9I6=c>}KZq~KuYr25jVlvCs4vQOj`^(O~&)k=;S|*mhqsU|qTgJtUY>wnFe!?q!`Kp!9uddrF'
+    'ng?;XCFy0=!EW$L(q}*xF8=cX7|;8*+JUWh;8sH>46CJ3;gY3>X)n3NHU2$ca_hr!Pc;Tcw;L?A=3OQ%#gh_3Xt!QuBRC!90!}4-'
+    '!DYVRW3}8g8@*bsGnX}bnJpGc_BMm3rInZ|%Kx`ydR><I)<wZ4K7>iLR<ec>`KXXLQUaJ!qi~<A(Mx~SChRmaziGw{w?!Z=P<2Fa'
+    'Mjkk2VrGj1ZYa(%>S}<)Fjcj>T4Lu&z<hzO*AmXz8}}}u^#fEmV$qVv-n0112#>Ac${UL-uMzZ=nrb?%U&%@?O>ZLn#$(WLYUKR%'
+    'mVMO1G$7t26dViLn#U=MBWa!kBPo8seRNrQUlajjH%-4CCBw}^HQduA!e#Mhi{1|4Q35r*-tbKDtcfrO;)!Zn5?XLS_s!@$(S!w~'
+    '_oWe1-@yejK-?I;l=#Tee-8)=ST@l9MAThG1O^>u(lk=bT^IzyApGZkBDBGB8KHWtHZ4%BfRvVt^6Fq|9*G_RY5D+IHb|FfIMC_P'
+    'bb3iYwh%q<<*TPa0PsfYtdMY3imWNZ0`!cK_*^5o4@Rk^diek0(;9)>`$*AEu?I>7;c9}Y)AJ*%f*uDq7q`<VEnNTyFuRRY370%r'
+    'y5LfSKaUs$J=64D={W-R$rFONOW@(HV0jb>JzXPm<~2F;MK?|-8gY0+-b0E34APk@x0i2p*F4aX{R{R^Jtl6-x7nmF-=(XWklokm'
+    '3eFJRU@Rb46H(H5UCp2t&RVqy`5dc%QQ8%%s6;ZRA7IW#i}dDlmI8PnzDEi17W6l>D({iV*l)y_+`_@qKlNWj!)VknUZUyTi+UfS'
+    '92}ME@_NAc9E$$mi{aaf=7i(p<Rv|b-m{H>ImZm(yUhSjjx~S>0RU7=+-?H!%jwyxp9lhO2AVH85Wd?C;pOSC0>T3eAy8w9^P@Ec'
+    'y`+F<1<@A^-91pGNhxqW38GQ16u0sd3#^OV@p<unoP36dm-QjRRiqKg48lceiC`M7Z-6PP^WTxNGj?VCpm%vpG*5Gx$WtK0t9%BG'
+    'A{v}w6Qg6SuT!!CV;u{0pDJq(;s7si*{<&EgKzG_MZ&sKb45WqUmtwkLs${38-0fVDRtdDC|@<@!Q%E+itAu4qW@{?=}%Rdi(+k%'
+    '^5LUzhoV?kPx;#qRK7-xB{U6xoaQ`GVs}>QyNSJ0j2@xuz6|iKXolTOoB<!TsUuzRac#4#vz^9SsJ%OQoFoLRdUn1Zj3q}3&w6|g'
+    ';_J9Ul}U?aq%a+;5LM4Vqt6KR;O@;E*Zvs_ytR&-kE^ST)8Y?xPvgCdcV1;~VZ3{)Tb@e=!>ewsuH7*XCa&{_1^;dz$a~>peFx*h'
+    '(V3+;fP#xa0z20#+OhY#Ve{q@P|vTKYm}YXi2*5Wh2Ov$@yIl1<aO;mWyDB)LAe?h6b{3pa3#Vz+h|Cs9$;UaY+Kz7-^p=wH!b{6'
+    '$7laWtdMI9BI^kiuLn(%AFZYz$+qTcp;=vNLg%y|j=h?~PR^-#aMaERr>HxdD6?|r5iZjzGv*FA<;;^d9h0^VW|tJ{4c!06@?0z6'
+    'rZAQ(ZOVyO<4fcc0I0Hjcen&?lE0NXehXva4BFu?a0ZA^AK*gO9FcwfqvY6pR<Z@>n-If&4Bn79@?AJCm*t@Y@{LRD#b~F8!wGY*'
+    '-jM9*KYAEuM%5}{l+q6?S7fb?cdltT^uY8N>5e^{C3eJ_n|l@8aL1k<dFsaAc?$ruvx(DCe<N9W18%VW(GNJ5K5M+!D>xJt@IpwK'
+    'uJaZAH6>RD^lMnb>4Wo8yn#`@V+*L`+J{EQ(`i*JQ&5uJD)A=bl9>@!yrHAW5@8>X6%eCDfWRQK;?bKf)?_JF!LjCX3p1{&E~jq>'
+    'f6mH#d+skfEgBt|??%a2-wb1?@Gc{e2p=7SzsLSS=yybGg3QL@pE1e?8jdtp`$F-5T)M66ELl7sds&6IfbgJF(2R(g+bD?a$7CGE'
+    '_Wn$Jf2O@Z)83zH@6WXNXWIKS?fsed{!Dv+roBJY-k)jj&$Rbv+WRx@{h9XuOnZN(y+705pK0&UwD)J)`!ntRnfCrndw-_AKhxfy'
+    'Y46Xp_h;JsGwuDE_Wn$Jf2O@Z)83zH@6WXNXWIKS?fsed{!Dv+roBJY-k)jj&$Rbv+WRx@{h9XuOnZN(y+705pXtBKpXu;WO>P31'
+    '4Fg4|rq4fnxUN<YFZ1GIR=iD?w{TAskF>YXDT;aeRXW!Q-RG9td&n5<B>+76Ila1C<<s?o%&Dq+J-ao&PRi@(?cu@TAW5(AGDg`g'
+    'oI3O)KsF&mzXP?%d`MC<7w^AY<u$xAE()V!U?D9%*srr9L7oU-!l+6?SsRPK;7dtEo3BcCpu!*15}mH#l~<?}`rA5NXJpt2%mJ(='
+    'N}=)C!*jcW-C5+9^dx|5wYo_c3wTwMmM&Y(VI9^f3GOb6`^oFqyfl+)QP$P#*L>9i40aNuuF1Qr!l7s)&*P;ge{-PFpaIIdqN!zc'
+    '^3}xAtdi#p10o2<g0m<KlJzpQBFo9;iw@6pm7!P!v6mW?Q<xqk_F(Og(ASI?(d?gcj!{DV>3W59F<YR<8Yw4C2u6)J=?qp(ImW>T'
+    'GwzY|$6UFV&FA?vPZu7xu!*WBo6B?s(}hK@U}t{LGV(sjYqTqcmayn0)O-Wa(*g&c;ag=*)<%~%c|{16uIe0j$akW9{rU~`3;Y0J'
+    'dk$-itR3vuAMW4w;_T_;lgSUyPEXGg(o;V_KKuFP)#SzT+41w2(lyLDVRa6_?4cLc5SXnm@L#}X{k9@K+;H#>U2o+T|2phOJi9uN'
+    'MEftP{WYu`-RPv(k?_9mMm)wkUkwd}!=VddIQYVa@Rfz&dbf2B4lS4ie<EMgMDij_S3EEQ$N0j*Qdkg=7=)cX1H>PXWNYON*O5&h'
+    '9mXaRTSx73*EtZ2aBz6&O}b_D+Ci^#IF$4MvU%{Ld)Mo(b1)2c!uG0XAwP84OV5bVkxN(3cVv^SJ@D}9qc0g(v7ue{JhKsXqfjaF'
+    '{t}#f_d#h|*Q;2+UB{~~U1lA8pd6vOh_aVHV&elKA#lX?ujD`Jt)^b--K75=e^=wvMkmH@N_r1kh90|8yn|Y@hWSNW;8r!%PVTp~'
+    'LWBw1ks=QZ9S=u$h~-sdOI884H9Z)%HXbS+W+Mo7QrveB?FiC&+6$De(1(a}Ib2Nqrzlr&b>_d5Ndhn3LxvHIR8)PCd;?>>Z#P$z'
+    '^+|`C+`n)9Ez=w>e`|EynWJ$I`ZO1Y6-Ts7KHywGTYV(+79*Kwu88io4x4fkVj3wJ8Wz-qey9eLFYYrQH(o>03r*jfzpcwUW3@$*'
+    '34enHTwV+3)s3&^UXuN`&fz9q<?9=DBzk<`!nIUP_1~;S0zUN;#X?-de;bXKkp4JV5L*Zv>lfp-qX+h_9D-z+fq%+@wZn5K2LU@p'
+    'a)gKafXmUU3DAGKq2&QJd>}yI*FZcarvNEN2k2nN-SZL4JR%%bznq1$VE!!R%5F1@{^nUokaoTMku48qVb1gWj$km9_!rpH8QW}-'
+    'P+cQ;UQO^hsddzV!<S{bIBK%R3RT^%6kDuesQh*do3-F>je{{h=^gA0tg<w7jSMh9g6w?cm0+AV-`|?I32)FWy@7WJyzO;(27axx'
+    'Fbs$rapFKQ2Kp^UF9J6r!yFzcXv9<77Yz@rkB=Dyg`Tae9Jxw0Aj4JPPdX|zgCYif_1|<3j4qFX=fr^>GG$a>G2d+OJK$n3GwLf{'
+    'Eplk8g?sRjLTwDqs8nWT?9`<#vi?%J>MuvkU*$JIsnQ}V*Ohw54&<Ub3N9C`nk@<Y(v(nn4xx>xXF%XOsl-j6xQVsd+chx2P+Kt@'
+    '(=+0d2$`ZrZ?3xQRyW|9*v1q^{bQA7o!2H}L8puW7&#`gKb$tT7xYcp5Fu}<WUp>}Mk*ai!L9<q;odcn;NI(nqhP(&(77m31heuw'
+    '+6ETT_`ujmqKhe%*S<TizU<uLD$}_ZGIv~mZWCJ~7L=gtalu;RLu|0CGiEr0Dy!9{-lUjpt}d0b9xkfto&}@?<(b!z;#Qjmxs%Y?'
+    '=II~VgnS%{jA7StmC-SaO2JT!K%7y6^jwNNtWCJ)irBcx5pz`NFi+Bz3@MY=LU2taJ;1`%EJ#?miU_lVv0e7ok(MP~Fk!wn(RP?3'
+    'jz-h<(o6bEbL=7ymv*<cG>sdWN(#zFuBEmaY=gD7-aBVvjh1_OLlFm#P6R+krPqRKJ$6+yqj00;)1b!Lm52`bXNP;}`cYl{untA`'
+    'o-84$Z8uyB##3HJ$4-u+jH6OvDK>KkNkNZjyBi_K@3irTd8qY#pn8b1nQhM!b<%haAMoG$S<-SmNu2Bmaap@2Ma!FxXq{oysaiQZ'
+    '-@Aeb5$<ckf*QmG?Am@(1I=dQyRm7ekQ!DTE#@9-59M{+pg;6faQ^$!4E@}U+xG)0SNRpW9(vS5EEA2?>u`P3@vzWA6b;oODKY10'
+    'IYPOX{xA(mixFJin-T8Epa<JRT|`jzvr%;TjpRhz9g#j*B8&Okbs43Kp{n6s218qA%QRov=xI-t189GaVFa)Wi;0yQhN~-Qr1#mZ'
+    '504tS^zp*L$Z6ac+8uq8uvRsa@!d=_tF{)r1)3_5ZB@@$LBzvY-61rDeu1^xmUX2Qz2<wL;&r1K-)(tdYtJaBhtcGmbD}I1dP;u@'
+    'KP@z>t)9EaltH^PlZygs)A3}p`IoHMCF9Vs!(PuBJd<(FPlY3Q?_Ump*J2zNja;O|GRfAVotz&&NOa5Li)g%KJMwR3^d@GqWX}%m'
+    '7N^4K1KlOp?nJi}T*zwl4emm@oRkI7h<bWGa$Gq1AiN?)VKPqvb1>{izL-4(5JlZDi$0w)*q9P(T%wQwe)72zN6)-^k87cZgBK`2'
+    'AbFxsp8kjmnNyZ`;XR(vBIOt)tR{m(ETA{@Ona7V?vYe=JTqmsN<jZoAw&2!$493;^V$@UT)6bO86vx<kVXk9AB^ZZ-{ZOsiWb=C'
+    'YF(uBIqTGU3K))L4QsKUq9aZCyp>Du-d?iASSQ!YX#2zP2rwF+W%!?uv3s_#KB(fxm7mSBN6KdTmBx^;5ZC^;t(XShSdL<ZTgI)}'
+    'u(J2doNgJ5ERkB5w-aLujis;{p7&FWruz<tM$Gf3_1&$E@t-Rae5-9dM|fiyrsg=QmMO5&d|ZH4OVOYZA6a#d;uFTPDZFX`y=r}j'
+    '(4j#c?KE|x-lW>JlWnrJcxs-nD%FbgrYsM_I2cOAG|Q%JdLUqtUjeGEQLD?xiQ(Y$n0ii9RIX1KSz7QsG2~&60(9#BZxR}@u<wvp'
+    'ef=8i0{z0BewzUWd;J<k|D;!i7n@SL!&9z=ryMKtDFmqnRsj(zYLu4YC@$0K8x%(&J#-`aG}tA2riZXdb}-r!9mg0{BLLr0nL-0J'
+    '%9&^c>K}BQjR_SZd~n(vsq4@7FHW}|w#6NQ5RPmMo>eWm=$gEq@UJ3bsv>Rc-1|xJx5{u=8r(_SdXBBvVqovJF;@0GQDm7B@tQ5{'
+    'x3OK{-e&!ewGeOUfOlDKqC5g}7wA61tEA^}t{C)6JF>pbbo3=3%{cNI;CKVu!%K*?j9D)9gbBR;o$zULQDT1iYCOww*-@h=O=?(C'
+    'qG_DuH+kI00}7z5opBg=J^={dMRmGzUm%(hyo#DYH{0h1Orhw-a3S}`8>Z{spS#TyhJA>tP#pWWc*i_&c!+3_9>wmAHnQIA(Z#qB'
+    'jho<bhD4mB3pFyGHbhp~8chOJahZp<s0{J-Yu;Qv<V~CBayL6-={ED;{%AzyfgR~@!Z_LPZsMHjZfH_lvUJA~4MP*~_S7T<fA=HQ'
+    'gWKnYrgkb?o{%2vL3;7@^yjTZiWq*7U&Ped7{^OTRZ~y<nO)rb{@16^o=lu*EH9oN|MDsxe54`p8M~oGU++7FP)SsT7B89`IR|oF'
+    'n4{gWO}`(5P=m}#E9$72k5~;$*^WF4Xz<Hx_i-C%2lQQe`eQ(sCHBiFO6;J?y3Ug&R@p=alC9i##5mSM_*~KzfZu3yghS|1U7Zof'
+    '@)o}hFY03DKjtIQHu`o*OWsCjORlP3M{P1UUB!E*%AamU_ktLa?!V)F>^55tzdd|3ApUle71MH-t)giVPz8@>wP<Zw)kx5;;L$?u'
+    '*b|H2P}4<O!RvlemP_-Z*<FxFwGa(6wMDAhV>ZfF6=rFjPJx|9<5^X~d{R~FTQ(}?(&OS*+ig;mua`0}fet_An_Pyu2cnq_JnKf+'
+    'UeU8Z^o$9k=7F5L;QQm3ClfLPi5in0ei^Y4eH2R*@YS%vjuXu|1ItV_%=8Q{#TRWvdGJ-3w*bu;8*&T`RgQs|Kb^jqh#fG~`u_Om'
+    '6J=bg*Ue7W8d1J@`tSdKJV7X`s?FaZV}%9nzCZi*m&ZR%UcOL<v|%59h%wvtAIE3EOkTb^Jv&iN)y~-(Xs7e|?Bw{l99a;r%qF-9'
+    'W_9vv^7!}%4c}m&u)lqNdiv_8rze{`5C*5mXU|X0UQXETMvr~BKx@kAl*8fajr-&j8d_dzOjwWbc=kAA9NFdlzhlh00$O*Iq1y3g'
+    '0(bsAzgqJZ)Ny{%49Hdq#;*sA^y)1ss_?;wqjB1hTUq(8c${HHj3f0_wIIvmLk{SD=#Cos;mdS^YoHlJ)eGvXzTgY(;vU9dp58i2'
+    '03??6WS&vTu8R1jBgFv0u<?&`T6?n882f?!6#4Ch!Jxbnp>%H5cr=H|`%}W-Ay=ndmR&wC%7Dzdc=7@N{jq_&;V79wgv_Ssl#$4k'
+    '@#vY+Iq6|xg~<o}_s8a^P(y&t-j;5;;jnnXtpih$k3aB#TLxzXZn|WpIojsNh?|X3H$QRO8^dkx9A~pBdCdL$AJ|@A8o1NJz|TED'
+    'e4-XVee5|P=Jb4}-X{d_BNE<CAWgih2vEcSYA{+F*eq}BI?YAg#0C(XLM*!Q(Bt>k!V+*)iQUgIUru!mhi8`Ez@R7al$gxY+l~%S'
+    'p$36fsv~+BBRL!^AotaOp#_<W_w+{M?ZB6o(g~r$N&}~=3DV`Bj@kzU&=gyj>cT1A175M?AAyWv3$bQa`?0b?g)#JD3<=M-$C!g0'
+    '@oc?Z<Wq{wd`+=>nXFchMHaWht6m>F6Z}{oU_c$s%9$`K(>L_qlZ%i%)W^`7y|^yaF#JuB2H4aif_6Aa+Ig(pOPs(JWNWr0(^(Aa'
+    'tgNjx6samYaBm?oHC;Oh#gFUa5E-8JebK97SiCLOE*3Ial2?N+@m%vAEIgJsK9Bm)!I%xp?sd_1+B!>hu(9V34GzI0yP;%JhvM6T'
+    '`gS1pH-a#(|B0?ZA{XcBuyOI7CAc5X$|1Pip6S8An)hM{n7iMzLYvajx8$XM=f1>e?vag`K*!Q02D*=%G%qk58tsE9VP&OL)sPKK'
+    '7oY{%aq__)3<hICGgQ=Eaq<D!SRPeNbA0L`?I$O~<E6D8+YvWa0<N{ONLivcm18WV#<DD%Mf<c0=J_HOOl*}c=4}*_2DGk2Nt{+Y'
+    '>w5$N4cM;5uLx`E)q^i#HE;X9CSGaSJg+9=uz78x2Qo5JP1u=$x;HM*5WnjvO;uLQug*pL(WQ%;LOaygJDjl2$OjU-e!zc!WT}~4'
+    'V2jFvbO(u}+UbSpOJTmgqQVZ{qcLCud8*qB89oKnoRAi{{$bhxSvwGg5JUu4)7%Pv45e!rDz)~983{7#RHw&hv=Lkxk-i&tIcr;Y'
+    '6U27oY6B&iSe~^JAXMXk<C4R*wOimXms`PCRBMM$7*jDrqT;11Qf+i-PFPzHyxT*`3-n+=s@?+KkLJ#mlEkpIg3)$ZY8|qD!g`9>'
+    'b40Df2OjE2^DY>>xi}dI`DNftQ(c_^#`4iDES``A7;Oxc{3eu$NWb3bjcOtZY6*$59uDn$+{l5XiWl`8%^PlV;+}U8AZTJ-Yn8su'
+    '9O4C9ADP4<YSi(}BQC%(E5@8Yng?T?AGYylLYb0VwN@AzdN8RNiE`x|gCr^=E^nuN^DV;~g;nV$ReEpCr22)^L|=2;irl(_bt2{$'
+    '!|!8nI9u$_eNM!X!+DTw64Ske%D#|}XYfTg^7d;5hZSFBt0%l5Y9S84=tduc3X-rU+D($U)q|od4eXQ7E^S-^rF+aft_|SGQ+dKV'
+    'jo^PhNp2iQX{1aBzdraYhW_&yG(K-5{*MC$$35czi0_05Bl@@ZRdFRFO6aB~nu;%y<8}CnQL{Y3#AQS}#c(`!Eu4DW$OH5mIlsJ`'
+    '4qlI(UtUcQ)kfZLnGi+%?Xy3l57C@DN0DUD5k60dqB`5SU&iw4g@a?x>dzWkEKNfDu;6%(d>K4mPI6uKeGpVM41<HV+3b&<o+AB3'
+    ')i<PO^=C&fw?A(*2z}e(bcJdg9iGt%&8oFuVvHyDLDaYE3Vpuek*M9qIoj1Djylw@SNYWydf_0oDGC!Y30=p1?{U;qq{(~@J&;MI'
+    '>7T++X(RgzEz>ay71O#ZNiPbUbh}(;1?$k!u=WzR{ckqHl#X<<zN~I5$}CaQ@Sz>7B*w2x-d$rPEe!9(?%^{n$|Iv7?Wap~qp;E('
+    'APR;}?(x!o`3@nIw$RNxfs`VO`sbXA+&c02CJMTuej4`NSLvS=oym((G`vH6CO=Nn@D350JQ!aM?--+L7=$?*?i{6Q=!9t+?i#15'
+    'c}2I3)YLkM?P4`KQ;<X0F<MjPiyyD)PYjCG94}}e4e9@rXh=AvPmOo9k4v<VOY}#^CF1Zq8T(u}BB9M5WO0)9AXJEI4mTAov2Lim'
+    '@8k2Hgb5f7p;+7KTTn_tMAC%_7wQF^;1<Rk$q&k6!=qR|R+#-jX7%kl(mWkIB@#8o2QA0*V8kt@yVa=<sHu{@&&rIWoTsx{^1lv}'
+    'D#hd#b!mbf7^$?EGYm)cUEq8ng17hv3Tjkh$aZ(tv$rfr_tx<h=$<OeQ__fCjVYQpsG0u>bjF{qpk$BOGk&{hi?f@XY=(}D6SZ@S'
+    'q0sKCGKjcSR9<3S>in(yl|xNU-1F)bIY(C*&GD!vh?$e=b&0s|+EG|?(4?KTMi%gLX6q2!RZql3Dav=wH?5;pzpu+x{ySo+QOfq>'
+    'CLbQgHd=Uyl#7)6nq)8tU2|_Ew3O(1Yd*^>5;4h2fBo{0H4BNMgd&=_<rEK0V+c_Vc+##bUi(?UF8lgHtYvT}@HoSI$+^BU9<UoY'
+    'd0LVIID519*)Uu!6TTyp<Ov`0I=@jarfPLCI*_Jr1-x>JUv)wdqdPah)~z?~dkmnC=fBG8h=+G5KJ~xsD&f?47N&I9C78`!dN(^L'
+    'Yf|8t)$cj?O>j~6g7eTbW9WL;2A*5B+cC;a-FAd(NU@<^D+!l*xaRYU?v?QJb556g11eF0&>E2V7USs<JaIY68_04Lh7)c)aa}LS'
+    'i|q1W;#NnopfiFO8rcPMl5lSB#<#LzUoFaof`Xb&rY+657}4puMmt`<zcA&cRmjMZlLlr3?5(YRS{Bs5>I_NTfkkq!E*Z>U(^cSk'
+    '?UA_eb>iHy4waN~G5yPP#9~YH-AVTB3`o^<KRSY4eZK}U;W)U>L@WRP9a(Y^RMJO&WL6=}F@2d;>Q2_Ry<3_5Q==E{yS$!WPo`y6'
+    '$8Nd%_ussOS4^cZBEi2C&qseb>pmWPNt7x2j}2d90z@L=p-d0g_)G$l^)^?*6-ab=of$D{5My@|k22{LX#(OTXjI9%?HYS>?V+bc'
+    'aUiyp;hFnlQ-wpXLg$fs8w#@S!TIPa;yC)<hcMjcQIs>&H^j(H!EC5!?jZBL+7)y1o&qqA#=>hJ%L*w5E)sCsF?z37oX)w)Jv%T*'
+    '$*t8-@UC!jBacSj;u5J+MjsZTyS`?wkD10yqrSKH5tW$xM%F9PqmkRw7u;f`;5Hew4X<lH9cfv(G;Hg6)(P8G_L=P{OWY7>_i<S$'
+    'KR{r{(4<)9)S<W~JQ19k2*&GbRh&~<mo@QYUO0C-Y3J7MB6)PtNH+7=z-=4b8y)~##vXoQL3wP9)gW=ajR{Ie($%d{BVooAC)f)T'
+    'DK&Kp5nOX*BUB{m=w_c5)a=fFkG<q^%GriY&y5*lbTb()v!~-GN{x)xZ0QE!-Qq@{-K5R2hG#v;yr`FuoUzd+M5%j@U$Roi#upP_'
+    'y*=s1a6XpCGx%FN2n5kbtz#G7Wcz@#y9b=D;N}LR$M$EFMOIwZ*By$t<e2)B#|8czk3G4xasX3J!l=*At;f+}sj8pSl1E@gek#xl'
+    'I~f-V#%Q=t!B|~&Kw9XXMJ8VOlH2w=+Jf>6@3yDzR^teyZTwxRjMV!qo&CqUqI<&zul3A-R3P_svAj+dgBH+po%p^f60S{;M-@@s'
+    'VPi+M#{#DoB48T6X+0A`Z^#?tg>M%j+?U!?cX8`n8CARMi5|^;#O)(i!|GNU3`N#nKazJC1KWmktSZ@!*SN2SrLkd(xxj9*?~0@Y'
+    ')cm1pj#_FSpw6ocd~q?oRk8`n1LT5u2;c`pk4d3DzMm)snRg)*9(6HDw*uY`<3|(MNP%ZH>vE|%J4Nxd2dUWhkrG!qE>#N41@4;1'
+    'g->|Z<%<^v*+j&$Z0YdRI(nPVm}O#v#3N7t5rL;=cK5B~MaNPNHypLNYpXug9?!fx>5#h+Izq})H)*RDIcy*+f)z81WwOI7E~7ON'
+    'cQ*)}y=~C!Edpk9aO-H$?5gd;<Ve>lD)wFDTsK^sXl=xYOi`0O`_z*b^8Jo)V(g87_@#a219<_i?`C2o?9^J9PSfgoqE4REzU?G`'
+    'ub%tQUp($F@;55GpP~JXzLeOPwnYoYL=uk5NT>g|ZlzP+q39T%CfE68PKH(ZW?km+0O<2Z&@vF;&SC3u2C#$LmGSDj)>#9WBoV5W'
+    '+&jHR`7?^onU~hl5OZzCg#_vQU;pv&r>AEp(FmlQNKU?W+yND)C@wCH9f%!lxOJHBZ{3}5g|Dt&m7g&dt=a|!F4W<6Q^|a0Q^~{*'
+    'jRM`>G|ip3kh!|}wU>!>CPu@HZ(Zze?V7P~=G_GGS?o&w8MLOGK7Ebf5X~&s2059}YZ+CXs^&_)1p8&2f9x~fq5MiZqO&wKN+snC'
+    'Mg+_K9#|po!U1})T)oMNezpnfMr|^`n5BC_e@D)*o*%zUs$xcZU0u6%VK2@VqE_RAtdGRsz39D6Q9qRc@4G-x;^E)9KBqd{jBYw^'
+    'yE7G#*1OM0#25K*Yoe$?_e7?W#`kz5MZF8%`^?V}9y#s1y3kzH@!4c-eFvu>`4rhchmlT{B6(KYN-623^Q_FRU5Z7tMaA?J;i`!9'
+    'wT3Y&K6Au=E~HkiIw9V>mP|>`>rT(lu$c_|zH78YVip&TopM9|+EcGYxkKbA4;+q?WZ6dt!*Mh3_pd^p$Ce&vD9w1r5=f2kZQ>K-'
+    'ER7-};bg8X*(bt_-TGBeChAd|*OLkRRUi3u0sUz?*`eBVc2D-@GEI3=bcAUQgu}ppkbq@^6y0x3d?Y%?+nIhk)7vl_;Fzd!GAn5='
+    ')CoziS7;2kBCC0hV5h}0_qvgcDA=*4d*$lL2wKn2N$v{&8lzBQ<%op1x(afPapmO-P=tB;L3m=D@X@MW|A1=u4?fB`h&Vh7+Z|ze'
+    'oPb(hl=Uq=FujoOTT#?l;ujIn+sun&Pe-)ZcF9Z}Zn;LD&y@?#1ln#G$tL9Sv|4(zo7qXfAKkX~z_ibl0QhRLHBm|d^4xDcj+!gW'
+    'OOhH=au1G#j*n~lrV@E{od}zVRRafo?T;`RCe{|36!xC6DwG%Sv?+02BH<(Xc&R}7s6v55#cGj1U565ANDd~nAd{Qy27>~qL^Z0R'
+    'ip!}}<OIqUkqtyQ@w0>o&4{aQvVHgxw@u2FZB!;3%nM)ec0Hzs3Rm@@ZR~3$1^7naX6h9>X_Dz3ekrUGFp0^8H-DnAqho?&^N5e!'
+    'aR3bGw~fE9VwM`;DRRHkmH}+$hSa@&SE5LO@oo;&q2vYpxHp1?`^htkp6C0svl$xfDjTTvmBtL2hdyo#Kl0#)8)!H$&XUg$9{u$T'
+    '9}+K5UyEt`T1*#*#n6ZgP~5!E(_lEP=Pw?UxWlo^OD`*woLpv<5f$g3uWX!^{uQA068gL@7c+njcVRx`i~R<c=xvs~%kj7c;tR4i'
+    'ABD+oBmoeIq7&1Rxn8yL8odA@r_15B90bVdD&u#}&B6f_Wnwfp!-~f2#tLBywVq=bvH9}e>Ehn~(%$vLzSCvBMJ|j@*R#ojfr!>|'
+    'lUv*|M!-%6c5du>Z{K4<4OuEaQX4jiQ$b;{6&mQtE?q=y>(8XSji#Fm^fT5LO=SG^lmT+YBX8Vy$WrI)o~;5ku9a@gRmYr1OW16#'
+    'pl%U`5oSxAx0Yf{+*@e2P8Sn}Q~D}W$CkH4-%I{Q=YHSv(n4{#Xa0s<6uGWgM__Y%8B4d)a|CfVPh_>uEL)ab)9bfND2Gr6E#Ky='
+    'vOvjsUmXWBxl8dmjl`ciE6Tjm@yPQUuA4rk&r!jO5`90eE0qrnUN|L++$lUbyg~cSlj+R9eb}f}JY4_A8OMN6Tf-X8>@}%IWZ<eK'
+    'W|;fvU0NkK@Ir-emvC1mI$4r)m01OWzSLl_-<S0@Zho3`R<jDHqIgavVnLQ6a?|nNBPEKlD(<c2;z?JZtgeSJ+W`yk%ZKM>_*9)^'
+    'QYe|#Qv<Qz?{?Sx_fcIn@)#8~bVAi_e~(2dYy)fsmn+4A?nIMRZ)&4ajm)8$MHM?=Tg$H0-RK)XyS~tp@SF6Fe0yPLNfe4@1w9l<'
+    't<lGKA=02exd(8=J~T90?`swMK<VFV>xrg<2#|XQa^7@sIm<n!R6|EKq-3vOfB)-0v?tc<*B6CSi)d?TU|KJ;c}a{c%Yae6Kjnx<'
+    '%36bzMFk#R#R$KCja;*ZhPHT|L!2~xFp84`_eUxJ(0yf*-;hcWedbWn1A8*B)oat_uD&R6I*NqxjQ&!QoK>kLS%=e0V9%8a2EHhC'
+    'KRp_0%I+%gszT)=JcLXv2q3#x*R?T9Ag`J!nX+>*2cT>~B6v}VD4XOL>EfcGs0B$?LMLbhL7^OQBQWzYjGcUPifXNrJL<vH_^eM4'
+    '={9dlibVl`l{Vu;pYzngv@vGvO{T_-Ngx(ktqC)<p_mz1`2y2VYQu|kvC7ifZJ+UVX3a$}Nd{OJP9jHW2(O@geyfs3!t0i=51QCD'
+    'X1Rj~I_R=SOx|o{aPAPNVppNSrl1uh?R$zIr%@}*NFLhh0uT?q7ivD_&6btYJ7_nXO2_Y!3@MrKQE|5)pT1PF{7sC072`q0_E%9b'
+    'Oj!Rfhj@WJJ_D$xtsh0>U>FIEA@WSvNEcr=rllB0(o%e*GDti-{^g189m6tkKn4!kG3@T(Ir$tZq9fkO3f#Tf5v5Q8@Yu*Rpr*7;'
+    'YOY*_IV91-h!14FN@tc_CO2zhiSoq)r4BXmc=i<Q(C~OF759OEPFi}S)IqKR##cjKR4xGlFwvPT|N7u7txbAAxkQ?&OLRl6+{ZDK'
+    'c{&Vro(mh0gMq1u!t=?_4K$Wd>T947$eIZQ5w9*xJ4@e8v>4tvLw@59w$0i^EG62%MXC*i(>D|IiPFZJWi{$O<U&w0a=D(*F^I32'
+    '<d;^dH@OCaw<^mU17K*E9cSzc%)YRN$`U{o91I0axJlBf_QavW;Z_KKh8+DXpgs8RICAYNg%9uL`c_)|2v^6L_i%i-J>}zs?oe1O'
+    '*^e#d%bh5h@EG1S8{WR}5ie#Kcv!6+Ufj+o2q)-@bv`2^1f%6$cRrgN#(eby8Njsugg6E|Qh{KN65N&qO`}%!(TC0#81{gWk|cxD'
+    '=M@|Lw+1sHeSwte!GOYO299UoftQH8s-uwx$QyJ556dO-#~VD!qb}qzpEmZ?%qZ3%^OlY)OzaRTqqQ{}mA(T8kGx-y<tikLsxo0~'
+    '+XdvQ-E`W{&c%&y0{=8x9CNya)38R$o(x4|nyZs;&mD#xF;M!l%Wyr6>RX3_nD`!vapz^xT`&~2+0N>ALQl0(#I#1!E9FB;zFR%l'
+    'rqpxYRKH{`kBqq$VL^PT5z;m?e?{ww*^lH(#N9CkayK|-ZiV2@$gJ)ex;10RV4K@KdL~p10_SL)DK{$=vtXb-6bV^t&bn6qxoSM>'
+    '@$*)^I$speT=Q&Ypdw8=V$@)htysGc?Iz5Nuka}R6t}AKT_>699yk#L{4FBaH%(B-o+He=h#L&<MbrfotM{a*C8k(P@bkdi^Ip=&'
+    'uRiTj9dtq?zNq1t4;B5y`II%FTGy40i<xv|;bxGLY7IKwvq#4BB$7Ap+q}y0IVoie^!`)?ty1!U8Xw8H0Dn=DGF+F&U9>7&2WHkW'
+    'jZKv6yN5J(y(bTPpBm%1F+}lh9c`EMtRb$l$m+CPcxB)3XXqOI{fobPuEm-RJLE?j+8lAH=6J$gFYJ)Cq-%~KBu4#UyXZt3W)OFR'
+    'L@sK&!7jQJjwG<5By-X5MxGcoqUGYv)3GO<O>F|WWBiFo6eW(mn5DHL86HhgZ4Oi}y>@M?Sm&XDk1|gezA#Qznp!i6yGF8C1La`y'
+    'tU4vC3((_%<L&gf^J<-z%baeFPxNYKI9?)NnkJX%jB2WsXX*R88XzM7uHXU)oRarCtzBz-w?_raUDmPJpJTykyJ-b%6`Txt>^*F-'
+    's?5a5sq#qJ>*rw%5VKm}$RH*04AyvDDDiJB$)LxHY?GX^F*jpyFHcBPkxtP^krHuNoy#&^!3~xFp4pdhmDT6oYgj*ruhYfcCF&MH'
+    'mqJ|}Hf7E0P}@G<Hu^8gyHjyXk!{(~Dw0BOQm1dSPBe=WPD=0|F@b>HT?A7opG_INJn{nUMayHp4JMOe&kwIj-3fY33Xjo7K(Ip8'
+    '(zz3;?RU*llsLdAX}ach>y2Q$UY1MMH7Ot6pbb0%vjZxS#za}rtA`oI*0v6E%n3>_Ir-&&uSv}2hOqHB*H~HGk6t937d$xQ7*GSV'
+    'U(L}OikQnAcmyF+S+Xt$&+YT)_%d4Mmup9je@wB$O`dXQO0{}S>8)9II7pIT3-X>LBY_3^wkdUkI%3&kiB6t1JG1G)YzY!Xj2-#n'
+    '>EoY&eUYS9@(x7=@ZTqAr!OA9cy|2wgro1UGD#VEvaA~^1L`st$qy$dPxMG(Fh8X$6tKbcxFYoF*rk!eaFxw+^MZioAk|?;I(*h4'
+    'shRS`>8g2molmdfA%hvwX)$%xsfbY$QRCmuN8^LEoLUibc8_8QG)NvA_oAT85<5oO_k26@%zF!e@J+IJ8s~<wS|Lwk#C>nhra@j<'
+    'wnj`>%p=C&j4fk?{E}v>tiye-t&YzrOB0l9hDim?fEf?Rz+vC-$O@4hr8?gnYP?4=2B~W(N4e5Q7}zn^l$;Ipr9NpsMS*6QQe?}-'
+    'th<U+Gjnl#ENngPvI48Fy-^pL!z}8#g;%#0`I$SE2ysE2L8ZK8^yE}rg4R1+uLScffMW3Az?>9b7I5IdUj2$G(!E6B&UcXu{P8I!'
+    'GB@@p!do6?+!GsD!}`oSo8fyRQ39p!M&9x!8mumoo3YUuDa<@A#>SUHSBJ<DB^%)yo&U&U^*LvSYU^Cr4Wh6RA-2=@{o><;fR)zj'
+    '0p0MN4v+K2aTZlW>I~7B>sH~i!YjNb==*#5{rq;^-Mr4kUvh$MY;o=^LnOooY+kTjMz5-TUB!Ojv@Tp0M%2dlG2V9SW!%Aa>2g39'
+    'JP$|P&`Ua&mYGq6GM0@ERfMjj-(f*0U?(vA<Z@@i*K}jT0NNrJ^0^^NJ$m1xKI5(_21=7N3Jk+=bAelL^1uQJ+kZ|LBSw3LOPpY^'
+    'MxZNIf@bgY1w2Gx7p_UjmKMrJkE|-{L1et`%wmXMZ9C2!Ps5(mN5o-)L|qa=9EH;62);RohCT0YW4Mt0wq`zwkD&x{IPPj8k3Wb<'
+    '(U6-MC1wd{^VRK=ecXD&->ti$cQ2lYew*-H2lrjOMk+KjZDTppy_ZJw^Pu73@xXs_?69lIu&Pb{BlpkTdZ<0~FG4f=a4k9!Pcj24'
+    'XVW<=?RIRuF>Y-1tsk!|-u;*l5=9ZCk?kzr$jS(`Lnnf9>&8&WdjlIk+{oBMVy~Bm&z$NvN^6_j{|`G)e+1E&1ixYZ#XVpTs3QNd'
+    'kUq_{|E_dDc1k}_PS{%gVDRX0@HIZ#$_2a+`JH7BaHSu7)9Y+XCZ`yKVO3q{OSnWNI5s#>NfXU@pCqSzi@=Zm&AR3YEEY7b`E;?S'
+    '2KZL(NpNhQRh0d5shD=^00!4rw*ia4YIL+D<5AMUxVaUWgFzDX?DX-^n2PmiEBfWTX1L_+2TJPdIe%<P7`*cxJ=<6Z51=nOoTD>G'
+    'sj_wckizMZ_~RpgfQ`mxjY)zl&E(5OJOqUlJ-_S_TNjg;rM=`5mC-$YP@8R72!?CGqFP_}k`%D_(lwYCLtxh#v;okPB>Zqh3|=o('
+    '%d;hn&f%nFEjeH~FJCm<fXUwLBq@MKB58d@5~b2a#che4AgyG1gIl{^vLgwGA$o{*lL?y_uPT!$B}|N>czm9B7;6z@#EBX9BJ<J#'
+    'YF&O@$M>-!Ne|g^l(FbV-VsrnWGgK8mX4y<5h{sc2H{>r8LHWvqOX`ag?jyP0%*U5tL#i7dta|oOZ!8}F|(;rVys-x2>@w&7!*IQ'
+    'OnKKRqr7F4HZq%b43>auqEOe3v!+xZ-zJYf1sB}wdb?;tTi?F|+;CG+$@r$dJn;y&+5}_h?B0I&{qT;9I9Rr_jsX_-*LMT0G|MsA'
+    'bTVutM@yx;G4PH=UfU3A>)1PBk{iAbLn;XqTS-=90{ZGmL^1IN^{(Nw8_>=%glZwnK82<Gq%rcfvO8724mfyzx55=tU88wDn)N;;'
+    'ABA^t<-lVWedREbD8+_j3AaOA8zh^`#bnZ+Gh5F;k~v#aGYi0oKW%Afl45B9%g1EH$o57AjXI{cK^yY#<)Mg~StE5NvB2J}cbk~s'
+    'gCxu^V%Xuic0`U{{1!-;K$c5MC|vUcnfgN66MQx@V?S!XE&}de%-6AGFn-KBGB9>M7E$%&3b-2dAZnZrK&&M3uGU%XNx*fYn9w=1'
+    'a>GM*CrDk*7eFuaoHyreWdDrR6P=IbK*E|Kx{YG@uLLX(^vL_|weSTpgtQMvv_fHocp2@Mh`{7hTc7Vrz#`^puCH+5jnZ?ef>2(@'
+    'vpzN0$2Slg_IJ}3dGfg1kcSS1*u}u@zaU~6A)9aC?u7+Yj`;EDVD9Q_%XZCH3j1~kircNBM%rCRu^Xz1{S3XD*O1eueF6qR)9|T6'
+    '%h&|~x4*7+U)AJE=IC&6&NT#cisHg6qG18GBdx$jlBXu7<;4?6LZVj5_7pYy!zPba3&b3?8?LNHXbe`-8qRRC`J9uD1mkh-HgI&&'
+    '?t0p;B|b6N&QW9tp=YxF?P`Fxuz+yG1P7sl1KWpD!%TY(1AKSQR&8E#4y8SE=0UfWKuDKlpft%facZ=2iNNT#XrQC3=S=7G<iv>|'
+    'J}qx<a^h7hApEoSG}CT-#%(sSO@I+s1{fL|M&Oag4GB8WE>NCys|`4M=(9_acz{6X3ks6Jp1bcdlDb2g1}DuS2A2I<rDVU=iD|8y'
+    'IRnWFF<YSnngck=&qZH<9REeUr;u54$XqOb?`FkcAjgekn3DsJ3;OZLqqHU8MS|<g=d}Ofgf_t^Ka^m4n&pd5Xv^1?Ih^H%Abk<N'
+    '>@-}SA%zfAcE`~7m%zShWpin-jGvhWoOljHjrT*(0TxeTY~YGi8oWw;6Pa?o6yiOq79{YiwD*#5upe!BMK%#R`Nh5o{D{2jX)zMA'
+    'Bz@%vZlR6<NwB{59+rST&a}}^9ns~dw3t1HDLuz%HzYBoyWUvv?Y4xDA7e<K2Qp|CbAo*rYRtbD^%DvO?aD+`U-_(P$LnoG|CW)z'
+    'jLYU|^DufY3ew_x9#}lKQ7}wrT}I}wUXwX1-KR`NJKoh7SbR#>_s9eRAk*RT*5-!M)W{LxuJ9Kn{fRK<!@I#SC@PeM?<T5k+qSY4'
+    'YcO^&E1~TiJ_dJ_T8vM*aW>u^Ml99~1%715(h%`HymPh>f4<X|5(*~cBFN}n>1g28s6s_t-}kPJ2n~@{@T7)4PeSRB{EyIAZd4&6'
+    '18t+n3mX-oDH7+Bt~~c(y55XUC$P~OY&*x>KNhQ_d=w3EcUB4Y*wr75vl^y{u$s4P#@BE$MFK^F8epgcv`MP%z<w}dP!670k+#7V'
+    '-)EO`hk5l*)QNU8@+dkjvXX7#W4}k7jfgWb&gC1N$_0!1iTE_}A`NVErkC9*r1PQ_1aW0fDE^BZ;}0YB%-0JY8-^^{fk&!1lNBys'
+    'Uck!{xfZzHl_)L9StTR3i(u`&s0gxI$mog^z3Algfwg#!$7c1ad-2E+S%V%sej^H5q(h*8_(;)EKYaY?)oO_2+7io^i!c&S-d1=!'
+    'VOkQe@V>REt*PFziSn74wfEzALQ|zdSdG}=OB9bcz|mK8YbA`8)mkB&U1hBm0PV6BzDQfvN5%13V5p(2y-w>M&9dd9yd}1yx^7w+'
+    '?KMB=V8HZF*i=`%?l!g1{_2D-I>Hau7Rj}Yf0#L!2(>n;0n%DsF-Cdm`(4U}MFEPNXt~&JB&W>9Jz({URva@ip|HGv5LCc8yNkTY'
+    '_@0adDY8_@W@_Ein{t-L7btS}MF8Mb28nSGesd&Y%_(wgu>&gl+jUwIrcxMOy&*=0>_=asZ9!8g$9y9<L7SCw^1!*_Yz5_DAjxOI'
+    'SMzwuqDl&rl+wg$du||)H){PN!7B@s$MstsUP5Qia#jj^aRWQdowW6imP`85A^!F}{0+V~D!*b!z|FH54HFz{pWP^0fm~k8=EW^F'
+    '5K9pxlzJc0gC4}RpG8b#sx=ewl3+o4&Gm>{@fCVXLw%90Uct`75;Ql8PqLvwH~yL8PR785)&14$Hl~!4==j}8o;yDgiFfXu8!HwB'
+    'HfZ7BP%V*TeI?h9Zh||fb5aKiFPuQStwn^a_mMl$sPEWPQ?|9XOm^C&GK*kHM0e&Pz_vQH*jc@cGR^DWh^u<Z-PCBIlsT$S+f}93'
+    'G|U)kSdrUR<}Oepda$$HEL+rQei&*`Tuh9J)l5*Aq0H^a^w{SZD9In(jiS?T6Udk(N7T?y@$eK#8J@B^iox=xx)nSl5S|FvJT-Uj'
+    't1oBa&P_32&8sCDG(R1pl$*e5uvL4JK{<A!{J5~aijhRcf~dn+jXbjZdAqMUn!~HWM@jN@o-9+$zC5>@N()CmV9iQm<o0EbmOaUO'
+    'Nvc9L)_;c?x%7Zg&SEmJT5v^~EHJJ-W(cME`LAL!bEY7xWX6scMZ&zF4@x~XR2*Z8k!;>a5ApiCtTH9apvbx~&TO#Z#%X--joH44'
+    'KRWwhHa(IOj}YhFMVfJFbf&BMClRYUfugs#_|)cxSsg<{qenjO`W&GbIYs?l>@cmJrxa{O!<`?k=j@Ve78_YA$uZ+|N<AiQ6f%b`'
+    'j>aSt9CG{txN~+E^2Lo{r`j<U&N$*e;$O1XY|@(Qj3U*X0K+XFAq{wD!fu7J+=4_TEyUWSBaa=QRus3dg#8oapZ1BN7v6noXg7W8'
+    'IW8Xv(;G?=K{K}R{%VO5mpxDaPsh`%II)~Bt<ka|oK!T;b@Zrx!r<hd1w_f0?=?VnEA``Bt>va&zc%WS?Gjl{a^oR4LyqxH{wWMZ'
+    ';yay09a?DAXaU}gMpBH|3)FLs#91ty-^#JQ9R+CW=i6b6L2C!J-Es*P!%j=JlhJn=&S-nn@0iwA8cqYe7|$BFp!R`nqcjfM^}NFw'
+    '^d8+K9sQVzWsG;AJPnxhDWrnw93EveW!^R1F2*qRhS7wh?jgQyV7P+KfyJH2B|O6dV>JmZVzHKd7ouy#ADzygN2}#Jg#0@UNYwaq'
+    '4}i&P;TqFhZ&hb|TXSf{@+DhAf}>;cs**8%th-J9$ZHj&dXF~6C3iw?2gtH(*zHJI?I4tPEQI;UZm(Z6KIM_wrbfz1^Uo_8*1Y)*'
+    'DRrfHpqGkdh*!5~q7@!P9Nu8Z7kI$EHa)~0;9+&CL=01QwmscrGP>|hw5y=AjYm2^>K}}oFIOK=yKRyJt)cdJxb<Xi!X01zy;)!('
+    '?G>nY({_cT4$r{Aw)TsP7Nv@#inkziMuwKQaSi=A%5@6zwFQW-$y`VF_1kS|n-RdB1{DS5qo*Ec)Gk>JSF_5N?G#*G-@ja(E!g?$'
+    'ZFpGafS6(!5!{X2M2y=Oy{S!jVVXk!9`r`0sC48GM4pNlz-@xg>)}hJyM@S)(!4ZE{2G!FXv?aIsL!P8ZH_zH5;y!V!a{9b64+jB'
+    '%=YZ-GK4uwFX<lyG47n6j3rE}%wM|Ul_3Cz_liy&hL&YczC3R|P$a0UemiRBy23<c-3IZyWA8FnYb_VTsi5^=?eXs$VGp;wS2Wh!'
+    '5dPnd+N8M+{X0M-XV3_3TBjSfi3}#5)UDg<o2{217-=j}Rm0V4tk3k->IDnkprDIHw>F2CF`MjW=-hFElJ7Ssp#6ldiN(9hv<Xr_'
+    '03w+)b<pDR9uZ1xmz*4R-KJoWcd@k)gjHwsb`^6^N{#_1QoydVK4qQId9x^CGt=fu=Q|xVBm;K4&<0|>Wu&-q_RLp0;F=0&pm(cu'
+    'Igtr;JILTpmgOR!nj4_n*~(TK0FOe0;f@E=vDM;kx69W|(^ffq`TC+}V)(Jl#!Z=yxy8VYoBwdiq?xYj*UN^iDjHK^RV$Lgm}_1X'
+    '_dfn#%E@&$'
+)
 )).decode("utf-8"))
 
-_SELLABLE = ("STRAWBERRY", "MELON", "MILK", "WOOL", "EGG", "TOMATO", "CARROT", "WHEAT", "FERTILIZER")
+for _name, _source in _V50_MODULES.items():
+    _v50_load(_name, _source)
 
-_FRONT_RUN_HORIZON = 1
-_FRONT_RUN_ITEMS = ("MELON", "STRAWBERRY", "MILK", "WOOL")
-_BASE_PRICE = {"MELON": 250, "STRAWBERRY": 120, "MILK": 160, "WOOL": 200}
-_GLUT_WEIGHT = {"MELON": 3.5, "STRAWBERRY": 2.0, "MILK": 2.0, "WOOL": 3.2}
-_LAST_STEP = -1
-_CLONE_CONFIDENCE = 0
+from scripts.v19_terminal import apply_overlay
+from v23.planner import build_sparse_planner, PlannerConfig
+from v23.state_encoder import get as _v50_get
 
-
-def _public_signature(farm):
-    """Compact public fingerprint for detecting a mirrored build."""
-    counts = {item: 0 for item in (
-        "COW", "SHEEP", "GOOSE", "WHEAT", "CARROT", "TOMATO",
-        "STRAWBERRY", "MELON", "PASTURE", "COOP", "WEED",
-    )}
-    for row in farm.get("tiles", []) or []:
-        for tile in row or []:
-            if not isinstance(tile, dict):
-                continue
-            for key in ("animal", "crop", "kind"):
-                value = tile.get(key)
-                if value in counts:
-                    counts[value] += 1
-                    break
-    positions = [farm.get("farmer", [0, 0]), *(farm.get("hands", []) or [])]
-    return (
-        len(farm.get("hands", []) or []),
-        tuple(sorted(farm.get("unlocked_quadrants", []) or [])),
-        tuple(sorted(tuple(position) for position in positions)),
-        tuple(counts[item] for item in sorted(counts)),
-    )
-
-
-def _signature_distance(left, right):
-    distance = abs(left[0] - right[0])
-    distance += 3 * abs(len(left[1]) - len(right[1]))
-    distance += sum(abs(a - b) for a, b in zip(left[3], right[3]))
-    if left[2] != right[2]:
-        distance += 2
-    return distance
-
-
-def _update_clone_profile(obs, step):
-    global _CLONE_CONFIDENCE
-    if step not in (4, 24) and not (step >= 48 and step % 24 == 0):
-        return
-    farms = obs.get("farms", []) or []
-    if len(farms) < 2:
-        return
-    player = int(obs.get("player", 0) or 0)
-    distance = _signature_distance(
-        _public_signature(farms[player]),
-        _public_signature(farms[1 - player]),
-    )
-    if distance <= 1:
-        _CLONE_CONFIDENCE = min(8, _CLONE_CONFIDENCE + 1)
-    elif distance <= 4:
-        _CLONE_CONFIDENCE = max(0, _CLONE_CONFIDENCE - 1)
-    else:
-        _CLONE_CONFIDENCE = max(0, _CLONE_CONFIDENCE - 3)
-
-
-def _front_run(action, obs, step):
-    """Sell one premium line immediately before a clone's expected glut."""
-    if _CLONE_CONFIDENCE < 2 or _FRONT_RUN_HORIZON <= 0:
-        return
-    orders = list(action.get("market", []) or [])
-    if len(orders) >= 10:
-        return
-    already = {}
-    for order in orders:
-        if isinstance(order, list) and len(order) >= 3 and order[0] == "SELL":
-            already[order[1]] = already.get(order[1], 0) + max(0, int(order[2] or 0))
-    planned = {}
-    end = min(len(_TRACE), step + _FRONT_RUN_HORIZON + 1)
-    for future_step in range(step + 1, end):
-        distance = future_step - step
-        for order in _TRACE[future_step].get("market", []) or []:
-            if not (
-                isinstance(order, list) and len(order) >= 3
-                and order[0] == "SELL" and order[1] in _FRONT_RUN_ITEMS
-            ):
-                continue
-            item = order[1]
-            quantity = max(0, int(order[2] or 0))
-            if item not in planned:
-                planned[item] = [distance, quantity]
-            else:
-                planned[item][1] += quantity
-    shed = (obs.get("private") or {}).get("shed") or {}
-    prices = ((obs.get("market") or {}).get("prices") or {})
-    choices = []
-    for item, (distance, quantity) in planned.items():
-        available = max(0, int(shed.get(item, 0) or 0) - already.get(item, 0))
-        quantity = min(available, quantity)
-        if quantity <= 0:
-            continue
-        price = float(prices.get(item, _BASE_PRICE[item]) or 0)
-        priority = (
-            price * quantity * _GLUT_WEIGHT[item]
-            + (_FRONT_RUN_HORIZON + 1 - distance) * _BASE_PRICE[item]
-        )
-        choices.append((priority, item, quantity))
-    if choices:
-        _, item, quantity = max(choices)
-        orders.append(["SELL", item, quantity])
-        action["market"] = orders[:10]
-
-
-def _terminal_liquidation(action, obs, step):
-    """Replay-derived safety net: leave no sellable shed inventory at season end."""
-    if step < 680:
-        return
-    shed = (obs.get("private") or {}).get("shed") or {}
-    market = action.setdefault("market", [])
-    already = {
-        order[1]
-        for order in market
-        if isinstance(order, list) and len(order) >= 2 and order[0] == "SELL"
-    }
-    for item in _SELLABLE:
-        qty = int(shed.get(item, 0) or 0)
-        if qty > 0 and item not in already and len(market) < 10:
-            market.append(["SELL", item, qty])
-
-
-def _shed_access(size):
-    half = size // 2
-    return [(half - 1, half - 1), (half, half - 1), (half - 1, half), (half, half)]
-
-
-def _move_toward(pos, target, tiles):
-    x, y = pos
-    tx, ty = target
-    choices = []
-    if tx < x:
-        choices.append(("WEST", (x - 1, y)))
-    if tx > x:
-        choices.append(("EAST", (x + 1, y)))
-    if ty < y:
-        choices.append(("NORTH", (x, y - 1)))
-    if ty > y:
-        choices.append(("SOUTH", (x, y + 1)))
-    size = len(tiles)
-    for op, (nx, ny) in choices:
-        if 0 <= nx < size and 0 <= ny < size and tiles[ny][nx] != "LOCKED":
-            return [op]
-    return ["PASS"]
-
-
-def _terminal_action(obs):
-    """Observation-driven final-eight-turn harvest/drop/sell controller."""
-    player = int(obs.get("player", 0) or 0)
-    farm = (obs.get("farms") or [])[player]
-    private = obs.get("private") or {}
-    tiles = farm.get("tiles") or []
-    size = len(tiles)
-    positions = [farm.get("farmer", [0, 0]), *(farm.get("hands") or [])]
-    inventories = list(private.get("inventories") or [])
-    inventories.extend({} for _ in range(len(positions) - len(inventories)))
-    sheds = set(_shed_access(size))
-
-    available = {
-        (x, y)
-        for y, row in enumerate(tiles)
-        for x, tile in enumerate(row)
-        if isinstance(tile, dict) and int(tile.get("yield_units", 0) or 0) > 0
-    }
-    actions = []
-    pending = {}
-    for pos_raw, inventory in zip(positions, inventories):
-        pos = tuple(pos_raw)
-        inventory = inventory or {}
-        load = sum(max(0, int(v or 0)) for v in inventory.values())
-        x, y = pos
-        tile = tiles[y][x] if 0 <= y < size and 0 <= x < size else None
-        if load > 0 and pos in sheds:
-            action = ["DROP"]
-            for item, count in inventory.items():
-                if item in _SELLABLE:
-                    pending[item] = pending.get(item, 0) + max(0, int(count or 0))
-        elif isinstance(tile, dict) and int(tile.get("yield_units", 0) or 0) > 0:
-            action = ["HARVEST"]
-            available.discard(pos)
-        elif load > 0:
-            target = min(sheds, key=lambda q: abs(q[0] - x) + abs(q[1] - y))
-            action = _move_toward(pos, target, tiles)
-        elif available:
-            target = min(available, key=lambda q: (abs(q[0] - x) + abs(q[1] - y), q[1], q[0]))
-            available.discard(target)
-            action = _move_toward(pos, target, tiles)
-        elif isinstance(tile, dict) and tile.get("fertilizer_available", False):
-            action = ["COLLECT_FERTILIZER"]
-        else:
-            action = ["PASS"]
-        actions.append(action)
-
-    shed = dict(private.get("shed") or {})
-    for item, count in pending.items():
-        shed[item] = int(shed.get(item, 0) or 0) + count
-    prices = ((obs.get("market") or {}).get("prices") or {})
-    sells = [
-        (int(shed.get(item, 0) or 0) * int(prices.get(item, 1) or 1), item, int(shed.get(item, 0) or 0))
-        for item in _SELLABLE
-    ]
-    sells = [row for row in sells if row[2] > 0]
-    sells.sort(reverse=True)
-    market = [["SELL", item, qty] for _, item, qty in sells[:10]]
-    if int(obs.get("hour", 0) or 0) <= 1:
-        already = int(farm.get("hires_today", 0) or 0)
-        for _ in range(min(10 - len(market), max(0, 8 - already))):
-            market.append(["HIRE"])
-    return {"farmer": actions[0], "hands": actions[1:], "market": market[:10]}
-
-
-def _base_agent(obs, config=None):
-    global _LAST_STEP, _CLONE_CONFIDENCE
-    step = min(int(obs.get("step", 0) or 0), len(_TRACE) - 1)
-    if step == 0 or step <= _LAST_STEP:
-        _CLONE_CONFIDENCE = 0
-    _LAST_STEP = step
-    _update_clone_profile(obs, step)
-    if step >= 717:
-        return _terminal_action(obs)
-    action = copy.deepcopy(_TRACE[step])
-    _front_run(action, obs, step)
-    _terminal_liquidation(action, obs, step)
-    return action
-
-
-# ===========================================================================
-# Market-controller overlay
-# ===========================================================================
-import math as _math
-
-# Per-step remaining sell volume of this field plan, measured over c27 self-play.
-_SUPPLY = json.loads(zlib.decompress(base64.b85decode(
-    'c%1Fr%Wm5+5Cza*39{~j!?(Ii3pWj#)PQRsXp4SH(SNTlZOK$D%hrRG91k$}ECK|GWl5pP5&z!5eqB9m??2xC_S${8>%g|40o8~KRn)i|T_c-Ng)B~CGN496wl}hgs1QXm@KJ@zO8JSLEoMTcp!~L+F{jWC^e|LF)=(2sf$PIb3(SlNzsDBEF#JfoWe(t$Yj9w9c;Cbw<7UNFSXW_+8eK!jXnZ0v6}ZhU25LvUVmLTB{V)npQt&Tu2T?{8u6>1DeP;Bfh-txjrG(rgadmg#C&QQ5mb7*zObT%PjIEHq#)0xwmcrH0IS6;r%ds_7fjeO<R-XVDHtFe5b{U9c@TIh4Qa~f2^712`IfKEUA#@B*lD={N5Gf8RziqLrKOgSyKR;|X>+lpP>YsCQadB~Rad9Oo3_rH(mxt||haX&ATwGjSTv-akk00C3!|SKjX7dw65Q*tshG7_nVVGkyprl}RZvx~bgg>YpF-fdKOSG4qgU%8bqxwVs6t+gzh!`qtez1P$MN(W?6824OUyMG5Y$A?9(^>?+g>mRks6oAK>ZeGxbZYtsodn6F-$d?$<E};~EL)F^?O7_S=&9^w^}PO$2eRE-I>Ru`&4T`{s6B{cFwQ{YZl6U*zQ14uWyS3#%h2Z*@^*MPQP3v8n8;y4cWAPRbdmZHJgFv)oG)UwHJsJsBlnMRadB~RadBm-FjM*T{4I2j>|PvW80OtT4e<Ic^F9%mLxt<aObni{eUSnSOm>`25B5IDhw)1T#~HJ2gbkb)it^`?XCZfm;OhyiIuT((rx*gdOtM5Af}2MpCW=~4u!#b8dq^Fe(W!z<VQjEXR6G?ub;2p#H~XpMB5DU|K3=`9*UzC3<m5IO40GEoV6^e>(Kih?vsxDB>cI}F?O-s7>4zgO*m=mOMPEO7fFHFt)1`zxoKzFEYZV<Sf2W`*g3~vl6)Si2btbe1*(mA?61N3mCrB|}<jgtQPJ>6GFRRV=>G|o`Y7^F*FlVr6C;{`%5t~lbSY!)lcb=RE!hfF_mzI-r-D(o354i67ZQuEZwrOsCA(S1oU{8hVL>-fNRvtUO?m%zt9OxwICh{0%a-kZ?nHV;0J{oL}oHQfG!C2wLe($Yu`<RKME{uGWj?HT?+Td1C5YbH5F*r?^*4GKtKIO3v+vWF6XxHyrn;6*2-<p>3c(Rs!pD~m+;RUgj8S*-S*aeT2QB@B!|NaA0p<>w'
+_ACTIONS = json.loads(zlib.decompress(base64.b85decode(
+(
+    'c-rk<O>bODa{Ma;o#!An*`(wfN9vssRy!0ZX^HiK7!2Sw3>fRf*f+!f-J;0uejkw;5t-H081P}SJrvoms$N!AW@KdKFaQ1GUw`}k'
+    'AAkS-#Xo)b%Zm@!A3wgh|Ngrd|MuH|{L6nn{OI97{_)%I|Ni&?dibwjUi|R+Z@+%Hy?Oij&8HV%{^{<g-SxwV&C4&p_{)oryZ7&>'
+    'KR(-j{qe&eecbKd&i?8C{(rvzZuaz_Z*D*Rlt2EbcelG2U%ylR^ziKKpWprE`s={n+}u5k7W~V{pLV+sU;k}2u8%jLm*e`fRPWyW'
+    '`SXYUcYgiCyWPi6kDm@RnSEUR$$W0BryhU%acGO@PrjEu_lM8#-oO3z%e(#b`C(P$=RUrw#d8;5Ce8c(^_!hKZD0h;Z+QC7pFhn8'
+    '87#@0Yhlj&Uyl~}`qS<<dB*Bhp<T1z0DsxNzxf#(+G=fs@$9$hWEmd6HU8Q1r79x?TlDZEpiROjAI3Ua#p%bdt4Q9@pB_fGc-Z7S'
+    'CeJ{onA*QQ^+!WmjNxbk=_{H1-eLiZmVyjcUVZe7k1Jfaip3WiFKY77Xs^n*$KiXX&psU8@C{AQj>&j{LF$75?*$nNdK;_JC~xE3'
+    'eH+9|&}&)#$;cN3jf1?P$3H2KV(sFb_zi8eG34(>+Q;l-M>B`ZfB3Y%15do_xeYuGM;U{=>XWCas}66{5v#s>Y~d04_bxwmTteMN'
+    '*L=Oqn=H6-VC=yU%bv(&ocn(kzYX~m$FJD`tNLX(@89p<eERiIyW3Ci-oN|j^<jJbLj1d`!NGti`pSdHv;2o(H}7M}$*(^gDf@^G'
+    '1fSpz++D9NVd4v{ym&Fp%{=0G+1U!j!+>j{9&Lv`jzYHhG#96xK5@O&ts`vmbtfJ;JQzky;drV&n&zn{Fgbt*+#TUDu{-4)Cg<MJ'
+    '`)|a1Jk{Ndtm6NNrg=1`_wxOB7pVi2TtEuwsDT#*G9!0m;^pQrh3;IfANKOT;Bt^hOO6e86PFN@60b<_21dinM-&`8iiAlc=1acZ'
+    'xs@e{p7fCM=PM53)v_x+1bcKA91p+lQ{xF7zWJx?+rM_us{CCXt*0LS%5UW`l|I(sys#-gr~(dBurX${pvYl)ePv!|Y9#QUy9kqJ'
+    'XHF__l^vr8Y}v$c!U!TarWZoK875?&3`%{k`RbsdOWs(%?VcZLvOTo(fmvWT+oyhH{?gePSCF_KnxB?Bg{9}Ve8DkK)cwNvQzh|;'
+    'zO3P2pm#%@+xcyop6<s`!8pG8yIeyuO40=1>%zuiuNo{!<X{xD2k4TYrFEm(uE`M2?M5=+laJ{eDcB$m9)cx@*WN&LgT5$n-Wq<l'
+    'x~%$*4<Cb;5W}Zkm+_plc<}SdX%={q=ZP2Ddi#@+W%gNEqwtZ(Pb*w9a&STnN!oaCZ*M*<AFaAp>%;W?-t}uIPhE4|OwZ1V#SU);'
+    'X8qlHi;E3?Vez4L_jpZb>pINaZw_hJ+~y&!>T@}$byOB^x#M{v!(NiNkKRs}{A{_Z%Ov$_AU4K!ErXiyi&x%8!AXN2OVuAO-I~WY'
+    '6ZsjrFM6720eNaCU?X4`hUKN59A+LGLYHL}!jECI!xfU67M$GB(C}z?^Vg0!5X=TuPYP}B$gUtOw9PEY(RBDs5iL~75#)=V$<)$J'
+    '?#y!J9DQ&5E#;3q`rfWb2E(px8!M$S{SekmZ!pqs9O9B{Z*%1wZxkX(1eqPia4)#wn~==6tVrnry706+d~dV@(Rrx(&oX#DB3XX?'
+    '4zz@$9R8SVsbAOmtH9XVAg}m%K%zxzB)JNhher3GEC(^h_zaplDjz@HUf=z&yS@FJ6L;|^51A}PsCc5=C9@*XeX=e_e1s-(yb-f('
+    'NA;f2Sr3zViiS-ytFS#aXP(YeWiAA=mXSDHTGcSMoR;^Nr(}9;nApzEGj?y?L-;8H6kcWuhqD|)NN&(lbnkBOe_YMV!;3JaTS<aZ'
+    'QkECSmyR)(iK$>;BdI<K=^51oHZIjb&W`<j%?g9ni0<IyD&czP0V9IPRs>H#Pc9#i4j8lB@t6_0xq0}5v&{f^N*FfF(@#e8cm;kr'
+    'sNTNtL>16mIKF&{o}!!_KE^c4dM>aq38y0CKyV-URy=ZC2STc!R9}OLI7G$*Jyxh-q4OLJhXS7B0apk<6r{C-08F~)QauKEQq9~1'
+    'Fq*Y~LQeLnmfNN>4M)q)*9(Q01yXR|H#Y;e$Zdkav{&L>@$m(R4tbXg?m?a+kq<pRmPBV3u$SYavZF0o$DT+~uoo4RNFe5c39|GY'
+    'ncXw1)L3L0=xmY8_9d$jEDk=AEU6j2pIfYR{F;NbY^L3^w3GNB1nGhb>=NKRBzzmp><+19EP0R<mxAOJVUqQaj+Rcs2@Rk#t}!p)'
+    '(RUaY#Fx4Hy3QJmuX%iCj7681U{QbXi=@lHQHi?vc)W0zu3<~@f;<7GYnJ}UK#`36aa>FzkFwAeD6nN6o<n_zwwT8dm5<H6n^+MT'
+    '9(TKxJPbIl4Y8SM6%-~65Q&T9^Hro?1*2J-P9qL3)^x>h6~b8-S}|}yQdvQvHcEC1=mo`Ugw4$6#PAsStCCWhMjK&eH}U3)eN=W)'
+    '+ri^_7)glOkIVh`-H%#em`U|PlnxJWw#~Alqshlf?qNV|0uHL91}=N&5RV>!ybztW7^YC60!klhL?Ia=G0uZ4(ut$g=~BeZiarLs'
+    'R#C1|0ehC2knw7M&l0IOqVZGJxTqoO$)DemLJTj<S0(xK!0R0lCkJU(Tv_iYdLB~ejg&YpvdqLP!e|ivmB-~jPx2*ydH4R$U;h76'
+    'iBQoW%~P@{cdTcJpT72NldY^n5;PpkL^<gDK(HZ?XOm1Y+R<dt(6u3BMhe&FSQ0wgB79gRf%lsnU!9UfJsR0@?$N%P49-dU=6^Q&'
+    'J||(962q~7hrwZ)mVxHLvn6m~GtYdL8ji9*Zt;>!AIQZH2<aO^WZ{dQ_?6lQ&4~>$xIzLwzCG}p#FF)@C82dr0{PI2Al#M9c=l-F'
+    'K!YsS5Fn%nE3m522fR3MWs!4Bp3QfuyV@B!%yd988(7bXiE2EUje9O=5D|3kkfFf0;2oPSizX*W%7@K4T+z0ZB1&`wVEC1jMCht@'
+    '`fI>DL6-gj;s+qli=9p5t?RfqkuYHS_p0I6D?SYz0o~7XB3>E{`C@CGQiY7=YxFn+V)U1<b`GCRe4Iu-<vcnMhW`4#t(=E>`Te|o'
+    ')^lwi0-e<|>ic3>c-EE}{+8B$hv-kZlsWkxqA{>*lt$;eP8ptRNx<w9(rDHT68nWu?i6T{>7eCg>0yYyY%fjLkrSHBRHy-l><&Y$'
+    'jUxTv)$$f+e6e$q2zDe<ooeo=NwAB<7s1Qvk(U!ano7iGg|&1<gu+zjAmIn2Ba{8+>d+WPN77C0v=UYD;nOfMc;N&|8rtm3p(x$u'
+    '5ltRSteTyS5LRLVEnIdu5|WGS3xPt|2U;qt0vjP13fI7@V8|Ej1Y3w;DgoA`uUjj)=353{+G<NXG|!RHz)k^9^{jY>+#pGzCJ99i'
+    '7$()JC#V%q5EMrnm|3)=_c}tfD%Mcam)of=*xuJ`=IdPimNZMhANoo8`2HsrA7LYG_mh+d)xjF-pgN)5)#6J@QmI|oU#lm;A6aO{'
+    'St<<_+aiqej7H9EX{(0|{(bZ-(a7+1s07W#g|>1U0B{m2k}LV41D)roar338LLLkh{w`vpqSp{ogC;|CkZzLIg=0mZaGsYIjm(F='
+    'e3^W*?tFp=<I$7cbu{*fVYf=nvgu9aG$h(o#Q4JlzEgAb;Zo(-2QdR<^1zZeURD8%M<HDfKoAP&55FMzGkAv`mrciawe>kG^Fh<f'
+    '2Q)KMkvLfzA%=p24CTXskW5h*<S=Q^dI9%NKJ7rbl;0|I0yUK)L4L_)115_2OZIH0ZIra;Q!?L3aUAT*yvN#_m)ovAkNa|S97k5V'
+    ';d?J9F?omt-v4>>X!18;R<IFEwB1ssi%F>sLJj~vqnYIS-X4)DrO-wmHDW9vCmO4_ldaL%1Z1NI5G-Pwa{EAgofG#=<_M|EqvWXU'
+    'q(dke+Q?<|XIdlhhmX7V&CSh+0%6L(T#y6wvLivhaI$c2J!R%>zXeeyi$S&)Wo9I*xRwJ{39xbr(>7+7?y?C_j%QZY4$^d4C3u%x'
+    'AIoXPc}7_#*6MB3p9`Y@E0koCmSdA?i$b#+Fjp$WbH}LSf+1{19M?;GXTr#ejxBP=SH6;@=A7`IJ8vCM4Q)rogkd`Y!V#%Uqp7n&'
+    '8<OQ@DHFOZ`Z;1kjh#pfew6pjY7$Rnm&|~O{J$j6k@QbKji6($fsx;gyiY61?wKd4RnLQRcw{eDZ+f~hpO4VRSt~gnLkSFc$8}me'
+    '=N8D5t^9Upa#Rxct@`qi9inZ;I;ZC`tmg)uz#gwNMOrlCq-Tzjd^TEM+csx!E}defNk)xUbtW=yyqr{N<tJ2hI&$|7V+?X^Da^yl'
+    '_!!xfH%lsC!th#Rt!r@Nn;S4d{DxZ|a?}y!6w`Wn1e+2^2ZE<u;4!y3NXTpH^&}8kOGiQG+nJ*uGLIqMxG%pojW6N>5yBNm;B0Cc'
+    '?9a8RHM#^FEogfvOT=JCRe=g0t<w@?I(K<N8I6O$KIb!V`)L)o_pPpph!esI)9@|erCGmqQcZSc_g+sLb4Ejade(Whcl%+At?n0s'
+    'cZ5rs6hdsl=vi$RLzg-oL{DV121L^9hNW6#<Q_*q*Xmv4CJUQpbr%nf^THJpbh4RtR3COi3sj0hjVhzEa7%O>SF3$C!#cpr+#Glg'
+    'pg6CGi&)UIQS~=zn3@}}*k#Qv>SpE9tf+rI)#3un#w}cAUqzNJszfiSuiAK^J(mPt*}YQfJZ%{;i~5p7rMR%9j1><EfetE|qG{Ze'
+    'Y&BJW>GW51tPj!zoG2RM9@?T6?GJB~bY$#eb)t0$2n|v&mf$$VUpg780HeN(Zv!wm6?Dbky#;cUG;~t(pjJC3NW{3n0XitUlk1MG'
+    '*gK9%7h2Bmh%r;j!wBk*-I<THJ9NZwiP#U5m#yO}@Fow+<w(nho>yn~q9*FLBwn3Ou-Lw{7tFA-5aq5;z1WUn6XF$1Mw2XhqD3N?'
+    'fd(`{%Cv`dUOFO1!orZmH%MKClJGHAV`oTb42v*{d~%Jj;3*|p%}&g?hzU_8n1~lk)ng>WbHw{O-wJL&6d_pR=Q|c1s42s^>#Db8'
+    'E(<4<kV{+W+(h#fU~t<LL73K+n42r!Q92ln%D|q@a08*id@tq|Lz>G+3b-tZZ&n}3w^zMi5_Qh846Dc|sIMj6y)B-DBSm$Q*W)K>'
+    '#p-Knki|D7LPXdDF2svc{Q(()Mr>*3c>Y}_jixB@+A&3oJDPYT>YFPZ>Xi$=V3Gjo8cgYQc1xynmy#N=IUpN6NO^&ITZ%E^$SvL2'
+    '(5h)rSp|l9;u1J2Pmj>9DpQM$fPj^Tn#gLGWRq=d-$b_z+796i#q=P8`s7RomNdhCY+Me|<-Kka^)iNzp(_}2#gG`e8(E6bz=vK>'
+    'jd(q`=wN4Lu`V9B7K#lrZXSdY1muMFD=33-zF90iH>^NHw{QIJWgJNBqFjjK8GM6mI|82)QTyUvB&JT9MC2$qP3WJ<=uHKjDuiNV'
+    '-MXA7D-;VH$<S;%JTFq%!a9xTwG(6m%0a8=kt4V&H*aA>61=Zhs7Fh-P2(n&M`du(V$;#v8p0f`^SRPJnvg#to1UCQ4TcCIgD`FC'
+    '^&O+(DHqR)rvy0A)~138RVP7Zgs9%U;mpe!b>`{MF12;grKp1yI~Tlo-Z$GONE5yR>1buW)?oBwh8&#W=&*;gOUgbj_!;K6JhFWq'
+    'D<#Ei36lA4YLhJZ^fTtt?94U$De2SVO_lkya_1kL4|JJmnwRe$jZ}W&um@t(Of#iqgW*}_QNBdrz-|<Ua|HHmq-O={5)XX!%zvXW'
+    'R+Hj^8Hnz_io`o*LWS8Nj1hx!$_>-M4ft7hz%OhHqWn%;M$uco75#ggBy@%OP6;aEv7&%pB-7XxLiYiQx+j-)z$2hrgcaIfzMQPR'
+    '1FHh@)qP5*H3@oiQK+Puk<gl{7uhmO5mDF8b4_A@#lSEGB*O(0g3UeqF)W8OIF6m>I5JnC@Q@T;0A2YfRh`b;#3(ge@_p@gQ%m(n'
+    '2!k6ApRBrlCp&r~R(S!v&e*Y8Z?rChO|_CQx0PW8SDkm@s=c88_Bny7++p_QPiW{#IYN~-_Y1k|IXdz5!<jnLD+p*^jaV-@lXUJZ'
+    'DCA5NSqM-=j7X<6FXxmus&YvqyzK|dM<*E~G{5{PZ&WK)<yS2>DTm1hEjq0Th?2QEncR>`l(r`KBjif0>8Dxr=jg*0S{3Et3zt44'
+    'b&eukqY@pI8^L>phZQ8W+te|}kD!Z3{O-`8RH`3aerV7$^1_oE`ShN=h&@EDpe4G#7f(@Fp8!b~wh3izc2TdtVa+rxQ!Q^FyM#4Z'
+    '@E~QB_w<Rc+c>SklPV3a1|c@(Hvu_)**;MB?_GYwMr>(n@vK57Zf`j<bCMJBYZy9h&}y-ov~5D(64jQ8_;2j+576(r#w|GPSAFO3'
+    '6i7=5(kGK_MMB12j<@lC4EHB5_+|2wT4)eq@hu<{aVD%2qeooD%nw<|E<Ybw^-x{`uqU=$uv6}J#W!IokDz>Veh4t`W!^e7E?Y3V'
+    'fjy#8+dpa*8mU}Cm1&@|ud1FSsSM4^#!8bfu(<?%U#UEza2JyFGY$Bu>JdzT?<9AnLHtHHS%fR(kkTp?DXJY6>!F#nej%1>0$~=m'
+    'l~%Nfp%JgkSh64W_!L2$aWpjh4;l|Kk82<?Aj<NHjA<Qp7z3+v#1re`FkT7Y4E1#A`Mr-gVSgN8I5XPRlCxdwSmUQnm10D~v2|OZ'
+    'FcTER_O1XO_5|?}M0#7olY3VLq}-SxSh(n%;@ib87ZP0Uge@&8z`5c_-Pk*)$Ql+5nF5>^J4iD+zc%ht%up#PQOjLVz+7UAYIkZ='
+    '@vQ4qWx&yK$jZi{@=d+uwUZ87N8&R`=aQwfLw*}o<OuieBHB$@0~QULkar>Dhib&<tWmXLo{9&)4EMJv?kq?}8Pb**1bo@lvqz%O'
+    'xrM>4E;MC>m2V5{d)-iJF6kukWjWFo^BKfmURA$&AAi04qXJO%8a)hiW-t}0$w~Q8Kq^UE3#4-gZ$G$oaJ5gq1O;45(NZF!_PZ>v'
+    'smNCmEIJ92znL-~X^kS!V_bUK(=1?lS1$9FL+Lh<CDao_qLG}>9Ma;4m3US=K`k74p$fOtRgPD2=7vrVu}+3~$d2W0LYess)~JZ4'
+    'HPZV=U%`Z}DKSP!PO&$)d>1kN!Ks-d1d=W}QdTWq;L>Tcd75uFGUX$C5?KsG){l=+fP^=s<w}@#y<3<^`IIq@HN8k%_YS3$F&??O'
+    'O<E1!(k(*;;#uD$I6azjaXJ1&ZY0u;5zd5~pD!Pk=0_~L3on0;@0$c~rSZKbH;{G+<IXNMB?=;D%^gqD439zk`n?Gv(KX#Ic$X9`'
+    'q(ro0+q`tBa-BTUV5+gS9|wU8QLVHrLCwjCp>Zai(yB$m`Ipyf3}vPAN6bxXe8OoiUHI+tj|0E0l(b9?jxfe_1@o<T(Ble2h}muG'
+    '>thkaWIh?t;6h0`8<mh}fWSENi$q>v@Bq>2#RgbUyR}ryLaCcV&R**2HfG=>>R&RJ718MI0S5u*3H@UlaudHt73>^JT8NAa?MK@6'
+    'Xn=ZWz2ccN)-3tX0u!YMpHto%gJHt$fV|4C+y|?BaF}TXmD1}x%uIR6`wY4J4B*83rc?DXeycNriAlhW&JB)yG^*7h(e9Yr_R6&s'
+    '<MVZzg;SP95RqlU8$SWDd)2OiG>k!z<nl9P%F|&zF^}>B2s6w@ak}cRE(bWX4>XHFd?8m#Pv~z$)Btjdjn$sx1f+O4dc+h$lqQVB'
+    'fa7ckBOW70ufnlI`~-OnK|0<j5Xt#Mi}AV|P;lBCaRW2uFuCKNIZe#VxwtP2V8KrbwUS;Mx@LPoksJ;`ZJrZ;A}taFbmY><pVDs{'
+    'Taq|uw5Isf_I`kNSX?ZSE4MTDQQl#dua7%;B734tlQ6IJc6*1r>XrQt(4q@nJ)Abya7I!W3Y6l?02?djAdU>Lm5_L0D4#_O2e5rd'
+    '`NjYplI6rsMze7GPAL6j5CV`xt7AgKx|WltQ<al!3b?c)WsCQE!loh-<mylxCWXfV5ZZMKS9;2oUzMq(=M`mmc-%M?ENT5tpEN~f'
+    'QSJ4)?C`(Bt);fTl3U70+o#1xh(gW00$SLNTKjqZ?x81i4EADfRZ6BI9l)JS$d_(pH#d_*MJHk+kX{%r>$!;AdPX-7cXhHFve5?_'
+    '%<1UH&efu|D=-&4w=zpf(Oc3QK`zV7<$2IEJMAi+GU%OgG(+pf^Yynpe4Es_s#YlETqB#SOAY`*x-YGkcCe^XHzBSx#M|UTxf<Qt'
+    'dYK<3%V5DluRsqIeiM$kWzl5qlM>7Ew9*&=PLs4cxiCGaHE|88l;boOd%KFUw`Lt?rGAfSGbV0T0RssDW-)OiaL(N^8jM`r42>3@'
+    'S)%R?{Od}Ax#Brmoo9Cv-0`Gfomgs^F}j@YX4%%Gy##382l1x6YBM?6p0uh_G|W6hA0$5GY-MwU#_<>_0_zx=MV~iBX&8OwZddIa'
+    'Lh@vp%pFn4g9k3Ul*d=0M8zWsCQZ3Q?&&;A7J!x0iS{3}3!=Fn`h6;=SkjzF1S)xNlHdSf+eq)rSZ(-6BFNwb1tb)>jWMOfl%IeC'
+    'AiQ!eFTO8vquRYy(1u5NwKh5k<EF-u!$>E)2ty2x)vi+J@{~q-*z>zl67{SUI)EiE-Fp!#zOc3VI$sTPxa<~u_B(K}L*elDMtNso'
+    'r%`LlN9M@akMEsp=D{sSx2`fkQ=gqW8>N0YAe1_I{|ZARofY>l<@Nt@S{W%R!?(Uu#5fkUx`c?|*;y=&xX`^%fiCIT3pz0e=pXco'
+    'NY)iaBFSwW_4~ZaW=4*}yo6D&&kWJBNL2y@pjVuJRyrM77;2{pYTUFjq#+)x1~;}-AXcY3u_7z46It{ISY|GpN|zCs%XCtf7TamA'
+    'xJnvU5czvidBiMz-3^Atxy4(1kI9wMO2uaR_K*#rSE;-H8MS{>vt$u2SwpLE)dz*$n6M!>;R{t3t!54Vj)Nm;vQ|d}LewBd<B0yz'
+    'texX~nhDs+ZAAxdBB=T^LjXe9lMuR*^QG-5wJ?eh&J&gdfzoZ|tP_Z1Mno|u;pDN=0_UQC^pT#IN3owZ%E1%NHHIpddlLK8<Z95f'
+    '`m;=E%+a^Yt0sdk^XjQq*+=Y-=fE4hzE6z;6VWWLy-MDxa8?`{QNj^8lMG*g3LCXt7bC>ywx*YZ!70ox4LHV)1Yb4!16TlFmA1z6'
+    '#zVBo6t30&`!DamiBj1dvLkI-^kmmC9vx9!M1`tR?}OT3#aB^;v|YM$#DWv)`g2bmrCXE=;eq|SdWEt?kKV;=2onT)%Lk8#(sZm4'
+    'sigXAlcu7>(;+~!KB$rZw{R6t7O)x`$DZc=VFI$oS!bg4=Bc?GjStUC9qWjy1C0HFEGk!^^1!iSaw{mZpyIE!K9*F&P{3qcI{O0G'
+    'm32vbC6W7}S$r$qeYt}>At&n6g8KVX5<S=k;Z+)zjtS-A87NUa1JQ{=aQWkbp&+RwGz=2CFtG0;E>8mwI&~OKC|ZODcU-EbF0~yL'
+    '-|2eDv^fp~T5xQLa&3fIXe4S-;OZUWXjCk_&?X$JI4$9K@`YA*A9J;7-w*PV(k&%mV8V4L{7PQxvw{gWFHf<XqH)4-EO@&)pcz1p'
+    'C)rSWxe3vS6bkA|=SwM$RLE!)#l&K);{@KG4)E<*5jUs7fGFS=PbFa8O~|VeCbQs#B`_txXlWnE=M;X6_1J=Z2SvE_ZUUPOI#Rzj'
+    'KN*$&pvxaWzJ{$z;tLvS5Z_)Eg3Dz>$+e&xbV}!g2P_N%AR0IQ6sejSfSAqVn<p4v*)&zbHzR7>HTgEX$TYM?E@)*6Z{M-hECrdx'
+    'o)l2{M5o?`dQ3GcV!e?@Bvg;4!nhz@_j**FP244@s(L{>l|Y&ueOCiG3&hSyMCopySdywC9U?ViyVOoUSZ2e!U-Gtu%kJ2(2Xaw1'
+    '_oWjt=LiKYzSm-INF}>KN?CXzuYFq;t}98+mDDxnfoz3YCp4@MriO}d1)4@Kq9*V)o;KB$CoyQ8sX_WpXQ((mS%&2`sD-9!HhAL1'
+    '#tCiN&Sv!bggE3uqI^LBM^Y?@&Xh{XQkQqRbAW$-oHS9Ov<tJs&<z&iaNs~%o3VRTRu}KDd;B3FR+3YKpyb*cktZ1GttGkRNETM^'
+    'ib~j%6{@I8edXK0aVd?AoYxnwCqbDgib^bHOPy&1#;W&<t*i3|Af+#5x3()r7))wbF<<cY=~;r)*A{?zVoT2$P}Fe1?T9I|l0!mC'
+    '$O(Bq5pfu$kj;x!>gLV#n8ZBo$a>jTSG9bYT((pI(3HC6PFb#lW7R=E5f{^lYhPCK_9nPM4>#e{FDb~MfI2wz)^tUCmn4d#5z?Xy'
+    'd8eX*%~oYJ*hZlWQPmWvy>5l#!JJfA`YynwmWEgF%y(EJ+T;;Dt-5vC>x6!arMu3j5NCSq5Imcz!d#<b5GfOPIw`rFu=xU^>@ONn'
+    'X=CD(#H(d`mbXaxYQYZ8B5}I|Ql3{mVChTP&wagj28hmx!K5HR*so2pD5<_+UL(u=5H4!>f;&71!8zr!IFCX8T*o1U9;RkNZe!&R'
+    '$upCSnLhlBwU=Os!lp7uQ9%~!PM3Uv5sOZK-ShP@D-TfLuM|gE_QwbVJyw?XYWS~wc|#`50slP$t4YI_R-jUKo&_=`zx7O4O@(h0'
+    'v<NQCxwtH83RO9Gm|MoeQ~38e7B?%Sz3<jeSa&)DAv0)F))j<2I9z+Z87M-y|H`Z9?49AM$mwX~)*|B}1afg7oR7s@iR20F;hiu`'
+    ';*O^V4x7*#(it!UwiKC#GZ53JnGT2-R9OPcZ1hqKF<FvPfYbc$7y~=|QOPu;7Y3K-9n>q6I+TdcFI3d!oGg_P>$u+eF0k7c3mZXc'
+    '$C02>RqT*-N?<#c$em)BM1r42?jQ&|kc&Z=nyvK4%Ml@`y&NqxGr)7*Y#bd!3*ECKcuu7o23vA_V`fb|oD$p146+Fkk<MYYF4;o2'
+    'fELn-OpwADq=JE$mLZbb{)P7x$=q^shwdqNNhx0=POAzM?cX^93Mp95XyZ8QC8Um&N}51SOEm7O9!rZws>c>-@gi#(lUGJ02SoYE'
+    'e18a+BKNZVf@-bPz_@EfH*`*Dh)x$O;2`yP@u6!}<VO&8`tI-^bkF9Pt}bI&s7#u}V5@7$jb>0~?>6Y^N)fIU-a1XKuGu*Pj5utj'
+    'g?<(OkQ87>g}iH)v4pb*SlKIDy}C*M`rho?>Xt9(XFdNb#1WA&#0_1Rl;&6K3roUUS_7&#_gGW?0AjrrQxF=ZB^Sp&_KQkcz^jz}'
+    '$;to_W`tan=&}=o=8>Ju?hNOIGI;9f(t;^doFS)VHl%E(-N_!k;{!cB`vzitip~vh>g7mEF}Q^qoT*!*QV@jl5mNMv6)FQXWp#2{'
+    'QazAY8nD?|GKcgW$a^RB%E?(jg*=@T^{UL%{2qT{e&s(00Y^agJzYAYM(UpjfL5qL@_L)xVXZmxYEq%abwEa7dUE6GC3*#|)Biyt'
+    '<%(~ldrJz+bSz~@YacR{tdNIDQpYY^10C0_+F*qWpVjmZSW<@xx)7vT-@`;gn`UyT2n|bFmx~9FO&!c`^#sx^vV0&Ca)}rw7gnGQ'
+    'Pa%S6D%y1{ck0(nUhOHQv;RrE8pTey)KpacAlleI2kj96NoM8fAF_%7=~XhsPn*~4d|GSh<g(B+<CzdS(q7o@SbJ%8w-v68OucXx'
+    'SgzTB)1OW<U3<=UcWDkDA&@P&lXXWmpfkgi7E_bURm6f`2*-f708y0yqOt&5rAA}Pg-3$$>W9zo-oO3z&CUMmLvw2|zhIHRD9Gf<'
+    ')OqeEr?5n)SFSmrvn%t6iS(ps%P@(oKA{#V`R8`+5lw)xThDXjkUc9(Ym99o>_%$n(1vgyU~by$!?B2da7;04+n~tJYX-jrQ(rY~'
+    'it+Sk9D&EDPD&?&dQ|!X&hPE!D3V7f##iua^J#vNrq7ATV%ZhzH)zsc&|o>iPAKj%RVf@=axfK?I2KIBD+uHSGI)UE5fd72V8j8X'
+    'h%g~x0+2P4DcVdy6Nc6Z<!1>VDD=)X#;BOoK{2v?na<vy5&m)$fuf{`?99uT_C%ZmF~Dq|8aRkWXvVpO52M4p=h5MQ^6;+1H?~~)'
+    'x@IsKW=Tn`=$-C<{Bb%dxQXDT`0Z>CKS`U;&F>;E)q<bqf6q!wD5{K1aBJ?rVB<`HQ$PwspN@YKaUYD$hU*_^HhHchhwK^W&x$`0'
+    '345jIYPC1(+C@D_@X}cZJxg<B#p6_1g3yrgK|=XF5ya-cBjOP_-UFPIM6O`19(2#Z$rCJ3;u;_zpxAdcVhg-TrJ-_!C2Rv#6IdTz'
+    '4C55G1fT`pSByhYF;tdG3tlR5bdq0e8>(aqsx79%`%+3~Bf2t{n@Qa^_yxy{U&;VpbV3^zz{hWiSc$|naKMnEU=EdSTwU!Kg($@7'
+    '{pWcidIzK=(#RDfB(><!oR2nq{3I{>G-Z#6zW-8>{}_ch7$jyK;m0v3b68u`HqJPD?~C8@EMoyLCZ1p-Jv^rIT>3vh{$-g@+9QZp'
+    'Nv@YCiht#4@uCAmn_oK8D)ev_UbUu9iYL)gp`7sR+ycUH;&YW}d|oG*)W8?NyzfKAO_@4xD49_U_?jpu7hMx{eCJ@uOh00l$U4qE'
+    '#4=%t3NpL=NS|cR(j9=~;>!{3LeZe}-_v`7rZ*QM#hl0UesHYs{}<kCe8T'
+)
 )).decode("utf-8"))
 
-_I0 = 10000
-_PRICE_FLOOR = 1
-_MP = {
-    "WHEAT": (25, 400, "sqrt", 0.80, "log", 0.20),
-    "CARROT": (35, 450, "log", 0.20, "sqrt", 0.70),
-    "TOMATO": (60, 200, "linear", 0.40, "sqrt", 0.60),
-    "STRAWBERRY": (120, 100, "sqrt", 0.70, "linear", 1.60),
-    "MELON": (250, 300, "log", 0.20, "sq", 3.60),
-    "EGG": (50, 332, "linear", 0.40, "log", 0.20),
-    "MILK": (160, 122, "sqrt", 0.60, "linear", 1.60),
-    "WOOL": (200, 105, "log", 0.20, "sq", 3.20),
-    "FERTILIZER": (100, 200, "linear", 0.40, "linear", 0.40),
-}
-_SHOP_DEMAND = {
-    "BAKERY": ("EGG", "WHEAT"),
-    "PIZZA_SHOP": ("MILK", "TOMATO", "WHEAT"),
-    "BRUNCH_SPOT": ("EGG", "WHEAT", "STRAWBERRY"),
-    "YARN_STORE": ("WOOL",),
-    "ICE_CREAM_SHOP": ("STRAWBERRY", "MILK", "WHEAT"),
-    "PET_CAFE": ("CARROT",),
-    "SMOOTHIE_SHOP": ("STRAWBERRY", "MILK"),
-    "FARMERS_MARKET": ("WHEAT", "CARROT", "TOMATO", "STRAWBERRY"),
-}
-_CENTER_ITEMS = tuple(k for k in _MP if k != "FERTILIZER")
-
-# Products the controller owns, mapped to a reservation price expressed as a
-# fraction of base price. Everything else keeps the tape's schedule untouched.
-_RESERVE = {}
-# Sort SELL orders by gross value so the most valuable sale takes the earliest
-# slot; market slots resolve index by index across both players.
-_SORT_SELLS = True
-# Ranking key for slot placement: "gross", "unit" or "impact".
-_SORT_KEY = 'impact'
-# True places promoted sells ahead of buys/hires; False keeps the tape's layout.
-_SELLS_FIRST = True
-# Only these products may be promoted into early slots. Empty means all.
-_PROMOTE = ('MILK', 'WOOL', 'STRAWBERRY', 'MELON', 'EGG', 'TOMATO', 'CARROT', 'FERTILIZER')
-# Products that may be promoted only from this step onward. Selling wheat early
-# lowers the price an opponent pays for feed, which can rescue a cash-starved
-# rival; deferring wheat promotion keeps that pressure on during the early game
-# when starvation actually bites.
-_PROMOTE_AFTER = {}
-# Products promoted only while the opponent's public money is at least this much.
-# A rival near insolvency is the one most helped by our extra supply, so we hold
-# that pressure on until they are clearly solvent.
-_PROMOTE_IF_OPP_MONEY = {'WHEAT': 200.0}
-# Force selling once the shed reaches this load, protecting end-of-day drops.
-_SHED_PRESSURE = 80
-# Reservation decays linearly to zero across this window, spreading liquidation.
-_RAMP_START = 576
-_RAMP_END = 716
-
-_SUPPLY_DRIVER = {
-    "MILK": ("animal", "COW"),
-    "WOOL": ("animal", "SHEEP"),
-    "EGG": ("animal", "GOOSE"),
-    "FERTILIZER": ("animal", None),
-    "STRAWBERRY": ("crop", "STRAWBERRY"),
-    "MELON": ("crop", "MELON"),
-    "WHEAT": ("crop", "WHEAT"),
-    "CARROT": ("crop", "CARROT"),
-    "TOMATO": ("crop", "TOMATO"),
-}
+_PLANNER = build_sparse_planner(_ACTIONS, PlannerConfig())
 
 
-def _mshape(func, x):
-    if func == "linear":
-        return x
-    if func == "sq":
-        return x * x
-    if func == "sqrt":
-        return _math.sqrt(x)
-    if func == "log10":
-        return _math.log10(1.0 + x)
-    return _math.log(1.0 + x)
-
-
-def _mprice(item, inventory):
-    """Exact port of the engine's market_price."""
-    base, throughput, below_f, below_t, above_f, above_t = _MP[item]
-    if inventory < _I0:
-        amp = below_t * base / _mshape(below_f, throughput)
-        value = base + amp * _mshape(below_f, _I0 - inventory)
-    else:
-        amp = above_t * base / _mshape(above_f, throughput)
-        value = base - amp * _mshape(above_f, inventory - _I0)
-    return max(_PRICE_FLOOR, int(round(value)))
-
-
-def _remaining_drain(item, step, shops):
-    """Units of `item` the town consumes between `step` and the season end.
-
-    Shops fire on steps divisible by 4, the town center on steps divisible by 12
-    with multipliers that step up on days 10 and 20. Still-locked shops are
-    credited from the day they are expected to unlock (one new shop every three
-    days), so late-game demand is not understated.
-    """
-    if item == "FERTILIZER":
-        return 0.0  # neither the shops nor the town center consume fertilizer
-    unlocked = set(shops or ())
-    live = 0
-    pending = []
-    for name, products in _SHOP_DEMAND.items():
-        if item not in products:
-            continue
-        weight = 2 if len(products) == 1 else 1
-        if name in unlocked:
-            live += weight
-        else:
-            pending.append(weight)
-    n_locked = len(_SHOP_DEMAND) - len(unlocked)
-    pending_total = sum(pending)
-    is_center = item in _CENTER_ITEMS
-    total = 0.0
-    for s in range(step, 720):
-        day = s // 24
-        if s % 4 == 0:
-            total += live
-            if pending_total and n_locked > 0:
-                expected = min(n_locked, max(0, day // 3 + 1 - len(unlocked)))
-                total += pending_total * (expected / n_locked)
-        if is_center and s % 12 == 0:
-            total += 4 if day >= 20 else (2 if day >= 10 else 1)
-    return total
-
-
-def _count_driver(farm, kind, name):
-    total = 0
-    for row in farm.get("tiles") or []:
-        for tile in row or []:
-            if not isinstance(tile, dict):
-                continue
-            if kind == "animal":
-                animal = tile.get("animal")
-                if animal and (name is None or animal == name):
-                    total += 1
-            elif tile.get("kind") == "PLANT" and tile.get("crop") == name:
-                total += 1
-    return total
-
-
-def _opponent_scale(obs, item):
-    """Opponent's expected remaining supply of `item`, relative to ours."""
-    driver = _SUPPLY_DRIVER.get(item)
-    if driver is None:
-        return 1.0
-    farms = obs.get("farms") or []
-    if len(farms) < 2:
-        return 1.0
-    me = int(obs.get("player", 0) or 0)
-    kind, name = driver
-    mine = _count_driver(farms[me], kind, name)
-    theirs = _count_driver(farms[1 - me], kind, name)
-    if mine <= 0:
-        return 1.0 if theirs > 0 else 0.0
-    return max(0.0, min(2.0, theirs / float(mine)))
-
-
-def _reserve_price(item, step, obs, shops):
-    """Reservation price for one unit of `item`.
-
-    A fixed fraction of base price, decayed linearly to zero over the
-    liquidation ramp, and scaled down when the town's remaining appetite cannot
-    absorb the supply still to come: a structurally oversupplied product is a
-    race to sell, not something to hold.
-    """
-    base = _MP[item][0]
-    frac = _RESERVE[item]
-    if step >= _RAMP_START:
-        span = float(max(1, _RAMP_END - _RAMP_START))
-        frac *= max(0.0, (_RAMP_END - step) / span)
-    drain = _remaining_drain(item, step, shops)
-    supply = float(_SUPPLY.get(item, [0] * 721)[min(step, 720)])
-    ahead = supply * (1.0 + _opponent_scale(obs, item))
-    if ahead > 0.0:
-        frac *= min(1.0, drain / ahead)
-    return base * frac
-
-
-def _plan_sells(obs, step, slots, short_of_cash):
-    """Choose SELL orders for the controlled products."""
-    if slots <= 0:
-        return []
-    shed = (obs.get("private") or {}).get("shed") or {}
-    inventory = ((obs.get("market") or {}).get("inventory") or {})
-    shops = (obs.get("town") or {}).get("unlocked_shops") or []
-    load = sum(max(0, int(v or 0)) for v in shed.values())
-    forced = load >= _SHED_PRESSURE or short_of_cash > 0
-
-    candidates = []
-    for item in _RESERVE:
-        held = int(shed.get(item, 0) or 0)
-        if held <= 0:
-            continue
-        inv = int(inventory.get(item, _I0) or _I0)
-        if forced:
-            units = held
-        else:
-            reserve = _reserve_price(item, step, obs, shops)
-            units = 0
-            while units < held and _mprice(item, inv + units) >= reserve:
-                units += 1
-        if units > 0:
-            candidates.append((_mprice(item, inv) * units, item, units))
-    candidates.sort(reverse=True)
-    return [["SELL", item, units] for _, item, units in candidates[:slots]]
-
-
-def _cash_needed(orders, obs):
-    """Coins this turn's buy orders require."""
-    seeds = {"WHEAT": 10, "CARROT": 20, "TOMATO": 50, "STRAWBERRY": 100, "MELON": 80}
-    animals = {"GOOSE": 300, "COW": 400, "SHEEP": 500}
-    prices = ((obs.get("market") or {}).get("prices") or {})
-    total = 0
-    for order in orders:
-        if not isinstance(order, list) or not order:
-            continue
-        op = order[0]
-        if op == "BUY_SEED" and len(order) >= 3:
-            total += seeds.get(order[1], 0) * int(order[2] or 0)
-        elif op == "BUY_ANIMAL" and len(order) >= 3:
-            total += animals.get(order[1], 0) * int(order[2] or 0)
-        elif op == "BUY_PRODUCT" and len(order) >= 3:
-            total += int(prices.get(order[1], 50) or 50) * int(order[2] or 0)
-        elif op == "BUY_LAND":
-            total += 4000
-    return total
-
-
-def _sell_priority(order, obs):
-    """Rank a SELL order for slot placement; higher goes into an earlier slot.
-
-    Market slots resolve index by index across both players, so an order in an
-    earlier slot is priced before the opponent's matching order in a later slot.
-    ``gross`` ranks by revenue at stake. ``impact`` ranks by how much revenue is
-    actually lost by going second, which is the quantity times this order's own
-    price impact — that promotes steep premium curves (wool, melon, milk) over
-    large but nearly flat staple sales (wheat, egg).
-    """
-    if not (isinstance(order, list) and len(order) >= 3 and order[0] == "SELL"):
-        return -1.0
-    item = order[1]
+def agent(obs, configuration=None):
     try:
-        qty = int(order[2] or 0)
-    except (TypeError, ValueError):
-        return -1.0
-    if qty <= 0 or item not in _MP:
-        return -1.0
-    inventory = ((obs.get("market") or {}).get("inventory") or {})
-    inv = int(inventory.get(item, _I0) or _I0)
-    unit = _mprice(item, inv)
-    held = int(((obs.get("private") or {}).get("shed") or {}).get(item, 0) or 0)
-    qty = min(qty, held) if held > 0 else qty
-    if _SORT_KEY == "unit":
-        return float(unit)
-    if _SORT_KEY == "impact":
-        return float(qty) * float(unit - _mprice(item, inv + qty))
-    return float(unit) * float(qty)
-
-
-def agent(obs, config=None):
-    """c27 with its SELL layer partially replaced by the market controller."""
-    action = _base_agent(obs, config)
-    try:
-        step = int(obs.get("step", 0) or 0)
-        if step >= 717:
-            return action  # proven terminal controller; leave untouched
-        orders = list(action.get("market") or [])
-        keep = [
-            order for order in orders
-            if not (
-                isinstance(order, list) and len(order) >= 2
-                and order[0] == "SELL" and order[1] in _RESERVE
-            )
-        ]
-        player = int(obs.get("player", 0) or 0)
-        money = float(((obs.get("farms") or [{}])[player]).get("money", 0) or 0)
-        short = max(0.0, _cash_needed(keep, obs) - money)
-        sells = _plan_sells(obs, step, 10 - len(keep), short)
-        if not _SORT_SELLS:
-            action["market"] = (sells + keep)[:10]
-            return action
-
-        def is_sell(o):
-            return isinstance(o, list) and o and o[0] == "SELL"
-
-        opp_money = None
-        if _PROMOTE_IF_OPP_MONEY:
-            farms = obs.get("farms") or []
-            if len(farms) > 1:
-                opp_money = float(farms[1 - player].get("money", 0) or 0)
-
-        def promotable(o):
-            if not is_sell(o):
-                return False
-            item = o[1]
-            if item in _PROMOTE_IF_OPP_MONEY:
-                if opp_money is None:
-                    return False
-                return opp_money >= _PROMOTE_IF_OPP_MONEY[item]
-            if item in _PROMOTE_AFTER:
-                return step >= _PROMOTE_AFTER[item]
-            return not _PROMOTE or item in _PROMOTE
-
-        # Only promotable sells compete for the earliest slots. WHEAT and
-        # FERTILIZER are the only products an opponent can BUY_PRODUCT, so
-        # promoting those ahead of their buys would lower the price they pay for
-        # feed; those sells are deliberately left in their tape position, where
-        # the opponent's buys have already drained inventory and lifted the price.
-        merged = [o for o in sells if promotable(o)] + [o for o in keep if promotable(o)]
-        merged.sort(key=lambda o: -_sell_priority(o, obs))
-        rest = [o for o in sells if not promotable(o)] + [o for o in keep if not promotable(o)]
-        if _SELLS_FIRST:
-            action["market"] = (merged + rest)[:10]
-        else:
-            # Keep the tape's slot layout: sorted sells refill the slots that
-            # already held promotable sells; every other order stays put.
-            out = []
-            queue = list(merged)
-            for order in keep:
-                out.append(queue.pop(0) if (promotable(order) and queue) else order)
-            out.extend(queue)
-            action["market"] = out[:10]
-        return action
+        action = _PLANNER(obs, configuration)
+        return apply_overlay(obs, action, "late_collision")
     except Exception:
-        return action
+        seat = 1 if int(_v50_get(obs, "player", 0) or 0) == 1 else 0
+        farms = list(_v50_get(obs, "farms", []) or [])
+        farm = farms[seat] if seat < len(farms) else {}
+        return {
+            "farmer": ["PASS"],
+            "hands": [["PASS"] for _ in (_v50_get(farm, "hands", []) or [])],
+            "market": [],
+        }
+
+
+def _kaggle_submission_entrypoint(obs, configuration=None):
+    return agent(obs, configuration)
