@@ -1,0 +1,292 @@
+[
+  {
+    "ep_id": 112801394,
+    "opp_name": "Team Name",
+    "matched_team": "Team Name",
+    "opp_rank": 1959,
+    "opp_rating": 1850.7,
+    "our_score": 98090.0,
+    "opp_score": 92427.0,
+    "margin": 5663.0
+  },
+  {
+    "ep_id": 112804984,
+    "opp_name": "Azathoth",
+    "matched_team": "Azathoth",
+    "opp_rank": 2671,
+    "opp_rating": 1507.2,
+    "our_score": 84983.0,
+    "opp_score": 83975.0,
+    "margin": 1008.0
+  },
+  {
+    "ep_id": 112807338,
+    "opp_name": "kurushun",
+    "matched_team": "kurushun",
+    "opp_rank": 3007,
+    "opp_rating": 1358.5,
+    "our_score": 76531.0,
+    "opp_score": 76301.0,
+    "margin": 230.0
+  },
+  {
+    "ep_id": 112834493,
+    "opp_name": "Dinesh Amalathasan",
+    "matched_team": "Dinesh Amalathasan",
+    "opp_rank": 3086,
+    "opp_rating": 1326.8,
+    "our_score": 116345.0,
+    "opp_score": 100558.0,
+    "margin": 15787.0
+  },
+  {
+    "ep_id": 112810944,
+    "opp_name": "VTH",
+    "matched_team": "VTH",
+    "opp_rank": 3189,
+    "opp_rating": 1286.0,
+    "our_score": 88260.0,
+    "opp_score": 83100.0,
+    "margin": 5160.0
+  },
+  {
+    "ep_id": 112820404,
+    "opp_name": "qihuaz",
+    "matched_team": "qihuaz",
+    "opp_rank": 3192,
+    "opp_rating": 1283.2,
+    "our_score": 113053.0,
+    "opp_score": 109088.0,
+    "margin": 3965.0
+  },
+  {
+    "ep_id": 112821562,
+    "opp_name": "Shardul Gharat",
+    "matched_team": "Shardul Gharat",
+    "opp_rank": 3203,
+    "opp_rating": 1280.2,
+    "our_score": 108216.0,
+    "opp_score": 99560.0,
+    "margin": 8656.0
+  },
+  {
+    "ep_id": 112819230,
+    "opp_name": "ORiginators",
+    "matched_team": "ORiginators",
+    "opp_rank": 3250,
+    "opp_rating": 1266.7,
+    "our_score": 76572.0,
+    "opp_score": 73094.0,
+    "margin": 3478.0
+  },
+  {
+    "ep_id": 112818025,
+    "opp_name": "Daniel Harkin",
+    "matched_team": "Daniel Harkin",
+    "opp_rank": 3251,
+    "opp_rating": 1266.6,
+    "our_score": 111130.0,
+    "opp_score": 91355.0,
+    "margin": 19775.0
+  },
+  {
+    "ep_id": 112800249,
+    "opp_name": "prospers",
+    "matched_team": "prospers",
+    "opp_rank": 3258,
+    "opp_rating": 1261.7,
+    "our_score": 83759.0,
+    "opp_score": 56495.0,
+    "margin": 27264.0
+  },
+  {
+    "ep_id": 112836725,
+    "opp_name": "vineet dairashri",
+    "matched_team": "vineet dairashri",
+    "opp_rank": 3282,
+    "opp_rating": 1251.0,
+    "our_score": 89016.0,
+    "opp_score": 77660.0,
+    "margin": 11356.0
+  },
+  {
+    "ep_id": 112833415,
+    "opp_name": "BurntPotato",
+    "matched_team": "BurntPotato",
+    "opp_rank": 3296,
+    "opp_rating": 1245.6,
+    "our_score": 126369.0,
+    "opp_score": 95157.0,
+    "margin": 31212.0
+  },
+  {
+    "ep_id": 112814392,
+    "opp_name": "sissoko cheick",
+    "matched_team": "sissoko cheick",
+    "opp_rank": 3341,
+    "opp_rating": 1230.8,
+    "our_score": 108145.0,
+    "opp_score": 96723.0,
+    "margin": 11422.0
+  },
+  {
+    "ep_id": 112864767,
+    "opp_name": "nvidia fan",
+    "matched_team": "nvidia fan",
+    "opp_rank": 3352,
+    "opp_rating": 1226.2,
+    "our_score": 78996.0,
+    "opp_score": 74302.0,
+    "margin": 4694.0
+  },
+  {
+    "ep_id": 112793249,
+    "opp_name": "tamo",
+    "matched_team": "tamo",
+    "opp_rank": 3355,
+    "opp_rating": 1225.3,
+    "our_score": 63405.0,
+    "opp_score": 53696.0,
+    "margin": 9709.0
+  },
+  {
+    "ep_id": 112837988,
+    "opp_name": "saikyo",
+    "matched_team": "saikyo",
+    "opp_rank": 3364,
+    "opp_rating": 1222.7,
+    "our_score": 85682.0,
+    "opp_score": 70415.0,
+    "margin": 15267.0
+  },
+  {
+    "ep_id": 112826262,
+    "opp_name": "ZeLong Leo",
+    "matched_team": "ZeLong Leo",
+    "opp_rank": 3404,
+    "opp_rating": 1204.6,
+    "our_score": 110348.0,
+    "opp_score": 108133.0,
+    "margin": 2215.0
+  },
+  {
+    "ep_id": 112799002,
+    "opp_name": "williams",
+    "matched_team": "williams",
+    "opp_rank": 3439,
+    "opp_rating": 1194.6,
+    "our_score": 110821.0,
+    "opp_score": 86987.0,
+    "margin": 23834.0
+  },
+  {
+    "ep_id": 112835677,
+    "opp_name": "Anna Currie",
+    "matched_team": "Anna Currie",
+    "opp_rank": 3444,
+    "opp_rating": 1193.7,
+    "our_score": 89691.0,
+    "opp_score": 86077.0,
+    "margin": 3614.0
+  },
+  {
+    "ep_id": 112829794,
+    "opp_name": "cdaden",
+    "matched_team": "cdaden",
+    "opp_rank": 3473,
+    "opp_rating": 1183.5,
+    "our_score": 106406.0,
+    "opp_score": 94355.0,
+    "margin": 12051.0
+  },
+  {
+    "ep_id": 112840234,
+    "opp_name": "Vladimir Babin",
+    "matched_team": "Vladimir Babin",
+    "opp_rank": 3509,
+    "opp_rating": 1168.8,
+    "our_score": 65017.0,
+    "opp_score": 55103.0,
+    "margin": 9914.0
+  },
+  {
+    "ep_id": 112816854,
+    "opp_name": "Xiang Li",
+    "matched_team": "Xiang Li",
+    "opp_rank": 3510,
+    "opp_rating": 1168.7,
+    "our_score": 105991.0,
+    "opp_score": 94499.0,
+    "margin": 11492.0
+  },
+  {
+    "ep_id": 112795495,
+    "opp_name": "Seb (allegedly)",
+    "matched_team": "Seb (allegedly)",
+    "opp_rank": 3786,
+    "opp_rating": 1068.3,
+    "our_score": 85282.0,
+    "opp_score": 36199.0,
+    "margin": 49083.0
+  },
+  {
+    "ep_id": 112794402,
+    "opp_name": "Munib Ur Rehman Memon",
+    "matched_team": "Munib Ur Rehman Memon",
+    "opp_rank": 4081,
+    "opp_rating": 987.9,
+    "our_score": 67268.0,
+    "opp_score": 26758.0,
+    "margin": 40510.0
+  },
+  {
+    "ep_id": 112789804,
+    "opp_name": "Rilen T. L.",
+    "matched_team": "Rilen T. L.",
+    "opp_rank": 4197,
+    "opp_rating": 966.6,
+    "our_score": 56263.0,
+    "opp_score": 24765.0,
+    "margin": 31498.0
+  },
+  {
+    "ep_id": 112792105,
+    "opp_name": "Vladislav Yushkevich",
+    "matched_team": "Vladislav Yushkevich",
+    "opp_rank": 4915,
+    "opp_rating": 777.3,
+    "our_score": 75663.0,
+    "opp_score": 46788.0,
+    "margin": 28875.0
+  },
+  {
+    "ep_id": 112790979,
+    "opp_name": "jnurik",
+    "matched_team": "jnurik",
+    "opp_rank": 5077,
+    "opp_rating": 747.1,
+    "our_score": 114217.0,
+    "opp_score": 74418.0,
+    "margin": 39799.0
+  },
+  {
+    "ep_id": 112788683,
+    "opp_name": "Tristan Peng",
+    "matched_team": "Tristan Peng",
+    "opp_rank": 6040,
+    "opp_rating": 601.0,
+    "our_score": 117728.0,
+    "opp_score": 50823.0,
+    "margin": 66905.0
+  },
+  {
+    "ep_id": 112787479,
+    "opp_name": "Dr. T",
+    "matched_team": "Dr. T",
+    "opp_rank": 6735,
+    "opp_rating": 533.5,
+    "our_score": 172004.0,
+    "opp_score": 40562.0,
+    "margin": 131442.0
+  }
+]
