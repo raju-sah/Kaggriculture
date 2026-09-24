@@ -1,4 +1,4 @@
-"""v52: Seat-Invariant Champion (High-Velocity Sheep/Wool Backbone + Closed-Loop Weed Repair + Market Impact Slot Ordering + Late-Collision Terminal Overlay + Full Seat 1 Normalization)."""
+"""v53: Early Clearance Champion (High-Velocity Sheep/Wool Backbone + Closed-Loop Weed Repair + Market Impact Slot Ordering + Step 630 Early Continuous Clearance + Late-Collision Terminal Overlay + Full Seat 1 Normalization)."""
 
 import base64
 import json
@@ -7,7 +7,7 @@ import types
 import zlib
 
 
-def _v52_package(name):
+def _v53_package(name):
     module = sys.modules.get(name)
     if module is None:
         module = types.ModuleType(name)
@@ -18,10 +18,10 @@ def _v52_package(name):
     return module
 
 
-def _v52_load(name, source):
+def _v53_load(name, source):
     parent, _, child = name.rpartition(".")
     if parent:
-        _v52_package(parent)
+        _v53_package(parent)
     module = types.ModuleType(name)
     module.__file__ = "<bundled:" + name + ">"
     module.__package__ = parent
@@ -32,7 +32,7 @@ def _v52_load(name, source):
     return module
 
 
-_V52_MODULES = json.loads(zlib.decompress(base64.b85decode(
+_V53_MODULES = json.loads(zlib.decompress(base64.b85decode(
 (
     'c-rlKiFO-DlHjkD<(=1n1VA9=tJ#L%&=PIySu(YhJiR?69#jMhWR1Wo7*&u&YxM6MM;?(!6#&Yf+3AI6+9oP9Bd^HF$T&aTtEQ`b'
     'SyzL%hX<2YxvsOxO?FeRZYNciuBO-bj*@%xRe6(4Ci8W@US*R>lHV-LRh^_oQPydlmqm3^sBhD9d3#a3IDYvu86_Vs?#<KHO}4rK'
@@ -267,12 +267,13 @@ _V52_MODULES = json.loads(zlib.decompress(base64.b85decode(
 )
 )).decode("utf-8"))
 
-for _name, _source in _V52_MODULES.items():
-    _v52_load(_name, _source)
+for _name, _source in _V53_MODULES.items():
+    _v53_load(_name, _source)
 
-from scripts.v19_terminal import apply_overlay
+from scripts.v19_terminal import apply_overlay, terminal_market
+from scripts.v22_market_impact import reorder_market
 from v23.planner import build_sparse_planner, PlannerConfig
-from v23.state_encoder import get as _v52_get
+from v23.state_encoder import get as _v53_get
 
 _ACTIONS = json.loads(zlib.decompress(base64.b85decode(
 (
@@ -404,6 +405,7 @@ _ACTIONS = json.loads(zlib.decompress(base64.b85decode(
 )).decode("utf-8"))
 
 _PLANNER = build_sparse_planner(_ACTIONS, PlannerConfig())
+CLEARANCE_STEP = 630
 
 
 def agent(obs, configuration=None):
@@ -415,18 +417,27 @@ def agent(obs, configuration=None):
             hour = int(obs.get("hour", 0) or 0)
             obs["step"] = day * 24 + hour
 
-        # Base planner with closed-loop weed repair and price-impact SELL-slot ordering
+        step = obs["step"]
+
+        # Base planner with closed-loop weed repair
         action = _PLANNER(obs, configuration)
         
-        # Late-collision terminal overlay (monetization and continuous shed clearance)
+        # Market impact slot ordering (safe sorting of sell slots without order dropping)
+        action = reorder_market(obs, action, mode="impact_slots")
+
+        # Step 630 Early Continuous Shed Clearance (monetizes 50 hours earlier before late crashes)
+        if step >= CLEARANCE_STEP:
+            action = terminal_market(obs, action, "collision", replace=False)
+
+        # Late-collision terminal overlay (monetization and terminal 718 full replacement)
         return apply_overlay(obs, action, "late_collision")
     except Exception:
-        seat = 1 if int(_v52_get(obs, "player", 0) or 0) == 1 else 0
-        farms = list(_v52_get(obs, "farms", []) or [])
+        seat = 1 if int(_v53_get(obs, "player", 0) or 0) == 1 else 0
+        farms = list(_v53_get(obs, "farms", []) or [])
         farm = farms[seat] if seat < len(farms) else {}
         return {
             "farmer": ["PASS"],
-            "hands": [["PASS"] for _ in (_v52_get(farm, "hands", []) or [])],
+            "hands": [["PASS"] for _ in (_v53_get(farm, "hands", []) or [])],
             "market": [],
         }
 
