@@ -1,0 +1,2072 @@
+{
+  "95501": {
+    "seed": 95501,
+    "first_gate": null,
+    "first_gate_with_goose_buy": null,
+    "first_early_yarn": null,
+    "samples": [
+      {
+        "step": 151,
+        "day": 6,
+        "yarn": false,
+        "wool_price": 183,
+        "gate": false,
+        "goose_order": 2,
+        "sheep_order": 0
+      },
+      {
+        "step": 218,
+        "day": 9,
+        "yarn": false,
+        "wool_price": 189,
+        "gate": false,
+        "goose_order": 1,
+        "sheep_order": 0
+      },
+      {
+        "step": 227,
+        "day": 9,
+        "yarn": false,
+        "wool_price": 148,
+        "gate": false,
+        "goose_order": 1,
+        "sheep_order": 0
+      },
+      {
+        "step": 242,
+        "day": 10,
+        "yarn": false,
+        "wool_price": 151,
+        "gate": false,
+        "goose_order": 2,
+        "sheep_order": 0
+      },
+      {
+        "step": 266,
+        "day": 11,
+        "yarn": false,
+        "wool_price": 154,
+        "gate": false,
+        "goose_order": 1,
+        "sheep_order": 0
+      }
+    ]
+  },
+  "95508": {
+    "seed": 95508,
+    "first_gate": {
+      "step": 144,
+      "day": 6,
+      "yarn": true,
+      "wool_price": 217,
+      "gate": true,
+      "goose_order": 0,
+      "sheep_order": 0
+    },
+    "first_gate_with_goose_buy": {
+      "step": 151,
+      "day": 6,
+      "yarn": true,
+      "wool_price": 190,
+      "gate": true,
+      "goose_order": 2,
+      "sheep_order": 0
+    },
+    "first_early_yarn": {
+      "step": 144,
+      "day": 6,
+      "yarn": true,
+      "wool_price": 217,
+      "gate": true,
+      "goose_order": 0,
+      "sheep_order": 0
+    },
+    "samples": [
+      {
+        "step": 144,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 217,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 145,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 220,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 146,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 220,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 147,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 220,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 148,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 220,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 149,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 221,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 150,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 215,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 151,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 190,
+        "gate": true,
+        "goose_order": 2,
+        "sheep_order": 0
+      },
+      {
+        "step": 152,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 190,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 153,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 193,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 154,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 193,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 155,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 193,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 156,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 193,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 157,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 195,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 158,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 195,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 159,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 195,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 160,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 195,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 161,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 197,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 162,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 197,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 163,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 197,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 164,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 197,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 165,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 199,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 166,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 199,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 167,
+        "day": 6,
+        "yarn": true,
+        "wool_price": 199,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 168,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 199,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 169,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 200,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 170,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 200,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 171,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 200,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 172,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 200,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 173,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 200,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 174,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 200,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 175,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 200,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 176,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 200,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 177,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 209,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 178,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 209,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 179,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 209,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 180,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 209,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 181,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 214,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 182,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 214,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 183,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 214,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 184,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 214,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 185,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 217,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 186,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 217,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 187,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 217,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 188,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 217,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 189,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 219,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 190,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 219,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 191,
+        "day": 7,
+        "yarn": true,
+        "wool_price": 219,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 192,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 219,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 193,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 221,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 194,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 221,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 195,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 221,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 196,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 221,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 197,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 223,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 2
+      },
+      {
+        "step": 198,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 223,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 199,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 223,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 200,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 223,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 201,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 224,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 202,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 224,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 203,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 224,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 204,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 224,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 205,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 225,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 206,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 225,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 207,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 225,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 208,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 225,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 209,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 226,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 210,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 226,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 211,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 226,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 212,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 226,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 213,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 227,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 214,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 227,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 215,
+        "day": 8,
+        "yarn": true,
+        "wool_price": 227,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 216,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 227,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 217,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 228,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 218,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 228,
+        "gate": true,
+        "goose_order": 1,
+        "sheep_order": 0
+      },
+      {
+        "step": 219,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 228,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 220,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 228,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 221,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 227,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 222,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 227,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 223,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 225,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 224,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 225,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 225,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 222,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 226,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 222,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 227,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 222,
+        "gate": true,
+        "goose_order": 1,
+        "sheep_order": 0
+      },
+      {
+        "step": 228,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 222,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 229,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 223,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 230,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 223,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 231,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 223,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 232,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 223,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 233,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 224,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 234,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 224,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 235,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 224,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 236,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 224,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 237,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 225,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 238,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 225,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 239,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 225,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 240,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 225,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 241,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 227,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 242,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 227,
+        "gate": true,
+        "goose_order": 2,
+        "sheep_order": 0
+      },
+      {
+        "step": 243,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 227,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 244,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 227,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 245,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 227,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 246,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 227,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 247,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 227,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 248,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 227,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 249,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 228,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 250,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 228,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 251,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 228,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 252,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 228,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 253,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 229,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 254,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 229,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 255,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 229,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 256,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 229,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 257,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 229,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 258,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 229,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 259,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 229,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 260,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 229,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 261,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 230,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 262,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 230,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 263,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 230,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 264,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 230,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 265,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 230,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 266,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 230,
+        "gate": true,
+        "goose_order": 1,
+        "sheep_order": 0
+      },
+      {
+        "step": 267,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 230,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 268,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 230,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 269,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 231,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 270,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 231,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 271,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 231,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 272,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 231,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 273,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 231,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 274,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 231,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 275,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 231,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 276,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 231,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 277,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 232,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 278,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 232,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 279,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 232,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 280,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 232,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 281,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 232,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 282,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 232,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 283,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 232,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 284,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 232,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 285,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 233,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 286,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 233,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 287,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 233,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      }
+    ]
+  },
+  "95518": {
+    "seed": 95518,
+    "first_gate": {
+      "step": 216,
+      "day": 9,
+      "yarn": true,
+      "wool_price": 187,
+      "gate": true,
+      "goose_order": 0,
+      "sheep_order": 0
+    },
+    "first_gate_with_goose_buy": {
+      "step": 218,
+      "day": 9,
+      "yarn": true,
+      "wool_price": 192,
+      "gate": true,
+      "goose_order": 1,
+      "sheep_order": 0
+    },
+    "first_early_yarn": {
+      "step": 216,
+      "day": 9,
+      "yarn": true,
+      "wool_price": 187,
+      "gate": true,
+      "goose_order": 0,
+      "sheep_order": 0
+    },
+    "samples": [
+      {
+        "step": 151,
+        "day": 6,
+        "yarn": false,
+        "wool_price": 183,
+        "gate": false,
+        "goose_order": 2,
+        "sheep_order": 0
+      },
+      {
+        "step": 216,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 187,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 217,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 192,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 218,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 192,
+        "gate": true,
+        "goose_order": 1,
+        "sheep_order": 0
+      },
+      {
+        "step": 219,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 192,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 220,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 192,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 221,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 189,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 222,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 189,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 223,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 181,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 224,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 181,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 225,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 167,
+        "gate": false,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 226,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 167,
+        "gate": false,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 227,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 167,
+        "gate": false,
+        "goose_order": 1,
+        "sheep_order": 0
+      },
+      {
+        "step": 228,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 167,
+        "gate": false,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 229,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 172,
+        "gate": false,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 230,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 172,
+        "gate": false,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 231,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 172,
+        "gate": false,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 232,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 172,
+        "gate": false,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 233,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 177,
+        "gate": false,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 234,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 177,
+        "gate": false,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 235,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 177,
+        "gate": false,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 236,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 177,
+        "gate": false,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 237,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 181,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 238,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 181,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 239,
+        "day": 9,
+        "yarn": true,
+        "wool_price": 181,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 240,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 181,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 241,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 187,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 242,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 187,
+        "gate": true,
+        "goose_order": 2,
+        "sheep_order": 0
+      },
+      {
+        "step": 243,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 187,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 244,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 187,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 245,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 190,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 246,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 190,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 247,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 190,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 248,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 190,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 249,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 193,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 250,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 193,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 251,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 193,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 252,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 193,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 253,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 195,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 254,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 195,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 255,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 195,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 256,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 195,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 257,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 197,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 258,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 197,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 259,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 197,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 260,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 197,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 261,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 199,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 262,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 199,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 263,
+        "day": 10,
+        "yarn": true,
+        "wool_price": 199,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 264,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 199,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 265,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 200,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 266,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 200,
+        "gate": true,
+        "goose_order": 1,
+        "sheep_order": 0
+      },
+      {
+        "step": 267,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 200,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 268,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 200,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 269,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 200,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 270,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 200,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 271,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 200,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 272,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 200,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 273,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 209,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 274,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 209,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 275,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 209,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 276,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 209,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 277,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 214,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 278,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 214,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 279,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 214,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 280,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 214,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 281,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 217,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 282,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 217,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 283,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 217,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 284,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 217,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 285,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 219,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 286,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 219,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      },
+      {
+        "step": 287,
+        "day": 11,
+        "yarn": true,
+        "wool_price": 219,
+        "gate": true,
+        "goose_order": 0,
+        "sheep_order": 0
+      }
+    ]
+  }
+}

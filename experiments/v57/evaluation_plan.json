@@ -1,0 +1,20 @@
+{
+  "development_seeds": [92500,92501,92502,92503,92504,92505,92506,92507,92508],
+  "final_holdout_seeds": [92600,92601,92602,92603,92604],
+  "seats": [0,1],
+  "repeats": 1,
+  "opponents": {
+    "v48": "experiments/v48_agent.py",
+    "v50": "experiments/v50_agent.py",
+    "v51": "experiments/v51_agent.py",
+    "v52": "experiments/v52_agent.py",
+    "v53": "agents/v53_agent.py",
+    "v54": "agents/v54_agent.py",
+    "v55": "agents/v55_agent.py",
+    "v56": "agents/v56_agent.py"
+  },
+  "games_per_opponent": 10,
+  "total_games": 80,
+  "selection_rule": "Choose using development results; freeze agent hash before final holdout. No changes or seed replacement after holdout outcomes.",
+  "limitations": "Five independent town seeds with paired seats; old-agent performance does not establish live leaderboard rank. No universal win guarantee."
+}

@@ -1,0 +1,82 @@
+{
+  "status": "negative_prototype_screened_no_go",
+  "objective": "maximize exact terminal coins and paired margin using simulator rollouts",
+  "method": "Cross-Entropy Method over a compact daily economy-manager parameter vector",
+  "hierarchy": {
+    "economy_manager": "hour 0 daily portfolio, staffing, reserve, and sale setpoints",
+    "option_scheduler": "per-turn persistent production/feed/build/delivery tasks",
+    "legal_executor": "per-turn bounded movement and raw-observation precondition masks"
+  },
+  "reward": {
+    "primary": "terminal final coins",
+    "comparison": "paired candidate-minus-opponent margin",
+    "optional_shaping": "lambda*(Phi(next_day)-Phi(day)), Phi(terminal)=0, undiscounted",
+    "control_lambda": 0
+  },
+  "proposed_train_seeds": [
+    95100,
+    95101,
+    95102,
+    95103,
+    95104,
+    95105,
+    95106,
+    95107
+  ],
+  "proposed_validation_seeds": [
+    95120,
+    95121,
+    95122,
+    95123,
+    95124,
+    95125,
+    95126,
+    95127
+  ],
+  "proposed_population": 20,
+  "proposed_generations": 4,
+  "proposed_elite_count": 4,
+  "references": [
+    "experiments/v50_agent.py",
+    "experiments/v53_agent.py"
+  ],
+  "seat_orders": [
+    0,
+    1
+  ],
+  "workers_cap": 4,
+  "fresh_games_run": 12,
+  "final_holdout_seeds_used": false,
+  "preconditions_before_run": [
+    "only use a new design after a measured spent-seed/replay audit supports expected throughput or cashflow improvement",
+    "check shared seed ledger and root approval",
+    "verify candidate action changes through exact loader",
+    "retain exact source hashes and full paired results"
+  ],
+  "used_dev_seeds": [
+    95100
+  ],
+  "used_final_holdout_seeds": false,
+  "last_trial": {
+    "name": "funded_work_seed_refill_hire_gate",
+    "seed": 95100,
+    "seat_orders": [
+      0,
+      1
+    ],
+    "candidate_sha256": "2cd9bb7ac3e0405db34c70304bb4e2ef203f814e98712e37a505f3edfed30896",
+    "candidate_coins": [
+      8000,
+      8000
+    ],
+    "opponent": "experiments/v50_agent.py",
+    "opponent_sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+    "opponent_coins": [
+      139885,
+      139885
+    ],
+    "errors": 0,
+    "timeouts": 0,
+    "decision": "no_go; do_not_spend_fresh_seeds_on_this_candidate"
+  }
+}

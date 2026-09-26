@@ -1,0 +1,22 @@
+{
+  "purpose": "One bounded fresh paired screen for the isolated early-Yarn sheep mix candidate after offline fidelity checks.",
+  "candidate": "experiments/v59_route_rules/mix_gate/candidate_isolated.py",
+  "candidate_sha256": "50430cd46641f5b2b26b5b99a2fe4738513f8a9186b011f8620e8c14dbd94a20",
+  "baseline": "experiments/v57_broad/v57_reset_candidate.py",
+  "baseline_sha256": "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+  "opponent": "v50",
+  "opponent_sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+  "seed": 95611,
+  "seat_orders": [
+    "ab",
+    "ba"
+  ],
+  "games_candidate": 2,
+  "games_control": 2,
+  "fresh_seed_ledger": "95610 is already spent by the contaminated first candidate screen and is not reused. 95611 had no prior game/report record; earlier this branch's proposed v54 slot is reassigned here. No other new seeds will be run.",
+  "offline_gate": "PASS: candidate output byte-identical to frozen reset on all 720 frames of spent seed95501. It changes only two market orders and no worker actions on spent 95508; it changes no output on spent 95518. Focused tests validate that baseline sheep jobs remain unchanged and only a marked extra sheep is routed.",
+  "stop_rule": "Stop after this pair and matched frozen-reset control; do not run v54 or v56.",
+  "final_holdout_used": false,
+  "status": "completed_no_go",
+  "result": "Seed95611 isolated candidate exactly matched frozen reset in both seats: 0-2, -27935 margin each; zero incremental margin. Stop; no further games."
+}

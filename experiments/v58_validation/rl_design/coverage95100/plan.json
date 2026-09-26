@@ -1,0 +1,23 @@
+{
+  "purpose": "One spent-seed verification of demand-aware seed/task/hire coverage gate on spent seed95100 crop14/herd2/staff7 vector.",
+  "seed": 95100,
+  "seats": [
+    0,
+    1
+  ],
+  "opponent": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v50_agent.py",
+  "opponent_sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+  "candidate": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/rl_design/coverage95100/candidate.py",
+  "candidate_sha256": "2cd9bb7ac3e0405db34c70304bb4e2ef203f814e98712e37a505f3edfed30896",
+  "base_source_sha256": "2eccf698db428cbe7540eeddbba146ac350404be15510a5824580a82249e6f64",
+  "params": {
+    "crop_target": 14,
+    "herd_target": 2,
+    "staff_target": 7,
+    "cash_reserve": 700,
+    "wheat_reserve": 3
+  },
+  "change": "only seed-funded horizon-profitable work tokens, hourly seed replenishment, task-justified hiring",
+  "fresh_seeds_used": 0,
+  "final_holdout_used": false
+}

@@ -1,0 +1,849 @@
+{
+  "opponent": "v50",
+  "protocol": "one spent-seed diagnostic; both seats; no fresh seeds launched",
+  "runs": {
+    "allocator/v50-seed-92802-ab-repeat-0.json": {
+      "candidate_margin": -35838.0,
+      "candidate_sha256": "0ee6071166a6685f6ba61f21bce264b0fe8c5b38bdc16f66e1ed5e77d989eceb",
+      "diagnostics": {
+        "accepted_sales_lower_bound_units": {
+          "CARROT": 87,
+          "EGG": 211,
+          "FERTILIZER": 271,
+          "MELON": 54,
+          "MILK": 144,
+          "STRAWBERRY": 235,
+          "TOMATO": 80,
+          "WHEAT": 385,
+          "WOOL": 70
+        },
+        "animal_attrition_events": [],
+        "daily_cash": [
+          {
+            "close": 32.0,
+            "day": 0,
+            "delta": null,
+            "open": null
+          },
+          {
+            "close": 180.0,
+            "day": 1,
+            "delta": 148.0,
+            "open": 32.0
+          },
+          {
+            "close": 633.0,
+            "day": 2,
+            "delta": 453.0,
+            "open": 180.0
+          },
+          {
+            "close": 588.0,
+            "day": 3,
+            "delta": -45.0,
+            "open": 633.0
+          },
+          {
+            "close": 906.0,
+            "day": 4,
+            "delta": 318.0,
+            "open": 588.0
+          },
+          {
+            "close": 1112.0,
+            "day": 5,
+            "delta": 206.0,
+            "open": 906.0
+          },
+          {
+            "close": 1494.0,
+            "day": 6,
+            "delta": 382.0,
+            "open": 1112.0
+          },
+          {
+            "close": 836.0,
+            "day": 7,
+            "delta": -658.0,
+            "open": 1494.0
+          },
+          {
+            "close": 1229.0,
+            "day": 8,
+            "delta": 393.0,
+            "open": 836.0
+          },
+          {
+            "close": 2831.0,
+            "day": 9,
+            "delta": 1519.0,
+            "open": 1312.0
+          },
+          {
+            "close": 16201.0,
+            "day": 10,
+            "delta": 13370.0,
+            "open": 2831.0
+          },
+          {
+            "close": 13846.0,
+            "day": 11,
+            "delta": -2355.0,
+            "open": 16201.0
+          },
+          {
+            "close": 17614.0,
+            "day": 12,
+            "delta": 3768.0,
+            "open": 13846.0
+          },
+          {
+            "close": 18603.0,
+            "day": 13,
+            "delta": 989.0,
+            "open": 17614.0
+          },
+          {
+            "close": 22836.0,
+            "day": 14,
+            "delta": 4233.0,
+            "open": 18603.0
+          },
+          {
+            "close": 25813.0,
+            "day": 15,
+            "delta": 2977.0,
+            "open": 22836.0
+          },
+          {
+            "close": 31327.0,
+            "day": 16,
+            "delta": 5514.0,
+            "open": 25813.0
+          },
+          {
+            "close": 35321.0,
+            "day": 17,
+            "delta": 3994.0,
+            "open": 31327.0
+          },
+          {
+            "close": 35135.0,
+            "day": 18,
+            "delta": -186.0,
+            "open": 35321.0
+          },
+          {
+            "close": 38467.0,
+            "day": 19,
+            "delta": 3332.0,
+            "open": 35135.0
+          },
+          {
+            "close": 41811.0,
+            "day": 20,
+            "delta": 3344.0,
+            "open": 38467.0
+          },
+          {
+            "close": 45706.0,
+            "day": 21,
+            "delta": 3895.0,
+            "open": 41811.0
+          },
+          {
+            "close": 48142.0,
+            "day": 22,
+            "delta": 2085.0,
+            "open": 46057.0
+          },
+          {
+            "close": 49481.0,
+            "day": 23,
+            "delta": 1339.0,
+            "open": 48142.0
+          },
+          {
+            "close": 50464.0,
+            "day": 24,
+            "delta": 983.0,
+            "open": 49481.0
+          },
+          {
+            "close": 51864.0,
+            "day": 25,
+            "delta": 1400.0,
+            "open": 50464.0
+          },
+          {
+            "close": 54453.0,
+            "day": 26,
+            "delta": 2038.0,
+            "open": 52415.0
+          },
+          {
+            "close": 58476.0,
+            "day": 27,
+            "delta": 3191.0,
+            "open": 55285.0
+          },
+          {
+            "close": 65838.0,
+            "day": 28,
+            "delta": 6207.0,
+            "open": 59631.0
+          },
+          {
+            "close": 77947.0,
+            "day": 29,
+            "delta": 11843.0,
+            "open": 66104.0
+          }
+        ],
+        "feed_success_rate": 0.9279,
+        "hand_productive_rate": 0.9163,
+        "valid_action_rate": 0.9132
+      },
+      "final_coins": [
+        77947.0,
+        113785.0
+      ],
+      "ok": true,
+      "opponent_sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+      "paired_margin_delta_vs_reset": -2251.0,
+      "seat": 0,
+      "winner_seat": 1
+    },
+    "allocator/v50-seed-92802-ba-repeat-0.json": {
+      "candidate_margin": -35838.0,
+      "candidate_sha256": "0ee6071166a6685f6ba61f21bce264b0fe8c5b38bdc16f66e1ed5e77d989eceb",
+      "diagnostics": {
+        "accepted_sales_lower_bound_units": {
+          "CARROT": 79,
+          "FERTILIZER": 308,
+          "MELON": 66,
+          "MILK": 156,
+          "STRAWBERRY": 240,
+          "WHEAT": 343,
+          "WOOL": 256
+        },
+        "animal_attrition_events": [],
+        "daily_cash": [
+          {
+            "close": 12.0,
+            "day": 0,
+            "delta": null,
+            "open": null
+          },
+          {
+            "close": 102.0,
+            "day": 1,
+            "delta": 90.0,
+            "open": 12.0
+          },
+          {
+            "close": 215.0,
+            "day": 2,
+            "delta": 113.0,
+            "open": 102.0
+          },
+          {
+            "close": 353.0,
+            "day": 3,
+            "delta": 138.0,
+            "open": 215.0
+          },
+          {
+            "close": 766.0,
+            "day": 4,
+            "delta": 413.0,
+            "open": 353.0
+          },
+          {
+            "close": 880.0,
+            "day": 5,
+            "delta": 114.0,
+            "open": 766.0
+          },
+          {
+            "close": 1130.0,
+            "day": 6,
+            "delta": 250.0,
+            "open": 880.0
+          },
+          {
+            "close": 420.0,
+            "day": 7,
+            "delta": -710.0,
+            "open": 1130.0
+          },
+          {
+            "close": 1360.0,
+            "day": 8,
+            "delta": 1176.0,
+            "open": 184.0
+          },
+          {
+            "close": 3696.0,
+            "day": 9,
+            "delta": 2528.0,
+            "open": 1168.0
+          },
+          {
+            "close": 15962.0,
+            "day": 10,
+            "delta": 12266.0,
+            "open": 3696.0
+          },
+          {
+            "close": 13702.0,
+            "day": 11,
+            "delta": -1905.0,
+            "open": 15607.0
+          },
+          {
+            "close": 18417.0,
+            "day": 12,
+            "delta": 4900.0,
+            "open": 13517.0
+          },
+          {
+            "close": 19766.0,
+            "day": 13,
+            "delta": 1904.0,
+            "open": 17862.0
+          },
+          {
+            "close": 23554.0,
+            "day": 14,
+            "delta": 3624.0,
+            "open": 19930.0
+          },
+          {
+            "close": 28415.0,
+            "day": 15,
+            "delta": 5135.0,
+            "open": 23280.0
+          },
+          {
+            "close": 36445.0,
+            "day": 16,
+            "delta": 8183.0,
+            "open": 28262.0
+          },
+          {
+            "close": 43251.0,
+            "day": 17,
+            "delta": 5677.0,
+            "open": 37574.0
+          },
+          {
+            "close": 50212.0,
+            "day": 18,
+            "delta": 5620.0,
+            "open": 44592.0
+          },
+          {
+            "close": 55579.0,
+            "day": 19,
+            "delta": 4465.0,
+            "open": 51114.0
+          },
+          {
+            "close": 63137.0,
+            "day": 20,
+            "delta": 6639.0,
+            "open": 56498.0
+          },
+          {
+            "close": 67501.0,
+            "day": 21,
+            "delta": 4343.0,
+            "open": 63158.0
+          },
+          {
+            "close": 71875.0,
+            "day": 22,
+            "delta": 4725.0,
+            "open": 67150.0
+          },
+          {
+            "close": 75598.0,
+            "day": 23,
+            "delta": 3723.0,
+            "open": 71875.0
+          },
+          {
+            "close": 79641.0,
+            "day": 24,
+            "delta": 4624.0,
+            "open": 75017.0
+          },
+          {
+            "close": 84901.0,
+            "day": 25,
+            "delta": 5260.0,
+            "open": 79641.0
+          },
+          {
+            "close": 89570.0,
+            "day": 26,
+            "delta": 4462.0,
+            "open": 85108.0
+          },
+          {
+            "close": 92014.0,
+            "day": 27,
+            "delta": 2851.0,
+            "open": 89163.0
+          },
+          {
+            "close": 101056.0,
+            "day": 28,
+            "delta": 8796.0,
+            "open": 92260.0
+          },
+          {
+            "close": 113785.0,
+            "day": 29,
+            "delta": 12485.0,
+            "open": 101300.0
+          }
+        ],
+        "feed_success_rate": 1.0,
+        "hand_productive_rate": 0.9026,
+        "valid_action_rate": 0.9005
+      },
+      "final_coins": [
+        113785.0,
+        77947.0
+      ],
+      "ok": true,
+      "opponent_sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+      "paired_margin_delta_vs_reset": -2251.0,
+      "seat": 1,
+      "winner_seat": 0
+    },
+    "reset/v50-seed-92802-ab-repeat-0.json": {
+      "candidate_margin": -33587.0,
+      "candidate_sha256": "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+      "diagnostics": {
+        "accepted_sales_lower_bound_units": {
+          "CARROT": 87,
+          "EGG": 219,
+          "FERTILIZER": 288,
+          "MELON": 54,
+          "MILK": 171,
+          "STRAWBERRY": 247,
+          "TOMATO": 80,
+          "WHEAT": 376,
+          "WOOL": 70
+        },
+        "animal_attrition_events": [],
+        "daily_cash": [
+          {
+            "close": 12.0,
+            "day": 0,
+            "delta": null,
+            "open": null
+          },
+          {
+            "close": 101.0,
+            "day": 1,
+            "delta": 89.0,
+            "open": 12.0
+          },
+          {
+            "close": 214.0,
+            "day": 2,
+            "delta": 113.0,
+            "open": 101.0
+          },
+          {
+            "close": 265.0,
+            "day": 3,
+            "delta": 51.0,
+            "open": 214.0
+          },
+          {
+            "close": 676.0,
+            "day": 4,
+            "delta": 411.0,
+            "open": 265.0
+          },
+          {
+            "close": 880.0,
+            "day": 5,
+            "delta": 204.0,
+            "open": 676.0
+          },
+          {
+            "close": 1440.0,
+            "day": 6,
+            "delta": 560.0,
+            "open": 880.0
+          },
+          {
+            "close": 861.0,
+            "day": 7,
+            "delta": -579.0,
+            "open": 1440.0
+          },
+          {
+            "close": 1246.0,
+            "day": 8,
+            "delta": 385.0,
+            "open": 861.0
+          },
+          {
+            "close": 2916.0,
+            "day": 9,
+            "delta": 1507.0,
+            "open": 1409.0
+          },
+          {
+            "close": 16913.0,
+            "day": 10,
+            "delta": 13997.0,
+            "open": 2916.0
+          },
+          {
+            "close": 14541.0,
+            "day": 11,
+            "delta": -2372.0,
+            "open": 16913.0
+          },
+          {
+            "close": 18275.0,
+            "day": 12,
+            "delta": 3734.0,
+            "open": 14541.0
+          },
+          {
+            "close": 19441.0,
+            "day": 13,
+            "delta": 1166.0,
+            "open": 18275.0
+          },
+          {
+            "close": 23589.0,
+            "day": 14,
+            "delta": 4148.0,
+            "open": 19441.0
+          },
+          {
+            "close": 26379.0,
+            "day": 15,
+            "delta": 2790.0,
+            "open": 23589.0
+          },
+          {
+            "close": 31913.0,
+            "day": 16,
+            "delta": 5534.0,
+            "open": 26379.0
+          },
+          {
+            "close": 36113.0,
+            "day": 17,
+            "delta": 4200.0,
+            "open": 31913.0
+          },
+          {
+            "close": 35903.0,
+            "day": 18,
+            "delta": -210.0,
+            "open": 36113.0
+          },
+          {
+            "close": 39223.0,
+            "day": 19,
+            "delta": 3320.0,
+            "open": 35903.0
+          },
+          {
+            "close": 42651.0,
+            "day": 20,
+            "delta": 3428.0,
+            "open": 39223.0
+          },
+          {
+            "close": 46437.0,
+            "day": 21,
+            "delta": 3786.0,
+            "open": 42651.0
+          },
+          {
+            "close": 48812.0,
+            "day": 22,
+            "delta": 2024.0,
+            "open": 46788.0
+          },
+          {
+            "close": 50169.0,
+            "day": 23,
+            "delta": 1357.0,
+            "open": 48812.0
+          },
+          {
+            "close": 51173.0,
+            "day": 24,
+            "delta": 1004.0,
+            "open": 50169.0
+          },
+          {
+            "close": 52570.0,
+            "day": 25,
+            "delta": 1397.0,
+            "open": 51173.0
+          },
+          {
+            "close": 55134.0,
+            "day": 26,
+            "delta": 2013.0,
+            "open": 53121.0
+          },
+          {
+            "close": 59137.0,
+            "day": 27,
+            "delta": 3171.0,
+            "open": 55966.0
+          },
+          {
+            "close": 66550.0,
+            "day": 28,
+            "delta": 6258.0,
+            "open": 60292.0
+          },
+          {
+            "close": 78631.0,
+            "day": 29,
+            "delta": 11827.0,
+            "open": 66804.0
+          }
+        ],
+        "feed_success_rate": 0.997,
+        "hand_productive_rate": 0.9304,
+        "valid_action_rate": 0.9282
+      },
+      "final_coins": [
+        78631.0,
+        112218.0
+      ],
+      "ok": true,
+      "opponent_sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+      "seat": 0,
+      "winner_seat": 1
+    },
+    "reset/v50-seed-92802-ba-repeat-0.json": {
+      "candidate_margin": -33587.0,
+      "candidate_sha256": "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+      "diagnostics": {
+        "accepted_sales_lower_bound_units": {
+          "CARROT": 79,
+          "FERTILIZER": 308,
+          "MELON": 66,
+          "MILK": 156,
+          "STRAWBERRY": 240,
+          "WHEAT": 343,
+          "WOOL": 256
+        },
+        "animal_attrition_events": [],
+        "daily_cash": [
+          {
+            "close": 12.0,
+            "day": 0,
+            "delta": null,
+            "open": null
+          },
+          {
+            "close": 101.0,
+            "day": 1,
+            "delta": 89.0,
+            "open": 12.0
+          },
+          {
+            "close": 214.0,
+            "day": 2,
+            "delta": 113.0,
+            "open": 101.0
+          },
+          {
+            "close": 352.0,
+            "day": 3,
+            "delta": 138.0,
+            "open": 214.0
+          },
+          {
+            "close": 763.0,
+            "day": 4,
+            "delta": 411.0,
+            "open": 352.0
+          },
+          {
+            "close": 875.0,
+            "day": 5,
+            "delta": 112.0,
+            "open": 763.0
+          },
+          {
+            "close": 1120.0,
+            "day": 6,
+            "delta": 245.0,
+            "open": 875.0
+          },
+          {
+            "close": 404.0,
+            "day": 7,
+            "delta": -716.0,
+            "open": 1120.0
+          },
+          {
+            "close": 1334.0,
+            "day": 8,
+            "delta": 1166.0,
+            "open": 168.0
+          },
+          {
+            "close": 3653.0,
+            "day": 9,
+            "delta": 2511.0,
+            "open": 1142.0
+          },
+          {
+            "close": 15919.0,
+            "day": 10,
+            "delta": 12266.0,
+            "open": 3653.0
+          },
+          {
+            "close": 13561.0,
+            "day": 11,
+            "delta": -2003.0,
+            "open": 15564.0
+          },
+          {
+            "close": 18174.0,
+            "day": 12,
+            "delta": 4798.0,
+            "open": 13376.0
+          },
+          {
+            "close": 19386.0,
+            "day": 13,
+            "delta": 1767.0,
+            "open": 17619.0
+          },
+          {
+            "close": 22967.0,
+            "day": 14,
+            "delta": 3426.0,
+            "open": 19541.0
+          },
+          {
+            "close": 27706.0,
+            "day": 15,
+            "delta": 5002.0,
+            "open": 22704.0
+          },
+          {
+            "close": 35649.0,
+            "day": 16,
+            "delta": 8090.0,
+            "open": 27559.0
+          },
+          {
+            "close": 42407.0,
+            "day": 17,
+            "delta": 5629.0,
+            "open": 36778.0
+          },
+          {
+            "close": 49305.0,
+            "day": 18,
+            "delta": 5557.0,
+            "open": 43748.0
+          },
+          {
+            "close": 54651.0,
+            "day": 19,
+            "delta": 4444.0,
+            "open": 50207.0
+          },
+          {
+            "close": 62023.0,
+            "day": 20,
+            "delta": 6467.0,
+            "open": 55556.0
+          },
+          {
+            "close": 66204.0,
+            "day": 21,
+            "delta": 4160.0,
+            "open": 62044.0
+          },
+          {
+            "close": 70552.0,
+            "day": 22,
+            "delta": 4699.0,
+            "open": 65853.0
+          },
+          {
+            "close": 74235.0,
+            "day": 23,
+            "delta": 3683.0,
+            "open": 70552.0
+          },
+          {
+            "close": 78309.0,
+            "day": 24,
+            "delta": 4618.0,
+            "open": 73691.0
+          },
+          {
+            "close": 83525.0,
+            "day": 25,
+            "delta": 5216.0,
+            "open": 78309.0
+          },
+          {
+            "close": 88126.0,
+            "day": 26,
+            "delta": 4394.0,
+            "open": 83732.0
+          },
+          {
+            "close": 90578.0,
+            "day": 27,
+            "delta": 2860.0,
+            "open": 87718.0
+          },
+          {
+            "close": 99563.0,
+            "day": 28,
+            "delta": 8727.0,
+            "open": 90836.0
+          },
+          {
+            "close": 112218.0,
+            "day": 29,
+            "delta": 12423.0,
+            "open": 99795.0
+          }
+        ],
+        "feed_success_rate": 1.0,
+        "hand_productive_rate": 0.9026,
+        "valid_action_rate": 0.9005
+      },
+      "final_coins": [
+        112218.0,
+        78631.0
+      ],
+      "ok": true,
+      "opponent_sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+      "seat": 1,
+      "winner_seat": 0
+    }
+  },
+  "seed": 92802
+}

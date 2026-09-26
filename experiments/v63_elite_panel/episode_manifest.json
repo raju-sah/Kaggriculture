@@ -1,0 +1,1962 @@
+{
+  "games": [
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-24T20:54:03.214000",
+      "episode_id": 113011709,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Boey",
+      "module_version": "1.32.7",
+      "players": [
+        "Boey",
+        "Unknown Mother-Goose"
+      ],
+      "replay_sha256": "c0ff955ad72d82fac5b48f2d57ed33cee17277312d9ab7c398e744384368f6df",
+      "rewards": [
+        112509.0,
+        112780.0
+      ],
+      "seed": 1709964036,
+      "source_command": "kaggle competitions replay 113011709 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56521745,
+      "submission_public_score": 3082.2,
+      "team_id": 16915014
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T09:04:55.429000",
+      "episode_id": 113638881,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "DSM",
+      "module_version": "1.32.7",
+      "players": [
+        "Dieter",
+        "DSM"
+      ],
+      "replay_sha256": "46087e71283bd37948c3183083f1b9702f8a5c4b3fb588be5a121884307fc266",
+      "rewards": [
+        78683.0,
+        96842.0
+      ],
+      "seed": 364488201,
+      "source_command": "kaggle competitions replay 113638881 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56571979,
+      "submission_public_score": 3047.6,
+      "team_id": 16732748
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-25T20:37:11.821000",
+      "episode_id": 113423918,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Fourth Quadrant",
+      "module_version": "1.32.7",
+      "players": [
+        "Driz Lo",
+        "Fourth Quadrant"
+      ],
+      "replay_sha256": "07cdea195902fa2d1b19183d3db6173ce82d5b6cfe1e25502711a9a439b0a822",
+      "rewards": [
+        86647.0,
+        109373.0
+      ],
+      "seed": 1817442281,
+      "source_command": "kaggle competitions replay 113423918 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56555482,
+      "submission_public_score": 3033.3,
+      "team_id": 16667959
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-25T19:01:43.137000",
+      "episode_id": 113397265,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "M & M & P & Q",
+      "module_version": "1.32.7",
+      "players": [
+        "M & M & P & Q",
+        "mtmr_s1"
+      ],
+      "replay_sha256": "d2f19fde1bcb7dbdc083a697b59ba2cd75afbe795ba4c00d47f455b6862449e7",
+      "rewards": [
+        95602.0,
+        89564.0
+      ],
+      "seed": 438556208,
+      "source_command": "kaggle competitions replay 113397265 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56553720,
+      "submission_public_score": 3007.8,
+      "team_id": 16681125
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T10:32:46.121000",
+      "episode_id": 113664666,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Vadim Vasilenko",
+      "module_version": "1.32.7",
+      "players": [
+        "sekai013",
+        "Vadim Vasilenko"
+      ],
+      "replay_sha256": "7693c42544b9601708752c36f9521ba36399769699f2d070bc4f4fcd8f5f991a",
+      "rewards": [
+        140911.0,
+        155917.0
+      ],
+      "seed": 1893835921,
+      "source_command": "kaggle competitions replay 113664666 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56574498,
+      "submission_public_score": 2998.3,
+      "team_id": 16770421
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-25T22:04:12.976000",
+      "episode_id": 113448248,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "DECEM",
+      "module_version": "1.32.7",
+      "players": [
+        "Azat Akhtyamov",
+        "DECEM"
+      ],
+      "replay_sha256": "4c22c4e59101fa0eb430675a58e4d0177f111f67c55445bdf607aaa5e0a94a83",
+      "rewards": [
+        94325.0,
+        101037.0
+      ],
+      "seed": 46197345,
+      "source_command": "kaggle competitions replay 113448248 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56558220,
+      "submission_public_score": 2973.4,
+      "team_id": 16623559
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T12:32:45.346000",
+      "episode_id": 113699817,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Majkel1337",
+      "module_version": "1.32.7",
+      "players": [
+        "Majkel1337",
+        "chungkuangwen"
+      ],
+      "replay_sha256": "530488b77f0ef9585ab35ff3f63755b3c34a86d5e4e6c8e797a1eff7118e5efe",
+      "rewards": [
+        110741.0,
+        91007.0
+      ],
+      "seed": 1719094355,
+      "source_command": "kaggle competitions replay 113699817 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56577122,
+      "submission_public_score": 2934.1,
+      "team_id": 16718819
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T10:56:45.730000",
+      "episode_id": 113671674,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Unknown Mother-Goose",
+      "module_version": "1.32.7",
+      "players": [
+        "Unknown Mother-Goose",
+        "Yaroslav"
+      ],
+      "replay_sha256": "9852aee9aa6a5938686a585fd04609d9d85fc31265362f4196a7d8b47ee47ba8",
+      "rewards": [
+        158163.0,
+        133683.0
+      ],
+      "seed": 435509521,
+      "source_command": "kaggle competitions replay 113671674 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56574712,
+      "submission_public_score": 2922.7,
+      "team_id": 16730612
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T02:19:34.008000",
+      "episode_id": 113521963,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Azat Akhtyamov",
+      "module_version": "1.32.7",
+      "players": [
+        "Azat Akhtyamov",
+        "yumizu"
+      ],
+      "replay_sha256": "f11965557438b756eb45a93c0b15ac710860e884010bab6a98499e4516c4599b",
+      "rewards": [
+        95313.0,
+        88330.0
+      ],
+      "seed": 1243311256,
+      "source_command": "kaggle competitions replay 113521963 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56561951,
+      "submission_public_score": 2894.8,
+      "team_id": 16743356
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T11:40:46.195000",
+      "episode_id": 113684702,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Yizhou",
+      "module_version": "1.32.7",
+      "players": [
+        "Yizhou",
+        "HD h Joratos"
+      ],
+      "replay_sha256": "fe3e9b8a419da7f8f77b2d69e60f5c9ac23b2658064c286ab93066d77fe56479",
+      "rewards": [
+        94755.0,
+        80003.0
+      ],
+      "seed": 764972995,
+      "source_command": "kaggle competitions replay 113684702 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56576165,
+      "submission_public_score": 2890.5,
+      "team_id": 16712258
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-25T04:14:01.710000",
+      "episode_id": 113139781,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Boey",
+      "module_version": "1.32.7",
+      "players": [
+        "Boey",
+        "Unknown Mother-Goose"
+      ],
+      "replay_sha256": "f2443c411411b72138c4b37749e306d3906fa8a39d259930ca1529d316878b4b",
+      "rewards": [
+        88342.0,
+        88186.0
+      ],
+      "seed": 215030505,
+      "source_command": "kaggle competitions replay 113139781 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56521745,
+      "submission_public_score": 3082.2,
+      "team_id": 16915014
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T09:56:49.790000",
+      "episode_id": 113654409,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "DSM",
+      "module_version": "1.32.7",
+      "players": [
+        "Densike",
+        "DSM"
+      ],
+      "replay_sha256": "3baa31aee2d91bbf0750ae761deefe48ad2d20d5e72e7e2008263320f43d55a4",
+      "rewards": [
+        75482.0,
+        86552.0
+      ],
+      "seed": 1284546506,
+      "source_command": "kaggle competitions replay 113654409 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56571979,
+      "submission_public_score": 3047.6,
+      "team_id": 16732748
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-25T21:44:14.485000",
+      "episode_id": 113442669,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Fourth Quadrant",
+      "module_version": "1.32.7",
+      "players": [
+        "Arda Ceylan",
+        "Fourth Quadrant"
+      ],
+      "replay_sha256": "d02faae274062c322e677d8e657be195219768df0ca58da28340d3cd17fb613f",
+      "rewards": [
+        87686.0,
+        98709.0
+      ],
+      "seed": 1003626538,
+      "source_command": "kaggle competitions replay 113442669 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56555482,
+      "submission_public_score": 3033.3,
+      "team_id": 16667959
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-25T21:09:04.607000",
+      "episode_id": 113433804,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "M & M & P & Q",
+      "module_version": "1.32.7",
+      "players": [
+        "M & M & P & Q",
+        "DSM"
+      ],
+      "replay_sha256": "1416ad1df2f5e230ca70d414092758bb483bc4f4653b643f313d7805a93ecc1f",
+      "rewards": [
+        106991.0,
+        105679.0
+      ],
+      "seed": 182558313,
+      "source_command": "kaggle competitions replay 113433804 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56553720,
+      "submission_public_score": 3007.8,
+      "team_id": 16681125
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T11:16:45.939000",
+      "episode_id": 113677668,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Vadim Vasilenko",
+      "module_version": "1.32.7",
+      "players": [
+        "Azat Akhtyamov",
+        "Vadim Vasilenko"
+      ],
+      "replay_sha256": "5ac5abb13115632a39275ed61e1084291fca99f0241e8f968b6d4eb56a1fa364",
+      "rewards": [
+        102092.0,
+        101014.0
+      ],
+      "seed": 1059335001,
+      "source_command": "kaggle competitions replay 113677668 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56574498,
+      "submission_public_score": 2998.3,
+      "team_id": 16770421
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-25T23:14:19.349000",
+      "episode_id": 113468045,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "DECEM",
+      "module_version": "1.32.7",
+      "players": [
+        "DECEM",
+        "DSM"
+      ],
+      "replay_sha256": "61bafe63500b684988ef6dd5edc657eb04306696b933e329f40fc06c818ce850",
+      "rewards": [
+        112744.0,
+        114061.0
+      ],
+      "seed": 1698184935,
+      "source_command": "kaggle competitions replay 113468045 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56558220,
+      "submission_public_score": 2973.4,
+      "team_id": 16623559
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T13:04:48.028000",
+      "episode_id": 113709294,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Majkel1337",
+      "module_version": "1.32.7",
+      "players": [
+        "My second life",
+        "Majkel1337"
+      ],
+      "replay_sha256": "4ab0031d01c74fb5b3b9b78bfd8d6dadd3e7be83474d367ff0689377ba234aea",
+      "rewards": [
+        78400.0,
+        94501.0
+      ],
+      "seed": 2021670005,
+      "source_command": "kaggle competitions replay 113709294 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56577122,
+      "submission_public_score": 2934.1,
+      "team_id": 16718819
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T11:44:49.136000",
+      "episode_id": 113685931,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Unknown Mother-Goose",
+      "module_version": "1.32.7",
+      "players": [
+        "Unknown Mother-Goose",
+        "Breaking1800"
+      ],
+      "replay_sha256": "d7c327cc4b0d08aa17612dcbd461ff3e47590e2738067fcaa0dfcfb0e5370e3b",
+      "rewards": [
+        145207.0,
+        118471.0
+      ],
+      "seed": 90247983,
+      "source_command": "kaggle competitions replay 113685931 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56574712,
+      "submission_public_score": 2922.7,
+      "team_id": 16730612
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T03:15:33.240000",
+      "episode_id": 113537919,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Azat Akhtyamov",
+      "module_version": "1.32.7",
+      "players": [
+        "Azat Akhtyamov",
+        "Smackaveli"
+      ],
+      "replay_sha256": "a603200a699a8fa4ad177b50b840fc04e1345d8ce6b68d05ddf84c8292e28f6b",
+      "rewards": [
+        133517.0,
+        126929.0
+      ],
+      "seed": 1955548134,
+      "source_command": "kaggle competitions replay 113537919 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56561951,
+      "submission_public_score": 2894.8,
+      "team_id": 16743356
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T12:20:45.855000",
+      "episode_id": 113696381,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Yizhou",
+      "module_version": "1.32.7",
+      "players": [
+        "Yizhou",
+        "ymg_aq"
+      ],
+      "replay_sha256": "daaa2ef29567822777554574d59ef4f713f4b999eb1a77ed13fcaa88c0b38f3c",
+      "rewards": [
+        122491.0,
+        119489.0
+      ],
+      "seed": 1855080023,
+      "source_command": "kaggle competitions replay 113696381 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56576165,
+      "submission_public_score": 2890.5,
+      "team_id": 16712258
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-25T13:54:19.024000",
+      "episode_id": 113308690,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Boey",
+      "module_version": "1.32.7",
+      "players": [
+        "DSM",
+        "Boey"
+      ],
+      "replay_sha256": "5ce5150656c2d0413d3a32dd2d8c533e834f315c032941654cbe9e9eb62276ea",
+      "rewards": [
+        86949.0,
+        89538.0
+      ],
+      "seed": 838106666,
+      "source_command": "kaggle competitions replay 113308690 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56521745,
+      "submission_public_score": 3082.2,
+      "team_id": 16915014
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T10:48:46.799000",
+      "episode_id": 113669582,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "DSM",
+      "module_version": "1.32.7",
+      "players": [
+        "Fourth Quadrant",
+        "DSM"
+      ],
+      "replay_sha256": "e12ae52152e74f642dc3ae31db03a24a49633d2588d8dd620e9cce07afc2b3dc",
+      "rewards": [
+        77329.0,
+        78060.0
+      ],
+      "seed": 1992921149,
+      "source_command": "kaggle competitions replay 113669582 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56571979,
+      "submission_public_score": 3047.6,
+      "team_id": 16732748
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T01:31:04.599000",
+      "episode_id": 113508057,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Fourth Quadrant",
+      "module_version": "1.32.7",
+      "players": [
+        "Kaggledew Valley \ud83c\udfc6",
+        "Fourth Quadrant"
+      ],
+      "replay_sha256": "622957fb8fb6cc033b5ee03436b05236748a87a585edca1a2d1f2a94fc20b955",
+      "rewards": [
+        81339.0,
+        100587.0
+      ],
+      "seed": 2012918553,
+      "source_command": "kaggle competitions replay 113508057 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56555482,
+      "submission_public_score": 3033.3,
+      "team_id": 16667959
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T01:31:04.407000",
+      "episode_id": 113507961,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "M & M & P & Q",
+      "module_version": "1.32.7",
+      "players": [
+        "M & M & P & Q",
+        "Unknown Mother-Goose"
+      ],
+      "replay_sha256": "de4c61aea51e4478e8464c40a2d14b4f1fc069d07ec57b42165ffb0f093052ea",
+      "rewards": [
+        97670.0,
+        92339.0
+      ],
+      "seed": 1063093430,
+      "source_command": "kaggle competitions replay 113507961 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56553720,
+      "submission_public_score": 3007.8,
+      "team_id": 16681125
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T12:00:55.898000",
+      "episode_id": 113690728,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Vadim Vasilenko",
+      "module_version": "1.32.7",
+      "players": [
+        "Fourth Quadrant",
+        "Vadim Vasilenko"
+      ],
+      "replay_sha256": "287ac7222e854feb424646f068a7c5add8e7609c91ce6c334a7a16b560e3219a",
+      "rewards": [
+        102538.0,
+        101333.0
+      ],
+      "seed": 1491902553,
+      "source_command": "kaggle competitions replay 113690728 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56574498,
+      "submission_public_score": 2998.3,
+      "team_id": 16770421
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T02:11:37.047000",
+      "episode_id": 113519765,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "DECEM",
+      "module_version": "1.32.7",
+      "players": [
+        "Vadim Vasilenko",
+        "DECEM"
+      ],
+      "replay_sha256": "5ac75a51c1d965875f8c9cb7783e7071d6df96d2f55a4e83da274bffb88392e5",
+      "rewards": [
+        114725.0,
+        116374.0
+      ],
+      "seed": 479701383,
+      "source_command": "kaggle competitions replay 113519765 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56558220,
+      "submission_public_score": 2973.4,
+      "team_id": 16623559
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T13:36:45.459000",
+      "episode_id": 113718699,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Majkel1337",
+      "module_version": "1.32.7",
+      "players": [
+        "Majkel1337",
+        "TheEggman"
+      ],
+      "replay_sha256": "28ae064fc2ae20860993c55a69dd93118169ecfe51039c92c5fab6ad447407e9",
+      "rewards": [
+        85545.0,
+        81147.0
+      ],
+      "seed": 1746957479,
+      "source_command": "kaggle competitions replay 113718699 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56577122,
+      "submission_public_score": 2934.1,
+      "team_id": 16718819
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T12:32:46.499000",
+      "episode_id": 113700626,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Unknown Mother-Goose",
+      "module_version": "1.32.7",
+      "players": [
+        "Unknown Mother-Goose",
+        "YumeNeko"
+      ],
+      "replay_sha256": "8123928abb62c36a8b2b0066b9a0ce87acfc66b2df8be8db5b7977548ca3bd08",
+      "rewards": [
+        122103.0,
+        101926.0
+      ],
+      "seed": 141156328,
+      "source_command": "kaggle competitions replay 113700626 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56574712,
+      "submission_public_score": 2922.7,
+      "team_id": 16730612
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T04:07:33.541000",
+      "episode_id": 113553158,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Azat Akhtyamov",
+      "module_version": "1.32.7",
+      "players": [
+        "Azat Akhtyamov",
+        "TheEggman"
+      ],
+      "replay_sha256": "63ff7d5e6ec589c7e3a1e349a5339b278152f7e49fd606d8ff6eb534bc1c996d",
+      "rewards": [
+        115204.0,
+        109814.0
+      ],
+      "seed": 1146285714,
+      "source_command": "kaggle competitions replay 113553158 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56561951,
+      "submission_public_score": 2894.8,
+      "team_id": 16743356
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T13:00:47.602000",
+      "episode_id": 113708257,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Yizhou",
+      "module_version": "1.32.7",
+      "players": [
+        "Pii",
+        "Yizhou"
+      ],
+      "replay_sha256": "f31c75290eb22ad344738e0103fac560650ea9ab3538d2f017da4c5b841d7a76",
+      "rewards": [
+        113480.0,
+        112077.0
+      ],
+      "seed": 1338575599,
+      "source_command": "kaggle competitions replay 113708257 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56576165,
+      "submission_public_score": 2890.5,
+      "team_id": 16712258
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-25T23:47:04.088000",
+      "episode_id": 113476866,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Boey",
+      "module_version": "1.32.7",
+      "players": [
+        "DSM",
+        "Boey"
+      ],
+      "replay_sha256": "9551bad778d95714d54292f7ed186fdf93546d71d903f9016c730e9ce9ffaff7",
+      "rewards": [
+        99736.0,
+        100689.0
+      ],
+      "seed": 171882084,
+      "source_command": "kaggle competitions replay 113476866 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56521745,
+      "submission_public_score": 3082.2,
+      "team_id": 16915014
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T11:28:47.032000",
+      "episode_id": 113681377,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "DSM",
+      "module_version": "1.32.7",
+      "players": [
+        "DSM",
+        "yuto083"
+      ],
+      "replay_sha256": "80472a59401271e8da8ec2ffc09bcd1e252ea9dd153607bbeb2d7911fa2082e9",
+      "rewards": [
+        151852.0,
+        136058.0
+      ],
+      "seed": 607676395,
+      "source_command": "kaggle competitions replay 113681377 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56571979,
+      "submission_public_score": 3047.6,
+      "team_id": 16732748
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T05:07:36.207000",
+      "episode_id": 113571199,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Fourth Quadrant",
+      "module_version": "1.32.7",
+      "players": [
+        "Fourth Quadrant",
+        "Russell Kirk"
+      ],
+      "replay_sha256": "7ac2fb30f13e4c028b0256d4e60018995a696bbd4ecbf966067f01dabbcbefce",
+      "rewards": [
+        140328.0,
+        106037.0
+      ],
+      "seed": 1517457842,
+      "source_command": "kaggle competitions replay 113571199 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56555482,
+      "submission_public_score": 3033.3,
+      "team_id": 16667959
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T06:40:10.491000",
+      "episode_id": 113598187,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "M & M & P & Q",
+      "module_version": "1.32.7",
+      "players": [
+        "M & M & P & Q",
+        "DECEM"
+      ],
+      "replay_sha256": "a7a1ed93936ec8fdd580d152f69a026609d04de34eb8c6335e77a9fe8f6fe542",
+      "rewards": [
+        111296.0,
+        105070.0
+      ],
+      "seed": 1861079365,
+      "source_command": "kaggle competitions replay 113598187 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56553720,
+      "submission_public_score": 3007.8,
+      "team_id": 16681125
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T12:32:45.887000",
+      "episode_id": 113700195,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Vadim Vasilenko",
+      "module_version": "1.32.7",
+      "players": [
+        "Vadim Vasilenko",
+        "mtmr_s1"
+      ],
+      "replay_sha256": "25466132e671515f1e3954719af6879aa3ee1fe3d1f68d92d6458c7e05921f3f",
+      "rewards": [
+        108042.0,
+        103695.0
+      ],
+      "seed": 413582080,
+      "source_command": "kaggle competitions replay 113700195 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56574498,
+      "submission_public_score": 2998.3,
+      "team_id": 16770421
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T07:04:47.036000",
+      "episode_id": 113605201,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "DECEM",
+      "module_version": "1.32.7",
+      "players": [
+        "Fourth Quadrant",
+        "DECEM"
+      ],
+      "replay_sha256": "b0501ba798af0febb46f22fd8dd5185575173b62cb9e0083b4da6d1a11e43fd2",
+      "rewards": [
+        98438.0,
+        95446.0
+      ],
+      "seed": 2142040312,
+      "source_command": "kaggle competitions replay 113605201 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56558220,
+      "submission_public_score": 2973.4,
+      "team_id": 16623559
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T14:12:47.097000",
+      "episode_id": 113729484,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Majkel1337",
+      "module_version": "1.32.7",
+      "players": [
+        "Majkel1337",
+        "We wanna be tomatos"
+      ],
+      "replay_sha256": "c9ee7b37650a9dfe6bf0394fff547e754e33bbc6c5665286239b48f78552b4da",
+      "rewards": [
+        131641.0,
+        123478.0
+      ],
+      "seed": 59088221,
+      "source_command": "kaggle competitions replay 113729484 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56577122,
+      "submission_public_score": 2934.1,
+      "team_id": 16718819
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T13:12:47.726000",
+      "episode_id": 113711947,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Unknown Mother-Goose",
+      "module_version": "1.32.7",
+      "players": [
+        "Unknown Mother-Goose",
+        "\u5403\u767d\u996d\u7684\u5927\u80a5\u9c7c"
+      ],
+      "replay_sha256": "02b39800e2aa7d2ce799156133b3457ca5c1afc0706207697c86e2cf04f5461f",
+      "rewards": [
+        111101.0,
+        105666.0
+      ],
+      "seed": 215595326,
+      "source_command": "kaggle competitions replay 113711947 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56574712,
+      "submission_public_score": 2922.7,
+      "team_id": 16730612
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T08:56:57.699000",
+      "episode_id": 113637102,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Azat Akhtyamov",
+      "module_version": "1.32.7",
+      "players": [
+        "DECEM",
+        "Azat Akhtyamov"
+      ],
+      "replay_sha256": "7ed8f2e07166eebe3b28f3e3b1f3cd9229dc412758640926be98bbf1388e7596",
+      "rewards": [
+        115638.0,
+        112482.0
+      ],
+      "seed": 2113671708,
+      "source_command": "kaggle competitions replay 113637102 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56561951,
+      "submission_public_score": 2894.8,
+      "team_id": 16743356
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T13:44:55.514000",
+      "episode_id": 113721310,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Yizhou",
+      "module_version": "1.32.7",
+      "players": [
+        "Yizhou",
+        "Unknown Mother-Goose"
+      ],
+      "replay_sha256": "2cce55d8c518ceb8637495590218a7ab243adf020d3f6e6c491e3f315ed195a8",
+      "rewards": [
+        111210.0,
+        111361.0
+      ],
+      "seed": 1165462469,
+      "source_command": "kaggle competitions replay 113721310 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56576165,
+      "submission_public_score": 2890.5,
+      "team_id": 16712258
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T07:52:41.655000",
+      "episode_id": 113619322,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Boey",
+      "module_version": "1.32.7",
+      "players": [
+        "Boey",
+        "M & M & P & Q"
+      ],
+      "replay_sha256": "1039296021b50851196188468248a99c9fe5280b796bfa60bb90b73a50b50960",
+      "rewards": [
+        81522.0,
+        82511.0
+      ],
+      "seed": 1197394661,
+      "source_command": "kaggle competitions replay 113619322 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56521745,
+      "submission_public_score": 3082.2,
+      "team_id": 16915014
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T12:40:51.056000",
+      "episode_id": 113702806,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "DSM",
+      "module_version": "1.32.7",
+      "players": [
+        "DSM",
+        "Boey"
+      ],
+      "replay_sha256": "cc2bf4fd8e327c4240e5726bc7bf11cf7610149e629a057dd3ec58126f147104",
+      "rewards": [
+        99196.0,
+        100497.0
+      ],
+      "seed": 1511209013,
+      "source_command": "kaggle competitions replay 113702806 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56571979,
+      "submission_public_score": 3047.6,
+      "team_id": 16732748
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T11:20:48.840000",
+      "episode_id": 113679436,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Fourth Quadrant",
+      "module_version": "1.32.7",
+      "players": [
+        "Fourth Quadrant",
+        "DSM"
+      ],
+      "replay_sha256": "4f97da01e9c4e1afe65a4befee5fa38329e4d5dbc4d0cb570d0d05bf5dbfee92",
+      "rewards": [
+        103966.0,
+        99688.0
+      ],
+      "seed": 340234806,
+      "source_command": "kaggle competitions replay 113679436 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56555482,
+      "submission_public_score": 3033.3,
+      "team_id": 16667959
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T11:48:50.034000",
+      "episode_id": 113687151,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "M & M & P & Q",
+      "module_version": "1.32.7",
+      "players": [
+        "M & M & P & Q",
+        "Vadim Vasilenko"
+      ],
+      "replay_sha256": "e7255bfd1d7ff67234228fdfc71ab05f3ce6320e2fb5db8a952b7971eba4a445",
+      "rewards": [
+        97381.0,
+        99207.0
+      ],
+      "seed": 828952628,
+      "source_command": "kaggle competitions replay 113687151 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56553720,
+      "submission_public_score": 3007.8,
+      "team_id": 16681125
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T14:00:49.527000",
+      "episode_id": 113726039,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Vadim Vasilenko",
+      "module_version": "1.32.7",
+      "players": [
+        "Vadim Vasilenko",
+        "DSM"
+      ],
+      "replay_sha256": "674443adc9b70777b9893d2b3b61283139e9a6f77d2a05438ab4ca4e2d841c9e",
+      "rewards": [
+        79528.0,
+        79159.0
+      ],
+      "seed": 1537044547,
+      "source_command": "kaggle competitions replay 113726039 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56574498,
+      "submission_public_score": 2998.3,
+      "team_id": 16770421
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T11:40:46.500000",
+      "episode_id": 113684954,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "DECEM",
+      "module_version": "1.32.7",
+      "players": [
+        "DECEM",
+        "Pii"
+      ],
+      "replay_sha256": "9cdf52e8e7fd62739cdc9da23e8a3cb4b1e61ab6040af5ea859946e87360608f",
+      "rewards": [
+        116034.0,
+        114066.0
+      ],
+      "seed": 102856855,
+      "source_command": "kaggle competitions replay 113684954 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56558220,
+      "submission_public_score": 2973.4,
+      "team_id": 16623559
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T14:48:48.718000",
+      "episode_id": 113740215,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Majkel1337",
+      "module_version": "1.32.7",
+      "players": [
+        "THIRD FARM CLUB",
+        "Majkel1337"
+      ],
+      "replay_sha256": "d3a34008565154fb0c435e5437465e7e041f96afbb1bfec05290dc071a6bb7b5",
+      "rewards": [
+        99196.0,
+        113365.0
+      ],
+      "seed": 380851960,
+      "source_command": "kaggle competitions replay 113740215 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56577122,
+      "submission_public_score": 2934.1,
+      "team_id": 16718819
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T14:12:47.318000",
+      "episode_id": 113729640,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Unknown Mother-Goose",
+      "module_version": "1.32.7",
+      "players": [
+        "Unknown Mother-Goose",
+        "Vadim Vasilenko"
+      ],
+      "replay_sha256": "bad1b1c1dcee272f19c0918446460d98146f0008b3d7189c493d619775b8540f",
+      "rewards": [
+        99097.0,
+        102923.0
+      ],
+      "seed": 1460594795,
+      "source_command": "kaggle competitions replay 113729640 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56574712,
+      "submission_public_score": 2922.7,
+      "team_id": 16730612
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T13:28:46.398000",
+      "episode_id": 113716689,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Azat Akhtyamov",
+      "module_version": "1.32.7",
+      "players": [
+        "Azat Akhtyamov",
+        "Unknown Mother-Goose"
+      ],
+      "replay_sha256": "de7114bfa913464afb4e1d32201fb8ac79dce41bc34a54b5e1f4ce284d8468c8",
+      "rewards": [
+        76241.0,
+        82177.0
+      ],
+      "seed": 1382336346,
+      "source_command": "kaggle competitions replay 113716689 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56561951,
+      "submission_public_score": 2894.8,
+      "team_id": 16743356
+    },
+    {
+      "configuration": {
+        "actTimeout": 1,
+        "boardSize": 10,
+        "episodeSteps": 720,
+        "farmHandCostMult": 1,
+        "marketParams": {},
+        "maxMarketOrdersPerTurn": 10,
+        "runTimeout": 1200,
+        "seed": null,
+        "shedCapacity": 100,
+        "startingMoney": 3000,
+        "townCenterSellInterval": 24,
+        "townShopSellInterval": 4,
+        "townShopUnlockInterval": 3,
+        "turnsPerDay": 24,
+        "weedSpawnChance": 0.005
+      },
+      "episode_created": "2026-09-26T14:16:46.947000",
+      "episode_id": 113730806,
+      "episode_state": "EpisodeState.COMPLETED",
+      "leaderboard_team": "Yizhou",
+      "module_version": "1.32.7",
+      "players": [
+        "Yizhou",
+        "Majkel1337"
+      ],
+      "replay_sha256": "03459b6d4c2fe4004abfb299c31ebfb08f1ed04e9da84d8c56a4d64b112affdd",
+      "rewards": [
+        112275.0,
+        110253.0
+      ],
+      "seed": 586356663,
+      "source_command": "kaggle competitions replay 113730806 -p experiments/v63_elite_panel/replays -q",
+      "steps": 720,
+      "submission_id": 56576165,
+      "submission_public_score": 2890.5,
+      "team_id": 16712258
+    }
+  ],
+  "selection": {
+    "description": "50 unique, public, completed, recent games; round-robin across the current top-10 leaderboard lineages, selecting each team\u2019s highest-scoring entry among its latest two public submissions; sampled across available episodes dated 2026-09-24 through 2026-09-26.",
+    "episodes": 50,
+    "episodes_command": "kaggle competitions episodes <submission_id> --format json",
+    "replay_command": "kaggle competitions replay <episode_id> -p experiments/v63_elite_panel/replays -q",
+    "submission_ids_command": "kaggle competitions team-submissions <team_id> --format json"
+  },
+  "source": "Official Kaggle CLI public simulation replay endpoint; no private data."
+}

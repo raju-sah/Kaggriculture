@@ -1,0 +1,28 @@
+{
+  "candidate": "experiments/v57_broad/v57_reset_candidate.py",
+  "sha256": "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+  "opponents": {
+    "v50": "experiments/v50_agent.py",
+    "v53": "experiments/v53_agent.py",
+    "v54": "agents/v54_agent.py",
+    "v56": "agents/v56_agent.py"
+  },
+  "opponent_sha256": {
+    "v50": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+    "v53": "a57b3f14c067926d0960eb829fb6d95761dc1e7b4d011c71fda353702cdb47b1",
+    "v54": "9c374f64e8e82027167f8018f344dc82edff1d75ac9c3d593dcd13f564c1fee1",
+    "v56": "d9e9670921b62afedfa8cbc7086d2a2ec19e153ee26006cef477eadd462bd19c"
+  },
+  "seeds": [
+    94100,
+    94101,
+    94102,
+    94103,
+    94104
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "route_source_sha256": "20107e09e5c951bbf3d86e77b1c14995312111b9e750a91a3b5579844c018a18"
+}

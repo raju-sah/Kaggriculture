@@ -1,0 +1,14 @@
+{
+  "candidate": "experiments/v58_policy/v58_policy_candidate_earlyshops.py",
+  "candidate_sha256": "f6847c8c6658e50e94e9c8afe66a974b6958341cd61069f0151e02a09239d6d9",
+  "opponent": "experiments/v48_agent.py",
+  "opponent_sha256": "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a",
+  "seeds": [
+    92802
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "name": "earlyshops-known-92802"
+}

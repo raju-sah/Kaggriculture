@@ -1,0 +1,41 @@
+{
+  "candidate": "experiments/v57_broad/v57_reset_candidate.py",
+  "candidate_sha256": "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+  "opponents": {
+    "v48": "experiments/v48_agent.py",
+    "v50": "experiments/v50_agent.py",
+    "v51": "experiments/v51_agent.py",
+    "v52": "experiments/v52_agent.py",
+    "v53": "experiments/v53_agent.py",
+    "v54": "agents/v54_agent.py",
+    "v55": "agents/v55_agent.py",
+    "v56": "agents/v56_agent.py"
+  },
+  "opponent_sha256": {
+    "v48": "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a",
+    "v50": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+    "v51": "274f5913c4c4787cf825d10fde4de65f79b61d25c764aa6761d36d0840c04eb4",
+    "v52": "a53025fce6e901df0083d3115c8e422d77c8c86fac86be99da3e4725b6a50e5b",
+    "v53": "a57b3f14c067926d0960eb829fb6d95761dc1e7b4d011c71fda353702cdb47b1",
+    "v54": "9c374f64e8e82027167f8018f344dc82edff1d75ac9c3d593dcd13f564c1fee1",
+    "v55": "97edf39ce1f2f72f3874f555bf413a9a8d3f94072397c0ca000c37b7c5931878",
+    "v56": "d9e9670921b62afedfa8cbc7086d2a2ec19e153ee26006cef477eadd462bd19c"
+  },
+  "seeds": [
+    93600,
+    93601,
+    93602,
+    93603,
+    93604
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "engine": {
+    "package": "kaggle-environments",
+    "version": "1.32.7",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+  },
+  "replay_handling": "Extract longest observed town.unlocked_shops list, then delete full replay."
+}

@@ -1,0 +1,15 @@
+Kaito Fukami, “103/128 Fresh Public | v43 Sparse Shop Hybrid,” Kaggle notebook,
+version 13 (scriptVersionId 344404785), released on Kaggle under Apache License 2.0.
+Notebook: https://www.kaggle.com/code/kaitofukami/103-128-fresh-public-v43-sparse-shop-hybrid
+
+This local-only opponent snapshot is for internal benchmark execution. The upstream
+notebook documents exact medoid action routes sourced from public Kaggriculture replay
+episodes 96815867, 96905004, and 96824976, and credits behavioral lineages BurntPotato
+and ActiveMusyoku. It also credits public analysis by Rayk Kretzschmar, beicicc,
+prvsiyan, and Georgy Mamarin. This attribution does not assert ownership of those
+replay-derived actions or grant rights beyond the upstream Kaggle page's stated
+notebook license. Do not submit, publish, or redistribute this opponent snapshot.
+
+Embedded runtime main.py was extracted from the notebook's compressed payload without
+modification. SHA-256: 69f06a802b62aa08f28705dab5728eb924bb6a7c23ffe0164f65b104cc3dadf3
+Original Kaggle notebook SHA-256: 17006781a3cea5a36ac3c48cb491015d616dde847ff7302e205ed2aede931cf0

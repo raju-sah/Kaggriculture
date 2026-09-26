@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "episode_overlap": [],
+  "split_row_counts": {
+    "train": 415396,
+    "heldout": 123590
+  },
+  "forbidden_feature_keys_present": false
+}

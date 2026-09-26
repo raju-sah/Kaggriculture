@@ -1,0 +1,46 @@
+{
+  "plan_sha256": "97497e1279d7ab3dd02834ad6909028d2578ff3a241dc74556fd42dbd9e01231",
+  "baseline_sha256": "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+  "opponents": {
+    "v50": {
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v50_agent.py",
+      "sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b"
+    },
+    "v53": {
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v53_agent.py",
+      "sha256": "a57b3f14c067926d0960eb829fb6d95761dc1e7b4d011c71fda353702cdb47b1"
+    },
+    "v54": {
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v54_agent.py",
+      "sha256": "4e3db1b153262b9dca86d3731b158e27bd7b782691ade2beaca6f2f379ff9f99"
+    }
+  },
+  "candidates": {
+    "balanced": {
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/strong_economy/candidates/balanced.py",
+      "sha256": "eb4e6a49184f6a67499961d8d07bc41a524ebbdd7cbc6086aea429a740d4ffdb"
+    },
+    "early_cow_invest": {
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/strong_economy/candidates/early_cow_invest.py",
+      "sha256": "75c1e04422a1baa8f1ab1e52752e0bfd8cce5194d30df1073ed5b7bb971375df"
+    },
+    "conserve_cash": {
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/strong_economy/candidates/conserve_cash.py",
+      "sha256": "6bc60549ae562f1415efc100200d3f3c517ed8fadb095d489b3ab1c2b4715f02"
+    },
+    "high_throughput": {
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/strong_economy/candidates/high_throughput.py",
+      "sha256": "1f6a038b37ff3e34428458f298a702b4f4f7b4314403b1c7fc5e2eaadc32946d"
+    },
+    "frozen_reset": {
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v57_broad/v57_reset_candidate.py",
+      "sha256": "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+    }
+  },
+  "seeds": [
+    95200,
+    95201
+  ],
+  "started_at": 1790411500.4925463,
+  "finished_at": 1790412169.4705784
+}

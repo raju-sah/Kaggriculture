@@ -1,0 +1,31 @@
+{
+  "purpose": "Bounded, isolated state-conditioned early-Yarn sheep-for-goose production mix test from V59 teacher diagnostics.",
+  "candidate": "experiments/v59_route_rules/mix_gate/candidate.py",
+  "candidate_sha256": "41bdb1d3c3c95a10c4fc84275c0b8cde1d1a81a80ca8b216347132e00568f71c",
+  "base": "experiments/v57_broad/v57_reset_candidate.py",
+  "base_sha256": "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+  "signal": "day<=11 AND YARN_STORE unlocked AND observed WOOL price >= 180; redirect at most one goose per market order to sheep while target sheep count <6 and existing/planned capacity allows it.",
+  "route_adaptation": "If frozen worker intent picks up a goose while sheep is in shed, pick up one sheep; route a sheep carrier to the nearest vacant pasture. If no pasture is visible, the substitution is allowed only alongside BUY_LAND or planned BUILD_PASTURE and placement waits for a vacant pasture.",
+  "offline_comparison": {
+    "inputs": [95501, 95508, 95518],
+    "fresh_seeds_used": 0,
+    "results": "experiments/v59_route_rules/mix_gate/offline_probe.json"
+  },
+  "fresh_gate": {
+    "allocation": [
+      {"seed": 95610, "opponent": "v50", "seat_orders": ["ab", "ba"], "games": 2},
+      {"seed": 95611, "opponent": "v54", "seat_orders": ["ab", "ba"], "games": 2},
+      {"seed": 95612, "opponent": "v56", "seat_orders": ["ab", "ba"], "games": 2}
+    ],
+    "maximum_games": 6,
+    "sequential_stop_rule": "Run one opponent pair at a time. Stop the remaining pairs if the current pair has zero wins, any candidate error/timeout/incomplete game, or negative mean candidate-minus-opponent margin. This is a diagnostic screen, not validation/readiness evidence.",
+    "ledger_audit": "No existing reports/plans contain seeds 95610-95612; they are distinct from teacher seeds 95500-95519 and other listed ranges.",
+    "final_holdout_used": false
+  },
+  "engine": {
+    "kaggle_environments": "1.32.7",
+    "engine_path": ".venv/lib/python3.12/site-packages/kaggle_environments/envs/kaggriculture/kaggriculture.py",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+  },
+  "submission_or_main_changed": false
+}

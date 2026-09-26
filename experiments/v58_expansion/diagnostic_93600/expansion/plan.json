@@ -1,0 +1,14 @@
+{
+  "candidate": "experiments/v58_expansion/v58_expansion_candidate.py",
+  "candidate_sha256": "20c5a4a2e0d96d39cdd9e26de9daff0e685b66b5ec7f943f1e85ae38330e09fc",
+  "opponents": {
+    "v54": "agents/v54_agent.py",
+    "v56": "agents/v56_agent.py"
+  },
+  "seed": 93600,
+  "seats": [
+    0,
+    1
+  ],
+  "replay_policy": "all"
+}

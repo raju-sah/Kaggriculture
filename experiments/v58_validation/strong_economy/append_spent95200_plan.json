@@ -1,0 +1,59 @@
+{
+  "status": "completed_near_noop_stop",
+  "purpose": "Test only an append-only seed refill; preserve every frozen-route actor action and every baseline market order in exact order.",
+  "candidate": "experiments/v58_validation/strong_economy/append_seed_refill.py",
+  "candidate_sha256": "d406f4920d0e9ef810d6b1e4b1f1aaa8fd68367031b8ba79ac25ad2e1165f695",
+  "baseline": "experiments/v57_broad/v57_reset_candidate.py",
+  "baseline_sha256": "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+  "opponent": "experiments/v50_agent.py",
+  "opponent_sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+  "seed": 95200,
+  "seat_orders": [
+    0,
+    1
+  ],
+  "workers": 2,
+  "change": "At most append BUY_SEED WHEAT 1 when visible action contains PLANT WHEAT, current seed stock after those actions is below one, baseline has no BUY_SEED WHEAT, market slots remain, and current cash less conservative full cost of baseline HIRE/LAND/BUY orders less seed cost remains >=500. Credit zero for same-turn SELL proceeds. No baseline order is removed, changed, or reordered.",
+  "exact_loader_preflight": {
+    "loader": "kaggle_environments.agent.get_last_callable",
+    "unique_last_callable": "zzz_economy_policy_entrypoint",
+    "observations_checked": 1440,
+    "actor_action_changes": 0,
+    "baseline_order_prefix_mismatches": 0,
+    "appended_order_observation_rows": 67,
+    "fixtures_steps11_24_30_preserved": true
+  },
+  "stop_rule": "If terminal coins/margin do not improve materially against frozen reset or errors/timeouts occur, stop; do not spend 95202+.",
+  "final_holdout_93000_93049_used": false,
+  "rights": "Internal research only; route remains public Lizs replay-derived. No submission.",
+  "outcome": {
+    "games": 2,
+    "candidate_errors": 0,
+    "timeouts": 0,
+    "candidate_coins": [
+      103346,
+      103346
+    ],
+    "v50_coins": [
+      84823,
+      84823
+    ],
+    "reset_control_coins": [
+      103354,
+      103354
+    ],
+    "candidate_minus_reset_margin_delta": [
+      -8,
+      -8
+    ],
+    "extra_orders": 1,
+    "extra_order": [
+      "BUY_SEED",
+      "WHEAT",
+      1
+    ],
+    "extra_order_observation_step": 5,
+    "extra_order_action_step": 6,
+    "decision": "Near-no-op with tiny negative score delta; stop; seeds 95202-95207 unused."
+  }
+}

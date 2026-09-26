@@ -1,0 +1,106 @@
+{
+  "teams": 10012,
+  "ours": [
+    {
+      "Rank": "3464",
+      "TeamId": "16924472",
+      "TeamName": "Rajusah",
+      "LastSubmissionDate": "2026-09-25 07:09:57",
+      "Score": "1187.7",
+      "SubmissionCount": "2",
+      "TeamMemberUserNames": "rajucode"
+    }
+  ],
+  "top10": [
+    {
+      "Rank": "1",
+      "TeamId": "16732748",
+      "TeamName": "DSM",
+      "LastSubmissionDate": "2026-09-25 15:04:34",
+      "Score": "3073.7",
+      "SubmissionCount": "2",
+      "TeamMemberUserNames": "denden12,masspeaks,shimishige"
+    },
+    {
+      "Rank": "2",
+      "TeamId": "16915014",
+      "TeamName": "Boey",
+      "LastSubmissionDate": "2026-09-24 12:57:23",
+      "Score": "3063.9",
+      "SubmissionCount": "2",
+      "TeamMemberUserNames": "boeychenjun"
+    },
+    {
+      "Rank": "3",
+      "TeamId": "16718819",
+      "TeamName": "Majkel1337",
+      "LastSubmissionDate": "2026-09-25 03:04:55",
+      "Score": "3001.9",
+      "SubmissionCount": "2",
+      "TeamMemberUserNames": "majkel1337"
+    },
+    {
+      "Rank": "4",
+      "TeamId": "16623559",
+      "TeamName": "DECEM",
+      "LastSubmissionDate": "2026-09-25 14:04:49",
+      "Score": "3000.1",
+      "SubmissionCount": "2",
+      "TeamMemberUserNames": "zy1343930734"
+    },
+    {
+      "Rank": "5",
+      "TeamId": "16681125",
+      "TeamName": "M & M & P & Q",
+      "LastSubmissionDate": "2026-09-25 15:04:30",
+      "Score": "2968.2",
+      "SubmissionCount": "2",
+      "TeamMemberUserNames": "morimo,msd0110,piiiiiiiii,qistripute"
+    },
+    {
+      "Rank": "6",
+      "TeamId": "16730612",
+      "TeamName": "Unknown Mother-Goose",
+      "LastSubmissionDate": "2026-09-25 15:57:50",
+      "Score": "2959.5",
+      "SubmissionCount": "2",
+      "TeamMemberUserNames": "linkinpony"
+    },
+    {
+      "Rank": "7",
+      "TeamId": "16770421",
+      "TeamName": "Vadim Vasilenko",
+      "LastSubmissionDate": "2026-09-25 12:16:19",
+      "Score": "2939.9",
+      "SubmissionCount": "2",
+      "TeamMemberUserNames": "vadimvasilenko"
+    },
+    {
+      "Rank": "8",
+      "TeamId": "16633132",
+      "TeamName": "Kaggledew Valley \ud83c\udfc6",
+      "LastSubmissionDate": "2026-09-23 01:10:56",
+      "Score": "2930.3",
+      "SubmissionCount": "2",
+      "TeamMemberUserNames": "jackvd,wscmisx,yanzhou06"
+    },
+    {
+      "Rank": "9",
+      "TeamId": "16758882",
+      "TeamName": "mtmr_s1",
+      "LastSubmissionDate": "2026-09-25 15:21:09",
+      "Score": "2929.6",
+      "SubmissionCount": "2",
+      "TeamMemberUserNames": "mtmrs1"
+    },
+    {
+      "Rank": "10",
+      "TeamId": "16887437",
+      "TeamName": "TheEggman",
+      "LastSubmissionDate": "2026-09-25 15:49:09",
+      "Score": "2916.2",
+      "SubmissionCount": "2",
+      "TeamMemberUserNames": "ethanl67"
+    }
+  ]
+}

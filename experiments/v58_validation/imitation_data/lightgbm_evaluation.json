@@ -1,0 +1,635 @@
+{
+  "train_n": 334264,
+  "heldout_n": 94089,
+  "feature_count": 96,
+  "categorical_features": 96,
+  "episode_overlap": [],
+  "split_load_seconds": 28.05,
+  "models": {
+    "action_verb": {
+      "metrics": {
+        "n": 94089,
+        "accuracy": 0.7011021479662872,
+        "macro_f1": 0.7406418028070088,
+        "classes": 18,
+        "class_counts": {
+          "BUILD_COOP": 100,
+          "BUILD_PASTURE": 182,
+          "CARE": 4953,
+          "COLLECT_FERTILIZER": 5847,
+          "DIG": 464,
+          "DROP": 1241,
+          "EAST": 7878,
+          "FEED": 4865,
+          "FERTILIZE": 2705,
+          "HARVEST": 7105,
+          "NORTH": 11688,
+          "PASS": 3696,
+          "PICKUP": 2453,
+          "PLACE": 1055,
+          "PLANT": 3645,
+          "SOUTH": 8932,
+          "WATER": 15247,
+          "WEST": 12033
+        }
+      },
+      "majority_baseline": {
+        "n": 94089,
+        "accuracy": 0.16204869857262805,
+        "macro_f1": 0.015494540783558124,
+        "classes": 18,
+        "class_counts": {
+          "BUILD_COOP": 100,
+          "BUILD_PASTURE": 182,
+          "CARE": 4953,
+          "COLLECT_FERTILIZER": 5847,
+          "DIG": 464,
+          "DROP": 1241,
+          "EAST": 7878,
+          "FEED": 4865,
+          "FERTILIZE": 2705,
+          "HARVEST": 7105,
+          "NORTH": 11688,
+          "PASS": 3696,
+          "PICKUP": 2453,
+          "PLACE": 1055,
+          "PLANT": 3645,
+          "SOUTH": 8932,
+          "WATER": 15247,
+          "WEST": 12033
+        }
+      },
+      "largest_confusions_true_to_pred_count": [
+        {
+          "count": 1605,
+          "true": "FERTILIZE",
+          "predicted": "WATER"
+        },
+        {
+          "count": 1401,
+          "true": "WEST",
+          "predicted": "NORTH"
+        },
+        {
+          "count": 1256,
+          "true": "NORTH",
+          "predicted": "WEST"
+        },
+        {
+          "count": 1124,
+          "true": "SOUTH",
+          "predicted": "WEST"
+        },
+        {
+          "count": 1035,
+          "true": "EAST",
+          "predicted": "NORTH"
+        },
+        {
+          "count": 838,
+          "true": "WEST",
+          "predicted": "WATER"
+        },
+        {
+          "count": 835,
+          "true": "NORTH",
+          "predicted": "EAST"
+        },
+        {
+          "count": 783,
+          "true": "NORTH",
+          "predicted": "WATER"
+        },
+        {
+          "count": 753,
+          "true": "WEST",
+          "predicted": "SOUTH"
+        },
+        {
+          "count": 730,
+          "true": "SOUTH",
+          "predicted": "WATER"
+        },
+        {
+          "count": 682,
+          "true": "WEST",
+          "predicted": "HARVEST"
+        },
+        {
+          "count": 673,
+          "true": "NORTH",
+          "predicted": "HARVEST"
+        },
+        {
+          "count": 669,
+          "true": "SOUTH",
+          "predicted": "EAST"
+        },
+        {
+          "count": 609,
+          "true": "EAST",
+          "predicted": "WATER"
+        },
+        {
+          "count": 571,
+          "true": "EAST",
+          "predicted": "SOUTH"
+        },
+        {
+          "count": 530,
+          "true": "SOUTH",
+          "predicted": "NORTH"
+        },
+        {
+          "count": 524,
+          "true": "EAST",
+          "predicted": "WEST"
+        },
+        {
+          "count": 504,
+          "true": "SOUTH",
+          "predicted": "HARVEST"
+        },
+        {
+          "count": 484,
+          "true": "EAST",
+          "predicted": "HARVEST"
+        },
+        {
+          "count": 457,
+          "true": "NORTH",
+          "predicted": "SOUTH"
+        },
+        {
+          "count": 450,
+          "true": "WEST",
+          "predicted": "EAST"
+        },
+        {
+          "count": 441,
+          "true": "WATER",
+          "predicted": "FERTILIZE"
+        },
+        {
+          "count": 436,
+          "true": "CARE",
+          "predicted": "FEED"
+        },
+        {
+          "count": 341,
+          "true": "WEST",
+          "predicted": "PICKUP"
+        },
+        {
+          "count": 323,
+          "true": "NORTH",
+          "predicted": "COLLECT_FERTILIZER"
+        },
+        {
+          "count": 322,
+          "true": "NORTH",
+          "predicted": "FEED"
+        },
+        {
+          "count": 311,
+          "true": "WEST",
+          "predicted": "COLLECT_FERTILIZER"
+        },
+        {
+          "count": 297,
+          "true": "HARVEST",
+          "predicted": "WEST"
+        },
+        {
+          "count": 272,
+          "true": "HARVEST",
+          "predicted": "NORTH"
+        },
+        {
+          "count": 264,
+          "true": "COLLECT_FERTILIZER",
+          "predicted": "FEED"
+        }
+      ],
+      "training_seconds": 112.57,
+      "necessary_precondition_proxy": {
+        "coverage": 0.9967265036295423,
+        "feasible_fraction_when_covered": 0.9886970708352438,
+        "coverage_n": 93781,
+        "warning": "Current-observation binned precondition proxy with in-bounds movement only; not engine action acceptance. LOCKED tiles are traversable."
+      },
+      "top_features_by_gain": [
+        [
+          "dist_thirsty_crop",
+          1133417.946293354
+        ],
+        [
+          "tile_fertilizer_available",
+          889053.1929774135
+        ],
+        [
+          "tile_cared_today",
+          561286.6954891682
+        ],
+        [
+          "tile_yield_bin",
+          497995.9069452286
+        ],
+        [
+          "tile_fed",
+          485890.95466041565
+        ],
+        [
+          "current_day",
+          465970.4733217284
+        ],
+        [
+          "current_hour",
+          357332.18387922645
+        ],
+        [
+          "inventory_wheat_bin",
+          347651.1809797287
+        ],
+        [
+          "at_shed",
+          342589.1006466325
+        ],
+        [
+          "inventory_primary",
+          330381.38577979803
+        ],
+        [
+          "pos_x",
+          229390.6327790022
+        ],
+        [
+          "pos_y",
+          217572.2060394138
+        ],
+        [
+          "tile_wet",
+          173372.09964767098
+        ],
+        [
+          "inventory_load_bin",
+          146914.94770026207
+        ],
+        [
+          "inventory_animal",
+          138356.8469724534
+        ],
+        [
+          "inventory_fertilizer_bin",
+          137346.84018063545
+        ],
+        [
+          "tile_crop",
+          136846.50451922417
+        ],
+        [
+          "thirsty_crop_count",
+          117931.27887606621
+        ],
+        [
+          "tile_ready",
+          113850.3816626668
+        ],
+        [
+          "rel_thirsty_crop_dy",
+          83853.07719540596
+        ]
+      ]
+    },
+    "task_label": {
+      "metrics": {
+        "n": 94089,
+        "accuracy": 0.8103710316827685,
+        "macro_f1": 0.7374546014270433,
+        "classes": 36,
+        "class_counts": {
+          "BUILD_COOP": 100,
+          "BUILD_PASTURE": 182,
+          "CARE_ANIMAL": 4953,
+          "CLEAR_WEED": 117,
+          "COLLECT_FERTILIZER": 5847,
+          "DIG": 347,
+          "DROP_INVENTORY": 1241,
+          "FEED_ANIMAL": 4865,
+          "FERTILIZE": 2705,
+          "HARVEST_ANIMAL": 2252,
+          "HARVEST_CROP": 4853,
+          "IDLE": 3696,
+          "MOVE": 40531,
+          "PICKUP_COW": 124,
+          "PICKUP_FERTILIZER": 225,
+          "PICKUP_GOOSE": 111,
+          "PICKUP_SHEEP": 96,
+          "PICKUP_WHEAT": 1897,
+          "PLACE_CARROT": 6,
+          "PLACE_COW": 102,
+          "PLACE_EGG": 20,
+          "PLACE_FERTILIZER": 496,
+          "PLACE_GOOSE": 103,
+          "PLACE_MELON": 12,
+          "PLACE_MILK": 146,
+          "PLACE_SHEEP": 85,
+          "PLACE_STRAWBERRY": 17,
+          "PLACE_TOMATO": 9,
+          "PLACE_WHEAT": 18,
+          "PLACE_WOOL": 41,
+          "PLANT_CARROT": 910,
+          "PLANT_MELON": 164,
+          "PLANT_STRAWBERRY": 427,
+          "PLANT_TOMATO": 100,
+          "PLANT_WHEAT": 2044,
+          "WATER_CROP": 15247
+        }
+      },
+      "majority_baseline": {
+        "n": 94089,
+        "accuracy": 0.4307729915292967,
+        "macro_f1": 0.016726505884877597,
+        "classes": 36,
+        "class_counts": {
+          "BUILD_COOP": 100,
+          "BUILD_PASTURE": 182,
+          "CARE_ANIMAL": 4953,
+          "CLEAR_WEED": 117,
+          "COLLECT_FERTILIZER": 5847,
+          "DIG": 347,
+          "DROP_INVENTORY": 1241,
+          "FEED_ANIMAL": 4865,
+          "FERTILIZE": 2705,
+          "HARVEST_ANIMAL": 2252,
+          "HARVEST_CROP": 4853,
+          "IDLE": 3696,
+          "MOVE": 40531,
+          "PICKUP_COW": 124,
+          "PICKUP_FERTILIZER": 225,
+          "PICKUP_GOOSE": 111,
+          "PICKUP_SHEEP": 96,
+          "PICKUP_WHEAT": 1897,
+          "PLACE_CARROT": 6,
+          "PLACE_COW": 102,
+          "PLACE_EGG": 20,
+          "PLACE_FERTILIZER": 496,
+          "PLACE_GOOSE": 103,
+          "PLACE_MELON": 12,
+          "PLACE_MILK": 146,
+          "PLACE_SHEEP": 85,
+          "PLACE_STRAWBERRY": 17,
+          "PLACE_TOMATO": 9,
+          "PLACE_WHEAT": 18,
+          "PLACE_WOOL": 41,
+          "PLANT_CARROT": 910,
+          "PLANT_MELON": 164,
+          "PLANT_STRAWBERRY": 427,
+          "PLANT_TOMATO": 100,
+          "PLANT_WHEAT": 2044,
+          "WATER_CROP": 15247
+        }
+      },
+      "largest_confusions_true_to_pred_count": [
+        {
+          "count": 2447,
+          "true": "MOVE",
+          "predicted": "WATER_CROP"
+        },
+        {
+          "count": 1545,
+          "true": "FERTILIZE",
+          "predicted": "WATER_CROP"
+        },
+        {
+          "count": 947,
+          "true": "MOVE",
+          "predicted": "HARVEST_CROP"
+        },
+        {
+          "count": 775,
+          "true": "IDLE",
+          "predicted": "MOVE"
+        },
+        {
+          "count": 718,
+          "true": "MOVE",
+          "predicted": "COLLECT_FERTILIZER"
+        },
+        {
+          "count": 696,
+          "true": "HARVEST_ANIMAL",
+          "predicted": "MOVE"
+        },
+        {
+          "count": 644,
+          "true": "HARVEST_CROP",
+          "predicted": "MOVE"
+        },
+        {
+          "count": 598,
+          "true": "COLLECT_FERTILIZER",
+          "predicted": "MOVE"
+        },
+        {
+          "count": 587,
+          "true": "MOVE",
+          "predicted": "FEED_ANIMAL"
+        },
+        {
+          "count": 563,
+          "true": "PICKUP_WHEAT",
+          "predicted": "MOVE"
+        },
+        {
+          "count": 436,
+          "true": "MOVE",
+          "predicted": "IDLE"
+        },
+        {
+          "count": 422,
+          "true": "MOVE",
+          "predicted": "CARE_ANIMAL"
+        },
+        {
+          "count": 421,
+          "true": "WATER_CROP",
+          "predicted": "MOVE"
+        },
+        {
+          "count": 420,
+          "true": "MOVE",
+          "predicted": "HARVEST_ANIMAL"
+        },
+        {
+          "count": 411,
+          "true": "CARE_ANIMAL",
+          "predicted": "FEED_ANIMAL"
+        },
+        {
+          "count": 409,
+          "true": "MOVE",
+          "predicted": "PICKUP_WHEAT"
+        },
+        {
+          "count": 408,
+          "true": "WATER_CROP",
+          "predicted": "FERTILIZE"
+        },
+        {
+          "count": 347,
+          "true": "MOVE",
+          "predicted": "FERTILIZE"
+        },
+        {
+          "count": 335,
+          "true": "CARE_ANIMAL",
+          "predicted": "MOVE"
+        },
+        {
+          "count": 270,
+          "true": "PLANT_CARROT",
+          "predicted": "PLANT_WHEAT"
+        },
+        {
+          "count": 250,
+          "true": "COLLECT_FERTILIZER",
+          "predicted": "FEED_ANIMAL"
+        },
+        {
+          "count": 236,
+          "true": "FERTILIZE",
+          "predicted": "MOVE"
+        },
+        {
+          "count": 236,
+          "true": "FEED_ANIMAL",
+          "predicted": "MOVE"
+        },
+        {
+          "count": 179,
+          "true": "WATER_CROP",
+          "predicted": "HARVEST_CROP"
+        },
+        {
+          "count": 152,
+          "true": "IDLE",
+          "predicted": "WATER_CROP"
+        },
+        {
+          "count": 146,
+          "true": "MOVE",
+          "predicted": "PLANT_WHEAT"
+        },
+        {
+          "count": 145,
+          "true": "HARVEST_ANIMAL",
+          "predicted": "FEED_ANIMAL"
+        },
+        {
+          "count": 144,
+          "true": "HARVEST_ANIMAL",
+          "predicted": "COLLECT_FERTILIZER"
+        },
+        {
+          "count": 143,
+          "true": "COLLECT_FERTILIZER",
+          "predicted": "CARE_ANIMAL"
+        },
+        {
+          "count": 130,
+          "true": "COLLECT_FERTILIZER",
+          "predicted": "HARVEST_ANIMAL"
+        }
+      ],
+      "training_seconds": 179.08,
+      "necessary_precondition_proxy": {
+        "applicable": false,
+        "reason": "Task labels were checked by the raw-observation resolver; verb-action preconditions do not apply to task-class names."
+      },
+      "top_features_by_gain": [
+        [
+          "tile_fertilizer_available",
+          1159846.785742626
+        ],
+        [
+          "dist_thirsty_crop",
+          1041304.5325864255
+        ],
+        [
+          "tile_cared_today",
+          776116.2252014726
+        ],
+        [
+          "tile_ready",
+          722176.2075203534
+        ],
+        [
+          "daypart",
+          559676.0942642798
+        ],
+        [
+          "at_shed",
+          482102.5643051892
+        ],
+        [
+          "tile_fed",
+          467784.5048381971
+        ],
+        [
+          "tile_yield_bin",
+          439928.6781359911
+        ],
+        [
+          "inventory_animal",
+          436376.7805145709
+        ],
+        [
+          "current_day",
+          406609.88970731385
+        ],
+        [
+          "inventory_wheat_bin",
+          333639.4804992974
+        ],
+        [
+          "inventory_primary",
+          304020.666239202
+        ],
+        [
+          "seed_melon_count",
+          289648.94672988314
+        ],
+        [
+          "current_hour",
+          286010.23850885266
+        ],
+        [
+          "tile_wet",
+          277972.03756252676
+        ],
+        [
+          "seed_strawberry_count",
+          277805.0512418947
+        ],
+        [
+          "tile_crop",
+          228201.00198340416
+        ],
+        [
+          "price_melon",
+          150277.37727063242
+        ],
+        [
+          "inventory_fertilizer_bin",
+          123725.87493610382
+        ],
+        [
+          "inventory_load_bin",
+          115639.49140632898
+        ]
+      ]
+    }
+  },
+  "total_runtime_seconds": 319.7
+}

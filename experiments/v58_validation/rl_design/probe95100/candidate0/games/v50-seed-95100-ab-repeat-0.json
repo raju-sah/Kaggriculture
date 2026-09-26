@@ -1,0 +1,152 @@
+{
+  "action_counts": [
+    {
+      "farmer": {
+        "BUILD_PASTURE": 1,
+        "CARE": 2,
+        "COLLECT_FERTILIZER": 2,
+        "EAST": 66,
+        "FEED": 27,
+        "HARVEST": 10,
+        "NORTH": 111,
+        "PASS": 247,
+        "PICKUP": 27,
+        "PLANT": 39,
+        "SOUTH": 21,
+        "WATER": 55,
+        "WEST": 111
+      },
+      "hands": {
+        "CARE": 19,
+        "COLLECT_FERTILIZER": 22,
+        "EAST": 211,
+        "HARVEST": 37,
+        "NORTH": 354,
+        "PASS": 645,
+        "PICKUP": 1,
+        "PLACE": 1,
+        "PLANT": 130,
+        "SOUTH": 148,
+        "WATER": 140,
+        "WEST": 359
+      },
+      "market": {
+        "BUY_ANIMAL": 1,
+        "BUY_PRODUCT": 6,
+        "BUY_SEED": 19,
+        "HIRE": 90,
+        "SELL": 63
+      }
+    },
+    {
+      "farmer": {
+        "BUILD_PASTURE": 3,
+        "CARE": 54,
+        "COLLECT_FERTILIZER": 59,
+        "DIG": 4,
+        "DROP": 3,
+        "EAST": 73,
+        "FEED": 54,
+        "FERTILIZE": 18,
+        "HARVEST": 49,
+        "NORTH": 71,
+        "PASS": 81,
+        "PICKUP": 28,
+        "PLACE": 21,
+        "PLANT": 12,
+        "SOUTH": 63,
+        "WATER": 51,
+        "WEST": 75
+      },
+      "hands": {
+        "BUILD_COOP": 2,
+        "BUILD_PASTURE": 14,
+        "CARE": 343,
+        "COLLECT_FERTILIZER": 318,
+        "DIG": 32,
+        "DROP": 26,
+        "EAST": 547,
+        "FEED": 292,
+        "FERTILIZE": 82,
+        "HARVEST": 415,
+        "NORTH": 867,
+        "PASS": 605,
+        "PICKUP": 128,
+        "PLACE": 91,
+        "PLANT": 227,
+        "SOUTH": 514,
+        "WATER": 1045,
+        "WEST": 829
+      },
+      "market": {
+        "BUY_ANIMAL": 12,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 44,
+        "BUY_SEED": 188,
+        "HIRE": 281,
+        "SELL": 256
+      }
+    }
+  ],
+  "agents": [
+    {
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/rl_design/probe95100/candidates/probe0.py",
+      "sha256": "1e1ad29f8fa7b59dc422b3a66424b62b7b47a12f58ca88ba16473e73a1583dab"
+    },
+    {
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v50_agent.py",
+      "sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b"
+    }
+  ],
+  "candidate_error": false,
+  "candidate_result": "loss",
+  "candidate_seat": 0,
+  "candidate_status": "DONE",
+  "coin_difference_seat_0": -128269.0,
+  "environment": {
+    "engine_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/envs/kaggriculture/kaggriculture.py",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "episode_steps": 720,
+    "name": "kaggriculture",
+    "package": "kaggle-environments",
+    "package_version": "1.32.7",
+    "python_version": "3.12.3",
+    "specification_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/envs/kaggriculture/kaggriculture.json",
+    "specification_sha256": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867"
+  },
+  "error": null,
+  "final_coins": [
+    10128.0,
+    138397.0
+  ],
+  "game_id": "v50-seed-95100-ab-repeat-0",
+  "infrastructure_error": false,
+  "log_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/rl_design/probe95100/candidate0/logs/v50-seed-95100-ab-repeat-0.log",
+  "ok": true,
+  "opponent": "v50",
+  "opponent_error": false,
+  "opponent_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v50_agent.py",
+  "opponent_seat": 1,
+  "opponent_status": "DONE",
+  "raw_replay_sha256": "5d8e78deb0a9b10685a0d4fee2c556b017b56424db219306a9dc067b1b6401c1",
+  "repeat": 0,
+  "replay_normalization": {
+    "removed_top_level_fields": [
+      "id"
+    ]
+  },
+  "replay_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/rl_design/probe95100/candidate0/replays/v50-seed-95100-ab-repeat-0.json",
+  "replay_retained": true,
+  "replay_sha256": "f947cf819f64e3d7f1c6f4a2650c9de9f466d5fbd64511c6ae9beb58c2e32626",
+  "resolved_seed": 95100,
+  "runtime_seconds": 18.970987653010525,
+  "seed": 95100,
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "swapped": false,
+  "timed_out": false,
+  "winner_seat": 1,
+  "worker_exit_code": 0
+}

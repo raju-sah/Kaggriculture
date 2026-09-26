@@ -1,0 +1,105 @@
+{
+  "snapshot_utc": "2026-09-25T12:38:07Z",
+  "teams": 10003,
+  "our_team": {
+    "Rank": "3467",
+    "TeamId": "16924472",
+    "TeamName": "Rajusah",
+    "LastSubmissionDate": "2026-09-25 07:09:57",
+    "Score": "1186.4",
+    "SubmissionCount": "2",
+    "TeamMemberUserNames": "rajucode"
+  },
+  "top10": [
+    {
+      "Rank": "1",
+      "TeamId": "16732748",
+      "TeamName": "DSM",
+      "LastSubmissionDate": "2026-09-25 05:34:10",
+      "Score": "3048.5",
+      "SubmissionCount": "2",
+      "TeamMemberUserNames": "denden12,masspeaks,shimishige"
+    },
+    {
+      "Rank": "2",
+      "TeamId": "16915014",
+      "TeamName": "Boey",
+      "LastSubmissionDate": "2026-09-24 12:57:23",
+      "Score": "3042.6",
+      "SubmissionCount": "2",
+      "TeamMemberUserNames": "boeychenjun"
+    },
+    {
+      "Rank": "3",
+      "TeamId": "16681125",
+      "TeamName": "M & M & P & Q",
+      "LastSubmissionDate": "2026-09-25 07:45:07",
+      "Score": "3037.3",
+      "SubmissionCount": "2",
+      "TeamMemberUserNames": "morimo,msd0110,piiiiiiiii,qistripute"
+    },
+    {
+      "Rank": "4",
+      "TeamId": "16730612",
+      "TeamName": "Unknown Mother-Goose",
+      "LastSubmissionDate": "2026-09-25 03:21:18",
+      "Score": "3014.9",
+      "SubmissionCount": "2",
+      "TeamMemberUserNames": "linkinpony"
+    },
+    {
+      "Rank": "5",
+      "TeamId": "16623559",
+      "TeamName": "DECEM",
+      "LastSubmissionDate": "2026-09-25 05:27:34",
+      "Score": "3001.1",
+      "SubmissionCount": "2",
+      "TeamMemberUserNames": "zy1343930734"
+    },
+    {
+      "Rank": "6",
+      "TeamId": "16718819",
+      "TeamName": "Majkel1337",
+      "LastSubmissionDate": "2026-09-25 03:04:55",
+      "Score": "2987.4",
+      "SubmissionCount": "2",
+      "TeamMemberUserNames": "majkel1337"
+    },
+    {
+      "Rank": "7",
+      "TeamId": "16667959",
+      "TeamName": "Fourth Quadrant",
+      "LastSubmissionDate": "2026-09-24 13:00:21",
+      "Score": "2985.1",
+      "SubmissionCount": "2",
+      "TeamMemberUserNames": "flynnfei"
+    },
+    {
+      "Rank": "8",
+      "TeamId": "16770421",
+      "TeamName": "Vadim Vasilenko",
+      "LastSubmissionDate": "2026-09-25 12:16:19",
+      "Score": "2941.9",
+      "SubmissionCount": "2",
+      "TeamMemberUserNames": "vadimvasilenko"
+    },
+    {
+      "Rank": "9",
+      "TeamId": "16758882",
+      "TeamName": "mtmr_s1",
+      "LastSubmissionDate": "2026-09-24 13:47:13",
+      "Score": "2938.2",
+      "SubmissionCount": "2",
+      "TeamMemberUserNames": "mtmrs1"
+    },
+    {
+      "Rank": "10",
+      "TeamId": "16854176",
+      "TeamName": "吃白饭的大肥鱼",
+      "LastSubmissionDate": "2026-09-24 00:14:30",
+      "Score": "2929.6",
+      "SubmissionCount": "2",
+      "TeamMemberUserNames": "deepios,gengsr,tangdi24,tanpowasd"
+    }
+  ]
+}

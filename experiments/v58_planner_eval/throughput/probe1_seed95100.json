@@ -1,0 +1,5297 @@
+{
+  "purpose": "read-only action-batch audit; frame action compared with previous observation and resulting frame",
+  "rows": [
+    {
+      "label": "probe1",
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/rl_design/probe95100/candidate1/replays/v50-seed-95100-ab-repeat-0.json",
+      "seed": 95100,
+      "seat": 0,
+      "final_coins": 22130.0,
+      "hand_productive_turns": 1889,
+      "hand_turn_slots": 3674,
+      "hand_productive_rate": 0.5142,
+      "plant_by_crop": {
+        "WHEAT": {
+          "requested": 638,
+          "atomic_cancelled": 608,
+          "applied": 30
+        }
+      },
+      "daily_wheat_plant": {
+        "0": {
+          "requested": 109,
+          "atomic_cancelled": 109
+        },
+        "1": {
+          "requested": 109,
+          "applied": 1,
+          "atomic_cancelled": 108
+        },
+        "2": {
+          "requested": 7,
+          "applied": 7
+        },
+        "8": {
+          "requested": 100,
+          "applied": 1,
+          "atomic_cancelled": 99
+        },
+        "9": {
+          "requested": 57,
+          "applied": 3,
+          "atomic_cancelled": 54
+        },
+        "10": {
+          "requested": 55,
+          "atomic_cancelled": 55
+        },
+        "11": {
+          "requested": 4,
+          "applied": 4
+        },
+        "15": {
+          "requested": 3,
+          "applied": 3
+        },
+        "17": {
+          "requested": 71,
+          "atomic_cancelled": 71
+        },
+        "18": {
+          "requested": 3,
+          "applied": 3
+        },
+        "19": {
+          "requested": 58,
+          "atomic_cancelled": 58
+        },
+        "20": {
+          "requested": 55,
+          "applied": 1,
+          "atomic_cancelled": 54
+        },
+        "21": {
+          "requested": 4,
+          "applied": 4
+        },
+        "23": {
+          "requested": 3,
+          "applied": 3
+        }
+      },
+      "wheat_atomic_block_turns": 116,
+      "sample_atomic_blocks": [
+        {
+          "day": 0,
+          "hour": 8,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 4,
+          "cancelled_requests": 4,
+          "workers_and_positions": [
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 9,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 10,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 11,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 12,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 13,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 14,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 15,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 16,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 17,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 18,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 19,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 20,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 21,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 22,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 23,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 8,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 6,
+          "cancelled_requests": 6,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 9,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 6,
+          "cancelled_requests": 6,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 10,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 6,
+          "cancelled_requests": 6,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 11,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 6,
+          "cancelled_requests": 6,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 12,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                4,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 13,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                4,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 14,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                4,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 15,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                4,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 16,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                4,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 17,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                4,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 18,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                4,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 19,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                4,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 20,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                4,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 21,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                4,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        }
+      ],
+      "water": {
+        "requested": 150,
+        "precondition_valid": 150,
+        "effect": 150
+      },
+      "water_by_day": {
+        "1": {
+          "requested": 1,
+          "precondition_valid": 1,
+          "effect": 1
+        },
+        "2": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "3": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "4": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "5": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "6": {
+          "requested": 7,
+          "precondition_valid": 7,
+          "effect": 7
+        },
+        "8": {
+          "requested": 1,
+          "precondition_valid": 1,
+          "effect": 1
+        },
+        "9": {
+          "requested": 4,
+          "precondition_valid": 4,
+          "effect": 4
+        },
+        "10": {
+          "requested": 4,
+          "precondition_valid": 4,
+          "effect": 4
+        },
+        "11": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "12": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "13": {
+          "requested": 7,
+          "precondition_valid": 7,
+          "effect": 7
+        },
+        "14": {
+          "requested": 4,
+          "precondition_valid": 4,
+          "effect": 4
+        },
+        "15": {
+          "requested": 7,
+          "precondition_valid": 7,
+          "effect": 7
+        },
+        "16": {
+          "requested": 3,
+          "precondition_valid": 3,
+          "effect": 3
+        },
+        "17": {
+          "requested": 3,
+          "precondition_valid": 3,
+          "effect": 3
+        },
+        "18": {
+          "requested": 6,
+          "precondition_valid": 6,
+          "effect": 6
+        },
+        "19": {
+          "requested": 6,
+          "precondition_valid": 6,
+          "effect": 6
+        },
+        "20": {
+          "requested": 4,
+          "precondition_valid": 4,
+          "effect": 4
+        },
+        "21": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "22": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "23": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "24": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "25": {
+          "requested": 7,
+          "precondition_valid": 7,
+          "effect": 7
+        },
+        "26": {
+          "requested": 3,
+          "precondition_valid": 3,
+          "effect": 3
+        },
+        "27": {
+          "requested": 3,
+          "precondition_valid": 3,
+          "effect": 3
+        }
+      },
+      "movement_no_effect": {
+        "in_bounds_no_move": 3
+      },
+      "nonmovement_no_effect": {
+        "PLANT": 490,
+        "PASS/no_task_or_fallback": 1293,
+        "NORTH": 1,
+        "SOUTH": 1
+      },
+      "no_effect_by_day_op": {
+        "0:PLANT": 94,
+        "1:PLANT": 92,
+        "2:PASS/no_task_or_fallback": 62,
+        "2:NORTH": 1,
+        "2:SOUTH": 1,
+        "3:PASS/no_task_or_fallback": 32,
+        "4:PASS/no_task_or_fallback": 22,
+        "5:PASS/no_task_or_fallback": 28,
+        "6:PASS/no_task_or_fallback": 24,
+        "7:PASS/no_task_or_fallback": 118,
+        "8:PLANT": 84,
+        "9:PLANT": 40,
+        "9:PASS/no_task_or_fallback": 19,
+        "10:PLANT": 41,
+        "10:PASS/no_task_or_fallback": 23,
+        "11:PASS/no_task_or_fallback": 60,
+        "12:PASS/no_task_or_fallback": 19,
+        "13:PASS/no_task_or_fallback": 32,
+        "14:PASS/no_task_or_fallback": 94,
+        "15:PASS/no_task_or_fallback": 24,
+        "16:PASS/no_task_or_fallback": 102,
+        "17:PLANT": 55,
+        "17:PASS/no_task_or_fallback": 5,
+        "18:PASS/no_task_or_fallback": 50,
+        "19:PLANT": 44,
+        "20:PLANT": 40,
+        "20:PASS/no_task_or_fallback": 21,
+        "21:PASS/no_task_or_fallback": 46,
+        "22:PASS/no_task_or_fallback": 20,
+        "23:PASS/no_task_or_fallback": 29,
+        "24:PASS/no_task_or_fallback": 18,
+        "25:PASS/no_task_or_fallback": 19,
+        "26:PASS/no_task_or_fallback": 108,
+        "27:PASS/no_task_or_fallback": 79,
+        "28:PASS/no_task_or_fallback": 125,
+        "29:PASS/no_task_or_fallback": 114
+      },
+      "no_effect_by_worker_op": {
+        "1:PLANT": 86,
+        "3:PLANT": 100,
+        "5:PLANT": 60,
+        "6:PLANT": 80,
+        "2:PLANT": 108,
+        "4:PLANT": 56,
+        "1:NORTH": 1,
+        "3:SOUTH": 1
+      },
+      "no_effect_by_position_op": {
+        "(2, 1):PLANT": 31,
+        "(3, 0):PLANT": 73,
+        "(1, 1):PLANT": 46,
+        "(2, 0):PLANT": 62,
+        "(1, 0):PLANT": 73,
+        "(0, 0):PLANT": 67,
+        "(0, 1):PLANT": 70,
+        "(4, 0):PLANT": 68,
+        "(4, 4):NORTH": 1,
+        "(4, 3):SOUTH": 1
+      },
+      "atomic_cancelled_by_worker": {
+        "WHEAT:1": 86,
+        "WHEAT:3": 102,
+        "WHEAT:5": 60,
+        "WHEAT:6": 81,
+        "WHEAT:0": 113,
+        "WHEAT:2": 110,
+        "WHEAT:4": 56
+      },
+      "atomic_cancelled_by_position": {
+        "WHEAT:(2, 1)": 31,
+        "WHEAT:(3, 0)": 74,
+        "WHEAT:(1, 1)": 62,
+        "WHEAT:(2, 0)": 62,
+        "WHEAT:(0, 1)": 100,
+        "WHEAT:(1, 0)": 99,
+        "WHEAT:(0, 0)": 97,
+        "WHEAT:(4, 0)": 83
+      }
+    },
+    {
+      "label": "v50_same_replay",
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/rl_design/probe95100/candidate1/replays/v50-seed-95100-ab-repeat-0.json",
+      "seed": 95100,
+      "seat": 1,
+      "final_coins": 133253.0,
+      "hand_productive_turns": 5736,
+      "hand_turn_slots": 6377,
+      "hand_productive_rate": 0.8995,
+      "plant_by_crop": {
+        "CARROT": {
+          "requested": 28,
+          "applied": 28
+        },
+        "MELON": {
+          "requested": 12,
+          "applied": 12
+        },
+        "STRAWBERRY": {
+          "requested": 33,
+          "applied": 33
+        },
+        "WHEAT": {
+          "requested": 166,
+          "applied": 166
+        }
+      },
+      "daily_wheat_plant": {
+        "0": {
+          "requested": 8,
+          "applied": 8
+        },
+        "2": {
+          "requested": 3,
+          "applied": 3
+        },
+        "3": {
+          "requested": 4,
+          "applied": 4
+        },
+        "4": {
+          "requested": 3,
+          "applied": 3
+        },
+        "6": {
+          "requested": 5,
+          "applied": 5
+        },
+        "7": {
+          "requested": 4,
+          "applied": 4
+        },
+        "8": {
+          "requested": 1,
+          "applied": 1
+        },
+        "9": {
+          "requested": 4,
+          "applied": 4
+        },
+        "10": {
+          "requested": 7,
+          "applied": 7
+        },
+        "11": {
+          "requested": 11,
+          "applied": 11
+        },
+        "12": {
+          "requested": 8,
+          "applied": 8
+        },
+        "13": {
+          "requested": 6,
+          "applied": 6
+        },
+        "14": {
+          "requested": 7,
+          "applied": 7
+        },
+        "15": {
+          "requested": 8,
+          "applied": 8
+        },
+        "16": {
+          "requested": 7,
+          "applied": 7
+        },
+        "17": {
+          "requested": 7,
+          "applied": 7
+        },
+        "18": {
+          "requested": 7,
+          "applied": 7
+        },
+        "19": {
+          "requested": 6,
+          "applied": 6
+        },
+        "20": {
+          "requested": 6,
+          "applied": 6
+        },
+        "21": {
+          "requested": 11,
+          "applied": 11
+        },
+        "22": {
+          "requested": 8,
+          "applied": 8
+        },
+        "23": {
+          "requested": 14,
+          "applied": 14
+        },
+        "24": {
+          "requested": 13,
+          "applied": 13
+        },
+        "27": {
+          "requested": 8,
+          "applied": 8
+        }
+      },
+      "wheat_atomic_block_turns": 0,
+      "sample_atomic_blocks": [],
+      "water": {
+        "requested": 1096,
+        "precondition_valid": 1095,
+        "effect": 1078
+      },
+      "water_by_day": {
+        "0": {
+          "requested": 20,
+          "precondition_valid": 20,
+          "effect": 20
+        },
+        "1": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "2": {
+          "requested": 23,
+          "precondition_valid": 23,
+          "effect": 23
+        },
+        "3": {
+          "requested": 24,
+          "precondition_valid": 24,
+          "effect": 24
+        },
+        "4": {
+          "requested": 10,
+          "precondition_valid": 10,
+          "effect": 10
+        },
+        "5": {
+          "requested": 24,
+          "precondition_valid": 23,
+          "effect": 23
+        },
+        "6": {
+          "requested": 28,
+          "precondition_valid": 28,
+          "effect": 26
+        },
+        "7": {
+          "requested": 29,
+          "precondition_valid": 29,
+          "effect": 29
+        },
+        "8": {
+          "requested": 35,
+          "precondition_valid": 35,
+          "effect": 35
+        },
+        "9": {
+          "requested": 40,
+          "precondition_valid": 40,
+          "effect": 38
+        },
+        "10": {
+          "requested": 20,
+          "precondition_valid": 20,
+          "effect": 17
+        },
+        "11": {
+          "requested": 56,
+          "precondition_valid": 56,
+          "effect": 54
+        },
+        "12": {
+          "requested": 34,
+          "precondition_valid": 34,
+          "effect": 33
+        },
+        "13": {
+          "requested": 51,
+          "precondition_valid": 51,
+          "effect": 50
+        },
+        "14": {
+          "requested": 45,
+          "precondition_valid": 45,
+          "effect": 45
+        },
+        "15": {
+          "requested": 41,
+          "precondition_valid": 41,
+          "effect": 40
+        },
+        "16": {
+          "requested": 48,
+          "precondition_valid": 48,
+          "effect": 47
+        },
+        "17": {
+          "requested": 38,
+          "precondition_valid": 38,
+          "effect": 37
+        },
+        "18": {
+          "requested": 52,
+          "precondition_valid": 52,
+          "effect": 51
+        },
+        "19": {
+          "requested": 38,
+          "precondition_valid": 38,
+          "effect": 38
+        },
+        "20": {
+          "requested": 46,
+          "precondition_valid": 46,
+          "effect": 45
+        },
+        "21": {
+          "requested": 40,
+          "precondition_valid": 40,
+          "effect": 40
+        },
+        "22": {
+          "requested": 46,
+          "precondition_valid": 46,
+          "effect": 46
+        },
+        "23": {
+          "requested": 41,
+          "precondition_valid": 41,
+          "effect": 41
+        },
+        "24": {
+          "requested": 51,
+          "precondition_valid": 51,
+          "effect": 51
+        },
+        "25": {
+          "requested": 43,
+          "precondition_valid": 43,
+          "effect": 42
+        },
+        "26": {
+          "requested": 61,
+          "precondition_valid": 61,
+          "effect": 61
+        },
+        "27": {
+          "requested": 43,
+          "precondition_valid": 43,
+          "effect": 43
+        },
+        "28": {
+          "requested": 40,
+          "precondition_valid": 40,
+          "effect": 40
+        },
+        "29": {
+          "requested": 21,
+          "precondition_valid": 21,
+          "effect": 21
+        }
+      },
+      "movement_no_effect": {
+        "in_bounds_no_move": 3
+      },
+      "nonmovement_no_effect": {
+        "PASS/no_task_or_fallback": 605,
+        "WATER": 18,
+        "DIG": 2,
+        "COLLECT_FERTILIZER": 2,
+        "BUILD_COOP": 1,
+        "HARVEST": 9,
+        "CARE": 2,
+        "PLACE": 2
+      },
+      "no_effect_by_day_op": {
+        "0:PASS/no_task_or_fallback": 27,
+        "1:PASS/no_task_or_fallback": 23,
+        "2:PASS/no_task_or_fallback": 27,
+        "3:PASS/no_task_or_fallback": 18,
+        "4:PASS/no_task_or_fallback": 21,
+        "5:PASS/no_task_or_fallback": 14,
+        "5:WATER": 1,
+        "6:PASS/no_task_or_fallback": 38,
+        "6:WATER": 2,
+        "7:DIG": 1,
+        "7:PASS/no_task_or_fallback": 36,
+        "8:PASS/no_task_or_fallback": 26,
+        "8:COLLECT_FERTILIZER": 1,
+        "9:PASS/no_task_or_fallback": 31,
+        "9:WATER": 2,
+        "10:PASS/no_task_or_fallback": 22,
+        "10:WATER": 3,
+        "10:BUILD_COOP": 1,
+        "11:PASS/no_task_or_fallback": 21,
+        "11:WATER": 2,
+        "12:PASS/no_task_or_fallback": 22,
+        "12:DIG": 1,
+        "12:WATER": 1,
+        "13:PASS/no_task_or_fallback": 23,
+        "13:WATER": 1,
+        "14:PASS/no_task_or_fallback": 12,
+        "15:PASS/no_task_or_fallback": 24,
+        "15:WATER": 1,
+        "16:PASS/no_task_or_fallback": 1,
+        "16:WATER": 1,
+        "17:PASS/no_task_or_fallback": 19,
+        "17:WATER": 1,
+        "18:PASS/no_task_or_fallback": 21,
+        "18:WATER": 1,
+        "19:PASS/no_task_or_fallback": 27,
+        "20:PASS/no_task_or_fallback": 25,
+        "20:WATER": 1,
+        "21:PASS/no_task_or_fallback": 5,
+        "21:HARVEST": 2,
+        "22:PASS/no_task_or_fallback": 26,
+        "23:PASS/no_task_or_fallback": 19,
+        "24:PASS/no_task_or_fallback": 11,
+        "25:PASS/no_task_or_fallback": 7,
+        "25:WATER": 1,
+        "26:PASS/no_task_or_fallback": 8,
+        "27:PASS/no_task_or_fallback": 14,
+        "27:COLLECT_FERTILIZER": 1,
+        "28:CARE": 2,
+        "28:PASS/no_task_or_fallback": 16,
+        "28:HARVEST": 2,
+        "28:PLACE": 1,
+        "29:PASS/no_task_or_fallback": 21,
+        "29:HARVEST": 5,
+        "29:PLACE": 1
+      },
+      "no_effect_by_worker_op": {
+        "4:WATER": 2,
+        "5:WATER": 2,
+        "8:WATER": 5,
+        "8:DIG": 1,
+        "5:COLLECT_FERTILIZER": 1,
+        "2:WATER": 2,
+        "1:WATER": 1,
+        "6:BUILD_COOP": 1,
+        "7:WATER": 1,
+        "6:WATER": 2,
+        "5:DIG": 1,
+        "10:WATER": 2,
+        "3:WATER": 1,
+        "2:HARVEST": 1,
+        "5:HARVEST": 3,
+        "1:COLLECT_FERTILIZER": 1,
+        "5:CARE": 1,
+        "5:PLACE": 1,
+        "4:CARE": 1,
+        "9:HARVEST": 1,
+        "4:HARVEST": 1,
+        "10:HARVEST": 1,
+        "1:HARVEST": 1,
+        "6:HARVEST": 1,
+        "6:PLACE": 1
+      },
+      "no_effect_by_position_op": {
+        "(3, 1):WATER": 3,
+        "(9, 4):WATER": 1,
+        "(7, 1):WATER": 2,
+        "(9, 1):DIG": 1,
+        "(4, 4):COLLECT_FERTILIZER": 1,
+        "(4, 1):WATER": 1,
+        "(1, 2):WATER": 1,
+        "(0, 4):WATER": 2,
+        "(4, 0):BUILD_COOP": 1,
+        "(8, 0):WATER": 2,
+        "(1, 8):WATER": 1,
+        "(8, 0):DIG": 1,
+        "(3, 9):WATER": 2,
+        "(8, 1):WATER": 1,
+        "(2, 9):WATER": 1,
+        "(5, 3):HARVEST": 1,
+        "(8, 1):HARVEST": 1,
+        "(5, 1):WATER": 1,
+        "(6, 4):COLLECT_FERTILIZER": 1,
+        "(4, 4):CARE": 1,
+        "(2, 3):HARVEST": 1,
+        "(4, 4):PLACE": 1,
+        "(3, 3):CARE": 1,
+        "(8, 0):HARVEST": 1,
+        "(0, 8):HARVEST": 1,
+        "(5, 4):HARVEST": 1,
+        "(3, 2):HARVEST": 1,
+        "(4, 1):HARVEST": 1,
+        "(7, 4):HARVEST": 1,
+        "(5, 4):PLACE": 1
+      },
+      "atomic_cancelled_by_worker": {},
+      "atomic_cancelled_by_position": {}
+    },
+    {
+      "label": "probe1",
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/rl_design/probe95100/candidate1/replays/v50-seed-95100-ba-repeat-0.json",
+      "seed": 95100,
+      "seat": 1,
+      "final_coins": 22130.0,
+      "hand_productive_turns": 1889,
+      "hand_turn_slots": 3674,
+      "hand_productive_rate": 0.5142,
+      "plant_by_crop": {
+        "WHEAT": {
+          "requested": 638,
+          "atomic_cancelled": 608,
+          "applied": 30
+        }
+      },
+      "daily_wheat_plant": {
+        "0": {
+          "requested": 109,
+          "atomic_cancelled": 109
+        },
+        "1": {
+          "requested": 109,
+          "applied": 1,
+          "atomic_cancelled": 108
+        },
+        "2": {
+          "requested": 7,
+          "applied": 7
+        },
+        "8": {
+          "requested": 100,
+          "applied": 1,
+          "atomic_cancelled": 99
+        },
+        "9": {
+          "requested": 57,
+          "applied": 3,
+          "atomic_cancelled": 54
+        },
+        "10": {
+          "requested": 55,
+          "atomic_cancelled": 55
+        },
+        "11": {
+          "requested": 4,
+          "applied": 4
+        },
+        "15": {
+          "requested": 3,
+          "applied": 3
+        },
+        "17": {
+          "requested": 71,
+          "atomic_cancelled": 71
+        },
+        "18": {
+          "requested": 3,
+          "applied": 3
+        },
+        "19": {
+          "requested": 58,
+          "atomic_cancelled": 58
+        },
+        "20": {
+          "requested": 55,
+          "applied": 1,
+          "atomic_cancelled": 54
+        },
+        "21": {
+          "requested": 4,
+          "applied": 4
+        },
+        "23": {
+          "requested": 3,
+          "applied": 3
+        }
+      },
+      "wheat_atomic_block_turns": 116,
+      "sample_atomic_blocks": [
+        {
+          "day": 0,
+          "hour": 8,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 4,
+          "cancelled_requests": 4,
+          "workers_and_positions": [
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 9,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 10,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 11,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 12,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 13,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 14,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 15,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 16,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 17,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 18,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 19,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 20,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 21,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 22,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 0,
+          "hour": 23,
+          "crop": "WHEAT",
+          "seeds_available": 3,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                2,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 8,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 6,
+          "cancelled_requests": 6,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 9,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 6,
+          "cancelled_requests": 6,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 10,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 6,
+          "cancelled_requests": 6,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 11,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 6,
+          "cancelled_requests": 6,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 12,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                4,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 13,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                4,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 14,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                4,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 15,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                4,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 16,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                4,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 17,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                4,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 18,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                4,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 19,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                4,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 20,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                4,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "hour": 21,
+          "crop": "WHEAT",
+          "seeds_available": 5,
+          "requests": 7,
+          "cancelled_requests": 7,
+          "workers_and_positions": [
+            {
+              "worker": 0,
+              "pos": [
+                0,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 1,
+              "pos": [
+                0,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 2,
+              "pos": [
+                1,
+                1
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 3,
+              "pos": [
+                2,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 4,
+              "pos": [
+                3,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 5,
+              "pos": [
+                1,
+                0
+              ],
+              "crop": "WHEAT"
+            },
+            {
+              "worker": 6,
+              "pos": [
+                4,
+                0
+              ],
+              "crop": "WHEAT"
+            }
+          ]
+        }
+      ],
+      "water": {
+        "requested": 150,
+        "precondition_valid": 150,
+        "effect": 150
+      },
+      "water_by_day": {
+        "1": {
+          "requested": 1,
+          "precondition_valid": 1,
+          "effect": 1
+        },
+        "2": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "3": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "4": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "5": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "6": {
+          "requested": 7,
+          "precondition_valid": 7,
+          "effect": 7
+        },
+        "8": {
+          "requested": 1,
+          "precondition_valid": 1,
+          "effect": 1
+        },
+        "9": {
+          "requested": 4,
+          "precondition_valid": 4,
+          "effect": 4
+        },
+        "10": {
+          "requested": 4,
+          "precondition_valid": 4,
+          "effect": 4
+        },
+        "11": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "12": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "13": {
+          "requested": 7,
+          "precondition_valid": 7,
+          "effect": 7
+        },
+        "14": {
+          "requested": 4,
+          "precondition_valid": 4,
+          "effect": 4
+        },
+        "15": {
+          "requested": 7,
+          "precondition_valid": 7,
+          "effect": 7
+        },
+        "16": {
+          "requested": 3,
+          "precondition_valid": 3,
+          "effect": 3
+        },
+        "17": {
+          "requested": 3,
+          "precondition_valid": 3,
+          "effect": 3
+        },
+        "18": {
+          "requested": 6,
+          "precondition_valid": 6,
+          "effect": 6
+        },
+        "19": {
+          "requested": 6,
+          "precondition_valid": 6,
+          "effect": 6
+        },
+        "20": {
+          "requested": 4,
+          "precondition_valid": 4,
+          "effect": 4
+        },
+        "21": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "22": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "23": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "24": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "25": {
+          "requested": 7,
+          "precondition_valid": 7,
+          "effect": 7
+        },
+        "26": {
+          "requested": 3,
+          "precondition_valid": 3,
+          "effect": 3
+        },
+        "27": {
+          "requested": 3,
+          "precondition_valid": 3,
+          "effect": 3
+        }
+      },
+      "movement_no_effect": {
+        "in_bounds_no_move": 3
+      },
+      "nonmovement_no_effect": {
+        "PLANT": 490,
+        "PASS/no_task_or_fallback": 1293,
+        "NORTH": 1,
+        "SOUTH": 1
+      },
+      "no_effect_by_day_op": {
+        "0:PLANT": 94,
+        "1:PLANT": 92,
+        "2:PASS/no_task_or_fallback": 62,
+        "2:NORTH": 1,
+        "2:SOUTH": 1,
+        "3:PASS/no_task_or_fallback": 32,
+        "4:PASS/no_task_or_fallback": 22,
+        "5:PASS/no_task_or_fallback": 28,
+        "6:PASS/no_task_or_fallback": 24,
+        "7:PASS/no_task_or_fallback": 118,
+        "8:PLANT": 84,
+        "9:PLANT": 40,
+        "9:PASS/no_task_or_fallback": 19,
+        "10:PLANT": 41,
+        "10:PASS/no_task_or_fallback": 23,
+        "11:PASS/no_task_or_fallback": 60,
+        "12:PASS/no_task_or_fallback": 19,
+        "13:PASS/no_task_or_fallback": 32,
+        "14:PASS/no_task_or_fallback": 94,
+        "15:PASS/no_task_or_fallback": 24,
+        "16:PASS/no_task_or_fallback": 102,
+        "17:PLANT": 55,
+        "17:PASS/no_task_or_fallback": 5,
+        "18:PASS/no_task_or_fallback": 50,
+        "19:PLANT": 44,
+        "20:PLANT": 40,
+        "20:PASS/no_task_or_fallback": 21,
+        "21:PASS/no_task_or_fallback": 46,
+        "22:PASS/no_task_or_fallback": 20,
+        "23:PASS/no_task_or_fallback": 29,
+        "24:PASS/no_task_or_fallback": 18,
+        "25:PASS/no_task_or_fallback": 19,
+        "26:PASS/no_task_or_fallback": 108,
+        "27:PASS/no_task_or_fallback": 79,
+        "28:PASS/no_task_or_fallback": 125,
+        "29:PASS/no_task_or_fallback": 114
+      },
+      "no_effect_by_worker_op": {
+        "1:PLANT": 86,
+        "3:PLANT": 100,
+        "5:PLANT": 60,
+        "6:PLANT": 80,
+        "2:PLANT": 108,
+        "4:PLANT": 56,
+        "1:NORTH": 1,
+        "3:SOUTH": 1
+      },
+      "no_effect_by_position_op": {
+        "(2, 1):PLANT": 31,
+        "(3, 0):PLANT": 73,
+        "(1, 1):PLANT": 46,
+        "(2, 0):PLANT": 62,
+        "(1, 0):PLANT": 73,
+        "(0, 0):PLANT": 67,
+        "(0, 1):PLANT": 70,
+        "(4, 0):PLANT": 68,
+        "(4, 4):NORTH": 1,
+        "(4, 3):SOUTH": 1
+      },
+      "atomic_cancelled_by_worker": {
+        "WHEAT:1": 86,
+        "WHEAT:3": 102,
+        "WHEAT:5": 60,
+        "WHEAT:6": 81,
+        "WHEAT:0": 113,
+        "WHEAT:2": 110,
+        "WHEAT:4": 56
+      },
+      "atomic_cancelled_by_position": {
+        "WHEAT:(2, 1)": 31,
+        "WHEAT:(3, 0)": 74,
+        "WHEAT:(1, 1)": 62,
+        "WHEAT:(2, 0)": 62,
+        "WHEAT:(0, 1)": 100,
+        "WHEAT:(1, 0)": 99,
+        "WHEAT:(0, 0)": 97,
+        "WHEAT:(4, 0)": 83
+      }
+    },
+    {
+      "label": "v50_same_replay",
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/rl_design/probe95100/candidate1/replays/v50-seed-95100-ba-repeat-0.json",
+      "seed": 95100,
+      "seat": 0,
+      "final_coins": 133253.0,
+      "hand_productive_turns": 5736,
+      "hand_turn_slots": 6377,
+      "hand_productive_rate": 0.8995,
+      "plant_by_crop": {
+        "CARROT": {
+          "requested": 28,
+          "applied": 28
+        },
+        "MELON": {
+          "requested": 12,
+          "applied": 12
+        },
+        "STRAWBERRY": {
+          "requested": 33,
+          "applied": 33
+        },
+        "WHEAT": {
+          "requested": 166,
+          "applied": 166
+        }
+      },
+      "daily_wheat_plant": {
+        "0": {
+          "requested": 8,
+          "applied": 8
+        },
+        "2": {
+          "requested": 3,
+          "applied": 3
+        },
+        "3": {
+          "requested": 4,
+          "applied": 4
+        },
+        "4": {
+          "requested": 3,
+          "applied": 3
+        },
+        "6": {
+          "requested": 5,
+          "applied": 5
+        },
+        "7": {
+          "requested": 4,
+          "applied": 4
+        },
+        "8": {
+          "requested": 1,
+          "applied": 1
+        },
+        "9": {
+          "requested": 4,
+          "applied": 4
+        },
+        "10": {
+          "requested": 7,
+          "applied": 7
+        },
+        "11": {
+          "requested": 11,
+          "applied": 11
+        },
+        "12": {
+          "requested": 8,
+          "applied": 8
+        },
+        "13": {
+          "requested": 6,
+          "applied": 6
+        },
+        "14": {
+          "requested": 7,
+          "applied": 7
+        },
+        "15": {
+          "requested": 8,
+          "applied": 8
+        },
+        "16": {
+          "requested": 7,
+          "applied": 7
+        },
+        "17": {
+          "requested": 7,
+          "applied": 7
+        },
+        "18": {
+          "requested": 7,
+          "applied": 7
+        },
+        "19": {
+          "requested": 6,
+          "applied": 6
+        },
+        "20": {
+          "requested": 6,
+          "applied": 6
+        },
+        "21": {
+          "requested": 11,
+          "applied": 11
+        },
+        "22": {
+          "requested": 8,
+          "applied": 8
+        },
+        "23": {
+          "requested": 14,
+          "applied": 14
+        },
+        "24": {
+          "requested": 13,
+          "applied": 13
+        },
+        "27": {
+          "requested": 8,
+          "applied": 8
+        }
+      },
+      "wheat_atomic_block_turns": 0,
+      "sample_atomic_blocks": [],
+      "water": {
+        "requested": 1096,
+        "precondition_valid": 1095,
+        "effect": 1078
+      },
+      "water_by_day": {
+        "0": {
+          "requested": 20,
+          "precondition_valid": 20,
+          "effect": 20
+        },
+        "1": {
+          "requested": 8,
+          "precondition_valid": 8,
+          "effect": 8
+        },
+        "2": {
+          "requested": 23,
+          "precondition_valid": 23,
+          "effect": 23
+        },
+        "3": {
+          "requested": 24,
+          "precondition_valid": 24,
+          "effect": 24
+        },
+        "4": {
+          "requested": 10,
+          "precondition_valid": 10,
+          "effect": 10
+        },
+        "5": {
+          "requested": 24,
+          "precondition_valid": 23,
+          "effect": 23
+        },
+        "6": {
+          "requested": 28,
+          "precondition_valid": 28,
+          "effect": 26
+        },
+        "7": {
+          "requested": 29,
+          "precondition_valid": 29,
+          "effect": 29
+        },
+        "8": {
+          "requested": 35,
+          "precondition_valid": 35,
+          "effect": 35
+        },
+        "9": {
+          "requested": 40,
+          "precondition_valid": 40,
+          "effect": 38
+        },
+        "10": {
+          "requested": 20,
+          "precondition_valid": 20,
+          "effect": 17
+        },
+        "11": {
+          "requested": 56,
+          "precondition_valid": 56,
+          "effect": 54
+        },
+        "12": {
+          "requested": 34,
+          "precondition_valid": 34,
+          "effect": 33
+        },
+        "13": {
+          "requested": 51,
+          "precondition_valid": 51,
+          "effect": 50
+        },
+        "14": {
+          "requested": 45,
+          "precondition_valid": 45,
+          "effect": 45
+        },
+        "15": {
+          "requested": 41,
+          "precondition_valid": 41,
+          "effect": 40
+        },
+        "16": {
+          "requested": 48,
+          "precondition_valid": 48,
+          "effect": 47
+        },
+        "17": {
+          "requested": 38,
+          "precondition_valid": 38,
+          "effect": 37
+        },
+        "18": {
+          "requested": 52,
+          "precondition_valid": 52,
+          "effect": 51
+        },
+        "19": {
+          "requested": 38,
+          "precondition_valid": 38,
+          "effect": 38
+        },
+        "20": {
+          "requested": 46,
+          "precondition_valid": 46,
+          "effect": 45
+        },
+        "21": {
+          "requested": 40,
+          "precondition_valid": 40,
+          "effect": 40
+        },
+        "22": {
+          "requested": 46,
+          "precondition_valid": 46,
+          "effect": 46
+        },
+        "23": {
+          "requested": 41,
+          "precondition_valid": 41,
+          "effect": 41
+        },
+        "24": {
+          "requested": 51,
+          "precondition_valid": 51,
+          "effect": 51
+        },
+        "25": {
+          "requested": 43,
+          "precondition_valid": 43,
+          "effect": 42
+        },
+        "26": {
+          "requested": 61,
+          "precondition_valid": 61,
+          "effect": 61
+        },
+        "27": {
+          "requested": 43,
+          "precondition_valid": 43,
+          "effect": 43
+        },
+        "28": {
+          "requested": 40,
+          "precondition_valid": 40,
+          "effect": 40
+        },
+        "29": {
+          "requested": 21,
+          "precondition_valid": 21,
+          "effect": 21
+        }
+      },
+      "movement_no_effect": {
+        "in_bounds_no_move": 3
+      },
+      "nonmovement_no_effect": {
+        "PASS/no_task_or_fallback": 605,
+        "WATER": 18,
+        "DIG": 2,
+        "COLLECT_FERTILIZER": 2,
+        "BUILD_COOP": 1,
+        "HARVEST": 9,
+        "CARE": 2,
+        "PLACE": 2
+      },
+      "no_effect_by_day_op": {
+        "0:PASS/no_task_or_fallback": 27,
+        "1:PASS/no_task_or_fallback": 23,
+        "2:PASS/no_task_or_fallback": 27,
+        "3:PASS/no_task_or_fallback": 18,
+        "4:PASS/no_task_or_fallback": 21,
+        "5:PASS/no_task_or_fallback": 14,
+        "5:WATER": 1,
+        "6:PASS/no_task_or_fallback": 38,
+        "6:WATER": 2,
+        "7:DIG": 1,
+        "7:PASS/no_task_or_fallback": 36,
+        "8:PASS/no_task_or_fallback": 26,
+        "8:COLLECT_FERTILIZER": 1,
+        "9:PASS/no_task_or_fallback": 31,
+        "9:WATER": 2,
+        "10:PASS/no_task_or_fallback": 22,
+        "10:WATER": 3,
+        "10:BUILD_COOP": 1,
+        "11:PASS/no_task_or_fallback": 21,
+        "11:WATER": 2,
+        "12:PASS/no_task_or_fallback": 22,
+        "12:DIG": 1,
+        "12:WATER": 1,
+        "13:PASS/no_task_or_fallback": 23,
+        "13:WATER": 1,
+        "14:PASS/no_task_or_fallback": 12,
+        "15:PASS/no_task_or_fallback": 24,
+        "15:WATER": 1,
+        "16:PASS/no_task_or_fallback": 1,
+        "16:WATER": 1,
+        "17:PASS/no_task_or_fallback": 19,
+        "17:WATER": 1,
+        "18:PASS/no_task_or_fallback": 21,
+        "18:WATER": 1,
+        "19:PASS/no_task_or_fallback": 27,
+        "20:PASS/no_task_or_fallback": 25,
+        "20:WATER": 1,
+        "21:PASS/no_task_or_fallback": 5,
+        "21:HARVEST": 2,
+        "22:PASS/no_task_or_fallback": 26,
+        "23:PASS/no_task_or_fallback": 19,
+        "24:PASS/no_task_or_fallback": 11,
+        "25:PASS/no_task_or_fallback": 7,
+        "25:WATER": 1,
+        "26:PASS/no_task_or_fallback": 8,
+        "27:PASS/no_task_or_fallback": 14,
+        "27:COLLECT_FERTILIZER": 1,
+        "28:CARE": 2,
+        "28:PASS/no_task_or_fallback": 16,
+        "28:HARVEST": 2,
+        "28:PLACE": 1,
+        "29:PASS/no_task_or_fallback": 21,
+        "29:HARVEST": 5,
+        "29:PLACE": 1
+      },
+      "no_effect_by_worker_op": {
+        "4:WATER": 2,
+        "5:WATER": 2,
+        "8:WATER": 5,
+        "8:DIG": 1,
+        "5:COLLECT_FERTILIZER": 1,
+        "2:WATER": 2,
+        "1:WATER": 1,
+        "6:BUILD_COOP": 1,
+        "7:WATER": 1,
+        "6:WATER": 2,
+        "5:DIG": 1,
+        "10:WATER": 2,
+        "3:WATER": 1,
+        "2:HARVEST": 1,
+        "5:HARVEST": 3,
+        "1:COLLECT_FERTILIZER": 1,
+        "5:CARE": 1,
+        "5:PLACE": 1,
+        "4:CARE": 1,
+        "9:HARVEST": 1,
+        "4:HARVEST": 1,
+        "10:HARVEST": 1,
+        "1:HARVEST": 1,
+        "6:HARVEST": 1,
+        "6:PLACE": 1
+      },
+      "no_effect_by_position_op": {
+        "(3, 1):WATER": 3,
+        "(9, 4):WATER": 1,
+        "(7, 1):WATER": 2,
+        "(9, 1):DIG": 1,
+        "(4, 4):COLLECT_FERTILIZER": 1,
+        "(4, 1):WATER": 1,
+        "(1, 2):WATER": 1,
+        "(0, 4):WATER": 2,
+        "(4, 0):BUILD_COOP": 1,
+        "(8, 0):WATER": 2,
+        "(1, 8):WATER": 1,
+        "(8, 0):DIG": 1,
+        "(3, 9):WATER": 2,
+        "(8, 1):WATER": 1,
+        "(2, 9):WATER": 1,
+        "(5, 3):HARVEST": 1,
+        "(8, 1):HARVEST": 1,
+        "(5, 1):WATER": 1,
+        "(6, 4):COLLECT_FERTILIZER": 1,
+        "(4, 4):CARE": 1,
+        "(2, 3):HARVEST": 1,
+        "(4, 4):PLACE": 1,
+        "(3, 3):CARE": 1,
+        "(8, 0):HARVEST": 1,
+        "(0, 8):HARVEST": 1,
+        "(5, 4):HARVEST": 1,
+        "(3, 2):HARVEST": 1,
+        "(4, 1):HARVEST": 1,
+        "(7, 4):HARVEST": 1,
+        "(5, 4):PLACE": 1
+      },
+      "atomic_cancelled_by_worker": {},
+      "atomic_cancelled_by_position": {}
+    }
+  ]
+}

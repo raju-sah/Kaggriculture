@@ -1,0 +1,1018 @@
+{
+  "created_utc": "2026-09-26 (UTC; generated from Kaggle episode and local match logs)",
+  "engine": "kaggle-environments 1.32.7, replayed with recorded actions; reconciliation has max absolute difference 0 for farm coins, market inventory and market prices on all 719 transitions",
+  "public_boey": {
+    "episode_id": 113508987,
+    "seed": 511533100,
+    "opponent": "Vadim Vasilenko",
+    "seat": 0,
+    "coins": 111514.0,
+    "requested_sell_units": {
+      "CARROT": 784,
+      "EGG": 1222,
+      "FERTILIZER": 4385,
+      "MELON": 250,
+      "MILK": 668,
+      "STRAWBERRY": 316,
+      "WHEAT": 8467,
+      "WOOL": 356
+    },
+    "actual_accepted_sales": {
+      "CARROT": {
+        "units": 124,
+        "cash": 3821.0,
+        "mean_price": 30.815
+      },
+      "EGG": {
+        "units": 172,
+        "cash": 8955.0,
+        "mean_price": 52.064
+      },
+      "FERTILIZER": {
+        "units": 878,
+        "cash": 38628.0,
+        "mean_price": 43.995
+      },
+      "MELON": {
+        "units": 72,
+        "cash": 14519.0,
+        "mean_price": 201.653
+      },
+      "MILK": {
+        "units": 183,
+        "cash": 24041.0,
+        "mean_price": 131.372
+      },
+      "STRAWBERRY": {
+        "units": 224,
+        "cash": 38394.0,
+        "mean_price": 171.402
+      },
+      "WHEAT": {
+        "units": 3519,
+        "cash": 114588.0,
+        "mean_price": 32.563
+      },
+      "WOOL": {
+        "units": 214,
+        "cash": 18261.0,
+        "mean_price": 85.332
+      }
+    },
+    "daily_market_path": [
+      {
+        "day": 0,
+        "cash": 40.0,
+        "inventory": {
+          "WHEAT": 9993,
+          "FERTILIZER": 10000,
+          "EGG": 9999,
+          "MILK": 9999,
+          "WOOL": 9999
+        },
+        "prices": {
+          "WHEAT": 28,
+          "FERTILIZER": 100,
+          "EGG": 50,
+          "MILK": 169,
+          "WOOL": 206
+        },
+        "accepted_sale_units": {
+          "FERTILIZER": 4,
+          "WHEAT": 90
+        },
+        "accepted_sale_cash": {
+          "FERTILIZER": 400,
+          "WHEAT": 2596
+        }
+      },
+      {
+        "day": 3,
+        "cash": 28.0,
+        "inventory": {
+          "WHEAT": 9981,
+          "FERTILIZER": 10032,
+          "EGG": 9990,
+          "MILK": 9996,
+          "WOOL": 9996
+        },
+        "prices": {
+          "WHEAT": 29,
+          "FERTILIZER": 94,
+          "EGG": 51,
+          "MILK": 177,
+          "WOOL": 214
+        },
+        "accepted_sale_units": {
+          "FERTILIZER": 8,
+          "WHEAT": 40
+        },
+        "accepted_sale_cash": {
+          "FERTILIZER": 761,
+          "WHEAT": 1164
+        }
+      },
+      {
+        "day": 6,
+        "cash": 9.0,
+        "inventory": {
+          "WHEAT": 9942,
+          "FERTILIZER": 10072,
+          "EGG": 9976,
+          "MILK": 9993,
+          "WOOL": 10011
+        },
+        "prices": {
+          "WHEAT": 33,
+          "FERTILIZER": 86,
+          "EGG": 51,
+          "MILK": 183,
+          "WOOL": 193
+        },
+        "accepted_sale_units": {
+          "EGG": 7,
+          "FERTILIZER": 15,
+          "WHEAT": 160,
+          "WOOL": 12
+        },
+        "accepted_sale_cash": {
+          "EGG": 362,
+          "FERTILIZER": 1304,
+          "WHEAT": 5240,
+          "WOOL": 2491
+        }
+      },
+      {
+        "day": 9,
+        "cash": 5.0,
+        "inventory": {
+          "WHEAT": 9843,
+          "FERTILIZER": 10142,
+          "EGG": 9965,
+          "MILK": 10014,
+          "WOOL": 9992
+        },
+        "prices": {
+          "WHEAT": 38,
+          "FERTILIZER": 72,
+          "EGG": 52,
+          "MILK": 131,
+          "WOOL": 219
+        },
+        "accepted_sale_units": {
+          "EGG": 4,
+          "FERTILIZER": 21,
+          "WHEAT": 50,
+          "WOOL": 8
+        },
+        "accepted_sale_cash": {
+          "EGG": 208,
+          "FERTILIZER": 1573,
+          "WHEAT": 1848,
+          "WOOL": 1769
+        }
+      },
+      {
+        "day": 12,
+        "cash": 20807.0,
+        "inventory": {
+          "WHEAT": 9745,
+          "FERTILIZER": 10224,
+          "EGG": 9955,
+          "MILK": 10022,
+          "WOOL": 10005
+        },
+        "prices": {
+          "WHEAT": 41,
+          "FERTILIZER": 55,
+          "EGG": 53,
+          "MILK": 114,
+          "WOOL": 199
+        },
+        "accepted_sale_units": {
+          "EGG": 9,
+          "FERTILIZER": 94,
+          "MILK": 6,
+          "WHEAT": 210,
+          "WOOL": 26
+        },
+        "accepted_sale_cash": {
+          "EGG": 471,
+          "FERTILIZER": 5335,
+          "MILK": 726,
+          "WHEAT": 8646,
+          "WOOL": 5571
+        }
+      },
+      {
+        "day": 15,
+        "cash": 36463.0,
+        "inventory": {
+          "WHEAT": 9814,
+          "FERTILIZER": 10280,
+          "EGG": 9952,
+          "MILK": 10029,
+          "WOOL": 10055
+        },
+        "prices": {
+          "WHEAT": 39,
+          "FERTILIZER": 44,
+          "EGG": 53,
+          "MILK": 99,
+          "WOOL": 24
+        },
+        "accepted_sale_units": {
+          "EGG": 12,
+          "FERTILIZER": 63,
+          "MILK": 1,
+          "STRAWBERRY": 5,
+          "WHEAT": 298,
+          "WOOL": 19
+        },
+        "accepted_sale_cash": {
+          "EGG": 638,
+          "FERTILIZER": 2856,
+          "MILK": 80,
+          "STRAWBERRY": 1022,
+          "WHEAT": 11635,
+          "WOOL": 1390
+        }
+      },
+      {
+        "day": 20,
+        "cash": 63379.0,
+        "inventory": {
+          "WHEAT": 9945,
+          "FERTILIZER": 10364,
+          "EGG": 9955,
+          "MILK": 10017,
+          "WOOL": 10059
+        },
+        "prices": {
+          "WHEAT": 32,
+          "FERTILIZER": 27,
+          "EGG": 53,
+          "MILK": 124,
+          "WOOL": 1
+        },
+        "accepted_sale_units": {
+          "EGG": 4,
+          "FERTILIZER": 24,
+          "STRAWBERRY": 25,
+          "WHEAT": 113,
+          "WOOL": 8
+        },
+        "accepted_sale_cash": {
+          "EGG": 212,
+          "FERTILIZER": 675,
+          "STRAWBERRY": 3800,
+          "WHEAT": 3676,
+          "WOOL": 109
+        }
+      },
+      {
+        "day": 24,
+        "cash": 76272.0,
+        "inventory": {
+          "WHEAT": 10094,
+          "FERTILIZER": 10398,
+          "EGG": 9973,
+          "MILK": 10018,
+          "WOOL": 10059
+        },
+        "prices": {
+          "WHEAT": 21,
+          "FERTILIZER": 20,
+          "EGG": 52,
+          "MILK": 122,
+          "WOOL": 1
+        },
+        "accepted_sale_units": {
+          "CARROT": 2,
+          "EGG": 6,
+          "FERTILIZER": 34,
+          "MILK": 12,
+          "STRAWBERRY": 7,
+          "WHEAT": 105,
+          "WOOL": 15
+        },
+        "accepted_sale_cash": {
+          "CARROT": 75,
+          "EGG": 312,
+          "FERTILIZER": 723,
+          "MILK": 1479,
+          "STRAWBERRY": 1165,
+          "WHEAT": 2208,
+          "WOOL": 108
+        }
+      },
+      {
+        "day": 29,
+        "cash": 111514.0,
+        "inventory": {
+          "WHEAT": 10320,
+          "FERTILIZER": 10454,
+          "EGG": 10014,
+          "MILK": 9997,
+          "WOOL": 10056
+        },
+        "prices": {
+          "WHEAT": 20,
+          "FERTILIZER": 9,
+          "EGG": 45,
+          "MILK": 175,
+          "WOOL": 18
+        },
+        "accepted_sale_units": {
+          "CARROT": 46,
+          "EGG": 16,
+          "FERTILIZER": 55,
+          "MILK": 15,
+          "STRAWBERRY": 20,
+          "WHEAT": 123,
+          "WOOL": 7
+        },
+        "accepted_sale_cash": {
+          "CARROT": 1147,
+          "EGG": 797,
+          "FERTILIZER": 688,
+          "MILK": 2809,
+          "STRAWBERRY": 3345,
+          "WHEAT": 2461,
+          "WOOL": 163
+        }
+      }
+    ]
+  },
+  "local_v57_reset": {
+    "candidate": "experiments/v57_broad/v57_reset_candidate.py",
+    "candidate_sha256": "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+    "opponent_proxy": "experiments/boey_agent.py (replay-derived proxy; not the live Boey policy)",
+    "seed": 511533100,
+    "candidate_ab": {
+      "seat": 0,
+      "final_coins": 140497.0,
+      "requested_sell_units": {
+        "CARROT": 90,
+        "EGG": 224,
+        "FERTILIZER": 337,
+        "MELON": 72,
+        "MILK": 221,
+        "STRAWBERRY": 252,
+        "TOMATO": 80,
+        "WHEAT": 441,
+        "WOOL": 46
+      },
+      "actual_accepted_sales": {
+        "CARROT": {
+          "units": 90,
+          "cash": 6193.0,
+          "mean_price": 68.811
+        },
+        "EGG": {
+          "units": 224,
+          "cash": 9322.0,
+          "mean_price": 41.616
+        },
+        "FERTILIZER": {
+          "units": 327,
+          "cash": 13797.0,
+          "mean_price": 42.193
+        },
+        "MELON": {
+          "units": 72,
+          "cash": 15871.0,
+          "mean_price": 220.431
+        },
+        "MILK": {
+          "units": 221,
+          "cash": 46691.0,
+          "mean_price": 211.271
+        },
+        "STRAWBERRY": {
+          "units": 252,
+          "cash": 60260.0,
+          "mean_price": 239.127
+        },
+        "TOMATO": {
+          "units": 80,
+          "cash": 6796.0,
+          "mean_price": 84.95
+        },
+        "WHEAT": {
+          "units": 426,
+          "cash": 11565.0,
+          "mean_price": 27.148
+        },
+        "WOOL": {
+          "units": 46,
+          "cash": 3773.0,
+          "mean_price": 82.022
+        }
+      },
+      "daily_market_path": [
+        {
+          "day": 0,
+          "cash": 12.0,
+          "inventory": {
+            "WHEAT": 9991,
+            "FERTILIZER": 10000,
+            "EGG": 9999,
+            "MILK": 9999,
+            "WOOL": 9999
+          },
+          "prices": {
+            "WHEAT": 28,
+            "FERTILIZER": 100,
+            "EGG": 50,
+            "MILK": 169,
+            "WOOL": 206
+          },
+          "accepted_sale_units": {
+            "WHEAT": 15
+          },
+          "accepted_sale_cash": {
+            "WHEAT": 434
+          }
+        },
+        {
+          "day": 3,
+          "cash": 253.0,
+          "inventory": {
+            "WHEAT": 9989,
+            "FERTILIZER": 10029,
+            "EGG": 9996,
+            "MILK": 9990,
+            "WOOL": 9996
+          },
+          "prices": {
+            "WHEAT": 28,
+            "FERTILIZER": 94,
+            "EGG": 50,
+            "MILK": 187,
+            "WOOL": 214
+          },
+          "accepted_sale_units": {
+            "FERTILIZER": 4,
+            "WHEAT": 4
+          },
+          "accepted_sale_cash": {
+            "FERTILIZER": 379,
+            "WHEAT": 116
+          }
+        },
+        {
+          "day": 6,
+          "cash": 1184.0,
+          "inventory": {
+            "WHEAT": 9964,
+            "FERTILIZER": 10072,
+            "EGG": 10001,
+            "MILK": 9969,
+            "WOOL": 10016
+          },
+          "prices": {
+            "WHEAT": 31,
+            "FERTILIZER": 86,
+            "EGG": 49,
+            "MILK": 208,
+            "WOOL": 185
+          },
+          "accepted_sale_units": {
+            "FERTILIZER": 8,
+            "WHEAT": 9,
+            "WOOL": 12
+          },
+          "accepted_sale_cash": {
+            "FERTILIZER": 699,
+            "WHEAT": 281,
+            "WOOL": 2329
+          }
+        },
+        {
+          "day": 9,
+          "cash": 2822.0,
+          "inventory": {
+            "WHEAT": 9875,
+            "FERTILIZER": 10133,
+            "EGG": 10006,
+            "MILK": 9977,
+            "WOOL": 10035
+          },
+          "prices": {
+            "WHEAT": 36,
+            "FERTILIZER": 73,
+            "EGG": 47,
+            "MILK": 202,
+            "WOOL": 129
+          },
+          "accepted_sale_units": {
+            "FERTILIZER": 14,
+            "WHEAT": 4,
+            "WOOL": 8
+          },
+          "accepted_sale_cash": {
+            "FERTILIZER": 1056,
+            "WHEAT": 144,
+            "WOOL": 1166
+          }
+        },
+        {
+          "day": 12,
+          "cash": 20485.0,
+          "inventory": {
+            "WHEAT": 9781,
+            "FERTILIZER": 10217,
+            "EGG": 10016,
+            "MILK": 9989,
+            "WOOL": 10059
+          },
+          "prices": {
+            "WHEAT": 40,
+            "FERTILIZER": 57,
+            "EGG": 45,
+            "MILK": 189,
+            "WOOL": 1
+          },
+          "accepted_sale_units": {
+            "FERTILIZER": 16,
+            "MILK": 6,
+            "WHEAT": 18,
+            "WOOL": 8
+          },
+          "accepted_sale_cash": {
+            "FERTILIZER": 967,
+            "MILK": 1136,
+            "WHEAT": 722,
+            "WOOL": 256
+          }
+        },
+        {
+          "day": 15,
+          "cash": 30603.0,
+          "inventory": {
+            "WHEAT": 9816,
+            "FERTILIZER": 10295,
+            "EGG": 10056,
+            "MILK": 9992,
+            "WOOL": 10059
+          },
+          "prices": {
+            "WHEAT": 39,
+            "FERTILIZER": 41,
+            "EGG": 43,
+            "MILK": 185,
+            "WOOL": 1
+          },
+          "accepted_sale_units": {
+            "EGG": 12,
+            "FERTILIZER": 12,
+            "MILK": 21,
+            "STRAWBERRY": 8,
+            "WHEAT": 4
+          },
+          "accepted_sale_cash": {
+            "EGG": 519,
+            "FERTILIZER": 504,
+            "MILK": 3995,
+            "STRAWBERRY": 1838,
+            "WHEAT": 156
+          }
+        },
+        {
+          "day": 20,
+          "cash": 59365.0,
+          "inventory": {
+            "WHEAT": 9878,
+            "FERTILIZER": 10385,
+            "EGG": 10145,
+            "MILK": 9974,
+            "WOOL": 10059
+          },
+          "prices": {
+            "WHEAT": 36,
+            "FERTILIZER": 23,
+            "EGG": 41,
+            "MILK": 204,
+            "WOOL": 1
+          },
+          "accepted_sale_units": {
+            "EGG": 12,
+            "FERTILIZER": 5,
+            "MILK": 9,
+            "STRAWBERRY": 24,
+            "WHEAT": 6
+          },
+          "accepted_sale_cash": {
+            "EGG": 504,
+            "FERTILIZER": 129,
+            "MILK": 1751,
+            "STRAWBERRY": 5674,
+            "WHEAT": 222
+          }
+        },
+        {
+          "day": 24,
+          "cash": 92603.0,
+          "inventory": {
+            "WHEAT": 10062,
+            "FERTILIZER": 10410,
+            "EGG": 10217,
+            "MILK": 9924,
+            "WOOL": 10059
+          },
+          "prices": {
+            "WHEAT": 22,
+            "FERTILIZER": 18,
+            "EGG": 41,
+            "MILK": 236,
+            "WOOL": 1
+          },
+          "accepted_sale_units": {
+            "EGG": 12,
+            "FERTILIZER": 9,
+            "MILK": 7,
+            "STRAWBERRY": 24,
+            "WHEAT": 22,
+            "WOOL": 3
+          },
+          "accepted_sale_cash": {
+            "EGG": 492,
+            "FERTILIZER": 121,
+            "MILK": 1625,
+            "STRAWBERRY": 5728,
+            "WHEAT": 494,
+            "WOOL": 3
+          }
+        },
+        {
+          "day": 29,
+          "cash": 140497.0,
+          "inventory": {
+            "WHEAT": 10425,
+            "FERTILIZER": 10452,
+            "EGG": 10321,
+            "MILK": 9888,
+            "WOOL": 10059
+          },
+          "prices": {
+            "WHEAT": 20,
+            "FERTILIZER": 10,
+            "EGG": 40,
+            "MILK": 252,
+            "WOOL": 1
+          },
+          "accepted_sale_units": {
+            "CARROT": 69,
+            "EGG": 24,
+            "FERTILIZER": 12,
+            "MILK": 17,
+            "TOMATO": 20,
+            "WHEAT": 74
+          },
+          "accepted_sale_cash": {
+            "CARROT": 4686,
+            "EGG": 960,
+            "FERTILIZER": 140,
+            "MILK": 4334,
+            "TOMATO": 1660,
+            "WHEAT": 1480
+          }
+        }
+      ]
+    },
+    "candidate_ba": {
+      "seat": 1,
+      "final_coins": 140497.0,
+      "requested_sell_units": {
+        "CARROT": 90,
+        "EGG": 224,
+        "FERTILIZER": 337,
+        "MELON": 72,
+        "MILK": 221,
+        "STRAWBERRY": 252,
+        "TOMATO": 80,
+        "WHEAT": 441,
+        "WOOL": 46
+      },
+      "actual_accepted_sales": {
+        "CARROT": {
+          "units": 90,
+          "cash": 6193.0,
+          "mean_price": 68.811
+        },
+        "EGG": {
+          "units": 224,
+          "cash": 9322.0,
+          "mean_price": 41.616
+        },
+        "FERTILIZER": {
+          "units": 327,
+          "cash": 13797.0,
+          "mean_price": 42.193
+        },
+        "MELON": {
+          "units": 72,
+          "cash": 15871.0,
+          "mean_price": 220.431
+        },
+        "MILK": {
+          "units": 221,
+          "cash": 46691.0,
+          "mean_price": 211.271
+        },
+        "STRAWBERRY": {
+          "units": 252,
+          "cash": 60260.0,
+          "mean_price": 239.127
+        },
+        "TOMATO": {
+          "units": 80,
+          "cash": 6796.0,
+          "mean_price": 84.95
+        },
+        "WHEAT": {
+          "units": 426,
+          "cash": 11565.0,
+          "mean_price": 27.148
+        },
+        "WOOL": {
+          "units": 46,
+          "cash": 3773.0,
+          "mean_price": 82.022
+        }
+      },
+      "daily_market_path": [
+        {
+          "day": 0,
+          "cash": 12.0,
+          "inventory": {
+            "WHEAT": 9991,
+            "FERTILIZER": 10000,
+            "EGG": 9999,
+            "MILK": 9999,
+            "WOOL": 9999
+          },
+          "prices": {
+            "WHEAT": 28,
+            "FERTILIZER": 100,
+            "EGG": 50,
+            "MILK": 169,
+            "WOOL": 206
+          },
+          "accepted_sale_units": {
+            "WHEAT": 15
+          },
+          "accepted_sale_cash": {
+            "WHEAT": 434
+          }
+        },
+        {
+          "day": 3,
+          "cash": 253.0,
+          "inventory": {
+            "WHEAT": 9989,
+            "FERTILIZER": 10029,
+            "EGG": 9996,
+            "MILK": 9990,
+            "WOOL": 9996
+          },
+          "prices": {
+            "WHEAT": 28,
+            "FERTILIZER": 94,
+            "EGG": 50,
+            "MILK": 187,
+            "WOOL": 214
+          },
+          "accepted_sale_units": {
+            "FERTILIZER": 4,
+            "WHEAT": 4
+          },
+          "accepted_sale_cash": {
+            "FERTILIZER": 379,
+            "WHEAT": 116
+          }
+        },
+        {
+          "day": 6,
+          "cash": 1184.0,
+          "inventory": {
+            "WHEAT": 9964,
+            "FERTILIZER": 10072,
+            "EGG": 10001,
+            "MILK": 9969,
+            "WOOL": 10016
+          },
+          "prices": {
+            "WHEAT": 31,
+            "FERTILIZER": 86,
+            "EGG": 49,
+            "MILK": 208,
+            "WOOL": 185
+          },
+          "accepted_sale_units": {
+            "FERTILIZER": 8,
+            "WHEAT": 9,
+            "WOOL": 12
+          },
+          "accepted_sale_cash": {
+            "FERTILIZER": 699,
+            "WHEAT": 281,
+            "WOOL": 2329
+          }
+        },
+        {
+          "day": 9,
+          "cash": 2822.0,
+          "inventory": {
+            "WHEAT": 9875,
+            "FERTILIZER": 10133,
+            "EGG": 10006,
+            "MILK": 9977,
+            "WOOL": 10035
+          },
+          "prices": {
+            "WHEAT": 36,
+            "FERTILIZER": 73,
+            "EGG": 47,
+            "MILK": 202,
+            "WOOL": 129
+          },
+          "accepted_sale_units": {
+            "FERTILIZER": 14,
+            "WHEAT": 4,
+            "WOOL": 8
+          },
+          "accepted_sale_cash": {
+            "FERTILIZER": 1056,
+            "WHEAT": 144,
+            "WOOL": 1166
+          }
+        },
+        {
+          "day": 12,
+          "cash": 20485.0,
+          "inventory": {
+            "WHEAT": 9781,
+            "FERTILIZER": 10217,
+            "EGG": 10016,
+            "MILK": 9989,
+            "WOOL": 10059
+          },
+          "prices": {
+            "WHEAT": 40,
+            "FERTILIZER": 57,
+            "EGG": 45,
+            "MILK": 189,
+            "WOOL": 1
+          },
+          "accepted_sale_units": {
+            "FERTILIZER": 16,
+            "MILK": 6,
+            "WHEAT": 18,
+            "WOOL": 8
+          },
+          "accepted_sale_cash": {
+            "FERTILIZER": 967,
+            "MILK": 1136,
+            "WHEAT": 722,
+            "WOOL": 256
+          }
+        },
+        {
+          "day": 15,
+          "cash": 30603.0,
+          "inventory": {
+            "WHEAT": 9816,
+            "FERTILIZER": 10295,
+            "EGG": 10056,
+            "MILK": 9992,
+            "WOOL": 10059
+          },
+          "prices": {
+            "WHEAT": 39,
+            "FERTILIZER": 41,
+            "EGG": 43,
+            "MILK": 185,
+            "WOOL": 1
+          },
+          "accepted_sale_units": {
+            "EGG": 12,
+            "FERTILIZER": 12,
+            "MILK": 21,
+            "STRAWBERRY": 8,
+            "WHEAT": 4
+          },
+          "accepted_sale_cash": {
+            "EGG": 519,
+            "FERTILIZER": 504,
+            "MILK": 3995,
+            "STRAWBERRY": 1838,
+            "WHEAT": 156
+          }
+        },
+        {
+          "day": 20,
+          "cash": 59365.0,
+          "inventory": {
+            "WHEAT": 9878,
+            "FERTILIZER": 10385,
+            "EGG": 10145,
+            "MILK": 9974,
+            "WOOL": 10059
+          },
+          "prices": {
+            "WHEAT": 36,
+            "FERTILIZER": 23,
+            "EGG": 41,
+            "MILK": 204,
+            "WOOL": 1
+          },
+          "accepted_sale_units": {
+            "EGG": 12,
+            "FERTILIZER": 5,
+            "MILK": 9,
+            "STRAWBERRY": 24,
+            "WHEAT": 6
+          },
+          "accepted_sale_cash": {
+            "EGG": 504,
+            "FERTILIZER": 129,
+            "MILK": 1751,
+            "STRAWBERRY": 5674,
+            "WHEAT": 222
+          }
+        },
+        {
+          "day": 24,
+          "cash": 92603.0,
+          "inventory": {
+            "WHEAT": 10062,
+            "FERTILIZER": 10410,
+            "EGG": 10217,
+            "MILK": 9924,
+            "WOOL": 10059
+          },
+          "prices": {
+            "WHEAT": 22,
+            "FERTILIZER": 18,
+            "EGG": 41,
+            "MILK": 236,
+            "WOOL": 1
+          },
+          "accepted_sale_units": {
+            "EGG": 12,
+            "FERTILIZER": 9,
+            "MILK": 7,
+            "STRAWBERRY": 24,
+            "WHEAT": 22,
+            "WOOL": 3
+          },
+          "accepted_sale_cash": {
+            "EGG": 492,
+            "FERTILIZER": 121,
+            "MILK": 1625,
+            "STRAWBERRY": 5728,
+            "WHEAT": 494,
+            "WOOL": 3
+          }
+        },
+        {
+          "day": 29,
+          "cash": 140497.0,
+          "inventory": {
+            "WHEAT": 10425,
+            "FERTILIZER": 10452,
+            "EGG": 10321,
+            "MILK": 9888,
+            "WOOL": 10059
+          },
+          "prices": {
+            "WHEAT": 20,
+            "FERTILIZER": 10,
+            "EGG": 40,
+            "MILK": 252,
+            "WOOL": 1
+          },
+          "accepted_sale_units": {
+            "CARROT": 69,
+            "EGG": 24,
+            "FERTILIZER": 12,
+            "MILK": 17,
+            "TOMATO": 20,
+            "WHEAT": 74
+          },
+          "accepted_sale_cash": {
+            "CARROT": 4686,
+            "EGG": 960,
+            "FERTILIZER": 140,
+            "MILK": 4334,
+            "TOMATO": 1660,
+            "WHEAT": 1480
+          }
+        }
+      ]
+    },
+    "caveat": "Same numeric seed does not preserve the unlocked shop sequence in this engine. Per kaggriculture.py, the day-keyed RNG is consumed by weed spawning over empty tiles before choosing the next shop, so differing farm occupancy changes later shop draws. Public shops: BRUNCH_SPOT, YARN_STORE, SMOOTHIE_SHOP, BAKERY, PIZZA_SHOP, ICE_CREAM_SHOP, FARMERS_MARKET, SMOOTHIE_SHOP. Local shops: SMOOTHIE_SHOP, FARMERS_MARKET, PET_CAFE, ICE_CREAM_SHOP, FARMERS_MARKET, ICE_CREAM_SHOP, SMOOTHIE_SHOP, PET_CAFE. Opponent differs as well (public Vadim vs replay-derived BoeyProxy). Treat this as a diagnostic trace only, not a matched shop-demand comparison."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "games": 40,
+  "by_opponent": {
+    "v50": {
+      "wins": 8,
+      "losses": 2,
+      "errors": 0,
+      "mean_margin": 8406.2
+    },
+    "v53": {
+      "wins": 8,
+      "losses": 2,
+      "errors": 0,
+      "mean_margin": 8267.2
+    },
+    "v54": {
+      "wins": 10,
+      "losses": 0,
+      "errors": 0,
+      "mean_margin": 13816.6
+    },
+    "v56": {
+      "wins": 10,
+      "losses": 0,
+      "errors": 0,
+      "mean_margin": 13816.6
+    }
+  }
+}

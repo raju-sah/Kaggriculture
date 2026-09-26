@@ -1,0 +1,6329 @@
+{
+  "purpose": "offline replay-action attribution using the frozen pre-fix config1 agent; compares original issued actions to reconstructed tasks.",
+  "results": [
+    {
+      "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/rl_design/probe95100/candidate1/replays/v50-seed-95100-ab-repeat-0.json",
+      "seat": 0,
+      "candidate_hash": null,
+      "param_vector": {
+        "crop_target": 8,
+        "herd_target": 3,
+        "staff_target": 6,
+        "cash_reserve": 700,
+        "wheat_reserve": 3
+      },
+      "counts": {
+        "actor_slots": 4393,
+        "action:BUILD_PASTURE": 3,
+        "assigned_operation_attempts": 824,
+        "assigned_operation_match": 824,
+        "action:NORTH": 654,
+        "travel_progress": 1717,
+        "action:WEST": 565,
+        "action:PLANT": 638,
+        "engine_atomic_plant_conflict": 608,
+        "task_blocked_by_resource_or_stage": 353,
+        "action:WATER": 150,
+        "action:EAST": 261,
+        "action:PICKUP": 81,
+        "action:PLACE": 3,
+        "action:SOUTH": 257,
+        "travel_no_progress": 20,
+        "action:PASS": 1521,
+        "unassigned_no_task": 1479,
+        "idle:no_remaining_schedulable_task": 496,
+        "action:FEED": 77,
+        "action:COLLECT_FERTILIZER": 73,
+        "action:CARE": 59,
+        "action:HARVEST": 51,
+        "idle:crop_target_waiting_seed": 614,
+        "idle:late_season_no_crop_target": 369
+      },
+      "action_reproduction": {
+        "same_action": 4082,
+        "different_action": 311
+      },
+      "target_churn": {
+        "target_changes_midday": 14
+      },
+      "per_hour_of_day": {
+        "0": {
+          "actor_slots": 30,
+          "action:BUILD_PASTURE": 1,
+          "assigned_operation_attempts": 12,
+          "assigned_operation_match": 12,
+          "action:WEST": 1,
+          "travel_progress": 2,
+          "action:NORTH": 1,
+          "action:PASS": 16,
+          "task_blocked_by_resource_or_stage": 16,
+          "action:PICKUP": 11
+        },
+        "1": {
+          "actor_slots": 190,
+          "action:NORTH": 65,
+          "travel_progress": 123,
+          "action:WEST": 58,
+          "action:PICKUP": 65,
+          "assigned_operation_attempts": 65,
+          "assigned_operation_match": 65,
+          "action:PASS": 2,
+          "task_blocked_by_resource_or_stage": 1,
+          "unassigned_no_task": 1,
+          "idle:late_season_no_crop_target": 1
+        },
+        "2": {
+          "actor_slots": 190,
+          "action:BUILD_PASTURE": 1,
+          "assigned_operation_attempts": 16,
+          "assigned_operation_match": 16,
+          "action:WEST": 106,
+          "travel_progress": 172,
+          "action:NORTH": 66,
+          "action:FEED": 11,
+          "action:PASS": 2,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 2,
+          "action:COLLECT_FERTILIZER": 2,
+          "unassigned_no_task": 1,
+          "idle:late_season_no_crop_target": 1
+        },
+        "3": {
+          "actor_slots": 190,
+          "action:WEST": 41,
+          "travel_progress": 108,
+          "action:BUILD_PASTURE": 1,
+          "assigned_operation_attempts": 78,
+          "assigned_operation_match": 78,
+          "action:NORTH": 66,
+          "action:PLACE": 1,
+          "action:FEED": 62,
+          "action:PASS": 4,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:COLLECT_FERTILIZER": 8,
+          "action:CARE": 1,
+          "action:EAST": 1,
+          "action:HARVEST": 5,
+          "unassigned_no_task": 3,
+          "idle:late_season_no_crop_target": 3
+        },
+        "4": {
+          "actor_slots": 190,
+          "action:WEST": 66,
+          "travel_progress": 153,
+          "action:NORTH": 85,
+          "action:SOUTH": 2,
+          "travel_no_progress": 1,
+          "action:EAST": 1,
+          "action:FEED": 2,
+          "assigned_operation_attempts": 16,
+          "assigned_operation_match": 16,
+          "action:PASS": 20,
+          "unassigned_no_task": 20,
+          "idle:crop_target_waiting_seed": 5,
+          "action:CARE": 3,
+          "action:HARVEST": 5,
+          "action:COLLECT_FERTILIZER": 6,
+          "idle:no_remaining_schedulable_task": 1,
+          "idle:late_season_no_crop_target": 14
+        },
+        "5": {
+          "actor_slots": 190,
+          "action:WEST": 69,
+          "travel_progress": 153,
+          "action:NORTH": 83,
+          "action:WATER": 1,
+          "assigned_operation_attempts": 8,
+          "assigned_operation_match": 8,
+          "action:PASS": 28,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:SOUTH": 2,
+          "travel_no_progress": 1,
+          "unassigned_no_task": 27,
+          "idle:crop_target_waiting_seed": 9,
+          "action:COLLECT_FERTILIZER": 1,
+          "action:CARE": 2,
+          "action:HARVEST": 4,
+          "idle:no_remaining_schedulable_task": 4,
+          "idle:late_season_no_crop_target": 14
+        },
+        "6": {
+          "actor_slots": 190,
+          "action:NORTH": 79,
+          "travel_progress": 156,
+          "action:WEST": 75,
+          "action:PASS": 31,
+          "task_blocked_by_resource_or_stage": 2,
+          "unassigned_no_task": 29,
+          "idle:crop_target_waiting_seed": 11,
+          "action:CARE": 1,
+          "assigned_operation_attempts": 3,
+          "assigned_operation_match": 3,
+          "action:COLLECT_FERTILIZER": 1,
+          "action:EAST": 2,
+          "action:WATER": 1,
+          "idle:no_remaining_schedulable_task": 4,
+          "idle:late_season_no_crop_target": 14
+        },
+        "7": {
+          "actor_slots": 190,
+          "action:WEST": 69,
+          "travel_progress": 145,
+          "action:NORTH": 76,
+          "action:PLANT": 1,
+          "assigned_operation_attempts": 12,
+          "assigned_operation_match": 12,
+          "action:PASS": 33,
+          "task_blocked_by_resource_or_stage": 2,
+          "unassigned_no_task": 31,
+          "idle:crop_target_waiting_seed": 13,
+          "action:WATER": 8,
+          "action:CARE": 2,
+          "idle:no_remaining_schedulable_task": 4,
+          "action:HARVEST": 1,
+          "idle:late_season_no_crop_target": 14
+        },
+        "8": {
+          "actor_slots": 190,
+          "action:NORTH": 67,
+          "travel_progress": 119,
+          "action:PLANT": 15,
+          "assigned_operation_attempts": 33,
+          "assigned_operation_match": 33,
+          "engine_atomic_plant_conflict": 10,
+          "task_blocked_by_resource_or_stage": 4,
+          "action:WATER": 19,
+          "action:PASS": 36,
+          "action:WEST": 47,
+          "unassigned_no_task": 34,
+          "idle:crop_target_waiting_seed": 15,
+          "action:EAST": 5,
+          "idle:no_remaining_schedulable_task": 5,
+          "action:HARVEST": 1,
+          "idle:late_season_no_crop_target": 14
+        },
+        "9": {
+          "actor_slots": 190,
+          "action:PLANT": 30,
+          "assigned_operation_attempts": 67,
+          "assigned_operation_match": 67,
+          "engine_atomic_plant_conflict": 21,
+          "task_blocked_by_resource_or_stage": 10,
+          "action:EAST": 15,
+          "travel_progress": 75,
+          "action:PASS": 40,
+          "action:WATER": 42,
+          "action:NORTH": 38,
+          "unassigned_no_task": 38,
+          "idle:crop_target_waiting_seed": 15,
+          "action:SOUTH": 4,
+          "action:WEST": 18,
+          "idle:no_remaining_schedulable_task": 9,
+          "action:HARVEST": 2,
+          "action:COLLECT_FERTILIZER": 1,
+          "idle:late_season_no_crop_target": 14
+        },
+        "10": {
+          "actor_slots": 190,
+          "action:PLANT": 37,
+          "assigned_operation_attempts": 68,
+          "assigned_operation_match": 68,
+          "engine_atomic_plant_conflict": 31,
+          "task_blocked_by_resource_or_stage": 15,
+          "action:EAST": 34,
+          "travel_progress": 60,
+          "action:WATER": 41,
+          "action:PASS": 49,
+          "unassigned_no_task": 47,
+          "idle:no_remaining_schedulable_task": 9,
+          "action:NORTH": 10,
+          "action:WEST": 7,
+          "idle:crop_target_waiting_seed": 19,
+          "action:SOUTH": 9,
+          "action:HARVEST": 3,
+          "idle:late_season_no_crop_target": 19
+        },
+        "11": {
+          "actor_slots": 190,
+          "action:PLANT": 40,
+          "assigned_operation_attempts": 52,
+          "assigned_operation_match": 52,
+          "engine_atomic_plant_conflict": 34,
+          "task_blocked_by_resource_or_stage": 18,
+          "action:NORTH": 3,
+          "travel_progress": 68,
+          "action:PASS": 54,
+          "unassigned_no_task": 52,
+          "idle:no_remaining_schedulable_task": 11,
+          "action:EAST": 45,
+          "action:WATER": 15,
+          "action:SOUTH": 19,
+          "action:HARVEST": 10,
+          "idle:crop_target_waiting_seed": 22,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:WEST": 1,
+          "idle:late_season_no_crop_target": 19
+        },
+        "12": {
+          "actor_slots": 190,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 44,
+          "assigned_operation_match": 44,
+          "engine_atomic_plant_conflict": 40,
+          "task_blocked_by_resource_or_stage": 22,
+          "action:PASS": 56,
+          "unassigned_no_task": 54,
+          "idle:no_remaining_schedulable_task": 13,
+          "action:SOUTH": 29,
+          "travel_progress": 70,
+          "action:WATER": 12,
+          "action:EAST": 39,
+          "action:HARVEST": 7,
+          "action:WEST": 1,
+          "idle:crop_target_waiting_seed": 22,
+          "action:NORTH": 1,
+          "action:COLLECT_FERTILIZER": 2,
+          "idle:late_season_no_crop_target": 19
+        },
+        "13": {
+          "actor_slots": 190,
+          "action:PLANT": 42,
+          "assigned_operation_attempts": 33,
+          "assigned_operation_match": 33,
+          "engine_atomic_plant_conflict": 42,
+          "task_blocked_by_resource_or_stage": 24,
+          "action:PASS": 61,
+          "unassigned_no_task": 59,
+          "idle:no_remaining_schedulable_task": 17,
+          "action:EAST": 33,
+          "travel_progress": 74,
+          "action:SOUTH": 39,
+          "action:WATER": 5,
+          "action:HARVEST": 4,
+          "idle:crop_target_waiting_seed": 22,
+          "action:NORTH": 1,
+          "action:COLLECT_FERTILIZER": 4,
+          "action:WEST": 1,
+          "idle:late_season_no_crop_target": 20
+        },
+        "14": {
+          "actor_slots": 190,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 37,
+          "assigned_operation_match": 37,
+          "engine_atomic_plant_conflict": 43,
+          "task_blocked_by_resource_or_stage": 25,
+          "action:PASS": 66,
+          "unassigned_no_task": 64,
+          "idle:no_remaining_schedulable_task": 21,
+          "action:SOUTH": 36,
+          "travel_progress": 64,
+          "action:EAST": 28,
+          "action:WATER": 5,
+          "idle:crop_target_waiting_seed": 22,
+          "action:COLLECT_FERTILIZER": 5,
+          "action:CARE": 5,
+          "action:HARVEST": 2,
+          "idle:late_season_no_crop_target": 21
+        },
+        "15": {
+          "actor_slots": 190,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 31,
+          "assigned_operation_match": 31,
+          "engine_atomic_plant_conflict": 43,
+          "task_blocked_by_resource_or_stage": 24,
+          "action:PASS": 71,
+          "unassigned_no_task": 70,
+          "idle:no_remaining_schedulable_task": 25,
+          "action:NORTH": 1,
+          "travel_progress": 64,
+          "action:SOUTH": 42,
+          "travel_no_progress": 1,
+          "action:EAST": 22,
+          "action:WATER": 1,
+          "idle:crop_target_waiting_seed": 24,
+          "action:HARVEST": 2,
+          "action:CARE": 5,
+          "action:COLLECT_FERTILIZER": 3,
+          "idle:late_season_no_crop_target": 21
+        },
+        "16": {
+          "actor_slots": 190,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 40,
+          "assigned_operation_match": 40,
+          "engine_atomic_plant_conflict": 43,
+          "task_blocked_by_resource_or_stage": 24,
+          "action:PASS": 79,
+          "unassigned_no_task": 78,
+          "idle:no_remaining_schedulable_task": 30,
+          "action:SOUTH": 34,
+          "travel_no_progress": 1,
+          "action:NORTH": 1,
+          "travel_progress": 47,
+          "action:COLLECT_FERTILIZER": 12,
+          "action:CARE": 7,
+          "idle:crop_target_waiting_seed": 27,
+          "action:EAST": 13,
+          "action:HARVEST": 1,
+          "idle:late_season_no_crop_target": 21
+        },
+        "17": {
+          "actor_slots": 190,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 38,
+          "assigned_operation_match": 38,
+          "engine_atomic_plant_conflict": 43,
+          "task_blocked_by_resource_or_stage": 23,
+          "action:PASS": 93,
+          "unassigned_no_task": 93,
+          "idle:no_remaining_schedulable_task": 38,
+          "action:NORTH": 2,
+          "travel_progress": 34,
+          "action:SOUTH": 20,
+          "travel_no_progress": 2,
+          "action:PICKUP": 1,
+          "action:EAST": 14,
+          "action:CARE": 8,
+          "action:COLLECT_FERTILIZER": 7,
+          "idle:crop_target_waiting_seed": 34,
+          "action:HARVEST": 2,
+          "idle:late_season_no_crop_target": 21
+        },
+        "18": {
+          "actor_slots": 190,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 44,
+          "assigned_operation_match": 44,
+          "engine_atomic_plant_conflict": 43,
+          "task_blocked_by_resource_or_stage": 23,
+          "action:PASS": 105,
+          "unassigned_no_task": 105,
+          "idle:no_remaining_schedulable_task": 44,
+          "action:SOUTH": 9,
+          "travel_no_progress": 2,
+          "action:NORTH": 2,
+          "travel_progress": 16,
+          "action:WEST": 1,
+          "action:CARE": 10,
+          "idle:crop_target_waiting_seed": 40,
+          "action:COLLECT_FERTILIZER": 11,
+          "action:PICKUP": 1,
+          "action:EAST": 6,
+          "action:HARVEST": 2,
+          "idle:late_season_no_crop_target": 21
+        },
+        "19": {
+          "actor_slots": 190,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 38,
+          "assigned_operation_match": 38,
+          "engine_atomic_plant_conflict": 43,
+          "task_blocked_by_resource_or_stage": 23,
+          "action:PASS": 123,
+          "unassigned_no_task": 123,
+          "idle:no_remaining_schedulable_task": 49,
+          "action:NORTH": 2,
+          "travel_progress": 4,
+          "action:SOUTH": 2,
+          "travel_no_progress": 2,
+          "action:PLACE": 2,
+          "action:COLLECT_FERTILIZER": 5,
+          "idle:crop_target_waiting_seed": 53,
+          "action:CARE": 11,
+          "action:WEST": 1,
+          "action:EAST": 1,
+          "idle:late_season_no_crop_target": 21
+        },
+        "20": {
+          "actor_slots": 190,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 23,
+          "assigned_operation_match": 23,
+          "engine_atomic_plant_conflict": 43,
+          "task_blocked_by_resource_or_stage": 23,
+          "action:PASS": 136,
+          "unassigned_no_task": 136,
+          "idle:no_remaining_schedulable_task": 51,
+          "action:SOUTH": 4,
+          "travel_no_progress": 3,
+          "action:NORTH": 2,
+          "travel_progress": 5,
+          "action:EAST": 1,
+          "action:WEST": 1,
+          "action:CARE": 2,
+          "idle:crop_target_waiting_seed": 64,
+          "action:FEED": 1,
+          "idle:late_season_no_crop_target": 21
+        },
+        "21": {
+          "actor_slots": 190,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 24,
+          "assigned_operation_match": 24,
+          "engine_atomic_plant_conflict": 43,
+          "task_blocked_by_resource_or_stage": 23,
+          "action:PASS": 139,
+          "unassigned_no_task": 139,
+          "idle:no_remaining_schedulable_task": 53,
+          "action:NORTH": 1,
+          "travel_progress": 2,
+          "action:SOUTH": 3,
+          "travel_no_progress": 2,
+          "action:PICKUP": 1,
+          "idle:crop_target_waiting_seed": 65,
+          "action:CARE": 2,
+          "action:COLLECT_FERTILIZER": 1,
+          "idle:late_season_no_crop_target": 21
+        },
+        "22": {
+          "actor_slots": 190,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 20,
+          "assigned_operation_match": 20,
+          "engine_atomic_plant_conflict": 43,
+          "task_blocked_by_resource_or_stage": 24,
+          "action:PASS": 142,
+          "unassigned_no_task": 141,
+          "idle:no_remaining_schedulable_task": 54,
+          "action:SOUTH": 2,
+          "travel_no_progress": 2,
+          "action:NORTH": 1,
+          "travel_progress": 3,
+          "action:WEST": 1,
+          "action:EAST": 1,
+          "idle:crop_target_waiting_seed": 66,
+          "idle:late_season_no_crop_target": 21
+        },
+        "23": {
+          "actor_slots": 183,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 22,
+          "assigned_operation_match": 22,
+          "engine_atomic_plant_conflict": 43,
+          "task_blocked_by_resource_or_stage": 24,
+          "action:PASS": 135,
+          "unassigned_no_task": 134,
+          "idle:no_remaining_schedulable_task": 54,
+          "action:NORTH": 1,
+          "travel_no_progress": 3,
+          "action:SOUTH": 1,
+          "action:FEED": 1,
+          "action:WEST": 1,
+          "idle:crop_target_waiting_seed": 66,
+          "action:COLLECT_FERTILIZER": 1,
+          "idle:late_season_no_crop_target": 14
+        }
+      },
+      "by_task": {
+        "BUILD_PASTURE": {
+          "action:BUILD_PASTURE": 3,
+          "assigned": 4,
+          "assigned_operation_attempts": 3,
+          "assigned_operation_match": 3,
+          "action:NORTH": 1,
+          "travel_progress": 1
+        },
+        "PLANT": {
+          "action:WEST": 166,
+          "assigned": 1007,
+          "travel_progress": 369,
+          "action:NORTH": 179,
+          "action:PLANT": 638,
+          "assigned_operation_attempts": 327,
+          "assigned_operation_match": 327,
+          "engine_atomic_plant_conflict": 608,
+          "task_blocked_by_resource_or_stage": 311,
+          "action:EAST": 22,
+          "action:SOUTH": 2
+        },
+        "WATER": {
+          "action:WATER": 150,
+          "assigned": 880,
+          "assigned_operation_attempts": 150,
+          "assigned_operation_match": 150,
+          "action:NORTH": 394,
+          "travel_progress": 730,
+          "action:WEST": 293,
+          "action:EAST": 43
+        },
+        "PICKUP": {
+          "action:PICKUP": 3,
+          "assigned": 16,
+          "assigned_operation_attempts": 3,
+          "assigned_operation_match": 3,
+          "action:EAST": 7,
+          "travel_progress": 13,
+          "action:SOUTH": 6
+        },
+        "PLACE": {
+          "action:NORTH": 1,
+          "assigned": 5,
+          "travel_progress": 2,
+          "action:PLACE": 3,
+          "assigned_operation_attempts": 3,
+          "assigned_operation_match": 3,
+          "action:WEST": 1
+        },
+        "FEED": {
+          "action:SOUTH": 16,
+          "assigned": 291,
+          "travel_no_progress": 18,
+          "action:PASS": 42,
+          "task_blocked_by_resource_or_stage": 42,
+          "action:PICKUP": 78,
+          "assigned_operation_attempts": 155,
+          "assigned_operation_match": 155,
+          "action:NORTH": 26,
+          "travel_progress": 76,
+          "action:FEED": 77,
+          "action:EAST": 3,
+          "action:WEST": 49
+        },
+        "CARE": {
+          "action:EAST": 48,
+          "assigned": 205,
+          "travel_progress": 144,
+          "action:SOUTH": 78,
+          "action:NORTH": 11,
+          "travel_no_progress": 2,
+          "action:CARE": 59,
+          "assigned_operation_attempts": 59,
+          "assigned_operation_match": 59,
+          "action:WEST": 9
+        },
+        "NO_TASK": {
+          "action:PASS": 1479
+        },
+        "COLLECT_FERTILIZER": {
+          "action:EAST": 102,
+          "assigned": 337,
+          "travel_progress": 264,
+          "action:SOUTH": 135,
+          "action:COLLECT_FERTILIZER": 73,
+          "assigned_operation_attempts": 73,
+          "assigned_operation_match": 73,
+          "action:NORTH": 15,
+          "action:WEST": 12
+        },
+        "HARVEST": {
+          "action:EAST": 36,
+          "assigned": 169,
+          "travel_progress": 118,
+          "action:HARVEST": 51,
+          "assigned_operation_attempts": 51,
+          "assigned_operation_match": 51,
+          "action:NORTH": 27,
+          "action:WEST": 35,
+          "action:SOUTH": 20
+        }
+      },
+      "per_day": {
+        "0": {
+          "actor_slots": 162,
+          "action:BUILD_PASTURE": 3,
+          "assigned_operation_attempts": 51,
+          "assigned_operation_match": 51,
+          "action:NORTH": 28,
+          "travel_progress": 50,
+          "action:WEST": 22,
+          "action:PLANT": 109,
+          "engine_atomic_plant_conflict": 109,
+          "task_blocked_by_resource_or_stage": 61
+        },
+        "1": {
+          "actor_slots": 162,
+          "action:WEST": 22,
+          "travel_progress": 52,
+          "action:NORTH": 28,
+          "action:PLANT": 109,
+          "assigned_operation_attempts": 82,
+          "assigned_operation_match": 82,
+          "engine_atomic_plant_conflict": 108,
+          "task_blocked_by_resource_or_stage": 28,
+          "action:WATER": 1,
+          "action:EAST": 2
+        },
+        "2": {
+          "actor_slots": 162,
+          "action:NORTH": 34,
+          "travel_progress": 59,
+          "action:WEST": 20,
+          "action:PICKUP": 1,
+          "assigned_operation_attempts": 17,
+          "assigned_operation_match": 17,
+          "action:PLACE": 1,
+          "action:SOUTH": 12,
+          "travel_no_progress": 11,
+          "action:WATER": 8,
+          "action:PASS": 75,
+          "task_blocked_by_resource_or_stage": 10,
+          "action:PLANT": 7,
+          "action:EAST": 4,
+          "unassigned_no_task": 65,
+          "idle:no_remaining_schedulable_task": 65
+        },
+        "3": {
+          "actor_slots": 116,
+          "action:PASS": 33,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 16,
+          "assigned_operation_match": 16,
+          "action:WEST": 22,
+          "travel_progress": 64,
+          "action:NORTH": 20,
+          "action:FEED": 2,
+          "action:WATER": 8,
+          "action:EAST": 16,
+          "action:SOUTH": 9,
+          "unassigned_no_task": 32,
+          "idle:no_remaining_schedulable_task": 32,
+          "action:COLLECT_FERTILIZER": 1,
+          "action:CARE": 1,
+          "action:PLACE": 1,
+          "travel_no_progress": 3
+        },
+        "4": {
+          "actor_slots": 116,
+          "action:PICKUP": 1,
+          "assigned_operation_attempts": 14,
+          "assigned_operation_match": 14,
+          "action:WEST": 17,
+          "travel_progress": 60,
+          "action:NORTH": 20,
+          "action:PASS": 36,
+          "task_blocked_by_resource_or_stage": 16,
+          "action:FEED": 1,
+          "action:EAST": 14,
+          "action:SOUTH": 15,
+          "travel_no_progress": 6,
+          "action:WATER": 8,
+          "action:COLLECT_FERTILIZER": 2,
+          "unassigned_no_task": 20,
+          "idle:no_remaining_schedulable_task": 20,
+          "action:CARE": 2
+        },
+        "5": {
+          "actor_slots": 116,
+          "action:PASS": 34,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 18,
+          "assigned_operation_match": 18,
+          "action:WEST": 18,
+          "travel_progress": 64,
+          "action:NORTH": 20,
+          "action:FEED": 2,
+          "action:WATER": 8,
+          "action:EAST": 13,
+          "action:SOUTH": 13,
+          "action:HARVEST": 1,
+          "unassigned_no_task": 33,
+          "idle:crop_target_waiting_seed": 33,
+          "action:COLLECT_FERTILIZER": 2,
+          "action:CARE": 2
+        },
+        "6": {
+          "actor_slots": 139,
+          "action:PICKUP": 4,
+          "assigned_operation_attempts": 27,
+          "assigned_operation_match": 27,
+          "action:WEST": 24,
+          "travel_progress": 86,
+          "action:FEED": 3,
+          "action:NORTH": 25,
+          "action:WATER": 7,
+          "action:EAST": 18,
+          "action:HARVEST": 7,
+          "action:SOUTH": 19,
+          "action:PASS": 26,
+          "unassigned_no_task": 26,
+          "idle:crop_target_waiting_seed": 26,
+          "action:COLLECT_FERTILIZER": 2,
+          "action:CARE": 3,
+          "action:PLACE": 1
+        },
+        "7": {
+          "actor_slots": 162,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 12,
+          "assigned_operation_match": 12,
+          "action:WEST": 6,
+          "travel_progress": 12,
+          "action:NORTH": 5,
+          "action:FEED": 3,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3,
+          "action:EAST": 1,
+          "action:PASS": 138,
+          "unassigned_no_task": 138,
+          "idle:crop_target_waiting_seed": 138
+        },
+        "8": {
+          "actor_slots": 162,
+          "action:PASS": 1,
+          "task_blocked_by_resource_or_stage": 70,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 39,
+          "assigned_operation_match": 39,
+          "action:NORTH": 29,
+          "travel_progress": 53,
+          "action:WEST": 22,
+          "action:FEED": 3,
+          "action:HARVEST": 1,
+          "action:PLANT": 100,
+          "engine_atomic_plant_conflict": 99,
+          "action:WATER": 1,
+          "action:EAST": 2
+        },
+        "9": {
+          "actor_slots": 162,
+          "action:PASS": 20,
+          "task_blocked_by_resource_or_stage": 27,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 48,
+          "assigned_operation_match": 48,
+          "action:NORTH": 28,
+          "travel_progress": 68,
+          "action:WEST": 23,
+          "action:FEED": 3,
+          "action:HARVEST": 1,
+          "action:WATER": 4,
+          "action:EAST": 8,
+          "action:PLANT": 57,
+          "engine_atomic_plant_conflict": 54,
+          "action:SOUTH": 9,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3,
+          "unassigned_no_task": 19,
+          "idle:no_remaining_schedulable_task": 19
+        },
+        "10": {
+          "actor_slots": 162,
+          "action:PASS": 24,
+          "task_blocked_by_resource_or_stage": 28,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 44,
+          "assigned_operation_match": 44,
+          "action:NORTH": 26,
+          "travel_progress": 67,
+          "action:WEST": 24,
+          "action:FEED": 3,
+          "action:WATER": 4,
+          "action:EAST": 10,
+          "action:SOUTH": 7,
+          "action:PLANT": 55,
+          "engine_atomic_plant_conflict": 55,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3,
+          "unassigned_no_task": 23,
+          "idle:no_remaining_schedulable_task": 23
+        },
+        "11": {
+          "actor_slots": 162,
+          "action:PASS": 71,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 25,
+          "assigned_operation_match": 25,
+          "action:NORTH": 25,
+          "travel_progress": 66,
+          "action:WEST": 23,
+          "action:FEED": 3,
+          "action:HARVEST": 1,
+          "action:WATER": 8,
+          "action:EAST": 10,
+          "action:SOUTH": 8,
+          "action:PLANT": 4,
+          "action:COLLECT_FERTILIZER": 3,
+          "unassigned_no_task": 70,
+          "idle:no_remaining_schedulable_task": 70,
+          "action:CARE": 3
+        },
+        "12": {
+          "actor_slots": 116,
+          "action:PASS": 24,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 23,
+          "assigned_operation_match": 23,
+          "action:NORTH": 20,
+          "travel_progress": 69,
+          "action:WEST": 18,
+          "action:FEED": 3,
+          "action:WATER": 8,
+          "action:EAST": 15,
+          "action:SOUTH": 16,
+          "action:HARVEST": 3,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3,
+          "unassigned_no_task": 23,
+          "idle:crop_target_waiting_seed": 23
+        },
+        "13": {
+          "actor_slots": 139,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 22,
+          "assigned_operation_match": 22,
+          "action:WEST": 20,
+          "travel_progress": 77,
+          "action:NORTH": 24,
+          "action:FEED": 3,
+          "action:WATER": 7,
+          "action:EAST": 15,
+          "action:HARVEST": 3,
+          "action:SOUTH": 18,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:PASS": 40,
+          "unassigned_no_task": 40,
+          "idle:crop_target_waiting_seed": 40,
+          "action:CARE": 3
+        },
+        "14": {
+          "actor_slots": 162,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 17,
+          "assigned_operation_match": 17,
+          "action:WEST": 16,
+          "travel_progress": 38,
+          "action:NORTH": 20,
+          "action:FEED": 3,
+          "action:HARVEST": 1,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:SOUTH": 1,
+          "action:CARE": 3,
+          "action:EAST": 1,
+          "action:WATER": 4,
+          "action:PASS": 107,
+          "unassigned_no_task": 107,
+          "idle:crop_target_waiting_seed": 107
+        },
+        "15": {
+          "actor_slots": 139,
+          "action:PASS": 30,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 28,
+          "assigned_operation_match": 28,
+          "action:NORTH": 23,
+          "travel_progress": 81,
+          "action:WEST": 25,
+          "action:FEED": 3,
+          "action:WATER": 7,
+          "action:EAST": 19,
+          "action:HARVEST": 6,
+          "action:SOUTH": 14,
+          "action:PLANT": 3,
+          "action:COLLECT_FERTILIZER": 3,
+          "unassigned_no_task": 29,
+          "idle:crop_target_waiting_seed": 29,
+          "action:CARE": 3
+        },
+        "16": {
+          "actor_slots": 162,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 15,
+          "assigned_operation_match": 15,
+          "action:WEST": 16,
+          "travel_progress": 32,
+          "action:NORTH": 16,
+          "action:FEED": 3,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3,
+          "action:PASS": 115,
+          "unassigned_no_task": 115,
+          "idle:crop_target_waiting_seed": 115,
+          "action:WATER": 3
+        },
+        "17": {
+          "actor_slots": 162,
+          "action:PASS": 6,
+          "task_blocked_by_resource_or_stage": 27,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 61,
+          "assigned_operation_match": 61,
+          "action:NORTH": 28,
+          "travel_progress": 69,
+          "action:WEST": 23,
+          "action:FEED": 3,
+          "action:HARVEST": 1,
+          "action:PLANT": 71,
+          "engine_atomic_plant_conflict": 71,
+          "action:WATER": 3,
+          "action:EAST": 11,
+          "action:SOUTH": 7,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3,
+          "unassigned_no_task": 5,
+          "idle:no_remaining_schedulable_task": 5
+        },
+        "18": {
+          "actor_slots": 162,
+          "action:PASS": 58,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 23,
+          "assigned_operation_match": 23,
+          "action:NORTH": 28,
+          "travel_progress": 81,
+          "action:WEST": 22,
+          "action:FEED": 3,
+          "action:HARVEST": 2,
+          "action:PLANT": 3,
+          "action:WATER": 6,
+          "action:SOUTH": 18,
+          "action:EAST": 13,
+          "unassigned_no_task": 57,
+          "idle:crop_target_waiting_seed": 57,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3
+        },
+        "19": {
+          "actor_slots": 139,
+          "action:PASS": 1,
+          "task_blocked_by_resource_or_stage": 35,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 42,
+          "assigned_operation_match": 42,
+          "action:NORTH": 26,
+          "travel_progress": 62,
+          "action:WEST": 23,
+          "action:FEED": 3,
+          "action:WATER": 6,
+          "action:EAST": 8,
+          "action:HARVEST": 3,
+          "action:SOUTH": 5,
+          "action:PLANT": 58,
+          "engine_atomic_plant_conflict": 58,
+          "action:COLLECT_FERTILIZER": 3
+        },
+        "20": {
+          "actor_slots": 162,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 32,
+          "assigned_operation_match": 32,
+          "action:WEST": 24,
+          "travel_progress": 69,
+          "action:NORTH": 27,
+          "action:FEED": 3,
+          "action:HARVEST": 1,
+          "action:WATER": 4,
+          "action:EAST": 10,
+          "action:PLANT": 55,
+          "engine_atomic_plant_conflict": 54,
+          "task_blocked_by_resource_or_stage": 40,
+          "action:SOUTH": 8,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3,
+          "action:PASS": 21,
+          "unassigned_no_task": 21,
+          "idle:no_remaining_schedulable_task": 21
+        },
+        "21": {
+          "actor_slots": 139,
+          "action:PASS": 58,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 26,
+          "assigned_operation_match": 26,
+          "action:NORTH": 21,
+          "travel_progress": 55,
+          "action:WEST": 20,
+          "action:FEED": 3,
+          "action:SOUTH": 8,
+          "action:HARVEST": 2,
+          "action:WATER": 8,
+          "action:EAST": 6,
+          "action:PLANT": 4,
+          "action:COLLECT_FERTILIZER": 3,
+          "unassigned_no_task": 57,
+          "idle:no_remaining_schedulable_task": 57,
+          "action:CARE": 3
+        },
+        "22": {
+          "actor_slots": 116,
+          "action:PASS": 25,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 23,
+          "assigned_operation_match": 23,
+          "action:NORTH": 20,
+          "travel_progress": 68,
+          "action:WEST": 18,
+          "action:FEED": 3,
+          "action:WATER": 8,
+          "action:EAST": 14,
+          "action:HARVEST": 3,
+          "action:SOUTH": 16,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3,
+          "unassigned_no_task": 24,
+          "idle:crop_target_waiting_seed": 24
+        },
+        "23": {
+          "actor_slots": 139,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 24,
+          "assigned_operation_match": 24,
+          "action:WEST": 21,
+          "travel_progress": 79,
+          "action:NORTH": 24,
+          "action:FEED": 3,
+          "action:HARVEST": 1,
+          "action:WATER": 8,
+          "action:EAST": 16,
+          "action:PLANT": 3,
+          "action:SOUTH": 18,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:PASS": 36,
+          "unassigned_no_task": 36,
+          "idle:no_remaining_schedulable_task": 36,
+          "action:CARE": 3
+        },
+        "24": {
+          "actor_slots": 116,
+          "action:PASS": 23,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 23,
+          "assigned_operation_match": 23,
+          "action:NORTH": 20,
+          "travel_progress": 70,
+          "action:WEST": 18,
+          "action:FEED": 3,
+          "action:WATER": 8,
+          "action:EAST": 15,
+          "action:SOUTH": 17,
+          "action:HARVEST": 3,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3,
+          "unassigned_no_task": 22,
+          "idle:crop_target_waiting_seed": 22
+        },
+        "25": {
+          "actor_slots": 116,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 23,
+          "assigned_operation_match": 23,
+          "action:WEST": 19,
+          "travel_progress": 70,
+          "action:NORTH": 20,
+          "action:FEED": 3,
+          "action:WATER": 7,
+          "action:EAST": 16,
+          "action:HARVEST": 4,
+          "action:SOUTH": 15,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3,
+          "action:PASS": 23,
+          "unassigned_no_task": 23,
+          "idle:no_remaining_schedulable_task": 23
+        },
+        "26": {
+          "actor_slots": 162,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 13,
+          "assigned_operation_match": 13,
+          "action:WEST": 11,
+          "travel_progress": 26,
+          "action:NORTH": 15,
+          "action:FEED": 3,
+          "action:HARVEST": 1,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:PASS": 123,
+          "unassigned_no_task": 123,
+          "idle:no_remaining_schedulable_task": 123,
+          "action:WATER": 3
+        },
+        "27": {
+          "actor_slots": 162,
+          "action:PASS": 94,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 17,
+          "assigned_operation_match": 17,
+          "action:NORTH": 24,
+          "travel_progress": 51,
+          "action:WEST": 19,
+          "action:FEED": 3,
+          "action:HARVEST": 5,
+          "action:EAST": 4,
+          "action:WATER": 3,
+          "action:COLLECT_FERTILIZER": 3,
+          "unassigned_no_task": 93,
+          "idle:no_remaining_schedulable_task": 2,
+          "action:SOUTH": 4,
+          "idle:late_season_no_crop_target": 91
+        },
+        "28": {
+          "actor_slots": 162,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 9,
+          "assigned_operation_match": 9,
+          "action:WEST": 4,
+          "travel_progress": 8,
+          "action:PASS": 145,
+          "unassigned_no_task": 145,
+          "idle:late_season_no_crop_target": 145,
+          "action:NORTH": 4,
+          "action:FEED": 3,
+          "action:COLLECT_FERTILIZER": 3
+        },
+        "29": {
+          "actor_slots": 155,
+          "action:PASS": 134,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 10,
+          "assigned_operation_match": 10,
+          "action:NORTH": 6,
+          "travel_progress": 11,
+          "action:WEST": 5,
+          "action:FEED": 3,
+          "action:HARVEST": 1,
+          "action:COLLECT_FERTILIZER": 3,
+          "unassigned_no_task": 133,
+          "idle:late_season_no_crop_target": 133
+        }
+      },
+      "atomic_seed_conflicts": [
+        {
+          "day": 0,
+          "hour": 8,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 0,
+          "hour": 9,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 10,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 11,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 12,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 13,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 14,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 15,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 16,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 17,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 18,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 19,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 20,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 21,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 22,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 23,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 8,
+          "requested": {
+            "WHEAT": 6
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 6
+          }
+        },
+        {
+          "day": 1,
+          "hour": 9,
+          "requested": {
+            "WHEAT": 6
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 6
+          }
+        },
+        {
+          "day": 1,
+          "hour": 10,
+          "requested": {
+            "WHEAT": 6
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 6
+          }
+        },
+        {
+          "day": 1,
+          "hour": 11,
+          "requested": {
+            "WHEAT": 6
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 6
+          }
+        },
+        {
+          "day": 1,
+          "hour": 12,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 13,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 14,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 15,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 16,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 17,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 18,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 19,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 20,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 21,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 22,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 23,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 9,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 8,
+          "hour": 10,
+          "requested": {
+            "WHEAT": 6
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 6
+          }
+        },
+        {
+          "day": 8,
+          "hour": 11,
+          "requested": {
+            "WHEAT": 6
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 6
+          }
+        },
+        {
+          "day": 8,
+          "hour": 12,
+          "requested": {
+            "WHEAT": 6
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 6
+          }
+        },
+        {
+          "day": 8,
+          "hour": 13,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 14,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 15,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 16,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 17,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 18,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 19,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 20,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 21,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 22,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 23,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 9,
+          "hour": 10,
+          "requested": {
+            "WHEAT": 3
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 3
+          }
+        },
+        {
+          "day": 9,
+          "hour": 11,
+          "requested": {
+            "WHEAT": 3
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 3
+          }
+        },
+        {
+          "day": 9,
+          "hour": 12,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 13,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 14,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 15,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 16,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 17,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 18,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 19,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 20,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 21,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 22,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 23,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 10,
+          "requested": {
+            "WHEAT": 3
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 3
+          }
+        },
+        {
+          "day": 10,
+          "hour": 11,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 12,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 13,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 14,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 15,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 16,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 17,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 18,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 19,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 20,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 21,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 22,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 23,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 17,
+          "hour": 9,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 17,
+          "hour": 10,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 17,
+          "hour": 11,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 17,
+          "hour": 12,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 17,
+          "hour": 13,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 17,
+          "hour": 14,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 17,
+          "hour": 15,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 17,
+          "hour": 16,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 17,
+          "hour": 17,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 17,
+          "hour": 18,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 17,
+          "hour": 19,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 17,
+          "hour": 20,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 17,
+          "hour": 21,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 17,
+          "hour": 22,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 17,
+          "hour": 23,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 19,
+          "hour": 12,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 19,
+          "hour": 13,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 19,
+          "hour": 14,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 19,
+          "hour": 15,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 19,
+          "hour": 16,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 19,
+          "hour": 17,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 19,
+          "hour": 18,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 19,
+          "hour": 19,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 19,
+          "hour": 20,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 19,
+          "hour": 21,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 19,
+          "hour": 22,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 19,
+          "hour": 23,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 20,
+          "hour": 10,
+          "requested": {
+            "WHEAT": 2
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 2
+          }
+        },
+        {
+          "day": 20,
+          "hour": 11,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 12,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 13,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 14,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 15,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 16,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 17,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 18,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 19,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 20,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 21,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 22,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 23,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        }
+      ]
+    },
+    {
+      "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/rl_design/probe95100/candidate1/replays/v50-seed-95100-ba-repeat-0.json",
+      "seat": 1,
+      "candidate_hash": null,
+      "param_vector": {
+        "crop_target": 8,
+        "herd_target": 3,
+        "staff_target": 6,
+        "cash_reserve": 700,
+        "wheat_reserve": 3
+      },
+      "counts": {
+        "actor_slots": 4393,
+        "action:BUILD_PASTURE": 3,
+        "assigned_operation_attempts": 824,
+        "assigned_operation_match": 824,
+        "action:NORTH": 654,
+        "travel_progress": 1717,
+        "action:WEST": 565,
+        "action:PLANT": 638,
+        "engine_atomic_plant_conflict": 608,
+        "task_blocked_by_resource_or_stage": 353,
+        "action:WATER": 150,
+        "action:EAST": 261,
+        "action:PICKUP": 81,
+        "action:PLACE": 3,
+        "action:SOUTH": 257,
+        "travel_no_progress": 20,
+        "action:PASS": 1521,
+        "unassigned_no_task": 1479,
+        "idle:no_remaining_schedulable_task": 496,
+        "action:FEED": 77,
+        "action:COLLECT_FERTILIZER": 73,
+        "action:CARE": 59,
+        "action:HARVEST": 51,
+        "idle:crop_target_waiting_seed": 614,
+        "idle:late_season_no_crop_target": 369
+      },
+      "action_reproduction": {
+        "same_action": 4082,
+        "different_action": 311
+      },
+      "target_churn": {
+        "target_changes_midday": 14
+      },
+      "per_hour_of_day": {
+        "0": {
+          "actor_slots": 30,
+          "action:BUILD_PASTURE": 1,
+          "assigned_operation_attempts": 12,
+          "assigned_operation_match": 12,
+          "action:WEST": 1,
+          "travel_progress": 2,
+          "action:NORTH": 1,
+          "action:PASS": 16,
+          "task_blocked_by_resource_or_stage": 16,
+          "action:PICKUP": 11
+        },
+        "1": {
+          "actor_slots": 190,
+          "action:NORTH": 65,
+          "travel_progress": 123,
+          "action:WEST": 58,
+          "action:PICKUP": 65,
+          "assigned_operation_attempts": 65,
+          "assigned_operation_match": 65,
+          "action:PASS": 2,
+          "task_blocked_by_resource_or_stage": 1,
+          "unassigned_no_task": 1,
+          "idle:late_season_no_crop_target": 1
+        },
+        "2": {
+          "actor_slots": 190,
+          "action:BUILD_PASTURE": 1,
+          "assigned_operation_attempts": 16,
+          "assigned_operation_match": 16,
+          "action:WEST": 106,
+          "travel_progress": 172,
+          "action:NORTH": 66,
+          "action:FEED": 11,
+          "action:PASS": 2,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 2,
+          "action:COLLECT_FERTILIZER": 2,
+          "unassigned_no_task": 1,
+          "idle:late_season_no_crop_target": 1
+        },
+        "3": {
+          "actor_slots": 190,
+          "action:WEST": 41,
+          "travel_progress": 108,
+          "action:BUILD_PASTURE": 1,
+          "assigned_operation_attempts": 78,
+          "assigned_operation_match": 78,
+          "action:NORTH": 66,
+          "action:PLACE": 1,
+          "action:FEED": 62,
+          "action:PASS": 4,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:COLLECT_FERTILIZER": 8,
+          "action:CARE": 1,
+          "action:EAST": 1,
+          "action:HARVEST": 5,
+          "unassigned_no_task": 3,
+          "idle:late_season_no_crop_target": 3
+        },
+        "4": {
+          "actor_slots": 190,
+          "action:WEST": 66,
+          "travel_progress": 153,
+          "action:NORTH": 85,
+          "action:SOUTH": 2,
+          "travel_no_progress": 1,
+          "action:EAST": 1,
+          "action:FEED": 2,
+          "assigned_operation_attempts": 16,
+          "assigned_operation_match": 16,
+          "action:PASS": 20,
+          "unassigned_no_task": 20,
+          "idle:crop_target_waiting_seed": 5,
+          "action:CARE": 3,
+          "action:HARVEST": 5,
+          "action:COLLECT_FERTILIZER": 6,
+          "idle:no_remaining_schedulable_task": 1,
+          "idle:late_season_no_crop_target": 14
+        },
+        "5": {
+          "actor_slots": 190,
+          "action:WEST": 69,
+          "travel_progress": 153,
+          "action:NORTH": 83,
+          "action:WATER": 1,
+          "assigned_operation_attempts": 8,
+          "assigned_operation_match": 8,
+          "action:PASS": 28,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:SOUTH": 2,
+          "travel_no_progress": 1,
+          "unassigned_no_task": 27,
+          "idle:crop_target_waiting_seed": 9,
+          "action:COLLECT_FERTILIZER": 1,
+          "action:CARE": 2,
+          "action:HARVEST": 4,
+          "idle:no_remaining_schedulable_task": 4,
+          "idle:late_season_no_crop_target": 14
+        },
+        "6": {
+          "actor_slots": 190,
+          "action:NORTH": 79,
+          "travel_progress": 156,
+          "action:WEST": 75,
+          "action:PASS": 31,
+          "task_blocked_by_resource_or_stage": 2,
+          "unassigned_no_task": 29,
+          "idle:crop_target_waiting_seed": 11,
+          "action:CARE": 1,
+          "assigned_operation_attempts": 3,
+          "assigned_operation_match": 3,
+          "action:COLLECT_FERTILIZER": 1,
+          "action:EAST": 2,
+          "action:WATER": 1,
+          "idle:no_remaining_schedulable_task": 4,
+          "idle:late_season_no_crop_target": 14
+        },
+        "7": {
+          "actor_slots": 190,
+          "action:WEST": 69,
+          "travel_progress": 145,
+          "action:NORTH": 76,
+          "action:PLANT": 1,
+          "assigned_operation_attempts": 12,
+          "assigned_operation_match": 12,
+          "action:PASS": 33,
+          "task_blocked_by_resource_or_stage": 2,
+          "unassigned_no_task": 31,
+          "idle:crop_target_waiting_seed": 13,
+          "action:WATER": 8,
+          "action:CARE": 2,
+          "idle:no_remaining_schedulable_task": 4,
+          "action:HARVEST": 1,
+          "idle:late_season_no_crop_target": 14
+        },
+        "8": {
+          "actor_slots": 190,
+          "action:NORTH": 67,
+          "travel_progress": 119,
+          "action:PLANT": 15,
+          "assigned_operation_attempts": 33,
+          "assigned_operation_match": 33,
+          "engine_atomic_plant_conflict": 10,
+          "task_blocked_by_resource_or_stage": 4,
+          "action:WATER": 19,
+          "action:PASS": 36,
+          "action:WEST": 47,
+          "unassigned_no_task": 34,
+          "idle:crop_target_waiting_seed": 15,
+          "action:EAST": 5,
+          "idle:no_remaining_schedulable_task": 5,
+          "action:HARVEST": 1,
+          "idle:late_season_no_crop_target": 14
+        },
+        "9": {
+          "actor_slots": 190,
+          "action:PLANT": 30,
+          "assigned_operation_attempts": 67,
+          "assigned_operation_match": 67,
+          "engine_atomic_plant_conflict": 21,
+          "task_blocked_by_resource_or_stage": 10,
+          "action:EAST": 15,
+          "travel_progress": 75,
+          "action:PASS": 40,
+          "action:WATER": 42,
+          "action:NORTH": 38,
+          "unassigned_no_task": 38,
+          "idle:crop_target_waiting_seed": 15,
+          "action:SOUTH": 4,
+          "action:WEST": 18,
+          "idle:no_remaining_schedulable_task": 9,
+          "action:HARVEST": 2,
+          "action:COLLECT_FERTILIZER": 1,
+          "idle:late_season_no_crop_target": 14
+        },
+        "10": {
+          "actor_slots": 190,
+          "action:PLANT": 37,
+          "assigned_operation_attempts": 68,
+          "assigned_operation_match": 68,
+          "engine_atomic_plant_conflict": 31,
+          "task_blocked_by_resource_or_stage": 15,
+          "action:EAST": 34,
+          "travel_progress": 60,
+          "action:WATER": 41,
+          "action:PASS": 49,
+          "unassigned_no_task": 47,
+          "idle:no_remaining_schedulable_task": 9,
+          "action:NORTH": 10,
+          "action:WEST": 7,
+          "idle:crop_target_waiting_seed": 19,
+          "action:SOUTH": 9,
+          "action:HARVEST": 3,
+          "idle:late_season_no_crop_target": 19
+        },
+        "11": {
+          "actor_slots": 190,
+          "action:PLANT": 40,
+          "assigned_operation_attempts": 52,
+          "assigned_operation_match": 52,
+          "engine_atomic_plant_conflict": 34,
+          "task_blocked_by_resource_or_stage": 18,
+          "action:NORTH": 3,
+          "travel_progress": 68,
+          "action:PASS": 54,
+          "unassigned_no_task": 52,
+          "idle:no_remaining_schedulable_task": 11,
+          "action:EAST": 45,
+          "action:WATER": 15,
+          "action:SOUTH": 19,
+          "action:HARVEST": 10,
+          "idle:crop_target_waiting_seed": 22,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:WEST": 1,
+          "idle:late_season_no_crop_target": 19
+        },
+        "12": {
+          "actor_slots": 190,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 44,
+          "assigned_operation_match": 44,
+          "engine_atomic_plant_conflict": 40,
+          "task_blocked_by_resource_or_stage": 22,
+          "action:PASS": 56,
+          "unassigned_no_task": 54,
+          "idle:no_remaining_schedulable_task": 13,
+          "action:SOUTH": 29,
+          "travel_progress": 70,
+          "action:WATER": 12,
+          "action:EAST": 39,
+          "action:HARVEST": 7,
+          "action:WEST": 1,
+          "idle:crop_target_waiting_seed": 22,
+          "action:NORTH": 1,
+          "action:COLLECT_FERTILIZER": 2,
+          "idle:late_season_no_crop_target": 19
+        },
+        "13": {
+          "actor_slots": 190,
+          "action:PLANT": 42,
+          "assigned_operation_attempts": 33,
+          "assigned_operation_match": 33,
+          "engine_atomic_plant_conflict": 42,
+          "task_blocked_by_resource_or_stage": 24,
+          "action:PASS": 61,
+          "unassigned_no_task": 59,
+          "idle:no_remaining_schedulable_task": 17,
+          "action:EAST": 33,
+          "travel_progress": 74,
+          "action:SOUTH": 39,
+          "action:WATER": 5,
+          "action:HARVEST": 4,
+          "idle:crop_target_waiting_seed": 22,
+          "action:NORTH": 1,
+          "action:COLLECT_FERTILIZER": 4,
+          "action:WEST": 1,
+          "idle:late_season_no_crop_target": 20
+        },
+        "14": {
+          "actor_slots": 190,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 37,
+          "assigned_operation_match": 37,
+          "engine_atomic_plant_conflict": 43,
+          "task_blocked_by_resource_or_stage": 25,
+          "action:PASS": 66,
+          "unassigned_no_task": 64,
+          "idle:no_remaining_schedulable_task": 21,
+          "action:SOUTH": 36,
+          "travel_progress": 64,
+          "action:EAST": 28,
+          "action:WATER": 5,
+          "idle:crop_target_waiting_seed": 22,
+          "action:COLLECT_FERTILIZER": 5,
+          "action:CARE": 5,
+          "action:HARVEST": 2,
+          "idle:late_season_no_crop_target": 21
+        },
+        "15": {
+          "actor_slots": 190,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 31,
+          "assigned_operation_match": 31,
+          "engine_atomic_plant_conflict": 43,
+          "task_blocked_by_resource_or_stage": 24,
+          "action:PASS": 71,
+          "unassigned_no_task": 70,
+          "idle:no_remaining_schedulable_task": 25,
+          "action:NORTH": 1,
+          "travel_progress": 64,
+          "action:SOUTH": 42,
+          "travel_no_progress": 1,
+          "action:EAST": 22,
+          "action:WATER": 1,
+          "idle:crop_target_waiting_seed": 24,
+          "action:HARVEST": 2,
+          "action:CARE": 5,
+          "action:COLLECT_FERTILIZER": 3,
+          "idle:late_season_no_crop_target": 21
+        },
+        "16": {
+          "actor_slots": 190,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 40,
+          "assigned_operation_match": 40,
+          "engine_atomic_plant_conflict": 43,
+          "task_blocked_by_resource_or_stage": 24,
+          "action:PASS": 79,
+          "unassigned_no_task": 78,
+          "idle:no_remaining_schedulable_task": 30,
+          "action:SOUTH": 34,
+          "travel_no_progress": 1,
+          "action:NORTH": 1,
+          "travel_progress": 47,
+          "action:COLLECT_FERTILIZER": 12,
+          "action:CARE": 7,
+          "idle:crop_target_waiting_seed": 27,
+          "action:EAST": 13,
+          "action:HARVEST": 1,
+          "idle:late_season_no_crop_target": 21
+        },
+        "17": {
+          "actor_slots": 190,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 38,
+          "assigned_operation_match": 38,
+          "engine_atomic_plant_conflict": 43,
+          "task_blocked_by_resource_or_stage": 23,
+          "action:PASS": 93,
+          "unassigned_no_task": 93,
+          "idle:no_remaining_schedulable_task": 38,
+          "action:NORTH": 2,
+          "travel_progress": 34,
+          "action:SOUTH": 20,
+          "travel_no_progress": 2,
+          "action:PICKUP": 1,
+          "action:EAST": 14,
+          "action:CARE": 8,
+          "action:COLLECT_FERTILIZER": 7,
+          "idle:crop_target_waiting_seed": 34,
+          "action:HARVEST": 2,
+          "idle:late_season_no_crop_target": 21
+        },
+        "18": {
+          "actor_slots": 190,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 44,
+          "assigned_operation_match": 44,
+          "engine_atomic_plant_conflict": 43,
+          "task_blocked_by_resource_or_stage": 23,
+          "action:PASS": 105,
+          "unassigned_no_task": 105,
+          "idle:no_remaining_schedulable_task": 44,
+          "action:SOUTH": 9,
+          "travel_no_progress": 2,
+          "action:NORTH": 2,
+          "travel_progress": 16,
+          "action:WEST": 1,
+          "action:CARE": 10,
+          "idle:crop_target_waiting_seed": 40,
+          "action:COLLECT_FERTILIZER": 11,
+          "action:PICKUP": 1,
+          "action:EAST": 6,
+          "action:HARVEST": 2,
+          "idle:late_season_no_crop_target": 21
+        },
+        "19": {
+          "actor_slots": 190,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 38,
+          "assigned_operation_match": 38,
+          "engine_atomic_plant_conflict": 43,
+          "task_blocked_by_resource_or_stage": 23,
+          "action:PASS": 123,
+          "unassigned_no_task": 123,
+          "idle:no_remaining_schedulable_task": 49,
+          "action:NORTH": 2,
+          "travel_progress": 4,
+          "action:SOUTH": 2,
+          "travel_no_progress": 2,
+          "action:PLACE": 2,
+          "action:COLLECT_FERTILIZER": 5,
+          "idle:crop_target_waiting_seed": 53,
+          "action:CARE": 11,
+          "action:WEST": 1,
+          "action:EAST": 1,
+          "idle:late_season_no_crop_target": 21
+        },
+        "20": {
+          "actor_slots": 190,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 23,
+          "assigned_operation_match": 23,
+          "engine_atomic_plant_conflict": 43,
+          "task_blocked_by_resource_or_stage": 23,
+          "action:PASS": 136,
+          "unassigned_no_task": 136,
+          "idle:no_remaining_schedulable_task": 51,
+          "action:SOUTH": 4,
+          "travel_no_progress": 3,
+          "action:NORTH": 2,
+          "travel_progress": 5,
+          "action:EAST": 1,
+          "action:WEST": 1,
+          "action:CARE": 2,
+          "idle:crop_target_waiting_seed": 64,
+          "action:FEED": 1,
+          "idle:late_season_no_crop_target": 21
+        },
+        "21": {
+          "actor_slots": 190,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 24,
+          "assigned_operation_match": 24,
+          "engine_atomic_plant_conflict": 43,
+          "task_blocked_by_resource_or_stage": 23,
+          "action:PASS": 139,
+          "unassigned_no_task": 139,
+          "idle:no_remaining_schedulable_task": 53,
+          "action:NORTH": 1,
+          "travel_progress": 2,
+          "action:SOUTH": 3,
+          "travel_no_progress": 2,
+          "action:PICKUP": 1,
+          "idle:crop_target_waiting_seed": 65,
+          "action:CARE": 2,
+          "action:COLLECT_FERTILIZER": 1,
+          "idle:late_season_no_crop_target": 21
+        },
+        "22": {
+          "actor_slots": 190,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 20,
+          "assigned_operation_match": 20,
+          "engine_atomic_plant_conflict": 43,
+          "task_blocked_by_resource_or_stage": 24,
+          "action:PASS": 142,
+          "unassigned_no_task": 141,
+          "idle:no_remaining_schedulable_task": 54,
+          "action:SOUTH": 2,
+          "travel_no_progress": 2,
+          "action:NORTH": 1,
+          "travel_progress": 3,
+          "action:WEST": 1,
+          "action:EAST": 1,
+          "idle:crop_target_waiting_seed": 66,
+          "idle:late_season_no_crop_target": 21
+        },
+        "23": {
+          "actor_slots": 183,
+          "action:PLANT": 43,
+          "assigned_operation_attempts": 22,
+          "assigned_operation_match": 22,
+          "engine_atomic_plant_conflict": 43,
+          "task_blocked_by_resource_or_stage": 24,
+          "action:PASS": 135,
+          "unassigned_no_task": 134,
+          "idle:no_remaining_schedulable_task": 54,
+          "action:NORTH": 1,
+          "travel_no_progress": 3,
+          "action:SOUTH": 1,
+          "action:FEED": 1,
+          "action:WEST": 1,
+          "idle:crop_target_waiting_seed": 66,
+          "action:COLLECT_FERTILIZER": 1,
+          "idle:late_season_no_crop_target": 14
+        }
+      },
+      "by_task": {
+        "BUILD_PASTURE": {
+          "action:BUILD_PASTURE": 3,
+          "assigned": 4,
+          "assigned_operation_attempts": 3,
+          "assigned_operation_match": 3,
+          "action:NORTH": 1,
+          "travel_progress": 1
+        },
+        "PLANT": {
+          "action:WEST": 166,
+          "assigned": 1007,
+          "travel_progress": 369,
+          "action:NORTH": 179,
+          "action:PLANT": 638,
+          "assigned_operation_attempts": 327,
+          "assigned_operation_match": 327,
+          "engine_atomic_plant_conflict": 608,
+          "task_blocked_by_resource_or_stage": 311,
+          "action:EAST": 22,
+          "action:SOUTH": 2
+        },
+        "WATER": {
+          "action:WATER": 150,
+          "assigned": 880,
+          "assigned_operation_attempts": 150,
+          "assigned_operation_match": 150,
+          "action:NORTH": 394,
+          "travel_progress": 730,
+          "action:WEST": 293,
+          "action:EAST": 43
+        },
+        "PICKUP": {
+          "action:PICKUP": 3,
+          "assigned": 16,
+          "assigned_operation_attempts": 3,
+          "assigned_operation_match": 3,
+          "action:EAST": 7,
+          "travel_progress": 13,
+          "action:SOUTH": 6
+        },
+        "PLACE": {
+          "action:NORTH": 1,
+          "assigned": 5,
+          "travel_progress": 2,
+          "action:PLACE": 3,
+          "assigned_operation_attempts": 3,
+          "assigned_operation_match": 3,
+          "action:WEST": 1
+        },
+        "FEED": {
+          "action:SOUTH": 16,
+          "assigned": 291,
+          "travel_no_progress": 18,
+          "action:PASS": 42,
+          "task_blocked_by_resource_or_stage": 42,
+          "action:PICKUP": 78,
+          "assigned_operation_attempts": 155,
+          "assigned_operation_match": 155,
+          "action:NORTH": 26,
+          "travel_progress": 76,
+          "action:FEED": 77,
+          "action:EAST": 3,
+          "action:WEST": 49
+        },
+        "CARE": {
+          "action:EAST": 48,
+          "assigned": 205,
+          "travel_progress": 144,
+          "action:SOUTH": 78,
+          "action:NORTH": 11,
+          "travel_no_progress": 2,
+          "action:CARE": 59,
+          "assigned_operation_attempts": 59,
+          "assigned_operation_match": 59,
+          "action:WEST": 9
+        },
+        "NO_TASK": {
+          "action:PASS": 1479
+        },
+        "COLLECT_FERTILIZER": {
+          "action:EAST": 102,
+          "assigned": 337,
+          "travel_progress": 264,
+          "action:SOUTH": 135,
+          "action:COLLECT_FERTILIZER": 73,
+          "assigned_operation_attempts": 73,
+          "assigned_operation_match": 73,
+          "action:NORTH": 15,
+          "action:WEST": 12
+        },
+        "HARVEST": {
+          "action:EAST": 36,
+          "assigned": 169,
+          "travel_progress": 118,
+          "action:HARVEST": 51,
+          "assigned_operation_attempts": 51,
+          "assigned_operation_match": 51,
+          "action:NORTH": 27,
+          "action:WEST": 35,
+          "action:SOUTH": 20
+        }
+      },
+      "per_day": {
+        "0": {
+          "actor_slots": 162,
+          "action:BUILD_PASTURE": 3,
+          "assigned_operation_attempts": 51,
+          "assigned_operation_match": 51,
+          "action:NORTH": 28,
+          "travel_progress": 50,
+          "action:WEST": 22,
+          "action:PLANT": 109,
+          "engine_atomic_plant_conflict": 109,
+          "task_blocked_by_resource_or_stage": 61
+        },
+        "1": {
+          "actor_slots": 162,
+          "action:WEST": 22,
+          "travel_progress": 52,
+          "action:NORTH": 28,
+          "action:PLANT": 109,
+          "assigned_operation_attempts": 82,
+          "assigned_operation_match": 82,
+          "engine_atomic_plant_conflict": 108,
+          "task_blocked_by_resource_or_stage": 28,
+          "action:WATER": 1,
+          "action:EAST": 2
+        },
+        "2": {
+          "actor_slots": 162,
+          "action:NORTH": 34,
+          "travel_progress": 59,
+          "action:WEST": 20,
+          "action:PICKUP": 1,
+          "assigned_operation_attempts": 17,
+          "assigned_operation_match": 17,
+          "action:PLACE": 1,
+          "action:SOUTH": 12,
+          "travel_no_progress": 11,
+          "action:WATER": 8,
+          "action:PASS": 75,
+          "task_blocked_by_resource_or_stage": 10,
+          "action:PLANT": 7,
+          "action:EAST": 4,
+          "unassigned_no_task": 65,
+          "idle:no_remaining_schedulable_task": 65
+        },
+        "3": {
+          "actor_slots": 116,
+          "action:PASS": 33,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 16,
+          "assigned_operation_match": 16,
+          "action:WEST": 22,
+          "travel_progress": 64,
+          "action:NORTH": 20,
+          "action:FEED": 2,
+          "action:WATER": 8,
+          "action:EAST": 16,
+          "action:SOUTH": 9,
+          "unassigned_no_task": 32,
+          "idle:no_remaining_schedulable_task": 32,
+          "action:COLLECT_FERTILIZER": 1,
+          "action:CARE": 1,
+          "action:PLACE": 1,
+          "travel_no_progress": 3
+        },
+        "4": {
+          "actor_slots": 116,
+          "action:PICKUP": 1,
+          "assigned_operation_attempts": 14,
+          "assigned_operation_match": 14,
+          "action:WEST": 17,
+          "travel_progress": 60,
+          "action:NORTH": 20,
+          "action:PASS": 36,
+          "task_blocked_by_resource_or_stage": 16,
+          "action:FEED": 1,
+          "action:EAST": 14,
+          "action:SOUTH": 15,
+          "travel_no_progress": 6,
+          "action:WATER": 8,
+          "action:COLLECT_FERTILIZER": 2,
+          "unassigned_no_task": 20,
+          "idle:no_remaining_schedulable_task": 20,
+          "action:CARE": 2
+        },
+        "5": {
+          "actor_slots": 116,
+          "action:PASS": 34,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 18,
+          "assigned_operation_match": 18,
+          "action:WEST": 18,
+          "travel_progress": 64,
+          "action:NORTH": 20,
+          "action:FEED": 2,
+          "action:WATER": 8,
+          "action:EAST": 13,
+          "action:SOUTH": 13,
+          "action:HARVEST": 1,
+          "unassigned_no_task": 33,
+          "idle:crop_target_waiting_seed": 33,
+          "action:COLLECT_FERTILIZER": 2,
+          "action:CARE": 2
+        },
+        "6": {
+          "actor_slots": 139,
+          "action:PICKUP": 4,
+          "assigned_operation_attempts": 27,
+          "assigned_operation_match": 27,
+          "action:WEST": 24,
+          "travel_progress": 86,
+          "action:FEED": 3,
+          "action:NORTH": 25,
+          "action:WATER": 7,
+          "action:EAST": 18,
+          "action:HARVEST": 7,
+          "action:SOUTH": 19,
+          "action:PASS": 26,
+          "unassigned_no_task": 26,
+          "idle:crop_target_waiting_seed": 26,
+          "action:COLLECT_FERTILIZER": 2,
+          "action:CARE": 3,
+          "action:PLACE": 1
+        },
+        "7": {
+          "actor_slots": 162,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 12,
+          "assigned_operation_match": 12,
+          "action:WEST": 6,
+          "travel_progress": 12,
+          "action:NORTH": 5,
+          "action:FEED": 3,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3,
+          "action:EAST": 1,
+          "action:PASS": 138,
+          "unassigned_no_task": 138,
+          "idle:crop_target_waiting_seed": 138
+        },
+        "8": {
+          "actor_slots": 162,
+          "action:PASS": 1,
+          "task_blocked_by_resource_or_stage": 70,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 39,
+          "assigned_operation_match": 39,
+          "action:NORTH": 29,
+          "travel_progress": 53,
+          "action:WEST": 22,
+          "action:FEED": 3,
+          "action:HARVEST": 1,
+          "action:PLANT": 100,
+          "engine_atomic_plant_conflict": 99,
+          "action:WATER": 1,
+          "action:EAST": 2
+        },
+        "9": {
+          "actor_slots": 162,
+          "action:PASS": 20,
+          "task_blocked_by_resource_or_stage": 27,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 48,
+          "assigned_operation_match": 48,
+          "action:NORTH": 28,
+          "travel_progress": 68,
+          "action:WEST": 23,
+          "action:FEED": 3,
+          "action:HARVEST": 1,
+          "action:WATER": 4,
+          "action:EAST": 8,
+          "action:PLANT": 57,
+          "engine_atomic_plant_conflict": 54,
+          "action:SOUTH": 9,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3,
+          "unassigned_no_task": 19,
+          "idle:no_remaining_schedulable_task": 19
+        },
+        "10": {
+          "actor_slots": 162,
+          "action:PASS": 24,
+          "task_blocked_by_resource_or_stage": 28,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 44,
+          "assigned_operation_match": 44,
+          "action:NORTH": 26,
+          "travel_progress": 67,
+          "action:WEST": 24,
+          "action:FEED": 3,
+          "action:WATER": 4,
+          "action:EAST": 10,
+          "action:SOUTH": 7,
+          "action:PLANT": 55,
+          "engine_atomic_plant_conflict": 55,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3,
+          "unassigned_no_task": 23,
+          "idle:no_remaining_schedulable_task": 23
+        },
+        "11": {
+          "actor_slots": 162,
+          "action:PASS": 71,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 25,
+          "assigned_operation_match": 25,
+          "action:NORTH": 25,
+          "travel_progress": 66,
+          "action:WEST": 23,
+          "action:FEED": 3,
+          "action:HARVEST": 1,
+          "action:WATER": 8,
+          "action:EAST": 10,
+          "action:SOUTH": 8,
+          "action:PLANT": 4,
+          "action:COLLECT_FERTILIZER": 3,
+          "unassigned_no_task": 70,
+          "idle:no_remaining_schedulable_task": 70,
+          "action:CARE": 3
+        },
+        "12": {
+          "actor_slots": 116,
+          "action:PASS": 24,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 23,
+          "assigned_operation_match": 23,
+          "action:NORTH": 20,
+          "travel_progress": 69,
+          "action:WEST": 18,
+          "action:FEED": 3,
+          "action:WATER": 8,
+          "action:EAST": 15,
+          "action:SOUTH": 16,
+          "action:HARVEST": 3,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3,
+          "unassigned_no_task": 23,
+          "idle:crop_target_waiting_seed": 23
+        },
+        "13": {
+          "actor_slots": 139,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 22,
+          "assigned_operation_match": 22,
+          "action:WEST": 20,
+          "travel_progress": 77,
+          "action:NORTH": 24,
+          "action:FEED": 3,
+          "action:WATER": 7,
+          "action:EAST": 15,
+          "action:HARVEST": 3,
+          "action:SOUTH": 18,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:PASS": 40,
+          "unassigned_no_task": 40,
+          "idle:crop_target_waiting_seed": 40,
+          "action:CARE": 3
+        },
+        "14": {
+          "actor_slots": 162,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 17,
+          "assigned_operation_match": 17,
+          "action:WEST": 16,
+          "travel_progress": 38,
+          "action:NORTH": 20,
+          "action:FEED": 3,
+          "action:HARVEST": 1,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:SOUTH": 1,
+          "action:CARE": 3,
+          "action:EAST": 1,
+          "action:WATER": 4,
+          "action:PASS": 107,
+          "unassigned_no_task": 107,
+          "idle:crop_target_waiting_seed": 107
+        },
+        "15": {
+          "actor_slots": 139,
+          "action:PASS": 30,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 28,
+          "assigned_operation_match": 28,
+          "action:NORTH": 23,
+          "travel_progress": 81,
+          "action:WEST": 25,
+          "action:FEED": 3,
+          "action:WATER": 7,
+          "action:EAST": 19,
+          "action:HARVEST": 6,
+          "action:SOUTH": 14,
+          "action:PLANT": 3,
+          "action:COLLECT_FERTILIZER": 3,
+          "unassigned_no_task": 29,
+          "idle:crop_target_waiting_seed": 29,
+          "action:CARE": 3
+        },
+        "16": {
+          "actor_slots": 162,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 15,
+          "assigned_operation_match": 15,
+          "action:WEST": 16,
+          "travel_progress": 32,
+          "action:NORTH": 16,
+          "action:FEED": 3,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3,
+          "action:PASS": 115,
+          "unassigned_no_task": 115,
+          "idle:crop_target_waiting_seed": 115,
+          "action:WATER": 3
+        },
+        "17": {
+          "actor_slots": 162,
+          "action:PASS": 6,
+          "task_blocked_by_resource_or_stage": 27,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 61,
+          "assigned_operation_match": 61,
+          "action:NORTH": 28,
+          "travel_progress": 69,
+          "action:WEST": 23,
+          "action:FEED": 3,
+          "action:HARVEST": 1,
+          "action:PLANT": 71,
+          "engine_atomic_plant_conflict": 71,
+          "action:WATER": 3,
+          "action:EAST": 11,
+          "action:SOUTH": 7,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3,
+          "unassigned_no_task": 5,
+          "idle:no_remaining_schedulable_task": 5
+        },
+        "18": {
+          "actor_slots": 162,
+          "action:PASS": 58,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 23,
+          "assigned_operation_match": 23,
+          "action:NORTH": 28,
+          "travel_progress": 81,
+          "action:WEST": 22,
+          "action:FEED": 3,
+          "action:HARVEST": 2,
+          "action:PLANT": 3,
+          "action:WATER": 6,
+          "action:SOUTH": 18,
+          "action:EAST": 13,
+          "unassigned_no_task": 57,
+          "idle:crop_target_waiting_seed": 57,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3
+        },
+        "19": {
+          "actor_slots": 139,
+          "action:PASS": 1,
+          "task_blocked_by_resource_or_stage": 35,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 42,
+          "assigned_operation_match": 42,
+          "action:NORTH": 26,
+          "travel_progress": 62,
+          "action:WEST": 23,
+          "action:FEED": 3,
+          "action:WATER": 6,
+          "action:EAST": 8,
+          "action:HARVEST": 3,
+          "action:SOUTH": 5,
+          "action:PLANT": 58,
+          "engine_atomic_plant_conflict": 58,
+          "action:COLLECT_FERTILIZER": 3
+        },
+        "20": {
+          "actor_slots": 162,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 32,
+          "assigned_operation_match": 32,
+          "action:WEST": 24,
+          "travel_progress": 69,
+          "action:NORTH": 27,
+          "action:FEED": 3,
+          "action:HARVEST": 1,
+          "action:WATER": 4,
+          "action:EAST": 10,
+          "action:PLANT": 55,
+          "engine_atomic_plant_conflict": 54,
+          "task_blocked_by_resource_or_stage": 40,
+          "action:SOUTH": 8,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3,
+          "action:PASS": 21,
+          "unassigned_no_task": 21,
+          "idle:no_remaining_schedulable_task": 21
+        },
+        "21": {
+          "actor_slots": 139,
+          "action:PASS": 58,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 26,
+          "assigned_operation_match": 26,
+          "action:NORTH": 21,
+          "travel_progress": 55,
+          "action:WEST": 20,
+          "action:FEED": 3,
+          "action:SOUTH": 8,
+          "action:HARVEST": 2,
+          "action:WATER": 8,
+          "action:EAST": 6,
+          "action:PLANT": 4,
+          "action:COLLECT_FERTILIZER": 3,
+          "unassigned_no_task": 57,
+          "idle:no_remaining_schedulable_task": 57,
+          "action:CARE": 3
+        },
+        "22": {
+          "actor_slots": 116,
+          "action:PASS": 25,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 23,
+          "assigned_operation_match": 23,
+          "action:NORTH": 20,
+          "travel_progress": 68,
+          "action:WEST": 18,
+          "action:FEED": 3,
+          "action:WATER": 8,
+          "action:EAST": 14,
+          "action:HARVEST": 3,
+          "action:SOUTH": 16,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3,
+          "unassigned_no_task": 24,
+          "idle:crop_target_waiting_seed": 24
+        },
+        "23": {
+          "actor_slots": 139,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 24,
+          "assigned_operation_match": 24,
+          "action:WEST": 21,
+          "travel_progress": 79,
+          "action:NORTH": 24,
+          "action:FEED": 3,
+          "action:HARVEST": 1,
+          "action:WATER": 8,
+          "action:EAST": 16,
+          "action:PLANT": 3,
+          "action:SOUTH": 18,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:PASS": 36,
+          "unassigned_no_task": 36,
+          "idle:no_remaining_schedulable_task": 36,
+          "action:CARE": 3
+        },
+        "24": {
+          "actor_slots": 116,
+          "action:PASS": 23,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 23,
+          "assigned_operation_match": 23,
+          "action:NORTH": 20,
+          "travel_progress": 70,
+          "action:WEST": 18,
+          "action:FEED": 3,
+          "action:WATER": 8,
+          "action:EAST": 15,
+          "action:SOUTH": 17,
+          "action:HARVEST": 3,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3,
+          "unassigned_no_task": 22,
+          "idle:crop_target_waiting_seed": 22
+        },
+        "25": {
+          "actor_slots": 116,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 23,
+          "assigned_operation_match": 23,
+          "action:WEST": 19,
+          "travel_progress": 70,
+          "action:NORTH": 20,
+          "action:FEED": 3,
+          "action:WATER": 7,
+          "action:EAST": 16,
+          "action:HARVEST": 4,
+          "action:SOUTH": 15,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:CARE": 3,
+          "action:PASS": 23,
+          "unassigned_no_task": 23,
+          "idle:no_remaining_schedulable_task": 23
+        },
+        "26": {
+          "actor_slots": 162,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 13,
+          "assigned_operation_match": 13,
+          "action:WEST": 11,
+          "travel_progress": 26,
+          "action:NORTH": 15,
+          "action:FEED": 3,
+          "action:HARVEST": 1,
+          "action:COLLECT_FERTILIZER": 3,
+          "action:PASS": 123,
+          "unassigned_no_task": 123,
+          "idle:no_remaining_schedulable_task": 123,
+          "action:WATER": 3
+        },
+        "27": {
+          "actor_slots": 162,
+          "action:PASS": 94,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 17,
+          "assigned_operation_match": 17,
+          "action:NORTH": 24,
+          "travel_progress": 51,
+          "action:WEST": 19,
+          "action:FEED": 3,
+          "action:HARVEST": 5,
+          "action:EAST": 4,
+          "action:WATER": 3,
+          "action:COLLECT_FERTILIZER": 3,
+          "unassigned_no_task": 93,
+          "idle:no_remaining_schedulable_task": 2,
+          "action:SOUTH": 4,
+          "idle:late_season_no_crop_target": 91
+        },
+        "28": {
+          "actor_slots": 162,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 9,
+          "assigned_operation_match": 9,
+          "action:WEST": 4,
+          "travel_progress": 8,
+          "action:PASS": 145,
+          "unassigned_no_task": 145,
+          "idle:late_season_no_crop_target": 145,
+          "action:NORTH": 4,
+          "action:FEED": 3,
+          "action:COLLECT_FERTILIZER": 3
+        },
+        "29": {
+          "actor_slots": 155,
+          "action:PASS": 134,
+          "task_blocked_by_resource_or_stage": 1,
+          "action:PICKUP": 3,
+          "assigned_operation_attempts": 10,
+          "assigned_operation_match": 10,
+          "action:NORTH": 6,
+          "travel_progress": 11,
+          "action:WEST": 5,
+          "action:FEED": 3,
+          "action:HARVEST": 1,
+          "action:COLLECT_FERTILIZER": 3,
+          "unassigned_no_task": 133,
+          "idle:late_season_no_crop_target": 133
+        }
+      },
+      "atomic_seed_conflicts": [
+        {
+          "day": 0,
+          "hour": 8,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 0,
+          "hour": 9,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 10,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 11,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 12,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 13,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 14,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 15,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 16,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 17,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 18,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 19,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 20,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 21,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 22,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 0,
+          "hour": 23,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 8,
+          "requested": {
+            "WHEAT": 6
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 6
+          }
+        },
+        {
+          "day": 1,
+          "hour": 9,
+          "requested": {
+            "WHEAT": 6
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 6
+          }
+        },
+        {
+          "day": 1,
+          "hour": 10,
+          "requested": {
+            "WHEAT": 6
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 6
+          }
+        },
+        {
+          "day": 1,
+          "hour": 11,
+          "requested": {
+            "WHEAT": 6
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 6
+          }
+        },
+        {
+          "day": 1,
+          "hour": 12,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 13,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 14,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 15,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 16,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 17,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 18,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 19,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 20,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 21,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 22,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 1,
+          "hour": 23,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 9,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 8,
+          "hour": 10,
+          "requested": {
+            "WHEAT": 6
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 6
+          }
+        },
+        {
+          "day": 8,
+          "hour": 11,
+          "requested": {
+            "WHEAT": 6
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 6
+          }
+        },
+        {
+          "day": 8,
+          "hour": 12,
+          "requested": {
+            "WHEAT": 6
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 6
+          }
+        },
+        {
+          "day": 8,
+          "hour": 13,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 14,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 15,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 16,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 17,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 18,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 19,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 20,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 21,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 22,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 8,
+          "hour": 23,
+          "requested": {
+            "WHEAT": 7
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 7
+          }
+        },
+        {
+          "day": 9,
+          "hour": 10,
+          "requested": {
+            "WHEAT": 3
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 3
+          }
+        },
+        {
+          "day": 9,
+          "hour": 11,
+          "requested": {
+            "WHEAT": 3
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 3
+          }
+        },
+        {
+          "day": 9,
+          "hour": 12,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 13,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 14,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 15,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 16,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 17,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 18,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 19,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 20,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 21,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 22,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 9,
+          "hour": 23,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 10,
+          "requested": {
+            "WHEAT": 3
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 3
+          }
+        },
+        {
+          "day": 10,
+          "hour": 11,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 12,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 13,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 14,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 15,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 16,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 17,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 18,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 19,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 20,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 21,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 22,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 10,
+          "hour": 23,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 17,
+          "hour": 9,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 17,
+          "hour": 10,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 17,
+          "hour": 11,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 17,
+          "hour": 12,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 17,
+          "hour": 13,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 17,
+          "hour": 14,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 17,
+          "hour": 15,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 17,
+          "hour": 16,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 17,
+          "hour": 17,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 17,
+          "hour": 18,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 17,
+          "hour": 19,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 17,
+          "hour": 20,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 17,
+          "hour": 21,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 17,
+          "hour": 22,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 17,
+          "hour": 23,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 19,
+          "hour": 12,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 19,
+          "hour": 13,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 19,
+          "hour": 14,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 19,
+          "hour": 15,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 19,
+          "hour": 16,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 19,
+          "hour": 17,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 19,
+          "hour": 18,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 19,
+          "hour": 19,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 19,
+          "hour": 20,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 19,
+          "hour": 21,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 19,
+          "hour": 22,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 19,
+          "hour": 23,
+          "requested": {
+            "WHEAT": 5
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 5
+          }
+        },
+        {
+          "day": 20,
+          "hour": 10,
+          "requested": {
+            "WHEAT": 2
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 2
+          }
+        },
+        {
+          "day": 20,
+          "hour": 11,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 12,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 13,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 14,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 15,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 16,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 17,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 18,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 19,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 20,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 21,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 22,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        },
+        {
+          "day": 20,
+          "hour": 23,
+          "requested": {
+            "WHEAT": 4
+          },
+          "available": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "atomic_rejected_crops": {
+            "WHEAT": 4
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "status": "completed_smoke_not_panel",
+  "rows": [
+    {
+      "candidate": "ahmed_v43",
+      "seed": 95000,
+      "candidate_seat": 0,
+      "steps": 720,
+      "candidate_reward": 104512.0,
+      "reset_reward": 107772.0,
+      "margin": -3260.0,
+      "error_players": 0,
+      "candidate_sha256": "919fc1d61050cd96f799979e49177ae3ac7bce98ec9835724238bea73f4a08ed"
+    },
+    {
+      "candidate": "ahmed_v43",
+      "seed": 95000,
+      "candidate_seat": 1,
+      "steps": 720,
+      "candidate_reward": 104512.0,
+      "reset_reward": 107772.0,
+      "margin": -3260.0,
+      "error_players": 0,
+      "candidate_sha256": "919fc1d61050cd96f799979e49177ae3ac7bce98ec9835724238bea73f4a08ed"
+    },
+    {
+      "candidate": "ahmed_v43",
+      "seed": 95001,
+      "candidate_seat": 0,
+      "steps": 720,
+      "candidate_reward": 101043.0,
+      "reset_reward": 102007.0,
+      "margin": -964.0,
+      "error_players": 0,
+      "candidate_sha256": "919fc1d61050cd96f799979e49177ae3ac7bce98ec9835724238bea73f4a08ed"
+    },
+    {
+      "candidate": "ahmed_v43",
+      "seed": 95001,
+      "candidate_seat": 1,
+      "steps": 720,
+      "candidate_reward": 101043.0,
+      "reset_reward": 102007.0,
+      "margin": -964.0,
+      "error_players": 0,
+      "candidate_sha256": "919fc1d61050cd96f799979e49177ae3ac7bce98ec9835724238bea73f4a08ed"
+    },
+    {
+      "candidate": "yhay_three_day",
+      "seed": 95000,
+      "candidate_seat": 0,
+      "steps": 720,
+      "candidate_reward": 92340.0,
+      "reset_reward": 111717.0,
+      "margin": -19377.0,
+      "error_players": 0,
+      "candidate_sha256": "23b0d0c93bcf3dfecaabfecd950ec4ab3b4c46000c0c481bddcf0a63ce019f02"
+    },
+    {
+      "candidate": "yhay_three_day",
+      "seed": 95000,
+      "candidate_seat": 1,
+      "steps": 720,
+      "candidate_reward": 92340.0,
+      "reset_reward": 111717.0,
+      "margin": -19377.0,
+      "error_players": 0,
+      "candidate_sha256": "23b0d0c93bcf3dfecaabfecd950ec4ab3b4c46000c0c481bddcf0a63ce019f02"
+    },
+    {
+      "candidate": "yhay_three_day",
+      "seed": 95001,
+      "candidate_seat": 0,
+      "steps": 720,
+      "candidate_reward": 83376.0,
+      "reset_reward": 101517.0,
+      "margin": -18141.0,
+      "error_players": 0,
+      "candidate_sha256": "23b0d0c93bcf3dfecaabfecd950ec4ab3b4c46000c0c481bddcf0a63ce019f02"
+    },
+    {
+      "candidate": "yhay_three_day",
+      "seed": 95001,
+      "candidate_seat": 1,
+      "steps": 720,
+      "candidate_reward": 83376.0,
+      "reset_reward": 101517.0,
+      "margin": -18141.0,
+      "error_players": 0,
+      "candidate_sha256": "23b0d0c93bcf3dfecaabfecd950ec4ab3b4c46000c0c481bddcf0a63ce019f02"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidate": "experiments/v58_original_second/original_second_candidate.py",
+  "candidate_sha256": "55782c28b37ee3a6e35d7856e06528bdb9b39c16736bab5c5a21dc0923e4da7f",
+  "opponents": {
+    "v50": "experiments/v50_agent.py",
+    "v53": "experiments/v53_agent.py",
+    "v54": "experiments/v54_agent.py"
+  },
+  "opponent_sha256": {
+    "v50": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+    "v53": "a57b3f14c067926d0960eb829fb6d95761dc1e7b4d011c71fda353702cdb47b1",
+    "v54": "4e3db1b153262b9dca86d3731b158e27bd7b782691ade2beaca6f2f379ff9f99"
+  },
+  "seeds": [
+    94500,
+    94501,
+    94502
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "replay_policy": "candidate runs all, opponent agent uses loader",
+  "engine": "kaggle-environments 1.32.7"
+}

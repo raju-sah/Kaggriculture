@@ -1,0 +1,65 @@
+{
+  "seeds": [
+    95100
+  ],
+  "opponents": {
+    "v50": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v50_agent.py",
+    "v50_sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b"
+  },
+  "seat_orders": [
+    0,
+    1
+  ],
+  "workers_cap": 4,
+  "purpose": "one-generation structure/throughput screening; no confirmation selection",
+  "configs": [
+    {
+      "id": "probe0",
+      "params": {
+        "crop_target": 8,
+        "herd_target": 1,
+        "staff_target": 3,
+        "cash_reserve": 700,
+        "wheat_reserve": 2
+      },
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/rl_design/probe95100/candidates/probe0.py",
+      "sha256": "1e1ad29f8fa7b59dc422b3a66424b62b7b47a12f58ca88ba16473e73a1583dab"
+    },
+    {
+      "id": "probe1",
+      "params": {
+        "crop_target": 8,
+        "herd_target": 3,
+        "staff_target": 6,
+        "cash_reserve": 700,
+        "wheat_reserve": 3
+      },
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/rl_design/probe95100/candidates/probe1.py",
+      "sha256": "11e5cd168b329c1915aa2bc54df287e9795af6ca6c9fc448506e8f66c5d40ab7"
+    },
+    {
+      "id": "probe2",
+      "params": {
+        "crop_target": 14,
+        "herd_target": 2,
+        "staff_target": 7,
+        "cash_reserve": 700,
+        "wheat_reserve": 3
+      },
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/rl_design/probe95100/candidates/probe2.py",
+      "sha256": "793ec9964b783224661c8133ea6715191791a1c74240b967344f53cd1b0d4d57"
+    },
+    {
+      "id": "probe3",
+      "params": {
+        "crop_target": 14,
+        "herd_target": 4,
+        "staff_target": 7,
+        "cash_reserve": 300,
+        "wheat_reserve": 4
+      },
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/rl_design/probe95100/candidates/probe3.py",
+      "sha256": "7ce4a59832d362b3fe771c0130a4e6215ca0ced01cd5fc65305964ce6de82b43"
+    }
+  ]
+}

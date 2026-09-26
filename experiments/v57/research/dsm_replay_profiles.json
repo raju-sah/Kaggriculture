@@ -1,0 +1,186 @@
+[
+  {
+    "episode": 113276018,
+    "seed": 1275818725,
+    "team_names": [
+      "DSM",
+      "Boey"
+    ],
+    "rewards": [
+      88197.0,
+      91900.0
+    ],
+    "milestones": [
+      {
+        "step": 1,
+        "cash": 2463.0,
+        "hands": 0,
+        "animals": {},
+        "crops": {}
+      },
+      {
+        "step": 23,
+        "cash": 4.0,
+        "hands": 4,
+        "animals": {
+          "COW": 2,
+          "SHEEP": 3
+        },
+        "crops": {
+          "WHEAT": 9,
+          "MELON": 6
+        }
+      },
+      {
+        "step": 143,
+        "cash": 844.0,
+        "hands": 6,
+        "animals": {
+          "COW": 2,
+          "SHEEP": 3
+        },
+        "crops": {
+          "STRAWBERRY": 10,
+          "MELON": 10
+        }
+      },
+      {
+        "step": 239,
+        "cash": 69.0,
+        "hands": 11,
+        "animals": {
+          "COW": 8,
+          "SHEEP": 3,
+          "GOOSE": 6
+        },
+        "crops": {
+          "STRAWBERRY": 13,
+          "MELON": 10,
+          "WHEAT": 12,
+          "CARROT": 14,
+          "TOMATO": 8
+        }
+      },
+      {
+        "step": 479,
+        "cash": 32299.0,
+        "hands": 12,
+        "animals": {
+          "SHEEP": 12,
+          "COW": 5,
+          "GOOSE": 10
+        },
+        "crops": {
+          "WHEAT": 20,
+          "STRAWBERRY": 4,
+          "TOMATO": 20,
+          "CARROT": 17
+        }
+      },
+      {
+        "step": 719,
+        "cash": 88197.0,
+        "hands": 10,
+        "animals": {
+          "GOOSE": 5,
+          "COW": 4
+        },
+        "crops": {
+          "TOMATO": 3
+        }
+      }
+    ]
+  },
+  {
+    "episode": 113273596,
+    "seed": 37695342,
+    "team_names": [
+      "DECEM",
+      "DSM"
+    ],
+    "rewards": [
+      89641.0,
+      93705.0
+    ],
+    "milestones": [
+      {
+        "step": 1,
+        "cash": 2464.0,
+        "hands": 0,
+        "animals": {},
+        "crops": {}
+      },
+      {
+        "step": 23,
+        "cash": 6.0,
+        "hands": 4,
+        "animals": {
+          "COW": 2,
+          "SHEEP": 3
+        },
+        "crops": {
+          "WHEAT": 9,
+          "MELON": 6
+        }
+      },
+      {
+        "step": 143,
+        "cash": 851.0,
+        "hands": 5,
+        "animals": {
+          "COW": 2,
+          "SHEEP": 3
+        },
+        "crops": {
+          "STRAWBERRY": 10,
+          "MELON": 10
+        }
+      },
+      {
+        "step": 239,
+        "cash": 130.0,
+        "hands": 10,
+        "animals": {
+          "COW": 11,
+          "SHEEP": 3,
+          "GOOSE": 4
+        },
+        "crops": {
+          "STRAWBERRY": 22,
+          "MELON": 10,
+          "WHEAT": 19,
+          "TOMATO": 3
+        }
+      },
+      {
+        "step": 479,
+        "cash": 52128.0,
+        "hands": 12,
+        "animals": {
+          "COW": 11,
+          "GOOSE": 8,
+          "SHEEP": 3
+        },
+        "crops": {
+          "TOMATO": 18,
+          "WHEAT": 13,
+          "STRAWBERRY": 20,
+          "CARROT": 20
+        }
+      },
+      {
+        "step": 719,
+        "cash": 93705.0,
+        "hands": 10,
+        "animals": {
+          "COW": 11,
+          "GOOSE": 8
+        },
+        "crops": {
+          "TOMATO": 5,
+          "WHEAT": 1
+        }
+      }
+    ]
+  }
+]

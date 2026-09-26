@@ -1,0 +1,4042 @@
+[
+  {
+    "opponent": "v50",
+    "seed": 94100,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      112708.0,
+      69379.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      103724.0,
+      93931.0
+    ],
+    "candidate_coin_delta": -8984.0,
+    "opponent_coin_delta": 24552.0,
+    "baseline_margin": 43329.0,
+    "dsm_margin": 9793.0,
+    "margin_delta": -33536.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "FARMERS_MARKET",
+      "FARMERS_MARKET"
+    ],
+    "dsm_shop_sequence": [
+      "FARMERS_MARKET",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "PET_CAFE"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": 1,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v50",
+    "seed": 94100,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      112708.0,
+      69379.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      103724.0,
+      93931.0
+    ],
+    "candidate_coin_delta": -8984.0,
+    "opponent_coin_delta": 24552.0,
+    "baseline_margin": 43329.0,
+    "dsm_margin": 9793.0,
+    "margin_delta": -33536.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "FARMERS_MARKET",
+      "FARMERS_MARKET"
+    ],
+    "dsm_shop_sequence": [
+      "FARMERS_MARKET",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "PET_CAFE"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": null,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v50",
+    "seed": 94101,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      112051.0,
+      83895.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      119875.0,
+      94367.0
+    ],
+    "candidate_coin_delta": 7824.0,
+    "opponent_coin_delta": 10472.0,
+    "baseline_margin": 28156.0,
+    "dsm_margin": 25508.0,
+    "margin_delta": -2648.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "FARMERS_MARKET",
+      "FARMERS_MARKET"
+    ],
+    "dsm_shop_sequence": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": 1,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v50",
+    "seed": 94101,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      112051.0,
+      83895.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      119875.0,
+      94367.0
+    ],
+    "candidate_coin_delta": 7824.0,
+    "opponent_coin_delta": 10472.0,
+    "baseline_margin": 28156.0,
+    "dsm_margin": 25508.0,
+    "margin_delta": -2648.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "FARMERS_MARKET",
+      "FARMERS_MARKET"
+    ],
+    "dsm_shop_sequence": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": null,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v50",
+    "seed": 94102,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      93523.0,
+      118858.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      118946.0,
+      104962.0
+    ],
+    "candidate_coin_delta": 25423.0,
+    "opponent_coin_delta": -13896.0,
+    "baseline_margin": -25335.0,
+    "dsm_margin": 13984.0,
+    "margin_delta": 39319.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "dsm_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "YARN_STORE"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": 1,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v50",
+    "seed": 94102,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      93523.0,
+      118858.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      118946.0,
+      104962.0
+    ],
+    "candidate_coin_delta": 25423.0,
+    "opponent_coin_delta": -13896.0,
+    "baseline_margin": -25335.0,
+    "dsm_margin": 13984.0,
+    "margin_delta": 39319.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "dsm_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "YARN_STORE"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": null,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v50",
+    "seed": 94103,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      63591.0,
+      93696.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      58680.0,
+      44070.0
+    ],
+    "candidate_coin_delta": -4911.0,
+    "opponent_coin_delta": -49626.0,
+    "baseline_margin": -30105.0,
+    "dsm_margin": 14610.0,
+    "margin_delta": 44715.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PET_CAFE",
+      "BAKERY",
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "BRUNCH_SPOT",
+      "PIZZA_SHOP"
+    ],
+    "dsm_shop_sequence": [
+      "PET_CAFE",
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": 1,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v50",
+    "seed": 94103,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      55900.0,
+      90409.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      58680.0,
+      44070.0
+    ],
+    "candidate_coin_delta": 2780.0,
+    "opponent_coin_delta": -46339.0,
+    "baseline_margin": -34509.0,
+    "dsm_margin": 14610.0,
+    "margin_delta": 49119.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PET_CAFE",
+      "BAKERY",
+      "YARN_STORE",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "BRUNCH_SPOT",
+      "PIZZA_SHOP"
+    ],
+    "dsm_shop_sequence": [
+      "PET_CAFE",
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": null,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v50",
+    "seed": 94104,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      97524.0,
+      73773.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      56542.0,
+      78406.0
+    ],
+    "candidate_coin_delta": -40982.0,
+    "opponent_coin_delta": 4633.0,
+    "baseline_margin": 23751.0,
+    "dsm_margin": -21864.0,
+    "margin_delta": -45615.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "dsm_shop_sequence": [
+      "BRUNCH_SPOT",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": 1,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v50",
+    "seed": 94104,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      97524.0,
+      73773.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      56542.0,
+      78406.0
+    ],
+    "candidate_coin_delta": -40982.0,
+    "opponent_coin_delta": 4633.0,
+    "baseline_margin": 23751.0,
+    "dsm_margin": -21864.0,
+    "margin_delta": -45615.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "dsm_shop_sequence": [
+      "BRUNCH_SPOT",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": null,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v53",
+    "seed": 94100,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      112146.0,
+      69785.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      103524.0,
+      93917.0
+    ],
+    "candidate_coin_delta": -8622.0,
+    "opponent_coin_delta": 24132.0,
+    "baseline_margin": 42361.0,
+    "dsm_margin": 9607.0,
+    "margin_delta": -32754.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "FARMERS_MARKET",
+      "FARMERS_MARKET"
+    ],
+    "dsm_shop_sequence": [
+      "FARMERS_MARKET",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "PET_CAFE"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": 1,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v53",
+    "seed": 94100,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      112146.0,
+      69785.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      103524.0,
+      93917.0
+    ],
+    "candidate_coin_delta": -8622.0,
+    "opponent_coin_delta": 24132.0,
+    "baseline_margin": 42361.0,
+    "dsm_margin": 9607.0,
+    "margin_delta": -32754.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "FARMERS_MARKET",
+      "FARMERS_MARKET"
+    ],
+    "dsm_shop_sequence": [
+      "FARMERS_MARKET",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "PET_CAFE"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": null,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v53",
+    "seed": 94101,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      111274.0,
+      84409.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      119725.0,
+      94264.0
+    ],
+    "candidate_coin_delta": 8451.0,
+    "opponent_coin_delta": 9855.0,
+    "baseline_margin": 26865.0,
+    "dsm_margin": 25461.0,
+    "margin_delta": -1404.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "FARMERS_MARKET",
+      "FARMERS_MARKET"
+    ],
+    "dsm_shop_sequence": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": 1,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v53",
+    "seed": 94101,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      111274.0,
+      84409.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      119725.0,
+      94264.0
+    ],
+    "candidate_coin_delta": 8451.0,
+    "opponent_coin_delta": 9855.0,
+    "baseline_margin": 26865.0,
+    "dsm_margin": 25461.0,
+    "margin_delta": -1404.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "FARMERS_MARKET",
+      "FARMERS_MARKET"
+    ],
+    "dsm_shop_sequence": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": null,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v53",
+    "seed": 94102,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      92838.0,
+      119185.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      118542.0,
+      105077.0
+    ],
+    "candidate_coin_delta": 25704.0,
+    "opponent_coin_delta": -14108.0,
+    "baseline_margin": -26347.0,
+    "dsm_margin": 13465.0,
+    "margin_delta": 39812.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "dsm_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "YARN_STORE"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": 1,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v53",
+    "seed": 94102,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      92838.0,
+      119185.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      118542.0,
+      105077.0
+    ],
+    "candidate_coin_delta": 25704.0,
+    "opponent_coin_delta": -14108.0,
+    "baseline_margin": -26347.0,
+    "dsm_margin": 13465.0,
+    "margin_delta": 39812.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "dsm_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "YARN_STORE"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": null,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v53",
+    "seed": 94103,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      63076.0,
+      94133.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      58446.0,
+      43959.0
+    ],
+    "candidate_coin_delta": -4630.0,
+    "opponent_coin_delta": -50174.0,
+    "baseline_margin": -31057.0,
+    "dsm_margin": 14487.0,
+    "margin_delta": 45544.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PET_CAFE",
+      "BAKERY",
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "BRUNCH_SPOT",
+      "PIZZA_SHOP"
+    ],
+    "dsm_shop_sequence": [
+      "PET_CAFE",
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": 1,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v53",
+    "seed": 94103,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      55704.0,
+      90619.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      58446.0,
+      43959.0
+    ],
+    "candidate_coin_delta": 2742.0,
+    "opponent_coin_delta": -46660.0,
+    "baseline_margin": -34915.0,
+    "dsm_margin": 14487.0,
+    "margin_delta": 49402.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PET_CAFE",
+      "BAKERY",
+      "YARN_STORE",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "BRUNCH_SPOT",
+      "PIZZA_SHOP"
+    ],
+    "dsm_shop_sequence": [
+      "PET_CAFE",
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": null,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v53",
+    "seed": 94104,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      97170.0,
+      73878.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      56508.0,
+      78192.0
+    ],
+    "candidate_coin_delta": -40662.0,
+    "opponent_coin_delta": 4314.0,
+    "baseline_margin": 23292.0,
+    "dsm_margin": -21684.0,
+    "margin_delta": -44976.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "dsm_shop_sequence": [
+      "BRUNCH_SPOT",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": 1,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v53",
+    "seed": 94104,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      97170.0,
+      73878.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      56508.0,
+      78192.0
+    ],
+    "candidate_coin_delta": -40662.0,
+    "opponent_coin_delta": 4314.0,
+    "baseline_margin": 23292.0,
+    "dsm_margin": -21684.0,
+    "margin_delta": -44976.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "dsm_shop_sequence": [
+      "BRUNCH_SPOT",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": null,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v54",
+    "seed": 94100,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      99066.0,
+      91531.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      122825.0,
+      108624.0
+    ],
+    "candidate_coin_delta": 23759.0,
+    "opponent_coin_delta": 17093.0,
+    "baseline_margin": 7535.0,
+    "dsm_margin": 14201.0,
+    "margin_delta": 6666.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "PET_CAFE",
+      "PIZZA_SHOP"
+    ],
+    "dsm_shop_sequence": [
+      "FARMERS_MARKET",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "YARN_STORE",
+      "FARMERS_MARKET"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": 1,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v54",
+    "seed": 94100,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      99066.0,
+      91531.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      122825.0,
+      108624.0
+    ],
+    "candidate_coin_delta": 23759.0,
+    "opponent_coin_delta": 17093.0,
+    "baseline_margin": 7535.0,
+    "dsm_margin": 14201.0,
+    "margin_delta": 6666.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "PET_CAFE",
+      "PIZZA_SHOP"
+    ],
+    "dsm_shop_sequence": [
+      "FARMERS_MARKET",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "YARN_STORE",
+      "FARMERS_MARKET"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": null,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v54",
+    "seed": 94101,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      108145.0,
+      100098.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      124643.0,
+      91858.0
+    ],
+    "candidate_coin_delta": 16498.0,
+    "opponent_coin_delta": -8240.0,
+    "baseline_margin": 8047.0,
+    "dsm_margin": 32785.0,
+    "margin_delta": 24738.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "dsm_shop_sequence": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": 1,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v54",
+    "seed": 94101,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      108145.0,
+      100098.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      124643.0,
+      91858.0
+    ],
+    "candidate_coin_delta": 16498.0,
+    "opponent_coin_delta": -8240.0,
+    "baseline_margin": 8047.0,
+    "dsm_margin": 32785.0,
+    "margin_delta": 24738.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "dsm_shop_sequence": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": null,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v54",
+    "seed": 94102,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      81174.0,
+      83011.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      90347.0,
+      71169.0
+    ],
+    "candidate_coin_delta": 9173.0,
+    "opponent_coin_delta": -11842.0,
+    "baseline_margin": -1837.0,
+    "dsm_margin": 19178.0,
+    "margin_delta": 21015.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "FARMERS_MARKET",
+      "YARN_STORE"
+    ],
+    "dsm_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "BAKERY",
+      "YARN_STORE",
+      "PET_CAFE",
+      "FARMERS_MARKET",
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": 1,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v54",
+    "seed": 94102,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      81174.0,
+      83011.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      90504.0,
+      71144.0
+    ],
+    "candidate_coin_delta": 9330.0,
+    "opponent_coin_delta": -11867.0,
+    "baseline_margin": -1837.0,
+    "dsm_margin": 19360.0,
+    "margin_delta": 21197.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "FARMERS_MARKET",
+      "YARN_STORE"
+    ],
+    "dsm_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "BAKERY",
+      "YARN_STORE",
+      "PET_CAFE",
+      "FARMERS_MARKET",
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": null,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v54",
+    "seed": 94103,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      58042.0,
+      54472.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      59264.0,
+      56438.0
+    ],
+    "candidate_coin_delta": 1222.0,
+    "opponent_coin_delta": 1966.0,
+    "baseline_margin": 3570.0,
+    "dsm_margin": 2826.0,
+    "margin_delta": -744.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PET_CAFE",
+      "BAKERY",
+      "YARN_STORE",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP"
+    ],
+    "dsm_shop_sequence": [
+      "PET_CAFE",
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "BAKERY",
+      "PIZZA_SHOP"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": 1,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v54",
+    "seed": 94103,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      54514.0,
+      58005.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      60090.0,
+      58056.0
+    ],
+    "candidate_coin_delta": 5576.0,
+    "opponent_coin_delta": 51.0,
+    "baseline_margin": -3491.0,
+    "dsm_margin": 2034.0,
+    "margin_delta": 5525.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PET_CAFE",
+      "BAKERY",
+      "YARN_STORE",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP"
+    ],
+    "dsm_shop_sequence": [
+      "PET_CAFE",
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "BAKERY",
+      "ICE_CREAM_SHOP"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": null,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v54",
+    "seed": 94104,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      92609.0,
+      86362.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      68868.0,
+      68470.0
+    ],
+    "candidate_coin_delta": -23741.0,
+    "opponent_coin_delta": -17892.0,
+    "baseline_margin": 6247.0,
+    "dsm_margin": 398.0,
+    "margin_delta": -5849.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "BAKERY",
+      "PET_CAFE"
+    ],
+    "dsm_shop_sequence": [
+      "BRUNCH_SPOT",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": 1,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v54",
+    "seed": 94104,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      92609.0,
+      86362.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      68868.0,
+      68470.0
+    ],
+    "candidate_coin_delta": -23741.0,
+    "opponent_coin_delta": -17892.0,
+    "baseline_margin": 6247.0,
+    "dsm_margin": 398.0,
+    "margin_delta": -5849.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "BAKERY",
+      "PET_CAFE"
+    ],
+    "dsm_shop_sequence": [
+      "BRUNCH_SPOT",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": null,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v56",
+    "seed": 94100,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      99066.0,
+      91531.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      122825.0,
+      108624.0
+    ],
+    "candidate_coin_delta": 23759.0,
+    "opponent_coin_delta": 17093.0,
+    "baseline_margin": 7535.0,
+    "dsm_margin": 14201.0,
+    "margin_delta": 6666.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "PET_CAFE",
+      "PIZZA_SHOP"
+    ],
+    "dsm_shop_sequence": [
+      "FARMERS_MARKET",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "YARN_STORE",
+      "FARMERS_MARKET"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": 1,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v56",
+    "seed": 94100,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      99066.0,
+      91531.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      122825.0,
+      108624.0
+    ],
+    "candidate_coin_delta": 23759.0,
+    "opponent_coin_delta": 17093.0,
+    "baseline_margin": 7535.0,
+    "dsm_margin": 14201.0,
+    "margin_delta": 6666.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "PET_CAFE",
+      "PIZZA_SHOP"
+    ],
+    "dsm_shop_sequence": [
+      "FARMERS_MARKET",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "YARN_STORE",
+      "FARMERS_MARKET"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": null,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v56",
+    "seed": 94101,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      108145.0,
+      100098.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      124643.0,
+      91858.0
+    ],
+    "candidate_coin_delta": 16498.0,
+    "opponent_coin_delta": -8240.0,
+    "baseline_margin": 8047.0,
+    "dsm_margin": 32785.0,
+    "margin_delta": 24738.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "dsm_shop_sequence": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": 1,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v56",
+    "seed": 94101,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      108145.0,
+      100098.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      124643.0,
+      91858.0
+    ],
+    "candidate_coin_delta": 16498.0,
+    "opponent_coin_delta": -8240.0,
+    "baseline_margin": 8047.0,
+    "dsm_margin": 32785.0,
+    "margin_delta": 24738.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "dsm_shop_sequence": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": null,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v56",
+    "seed": 94102,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      81174.0,
+      83011.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      90347.0,
+      71169.0
+    ],
+    "candidate_coin_delta": 9173.0,
+    "opponent_coin_delta": -11842.0,
+    "baseline_margin": -1837.0,
+    "dsm_margin": 19178.0,
+    "margin_delta": 21015.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "FARMERS_MARKET",
+      "YARN_STORE"
+    ],
+    "dsm_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "BAKERY",
+      "YARN_STORE",
+      "PET_CAFE",
+      "FARMERS_MARKET",
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": 1,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v56",
+    "seed": 94102,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      81174.0,
+      83011.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      90504.0,
+      71144.0
+    ],
+    "candidate_coin_delta": 9330.0,
+    "opponent_coin_delta": -11867.0,
+    "baseline_margin": -1837.0,
+    "dsm_margin": 19360.0,
+    "margin_delta": 21197.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "FARMERS_MARKET",
+      "YARN_STORE"
+    ],
+    "dsm_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "BAKERY",
+      "YARN_STORE",
+      "PET_CAFE",
+      "FARMERS_MARKET",
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": null,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v56",
+    "seed": 94103,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      58042.0,
+      54472.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      59264.0,
+      56438.0
+    ],
+    "candidate_coin_delta": 1222.0,
+    "opponent_coin_delta": 1966.0,
+    "baseline_margin": 3570.0,
+    "dsm_margin": 2826.0,
+    "margin_delta": -744.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PET_CAFE",
+      "BAKERY",
+      "YARN_STORE",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP"
+    ],
+    "dsm_shop_sequence": [
+      "PET_CAFE",
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "BAKERY",
+      "PIZZA_SHOP"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": 1,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v56",
+    "seed": 94103,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      54514.0,
+      58005.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      60090.0,
+      58056.0
+    ],
+    "candidate_coin_delta": 5576.0,
+    "opponent_coin_delta": 51.0,
+    "baseline_margin": -3491.0,
+    "dsm_margin": 2034.0,
+    "margin_delta": 5525.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "PET_CAFE",
+      "BAKERY",
+      "YARN_STORE",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP"
+    ],
+    "dsm_shop_sequence": [
+      "PET_CAFE",
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "BAKERY",
+      "ICE_CREAM_SHOP"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": null,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v56",
+    "seed": 94104,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      92609.0,
+      86362.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      68868.0,
+      68470.0
+    ],
+    "candidate_coin_delta": -23741.0,
+    "opponent_coin_delta": -17892.0,
+    "baseline_margin": 6247.0,
+    "dsm_margin": 398.0,
+    "margin_delta": -5849.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "BAKERY",
+      "PET_CAFE"
+    ],
+    "dsm_shop_sequence": [
+      "BRUNCH_SPOT",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": 1,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "opponent": "v56",
+    "seed": 94104,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      92609.0,
+      86362.0
+    ],
+    "dsm_coins_candidate_opponent": [
+      68868.0,
+      68470.0
+    ],
+    "candidate_coin_delta": -23741.0,
+    "opponent_coin_delta": -17892.0,
+    "baseline_margin": 6247.0,
+    "dsm_margin": 398.0,
+    "margin_delta": -5849.0,
+    "same_shop_sequence": false,
+    "baseline_shop_sequence": [
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "BAKERY",
+      "PET_CAFE"
+    ],
+    "dsm_shop_sequence": [
+      "BRUNCH_SPOT",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP"
+    ],
+    "first_action_difference": {
+      "step_index": 1,
+      "step": null,
+      "day": 0,
+      "hour": 1,
+      "baseline_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "dsm_action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "seed": 95200,
+  "candidate_sha256": "d406f4920d0e9ef810d6b1e4b1f1aaa8fd68367031b8ba79ac25ad2e1165f695",
+  "reset_sha256": "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+  "versus": "v50",
+  "seat_orders": [
+    "candidate seat 0",
+    "candidate seat 1"
+  ],
+  "candidate_coins": [
+    103346,
+    103346
+  ],
+  "v50_coins": [
+    84823,
+    84823
+  ],
+  "same_seed_reset_control_coins": [
+    103354,
+    103354
+  ],
+  "candidate_minus_reset_margin_delta": [
+    -8,
+    -8
+  ],
+  "errors": 0,
+  "timeouts": 0,
+  "single_added_order": {
+    "observation_step": 5,
+    "action_step": 6,
+    "day": 0,
+    "hour": 5,
+    "cash": 1042,
+    "baseline_market_orders": [],
+    "action": [
+      "BUY_SEED",
+      "WHEAT",
+      1
+    ],
+    "planned_wheat_plants": 1,
+    "wheat_seed_stock_before_order": 1
+  },
+  "preservation": {
+    "actor_action_changes": 0,
+    "baseline_order_prefix_mismatches": 0,
+    "unchanged_fixture_steps": [
+      11,
+      24,
+      30
+    ]
+  },
+  "interpretation": "One extra seed buy; plant counts unchanged; tiny negative paired margin change. Near-no-op, stop.",
+  "records": "experiments/v58_validation/strong_economy/append_spent95200/"
+}

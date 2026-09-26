@@ -1,0 +1,14 @@
+{
+  "retrieved_at_utc": "2026-09-26T03:17:35.611595+00:00",
+  "competition": "Kaggriculture",
+  "competition_id": 147734,
+  "official_rules_page_id": 742993,
+  "page_name": "rules",
+  "page_published": true,
+  "official_public_rules_url": "https://www.kaggle.com/competitions/kaggriculture/rules",
+  "official_competition_metadata_url": "https://www.kaggle.com/competitions/kaggriculture/overview",
+  "retrieval_endpoint": "POST https://www.kaggle.com/api/i/competitions.PageService/GetPage; body page.competitionId=147734,page.name=rules",
+  "rules_content_sha256": "79ef510e2623d1fd836e900937a01847bd9ab78ba89ce08b9afced8c569679c9",
+  "rules_content_chars": 37270,
+  "note": "Metadata and content hash only; full rules text is not mirrored here."
+}

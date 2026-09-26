@@ -1,0 +1,429 @@
+{
+  "seed": 92902,
+  "candidate_seat": 0,
+  "matches": {
+    "v52": {
+      "final_coins": [
+        105947.0,
+        112207.0
+      ],
+      "candidate_margin": -6260.0,
+      "market_balance_mismatches": 0,
+      "candidate_gross_sales": {
+        "WHEAT": {
+          "accepted_units": 426,
+          "gross_revenue": 16945
+        },
+        "FERTILIZER": {
+          "accepted_units": 327,
+          "gross_revenue": 15710
+        },
+        "WOOL": {
+          "accepted_units": 46,
+          "gross_revenue": 8533
+        },
+        "MILK": {
+          "accepted_units": 221,
+          "gross_revenue": 52131
+        },
+        "MELON": {
+          "accepted_units": 72,
+          "gross_revenue": 14436
+        },
+        "EGG": {
+          "accepted_units": 224,
+          "gross_revenue": 10160
+        },
+        "STRAWBERRY": {
+          "accepted_units": 252,
+          "gross_revenue": 6447
+        },
+        "TOMATO": {
+          "accepted_units": 80,
+          "gross_revenue": 13484
+        },
+        "CARROT": {
+          "accepted_units": 90,
+          "gross_revenue": 2555
+        }
+      },
+      "candidate_total_gross_sales": 140401,
+      "opponent_gross_sales": {
+        "WHEAT": {
+          "accepted_units": 407,
+          "gross_revenue": 16172
+        },
+        "FERTILIZER": {
+          "accepted_units": 319,
+          "gross_revenue": 14435
+        },
+        "WOOL": {
+          "accepted_units": 278,
+          "gross_revenue": 49165
+        },
+        "MILK": {
+          "accepted_units": 164,
+          "gross_revenue": 38191
+        },
+        "MELON": {
+          "accepted_units": 72,
+          "gross_revenue": 14043
+        },
+        "STRAWBERRY": {
+          "accepted_units": 246,
+          "gross_revenue": 5262
+        },
+        "CARROT": {
+          "accepted_units": 82,
+          "gross_revenue": 2210
+        }
+      }
+    },
+    "v53": {
+      "final_coins": [
+        105451.0,
+        112540.0
+      ],
+      "candidate_margin": -7089.0,
+      "market_balance_mismatches": 0,
+      "candidate_gross_sales": {
+        "WHEAT": {
+          "accepted_units": 426,
+          "gross_revenue": 16876
+        },
+        "FERTILIZER": {
+          "accepted_units": 327,
+          "gross_revenue": 15710
+        },
+        "WOOL": {
+          "accepted_units": 46,
+          "gross_revenue": 8533
+        },
+        "MILK": {
+          "accepted_units": 221,
+          "gross_revenue": 52095
+        },
+        "MELON": {
+          "accepted_units": 72,
+          "gross_revenue": 14436
+        },
+        "EGG": {
+          "accepted_units": 224,
+          "gross_revenue": 10160
+        },
+        "STRAWBERRY": {
+          "accepted_units": 252,
+          "gross_revenue": 6056
+        },
+        "TOMATO": {
+          "accepted_units": 80,
+          "gross_revenue": 13484
+        },
+        "CARROT": {
+          "accepted_units": 90,
+          "gross_revenue": 2555
+        }
+      },
+      "candidate_total_gross_sales": 139905,
+      "opponent_gross_sales": {
+        "WHEAT": {
+          "accepted_units": 407,
+          "gross_revenue": 16198
+        },
+        "FERTILIZER": {
+          "accepted_units": 319,
+          "gross_revenue": 14435
+        },
+        "WOOL": {
+          "accepted_units": 278,
+          "gross_revenue": 49165
+        },
+        "MILK": {
+          "accepted_units": 164,
+          "gross_revenue": 38127
+        },
+        "MELON": {
+          "accepted_units": 72,
+          "gross_revenue": 14043
+        },
+        "STRAWBERRY": {
+          "accepted_units": 246,
+          "gross_revenue": 5624
+        },
+        "CARROT": {
+          "accepted_units": 82,
+          "gross_revenue": 2210
+        }
+      }
+    },
+    "v54": {
+      "final_coins": [
+        98600.0,
+        96146.0
+      ],
+      "candidate_margin": 2454.0,
+      "market_balance_mismatches": 0,
+      "candidate_gross_sales": {
+        "WHEAT": {
+          "accepted_units": 426,
+          "gross_revenue": 15731
+        },
+        "FERTILIZER": {
+          "accepted_units": 327,
+          "gross_revenue": 16549
+        },
+        "WOOL": {
+          "accepted_units": 46,
+          "gross_revenue": 9840
+        },
+        "MILK": {
+          "accepted_units": 221,
+          "gross_revenue": 50420
+        },
+        "MELON": {
+          "accepted_units": 72,
+          "gross_revenue": 14267
+        },
+        "EGG": {
+          "accepted_units": 224,
+          "gross_revenue": 9493
+        },
+        "STRAWBERRY": {
+          "accepted_units": 252,
+          "gross_revenue": 6043
+        },
+        "TOMATO": {
+          "accepted_units": 80,
+          "gross_revenue": 8062
+        },
+        "CARROT": {
+          "accepted_units": 90,
+          "gross_revenue": 3352
+        }
+      },
+      "candidate_total_gross_sales": 133757,
+      "opponent_gross_sales": {
+        "WHEAT": {
+          "accepted_units": 426,
+          "gross_revenue": 15722
+        },
+        "FERTILIZER": {
+          "accepted_units": 329,
+          "gross_revenue": 16596
+        },
+        "WOOL": {
+          "accepted_units": 72,
+          "gross_revenue": 15881
+        },
+        "MILK": {
+          "accepted_units": 185,
+          "gross_revenue": 42138
+        },
+        "MELON": {
+          "accepted_units": 72,
+          "gross_revenue": 14267
+        },
+        "EGG": {
+          "accepted_units": 225,
+          "gross_revenue": 9529
+        },
+        "STRAWBERRY": {
+          "accepted_units": 255,
+          "gross_revenue": 6099
+        },
+        "TOMATO": {
+          "accepted_units": 80,
+          "gross_revenue": 7923
+        },
+        "CARROT": {
+          "accepted_units": 90,
+          "gross_revenue": 3352
+        }
+      }
+    }
+  },
+  "first_price_divergence": {
+    "CARROT": {
+      "frame": 525,
+      "day": 21,
+      "hour": 21,
+      "values": {
+        "v52": 37,
+        "v53": 37,
+        "v54": 38
+      }
+    },
+    "EGG": {
+      "frame": 289,
+      "day": 12,
+      "hour": 1,
+      "values": {
+        "v52": 51,
+        "v53": 51,
+        "v54": 50
+      }
+    },
+    "FERTILIZER": {
+      "frame": 142,
+      "day": 5,
+      "hour": 22,
+      "values": {
+        "v52": 91,
+        "v53": 91,
+        "v54": 90
+      }
+    },
+    "MELON": {
+      "frame": 249,
+      "day": 10,
+      "hour": 9,
+      "values": {
+        "v52": 266,
+        "v53": 266,
+        "v54": 272
+      }
+    },
+    "MILK": {
+      "frame": 196,
+      "day": 8,
+      "hour": 4,
+      "values": {
+        "v52": 216,
+        "v53": 216,
+        "v54": 223
+      }
+    },
+    "STRAWBERRY": {
+      "frame": 383,
+      "day": 15,
+      "hour": 23,
+      "values": {
+        "v52": 151,
+        "v53": 151,
+        "v54": 141
+      }
+    },
+    "TOMATO": {
+      "frame": 513,
+      "day": 21,
+      "hour": 9,
+      "values": {
+        "v52": 92,
+        "v53": 92,
+        "v54": 90
+      }
+    },
+    "WHEAT": {
+      "frame": 92,
+      "day": 3,
+      "hour": 20,
+      "values": {
+        "v52": 29,
+        "v53": 29,
+        "v54": 30
+      }
+    },
+    "WOOL": {
+      "frame": 150,
+      "day": 6,
+      "hour": 6,
+      "values": {
+        "v52": 206,
+        "v53": 206,
+        "v54": 199
+      }
+    }
+  },
+  "first_inventory_divergence": {
+    "CARROT": {
+      "frame": 505,
+      "day": 21,
+      "hour": 1,
+      "values": {
+        "v52": 9978,
+        "v53": 9978,
+        "v54": 9976
+      }
+    },
+    "EGG": {
+      "frame": 265,
+      "day": 11,
+      "hour": 1,
+      "values": {
+        "v52": 9992,
+        "v53": 9992,
+        "v54": 9996
+      }
+    },
+    "FERTILIZER": {
+      "frame": 135,
+      "day": 5,
+      "hour": 15,
+      "values": {
+        "v52": 10041,
+        "v53": 10041,
+        "v54": 10042
+      }
+    },
+    "MELON": {
+      "frame": 249,
+      "day": 10,
+      "hour": 9,
+      "values": {
+        "v52": 9995,
+        "v53": 9995,
+        "v54": 9989
+      }
+    },
+    "MILK": {
+      "frame": 196,
+      "day": 8,
+      "hour": 4,
+      "values": {
+        "v52": 9959,
+        "v53": 9959,
+        "v54": 9947
+      }
+    },
+    "STRAWBERRY": {
+      "frame": 383,
+      "day": 15,
+      "hour": 23,
+      "values": {
+        "v52": 9986,
+        "v53": 9986,
+        "v54": 9994
+      }
+    },
+    "TOMATO": {
+      "frame": 505,
+      "day": 21,
+      "hour": 1,
+      "values": {
+        "v52": 9777,
+        "v53": 9777,
+        "v54": 9778
+      }
+    },
+    "WHEAT": {
+      "frame": 92,
+      "day": 3,
+      "hour": 20,
+      "values": {
+        "v52": 9980,
+        "v53": 9980,
+        "v54": 9977
+      }
+    },
+    "WOOL": {
+      "frame": 150,
+      "day": 6,
+      "hour": 6,
+      "values": {
+        "v52": 9999,
+        "v53": 9999,
+        "v54": 10005
+      }
+    }
+  }
+}

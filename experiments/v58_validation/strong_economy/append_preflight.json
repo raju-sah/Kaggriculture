@@ -1,0 +1,4689 @@
+{
+  "loader": "kaggle_environments.agent.get_last_callable",
+  "candidate_entrypoint": "zzz_economy_policy_entrypoint",
+  "baseline_sha256": "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+  "candidate_sha256": "d406f4920d0e9ef810d6b1e4b1f1aaa8fd68367031b8ba79ac25ad2e1165f695",
+  "replay_sha256": "2d955fcdd9f52b64e80332f8687ca9cafacf3dce9093053cea9bc46d4ebaa4a5",
+  "observations_checked": 1440,
+  "base_order_prefix_mismatches": [],
+  "appended_action_rows": [
+    {
+      "step": 5,
+      "seat": 0,
+      "day": 0,
+      "hour": 5,
+      "money": 1042.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "NORTH"
+      ],
+      "hands": [
+        [
+          "PLACE",
+          "COW"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "CARE"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 5,
+      "seat": 1,
+      "day": 0,
+      "hour": 5,
+      "money": 1042.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "NORTH"
+      ],
+      "hands": [
+        [
+          "PLACE",
+          "COW"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "CARE"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 160,
+      "seat": 1,
+      "day": 6,
+      "hour": 16,
+      "money": 1241.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 1,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "WATER"
+      ],
+      "hands": [
+        [
+          "EAST"
+        ],
+        [
+          "PLANT",
+          "STRAWBERRY"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "BUILD_PASTURE"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 163,
+      "seat": 1,
+      "day": 6,
+      "hour": 19,
+      "money": 921.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 3,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [
+        [
+          "SELL",
+          "WHEAT",
+          1
+        ]
+      ],
+      "candidate_market": [
+        [
+          "SELL",
+          "WHEAT",
+          1
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "PLANT",
+        "STRAWBERRY"
+      ],
+      "hands": [
+        [
+          "PLANT",
+          "STRAWBERRY"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PLANT",
+          "STRAWBERRY"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 166,
+      "seat": 0,
+      "day": 6,
+      "hour": 22,
+      "money": 1369.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 2,
+        "TOMATO": 0,
+        "WHEAT": 2
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "PASS"
+      ],
+      "hands": [
+        [
+          "PLANT",
+          "STRAWBERRY"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PLANT",
+          "STRAWBERRY"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 166,
+      "seat": 1,
+      "day": 6,
+      "hour": 22,
+      "money": 1077.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 1,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "PASS"
+      ],
+      "hands": [
+        [
+          "PLANT",
+          "STRAWBERRY"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PLANT",
+          "STRAWBERRY"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 190,
+      "seat": 0,
+      "day": 7,
+      "hour": 22,
+      "money": 790.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 3
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "PLANT",
+        "WHEAT"
+      ],
+      "hands": [
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 214,
+      "seat": 0,
+      "day": 8,
+      "hour": 22,
+      "money": 2029.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "EAST"
+      ],
+      "hands": [
+        [
+          "PASS"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 214,
+      "seat": 1,
+      "day": 8,
+      "hour": 22,
+      "money": 1546.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "EAST"
+      ],
+      "hands": [
+        [
+          "PASS"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 236,
+      "seat": 1,
+      "day": 9,
+      "hour": 20,
+      "money": 2838.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "PLANT",
+        "WHEAT"
+      ],
+      "hands": [
+        [
+          "WATER"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 238,
+      "seat": 0,
+      "day": 9,
+      "hour": 22,
+      "money": 3252.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 2
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "EAST"
+      ],
+      "hands": [
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 238,
+      "seat": 1,
+      "day": 9,
+      "hour": 22,
+      "money": 3312.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "EAST"
+      ],
+      "hands": [
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 256,
+      "seat": 0,
+      "day": 10,
+      "hour": 16,
+      "money": 14398.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 2
+      },
+      "base_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          0
+        ]
+      ],
+      "candidate_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          0
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "SOUTH"
+      ],
+      "hands": [
+        [
+          "WEST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "EAST"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 256,
+      "seat": 1,
+      "day": 10,
+      "hour": 16,
+      "money": 14646.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 2
+      },
+      "base_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          0
+        ]
+      ],
+      "candidate_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          0
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "SOUTH"
+      ],
+      "hands": [
+        [
+          "WEST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "NORTH"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 262,
+      "seat": 0,
+      "day": 10,
+      "hour": 22,
+      "money": 18367.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "PASS"
+      ],
+      "hands": [
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 286,
+      "seat": 0,
+      "day": 11,
+      "hour": 22,
+      "money": 16668.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 5
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "PLANT",
+        "WHEAT"
+      ],
+      "hands": [
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "SOUTH"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 286,
+      "seat": 1,
+      "day": 11,
+      "hour": 22,
+      "money": 15304.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "PLANT",
+        "WHEAT"
+      ],
+      "hands": [
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 298,
+      "seat": 0,
+      "day": 12,
+      "hour": 10,
+      "money": 19593.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 3
+      },
+      "base_market": [
+        [
+          "SELL",
+          "MILK",
+          6
+        ]
+      ],
+      "candidate_market": [
+        [
+          "SELL",
+          "MILK",
+          6
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "PLACE",
+        "MILK",
+        6
+      ],
+      "hands": [
+        [
+          "WEST"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "SOUTH"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 298,
+      "seat": 1,
+      "day": 12,
+      "hour": 10,
+      "money": 20164.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 2
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "PLACE",
+        "MILK",
+        6
+      ],
+      "hands": [
+        [
+          "WEST"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "SOUTH"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 301,
+      "seat": 0,
+      "day": 12,
+      "hour": 13,
+      "money": 20653.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "WATER"
+      ],
+      "hands": [
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WEST"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 306,
+      "seat": 0,
+      "day": 12,
+      "hour": 18,
+      "money": 20623.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "WATER"
+      ],
+      "hands": [
+        [
+          "WEST"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "WATER"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 306,
+      "seat": 1,
+      "day": 12,
+      "hour": 18,
+      "money": 20312.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "WATER"
+      ],
+      "hands": [
+        [
+          "WEST"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "WATER"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 334,
+      "seat": 0,
+      "day": 13,
+      "hour": 22,
+      "money": 22956.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "COLLECT_FERTILIZER"
+      ],
+      "hands": [
+        [
+          "HARVEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 334,
+      "seat": 1,
+      "day": 13,
+      "hour": 22,
+      "money": 21988.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "COLLECT_FERTILIZER"
+      ],
+      "hands": [
+        [
+          "HARVEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 346,
+      "seat": 0,
+      "day": 14,
+      "hour": 10,
+      "money": 24868.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "CARE"
+      ],
+      "hands": [
+        [
+          "WATER"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "CARE"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 346,
+      "seat": 1,
+      "day": 14,
+      "hour": 10,
+      "money": 26275.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "CARE"
+      ],
+      "hands": [
+        [
+          "WATER"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 349,
+      "seat": 0,
+      "day": 14,
+      "hour": 13,
+      "money": 24858.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "NORTH"
+      ],
+      "hands": [
+        [
+          "SOUTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "FEED"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 349,
+      "seat": 1,
+      "day": 14,
+      "hour": 13,
+      "money": 26265.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "NORTH"
+      ],
+      "hands": [
+        [
+          "SOUTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 353,
+      "seat": 1,
+      "day": 14,
+      "hour": 17,
+      "money": 26235.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "HARVEST"
+      ],
+      "hands": [
+        [
+          "HARVEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 354,
+      "seat": 1,
+      "day": 14,
+      "hour": 18,
+      "money": 26235.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "NORTH"
+      ],
+      "hands": [
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 358,
+      "seat": 0,
+      "day": 14,
+      "hour": 22,
+      "money": 24808.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 3
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "FERTILIZE"
+      ],
+      "hands": [
+        [
+          "NORTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "CARE"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 358,
+      "seat": 1,
+      "day": 14,
+      "hour": 22,
+      "money": 26767.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "FERTILIZE"
+      ],
+      "hands": [
+        [
+          "NORTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 369,
+      "seat": 0,
+      "day": 15,
+      "hour": 9,
+      "money": 26945.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "HARVEST"
+      ],
+      "hands": [
+        [
+          "NORTH"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "FEED"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 369,
+      "seat": 1,
+      "day": 15,
+      "hour": 9,
+      "money": 30047.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "HARVEST"
+      ],
+      "hands": [
+        [
+          "NORTH"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 373,
+      "seat": 1,
+      "day": 15,
+      "hour": 13,
+      "money": 31241.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "WEST"
+      ],
+      "hands": [
+        [
+          "NORTH"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "PLACE",
+          "MILK",
+          6
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 378,
+      "seat": 0,
+      "day": 15,
+      "hour": 18,
+      "money": 29578.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "CARE"
+      ],
+      "hands": [
+        [
+          "WATER"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 378,
+      "seat": 1,
+      "day": 15,
+      "hour": 18,
+      "money": 31211.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "CARE"
+      ],
+      "hands": [
+        [
+          "WATER"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 401,
+      "seat": 1,
+      "day": 16,
+      "hour": 17,
+      "money": 37078.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "EAST"
+      ],
+      "hands": [
+        [
+          "WEST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 406,
+      "seat": 1,
+      "day": 16,
+      "hour": 22,
+      "money": 39403.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 2
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "PLANT",
+        "WHEAT"
+      ],
+      "hands": [
+        [
+          "CARE"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "CARE"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 416,
+      "seat": 1,
+      "day": 17,
+      "hour": 8,
+      "money": 44200.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "NORTH"
+      ],
+      "hands": [
+        [
+          "CARE"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 418,
+      "seat": 1,
+      "day": 17,
+      "hour": 10,
+      "money": 44170.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 3
+      },
+      "base_market": [
+        [
+          "SELL",
+          "WOOL",
+          6
+        ]
+      ],
+      "candidate_market": [
+        [
+          "SELL",
+          "WOOL",
+          6
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "HARVEST"
+      ],
+      "hands": [
+        [
+          "WEST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "PLACE",
+          "WOOL",
+          6
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 424,
+      "seat": 1,
+      "day": 17,
+      "hour": 16,
+      "money": 45329.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "SOUTH"
+      ],
+      "hands": [
+        [
+          "CARE"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WATER"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 428,
+      "seat": 1,
+      "day": 17,
+      "hour": 20,
+      "money": 47105.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "EAST"
+      ],
+      "hands": [
+        [
+          "FEED"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 443,
+      "seat": 1,
+      "day": 18,
+      "hour": 11,
+      "money": 51509.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [
+        [
+          "SELL",
+          "MILK",
+          9
+        ]
+      ],
+      "candidate_market": [
+        [
+          "SELL",
+          "MILK",
+          9
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "WEST"
+      ],
+      "hands": [
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "PLANT",
+          "TOMATO"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 446,
+      "seat": 1,
+      "day": 18,
+      "hour": 14,
+      "money": 51499.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [
+        [
+          "SELL",
+          "MILK",
+          9
+        ]
+      ],
+      "candidate_market": [
+        [
+          "SELL",
+          "MILK",
+          9
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "CARE"
+      ],
+      "hands": [
+        [
+          "WATER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "PLANT",
+          "TOMATO"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 452,
+      "seat": 1,
+      "day": 18,
+      "hour": 20,
+      "money": 52484.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [
+        [
+          "SELL",
+          "STRAWBERRY",
+          10
+        ]
+      ],
+      "candidate_market": [
+        [
+          "SELL",
+          "STRAWBERRY",
+          10
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "FEED"
+      ],
+      "hands": [
+        [
+          "SOUTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PLACE",
+          "STRAWBERRY",
+          10
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 454,
+      "seat": 1,
+      "day": 18,
+      "hour": 22,
+      "money": 56949.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "COLLECT_FERTILIZER"
+      ],
+      "hands": [
+        [
+          "SOUTH"
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 476,
+      "seat": 1,
+      "day": 19,
+      "hour": 20,
+      "money": 61170.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "WATER"
+      ],
+      "hands": [
+        [
+          "EAST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "FERTILIZE"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 478,
+      "seat": 1,
+      "day": 19,
+      "hour": 22,
+      "money": 62637.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "PLANT",
+        "WHEAT"
+      ],
+      "hands": [
+        [
+          "EAST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 495,
+      "seat": 1,
+      "day": 20,
+      "hour": 15,
+      "money": 67977.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "WATER"
+      ],
+      "hands": [
+        [
+          "WEST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "PLACE",
+          "STRAWBERRY",
+          6
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "NORTH"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 496,
+      "seat": 1,
+      "day": 20,
+      "hour": 16,
+      "money": 67977.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "HARVEST"
+      ],
+      "hands": [
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "NORTH"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 497,
+      "seat": 1,
+      "day": 20,
+      "hour": 17,
+      "money": 67977.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "WEST"
+      ],
+      "hands": [
+        [
+          "SOUTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "NORTH"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 500,
+      "seat": 1,
+      "day": 20,
+      "hour": 20,
+      "money": 69698.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "SOUTH"
+      ],
+      "hands": [
+        [
+          "FEED"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "FERTILIZE"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 502,
+      "seat": 1,
+      "day": 20,
+      "hour": 22,
+      "money": 69688.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "SOUTH"
+      ],
+      "hands": [
+        [
+          "HARVEST"
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "SOUTH"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 513,
+      "seat": 1,
+      "day": 21,
+      "hour": 9,
+      "money": 75405.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "COLLECT_FERTILIZER"
+      ],
+      "hands": [
+        [
+          "CARE"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "WATER"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 516,
+      "seat": 1,
+      "day": 21,
+      "hour": 12,
+      "money": 75395.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "CARE"
+      ],
+      "hands": [
+        [
+          "WATER"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WATER"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 518,
+      "seat": 1,
+      "day": 21,
+      "hour": 14,
+      "money": 76641.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 2
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "HARVEST"
+      ],
+      "hands": [
+        [
+          "WATER"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 526,
+      "seat": 1,
+      "day": 21,
+      "hour": 22,
+      "money": 78588.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "COLLECT_FERTILIZER"
+      ],
+      "hands": [
+        [
+          "HARVEST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "NORTH"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 542,
+      "seat": 1,
+      "day": 22,
+      "hour": 14,
+      "money": 82660.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "WEST"
+      ],
+      "hands": [
+        [
+          "WATER"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "PLACE",
+          "STRAWBERRY",
+          4
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "SOUTH"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 550,
+      "seat": 1,
+      "day": 22,
+      "hour": 22,
+      "money": 84060.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "PLANT",
+        "WHEAT"
+      ],
+      "hands": [
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "WEST"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 562,
+      "seat": 1,
+      "day": 23,
+      "hour": 10,
+      "money": 88463.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "WEST"
+      ],
+      "hands": [
+        [
+          "CARE"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "FERTILIZE"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 564,
+      "seat": 1,
+      "day": 23,
+      "hour": 12,
+      "money": 88453.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 1
+      },
+      "base_market": [
+        [
+          "SELL",
+          "STRAWBERRY",
+          8
+        ]
+      ],
+      "candidate_market": [
+        [
+          "SELL",
+          "STRAWBERRY",
+          8
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "WATER"
+      ],
+      "hands": [
+        [
+          "WEST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "FERTILIZE"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 568,
+      "seat": 1,
+      "day": 23,
+      "hour": 16,
+      "money": 88679.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 2
+      },
+      "base_market": [
+        [
+          "SELL",
+          "STRAWBERRY",
+          8
+        ]
+      ],
+      "candidate_market": [
+        [
+          "SELL",
+          "STRAWBERRY",
+          8
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "PLANT",
+        "WHEAT"
+      ],
+      "hands": [
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "FERTILIZE"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 572,
+      "seat": 1,
+      "day": 23,
+      "hour": 20,
+      "money": 88891.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 2
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "SOUTH"
+      ],
+      "hands": [
+        [
+          "WATER"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "FEED"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "SOUTH"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 574,
+      "seat": 1,
+      "day": 23,
+      "hour": 22,
+      "money": 88891.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "EAST"
+      ],
+      "hands": [
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 593,
+      "seat": 1,
+      "day": 24,
+      "hour": 17,
+      "money": 93342.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "WEST"
+      ],
+      "hands": [
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "FERTILIZE"
+        ],
+        [
+          "DIG"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "WEST"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 598,
+      "seat": 1,
+      "day": 24,
+      "hour": 22,
+      "money": 93292.0,
+      "seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "base_market": [],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "farmer": [
+        "WEST"
+      ],
+      "hands": [
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "PLANT",
+          "WHEAT"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "PLANT",
+          "CARROT"
+        ],
+        [
+          "PLANT",
+          "CARROT"
+        ],
+        [
+          "PASS"
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "new_orders": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    }
+  ],
+  "fixtures_steps11_24_30": {
+    "11": {
+      "day": 0,
+      "hour": 11,
+      "money": 562.0,
+      "base_market": [
+        [
+          "BUY_SEED",
+          "MELON",
+          1
+        ]
+      ],
+      "candidate_market": [
+        [
+          "BUY_SEED",
+          "MELON",
+          1
+        ]
+      ],
+      "equal": true
+    },
+    "24": {
+      "day": 1,
+      "hour": 0,
+      "money": 12.0,
+      "base_market": [
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "candidate_market": [
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "equal": true
+    },
+    "30": {
+      "day": 1,
+      "hour": 6,
+      "money": 8.0,
+      "base_market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          1
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          3
+        ]
+      ],
+      "candidate_market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          1
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          3
+        ]
+      ],
+      "equal": true
+    }
+  }
+}

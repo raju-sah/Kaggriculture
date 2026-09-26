@@ -1,0 +1,84 @@
+{
+  "created_at": "2026-09-25T17:57:24.473827+00:00",
+  "seeds": [
+    92700,
+    92701,
+    92702,
+    92703,
+    92704,
+    92705,
+    92706,
+    92707,
+    92708,
+    92709,
+    92710,
+    92711,
+    92712,
+    92713,
+    92714,
+    92715,
+    92716,
+    92717,
+    92718,
+    92719,
+    92720,
+    92721,
+    92722,
+    92723,
+    92724,
+    92725,
+    92726,
+    92727,
+    92728,
+    92729
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "repeats": 1,
+  "candidates": {
+    "v57": "agents/v57_agent.py",
+    "v56": "agents/v56_agent.py"
+  },
+  "opponents": {
+    "v48": "experiments/v48_agent.py",
+    "v51": "experiments/v51_agent.py",
+    "v55": "agents/v55_agent.py",
+    "ledger_lena": "experiments/v57_broad/ledger_lena_normalized.py"
+  },
+  "direct_matchup": [
+    "v57",
+    "v56"
+  ],
+  "common_panel_games": 480,
+  "direct_games": 60,
+  "total_games": 540,
+  "sha256": {
+    "candidate:v57": "6b2e3ace3b9d500047e9ae8f2da4fd7729cf65f2f29b16315a2b8aa1b476ba59",
+    "candidate:v56": "d9e9670921b62afedfa8cbc7086d2a2ec19e153ee26006cef477eadd462bd19c",
+    "opponent:v48": "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a",
+    "opponent:v51": "274f5913c4c4787cf825d10fde4de65f79b61d25c764aa6761d36d0840c04eb4",
+    "opponent:v55": "97edf39ce1f2f72f3874f555bf413a9a8d3f94072397c0ca000c37b7c5931878",
+    "opponent:ledger_lena": "4956258b2d1ae4a56968e6e72225324b02ea175caf4f563d37360ddab7ffb67a"
+  },
+  "reference_original_sha256": "ba961e9e73c8abd54ade1333b71e3d1b8ee66c9a9f757d164d7335e85fbc57f2",
+  "workers": 6,
+  "timeout_seconds": 240,
+  "replay_policy": "errors",
+  "primary_metric": "Paired change in strict win rate, v57 minus v56, on the common panel.",
+  "uncertainty": "95% percentile bootstrap resampling complete seed blocks (all opponents and seats), 10000 resamples, RNG 57056.",
+  "submission_gate": {
+    "zero_execution_errors": true,
+    "minimum_win_rate_gain_pp": 5,
+    "paired_seed_bootstrap_lower_bound_pp_above": 0,
+    "maximum_per_opponent_win_rate_regression_pp": 5
+  },
+  "rules": [
+    "No agent tuning, seed replacement, or outcome-based early stopping.",
+    "Report common-panel and direct-matchup results separately.",
+    "Use these games only for validation of these frozen versions.",
+    "Public reference agent is a local strategy control, not a claim to reproduce a current elite submission.",
+    "No Kaggle submission is authorized by this evaluation plan."
+  ]
+}

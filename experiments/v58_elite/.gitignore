@@ -1,0 +1,18 @@
+# Kaggle competition downloads and public replay data are kept in the local
+# participant workspace only. Do not redistribute these blobs outside the team.
+leaderboard_2026-09-26/kaggriculture.zip
+leaderboard_refresh_*/
+replays/
+*_episodes_raw.txt
+*_episodes_*.txt
+*_episodes.json
+*_submissions.json
+team_*_submissions.json
+v57_vs_elite_proxies/
+elite_profiles.json
+v57_proxy_profiles.json
+*_market_audit.json
+*_market_audit_*.audit.json
+v57reset_market_*.audit.json
+dsm_episodes_56564674.txt
+v57reset_vs_boeyproxy_511533100/

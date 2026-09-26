@@ -1,0 +1,14 @@
+{
+  "games": 2,
+  "errors": 0,
+  "wins": 0,
+  "losses": 2,
+  "draws": 0,
+  "mean_margin": -157086.0,
+  "margins_by_seed": {
+    "94700": [
+      -157086.0,
+      -157086.0
+    ]
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "95501": {
+    "first_yarn": {
+      "step": 576,
+      "day": 24,
+      "wool": 5,
+      "market": [],
+      "goose_buy": 0,
+      "sheep_buy": 0
+    },
+    "first_early_high_wool_trigger": null,
+    "first_triggered_goose_order": null
+  },
+  "95508": {
+    "first_yarn": {
+      "step": 144,
+      "day": 6,
+      "wool": 217,
+      "market": [],
+      "goose_buy": 0,
+      "sheep_buy": 0
+    },
+    "first_early_high_wool_trigger": {
+      "step": 144,
+      "day": 6,
+      "wool": 217,
+      "market": [],
+      "goose_buy": 0,
+      "sheep_buy": 0
+    },
+    "first_triggered_goose_order": {
+      "step": 151,
+      "day": 6,
+      "wool": 190,
+      "market": [
+        [
+          "SELL",
+          "WOOL",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          2
+        ],
+        [
+          "BUY_LAND"
+        ],
+        [
+          "BUY_ANIMAL",
+          "GOOSE",
+          2
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          1
+        ],
+        [
+          "SELL",
+          "WOOL",
+          2
+        ]
+      ],
+      "goose_buy": 2,
+      "sheep_buy": 0,
+      "pre_sheep_count": 2,
+      "vacant_pastures": 0,
+      "before_market": [
+        [
+          "SELL",
+          "WOOL",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          2
+        ],
+        [
+          "BUY_LAND"
+        ],
+        [
+          "BUY_ANIMAL",
+          "GOOSE",
+          2
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          1
+        ],
+        [
+          "SELL",
+          "WOOL",
+          2
+        ]
+      ],
+      "after_market": [
+        [
+          "SELL",
+          "WOOL",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          2
+        ],
+        [
+          "BUY_LAND"
+        ],
+        [
+          "BUY_ANIMAL",
+          "GOOSE",
+          1
+        ],
+        [
+          "BUY_ANIMAL",
+          "SHEEP",
+          1
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          1
+        ],
+        [
+          "SELL",
+          "WOOL",
+          2
+        ]
+      ]
+    }
+  },
+  "95518": {
+    "first_yarn": {
+      "step": 216,
+      "day": 9,
+      "wool": 187,
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          2
+        ]
+      ],
+      "goose_buy": 0,
+      "sheep_buy": 0
+    },
+    "first_early_high_wool_trigger": {
+      "step": 216,
+      "day": 9,
+      "wool": 187,
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          2
+        ]
+      ],
+      "goose_buy": 0,
+      "sheep_buy": 0
+    },
+    "first_triggered_goose_order": {
+      "step": 218,
+      "day": 9,
+      "wool": 192,
+      "market": [
+        [
+          "BUY_ANIMAL",
+          "GOOSE",
+          1
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          1
+        ]
+      ],
+      "goose_buy": 1,
+      "sheep_buy": 0,
+      "pre_sheep_count": 2,
+      "vacant_pastures": 1,
+      "before_market": [
+        [
+          "BUY_ANIMAL",
+          "GOOSE",
+          1
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          1
+        ]
+      ],
+      "after_market": [
+        [
+          "BUY_ANIMAL",
+          "SHEEP",
+          1
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          1
+        ]
+      ]
+    }
+  }
+}

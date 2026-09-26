@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "purpose": "Predeclared v59 validation allocation. Creating this plan does not authorize or imply that any games were run.",
+  "engine": "kaggle-environments 1.32.7 (verify exact installed version before a run)",
+  "candidate": "REQUIRED_AT_RUN_TIME",
+  "candidate_sha256": "REQUIRED_AT_RUN_TIME",
+  "historical_opponents": {
+    "v48": {"path": "experiments/v48_agent.py", "sha256": "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a"},
+    "v50": {"path": "experiments/v50_agent.py", "sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b"},
+    "v51": {"path": "experiments/v51_agent.py", "sha256": "274f5913c4c4787cf825d10fde4de65f79b61d25c764aa6761d36d0840c04eb4"},
+    "v52": {"path": "experiments/v52_agent.py", "sha256": "a53025fce6e901df0083d3115c8e422d77c8c86fac86be99da3e4725b6a50e5b"},
+    "v53": {"path": "experiments/v53_agent.py", "sha256": "a57b3f14c067926d0960eb829fb6d95761dc1e7b4d011c71fda353702cdb47b1"},
+    "v54": {"path": "agents/v54_agent.py", "sha256": "9c374f64e8e82027167f8018f344dc82edff1d75ac9c3d593dcd13f564c1fee1"},
+    "v55": {"path": "agents/v55_agent.py", "sha256": "97edf39ce1f2f72f3874f555bf413a9a8d3f94072397c0ca000c37b7c5931878"},
+    "v56": {"path": "agents/v56_agent.py", "sha256": "d9e9670921b62afedfa8cbc7086d2a2ec19e153ee26006cef477eadd462bd19c"}
+  },
+  "pinned_local_opponents": {
+    "frozen_reset_v57": {"path": "experiments/v57_broad/v57_reset_candidate.py", "sha256": "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e", "basis": "Frozen reset-fixed local reference."},
+    "kaito_v13_local": {"path": "experiments/v58_planner_eval/open_sources/kaito_v13_local_opponent/main.py", "sha256": "69f06a802b62aa08f28705dab5728eb924bb6a7c23ffe0164f65b104cc3dadf3", "basis": "Internal local-only executable benchmark; preserve attribution and scope in docs/V58_OPEN_AGENT_SOURCES.md. Never adapt, submit, publish, or redistribute."}
+  },
+  "excluded_sources": {
+    "ahmed_v43": {"path": "experiments/v58_planner_eval/open_sources/eval/ahmed_v43/runtime/main.py", "sha256": "919fc1d61050cd96f799979e49177ae3ac7bce98ec9835724238bea73f4a08ed", "status": "EXCLUDED: source audit found embedded action-tape material attributed to third parties and explicitly left payload unmaterialized/unrun; execution rights for this use are unresolved. Revisit only after clear permission."}
+  },
+  "seed_ledger": {
+    "teacher_dev_spent": {"range": "95500-95519", "use": "Already consumed by v59 teacher data collection and screens; never reuse for validation."},
+    "rule_route_dev_spent": {"range": "95700-95799", "use": "Conservatively mark the 957xx route-rule development range occupied; later 958xx and 959xx ranges have separate reservations."},
+    "fresh_validation": {"range": "95900-95914", "use": "New evaluation stages only; audited against repository seed ledgers on 2026-09-26 and not previously allocated."},
+    "pre_final_paired_screen": {"range": "95800-95829", "use": "30 fresh seeds x both seats against 8 historical + frozen reset + Kaito v13; reserve until candidate clears the small dev gate."},
+    "sealed_final_holdout": {"range": "93000-93049", "use": "Final only after a byte-frozen candidate clears pre-final gate; do not run, inspect, tune against, or use for diagnostics before then."},
+    "legacy_spent": ["92900-92904", "93200-93205", "93700-93702", "94700-94700", "94900 smoke only", "95100-95100", "95200-95201", "95300-95302", "95400-95499 may be allocated by prior branch records"],
+    "collision_rule": "Do not allocate from 95500-95519 or 95700-95799 for these validation stages. Track any additional teacher/rule development seed before spending it. 95800-95829 is reserved for the paired panel, 95900-95914 for the development validation stages, and 93000-93049 remains sealed. Never silently recycle a previously run seed."
+  },
+  "stages": {
+    "smoke": {"seeds": [95900, 95901], "opponents": ["v56", "frozen_reset_v57"], "games": 8, "gate": "Zero candidate errors/timeouts/incomplete games and loader success; diagnostic only."},
+    "historical_gate": {"seeds": [95902, 95903, 95904, 95905, 95906], "opponents": ["v48", "v50", "v51", "v52", "v53", "v54", "v55", "v56"], "games": 80, "gate": "Zero errors and exactly 10/10 strict candidate wins for each historical opponent (five seeds, both seats)."},
+    "stronger_dev_gate": {"seeds": [95910, 95911, 95912, 95913, 95914], "opponents": ["frozen_reset_v57", "kaito_v13_local"], "games": 20, "gate": "Zero errors; >=95% strict wins overall; >=90% per opponent and seat; seed-block bootstrap 95% lower bound >=90%. This is a small promotion screen only."},
+    "paired_pre_final": {"seeds": [95800, 95801, 95802, 95803, 95804, 95805, 95806, 95807, 95808, 95809, 95810, 95811, 95812, 95813, 95814, 95815, 95816, 95817, 95818, 95819, 95820, 95821, 95822, 95823, 95824, 95825, 95826, 95827, 95828, 95829], "opponents": ["v48", "v50", "v51", "v52", "v53", "v54", "v55", "v56", "frozen_reset_v57", "kaito_v13_local"], "games": 600, "gate": "Zero errors; strictly >95% strict wins overall; >=90% against every opponent and in each seat; whole-seed-block 95% bootstrap lower bound >=90%. Also publish exact errors, candidate-seat splits, 95% Clopper-Pearson intervals, coin margins, and all shop schedules. A pass is local-panel evidence only."},
+    "final_holdout": {"seeds": "93000-93049", "opponents": "same ten permitted opponents", "games": 1000, "status": "SEALED; do not run until historical gate and pre-final gate pass, all artifacts/engine/opponents are frozen, and the user explicitly requests final validation."}
+  },
+  "metrics": {
+    "outcome": "Strict wins only; draws and any error are non-wins. Report wins/losses/draws separately.",
+    "uncertainty": "Exact two-sided 95% Clopper-Pearson binomial intervals and 20,000-replicate percentile bootstrap resampling whole seed blocks; report the RNG seed. Bootstrap opponent-specific and seat-specific rates as descriptive strata.",
+    "shop_report": "For every game, retain replay and report the ordered, first-unlocked town shop sequence with day/step. Group scores and win rates by first shop and by observed shop-set signature; label these post hoc strata exploratory, not causal.",
+    "errors": "Keep candidate, opponent, infrastructure, timeout, incomplete-game counts, status and error text exact. Do not convert an opponent error into clean candidate evidence without separately showing it; readiness requires zero errors of every class."
+  }
+}

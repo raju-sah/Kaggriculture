@@ -1,0 +1,236 @@
+[
+  {
+    "candidate": "experiments/v57/lizs_plus.py",
+    "opponent": "agents/v54_agent.py",
+    "seed": 92503,
+    "seat": 0,
+    "coins": 116823.0,
+    "other": 118165.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "fd12e48010459f676dddf05000c1e418e8fe04c4af664db600c9d9f1d0b414ee"
+  },
+  {
+    "candidate": "experiments/v57/lizs_plus.py",
+    "opponent": "agents/v56_agent.py",
+    "seed": 92503,
+    "seat": 0,
+    "coins": 116823.0,
+    "other": 118165.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "fd12e48010459f676dddf05000c1e418e8fe04c4af664db600c9d9f1d0b414ee"
+  },
+  {
+    "candidate": "experiments/v57/lizs_plus.py",
+    "opponent": "agents/v54_agent.py",
+    "seed": 92505,
+    "seat": 0,
+    "coins": 84876.0,
+    "other": 85479.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "fd12e48010459f676dddf05000c1e418e8fe04c4af664db600c9d9f1d0b414ee"
+  },
+  {
+    "candidate": "experiments/v57/lizs_plus.py",
+    "opponent": "agents/v54_agent.py",
+    "seed": 92504,
+    "seat": 0,
+    "coins": 122119.0,
+    "other": 126273.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "fd12e48010459f676dddf05000c1e418e8fe04c4af664db600c9d9f1d0b414ee"
+  },
+  {
+    "candidate": "experiments/v57/lizs_plus.py",
+    "opponent": "agents/v56_agent.py",
+    "seed": 92504,
+    "seat": 0,
+    "coins": 122118.0,
+    "other": 126274.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "fd12e48010459f676dddf05000c1e418e8fe04c4af664db600c9d9f1d0b414ee"
+  },
+  {
+    "candidate": "experiments/v57/lizs_plus.py",
+    "opponent": "agents/v56_agent.py",
+    "seed": 92505,
+    "seat": 0,
+    "coins": 84876.0,
+    "other": 85479.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "fd12e48010459f676dddf05000c1e418e8fe04c4af664db600c9d9f1d0b414ee"
+  },
+  {
+    "candidate": "experiments/v57/lizs_plus.py",
+    "opponent": "experiments/v48_agent.py",
+    "seed": 92504,
+    "seat": 0,
+    "coins": 91874.0,
+    "other": 92497.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "fd12e48010459f676dddf05000c1e418e8fe04c4af664db600c9d9f1d0b414ee"
+  },
+  {
+    "candidate": "experiments/v57/lizs_plus.py",
+    "opponent": "experiments/v48_agent.py",
+    "seed": 92503,
+    "seat": 0,
+    "coins": 129011.0,
+    "other": 119972.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "fd12e48010459f676dddf05000c1e418e8fe04c4af664db600c9d9f1d0b414ee"
+  },
+  {
+    "candidate": "experiments/v57/lizs_plus.py",
+    "opponent": "experiments/v48_agent.py",
+    "seed": 92505,
+    "seat": 0,
+    "coins": 119767.0,
+    "other": 107798.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "fd12e48010459f676dddf05000c1e418e8fe04c4af664db600c9d9f1d0b414ee"
+  },
+  {
+    "candidate": "experiments/v57/v48_plus.py",
+    "opponent": "agents/v54_agent.py",
+    "seed": 92503,
+    "seat": 0,
+    "coins": 114725.0,
+    "other": 136559.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "f68f1cff0fcc7432d7f496773701ca405591496628d95d9be09055a999d25072"
+  },
+  {
+    "candidate": "experiments/v57/v48_plus.py",
+    "opponent": "agents/v54_agent.py",
+    "seed": 92505,
+    "seat": 0,
+    "coins": 102360.0,
+    "other": 125258.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "f68f1cff0fcc7432d7f496773701ca405591496628d95d9be09055a999d25072"
+  },
+  {
+    "candidate": "experiments/v57/v48_plus.py",
+    "opponent": "agents/v54_agent.py",
+    "seed": 92504,
+    "seat": 0,
+    "coins": 92622.0,
+    "other": 92436.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "f68f1cff0fcc7432d7f496773701ca405591496628d95d9be09055a999d25072"
+  },
+  {
+    "candidate": "experiments/v57/v48_plus.py",
+    "opponent": "experiments/v48_agent.py",
+    "seed": 92503,
+    "seat": 0,
+    "coins": 83255.0,
+    "other": 89520.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "f68f1cff0fcc7432d7f496773701ca405591496628d95d9be09055a999d25072"
+  },
+  {
+    "candidate": "experiments/v57/v48_plus.py",
+    "opponent": "agents/v56_agent.py",
+    "seed": 92503,
+    "seat": 0,
+    "coins": 114725.0,
+    "other": 136559.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "f68f1cff0fcc7432d7f496773701ca405591496628d95d9be09055a999d25072"
+  },
+  {
+    "candidate": "experiments/v57/v48_plus.py",
+    "opponent": "agents/v56_agent.py",
+    "seed": 92504,
+    "seat": 0,
+    "coins": 92622.0,
+    "other": 92436.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "f68f1cff0fcc7432d7f496773701ca405591496628d95d9be09055a999d25072"
+  },
+  {
+    "candidate": "experiments/v57/v48_plus.py",
+    "opponent": "agents/v56_agent.py",
+    "seed": 92505,
+    "seat": 0,
+    "coins": 102360.0,
+    "other": 125258.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "f68f1cff0fcc7432d7f496773701ca405591496628d95d9be09055a999d25072"
+  },
+  {
+    "candidate": "experiments/v57/v48_plus.py",
+    "opponent": "experiments/v48_agent.py",
+    "seed": 92505,
+    "seat": 0,
+    "coins": 107715.0,
+    "other": 125080.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "f68f1cff0fcc7432d7f496773701ca405591496628d95d9be09055a999d25072"
+  },
+  {
+    "candidate": "experiments/v57/v48_plus.py",
+    "opponent": "experiments/v48_agent.py",
+    "seed": 92504,
+    "seat": 0,
+    "coins": 105430.0,
+    "other": 104090.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "f68f1cff0fcc7432d7f496773701ca405591496628d95d9be09055a999d25072"
+  }
+]

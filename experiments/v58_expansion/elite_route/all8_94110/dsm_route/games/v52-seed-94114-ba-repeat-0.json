@@ -1,0 +1,37 @@
+{
+  "candidate_error": true,
+  "candidate_result": "loss",
+  "candidate_seat": 1,
+  "candidate_status": "ERROR",
+  "coin_difference_seat_0": null,
+  "error": {
+    "message": "worker exited -2 without a result",
+    "type": "WorkerFailure"
+  },
+  "final_coins": [
+    null,
+    null
+  ],
+  "game_id": "v52-seed-94114-ba-repeat-0",
+  "infrastructure_error": true,
+  "log_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_expansion/elite_route/all8_94110/dsm_route/logs/v52-seed-94114-ba-repeat-0.log",
+  "ok": false,
+  "opponent": "v52",
+  "opponent_error": false,
+  "opponent_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v52_agent.py",
+  "opponent_seat": 0,
+  "opponent_status": "ERROR",
+  "repeat": 0,
+  "replay_retained": false,
+  "replay_sha256": null,
+  "runtime_seconds": 47.88341142098943,
+  "seed": 94114,
+  "statuses": [
+    "ERROR",
+    "ERROR"
+  ],
+  "swapped": true,
+  "timed_out": false,
+  "winner_seat": null,
+  "worker_exit_code": -2
+}

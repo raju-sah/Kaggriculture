@@ -1,0 +1,1255 @@
+{
+  "accepted_net_by_product": {
+    "CARROT": {
+      "elite_median": 5183.0,
+      "elite_n_participant_rows": 99,
+      "elite_p25": 2246.0,
+      "elite_p75": 10281.0,
+      "local_reset_median": 4622.0,
+      "local_reset_n_seeds": 31,
+      "local_reset_p25": 3605.0,
+      "local_reset_p75": 5111.0
+    },
+    "EGG": {
+      "elite_median": 9616.0,
+      "elite_n_participant_rows": 86,
+      "elite_p25": 5286.0,
+      "elite_p75": 12078.0,
+      "local_reset_median": 10121.0,
+      "local_reset_n_seeds": 31,
+      "local_reset_p25": 9726.0,
+      "local_reset_p75": 11814.0
+    },
+    "FERTILIZER": {
+      "elite_median": 12407.0,
+      "elite_n_participant_rows": 100,
+      "elite_p25": 11829.0,
+      "elite_p75": 13071.0,
+      "local_reset_median": 11945.0,
+      "local_reset_n_seeds": 31,
+      "local_reset_p25": 11859.0,
+      "local_reset_p75": 12379.0
+    },
+    "MELON": {
+      "elite_median": 14243.5,
+      "elite_n_participant_rows": 100,
+      "elite_p25": 13056.0,
+      "elite_p75": 14843.0,
+      "local_reset_median": 14436.0,
+      "local_reset_n_seeds": 31,
+      "local_reset_p25": 14436.0,
+      "local_reset_p75": 15995.0
+    },
+    "MILK": {
+      "elite_median": 19562.0,
+      "elite_n_participant_rows": 100,
+      "elite_p25": 13292.0,
+      "elite_p75": 34790.0,
+      "local_reset_median": 34074.0,
+      "local_reset_n_seeds": 31,
+      "local_reset_p25": 13975.0,
+      "local_reset_p75": 41966.0
+    },
+    "STRAWBERRY": {
+      "elite_median": 27900.5,
+      "elite_n_participant_rows": 100,
+      "elite_p25": 17499.0,
+      "elite_p75": 41795.0,
+      "local_reset_median": 29299.0,
+      "local_reset_n_seeds": 31,
+      "local_reset_p25": 20548.0,
+      "local_reset_p75": 42808.5
+    },
+    "TOMATO": {
+      "elite_median": 5883.0,
+      "elite_n_participant_rows": 65,
+      "elite_p25": 3792.0,
+      "elite_p75": 9042.0,
+      "local_reset_median": 6158.0,
+      "local_reset_n_seeds": 31,
+      "local_reset_p25": 5122.0,
+      "local_reset_p75": 6796.0
+    },
+    "WHEAT": {
+      "elite_median": 10988.5,
+      "elite_n_participant_rows": 100,
+      "elite_p25": 8344.0,
+      "elite_p75": 13821.0,
+      "local_reset_median": 12009.5,
+      "local_reset_n_seeds": 31,
+      "local_reset_p25": 9612.0,
+      "local_reset_p75": 12705.0
+    },
+    "WOOL": {
+      "elite_median": 16436.5,
+      "elite_n_participant_rows": 100,
+      "elite_p25": 5515.0,
+      "elite_p75": 22057.0,
+      "local_reset_median": 7169.0,
+      "local_reset_n_seeds": 31,
+      "local_reset_p25": 4797.0,
+      "local_reset_p75": 9840.0
+    }
+  },
+  "by_opponent": {
+    "BoeyProxy": {
+      "n_games": 2,
+      "n_seeds": 1,
+      "reset_product_net_median": 166183.0,
+      "reset_reward_margin_median": 61073.0
+    },
+    "v48": {
+      "n_games": 16,
+      "n_seeds": 8,
+      "reset_product_net_median": 132753.0,
+      "reset_reward_margin_median": 8041.0
+    },
+    "v50": {
+      "n_games": 15,
+      "n_seeds": 8,
+      "reset_product_net_median": 114501,
+      "reset_reward_margin_median": 13764.0
+    },
+    "v51": {
+      "n_games": 3,
+      "n_seeds": 2,
+      "reset_product_net_median": 153737,
+      "reset_reward_margin_median": 7232.0
+    },
+    "v52": {
+      "n_games": 3,
+      "n_seeds": 2,
+      "reset_product_net_median": 131633,
+      "reset_reward_margin_median": -6260.0
+    },
+    "v53": {
+      "n_games": 6,
+      "n_seeds": 3,
+      "reset_product_net_median": 139768.0,
+      "reset_reward_margin_median": -33502.0
+    },
+    "v54": {
+      "n_games": 4,
+      "n_seeds": 2,
+      "reset_product_net_median": 120146.5,
+      "reset_reward_margin_median": -2754.0
+    },
+    "v55": {
+      "n_games": 2,
+      "n_seeds": 1,
+      "reset_product_net_median": 129865.0,
+      "reset_reward_margin_median": -35904.0
+    },
+    "v56": {
+      "n_games": 3,
+      "n_seeds": 2,
+      "reset_product_net_median": 97230,
+      "reset_reward_margin_median": 19.0
+    },
+    "v57_reset_candidate": {
+      "n_games": 2,
+      "n_seeds": 1,
+      "reset_product_net_median": 119082.5,
+      "reset_reward_margin_median": 0.0
+    },
+    "v61-hirepriority-vs-frozen-v57-seed94700": {
+      "n_games": 2,
+      "n_seeds": 1,
+      "reset_product_net_median": 196325.0,
+      "reset_reward_margin_median": 158666.0
+    }
+  },
+  "caveat": "Saved, purposively selected diagnostic games; one opponent match per distinct seed with available seat swaps. Repeated seat-swap replays are reduced to one mean per seed in paired summaries. Descriptive only; no causal effect or new games.",
+  "elite_all_player_rows": {
+    "day12_23_animal_purchases": {
+      "max": 5000.0,
+      "median": 400.0,
+      "min": 0.0,
+      "n_rows": 100,
+      "p25": 0.0,
+      "p75": 2000.0
+    },
+    "day12_23_cash_delta": {
+      "max": 103598.0,
+      "median": 62154.5,
+      "min": 38884.0,
+      "n_rows": 100,
+      "p25": 52627.0,
+      "p75": 73328.0
+    },
+    "day12_23_land_hire_cost": {
+      "max": 8224.0,
+      "median": 3415.0,
+      "min": 1907.0,
+      "n_rows": 100,
+      "p25": 2894.0,
+      "p75": 4224.0
+    },
+    "day12_23_market_net_product": {
+      "max": 112277.0,
+      "median": 69011.0,
+      "min": 42298.0,
+      "n_rows": 100,
+      "p25": 59736.0,
+      "p75": 80701.0
+    },
+    "day12_23_product_purchases": {
+      "max": 63146.0,
+      "median": 1002.0,
+      "min": 0.0,
+      "n_rows": 100,
+      "p25": 359.0,
+      "p75": 2211.0
+    },
+    "day12_23_sales": {
+      "max": 175423.0,
+      "median": 74801.5,
+      "min": 43507.0,
+      "n_rows": 100,
+      "p25": 61381.0,
+      "p75": 88366.0
+    },
+    "day12_23_seed_purchases": {
+      "max": 4570.0,
+      "median": 2375.0,
+      "min": 1000.0,
+      "n_rows": 100,
+      "p25": 2040.0,
+      "p75": 2870.0
+    },
+    "day12_animals": {
+      "max": 24.0,
+      "median": 20.0,
+      "min": 13.0,
+      "n_rows": 100,
+      "p25": 19.0,
+      "p75": 21.0
+    },
+    "day12_cash": {
+      "max": 18622.0,
+      "median": 10368.5,
+      "min": 3660.0,
+      "n_rows": 100,
+      "p25": 7345.0,
+      "p75": 13740.0
+    },
+    "day12_crop_tiles": {
+      "max": 86.0,
+      "median": 59.0,
+      "min": 27.0,
+      "n_rows": 100,
+      "p25": 54.0,
+      "p75": 68.0
+    },
+    "day12_hands": {
+      "max": 10.0,
+      "median": 8.0,
+      "min": 3.0,
+      "n_rows": 100,
+      "p25": 8.0,
+      "p75": 8.0
+    },
+    "day12_quadrants": {
+      "max": 4.0,
+      "median": 3.0,
+      "min": 2.0,
+      "n_rows": 100,
+      "p25": 3.0,
+      "p75": 4.0
+    },
+    "day20_animals": {
+      "max": 28.0,
+      "median": 21.0,
+      "min": 13.0,
+      "n_rows": 100,
+      "p25": 19.0,
+      "p75": 23.0
+    },
+    "day20_cash": {
+      "max": 86522.0,
+      "median": 57626.0,
+      "min": 30504.0,
+      "n_rows": 100,
+      "p25": 49709.0,
+      "p75": 62643.0
+    },
+    "day20_crop_tiles": {
+      "max": 83.0,
+      "median": 58.0,
+      "min": 41.0,
+      "n_rows": 100,
+      "p25": 53.0,
+      "p75": 69.0
+    },
+    "day20_hands": {
+      "max": 10.0,
+      "median": 8.0,
+      "min": 3.0,
+      "n_rows": 100,
+      "p25": 8.0,
+      "p75": 9.0
+    },
+    "day20_quadrants": {
+      "max": 4.0,
+      "median": 3.5,
+      "min": 3.0,
+      "n_rows": 100,
+      "p25": 3.0,
+      "p75": 4.0
+    },
+    "day29_animals": {
+      "max": 23.0,
+      "median": 13.0,
+      "min": 3.0,
+      "n_rows": 100,
+      "p25": 11.0,
+      "p75": 15.0
+    },
+    "day29_cash": {
+      "max": 148546.0,
+      "median": 96112.5,
+      "min": 69820.0,
+      "n_rows": 100,
+      "p25": 85570.0,
+      "p75": 106708.0
+    },
+    "day29_crop_tiles": {
+      "max": 48.0,
+      "median": 25.5,
+      "min": 4.0,
+      "n_rows": 100,
+      "p25": 19.0,
+      "p75": 30.0
+    },
+    "day29_hands": {
+      "max": 10.0,
+      "median": 8.0,
+      "min": 1.0,
+      "n_rows": 100,
+      "p25": 8.0,
+      "p75": 9.0
+    },
+    "day29_quadrants": {
+      "max": 4.0,
+      "median": 3.5,
+      "min": 3.0,
+      "n_rows": 100,
+      "p25": 3.0,
+      "p75": 4.0
+    },
+    "day6_11_animal_purchases": {
+      "max": 8100.0,
+      "median": 5100.0,
+      "min": 1900.0,
+      "n_rows": 100,
+      "p25": 3500.0,
+      "p75": 5800.0
+    },
+    "day6_11_cash_delta": {
+      "max": 17451.0,
+      "median": 9154.0,
+      "min": 2238.0,
+      "n_rows": 100,
+      "p25": 5361.0,
+      "p75": 12622.0
+    },
+    "day6_11_land_hire_cost": {
+      "max": 8968.0,
+      "median": 4231.0,
+      "min": 1714.0,
+      "n_rows": 100,
+      "p25": 3837.0,
+      "p75": 8070.0
+    },
+    "day6_11_market_net_product": {
+      "max": 28511.0,
+      "median": 22423.0,
+      "min": 12375.0,
+      "n_rows": 100,
+      "p25": 21309.0,
+      "p75": 23692.0
+    },
+    "day6_11_product_purchases": {
+      "max": 58320.0,
+      "median": 3256.5,
+      "min": 1641.0,
+      "n_rows": 100,
+      "p25": 2931.0,
+      "p75": 4058.0
+    },
+    "day6_11_sales": {
+      "max": 82810.0,
+      "median": 26101.5,
+      "min": 15266.0,
+      "n_rows": 100,
+      "p25": 24783.0,
+      "p75": 27842.0
+    },
+    "day6_11_seed_purchases": {
+      "max": 4110.0,
+      "median": 2445.0,
+      "min": 1180.0,
+      "n_rows": 100,
+      "p25": 1920.0,
+      "p75": 3050.0
+    },
+    "day6_animals": {
+      "max": 11.0,
+      "median": 7.0,
+      "min": 4.0,
+      "n_rows": 100,
+      "p25": 5.0,
+      "p75": 9.0
+    },
+    "day6_cash": {
+      "max": 1099.0,
+      "median": 600.0,
+      "min": 10.0,
+      "n_rows": 100,
+      "p25": 164.0,
+      "p75": 706.0
+    },
+    "day6_crop_tiles": {
+      "max": 20.0,
+      "median": 18.0,
+      "min": 13.0,
+      "n_rows": 100,
+      "p25": 16.0,
+      "p75": 20.0
+    },
+    "day6_hands": {
+      "max": 9.0,
+      "median": 8.0,
+      "min": 5.0,
+      "n_rows": 100,
+      "p25": 8.0,
+      "p75": 9.0
+    },
+    "day6_quadrants": {
+      "max": 1.0,
+      "median": 1.0,
+      "min": 1.0,
+      "n_rows": 100,
+      "p25": 1.0,
+      "p75": 1.0
+    },
+    "late_24_29_animal_purchases": {
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0,
+      "n_rows": 100,
+      "p25": 0.0,
+      "p75": 0.0
+    },
+    "late_24_29_cash_delta": {
+      "max": 56912.0,
+      "median": 29663.5,
+      "min": 15451.0,
+      "n_rows": 100,
+      "p25": 25012.0,
+      "p75": 35655.0
+    },
+    "late_24_29_land_hire_cost": {
+      "max": 2345.0,
+      "median": 1303.0,
+      "min": 659.0,
+      "n_rows": 100,
+      "p25": 1159.0,
+      "p75": 1680.0
+    },
+    "late_24_29_market_net_product": {
+      "max": 58785.0,
+      "median": 31930.0,
+      "min": 16689.0,
+      "n_rows": 100,
+      "p25": 26818.0,
+      "p75": 37713.0
+    },
+    "late_24_29_product_purchases": {
+      "max": 14953.0,
+      "median": 0.0,
+      "min": 0.0,
+      "n_rows": 100,
+      "p25": 0.0,
+      "p75": 519.0
+    },
+    "late_24_29_sales": {
+      "max": 58900.0,
+      "median": 33786.0,
+      "min": 16689.0,
+      "n_rows": 100,
+      "p25": 28588.0,
+      "p75": 39950.0
+    },
+    "late_24_29_seed_purchases": {
+      "max": 1260.0,
+      "median": 625.0,
+      "min": 280.0,
+      "n_rows": 100,
+      "p25": 550.0,
+      "p75": 770.0
+    },
+    "opening_0_5_animal_purchases": {
+      "max": 4700.0,
+      "median": 2900.0,
+      "min": 2300.0,
+      "n_rows": 100,
+      "p25": 2300.0,
+      "p75": 3900.0
+    },
+    "opening_0_5_cash_delta": {
+      "max": -1491.0,
+      "median": -2343.5,
+      "min": -2996.0,
+      "n_rows": 100,
+      "p25": -2791.0,
+      "p75": -2167.0
+    },
+    "opening_0_5_land_hire_cost": {
+      "max": 151.0,
+      "median": 89.5,
+      "min": 24.0,
+      "n_rows": 100,
+      "p25": 78.0,
+      "p75": 94.0
+    },
+    "opening_0_5_market_net_product": {
+      "max": 3269.0,
+      "median": 2359.0,
+      "min": 1317.0,
+      "n_rows": 100,
+      "p25": 2175.0,
+      "p75": 2910.0
+    },
+    "opening_0_5_product_purchases": {
+      "max": 20364.0,
+      "median": 584.5,
+      "min": 339.0,
+      "n_rows": 100,
+      "p25": 537.0,
+      "p75": 664.0
+    },
+    "opening_0_5_sales": {
+      "max": 23286.0,
+      "median": 3065.0,
+      "min": 1851.0,
+      "n_rows": 100,
+      "p25": 2700.0,
+      "p75": 3621.0
+    },
+    "opening_0_5_seed_purchases": {
+      "max": 2450.0,
+      "median": 1790.0,
+      "min": 1290.0,
+      "n_rows": 100,
+      "p25": 1540.0,
+      "p75": 1940.0
+    }
+  },
+  "local_reset_seed_balanced": {
+    "day12_23_animal_purchases": {
+      "median": 0.0,
+      "n_seeds": 31,
+      "p25": 0.0,
+      "p75": 0.0
+    },
+    "day12_23_cash_delta": {
+      "median": 53092.0,
+      "n_seeds": 31,
+      "p25": 45250.5,
+      "p75": 60662.0
+    },
+    "day12_23_land_hire_cost": {
+      "median": 7593.0,
+      "n_seeds": 31,
+      "p25": 7593.0,
+      "p75": 7593.0
+    },
+    "day12_23_market_net_product": {
+      "median": 62145.0,
+      "n_seeds": 31,
+      "p25": 54303.5,
+      "p75": 69715.0
+    },
+    "day12_23_product_purchases": {
+      "median": 2014.0,
+      "n_seeds": 31,
+      "p25": 1891.0,
+      "p75": 2262.0
+    },
+    "day12_23_sales": {
+      "median": 64028.0,
+      "n_seeds": 31,
+      "p25": 56349.5,
+      "p75": 71603.0
+    },
+    "day12_23_seed_purchases": {
+      "median": 1460.0,
+      "n_seeds": 31,
+      "p25": 1460.0,
+      "p75": 1460.0
+    },
+    "day12_animals": {
+      "max": 17.0,
+      "median": 17.0,
+      "min": 17.0,
+      "n_seeds": 31,
+      "p25": 17.0,
+      "p75": 17.0
+    },
+    "day12_cash": {
+      "max": 21894.0,
+      "median": 18165.0,
+      "min": 14956.0,
+      "n_seeds": 31,
+      "p25": 17390.0,
+      "p75": 18369.0
+    },
+    "day12_crop_tiles": {
+      "max": 53.0,
+      "median": 53.0,
+      "min": 52.0,
+      "n_seeds": 31,
+      "p25": 53.0,
+      "p75": 53.0
+    },
+    "day12_hands": {
+      "max": 9.0,
+      "median": 9.0,
+      "min": 9.0,
+      "n_seeds": 31,
+      "p25": 9.0,
+      "p75": 9.0
+    },
+    "day12_quadrants": {
+      "max": 3.0,
+      "median": 3.0,
+      "min": 3.0,
+      "n_seeds": 31,
+      "p25": 3.0,
+      "p75": 3.0
+    },
+    "day12_shed_items": {
+      "max": 39.0,
+      "median": 39.0,
+      "min": 35.0,
+      "n_seeds": 31,
+      "p25": 39.0,
+      "p75": 39.0
+    },
+    "day20_animals": {
+      "max": 17.0,
+      "median": 17.0,
+      "min": 16.0,
+      "n_seeds": 31,
+      "p25": 17.0,
+      "p75": 17.0
+    },
+    "day20_cash": {
+      "max": 64644.0,
+      "median": 50412.0,
+      "min": 30847.0,
+      "n_seeds": 31,
+      "p25": 45710.0,
+      "p75": 54928.0
+    },
+    "day20_crop_tiles": {
+      "max": 68.0,
+      "median": 68.0,
+      "min": 67.0,
+      "n_seeds": 31,
+      "p25": 68.0,
+      "p75": 68.0
+    },
+    "day20_hands": {
+      "max": 9.0,
+      "median": 9.0,
+      "min": 9.0,
+      "n_seeds": 31,
+      "p25": 9.0,
+      "p75": 9.0
+    },
+    "day20_quadrants": {
+      "max": 4.0,
+      "median": 4.0,
+      "min": 4.0,
+      "n_seeds": 31,
+      "p25": 4.0,
+      "p75": 4.0
+    },
+    "day20_shed_items": {
+      "max": 70.0,
+      "median": 64.0,
+      "min": 64.0,
+      "n_seeds": 31,
+      "p25": 64.0,
+      "p75": 64.0
+    },
+    "day29_animals": {
+      "max": 17.0,
+      "median": 17.0,
+      "min": 16.0,
+      "n_seeds": 31,
+      "p25": 17.0,
+      "p75": 17.0
+    },
+    "day29_cash": {
+      "max": 157713.0,
+      "median": 95850.0,
+      "min": 53281.0,
+      "n_seeds": 31,
+      "p25": 82010.0,
+      "p75": 114057.0
+    },
+    "day29_crop_tiles": {
+      "max": 31.0,
+      "median": 31.0,
+      "min": 31.0,
+      "n_seeds": 31,
+      "p25": 31.0,
+      "p75": 31.0
+    },
+    "day29_hands": {
+      "max": 9.0,
+      "median": 9.0,
+      "min": 9.0,
+      "n_seeds": 31,
+      "p25": 9.0,
+      "p75": 9.0
+    },
+    "day29_quadrants": {
+      "max": 4.0,
+      "median": 4.0,
+      "min": 4.0,
+      "n_seeds": 31,
+      "p25": 4.0,
+      "p75": 4.0
+    },
+    "day29_shed_items": {
+      "max": 60.0,
+      "median": 60.0,
+      "min": 59.0,
+      "n_seeds": 31,
+      "p25": 60.0,
+      "p75": 60.0
+    },
+    "day6_11_animal_purchases": {
+      "median": 3700.0,
+      "n_seeds": 31,
+      "p25": 3700.0,
+      "p75": 3900.0
+    },
+    "day6_11_cash_delta": {
+      "median": 16291.0,
+      "n_seeds": 31,
+      "p25": 15492.0,
+      "p75": 16459.0
+    },
+    "day6_11_land_hire_cost": {
+      "median": 3693.0,
+      "n_seeds": 31,
+      "p25": 3693.0,
+      "p75": 3693.0
+    },
+    "day6_11_market_net_product": {
+      "median": 26904.0,
+      "n_seeds": 31,
+      "p25": 26105.0,
+      "p75": 27263.0
+    },
+    "day6_11_product_purchases": {
+      "median": 4630.0,
+      "n_seeds": 31,
+      "p25": 4560.0,
+      "p75": 4691.0
+    },
+    "day6_11_sales": {
+      "median": 31534.0,
+      "n_seeds": 31,
+      "p25": 30771.0,
+      "p75": 31879.0
+    },
+    "day6_11_seed_purchases": {
+      "median": 3220.0,
+      "n_seeds": 31,
+      "p25": 3220.0,
+      "p75": 3220.0
+    },
+    "day6_animals": {
+      "max": 6.0,
+      "median": 6.0,
+      "min": 6.0,
+      "n_seeds": 31,
+      "p25": 6.0,
+      "p75": 6.0
+    },
+    "day6_cash": {
+      "max": 988.0,
+      "median": 938.0,
+      "min": 898.0,
+      "n_seeds": 31,
+      "p25": 938.0,
+      "p75": 941.0
+    },
+    "day6_crop_tiles": {
+      "max": 19.0,
+      "median": 19.0,
+      "min": 19.0,
+      "n_seeds": 31,
+      "p25": 19.0,
+      "p75": 19.0
+    },
+    "day6_hands": {
+      "max": 7.0,
+      "median": 7.0,
+      "min": 7.0,
+      "n_seeds": 31,
+      "p25": 7.0,
+      "p75": 7.0
+    },
+    "day6_quadrants": {
+      "max": 1.0,
+      "median": 1.0,
+      "min": 1.0,
+      "n_seeds": 31,
+      "p25": 1.0,
+      "p75": 1.0
+    },
+    "day6_shed_items": {
+      "max": 19.0,
+      "median": 19.0,
+      "min": 19.0,
+      "n_seeds": 31,
+      "p25": 19.0,
+      "p75": 19.0
+    },
+    "late_24_29_animal_purchases": {
+      "median": 0.0,
+      "n_seeds": 31,
+      "p25": 0.0,
+      "p75": 0.0
+    },
+    "late_24_29_cash_delta": {
+      "median": 35166.0,
+      "n_seeds": 31,
+      "p25": 26566.0,
+      "p75": 44809.0
+    },
+    "late_24_29_land_hire_cost": {
+      "median": 4031.0,
+      "n_seeds": 31,
+      "p25": 4031.0,
+      "p75": 4031.0
+    },
+    "late_24_29_market_net_product": {
+      "median": 39997.0,
+      "n_seeds": 31,
+      "p25": 31397.0,
+      "p75": 49640.0
+    },
+    "late_24_29_product_purchases": {
+      "median": 1359.0,
+      "n_seeds": 31,
+      "p25": 1251.0,
+      "p75": 1706.0
+    },
+    "late_24_29_sales": {
+      "median": 41240.0,
+      "n_seeds": 31,
+      "p25": 32996.0,
+      "p75": 51002.0
+    },
+    "late_24_29_seed_purchases": {
+      "median": 800.0,
+      "n_seeds": 31,
+      "p25": 800.0,
+      "p75": 800.0
+    },
+    "opening_0_5_animal_purchases": {
+      "median": 2600.0,
+      "n_seeds": 31,
+      "p25": 2600.0,
+      "p75": 2600.0
+    },
+    "opening_0_5_cash_delta": {
+      "median": -2120.0,
+      "n_seeds": 31,
+      "p25": -2120.0,
+      "p75": -2117.0
+    },
+    "opening_0_5_land_hire_cost": {
+      "median": 49.0,
+      "n_seeds": 31,
+      "p25": 49.0,
+      "p75": 49.0
+    },
+    "opening_0_5_market_net_product": {
+      "median": 2069.0,
+      "n_seeds": 31,
+      "p25": 2069.0,
+      "p75": 2072.0
+    },
+    "opening_0_5_product_purchases": {
+      "median": 971.0,
+      "n_seeds": 31,
+      "p25": 967.0,
+      "p75": 974.0
+    },
+    "opening_0_5_sales": {
+      "median": 3040.0,
+      "n_seeds": 31,
+      "p25": 3040.0,
+      "p75": 3043.0
+    },
+    "opening_0_5_seed_purchases": {
+      "median": 1540.0,
+      "n_seeds": 31,
+      "p25": 1540.0,
+      "p75": 1540.0
+    }
+  },
+  "paired_reset_minus_opponent": {
+    "day12_23_net_diff": {
+      "median": -650,
+      "n_seeds": 31,
+      "p25": -14074,
+      "p75": 1154,
+      "positive_rate": 0.41935483870967744
+    },
+    "day12_cash_diff": {
+      "median": 1785.0,
+      "n_seeds": 31,
+      "p25": 1264.0,
+      "p75": 12109.0,
+      "positive_rate": 0.9354838709677419
+    },
+    "day6_cash_diff": {
+      "median": 0.0,
+      "n_seeds": 31,
+      "p25": -235.0,
+      "p75": 889.0,
+      "positive_rate": 0.3548387096774194
+    },
+    "product_net_diff": {
+      "median": 4776,
+      "n_seeds": 31,
+      "p25": -5792,
+      "p75": 20055,
+      "positive_rate": 0.6451612903225806
+    },
+    "reward_diff": {
+      "median": 468.0,
+      "n_seeds": 31,
+      "p25": -6260.0,
+      "p75": 14064.0,
+      "positive_rate": 0.5806451612903226
+    },
+    "wheat_fert_net_diff": {
+      "median": 690,
+      "n_seeds": 31,
+      "p25": 381,
+      "p75": 8028,
+      "positive_rate": 0.9032258064516129
+    }
+  },
+  "provenance": {
+    "aligned_transitions": 83404,
+    "cash_mismatches": 0,
+    "games": 58,
+    "opponent_lineages": [
+      "BoeyProxy",
+      "v48",
+      "v50",
+      "v51",
+      "v52",
+      "v53",
+      "v54",
+      "v55",
+      "v56",
+      "v57_reset_candidate",
+      "v61-hirepriority-vs-frozen-v57-seed94700"
+    ],
+    "reset_rows": 58,
+    "reset_sha256": "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+    "snapshot_index": "day0 step0; day6/12/20/29 at day*24+1",
+    "unique_seeds": 31
+  },
+  "shop_regime": {
+    "day12_BOTH": {
+      "median_animals": 17,
+      "median_cash": 17793.0,
+      "median_crops": 53,
+      "median_day12_23_net": 60701.0,
+      "n_seeds": 13
+    },
+    "day12_MILK_SHOP": {
+      "median_animals": 17.0,
+      "median_cash": 18187.5,
+      "median_crops": 53.0,
+      "median_day12_23_net": 62449.5,
+      "n_seeds": 30
+    },
+    "day12_NEITHER": {
+      "median_animals": null,
+      "median_cash": null,
+      "median_crops": null,
+      "median_day12_23_net": null,
+      "n_seeds": 0
+    },
+    "day12_YARN_STORE": {
+      "median_animals": 17.0,
+      "median_cash": 17727.5,
+      "median_crops": 53.0,
+      "median_day12_23_net": 60045.5,
+      "n_seeds": 14
+    },
+    "day12_regimes": [
+      [
+        "FARMERS_MARKET|ICE_CREAM_SHOP|PIZZA_SHOP|SMOOTHIE_SHOP",
+        2
+      ],
+      [
+        "BAKERY|ICE_CREAM_SHOP|ICE_CREAM_SHOP|PET_CAFE",
+        2
+      ],
+      [
+        "BRUNCH_SPOT|FARMERS_MARKET|PIZZA_SHOP|SMOOTHIE_SHOP",
+        1
+      ],
+      [
+        "FARMERS_MARKET|ICE_CREAM_SHOP|PET_CAFE|YARN_STORE",
+        1
+      ],
+      [
+        "BRUNCH_SPOT|BRUNCH_SPOT|ICE_CREAM_SHOP|SMOOTHIE_SHOP",
+        1
+      ],
+      [
+        "BAKERY|BRUNCH_SPOT|BRUNCH_SPOT|ICE_CREAM_SHOP",
+        1
+      ],
+      [
+        "BRUNCH_SPOT|FARMERS_MARKET|ICE_CREAM_SHOP|ICE_CREAM_SHOP",
+        1
+      ],
+      [
+        "BAKERY|PIZZA_SHOP|PIZZA_SHOP|YARN_STORE",
+        1
+      ],
+      [
+        "BAKERY|BRUNCH_SPOT|SMOOTHIE_SHOP|YARN_STORE",
+        1
+      ],
+      [
+        "BAKERY|BAKERY|BRUNCH_SPOT|SMOOTHIE_SHOP",
+        1
+      ],
+      [
+        "BAKERY|BRUNCH_SPOT|PIZZA_SHOP|SMOOTHIE_SHOP",
+        1
+      ],
+      [
+        "BRUNCH_SPOT|FARMERS_MARKET|FARMERS_MARKET|ICE_CREAM_SHOP",
+        1
+      ],
+      [
+        "BRUNCH_SPOT|FARMERS_MARKET|SMOOTHIE_SHOP|YARN_STORE",
+        1
+      ],
+      [
+        "FARMERS_MARKET|FARMERS_MARKET|SMOOTHIE_SHOP|YARN_STORE",
+        1
+      ],
+      [
+        "BAKERY|FARMERS_MARKET|ICE_CREAM_SHOP|PET_CAFE",
+        1
+      ],
+      [
+        "BAKERY|ICE_CREAM_SHOP|ICE_CREAM_SHOP|PIZZA_SHOP",
+        1
+      ],
+      [
+        "ICE_CREAM_SHOP|ICE_CREAM_SHOP|SMOOTHIE_SHOP|YARN_STORE",
+        1
+      ],
+      [
+        "ICE_CREAM_SHOP|ICE_CREAM_SHOP|YARN_STORE|YARN_STORE",
+        1
+      ],
+      [
+        "FARMERS_MARKET|ICE_CREAM_SHOP|PIZZA_SHOP|YARN_STORE",
+        1
+      ],
+      [
+        "BAKERY|BRUNCH_SPOT|PET_CAFE|YARN_STORE",
+        1
+      ],
+      [
+        "FARMERS_MARKET|PET_CAFE|PIZZA_SHOP|YARN_STORE",
+        1
+      ],
+      [
+        "BAKERY|PET_CAFE|SMOOTHIE_SHOP|SMOOTHIE_SHOP",
+        1
+      ],
+      [
+        "BRUNCH_SPOT|ICE_CREAM_SHOP|PIZZA_SHOP|YARN_STORE",
+        1
+      ],
+      [
+        "BRUNCH_SPOT|PIZZA_SHOP|SMOOTHIE_SHOP|YARN_STORE",
+        1
+      ],
+      [
+        "ICE_CREAM_SHOP|ICE_CREAM_SHOP|PET_CAFE|PIZZA_SHOP",
+        1
+      ],
+      [
+        "ICE_CREAM_SHOP|PIZZA_SHOP|SMOOTHIE_SHOP|YARN_STORE",
+        1
+      ],
+      [
+        "BAKERY|BAKERY|PET_CAFE|SMOOTHIE_SHOP",
+        1
+      ],
+      [
+        "PET_CAFE|SMOOTHIE_SHOP|SMOOTHIE_SHOP|YARN_STORE",
+        1
+      ],
+      [
+        "FARMERS_MARKET|ICE_CREAM_SHOP|PET_CAFE|SMOOTHIE_SHOP",
+        1
+      ]
+    ],
+    "day6_BOTH": {
+      "median_animals": 6.0,
+      "median_cash": 938.0,
+      "median_crops": 19.0,
+      "median_day12_23_net": null,
+      "n_seeds": 4
+    },
+    "day6_MILK_SHOP": {
+      "median_animals": 6,
+      "median_cash": 938.0,
+      "median_crops": 19,
+      "median_day12_23_net": null,
+      "n_seeds": 23
+    },
+    "day6_NEITHER": {
+      "median_animals": 6,
+      "median_cash": 938.0,
+      "median_crops": 19,
+      "median_day12_23_net": null,
+      "n_seeds": 5
+    },
+    "day6_YARN_STORE": {
+      "median_animals": 6,
+      "median_cash": 938.0,
+      "median_crops": 19,
+      "median_day12_23_net": null,
+      "n_seeds": 7
+    },
+    "day6_regimes": [
+      [
+        "FARMERS_MARKET|SMOOTHIE_SHOP",
+        3
+      ],
+      [
+        "BRUNCH_SPOT|SMOOTHIE_SHOP",
+        2
+      ],
+      [
+        "ICE_CREAM_SHOP|PIZZA_SHOP",
+        2
+      ],
+      [
+        "ICE_CREAM_SHOP|YARN_STORE",
+        2
+      ],
+      [
+        "PET_CAFE|SMOOTHIE_SHOP",
+        2
+      ],
+      [
+        "FARMERS_MARKET|PIZZA_SHOP",
+        1
+      ],
+      [
+        "PET_CAFE|YARN_STORE",
+        1
+      ],
+      [
+        "BAKERY|ICE_CREAM_SHOP",
+        1
+      ],
+      [
+        "BRUNCH_SPOT|ICE_CREAM_SHOP",
+        1
+      ],
+      [
+        "PIZZA_SHOP|PIZZA_SHOP",
+        1
+      ],
+      [
+        "BAKERY|YARN_STORE",
+        1
+      ],
+      [
+        "BAKERY|BAKERY",
+        1
+      ],
+      [
+        "PIZZA_SHOP|SMOOTHIE_SHOP",
+        1
+      ],
+      [
+        "BRUNCH_SPOT|FARMERS_MARKET",
+        1
+      ],
+      [
+        "ICE_CREAM_SHOP|SMOOTHIE_SHOP",
+        1
+      ],
+      [
+        "BAKERY|FARMERS_MARKET",
+        1
+      ],
+      [
+        "ICE_CREAM_SHOP|ICE_CREAM_SHOP",
+        1
+      ],
+      [
+        "FARMERS_MARKET|ICE_CREAM_SHOP",
+        1
+      ],
+      [
+        "BRUNCH_SPOT|PET_CAFE",
+        1
+      ],
+      [
+        "FARMERS_MARKET|YARN_STORE",
+        1
+      ],
+      [
+        "BRUNCH_SPOT|PIZZA_SHOP",
+        1
+      ],
+      [
+        "SMOOTHIE_SHOP|YARN_STORE",
+        1
+      ],
+      [
+        "PIZZA_SHOP|YARN_STORE",
+        1
+      ],
+      [
+        "ICE_CREAM_SHOP|PET_CAFE",
+        1
+      ],
+      [
+        "BAKERY|PET_CAFE",
+        1
+      ]
+    ]
+  }
+}

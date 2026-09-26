@@ -1,0 +1,14 @@
+{
+  "candidate": "experiments/v60_original/agent.py",
+  "candidate_sha256": "e4f989c7d12f82edf00f40fd9df69bdbe1c38aa0e4b89c421b6e3520d784800b",
+  "opponent": "experiments/v50_agent.py",
+  "opponent_sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+  "seeds": [
+    94700
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "name": "v50-spent94700-hirefix"
+}

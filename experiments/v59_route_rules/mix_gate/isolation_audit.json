@@ -1,0 +1,99 @@
+{
+  "95501": {
+    "seed": 95501,
+    "frames": 720,
+    "changed_frames": 0,
+    "market_changed_frames": 0,
+    "unit_changed_frames": 0,
+    "converted_orders": [],
+    "route_scope_failures": [],
+    "byte_identical_to_frozen_output": true
+  },
+  "95508": {
+    "seed": 95508,
+    "frames": 720,
+    "changed_frames": 2,
+    "market_changed_frames": 2,
+    "unit_changed_frames": 0,
+    "converted_orders": [
+      {
+        "step": 217,
+        "day": 9,
+        "before": [
+          [
+            "BUY_ANIMAL",
+            "GOOSE",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            1
+          ]
+        ],
+        "after": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 226,
+        "day": 9,
+        "before": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            3
+          ],
+          [
+            "BUY_ANIMAL",
+            "GOOSE",
+            1
+          ]
+        ],
+        "after": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            3
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    ],
+    "route_scope_failures": [],
+    "byte_identical_to_frozen_output": false
+  },
+  "95518": {
+    "seed": 95518,
+    "frames": 720,
+    "changed_frames": 0,
+    "market_changed_frames": 0,
+    "unit_changed_frames": 0,
+    "converted_orders": [],
+    "route_scope_failures": [],
+    "byte_identical_to_frozen_output": true
+  }
+}

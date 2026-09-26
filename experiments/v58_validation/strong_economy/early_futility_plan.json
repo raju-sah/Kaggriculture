@@ -1,0 +1,127 @@
+{
+  "status": "frozen_before_any_seed95200_games",
+  "objective": "One generation of four bounded economy-overlay vectors on the frozen reset route; retain action route and actor actions, vary only observation-conditioned market gates.",
+  "baseline": "experiments/v57_broad/v57_reset_candidate.py",
+  "baseline_sha256": "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+  "candidate_population": [
+    {
+      "name": "balanced",
+      "sha256": "eb4e6a49184f6a67499961d8d07bc41a524ebbdd7cbc6086aea429a740d4ffdb",
+      "params": {
+        "cow_ratio": 0.9,
+        "max_seed_acres": 14,
+        "max_sheep": 8,
+        "max_cows": 5,
+        "max_hires": 7,
+        "land_cap": 4,
+        "cash_reserve": 500
+      }
+    },
+    {
+      "name": "early_cow_invest",
+      "sha256": "75c1e04422a1baa8f1ab1e52752e0bfd8cce5194d30df1073ed5b7bb971375df",
+      "params": {
+        "cow_ratio": 0.75,
+        "max_seed_acres": 18,
+        "max_sheep": 4,
+        "max_cows": 7,
+        "max_hires": 6,
+        "land_cap": 3,
+        "cash_reserve": 2000
+      }
+    },
+    {
+      "name": "conserve_cash",
+      "sha256": "6bc60549ae562f1415efc100200d3f3c517ed8fadb095d489b3ab1c2b4715f02",
+      "params": {
+        "cow_ratio": 1.05,
+        "max_seed_acres": 10,
+        "max_sheep": 4,
+        "max_cows": 3,
+        "max_hires": 4,
+        "land_cap": 2,
+        "cash_reserve": 4000
+      }
+    },
+    {
+      "name": "high_throughput",
+      "sha256": "1f6a038b37ff3e34428458f298a702b4f4f7b4314403b1c7fc5e2eaadc32946d",
+      "params": {
+        "cow_ratio": 0.85,
+        "max_seed_acres": 20,
+        "max_sheep": 10,
+        "max_cows": 8,
+        "max_hires": 7,
+        "land_cap": 4,
+        "cash_reserve": 1000
+      }
+    }
+  ],
+  "early_futility_seeds": [
+    95200,
+    95201
+  ],
+  "opponents": [
+    "v50",
+    "v53",
+    "v54"
+  ],
+  "seat_orders": [
+    0,
+    1
+  ],
+  "candidate_games": 48,
+  "frozen_reset_control_games": 12,
+  "total_games": 60,
+  "workers_cap": 3,
+  "paired_metric": "candidate-minus-opponent terminal coin margin, differenced against frozen reset on the same seed/opponent/seat",
+  "advance_gate": "A vector must have zero errors/timeouts, mean paired margin improvement >= $5,000 over reset, and positive seed-block averaged delta in >=4 of 6 seed x opponent cells. Otherwise stop before seeds95202-95207.",
+  "selection_rule": "Select max mean paired-margin delta; tie-break by worst opponent delta then strict wins. No retuning after the prefix. If advanced, the remaining six seeds are confirmation only.",
+  "loader_preflight": {
+    "loader": "kaggle_environments.agent.get_last_callable",
+    "source_replay": "experiments/v58_original_second/reset_probe/replays/v50-seed-94500-ab-repeat-0.json",
+    "seat_observations_checked": 1440,
+    "candidate_market_action_differences": 1443,
+    "status": "passed with unique final callable zzz_economy_policy_entrypoint",
+    "candidate_config_observation_comparisons": 5760
+  },
+  "rights": "Internal development research only. Frozen reset action route has public Lizs replay lineage; parameter wrappers do not resolve originality or submission-rights concerns. No submission planned.",
+  "final_holdout_93000_93049_used": false,
+  "outcome": {
+    "status": "negative_futility_stop",
+    "candidate_games": 48,
+    "control_games": 12,
+    "total_games": 60,
+    "errors": 0,
+    "timeouts": 0,
+    "controls_reset_wins": 12,
+    "controls_reset_mean_candidate_coins": 80258.33333333333,
+    "arms": {
+      "balanced": {
+        "mean_paired_margin_delta": -114606,
+        "positive_game_deltas": 0,
+        "positive_seed_opponent_cells": 0,
+        "mean_candidate_coins": 36772.6666667
+      },
+      "early_cow_invest": {
+        "mean_paired_margin_delta": -182564,
+        "positive_game_deltas": 0,
+        "positive_seed_opponent_cells": 0,
+        "mean_candidate_coins": 2000
+      },
+      "conserve_cash": {
+        "mean_paired_margin_delta": -180421,
+        "positive_game_deltas": 0,
+        "positive_seed_opponent_cells": 0,
+        "mean_candidate_coins": 3000
+      },
+      "high_throughput": {
+        "mean_paired_margin_delta": -124919,
+        "positive_game_deltas": 0,
+        "positive_seed_opponent_cells": 0,
+        "mean_candidate_coins": 28552
+      }
+    },
+    "decision": "stop; seeds 95202-95207 unused"
+  }
+}

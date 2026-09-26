@@ -1,0 +1,737 @@
+{
+  "source": "Kaggle CLI public episode API; public completed episodes from top-ten team submissions",
+  "selected": [
+    {
+      "episode_id": 113598181,
+      "source_submission": "boey",
+      "create_time": "2026-09-26T06:40:10.490000",
+      "source_submission_id": 56521745,
+      "replay_sha256": "5abd3944941dde3326384e9912c3c42abf8b53d4a542fc126e62f8bc61805ea5",
+      "participants": [
+        "M & M & P & Q",
+        "Boey"
+      ],
+      "rewards": [
+        96349.0,
+        97090.0
+      ],
+      "elite_seat": 1,
+      "transitions": 719,
+      "elite_seats": [
+        0,
+        1
+      ],
+      "elite_names": [
+        "M & M & P & Q",
+        "Boey"
+      ]
+    },
+    {
+      "episode_id": 113598184,
+      "source_submission": "boey",
+      "create_time": "2026-09-26T06:40:10.493000",
+      "source_submission_id": 56521745,
+      "replay_sha256": "851932187a9b1bee7edcfcb33bde3ad38b8482efd8136df9c9ed4e59f0781fb5",
+      "participants": [
+        "Boey",
+        "DSM"
+      ],
+      "rewards": [
+        76952.0,
+        83305.0
+      ],
+      "elite_seat": 0,
+      "transitions": 719,
+      "elite_seats": [
+        0,
+        1
+      ],
+      "elite_names": [
+        "Boey",
+        "DSM"
+      ]
+    },
+    {
+      "episode_id": 113592108,
+      "source_submission": "boey",
+      "create_time": "2026-09-26T06:20:10.706000",
+      "source_submission_id": 56521745,
+      "replay_sha256": "94511dfa8d2ed6ec2f7eb4feb796f494f6725c3c2fca925117bfcfea31378025",
+      "participants": [
+        "Boey",
+        "DSM"
+      ],
+      "rewards": [
+        119340.0,
+        122294.0
+      ],
+      "elite_seat": 0,
+      "transitions": 719,
+      "elite_seats": [
+        0,
+        1
+      ],
+      "elite_names": [
+        "Boey",
+        "DSM"
+      ]
+    },
+    {
+      "episode_id": 113585379,
+      "source_submission": "boey",
+      "create_time": "2026-09-26T05:56:10.630000",
+      "source_submission_id": 56521745,
+      "replay_sha256": "8011ff81b60c965604802fea0d858f4ac4967fe62274fab1a9dd9b3c9f00ab31",
+      "participants": [
+        "Boey",
+        "DSM"
+      ],
+      "rewards": [
+        118145.0,
+        117769.0
+      ],
+      "elite_seat": 0,
+      "transitions": 719,
+      "elite_seats": [
+        0,
+        1
+      ],
+      "elite_names": [
+        "Boey",
+        "DSM"
+      ]
+    },
+    {
+      "episode_id": 113585388,
+      "source_submission": "boey",
+      "create_time": "2026-09-26T05:56:10.639000",
+      "source_submission_id": 56521745,
+      "replay_sha256": "d3572a96683cf1d0c605d8dcc35694df747082ce83b3907f3f0648ba4473f8fd",
+      "participants": [
+        "Boey",
+        "DSM"
+      ],
+      "rewards": [
+        99390.0,
+        94566.0
+      ],
+      "elite_seat": 0,
+      "transitions": 719,
+      "elite_seats": [
+        0,
+        1
+      ],
+      "elite_names": [
+        "Boey",
+        "DSM"
+      ]
+    },
+    {
+      "episode_id": 113592109,
+      "source_submission": "dsm",
+      "create_time": "2026-09-26T06:20:10.706000",
+      "source_submission_id": 56557996,
+      "replay_sha256": "5b4097f7e6aee1190b11d2642bb18d5b5b5dcbc83871fb0bb9151d57c1a1cdf2",
+      "participants": [
+        "Vadim Vasilenko",
+        "DSM"
+      ],
+      "rewards": [
+        113732.0,
+        123109.0
+      ],
+      "elite_seat": 1,
+      "transitions": 719,
+      "elite_seats": [
+        0,
+        1
+      ],
+      "elite_names": [
+        "Vadim Vasilenko",
+        "DSM"
+      ]
+    },
+    {
+      "episode_id": 113585384,
+      "source_submission": "dsm",
+      "create_time": "2026-09-26T05:56:10.635000",
+      "source_submission_id": 56557996,
+      "replay_sha256": "dcb17fa79c55a0317bfea6534503dae54b0d5f7b38e6595cf5dbb25526db09ab",
+      "participants": [
+        "DSM",
+        "DECEM"
+      ],
+      "rewards": [
+        108258.0,
+        119549.0
+      ],
+      "elite_seat": 0,
+      "transitions": 719,
+      "elite_seats": [
+        0,
+        1
+      ],
+      "elite_names": [
+        "DSM",
+        "DECEM"
+      ]
+    },
+    {
+      "episode_id": 113579407,
+      "source_submission": "dsm",
+      "create_time": "2026-09-26T05:36:05.689000",
+      "source_submission_id": 56557996,
+      "replay_sha256": "03f9066dd5b5d0990213a67cc4345c23b0fcdd646285dd66c1351e1a21820e25",
+      "participants": [
+        "DSM",
+        "Vadim Vasilenko"
+      ],
+      "rewards": [
+        109880.0,
+        104899.0
+      ],
+      "elite_seat": 0,
+      "transitions": 719,
+      "elite_seats": [
+        0,
+        1
+      ],
+      "elite_names": [
+        "DSM",
+        "Vadim Vasilenko"
+      ]
+    },
+    {
+      "episode_id": 113573320,
+      "source_submission": "dsm",
+      "create_time": "2026-09-26T05:15:34.356000",
+      "source_submission_id": 56557996,
+      "replay_sha256": "2ababf52bcc6ebda6583bb8bafc047b6f456e923f0c8f93f09e8546f4608960e",
+      "participants": [
+        "Boey",
+        "DSM"
+      ],
+      "rewards": [
+        108610.0,
+        106661.0
+      ],
+      "elite_seat": 1,
+      "transitions": 719,
+      "elite_seats": [
+        0,
+        1
+      ],
+      "elite_names": [
+        "Boey",
+        "DSM"
+      ]
+    },
+    {
+      "episode_id": 113566652,
+      "source_submission": "dsm",
+      "create_time": "2026-09-26T04:51:35.502000",
+      "source_submission_id": 56557996,
+      "replay_sha256": "a104695903682a452c9d484b66f4f5b9e637294b398af1fddd62b6d27e5dcfca",
+      "participants": [
+        "DSM",
+        "DECEM"
+      ],
+      "rewards": [
+        119877.0,
+        110976.0
+      ],
+      "elite_seat": 0,
+      "transitions": 719,
+      "elite_seats": [
+        0,
+        1
+      ],
+      "elite_names": [
+        "DSM",
+        "DECEM"
+      ]
+    },
+    {
+      "episode_id": 113598246,
+      "source_submission": "mmpq",
+      "create_time": "2026-09-26T06:40:10.624000",
+      "source_submission_id": 56553720,
+      "replay_sha256": "07899608d7eff8645e7078673d70162fa714dc39aad05fc4eb6bb7dc78cfd1e9",
+      "participants": [
+        "M & M & P & Q",
+        "Vadim Vasilenko"
+      ],
+      "rewards": [
+        86069.0,
+        80735.0
+      ],
+      "elite_seat": 0,
+      "transitions": 719,
+      "elite_seats": [
+        0,
+        1
+      ],
+      "elite_names": [
+        "M & M & P & Q",
+        "Vadim Vasilenko"
+      ]
+    },
+    {
+      "episode_id": 113598187,
+      "source_submission": "mmpq",
+      "create_time": "2026-09-26T06:40:10.491000",
+      "source_submission_id": 56553720,
+      "replay_sha256": "a7a1ed93936ec8fdd580d152f69a026609d04de34eb8c6335e77a9fe8f6fe542",
+      "participants": [
+        "M & M & P & Q",
+        "DECEM"
+      ],
+      "rewards": [
+        111296.0,
+        105070.0
+      ],
+      "elite_seat": 0,
+      "transitions": 719,
+      "elite_seats": [
+        0,
+        1
+      ],
+      "elite_names": [
+        "M & M & P & Q",
+        "DECEM"
+      ]
+    },
+    {
+      "episode_id": 113595745,
+      "source_submission": "mmpq",
+      "create_time": "2026-09-26T06:32:10.173000",
+      "source_submission_id": 56553720,
+      "replay_sha256": "a282d66cdb9bee1b29c471162d12e45bf411a63e15781ee9de55cd0f80cd759b",
+      "participants": [
+        "Vadim Vasilenko",
+        "M & M & P & Q"
+      ],
+      "rewards": [
+        70012.0,
+        76270.0
+      ],
+      "elite_seat": 1,
+      "transitions": 719,
+      "elite_seats": [
+        0,
+        1
+      ],
+      "elite_names": [
+        "Vadim Vasilenko",
+        "M & M & P & Q"
+      ]
+    },
+    {
+      "episode_id": 113589474,
+      "source_submission": "mmpq",
+      "create_time": "2026-09-26T06:12:11.697000",
+      "source_submission_id": 56553720,
+      "replay_sha256": "6290dc4d7f5af8673c0edb7e6221ce3336364f55f4eca38a75e9b9e70fbf8d75",
+      "participants": [
+        "M & M & P & Q",
+        "Vadim Vasilenko"
+      ],
+      "rewards": [
+        100585.0,
+        95440.0
+      ],
+      "elite_seat": 0,
+      "transitions": 719,
+      "elite_seats": [
+        0,
+        1
+      ],
+      "elite_names": [
+        "M & M & P & Q",
+        "Vadim Vasilenko"
+      ]
+    },
+    {
+      "episode_id": 113586424,
+      "source_submission": "mmpq",
+      "create_time": "2026-09-26T06:00:10.845000",
+      "source_submission_id": 56553720,
+      "replay_sha256": "9e66a061442869a49f6d0e20f59ef707ac4fe6c13e41c0b6909fbc9e6a53d221",
+      "participants": [
+        "THIRD FARM CLUB",
+        "M & M & P & Q"
+      ],
+      "rewards": [
+        105315.0,
+        116552.0
+      ],
+      "elite_seat": 1,
+      "transitions": 719,
+      "elite_seats": [
+        1
+      ],
+      "elite_names": [
+        "M & M & P & Q"
+      ]
+    },
+    {
+      "episode_id": 113598250,
+      "source_submission": "submission_56564674",
+      "create_time": "2026-09-26T06:40:10.624000",
+      "source_submission_id": 56564674,
+      "replay_sha256": "98514d0cc8b9386f20f1d6f41fcd28607688eec9a4a43be975ba7a989649c873",
+      "participants": [
+        "DSM",
+        "DECEM"
+      ],
+      "rewards": [
+        110399.0,
+        104893.0
+      ],
+      "elite_seat": null,
+      "transitions": 719,
+      "elite_seats": [
+        0,
+        1
+      ],
+      "elite_names": [
+        "DSM",
+        "DECEM"
+      ]
+    },
+    {
+      "episode_id": 113592105,
+      "source_submission": "submission_56564674",
+      "create_time": "2026-09-26T06:20:10.702000",
+      "source_submission_id": 56564674,
+      "replay_sha256": "5fe4f2c4f6915f0066832f0de1cddfcd119ecdb42601e9cc68d6a101ef9ff0e4",
+      "participants": [
+        "DSM",
+        "DECEM"
+      ],
+      "rewards": [
+        139157.0,
+        129725.0
+      ],
+      "elite_seat": null,
+      "transitions": 719,
+      "elite_seats": [
+        0,
+        1
+      ],
+      "elite_names": [
+        "DSM",
+        "DECEM"
+      ]
+    },
+    {
+      "episode_id": 113585383,
+      "source_submission": "submission_56564674",
+      "create_time": "2026-09-26T05:56:10.634000",
+      "source_submission_id": 56564674,
+      "replay_sha256": "f74ba22dfcc44e729b3b32bc8f1f436ad637f65a82a83ff99cb1cc8b865d4000",
+      "participants": [
+        "DSM",
+        "Majkel1337"
+      ],
+      "rewards": [
+        110032.0,
+        95301.0
+      ],
+      "elite_seat": null,
+      "transitions": 719,
+      "elite_seats": [
+        0
+      ],
+      "elite_names": [
+        "DSM"
+      ]
+    },
+    {
+      "episode_id": 113579410,
+      "source_submission": "submission_56564674",
+      "create_time": "2026-09-26T05:36:05.692000",
+      "source_submission_id": 56564674,
+      "replay_sha256": "c2c1ea6d836368ca1d73c493d6a0dcd5d738031dcc2e3861f530f35d0100e3f8",
+      "participants": [
+        "Boey",
+        "DSM"
+      ],
+      "rewards": [
+        104040.0,
+        101675.0
+      ],
+      "elite_seat": null,
+      "transitions": 719,
+      "elite_seats": [
+        0,
+        1
+      ],
+      "elite_names": [
+        "Boey",
+        "DSM"
+      ]
+    },
+    {
+      "episode_id": 113579411,
+      "source_submission": "submission_56564674",
+      "create_time": "2026-09-26T05:36:05.691000",
+      "source_submission_id": 56564674,
+      "replay_sha256": "4b2f645636009a2d53a6849c7a0cbea3e7b72e572379c4e9dd04f9929a7dd405",
+      "participants": [
+        "DECEM",
+        "DSM"
+      ],
+      "rewards": [
+        130271.0,
+        133355.0
+      ],
+      "elite_seat": null,
+      "transitions": 719,
+      "elite_seats": [
+        0,
+        1
+      ],
+      "elite_names": [
+        "DECEM",
+        "DSM"
+      ]
+    },
+    {
+      "episode_id": 113592107,
+      "source_submission": "decem",
+      "create_time": "2026-09-26T06:20:10.706000",
+      "source_submission_id": 56552482,
+      "replay_sha256": "f603c94257868b917e4465b89acafa1ad24fb5213d2c12eeff8659bdb0450ad9",
+      "participants": [
+        "DECEM",
+        "Fourth Quadrant"
+      ],
+      "rewards": [
+        79523.0,
+        78302.0
+      ],
+      "elite_seat": 0,
+      "transitions": 719,
+      "elite_seats": [
+        0
+      ],
+      "elite_names": [
+        "DECEM"
+      ]
+    },
+    {
+      "episode_id": 113585358,
+      "source_submission": "decem",
+      "create_time": "2026-09-26T05:56:10.609000",
+      "source_submission_id": 56552482,
+      "replay_sha256": "fe6bc5056ff5fd525331e5d1298f14d312c51491d1a15651e71bed020a611166",
+      "participants": [
+        "Fourth Quadrant",
+        "DECEM"
+      ],
+      "rewards": [
+        102138.0,
+        101507.0
+      ],
+      "elite_seat": 1,
+      "transitions": 719,
+      "elite_seats": [
+        1
+      ],
+      "elite_names": [
+        "DECEM"
+      ]
+    },
+    {
+      "episode_id": 113579145,
+      "source_submission": "decem",
+      "create_time": "2026-09-26T05:36:05.304000",
+      "source_submission_id": 56552482,
+      "replay_sha256": "c5e9ab9def8000f15492bfeae25728c413a33ccaf96c53be23cae35b1ab1910f",
+      "participants": [
+        "M & M & P & Q",
+        "DECEM"
+      ],
+      "rewards": [
+        104726.0,
+        103694.0
+      ],
+      "elite_seat": 1,
+      "transitions": 719,
+      "elite_seats": [
+        0,
+        1
+      ],
+      "elite_names": [
+        "M & M & P & Q",
+        "DECEM"
+      ]
+    },
+    {
+      "episode_id": 113579143,
+      "source_submission": "decem",
+      "create_time": "2026-09-26T05:36:05.303000",
+      "source_submission_id": 56552482,
+      "replay_sha256": "4781b8cef38fd31615c2ec2495d0194afb9b421a0d556510ad56ecb167549342",
+      "participants": [
+        "Vadim Vasilenko",
+        "DECEM"
+      ],
+      "rewards": [
+        117561.0,
+        119132.0
+      ],
+      "elite_seat": 1,
+      "transitions": 719,
+      "elite_seats": [
+        0,
+        1
+      ],
+      "elite_names": [
+        "Vadim Vasilenko",
+        "DECEM"
+      ]
+    },
+    {
+      "episode_id": 113573323,
+      "source_submission": "decem",
+      "create_time": "2026-09-26T05:15:34.388000",
+      "source_submission_id": 56552482,
+      "replay_sha256": "443d0280dc205d27189793ccb2e00fd911607c5b21afc4836521aff6f02274a6",
+      "participants": [
+        "DECEM",
+        "Boey"
+      ],
+      "rewards": [
+        102176.0,
+        106219.0
+      ],
+      "elite_seat": 0,
+      "transitions": 719,
+      "elite_seats": [
+        0,
+        1
+      ],
+      "elite_names": [
+        "DECEM",
+        "Boey"
+      ]
+    },
+    {
+      "episode_id": 113594650,
+      "source_submission": "unknown_mother_goose",
+      "create_time": "2026-09-26T06:28:10.984000",
+      "source_submission_id": 56554776,
+      "replay_sha256": "8bc8e0cf867a8beb5019b08efd8f5d3bd6aa7b0a4701a750e1b426941dbfeb13",
+      "participants": [
+        "Unknown Mother-Goose",
+        "Arda Ceylan"
+      ],
+      "rewards": [
+        115335.0,
+        102944.0
+      ],
+      "elite_seat": 0,
+      "transitions": 719,
+      "elite_seats": [
+        0
+      ],
+      "elite_names": [
+        "Unknown Mother-Goose"
+      ]
+    },
+    {
+      "episode_id": 113588516,
+      "source_submission": "unknown_mother_goose",
+      "create_time": "2026-09-26T06:08:11.099000",
+      "source_submission_id": 56554776,
+      "replay_sha256": "5c6dd114cc145961f6d27d0bc18515bf425d7136ed5d903f0ca4bc1de49af34c",
+      "participants": [
+        "Unknown Mother-Goose",
+        "mtmr_s1"
+      ],
+      "rewards": [
+        95224.0,
+        92550.0
+      ],
+      "elite_seat": 0,
+      "transitions": 719,
+      "elite_seats": [
+        0
+      ],
+      "elite_names": [
+        "Unknown Mother-Goose"
+      ]
+    },
+    {
+      "episode_id": 113588223,
+      "source_submission": "unknown_mother_goose",
+      "create_time": "2026-09-26T06:08:10.621000",
+      "source_submission_id": 56554776,
+      "replay_sha256": "1536f703c3a82a0930dfa192b5ecf3c58c66db38d30a7077589767fc4926caeb",
+      "participants": [
+        "TheEggman",
+        "Unknown Mother-Goose"
+      ],
+      "rewards": [
+        86577.0,
+        89621.0
+      ],
+      "elite_seat": 1,
+      "transitions": 719,
+      "elite_seats": [
+        1
+      ],
+      "elite_names": [
+        "Unknown Mother-Goose"
+      ]
+    },
+    {
+      "episode_id": 113580576,
+      "source_submission": "unknown_mother_goose",
+      "create_time": "2026-09-26T05:40:21.040000",
+      "source_submission_id": 56554776,
+      "replay_sha256": "a7185e4cf1ba0c2662ce6436bad900cbabe19ddb0ad6dea687aa6f2350cde9f6",
+      "participants": [
+        "Unknown Mother-Goose",
+        "Arda Ceylan"
+      ],
+      "rewards": [
+        99233.0,
+        93124.0
+      ],
+      "elite_seat": 0,
+      "transitions": 719,
+      "elite_seats": [
+        0
+      ],
+      "elite_names": [
+        "Unknown Mother-Goose"
+      ]
+    },
+    {
+      "episode_id": 113581808,
+      "source_submission": "unknown_mother_goose",
+      "create_time": "2026-09-26T05:44:16.048000",
+      "source_submission_id": 56554776,
+      "replay_sha256": "87d7c5c545c38466fd3639b10aa437e002ac70d2e8107c686fd57cab8589e107",
+      "participants": [
+        "Unknown Mother-Goose",
+        "Azat Akhtyamov"
+      ],
+      "rewards": [
+        94606.0,
+        90889.0
+      ],
+      "elite_seat": 0,
+      "transitions": 719,
+      "elite_seats": [
+        0
+      ],
+      "elite_names": [
+        "Unknown Mother-Goose"
+      ]
+    }
+  ]
+}

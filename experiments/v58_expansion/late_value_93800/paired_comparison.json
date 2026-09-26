@@ -1,0 +1,842 @@
+[
+  {
+    "opponent": "v54",
+    "seed": 93800,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      61261.0,
+      61072.0
+    ],
+    "late_coins_candidate_opponent": [
+      61261.0,
+      61072.0
+    ],
+    "candidate_coin_delta": 0.0,
+    "opponent_coin_delta": 0.0,
+    "baseline_margin": 189.0,
+    "late_margin": 189.0,
+    "margin_delta": 0.0,
+    "same_shop_sequence": true,
+    "shop_sequence_baseline": [
+      "YARN_STORE",
+      "YARN_STORE",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "shop_sequence_late": [
+      "YARN_STORE",
+      "YARN_STORE",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "first_action_difference": null,
+    "baseline_replay_sha256": "c5270eb0d4468c1540d5c2fa90ed82edeecc58ffa0e87633c8fb2908c6e7b877",
+    "late_replay_sha256": "c5270eb0d4468c1540d5c2fa90ed82edeecc58ffa0e87633c8fb2908c6e7b877"
+  },
+  {
+    "opponent": "v54",
+    "seed": 93800,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      61261.0,
+      61072.0
+    ],
+    "late_coins_candidate_opponent": [
+      61261.0,
+      61072.0
+    ],
+    "candidate_coin_delta": 0.0,
+    "opponent_coin_delta": 0.0,
+    "baseline_margin": 189.0,
+    "late_margin": 189.0,
+    "margin_delta": 0.0,
+    "same_shop_sequence": true,
+    "shop_sequence_baseline": [
+      "YARN_STORE",
+      "YARN_STORE",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "shop_sequence_late": [
+      "YARN_STORE",
+      "YARN_STORE",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "first_action_difference": null,
+    "baseline_replay_sha256": "7d2691977ebf166a586f02d1f3bdf9385e6fca74bd24633d0d91d2ee5c9cc77d",
+    "late_replay_sha256": "7d2691977ebf166a586f02d1f3bdf9385e6fca74bd24633d0d91d2ee5c9cc77d"
+  },
+  {
+    "opponent": "v54",
+    "seed": 93801,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      116109.0,
+      109593.0
+    ],
+    "late_coins_candidate_opponent": [
+      116109.0,
+      109593.0
+    ],
+    "candidate_coin_delta": 0.0,
+    "opponent_coin_delta": 0.0,
+    "baseline_margin": 6516.0,
+    "late_margin": 6516.0,
+    "margin_delta": 0.0,
+    "same_shop_sequence": true,
+    "shop_sequence_baseline": [
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "PET_CAFE"
+    ],
+    "shop_sequence_late": [
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "PET_CAFE"
+    ],
+    "first_action_difference": null,
+    "baseline_replay_sha256": "d4d329ffec62292c24070f4677a30c290a1c9fbd6e49f28d60b6c2b3b4c185a4",
+    "late_replay_sha256": "d4d329ffec62292c24070f4677a30c290a1c9fbd6e49f28d60b6c2b3b4c185a4"
+  },
+  {
+    "opponent": "v54",
+    "seed": 93801,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      116109.0,
+      109593.0
+    ],
+    "late_coins_candidate_opponent": [
+      116109.0,
+      109593.0
+    ],
+    "candidate_coin_delta": 0.0,
+    "opponent_coin_delta": 0.0,
+    "baseline_margin": 6516.0,
+    "late_margin": 6516.0,
+    "margin_delta": 0.0,
+    "same_shop_sequence": true,
+    "shop_sequence_baseline": [
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "PET_CAFE"
+    ],
+    "shop_sequence_late": [
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "PET_CAFE"
+    ],
+    "first_action_difference": null,
+    "baseline_replay_sha256": "2904cb3c00ecb648ebeea3cfb639e6c72d3efec349843a110255369a8c71958e",
+    "late_replay_sha256": "2904cb3c00ecb648ebeea3cfb639e6c72d3efec349843a110255369a8c71958e"
+  },
+  {
+    "opponent": "v54",
+    "seed": 93802,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      113930.0,
+      113376.0
+    ],
+    "late_coins_candidate_opponent": [
+      113930.0,
+      113376.0
+    ],
+    "candidate_coin_delta": 0.0,
+    "opponent_coin_delta": 0.0,
+    "baseline_margin": 554.0,
+    "late_margin": 554.0,
+    "margin_delta": 0.0,
+    "same_shop_sequence": true,
+    "shop_sequence_baseline": [
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "BAKERY",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "shop_sequence_late": [
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "BAKERY",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "first_action_difference": null,
+    "baseline_replay_sha256": "1151a2271234c87e56d23a6e8646fe754972d8b5b61c943a04610c9ed5109dd9",
+    "late_replay_sha256": "1151a2271234c87e56d23a6e8646fe754972d8b5b61c943a04610c9ed5109dd9"
+  },
+  {
+    "opponent": "v54",
+    "seed": 93802,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      113930.0,
+      113376.0
+    ],
+    "late_coins_candidate_opponent": [
+      113930.0,
+      113376.0
+    ],
+    "candidate_coin_delta": 0.0,
+    "opponent_coin_delta": 0.0,
+    "baseline_margin": 554.0,
+    "late_margin": 554.0,
+    "margin_delta": 0.0,
+    "same_shop_sequence": true,
+    "shop_sequence_baseline": [
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "BAKERY",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "shop_sequence_late": [
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "BAKERY",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "first_action_difference": null,
+    "baseline_replay_sha256": "1220fb7f1f386213ffafcd9138cbac567fb877ad3d90da79b0e3afc10c44d1ec",
+    "late_replay_sha256": "1220fb7f1f386213ffafcd9138cbac567fb877ad3d90da79b0e3afc10c44d1ec"
+  },
+  {
+    "opponent": "v54",
+    "seed": 93803,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      66707.0,
+      66714.0
+    ],
+    "late_coins_candidate_opponent": [
+      66707.0,
+      66714.0
+    ],
+    "candidate_coin_delta": 0.0,
+    "opponent_coin_delta": 0.0,
+    "baseline_margin": -7.0,
+    "late_margin": -7.0,
+    "margin_delta": 0.0,
+    "same_shop_sequence": true,
+    "shop_sequence_baseline": [
+      "PET_CAFE",
+      "PET_CAFE",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "shop_sequence_late": [
+      "PET_CAFE",
+      "PET_CAFE",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "first_action_difference": null,
+    "baseline_replay_sha256": "0934865f626572932ea3af33172e64d99527c28d8c35ff5f17ad9ec453965ff2",
+    "late_replay_sha256": "0934865f626572932ea3af33172e64d99527c28d8c35ff5f17ad9ec453965ff2"
+  },
+  {
+    "opponent": "v54",
+    "seed": 93803,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      66707.0,
+      66714.0
+    ],
+    "late_coins_candidate_opponent": [
+      66707.0,
+      66714.0
+    ],
+    "candidate_coin_delta": 0.0,
+    "opponent_coin_delta": 0.0,
+    "baseline_margin": -7.0,
+    "late_margin": -7.0,
+    "margin_delta": 0.0,
+    "same_shop_sequence": true,
+    "shop_sequence_baseline": [
+      "PET_CAFE",
+      "PET_CAFE",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "shop_sequence_late": [
+      "PET_CAFE",
+      "PET_CAFE",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "first_action_difference": null,
+    "baseline_replay_sha256": "a555a2d9bdfc8dc2ab53ae01d157fdbe0197c9cd66552f6d5357ac69c4865f5c",
+    "late_replay_sha256": "a555a2d9bdfc8dc2ab53ae01d157fdbe0197c9cd66552f6d5357ac69c4865f5c"
+  },
+  {
+    "opponent": "v54",
+    "seed": 93804,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      72458.0,
+      72390.0
+    ],
+    "late_coins_candidate_opponent": [
+      72458.0,
+      72390.0
+    ],
+    "candidate_coin_delta": 0.0,
+    "opponent_coin_delta": 0.0,
+    "baseline_margin": 68.0,
+    "late_margin": 68.0,
+    "margin_delta": 0.0,
+    "same_shop_sequence": true,
+    "shop_sequence_baseline": [
+      "BRUNCH_SPOT",
+      "BAKERY",
+      "PET_CAFE",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "shop_sequence_late": [
+      "BRUNCH_SPOT",
+      "BAKERY",
+      "PET_CAFE",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "first_action_difference": null,
+    "baseline_replay_sha256": "8f3a04deb7b01d6f7e7467246bc5165386da4ed145c7c885a0c45c4fb7313d92",
+    "late_replay_sha256": "8f3a04deb7b01d6f7e7467246bc5165386da4ed145c7c885a0c45c4fb7313d92"
+  },
+  {
+    "opponent": "v54",
+    "seed": 93804,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      72458.0,
+      72390.0
+    ],
+    "late_coins_candidate_opponent": [
+      72458.0,
+      72390.0
+    ],
+    "candidate_coin_delta": 0.0,
+    "opponent_coin_delta": 0.0,
+    "baseline_margin": 68.0,
+    "late_margin": 68.0,
+    "margin_delta": 0.0,
+    "same_shop_sequence": true,
+    "shop_sequence_baseline": [
+      "BRUNCH_SPOT",
+      "BAKERY",
+      "PET_CAFE",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "shop_sequence_late": [
+      "BRUNCH_SPOT",
+      "BAKERY",
+      "PET_CAFE",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "first_action_difference": null,
+    "baseline_replay_sha256": "26a9fa2f35f1440ede81ee31c64e608e718f7f37d03d4f9ad23b21b105fbedd9",
+    "late_replay_sha256": "26a9fa2f35f1440ede81ee31c64e608e718f7f37d03d4f9ad23b21b105fbedd9"
+  },
+  {
+    "opponent": "v56",
+    "seed": 93800,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      61261.0,
+      61072.0
+    ],
+    "late_coins_candidate_opponent": [
+      61261.0,
+      61072.0
+    ],
+    "candidate_coin_delta": 0.0,
+    "opponent_coin_delta": 0.0,
+    "baseline_margin": 189.0,
+    "late_margin": 189.0,
+    "margin_delta": 0.0,
+    "same_shop_sequence": true,
+    "shop_sequence_baseline": [
+      "YARN_STORE",
+      "YARN_STORE",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "shop_sequence_late": [
+      "YARN_STORE",
+      "YARN_STORE",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "first_action_difference": null,
+    "baseline_replay_sha256": "354c135f6b3eb907df9bcb283e45b18b0a1e8a6ea70ab3a9e9ca4f444c0116af",
+    "late_replay_sha256": "354c135f6b3eb907df9bcb283e45b18b0a1e8a6ea70ab3a9e9ca4f444c0116af"
+  },
+  {
+    "opponent": "v56",
+    "seed": 93800,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      61261.0,
+      61072.0
+    ],
+    "late_coins_candidate_opponent": [
+      61261.0,
+      61072.0
+    ],
+    "candidate_coin_delta": 0.0,
+    "opponent_coin_delta": 0.0,
+    "baseline_margin": 189.0,
+    "late_margin": 189.0,
+    "margin_delta": 0.0,
+    "same_shop_sequence": true,
+    "shop_sequence_baseline": [
+      "YARN_STORE",
+      "YARN_STORE",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "shop_sequence_late": [
+      "YARN_STORE",
+      "YARN_STORE",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "first_action_difference": null,
+    "baseline_replay_sha256": "a31d4532c80dc4c16680867ff2676079c96c0e08f67419373e743ef530c34feb",
+    "late_replay_sha256": "a31d4532c80dc4c16680867ff2676079c96c0e08f67419373e743ef530c34feb"
+  },
+  {
+    "opponent": "v56",
+    "seed": 93801,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      116107.0,
+      109593.0
+    ],
+    "late_coins_candidate_opponent": [
+      116107.0,
+      109593.0
+    ],
+    "candidate_coin_delta": 0.0,
+    "opponent_coin_delta": 0.0,
+    "baseline_margin": 6514.0,
+    "late_margin": 6514.0,
+    "margin_delta": 0.0,
+    "same_shop_sequence": true,
+    "shop_sequence_baseline": [
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "PET_CAFE"
+    ],
+    "shop_sequence_late": [
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "PET_CAFE"
+    ],
+    "first_action_difference": null,
+    "baseline_replay_sha256": "cdbdd931e112f8273f8989fe1564731c4f722da89aeb62e86b661748121f3ece",
+    "late_replay_sha256": "cdbdd931e112f8273f8989fe1564731c4f722da89aeb62e86b661748121f3ece"
+  },
+  {
+    "opponent": "v56",
+    "seed": 93801,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      116107.0,
+      109593.0
+    ],
+    "late_coins_candidate_opponent": [
+      116107.0,
+      109593.0
+    ],
+    "candidate_coin_delta": 0.0,
+    "opponent_coin_delta": 0.0,
+    "baseline_margin": 6514.0,
+    "late_margin": 6514.0,
+    "margin_delta": 0.0,
+    "same_shop_sequence": true,
+    "shop_sequence_baseline": [
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "PET_CAFE"
+    ],
+    "shop_sequence_late": [
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "PET_CAFE"
+    ],
+    "first_action_difference": null,
+    "baseline_replay_sha256": "6238692fc05dfd152b65cd6cd5b2d8522243359e22644412d3b29f7edb1a4574",
+    "late_replay_sha256": "6238692fc05dfd152b65cd6cd5b2d8522243359e22644412d3b29f7edb1a4574"
+  },
+  {
+    "opponent": "v56",
+    "seed": 93802,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      113930.0,
+      113376.0
+    ],
+    "late_coins_candidate_opponent": [
+      113930.0,
+      113376.0
+    ],
+    "candidate_coin_delta": 0.0,
+    "opponent_coin_delta": 0.0,
+    "baseline_margin": 554.0,
+    "late_margin": 554.0,
+    "margin_delta": 0.0,
+    "same_shop_sequence": true,
+    "shop_sequence_baseline": [
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "BAKERY",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "shop_sequence_late": [
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "BAKERY",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "first_action_difference": null,
+    "baseline_replay_sha256": "fb2513b98875caa0e66cec14a132fe54b65adb16d4dff5804178b07263d3e016",
+    "late_replay_sha256": "fb2513b98875caa0e66cec14a132fe54b65adb16d4dff5804178b07263d3e016"
+  },
+  {
+    "opponent": "v56",
+    "seed": 93802,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      113930.0,
+      113376.0
+    ],
+    "late_coins_candidate_opponent": [
+      113930.0,
+      113376.0
+    ],
+    "candidate_coin_delta": 0.0,
+    "opponent_coin_delta": 0.0,
+    "baseline_margin": 554.0,
+    "late_margin": 554.0,
+    "margin_delta": 0.0,
+    "same_shop_sequence": true,
+    "shop_sequence_baseline": [
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "BAKERY",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "shop_sequence_late": [
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "BAKERY",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "first_action_difference": null,
+    "baseline_replay_sha256": "8a6e54a4a027e16793fb3e73f6b23c44c3dadd3c4d2448c555b3fd2a000c7e73",
+    "late_replay_sha256": "8a6e54a4a027e16793fb3e73f6b23c44c3dadd3c4d2448c555b3fd2a000c7e73"
+  },
+  {
+    "opponent": "v56",
+    "seed": 93803,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      66707.0,
+      66714.0
+    ],
+    "late_coins_candidate_opponent": [
+      66707.0,
+      66714.0
+    ],
+    "candidate_coin_delta": 0.0,
+    "opponent_coin_delta": 0.0,
+    "baseline_margin": -7.0,
+    "late_margin": -7.0,
+    "margin_delta": 0.0,
+    "same_shop_sequence": true,
+    "shop_sequence_baseline": [
+      "PET_CAFE",
+      "PET_CAFE",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "shop_sequence_late": [
+      "PET_CAFE",
+      "PET_CAFE",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "first_action_difference": null,
+    "baseline_replay_sha256": "1846b631bf6d80947fa94a383e4f741ddd66c020b79903c40e89e67cd0d25f0d",
+    "late_replay_sha256": "1846b631bf6d80947fa94a383e4f741ddd66c020b79903c40e89e67cd0d25f0d"
+  },
+  {
+    "opponent": "v56",
+    "seed": 93803,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      66707.0,
+      66714.0
+    ],
+    "late_coins_candidate_opponent": [
+      66707.0,
+      66714.0
+    ],
+    "candidate_coin_delta": 0.0,
+    "opponent_coin_delta": 0.0,
+    "baseline_margin": -7.0,
+    "late_margin": -7.0,
+    "margin_delta": 0.0,
+    "same_shop_sequence": true,
+    "shop_sequence_baseline": [
+      "PET_CAFE",
+      "PET_CAFE",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "shop_sequence_late": [
+      "PET_CAFE",
+      "PET_CAFE",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "first_action_difference": null,
+    "baseline_replay_sha256": "6f2b9ae595f1e2a863668f968a7f6a581ae668b18a24744fa562f833ee98c198",
+    "late_replay_sha256": "6f2b9ae595f1e2a863668f968a7f6a581ae668b18a24744fa562f833ee98c198"
+  },
+  {
+    "opponent": "v56",
+    "seed": 93804,
+    "candidate_seat": 0,
+    "baseline_coins_candidate_opponent": [
+      72458.0,
+      72390.0
+    ],
+    "late_coins_candidate_opponent": [
+      72458.0,
+      72390.0
+    ],
+    "candidate_coin_delta": 0.0,
+    "opponent_coin_delta": 0.0,
+    "baseline_margin": 68.0,
+    "late_margin": 68.0,
+    "margin_delta": 0.0,
+    "same_shop_sequence": true,
+    "shop_sequence_baseline": [
+      "BRUNCH_SPOT",
+      "BAKERY",
+      "PET_CAFE",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "shop_sequence_late": [
+      "BRUNCH_SPOT",
+      "BAKERY",
+      "PET_CAFE",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "first_action_difference": null,
+    "baseline_replay_sha256": "31ff3031909c07680d1eb6049fb2025977646ae2397760382bd2defd4f3ec61e",
+    "late_replay_sha256": "31ff3031909c07680d1eb6049fb2025977646ae2397760382bd2defd4f3ec61e"
+  },
+  {
+    "opponent": "v56",
+    "seed": 93804,
+    "candidate_seat": 1,
+    "baseline_coins_candidate_opponent": [
+      72458.0,
+      72390.0
+    ],
+    "late_coins_candidate_opponent": [
+      72458.0,
+      72390.0
+    ],
+    "candidate_coin_delta": 0.0,
+    "opponent_coin_delta": 0.0,
+    "baseline_margin": 68.0,
+    "late_margin": 68.0,
+    "margin_delta": 0.0,
+    "same_shop_sequence": true,
+    "shop_sequence_baseline": [
+      "BRUNCH_SPOT",
+      "BAKERY",
+      "PET_CAFE",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "shop_sequence_late": [
+      "BRUNCH_SPOT",
+      "BAKERY",
+      "PET_CAFE",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "first_action_difference": null,
+    "baseline_replay_sha256": "9367af18524f2387798cd9b8a60c77e1caa154f36e0df0de3fe6c6c5cfcbfd8e",
+    "late_replay_sha256": "9367af18524f2387798cd9b8a60c77e1caa154f36e0df0de3fe6c6c5cfcbfd8e"
+  }
+]

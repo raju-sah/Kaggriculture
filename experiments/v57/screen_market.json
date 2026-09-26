@@ -1,0 +1,54 @@
+[
+  {
+    "candidate": "experiments/v57/lizs_market.py",
+    "opponent": "agents/v54_agent.py",
+    "seed": 92503,
+    "seat": 0,
+    "coins": 116781.0,
+    "other": 116884.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "5e5b25d9006a035c1270c15833f6b1ff78750ea0be6708c13f412813327097bb"
+  },
+  {
+    "candidate": "experiments/v57/lizs_market.py",
+    "opponent": "agents/v54_agent.py",
+    "seed": 92506,
+    "seat": 0,
+    "coins": 112634.0,
+    "other": 112633.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "5e5b25d9006a035c1270c15833f6b1ff78750ea0be6708c13f412813327097bb"
+  },
+  {
+    "candidate": "experiments/v57/lizs_market.py",
+    "opponent": "experiments/v48_agent.py",
+    "seed": 92503,
+    "seat": 0,
+    "coins": 128890.0,
+    "other": 119014.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "5e5b25d9006a035c1270c15833f6b1ff78750ea0be6708c13f412813327097bb"
+  },
+  {
+    "candidate": "experiments/v57/lizs_market.py",
+    "opponent": "experiments/v48_agent.py",
+    "seed": 92506,
+    "seat": 0,
+    "coins": 74703.0,
+    "other": 43087.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "candidate_sha256": "5e5b25d9006a035c1270c15833f6b1ff78750ea0be6708c13f412813327097bb"
+  }
+]

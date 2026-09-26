@@ -1,0 +1,2909 @@
+{
+  "purpose": "same-seed replay audit of best-own-cash probe1 and best-margin probe2; market is shared, so baseline outcome is candidate-conditioned.",
+  "results": [
+    {
+      "config": 1,
+      "candidate": {
+        "seat": 0,
+        "final_coins": 22130.0,
+        "accepted_sales_lb": {
+          "WHEAT": 136,
+          "FERTILIZER": 70,
+          "WOOL": 77
+        },
+        "sales_value_at_prev_frame_prices_lb": {
+          "WHEAT": 4527.0,
+          "FERTILIZER": 4572.0,
+          "WOOL": 15884.0
+        },
+        "harvested_units_if_valid": {
+          "WHEAT": 120,
+          "SHEEP": 79
+        },
+        "planted_tile_actions_valid": {
+          "WHEAT": 30
+        },
+        "actor_ops": {
+          "BUILD_PASTURE": 3,
+          "NORTH": 654,
+          "WEST": 565,
+          "PLANT": 638,
+          "WATER": 150,
+          "EAST": 261,
+          "PICKUP": 81,
+          "PLACE": 3,
+          "SOUTH": 257,
+          "PASS": 1521,
+          "FEED": 77,
+          "COLLECT_FERTILIZER": 73,
+          "CARE": 59,
+          "HARVEST": 51
+        },
+        "action_effects": {
+          "BUILD_PASTURE": 3,
+          "NORTH": 653,
+          "WEST": 565,
+          "PLANT": 30,
+          "WATER": 150,
+          "EAST": 261,
+          "PICKUP": 81,
+          "PLACE": 3,
+          "SOUTH": 257,
+          "FEED": 77,
+          "COLLECT_FERTILIZER": 73,
+          "CARE": 59,
+          "HARVEST": 51
+        },
+        "engine_precondition_valid": {
+          "BUILD_PASTURE": 3,
+          "NORTH": 654,
+          "WEST": 565,
+          "PLANT": 30,
+          "WATER": 150,
+          "EAST": 261,
+          "PICKUP": 81,
+          "PLACE": 3,
+          "SOUTH": 257,
+          "PASS": 0,
+          "FEED": 77,
+          "COLLECT_FERTILIZER": 73,
+          "CARE": 59,
+          "HARVEST": 51
+        },
+        "valid_nonmovement_rate": 0.4643171806167401,
+        "hires_by_day": {
+          "0": 6,
+          "1": 6,
+          "2": 6,
+          "3": 4,
+          "4": 4,
+          "5": 4,
+          "6": 5,
+          "7": 6,
+          "8": 6,
+          "9": 6,
+          "10": 6,
+          "11": 6,
+          "12": 4,
+          "13": 5,
+          "14": 6,
+          "15": 5,
+          "16": 6,
+          "17": 6,
+          "18": 6,
+          "19": 5,
+          "20": 6,
+          "21": 5,
+          "22": 4,
+          "23": 5,
+          "24": 4,
+          "25": 4,
+          "26": 6,
+          "27": 6,
+          "28": 6,
+          "29": 6
+        },
+        "hire_spend_by_day": {
+          "0": 20,
+          "1": 20,
+          "2": 20,
+          "3": 7,
+          "4": 7,
+          "5": 7,
+          "6": 12,
+          "7": 20,
+          "8": 20,
+          "9": 20,
+          "10": 20,
+          "11": 20,
+          "12": 7,
+          "13": 12,
+          "14": 20,
+          "15": 12,
+          "16": 20,
+          "17": 20,
+          "18": 20,
+          "19": 12,
+          "20": 20,
+          "21": 12,
+          "22": 7,
+          "23": 12,
+          "24": 7,
+          "25": 7,
+          "26": 20,
+          "27": 20,
+          "28": 20,
+          "29": 20
+        },
+        "total_hires": 160,
+        "total_hire_cost_estimate": 461,
+        "animals_by_day": {
+          "0": {},
+          "1": {},
+          "2": {
+            "SHEEP": 1
+          },
+          "3": {
+            "SHEEP": 2
+          },
+          "4": {
+            "SHEEP": 2
+          },
+          "5": {
+            "SHEEP": 2
+          },
+          "6": {
+            "SHEEP": 3
+          },
+          "7": {
+            "SHEEP": 3
+          },
+          "8": {
+            "SHEEP": 3
+          },
+          "9": {
+            "SHEEP": 3
+          },
+          "10": {
+            "SHEEP": 3
+          },
+          "11": {
+            "SHEEP": 3
+          },
+          "12": {
+            "SHEEP": 3
+          },
+          "13": {
+            "SHEEP": 3
+          },
+          "14": {
+            "SHEEP": 3
+          },
+          "15": {
+            "SHEEP": 3
+          },
+          "16": {
+            "SHEEP": 3
+          },
+          "17": {
+            "SHEEP": 3
+          },
+          "18": {
+            "SHEEP": 3
+          },
+          "19": {
+            "SHEEP": 3
+          },
+          "20": {
+            "SHEEP": 3
+          },
+          "21": {
+            "SHEEP": 3
+          },
+          "22": {
+            "SHEEP": 3
+          },
+          "23": {
+            "SHEEP": 3
+          },
+          "24": {
+            "SHEEP": 3
+          },
+          "25": {
+            "SHEEP": 3
+          },
+          "26": {
+            "SHEEP": 3
+          },
+          "27": {
+            "SHEEP": 3
+          },
+          "28": {
+            "SHEEP": 3
+          },
+          "29": {
+            "SHEEP": 3
+          }
+        },
+        "crop_tiles_by_day": {
+          "0": {},
+          "1": {
+            "WHEAT": 1
+          },
+          "2": {
+            "WHEAT": 8
+          },
+          "3": {
+            "WHEAT": 8
+          },
+          "4": {
+            "WHEAT": 8
+          },
+          "5": {
+            "WHEAT": 7
+          },
+          "6": {},
+          "7": {},
+          "8": {
+            "WHEAT": 1
+          },
+          "9": {
+            "WHEAT": 4
+          },
+          "10": {
+            "WHEAT": 4
+          },
+          "11": {
+            "WHEAT": 8
+          },
+          "12": {
+            "WHEAT": 7
+          },
+          "13": {
+            "WHEAT": 4
+          },
+          "14": {
+            "WHEAT": 4
+          },
+          "15": {
+            "WHEAT": 3
+          },
+          "16": {
+            "WHEAT": 3
+          },
+          "17": {
+            "WHEAT": 3
+          },
+          "18": {
+            "WHEAT": 6
+          },
+          "19": {
+            "WHEAT": 3
+          },
+          "20": {
+            "WHEAT": 4
+          },
+          "21": {
+            "WHEAT": 8
+          },
+          "22": {
+            "WHEAT": 5
+          },
+          "23": {
+            "WHEAT": 8
+          },
+          "24": {
+            "WHEAT": 7
+          },
+          "25": {
+            "WHEAT": 3
+          },
+          "26": {
+            "WHEAT": 3
+          },
+          "27": {},
+          "28": {},
+          "29": {}
+        },
+        "cash_day29": 22130.0,
+        "feed_attempts": 77,
+        "feed_precondition_successes": 77,
+        "animal_attrition_events": []
+      },
+      "v50_same_seed_and_market": {
+        "seat": 1,
+        "final_coins": 133253.0,
+        "accepted_sales_lb": {
+          "WHEAT": 343,
+          "FERTILIZER": 308,
+          "WOOL": 256,
+          "MILK": 156,
+          "MELON": 66,
+          "STRAWBERRY": 240,
+          "CARROT": 79
+        },
+        "sales_value_at_prev_frame_prices_lb": {
+          "WHEAT": 11338.0,
+          "FERTILIZER": 19966.0,
+          "WOOL": 54722.0,
+          "MILK": 25649.0,
+          "MELON": 16020.0,
+          "STRAWBERRY": 22220.0,
+          "CARROT": 5560.0
+        },
+        "harvested_units_if_valid": {
+          "WHEAT": 595,
+          "SHEEP": 282,
+          "COW": 164,
+          "MELON": 72,
+          "STRAWBERRY": 249,
+          "CARROT": 81
+        },
+        "planted_tile_actions_valid": {
+          "WHEAT": 166,
+          "MELON": 12,
+          "STRAWBERRY": 33,
+          "CARROT": 28
+        },
+        "actor_ops": {
+          "PASS": 686,
+          "NORTH": 938,
+          "SOUTH": 577,
+          "PICKUP": 156,
+          "WEST": 904,
+          "BUILD_PASTURE": 17,
+          "PLACE": 112,
+          "PLANT": 239,
+          "CARE": 397,
+          "WATER": 1096,
+          "FEED": 346,
+          "COLLECT_FERTILIZER": 377,
+          "EAST": 620,
+          "HARVEST": 464,
+          "DROP": 29,
+          "DIG": 36,
+          "BUILD_COOP": 2,
+          "FERTILIZE": 100
+        },
+        "action_effects": {
+          "NORTH": 938,
+          "SOUTH": 577,
+          "PICKUP": 156,
+          "WEST": 904,
+          "BUILD_PASTURE": 17,
+          "PLACE": 17,
+          "PLANT": 239,
+          "CARE": 393,
+          "WATER": 1092,
+          "FEED": 346,
+          "COLLECT_FERTILIZER": 373,
+          "EAST": 620,
+          "HARVEST": 458
+        },
+        "engine_precondition_valid": {
+          "PASS": 0,
+          "NORTH": 938,
+          "SOUTH": 577,
+          "PICKUP": 156,
+          "WEST": 904,
+          "BUILD_PASTURE": 17,
+          "PLACE": 17,
+          "PLANT": 239,
+          "CARE": 393,
+          "WATER": 1095,
+          "FEED": 346,
+          "COLLECT_FERTILIZER": 373,
+          "EAST": 620,
+          "HARVEST": 458,
+          "DROP": 0,
+          "DIG": 0,
+          "BUILD_COOP": 0,
+          "FERTILIZE": 0
+        },
+        "valid_nonmovement_rate": 0.9178285375259567,
+        "hires_by_day": {
+          "0": 5,
+          "1": 3,
+          "2": 4,
+          "3": 5,
+          "4": 4,
+          "5": 4,
+          "6": 8,
+          "7": 8,
+          "8": 9,
+          "9": 9,
+          "10": 11,
+          "11": 11,
+          "12": 9,
+          "13": 10,
+          "14": 10,
+          "15": 11,
+          "16": 11,
+          "17": 11,
+          "18": 12,
+          "19": 11,
+          "20": 12,
+          "21": 11,
+          "22": 12,
+          "23": 12,
+          "24": 12,
+          "25": 12,
+          "26": 11,
+          "27": 11,
+          "28": 11,
+          "29": 11
+        },
+        "hire_spend_by_day": {
+          "0": 12,
+          "1": 4,
+          "2": 7,
+          "3": 12,
+          "4": 7,
+          "5": 5,
+          "6": 16,
+          "7": 34,
+          "8": 17,
+          "9": 55,
+          "10": 144,
+          "11": 32,
+          "12": 88,
+          "13": 56,
+          "14": 89,
+          "15": 90,
+          "16": 90,
+          "17": 90,
+          "18": 92,
+          "19": 90,
+          "20": 92,
+          "21": 58,
+          "22": 91,
+          "23": 41,
+          "24": 91,
+          "25": 33,
+          "26": 40,
+          "27": 144,
+          "28": 90,
+          "29": 90
+        },
+        "total_hires": 281,
+        "total_hire_cost_estimate": 1800,
+        "animals_by_day": {
+          "0": {
+            "SHEEP": 2,
+            "COW": 2
+          },
+          "1": {
+            "SHEEP": 2,
+            "COW": 2
+          },
+          "2": {
+            "COW": 3,
+            "SHEEP": 2
+          },
+          "3": {
+            "COW": 3,
+            "SHEEP": 2
+          },
+          "4": {
+            "COW": 4,
+            "SHEEP": 2
+          },
+          "5": {
+            "COW": 4,
+            "SHEEP": 2
+          },
+          "6": {
+            "COW": 4,
+            "SHEEP": 4
+          },
+          "7": {
+            "COW": 6,
+            "SHEEP": 4
+          },
+          "8": {
+            "COW": 6,
+            "SHEEP": 6
+          },
+          "9": {
+            "COW": 6,
+            "SHEEP": 7
+          },
+          "10": {
+            "SHEEP": 10,
+            "COW": 6
+          },
+          "11": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "12": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "13": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "14": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "15": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "16": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "17": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "18": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "19": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "20": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "21": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "22": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "23": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "24": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "25": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "26": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "27": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "28": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "29": {
+            "SHEEP": 11,
+            "COW": 6
+          }
+        },
+        "crop_tiles_by_day": {
+          "0": {
+            "WHEAT": 8,
+            "MELON": 12
+          },
+          "1": {
+            "WHEAT": 8,
+            "MELON": 12
+          },
+          "2": {
+            "WHEAT": 8,
+            "MELON": 12
+          },
+          "3": {
+            "WHEAT": 7,
+            "MELON": 12
+          },
+          "4": {
+            "WHEAT": 7,
+            "MELON": 12
+          },
+          "5": {
+            "WHEAT": 3,
+            "STRAWBERRY": 4,
+            "MELON": 12
+          },
+          "6": {
+            "STRAWBERRY": 12,
+            "MELON": 12,
+            "WHEAT": 5
+          },
+          "7": {
+            "WHEAT": 9,
+            "STRAWBERRY": 16,
+            "MELON": 12
+          },
+          "8": {
+            "WHEAT": 5,
+            "STRAWBERRY": 20,
+            "MELON": 12
+          },
+          "9": {
+            "WHEAT": 5,
+            "STRAWBERRY": 20,
+            "MELON": 12
+          },
+          "10": {
+            "WHEAT": 12,
+            "STRAWBERRY": 20
+          },
+          "11": {
+            "STRAWBERRY": 33,
+            "WHEAT": 20
+          },
+          "12": {
+            "WHEAT": 24,
+            "STRAWBERRY": 33
+          },
+          "13": {
+            "WHEAT": 24,
+            "STRAWBERRY": 33
+          },
+          "14": {
+            "WHEAT": 24,
+            "STRAWBERRY": 33
+          },
+          "15": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "16": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "17": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "18": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "19": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "20": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "21": {
+            "WHEAT": 30,
+            "STRAWBERRY": 28
+          },
+          "22": {
+            "WHEAT": 31,
+            "STRAWBERRY": 27
+          },
+          "23": {
+            "WHEAT": 38,
+            "STRAWBERRY": 20
+          },
+          "24": {
+            "WHEAT": 41,
+            "STRAWBERRY": 17
+          },
+          "25": {
+            "CARROT": 14,
+            "WHEAT": 31,
+            "STRAWBERRY": 13
+          },
+          "26": {
+            "CARROT": 26,
+            "WHEAT": 19,
+            "STRAWBERRY": 13
+          },
+          "27": {
+            "CARROT": 27,
+            "WHEAT": 17,
+            "STRAWBERRY": 4
+          },
+          "28": {
+            "CARROT": 14,
+            "WHEAT": 9
+          },
+          "29": {}
+        },
+        "cash_day29": 133253.0,
+        "feed_attempts": 346,
+        "feed_precondition_successes": 346,
+        "animal_attrition_events": []
+      },
+      "runtime_seconds": 19.424369079002645,
+      "candidate_sha256": "11e5cd168b329c1915aa2bc54df287e9795af6ca6c9fc448506e8f66c5d40ab7",
+      "v50_sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b"
+    },
+    {
+      "config": 1,
+      "candidate": {
+        "seat": 1,
+        "final_coins": 22130.0,
+        "accepted_sales_lb": {
+          "WHEAT": 136,
+          "FERTILIZER": 70,
+          "WOOL": 77
+        },
+        "sales_value_at_prev_frame_prices_lb": {
+          "WHEAT": 4527.0,
+          "FERTILIZER": 4572.0,
+          "WOOL": 15884.0
+        },
+        "harvested_units_if_valid": {
+          "WHEAT": 120,
+          "SHEEP": 79
+        },
+        "planted_tile_actions_valid": {
+          "WHEAT": 30
+        },
+        "actor_ops": {
+          "BUILD_PASTURE": 3,
+          "NORTH": 654,
+          "WEST": 565,
+          "PLANT": 638,
+          "WATER": 150,
+          "EAST": 261,
+          "PICKUP": 81,
+          "PLACE": 3,
+          "SOUTH": 257,
+          "PASS": 1521,
+          "FEED": 77,
+          "COLLECT_FERTILIZER": 73,
+          "CARE": 59,
+          "HARVEST": 51
+        },
+        "action_effects": {
+          "BUILD_PASTURE": 3,
+          "NORTH": 653,
+          "WEST": 565,
+          "PLANT": 30,
+          "WATER": 150,
+          "EAST": 261,
+          "PICKUP": 81,
+          "PLACE": 3,
+          "SOUTH": 257,
+          "FEED": 77,
+          "COLLECT_FERTILIZER": 73,
+          "CARE": 59,
+          "HARVEST": 51
+        },
+        "engine_precondition_valid": {
+          "BUILD_PASTURE": 3,
+          "NORTH": 654,
+          "WEST": 565,
+          "PLANT": 30,
+          "WATER": 150,
+          "EAST": 261,
+          "PICKUP": 81,
+          "PLACE": 3,
+          "SOUTH": 257,
+          "PASS": 0,
+          "FEED": 77,
+          "COLLECT_FERTILIZER": 73,
+          "CARE": 59,
+          "HARVEST": 51
+        },
+        "valid_nonmovement_rate": 0.4643171806167401,
+        "hires_by_day": {
+          "0": 6,
+          "1": 6,
+          "2": 6,
+          "3": 4,
+          "4": 4,
+          "5": 4,
+          "6": 5,
+          "7": 6,
+          "8": 6,
+          "9": 6,
+          "10": 6,
+          "11": 6,
+          "12": 4,
+          "13": 5,
+          "14": 6,
+          "15": 5,
+          "16": 6,
+          "17": 6,
+          "18": 6,
+          "19": 5,
+          "20": 6,
+          "21": 5,
+          "22": 4,
+          "23": 5,
+          "24": 4,
+          "25": 4,
+          "26": 6,
+          "27": 6,
+          "28": 6,
+          "29": 6
+        },
+        "hire_spend_by_day": {
+          "0": 20,
+          "1": 20,
+          "2": 20,
+          "3": 7,
+          "4": 7,
+          "5": 7,
+          "6": 12,
+          "7": 20,
+          "8": 20,
+          "9": 20,
+          "10": 20,
+          "11": 20,
+          "12": 7,
+          "13": 12,
+          "14": 20,
+          "15": 12,
+          "16": 20,
+          "17": 20,
+          "18": 20,
+          "19": 12,
+          "20": 20,
+          "21": 12,
+          "22": 7,
+          "23": 12,
+          "24": 7,
+          "25": 7,
+          "26": 20,
+          "27": 20,
+          "28": 20,
+          "29": 20
+        },
+        "total_hires": 160,
+        "total_hire_cost_estimate": 461,
+        "animals_by_day": {
+          "0": {},
+          "1": {},
+          "2": {
+            "SHEEP": 1
+          },
+          "3": {
+            "SHEEP": 2
+          },
+          "4": {
+            "SHEEP": 2
+          },
+          "5": {
+            "SHEEP": 2
+          },
+          "6": {
+            "SHEEP": 3
+          },
+          "7": {
+            "SHEEP": 3
+          },
+          "8": {
+            "SHEEP": 3
+          },
+          "9": {
+            "SHEEP": 3
+          },
+          "10": {
+            "SHEEP": 3
+          },
+          "11": {
+            "SHEEP": 3
+          },
+          "12": {
+            "SHEEP": 3
+          },
+          "13": {
+            "SHEEP": 3
+          },
+          "14": {
+            "SHEEP": 3
+          },
+          "15": {
+            "SHEEP": 3
+          },
+          "16": {
+            "SHEEP": 3
+          },
+          "17": {
+            "SHEEP": 3
+          },
+          "18": {
+            "SHEEP": 3
+          },
+          "19": {
+            "SHEEP": 3
+          },
+          "20": {
+            "SHEEP": 3
+          },
+          "21": {
+            "SHEEP": 3
+          },
+          "22": {
+            "SHEEP": 3
+          },
+          "23": {
+            "SHEEP": 3
+          },
+          "24": {
+            "SHEEP": 3
+          },
+          "25": {
+            "SHEEP": 3
+          },
+          "26": {
+            "SHEEP": 3
+          },
+          "27": {
+            "SHEEP": 3
+          },
+          "28": {
+            "SHEEP": 3
+          },
+          "29": {
+            "SHEEP": 3
+          }
+        },
+        "crop_tiles_by_day": {
+          "0": {},
+          "1": {
+            "WHEAT": 1
+          },
+          "2": {
+            "WHEAT": 8
+          },
+          "3": {
+            "WHEAT": 8
+          },
+          "4": {
+            "WHEAT": 8
+          },
+          "5": {
+            "WHEAT": 7
+          },
+          "6": {},
+          "7": {},
+          "8": {
+            "WHEAT": 1
+          },
+          "9": {
+            "WHEAT": 4
+          },
+          "10": {
+            "WHEAT": 4
+          },
+          "11": {
+            "WHEAT": 8
+          },
+          "12": {
+            "WHEAT": 7
+          },
+          "13": {
+            "WHEAT": 4
+          },
+          "14": {
+            "WHEAT": 4
+          },
+          "15": {
+            "WHEAT": 3
+          },
+          "16": {
+            "WHEAT": 3
+          },
+          "17": {
+            "WHEAT": 3
+          },
+          "18": {
+            "WHEAT": 6
+          },
+          "19": {
+            "WHEAT": 3
+          },
+          "20": {
+            "WHEAT": 4
+          },
+          "21": {
+            "WHEAT": 8
+          },
+          "22": {
+            "WHEAT": 5
+          },
+          "23": {
+            "WHEAT": 8
+          },
+          "24": {
+            "WHEAT": 7
+          },
+          "25": {
+            "WHEAT": 3
+          },
+          "26": {
+            "WHEAT": 3
+          },
+          "27": {},
+          "28": {},
+          "29": {}
+        },
+        "cash_day29": 22130.0,
+        "feed_attempts": 77,
+        "feed_precondition_successes": 77,
+        "animal_attrition_events": []
+      },
+      "v50_same_seed_and_market": {
+        "seat": 0,
+        "final_coins": 133253.0,
+        "accepted_sales_lb": {
+          "WHEAT": 343,
+          "FERTILIZER": 308,
+          "WOOL": 256,
+          "MILK": 156,
+          "MELON": 66,
+          "STRAWBERRY": 240,
+          "CARROT": 79
+        },
+        "sales_value_at_prev_frame_prices_lb": {
+          "WHEAT": 11338.0,
+          "FERTILIZER": 19966.0,
+          "WOOL": 54722.0,
+          "MILK": 25649.0,
+          "MELON": 16020.0,
+          "STRAWBERRY": 22220.0,
+          "CARROT": 5560.0
+        },
+        "harvested_units_if_valid": {
+          "WHEAT": 595,
+          "SHEEP": 282,
+          "COW": 164,
+          "MELON": 72,
+          "STRAWBERRY": 249,
+          "CARROT": 81
+        },
+        "planted_tile_actions_valid": {
+          "WHEAT": 166,
+          "MELON": 12,
+          "STRAWBERRY": 33,
+          "CARROT": 28
+        },
+        "actor_ops": {
+          "PASS": 686,
+          "NORTH": 938,
+          "SOUTH": 577,
+          "PICKUP": 156,
+          "WEST": 904,
+          "BUILD_PASTURE": 17,
+          "PLACE": 112,
+          "PLANT": 239,
+          "CARE": 397,
+          "WATER": 1096,
+          "FEED": 346,
+          "COLLECT_FERTILIZER": 377,
+          "EAST": 620,
+          "HARVEST": 464,
+          "DROP": 29,
+          "DIG": 36,
+          "BUILD_COOP": 2,
+          "FERTILIZE": 100
+        },
+        "action_effects": {
+          "NORTH": 938,
+          "SOUTH": 577,
+          "PICKUP": 156,
+          "WEST": 904,
+          "BUILD_PASTURE": 17,
+          "PLACE": 17,
+          "PLANT": 239,
+          "CARE": 393,
+          "WATER": 1092,
+          "FEED": 346,
+          "COLLECT_FERTILIZER": 373,
+          "EAST": 620,
+          "HARVEST": 458
+        },
+        "engine_precondition_valid": {
+          "PASS": 0,
+          "NORTH": 938,
+          "SOUTH": 577,
+          "PICKUP": 156,
+          "WEST": 904,
+          "BUILD_PASTURE": 17,
+          "PLACE": 17,
+          "PLANT": 239,
+          "CARE": 393,
+          "WATER": 1095,
+          "FEED": 346,
+          "COLLECT_FERTILIZER": 373,
+          "EAST": 620,
+          "HARVEST": 458,
+          "DROP": 0,
+          "DIG": 0,
+          "BUILD_COOP": 0,
+          "FERTILIZE": 0
+        },
+        "valid_nonmovement_rate": 0.9178285375259567,
+        "hires_by_day": {
+          "0": 5,
+          "1": 3,
+          "2": 4,
+          "3": 5,
+          "4": 4,
+          "5": 4,
+          "6": 8,
+          "7": 8,
+          "8": 9,
+          "9": 9,
+          "10": 11,
+          "11": 11,
+          "12": 9,
+          "13": 10,
+          "14": 10,
+          "15": 11,
+          "16": 11,
+          "17": 11,
+          "18": 12,
+          "19": 11,
+          "20": 12,
+          "21": 11,
+          "22": 12,
+          "23": 12,
+          "24": 12,
+          "25": 12,
+          "26": 11,
+          "27": 11,
+          "28": 11,
+          "29": 11
+        },
+        "hire_spend_by_day": {
+          "0": 12,
+          "1": 4,
+          "2": 7,
+          "3": 12,
+          "4": 7,
+          "5": 5,
+          "6": 16,
+          "7": 34,
+          "8": 17,
+          "9": 55,
+          "10": 144,
+          "11": 32,
+          "12": 88,
+          "13": 56,
+          "14": 89,
+          "15": 90,
+          "16": 90,
+          "17": 90,
+          "18": 92,
+          "19": 90,
+          "20": 92,
+          "21": 58,
+          "22": 91,
+          "23": 41,
+          "24": 91,
+          "25": 33,
+          "26": 40,
+          "27": 144,
+          "28": 90,
+          "29": 90
+        },
+        "total_hires": 281,
+        "total_hire_cost_estimate": 1800,
+        "animals_by_day": {
+          "0": {
+            "SHEEP": 2,
+            "COW": 2
+          },
+          "1": {
+            "SHEEP": 2,
+            "COW": 2
+          },
+          "2": {
+            "COW": 3,
+            "SHEEP": 2
+          },
+          "3": {
+            "COW": 3,
+            "SHEEP": 2
+          },
+          "4": {
+            "COW": 4,
+            "SHEEP": 2
+          },
+          "5": {
+            "COW": 4,
+            "SHEEP": 2
+          },
+          "6": {
+            "COW": 4,
+            "SHEEP": 4
+          },
+          "7": {
+            "COW": 6,
+            "SHEEP": 4
+          },
+          "8": {
+            "COW": 6,
+            "SHEEP": 6
+          },
+          "9": {
+            "COW": 6,
+            "SHEEP": 7
+          },
+          "10": {
+            "SHEEP": 10,
+            "COW": 6
+          },
+          "11": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "12": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "13": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "14": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "15": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "16": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "17": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "18": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "19": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "20": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "21": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "22": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "23": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "24": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "25": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "26": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "27": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "28": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "29": {
+            "SHEEP": 11,
+            "COW": 6
+          }
+        },
+        "crop_tiles_by_day": {
+          "0": {
+            "WHEAT": 8,
+            "MELON": 12
+          },
+          "1": {
+            "WHEAT": 8,
+            "MELON": 12
+          },
+          "2": {
+            "WHEAT": 8,
+            "MELON": 12
+          },
+          "3": {
+            "WHEAT": 7,
+            "MELON": 12
+          },
+          "4": {
+            "WHEAT": 7,
+            "MELON": 12
+          },
+          "5": {
+            "WHEAT": 3,
+            "STRAWBERRY": 4,
+            "MELON": 12
+          },
+          "6": {
+            "STRAWBERRY": 12,
+            "MELON": 12,
+            "WHEAT": 5
+          },
+          "7": {
+            "WHEAT": 9,
+            "STRAWBERRY": 16,
+            "MELON": 12
+          },
+          "8": {
+            "WHEAT": 5,
+            "STRAWBERRY": 20,
+            "MELON": 12
+          },
+          "9": {
+            "WHEAT": 5,
+            "STRAWBERRY": 20,
+            "MELON": 12
+          },
+          "10": {
+            "WHEAT": 12,
+            "STRAWBERRY": 20
+          },
+          "11": {
+            "STRAWBERRY": 33,
+            "WHEAT": 20
+          },
+          "12": {
+            "WHEAT": 24,
+            "STRAWBERRY": 33
+          },
+          "13": {
+            "WHEAT": 24,
+            "STRAWBERRY": 33
+          },
+          "14": {
+            "WHEAT": 24,
+            "STRAWBERRY": 33
+          },
+          "15": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "16": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "17": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "18": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "19": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "20": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "21": {
+            "WHEAT": 30,
+            "STRAWBERRY": 28
+          },
+          "22": {
+            "WHEAT": 31,
+            "STRAWBERRY": 27
+          },
+          "23": {
+            "WHEAT": 38,
+            "STRAWBERRY": 20
+          },
+          "24": {
+            "WHEAT": 41,
+            "STRAWBERRY": 17
+          },
+          "25": {
+            "CARROT": 14,
+            "WHEAT": 31,
+            "STRAWBERRY": 13
+          },
+          "26": {
+            "CARROT": 26,
+            "WHEAT": 19,
+            "STRAWBERRY": 13
+          },
+          "27": {
+            "CARROT": 27,
+            "WHEAT": 17,
+            "STRAWBERRY": 4
+          },
+          "28": {
+            "CARROT": 14,
+            "WHEAT": 9
+          },
+          "29": {}
+        },
+        "cash_day29": 133253.0,
+        "feed_attempts": 346,
+        "feed_precondition_successes": 346,
+        "animal_attrition_events": []
+      },
+      "runtime_seconds": 20.23737013300706,
+      "candidate_sha256": "11e5cd168b329c1915aa2bc54df287e9795af6ca6c9fc448506e8f66c5d40ab7",
+      "v50_sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b"
+    },
+    {
+      "config": 2,
+      "candidate": {
+        "seat": 0,
+        "final_coins": 11011.0,
+        "accepted_sales_lb": {
+          "WHEAT": 198,
+          "FERTILIZER": 29,
+          "WOOL": 32
+        },
+        "sales_value_at_prev_frame_prices_lb": {
+          "WHEAT": 6853.0,
+          "FERTILIZER": 1928.0,
+          "WOOL": 1613.0
+        },
+        "harvested_units_if_valid": {
+          "WHEAT": 241,
+          "SHEEP": 32
+        },
+        "planted_tile_actions_valid": {
+          "WHEAT": 61
+        },
+        "actor_ops": {
+          "BUILD_PASTURE": 2,
+          "NORTH": 586,
+          "WEST": 676,
+          "PLANT": 587,
+          "WATER": 305,
+          "EAST": 408,
+          "PICKUP": 74,
+          "PASS": 795,
+          "SOUTH": 185,
+          "PLACE": 2,
+          "FEED": 50,
+          "HARVEST": 75,
+          "COLLECT_FERTILIZER": 31,
+          "CARE": 18
+        },
+        "action_effects": {
+          "BUILD_PASTURE": 2,
+          "NORTH": 586,
+          "WEST": 676,
+          "PLANT": 61,
+          "WATER": 305,
+          "EAST": 408,
+          "PICKUP": 74,
+          "SOUTH": 184,
+          "PLACE": 2,
+          "FEED": 50,
+          "HARVEST": 75,
+          "COLLECT_FERTILIZER": 31,
+          "CARE": 18
+        },
+        "engine_precondition_valid": {
+          "BUILD_PASTURE": 2,
+          "NORTH": 586,
+          "WEST": 676,
+          "PLANT": 61,
+          "WATER": 305,
+          "EAST": 408,
+          "PICKUP": 74,
+          "PASS": 0,
+          "SOUTH": 185,
+          "PLACE": 2,
+          "FEED": 50,
+          "HARVEST": 75,
+          "COLLECT_FERTILIZER": 31,
+          "CARE": 18
+        },
+        "valid_nonmovement_rate": 0.5402097902097902,
+        "hires_by_day": {
+          "0": 7,
+          "1": 7,
+          "2": 6,
+          "3": 4,
+          "4": 3,
+          "5": 3,
+          "6": 4,
+          "7": 4,
+          "8": 5,
+          "9": 4,
+          "10": 3,
+          "11": 4,
+          "12": 4,
+          "13": 4,
+          "14": 4,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 5,
+          "19": 4,
+          "20": 4,
+          "21": 4,
+          "22": 3,
+          "23": 4,
+          "24": 4,
+          "25": 4,
+          "26": 6,
+          "27": 6,
+          "28": 7,
+          "29": 7
+        },
+        "hire_spend_by_day": {
+          "0": 33,
+          "1": 33,
+          "2": 20,
+          "3": 7,
+          "4": 4,
+          "5": 4,
+          "6": 7,
+          "7": 7,
+          "8": 12,
+          "9": 7,
+          "10": 4,
+          "11": 7,
+          "12": 7,
+          "13": 7,
+          "14": 7,
+          "15": 7,
+          "16": 4,
+          "17": 4,
+          "18": 12,
+          "19": 7,
+          "20": 7,
+          "21": 7,
+          "22": 4,
+          "23": 7,
+          "24": 7,
+          "25": 7,
+          "26": 20,
+          "27": 20,
+          "28": 33,
+          "29": 33
+        },
+        "total_hires": 134,
+        "total_hire_cost_estimate": 345,
+        "animals_by_day": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {
+            "SHEEP": 2
+          },
+          "4": {
+            "SHEEP": 2
+          },
+          "5": {
+            "SHEEP": 2
+          },
+          "6": {
+            "SHEEP": 2
+          },
+          "7": {
+            "SHEEP": 2
+          },
+          "8": {
+            "SHEEP": 2
+          },
+          "9": {
+            "SHEEP": 2
+          },
+          "10": {
+            "SHEEP": 2
+          },
+          "11": {
+            "SHEEP": 2
+          },
+          "12": {
+            "SHEEP": 2
+          },
+          "13": {
+            "SHEEP": 2
+          },
+          "14": {
+            "SHEEP": 2
+          },
+          "15": {
+            "SHEEP": 2
+          },
+          "16": {
+            "SHEEP": 2
+          },
+          "17": {
+            "SHEEP": 2
+          },
+          "18": {
+            "SHEEP": 2
+          },
+          "19": {
+            "SHEEP": 2
+          },
+          "20": {
+            "SHEEP": 2
+          },
+          "21": {
+            "SHEEP": 2
+          },
+          "22": {
+            "SHEEP": 2
+          },
+          "23": {
+            "SHEEP": 2
+          },
+          "24": {
+            "SHEEP": 2
+          },
+          "25": {
+            "SHEEP": 2
+          },
+          "26": {
+            "SHEEP": 2
+          },
+          "27": {
+            "SHEEP": 2
+          },
+          "28": {
+            "SHEEP": 2
+          },
+          "29": {
+            "SHEEP": 2
+          }
+        },
+        "crop_tiles_by_day": {
+          "0": {
+            "WHEAT": 1
+          },
+          "1": {
+            "WHEAT": 4
+          },
+          "2": {
+            "WHEAT": 9
+          },
+          "3": {
+            "WHEAT": 12
+          },
+          "4": {
+            "WHEAT": 12
+          },
+          "5": {
+            "WHEAT": 10
+          },
+          "6": {
+            "WHEAT": 9
+          },
+          "7": {
+            "WHEAT": 7
+          },
+          "8": {
+            "WHEAT": 9
+          },
+          "9": {
+            "WHEAT": 13
+          },
+          "10": {
+            "WHEAT": 9
+          },
+          "11": {
+            "WHEAT": 10
+          },
+          "12": {
+            "WHEAT": 9
+          },
+          "13": {
+            "WHEAT": 9
+          },
+          "14": {
+            "WHEAT": 11
+          },
+          "15": {
+            "WHEAT": 12
+          },
+          "16": {
+            "WHEAT": 12
+          },
+          "17": {
+            "WHEAT": 8
+          },
+          "18": {
+            "WHEAT": 9
+          },
+          "19": {
+            "WHEAT": 10
+          },
+          "20": {
+            "WHEAT": 9
+          },
+          "21": {
+            "WHEAT": 13
+          },
+          "22": {
+            "WHEAT": 10
+          },
+          "23": {
+            "WHEAT": 10
+          },
+          "24": {
+            "WHEAT": 9
+          },
+          "25": {
+            "WHEAT": 4
+          },
+          "26": {
+            "WHEAT": 4
+          },
+          "27": {},
+          "28": {},
+          "29": {}
+        },
+        "cash_day29": 11011.0,
+        "feed_attempts": 50,
+        "feed_precondition_successes": 50,
+        "animal_attrition_events": []
+      },
+      "v50_same_seed_and_market": {
+        "seat": 1,
+        "final_coins": 60331.0,
+        "accepted_sales_lb": {
+          "WHEAT": 343,
+          "FERTILIZER": 308,
+          "WOOL": 256,
+          "MILK": 156,
+          "MELON": 66,
+          "STRAWBERRY": 240,
+          "CARROT": 79
+        },
+        "sales_value_at_prev_frame_prices_lb": {
+          "WHEAT": 12971.0,
+          "FERTILIZER": 21368.0,
+          "WOOL": 8726.0,
+          "MILK": 11733.0,
+          "MELON": 16020.0,
+          "STRAWBERRY": 9769.0,
+          "CARROT": 4696.0
+        },
+        "harvested_units_if_valid": {
+          "WHEAT": 595,
+          "SHEEP": 282,
+          "COW": 164,
+          "MELON": 72,
+          "STRAWBERRY": 249,
+          "CARROT": 81
+        },
+        "planted_tile_actions_valid": {
+          "WHEAT": 166,
+          "MELON": 12,
+          "STRAWBERRY": 33,
+          "CARROT": 28
+        },
+        "actor_ops": {
+          "PASS": 686,
+          "NORTH": 938,
+          "SOUTH": 577,
+          "PICKUP": 156,
+          "WEST": 904,
+          "BUILD_PASTURE": 17,
+          "PLACE": 112,
+          "PLANT": 239,
+          "CARE": 397,
+          "WATER": 1096,
+          "FEED": 346,
+          "COLLECT_FERTILIZER": 377,
+          "EAST": 620,
+          "HARVEST": 464,
+          "DROP": 29,
+          "DIG": 36,
+          "BUILD_COOP": 2,
+          "FERTILIZE": 100
+        },
+        "action_effects": {
+          "NORTH": 938,
+          "SOUTH": 577,
+          "PICKUP": 156,
+          "WEST": 904,
+          "BUILD_PASTURE": 17,
+          "PLACE": 17,
+          "PLANT": 239,
+          "CARE": 393,
+          "WATER": 1092,
+          "FEED": 346,
+          "COLLECT_FERTILIZER": 373,
+          "EAST": 620,
+          "HARVEST": 458
+        },
+        "engine_precondition_valid": {
+          "PASS": 0,
+          "NORTH": 938,
+          "SOUTH": 577,
+          "PICKUP": 156,
+          "WEST": 904,
+          "BUILD_PASTURE": 17,
+          "PLACE": 17,
+          "PLANT": 239,
+          "CARE": 393,
+          "WATER": 1095,
+          "FEED": 346,
+          "COLLECT_FERTILIZER": 373,
+          "EAST": 620,
+          "HARVEST": 458,
+          "DROP": 0,
+          "DIG": 0,
+          "BUILD_COOP": 0,
+          "FERTILIZE": 0
+        },
+        "valid_nonmovement_rate": 0.9178285375259567,
+        "hires_by_day": {
+          "0": 5,
+          "1": 3,
+          "2": 4,
+          "3": 5,
+          "4": 4,
+          "5": 4,
+          "6": 8,
+          "7": 8,
+          "8": 9,
+          "9": 9,
+          "10": 11,
+          "11": 11,
+          "12": 9,
+          "13": 10,
+          "14": 10,
+          "15": 11,
+          "16": 11,
+          "17": 11,
+          "18": 12,
+          "19": 11,
+          "20": 12,
+          "21": 11,
+          "22": 12,
+          "23": 12,
+          "24": 12,
+          "25": 12,
+          "26": 11,
+          "27": 11,
+          "28": 11,
+          "29": 11
+        },
+        "hire_spend_by_day": {
+          "0": 12,
+          "1": 4,
+          "2": 7,
+          "3": 12,
+          "4": 7,
+          "5": 5,
+          "6": 16,
+          "7": 34,
+          "8": 17,
+          "9": 55,
+          "10": 144,
+          "11": 32,
+          "12": 88,
+          "13": 56,
+          "14": 89,
+          "15": 90,
+          "16": 90,
+          "17": 90,
+          "18": 92,
+          "19": 90,
+          "20": 92,
+          "21": 58,
+          "22": 91,
+          "23": 41,
+          "24": 91,
+          "25": 33,
+          "26": 40,
+          "27": 144,
+          "28": 90,
+          "29": 90
+        },
+        "total_hires": 281,
+        "total_hire_cost_estimate": 1800,
+        "animals_by_day": {
+          "0": {
+            "SHEEP": 2,
+            "COW": 2
+          },
+          "1": {
+            "SHEEP": 2,
+            "COW": 2
+          },
+          "2": {
+            "COW": 3,
+            "SHEEP": 2
+          },
+          "3": {
+            "COW": 3,
+            "SHEEP": 2
+          },
+          "4": {
+            "COW": 4,
+            "SHEEP": 2
+          },
+          "5": {
+            "COW": 4,
+            "SHEEP": 2
+          },
+          "6": {
+            "COW": 4,
+            "SHEEP": 4
+          },
+          "7": {
+            "COW": 6,
+            "SHEEP": 4
+          },
+          "8": {
+            "COW": 6,
+            "SHEEP": 6
+          },
+          "9": {
+            "COW": 6,
+            "SHEEP": 7
+          },
+          "10": {
+            "SHEEP": 10,
+            "COW": 6
+          },
+          "11": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "12": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "13": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "14": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "15": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "16": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "17": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "18": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "19": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "20": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "21": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "22": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "23": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "24": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "25": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "26": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "27": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "28": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "29": {
+            "SHEEP": 11,
+            "COW": 6
+          }
+        },
+        "crop_tiles_by_day": {
+          "0": {
+            "WHEAT": 8,
+            "MELON": 12
+          },
+          "1": {
+            "WHEAT": 8,
+            "MELON": 12
+          },
+          "2": {
+            "WHEAT": 8,
+            "MELON": 12
+          },
+          "3": {
+            "WHEAT": 7,
+            "MELON": 12
+          },
+          "4": {
+            "WHEAT": 7,
+            "MELON": 12
+          },
+          "5": {
+            "WHEAT": 3,
+            "STRAWBERRY": 4,
+            "MELON": 12
+          },
+          "6": {
+            "STRAWBERRY": 12,
+            "MELON": 12,
+            "WHEAT": 5
+          },
+          "7": {
+            "WHEAT": 9,
+            "STRAWBERRY": 16,
+            "MELON": 12
+          },
+          "8": {
+            "WHEAT": 5,
+            "STRAWBERRY": 20,
+            "MELON": 12
+          },
+          "9": {
+            "WHEAT": 5,
+            "STRAWBERRY": 20,
+            "MELON": 12
+          },
+          "10": {
+            "WHEAT": 12,
+            "STRAWBERRY": 20
+          },
+          "11": {
+            "STRAWBERRY": 33,
+            "WHEAT": 20
+          },
+          "12": {
+            "WHEAT": 24,
+            "STRAWBERRY": 33
+          },
+          "13": {
+            "WHEAT": 24,
+            "STRAWBERRY": 33
+          },
+          "14": {
+            "WHEAT": 24,
+            "STRAWBERRY": 33
+          },
+          "15": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "16": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "17": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "18": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "19": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "20": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "21": {
+            "WHEAT": 30,
+            "STRAWBERRY": 28
+          },
+          "22": {
+            "WHEAT": 31,
+            "STRAWBERRY": 27
+          },
+          "23": {
+            "WHEAT": 38,
+            "STRAWBERRY": 20
+          },
+          "24": {
+            "WHEAT": 41,
+            "STRAWBERRY": 17
+          },
+          "25": {
+            "CARROT": 14,
+            "WHEAT": 31,
+            "STRAWBERRY": 13
+          },
+          "26": {
+            "CARROT": 26,
+            "WHEAT": 19,
+            "STRAWBERRY": 13
+          },
+          "27": {
+            "CARROT": 27,
+            "WHEAT": 17,
+            "STRAWBERRY": 4
+          },
+          "28": {
+            "CARROT": 14,
+            "WHEAT": 9
+          },
+          "29": {}
+        },
+        "cash_day29": 60331.0,
+        "feed_attempts": 346,
+        "feed_precondition_successes": 346,
+        "animal_attrition_events": []
+      },
+      "runtime_seconds": 23.591610649993527,
+      "candidate_sha256": "793ec9964b783224661c8133ea6715191791a1c74240b967344f53cd1b0d4d57",
+      "v50_sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b"
+    },
+    {
+      "config": 2,
+      "candidate": {
+        "seat": 1,
+        "final_coins": 11011.0,
+        "accepted_sales_lb": {
+          "WHEAT": 198,
+          "FERTILIZER": 29,
+          "WOOL": 32
+        },
+        "sales_value_at_prev_frame_prices_lb": {
+          "WHEAT": 6853.0,
+          "FERTILIZER": 1928.0,
+          "WOOL": 1613.0
+        },
+        "harvested_units_if_valid": {
+          "WHEAT": 241,
+          "SHEEP": 32
+        },
+        "planted_tile_actions_valid": {
+          "WHEAT": 61
+        },
+        "actor_ops": {
+          "BUILD_PASTURE": 2,
+          "NORTH": 586,
+          "WEST": 676,
+          "PLANT": 587,
+          "WATER": 305,
+          "EAST": 408,
+          "PICKUP": 74,
+          "PASS": 795,
+          "SOUTH": 185,
+          "PLACE": 2,
+          "FEED": 50,
+          "HARVEST": 75,
+          "COLLECT_FERTILIZER": 31,
+          "CARE": 18
+        },
+        "action_effects": {
+          "BUILD_PASTURE": 2,
+          "NORTH": 586,
+          "WEST": 676,
+          "PLANT": 61,
+          "WATER": 305,
+          "EAST": 408,
+          "PICKUP": 74,
+          "SOUTH": 184,
+          "PLACE": 2,
+          "FEED": 50,
+          "HARVEST": 75,
+          "COLLECT_FERTILIZER": 31,
+          "CARE": 18
+        },
+        "engine_precondition_valid": {
+          "BUILD_PASTURE": 2,
+          "NORTH": 586,
+          "WEST": 676,
+          "PLANT": 61,
+          "WATER": 305,
+          "EAST": 408,
+          "PICKUP": 74,
+          "PASS": 0,
+          "SOUTH": 185,
+          "PLACE": 2,
+          "FEED": 50,
+          "HARVEST": 75,
+          "COLLECT_FERTILIZER": 31,
+          "CARE": 18
+        },
+        "valid_nonmovement_rate": 0.5402097902097902,
+        "hires_by_day": {
+          "0": 7,
+          "1": 7,
+          "2": 6,
+          "3": 4,
+          "4": 3,
+          "5": 3,
+          "6": 4,
+          "7": 4,
+          "8": 5,
+          "9": 4,
+          "10": 3,
+          "11": 4,
+          "12": 4,
+          "13": 4,
+          "14": 4,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 5,
+          "19": 4,
+          "20": 4,
+          "21": 4,
+          "22": 3,
+          "23": 4,
+          "24": 4,
+          "25": 4,
+          "26": 6,
+          "27": 6,
+          "28": 7,
+          "29": 7
+        },
+        "hire_spend_by_day": {
+          "0": 33,
+          "1": 33,
+          "2": 20,
+          "3": 7,
+          "4": 4,
+          "5": 4,
+          "6": 7,
+          "7": 7,
+          "8": 12,
+          "9": 7,
+          "10": 4,
+          "11": 7,
+          "12": 7,
+          "13": 7,
+          "14": 7,
+          "15": 7,
+          "16": 4,
+          "17": 4,
+          "18": 12,
+          "19": 7,
+          "20": 7,
+          "21": 7,
+          "22": 4,
+          "23": 7,
+          "24": 7,
+          "25": 7,
+          "26": 20,
+          "27": 20,
+          "28": 33,
+          "29": 33
+        },
+        "total_hires": 134,
+        "total_hire_cost_estimate": 345,
+        "animals_by_day": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {
+            "SHEEP": 2
+          },
+          "4": {
+            "SHEEP": 2
+          },
+          "5": {
+            "SHEEP": 2
+          },
+          "6": {
+            "SHEEP": 2
+          },
+          "7": {
+            "SHEEP": 2
+          },
+          "8": {
+            "SHEEP": 2
+          },
+          "9": {
+            "SHEEP": 2
+          },
+          "10": {
+            "SHEEP": 2
+          },
+          "11": {
+            "SHEEP": 2
+          },
+          "12": {
+            "SHEEP": 2
+          },
+          "13": {
+            "SHEEP": 2
+          },
+          "14": {
+            "SHEEP": 2
+          },
+          "15": {
+            "SHEEP": 2
+          },
+          "16": {
+            "SHEEP": 2
+          },
+          "17": {
+            "SHEEP": 2
+          },
+          "18": {
+            "SHEEP": 2
+          },
+          "19": {
+            "SHEEP": 2
+          },
+          "20": {
+            "SHEEP": 2
+          },
+          "21": {
+            "SHEEP": 2
+          },
+          "22": {
+            "SHEEP": 2
+          },
+          "23": {
+            "SHEEP": 2
+          },
+          "24": {
+            "SHEEP": 2
+          },
+          "25": {
+            "SHEEP": 2
+          },
+          "26": {
+            "SHEEP": 2
+          },
+          "27": {
+            "SHEEP": 2
+          },
+          "28": {
+            "SHEEP": 2
+          },
+          "29": {
+            "SHEEP": 2
+          }
+        },
+        "crop_tiles_by_day": {
+          "0": {
+            "WHEAT": 1
+          },
+          "1": {
+            "WHEAT": 4
+          },
+          "2": {
+            "WHEAT": 9
+          },
+          "3": {
+            "WHEAT": 12
+          },
+          "4": {
+            "WHEAT": 12
+          },
+          "5": {
+            "WHEAT": 10
+          },
+          "6": {
+            "WHEAT": 9
+          },
+          "7": {
+            "WHEAT": 7
+          },
+          "8": {
+            "WHEAT": 9
+          },
+          "9": {
+            "WHEAT": 13
+          },
+          "10": {
+            "WHEAT": 9
+          },
+          "11": {
+            "WHEAT": 10
+          },
+          "12": {
+            "WHEAT": 9
+          },
+          "13": {
+            "WHEAT": 9
+          },
+          "14": {
+            "WHEAT": 11
+          },
+          "15": {
+            "WHEAT": 12
+          },
+          "16": {
+            "WHEAT": 12
+          },
+          "17": {
+            "WHEAT": 8
+          },
+          "18": {
+            "WHEAT": 9
+          },
+          "19": {
+            "WHEAT": 10
+          },
+          "20": {
+            "WHEAT": 9
+          },
+          "21": {
+            "WHEAT": 13
+          },
+          "22": {
+            "WHEAT": 10
+          },
+          "23": {
+            "WHEAT": 10
+          },
+          "24": {
+            "WHEAT": 9
+          },
+          "25": {
+            "WHEAT": 4
+          },
+          "26": {
+            "WHEAT": 4
+          },
+          "27": {},
+          "28": {},
+          "29": {}
+        },
+        "cash_day29": 11011.0,
+        "feed_attempts": 50,
+        "feed_precondition_successes": 50,
+        "animal_attrition_events": []
+      },
+      "v50_same_seed_and_market": {
+        "seat": 0,
+        "final_coins": 60331.0,
+        "accepted_sales_lb": {
+          "WHEAT": 343,
+          "FERTILIZER": 308,
+          "WOOL": 256,
+          "MILK": 156,
+          "MELON": 66,
+          "STRAWBERRY": 240,
+          "CARROT": 79
+        },
+        "sales_value_at_prev_frame_prices_lb": {
+          "WHEAT": 12971.0,
+          "FERTILIZER": 21368.0,
+          "WOOL": 8726.0,
+          "MILK": 11733.0,
+          "MELON": 16020.0,
+          "STRAWBERRY": 9769.0,
+          "CARROT": 4696.0
+        },
+        "harvested_units_if_valid": {
+          "WHEAT": 595,
+          "SHEEP": 282,
+          "COW": 164,
+          "MELON": 72,
+          "STRAWBERRY": 249,
+          "CARROT": 81
+        },
+        "planted_tile_actions_valid": {
+          "WHEAT": 166,
+          "MELON": 12,
+          "STRAWBERRY": 33,
+          "CARROT": 28
+        },
+        "actor_ops": {
+          "PASS": 686,
+          "NORTH": 938,
+          "SOUTH": 577,
+          "PICKUP": 156,
+          "WEST": 904,
+          "BUILD_PASTURE": 17,
+          "PLACE": 112,
+          "PLANT": 239,
+          "CARE": 397,
+          "WATER": 1096,
+          "FEED": 346,
+          "COLLECT_FERTILIZER": 377,
+          "EAST": 620,
+          "HARVEST": 464,
+          "DROP": 29,
+          "DIG": 36,
+          "BUILD_COOP": 2,
+          "FERTILIZE": 100
+        },
+        "action_effects": {
+          "NORTH": 938,
+          "SOUTH": 577,
+          "PICKUP": 156,
+          "WEST": 904,
+          "BUILD_PASTURE": 17,
+          "PLACE": 17,
+          "PLANT": 239,
+          "CARE": 393,
+          "WATER": 1092,
+          "FEED": 346,
+          "COLLECT_FERTILIZER": 373,
+          "EAST": 620,
+          "HARVEST": 458
+        },
+        "engine_precondition_valid": {
+          "PASS": 0,
+          "NORTH": 938,
+          "SOUTH": 577,
+          "PICKUP": 156,
+          "WEST": 904,
+          "BUILD_PASTURE": 17,
+          "PLACE": 17,
+          "PLANT": 239,
+          "CARE": 393,
+          "WATER": 1095,
+          "FEED": 346,
+          "COLLECT_FERTILIZER": 373,
+          "EAST": 620,
+          "HARVEST": 458,
+          "DROP": 0,
+          "DIG": 0,
+          "BUILD_COOP": 0,
+          "FERTILIZE": 0
+        },
+        "valid_nonmovement_rate": 0.9178285375259567,
+        "hires_by_day": {
+          "0": 5,
+          "1": 3,
+          "2": 4,
+          "3": 5,
+          "4": 4,
+          "5": 4,
+          "6": 8,
+          "7": 8,
+          "8": 9,
+          "9": 9,
+          "10": 11,
+          "11": 11,
+          "12": 9,
+          "13": 10,
+          "14": 10,
+          "15": 11,
+          "16": 11,
+          "17": 11,
+          "18": 12,
+          "19": 11,
+          "20": 12,
+          "21": 11,
+          "22": 12,
+          "23": 12,
+          "24": 12,
+          "25": 12,
+          "26": 11,
+          "27": 11,
+          "28": 11,
+          "29": 11
+        },
+        "hire_spend_by_day": {
+          "0": 12,
+          "1": 4,
+          "2": 7,
+          "3": 12,
+          "4": 7,
+          "5": 5,
+          "6": 16,
+          "7": 34,
+          "8": 17,
+          "9": 55,
+          "10": 144,
+          "11": 32,
+          "12": 88,
+          "13": 56,
+          "14": 89,
+          "15": 90,
+          "16": 90,
+          "17": 90,
+          "18": 92,
+          "19": 90,
+          "20": 92,
+          "21": 58,
+          "22": 91,
+          "23": 41,
+          "24": 91,
+          "25": 33,
+          "26": 40,
+          "27": 144,
+          "28": 90,
+          "29": 90
+        },
+        "total_hires": 281,
+        "total_hire_cost_estimate": 1800,
+        "animals_by_day": {
+          "0": {
+            "SHEEP": 2,
+            "COW": 2
+          },
+          "1": {
+            "SHEEP": 2,
+            "COW": 2
+          },
+          "2": {
+            "COW": 3,
+            "SHEEP": 2
+          },
+          "3": {
+            "COW": 3,
+            "SHEEP": 2
+          },
+          "4": {
+            "COW": 4,
+            "SHEEP": 2
+          },
+          "5": {
+            "COW": 4,
+            "SHEEP": 2
+          },
+          "6": {
+            "COW": 4,
+            "SHEEP": 4
+          },
+          "7": {
+            "COW": 6,
+            "SHEEP": 4
+          },
+          "8": {
+            "COW": 6,
+            "SHEEP": 6
+          },
+          "9": {
+            "COW": 6,
+            "SHEEP": 7
+          },
+          "10": {
+            "SHEEP": 10,
+            "COW": 6
+          },
+          "11": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "12": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "13": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "14": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "15": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "16": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "17": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "18": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "19": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "20": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "21": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "22": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "23": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "24": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "25": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "26": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "27": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "28": {
+            "SHEEP": 11,
+            "COW": 6
+          },
+          "29": {
+            "SHEEP": 11,
+            "COW": 6
+          }
+        },
+        "crop_tiles_by_day": {
+          "0": {
+            "WHEAT": 8,
+            "MELON": 12
+          },
+          "1": {
+            "WHEAT": 8,
+            "MELON": 12
+          },
+          "2": {
+            "WHEAT": 8,
+            "MELON": 12
+          },
+          "3": {
+            "WHEAT": 7,
+            "MELON": 12
+          },
+          "4": {
+            "WHEAT": 7,
+            "MELON": 12
+          },
+          "5": {
+            "WHEAT": 3,
+            "STRAWBERRY": 4,
+            "MELON": 12
+          },
+          "6": {
+            "STRAWBERRY": 12,
+            "MELON": 12,
+            "WHEAT": 5
+          },
+          "7": {
+            "WHEAT": 9,
+            "STRAWBERRY": 16,
+            "MELON": 12
+          },
+          "8": {
+            "WHEAT": 5,
+            "STRAWBERRY": 20,
+            "MELON": 12
+          },
+          "9": {
+            "WHEAT": 5,
+            "STRAWBERRY": 20,
+            "MELON": 12
+          },
+          "10": {
+            "WHEAT": 12,
+            "STRAWBERRY": 20
+          },
+          "11": {
+            "STRAWBERRY": 33,
+            "WHEAT": 20
+          },
+          "12": {
+            "WHEAT": 24,
+            "STRAWBERRY": 33
+          },
+          "13": {
+            "WHEAT": 24,
+            "STRAWBERRY": 33
+          },
+          "14": {
+            "WHEAT": 24,
+            "STRAWBERRY": 33
+          },
+          "15": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "16": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "17": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "18": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "19": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "20": {
+            "WHEAT": 25,
+            "STRAWBERRY": 33
+          },
+          "21": {
+            "WHEAT": 30,
+            "STRAWBERRY": 28
+          },
+          "22": {
+            "WHEAT": 31,
+            "STRAWBERRY": 27
+          },
+          "23": {
+            "WHEAT": 38,
+            "STRAWBERRY": 20
+          },
+          "24": {
+            "WHEAT": 41,
+            "STRAWBERRY": 17
+          },
+          "25": {
+            "CARROT": 14,
+            "WHEAT": 31,
+            "STRAWBERRY": 13
+          },
+          "26": {
+            "CARROT": 26,
+            "WHEAT": 19,
+            "STRAWBERRY": 13
+          },
+          "27": {
+            "CARROT": 27,
+            "WHEAT": 17,
+            "STRAWBERRY": 4
+          },
+          "28": {
+            "CARROT": 14,
+            "WHEAT": 9
+          },
+          "29": {}
+        },
+        "cash_day29": 60331.0,
+        "feed_attempts": 346,
+        "feed_precondition_successes": 346,
+        "animal_attrition_events": []
+      },
+      "runtime_seconds": 19.366504538003937,
+      "candidate_sha256": "793ec9964b783224661c8133ea6715191791a1c74240b967344f53cd1b0d4d57",
+      "v50_sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b"
+    }
+  ]
+}

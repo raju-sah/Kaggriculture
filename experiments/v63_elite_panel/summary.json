@@ -1,0 +1,352 @@
+{
+  "cash_reconciliation": {
+    "max_error": 0.0,
+    "mismatches": 0,
+    "total_transitions": 71900
+  },
+  "caveat": "Purely descriptive public replay panel; episode selection is conditional on top-ten leaderboard submissions and contains repeated agent lineages/seeds/opponent pools. Pairing removes shared game conditions only partially. No causal conclusions.",
+  "games_per_leaderboard_lineage": {
+    "Azat Akhtyamov": 5,
+    "Boey": 5,
+    "DECEM": 5,
+    "DSM": 5,
+    "Fourth Quadrant": 5,
+    "M & M & P & Q": 5,
+    "Majkel1337": 5,
+    "Unknown Mother-Goose": 5,
+    "Vadim Vasilenko": 5,
+    "Yizhou": 5
+  },
+  "metrics": {
+    "closing_cash": {
+      "loser_median": 99712.0,
+      "median_winner_minus_loser": 5766.5,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 1.0,
+      "winner_median": 105478.5
+    },
+    "closing_hands": {
+      "loser_median": 10.0,
+      "median_winner_minus_loser": 0.0,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.16,
+      "winner_median": 10.0
+    },
+    "closing_shed_value_current_price": {
+      "loser_median": 0.0,
+      "median_winner_minus_loser": 0.0,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.28,
+      "winner_median": 0.0
+    },
+    "day12_23_animal_purchases": {
+      "median_winner_minus_loser": 0.0,
+      "n_pairs": 50,
+      "wins_over_games": 13
+    },
+    "day12_23_cash_delta": {
+      "median_winner_minus_loser": 4605.5,
+      "n_pairs": 50,
+      "wins_over_games": 33
+    },
+    "day12_23_land_hire_cost": {
+      "median_winner_minus_loser": -72.0,
+      "n_pairs": 50,
+      "wins_over_games": 22
+    },
+    "day12_23_market_net_product": {
+      "median_winner_minus_loser": 3438.0,
+      "n_pairs": 50,
+      "wins_over_games": 33
+    },
+    "day12_23_product_purchases": {
+      "median_winner_minus_loser": -144.5,
+      "n_pairs": 50,
+      "wins_over_games": 20
+    },
+    "day12_23_sales": {
+      "median_winner_minus_loser": 4328.0,
+      "n_pairs": 50,
+      "wins_over_games": 34
+    },
+    "day12_23_seed_purchases": {
+      "median_winner_minus_loser": -35.0,
+      "n_pairs": 50,
+      "wins_over_games": 24
+    },
+    "day12_animals": {
+      "loser_median": 20.0,
+      "median_winner_minus_loser": 0.0,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.36,
+      "winner_median": 20.0
+    },
+    "day12_cash": {
+      "loser_median": 9090.0,
+      "median_winner_minus_loser": 1963.0,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.56,
+      "winner_median": 11053.0
+    },
+    "day12_crop_tiles": {
+      "loser_median": 60.5,
+      "median_winner_minus_loser": -3.5,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.46,
+      "winner_median": 57.0
+    },
+    "day12_hands": {
+      "loser_median": 8.0,
+      "median_winner_minus_loser": 0.0,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.34,
+      "winner_median": 8.0
+    },
+    "day12_quadrants": {
+      "loser_median": 3.5,
+      "median_winner_minus_loser": -0.5,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.3,
+      "winner_median": 3.0
+    },
+    "day20_animals": {
+      "loser_median": 20.0,
+      "median_winner_minus_loser": 1.0,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.42,
+      "winner_median": 21.0
+    },
+    "day20_cash": {
+      "loser_median": 54945.0,
+      "median_winner_minus_loser": 4295.5,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.74,
+      "winner_median": 59240.5
+    },
+    "day20_crop_tiles": {
+      "loser_median": 58.5,
+      "median_winner_minus_loser": -1.5,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.48,
+      "winner_median": 57.0
+    },
+    "day20_hands": {
+      "loser_median": 8.0,
+      "median_winner_minus_loser": 0.0,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.36,
+      "winner_median": 8.0
+    },
+    "day20_shed_value_current_price": {
+      "loser_median": 3722.0,
+      "median_winner_minus_loser": -216.0,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.54,
+      "winner_median": 3506.0
+    },
+    "day29_animals": {
+      "loser_median": 13.0,
+      "median_winner_minus_loser": 0.0,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.48,
+      "winner_median": 13.0
+    },
+    "day29_cash": {
+      "loser_median": 94179.5,
+      "median_winner_minus_loser": 5513.5,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.92,
+      "winner_median": 99693.0
+    },
+    "day29_crop_tiles": {
+      "loser_median": 27.0,
+      "median_winner_minus_loser": -2.0,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.38,
+      "winner_median": 25.0
+    },
+    "day29_hands": {
+      "loser_median": 8.0,
+      "median_winner_minus_loser": 0.5,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.44,
+      "winner_median": 8.5
+    },
+    "day6_11_animal_purchases": {
+      "median_winner_minus_loser": -350.0,
+      "n_pairs": 50,
+      "wins_over_games": 17
+    },
+    "day6_11_cash_delta": {
+      "median_winner_minus_loser": 1009.5,
+      "n_pairs": 50,
+      "wins_over_games": 27
+    },
+    "day6_11_land_hire_cost": {
+      "median_winner_minus_loser": 4.0,
+      "n_pairs": 50,
+      "wins_over_games": 25
+    },
+    "day6_11_market_net_product": {
+      "median_winner_minus_loser": 156.0,
+      "n_pairs": 50,
+      "wins_over_games": 29
+    },
+    "day6_11_product_purchases": {
+      "median_winner_minus_loser": 800.5,
+      "n_pairs": 50,
+      "wins_over_games": 35
+    },
+    "day6_11_sales": {
+      "median_winner_minus_loser": 1578.5,
+      "n_pairs": 50,
+      "wins_over_games": 34
+    },
+    "day6_11_seed_purchases": {
+      "median_winner_minus_loser": 110.0,
+      "n_pairs": 50,
+      "wins_over_games": 29
+    },
+    "day6_animals": {
+      "loser_median": 5.0,
+      "median_winner_minus_loser": 3.0,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.54,
+      "winner_median": 8.0
+    },
+    "day6_cash": {
+      "loser_median": 673.5,
+      "median_winner_minus_loser": -394.5,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.28,
+      "winner_median": 279.0
+    },
+    "day6_crop_tiles": {
+      "loser_median": 20.0,
+      "median_winner_minus_loser": -3.0,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.22,
+      "winner_median": 17.0
+    },
+    "day6_hands": {
+      "loser_median": 8.0,
+      "median_winner_minus_loser": 1.0,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.44,
+      "winner_median": 9.0
+    },
+    "day6_quadrants": {
+      "loser_median": 1.0,
+      "median_winner_minus_loser": 0.0,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.0,
+      "winner_median": 1.0
+    },
+    "late_24_29_animal_purchases": {
+      "median_winner_minus_loser": 0.0,
+      "n_pairs": 50,
+      "wins_over_games": 0
+    },
+    "late_24_29_cash_delta": {
+      "median_winner_minus_loser": 1596.5,
+      "n_pairs": 50,
+      "wins_over_games": 30
+    },
+    "late_24_29_land_hire_cost": {
+      "median_winner_minus_loser": -55.0,
+      "n_pairs": 50,
+      "wins_over_games": 14
+    },
+    "late_24_29_market_net_product": {
+      "median_winner_minus_loser": 1524.0,
+      "n_pairs": 50,
+      "wins_over_games": 30
+    },
+    "late_24_29_product_purchases": {
+      "median_winner_minus_loser": 0.0,
+      "n_pairs": 50,
+      "wins_over_games": 21
+    },
+    "late_24_29_sales": {
+      "median_winner_minus_loser": 2597.5,
+      "n_pairs": 50,
+      "wins_over_games": 34
+    },
+    "late_24_29_seed_purchases": {
+      "median_winner_minus_loser": -100.0,
+      "n_pairs": 50,
+      "wins_over_games": 16
+    },
+    "net_product_market": {
+      "loser_median": 121835.5,
+      "median_winner_minus_loser": 8258.0,
+      "n_losers": 50,
+      "n_winners": 50,
+      "pair_winner_advantage_rate": 0.78,
+      "winner_median": 130093.5
+    },
+    "opening_0_5_animal_purchases": {
+      "median_winner_minus_loser": 400.0,
+      "n_pairs": 50,
+      "wins_over_games": 27
+    },
+    "opening_0_5_cash_delta": {
+      "median_winner_minus_loser": -172.5,
+      "n_pairs": 50,
+      "wins_over_games": 12
+    },
+    "opening_0_5_land_hire_cost": {
+      "median_winner_minus_loser": 0.0,
+      "n_pairs": 50,
+      "wins_over_games": 20
+    },
+    "opening_0_5_market_net_product": {
+      "median_winner_minus_loser": 118.0,
+      "n_pairs": 50,
+      "wins_over_games": 32
+    },
+    "opening_0_5_product_purchases": {
+      "median_winner_minus_loser": 53.0,
+      "n_pairs": 50,
+      "wins_over_games": 32
+    },
+    "opening_0_5_sales": {
+      "median_winner_minus_loser": 586.0,
+      "n_pairs": 50,
+      "wins_over_games": 34
+    },
+    "opening_0_5_seed_purchases": {
+      "median_winner_minus_loser": -65.0,
+      "n_pairs": 50,
+      "wins_over_games": 15
+    }
+  },
+  "module_versions": [
+    "1.32.7"
+  ],
+  "n_games": 50,
+  "n_participant_rows": 100,
+  "unique_seeds": 50
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "candidate_seat": 0,
+    "coins": 14210.0,
+    "hand_productive_rate": 0.6812,
+    "valid_action_rate": 0.6996,
+    "feed_attempts": 52,
+    "feed_successes": 52,
+    "animal_attrition": [],
+    "water_action_count": 340,
+    "plant_action_count": {
+      "WHEAT": 68
+    },
+    "atomic_conflicts": []
+  },
+  {
+    "candidate_seat": 1,
+    "coins": 14210.0,
+    "hand_productive_rate": 0.6812,
+    "valid_action_rate": 0.6996,
+    "feed_attempts": 52,
+    "feed_successes": 52,
+    "animal_attrition": [],
+    "water_action_count": 340,
+    "plant_action_count": {
+      "WHEAT": 68
+    },
+    "atomic_conflicts": []
+  }
+]

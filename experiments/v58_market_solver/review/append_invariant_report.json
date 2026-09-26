@@ -1,0 +1,1273 @@
+{
+  "candidate_sha256": "d406f4920d0e9ef810d6b1e4b1f1aaa8fd68367031b8ba79ac25ad2e1165f695",
+  "baseline_sha256": "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+  "replay_sha256": "2d955fcdd9f52b64e80332f8687ca9cafacf3dce9093053cea9bc46d4ebaa4a5",
+  "observations_checked": 1438,
+  "actor_mutations": 0,
+  "base_prefix_mismatches": 0,
+  "productive_subsequence_mismatches": 0,
+  "slot_violations": 0,
+  "max_candidate_queue_slots": 10,
+  "append_rows": 67,
+  "append_seed_commits": 67,
+  "append_seed_not_committed_under_retained_opponent_action": 0,
+  "append_details": [
+    {
+      "step": 6,
+      "seat": 0,
+      "day": 0,
+      "hour": 5,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 1042.0
+    },
+    {
+      "step": 6,
+      "seat": 1,
+      "day": 0,
+      "hour": 5,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 1042.0
+    },
+    {
+      "step": 161,
+      "seat": 1,
+      "day": 6,
+      "hour": 16,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 1241.0
+    },
+    {
+      "step": 164,
+      "seat": 1,
+      "day": 6,
+      "hour": 19,
+      "base_slots": 1,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          1
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 921.0
+    },
+    {
+      "step": 167,
+      "seat": 0,
+      "day": 6,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 2,
+      "seed_after_engine_market": 3,
+      "seed_order_committed": true,
+      "money_after_engine_market": 1369.0
+    },
+    {
+      "step": 167,
+      "seat": 1,
+      "day": 6,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 1077.0
+    },
+    {
+      "step": 191,
+      "seat": 0,
+      "day": 7,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 3,
+      "seed_after_engine_market": 4,
+      "seed_order_committed": true,
+      "money_after_engine_market": 790.0
+    },
+    {
+      "step": 215,
+      "seat": 0,
+      "day": 8,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 2029.0
+    },
+    {
+      "step": 215,
+      "seat": 1,
+      "day": 8,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 1546.0
+    },
+    {
+      "step": 237,
+      "seat": 1,
+      "day": 9,
+      "hour": 20,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 2838.0
+    },
+    {
+      "step": 239,
+      "seat": 0,
+      "day": 9,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 2,
+      "seed_after_engine_market": 3,
+      "seed_order_committed": true,
+      "money_after_engine_market": 3252.0
+    },
+    {
+      "step": 239,
+      "seat": 1,
+      "day": 9,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 3312.0
+    },
+    {
+      "step": 257,
+      "seat": 0,
+      "day": 10,
+      "hour": 16,
+      "base_slots": 1,
+      "market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          0
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 2,
+      "seed_after_engine_market": 3,
+      "seed_order_committed": true,
+      "money_after_engine_market": 14398.0
+    },
+    {
+      "step": 257,
+      "seat": 1,
+      "day": 10,
+      "hour": 16,
+      "base_slots": 1,
+      "market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          0
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 2,
+      "seed_after_engine_market": 3,
+      "seed_order_committed": true,
+      "money_after_engine_market": 14646.0
+    },
+    {
+      "step": 263,
+      "seat": 0,
+      "day": 10,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 18367.0
+    },
+    {
+      "step": 287,
+      "seat": 0,
+      "day": 11,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 5,
+      "seed_after_engine_market": 6,
+      "seed_order_committed": true,
+      "money_after_engine_market": 16668.0
+    },
+    {
+      "step": 287,
+      "seat": 1,
+      "day": 11,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 15304.0
+    },
+    {
+      "step": 299,
+      "seat": 0,
+      "day": 12,
+      "hour": 10,
+      "base_slots": 1,
+      "market": [
+        [
+          "SELL",
+          "MILK",
+          6
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 3,
+      "seed_after_engine_market": 4,
+      "seed_order_committed": true,
+      "money_after_engine_market": 19593.0
+    },
+    {
+      "step": 299,
+      "seat": 1,
+      "day": 12,
+      "hour": 10,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 2,
+      "seed_after_engine_market": 3,
+      "seed_order_committed": true,
+      "money_after_engine_market": 20164.0
+    },
+    {
+      "step": 302,
+      "seat": 0,
+      "day": 12,
+      "hour": 13,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 20653.0
+    },
+    {
+      "step": 307,
+      "seat": 0,
+      "day": 12,
+      "hour": 18,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 20623.0
+    },
+    {
+      "step": 307,
+      "seat": 1,
+      "day": 12,
+      "hour": 18,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 20312.0
+    },
+    {
+      "step": 335,
+      "seat": 0,
+      "day": 13,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 22956.0
+    },
+    {
+      "step": 335,
+      "seat": 1,
+      "day": 13,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 21988.0
+    },
+    {
+      "step": 347,
+      "seat": 0,
+      "day": 14,
+      "hour": 10,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 24868.0
+    },
+    {
+      "step": 347,
+      "seat": 1,
+      "day": 14,
+      "hour": 10,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 26275.0
+    },
+    {
+      "step": 350,
+      "seat": 0,
+      "day": 14,
+      "hour": 13,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 24858.0
+    },
+    {
+      "step": 350,
+      "seat": 1,
+      "day": 14,
+      "hour": 13,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 26265.0
+    },
+    {
+      "step": 354,
+      "seat": 1,
+      "day": 14,
+      "hour": 17,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 26235.0
+    },
+    {
+      "step": 355,
+      "seat": 1,
+      "day": 14,
+      "hour": 18,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 26235.0
+    },
+    {
+      "step": 359,
+      "seat": 0,
+      "day": 14,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 3,
+      "seed_after_engine_market": 4,
+      "seed_order_committed": true,
+      "money_after_engine_market": 24808.0
+    },
+    {
+      "step": 359,
+      "seat": 1,
+      "day": 14,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 26767.0
+    },
+    {
+      "step": 370,
+      "seat": 0,
+      "day": 15,
+      "hour": 9,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 26945.0
+    },
+    {
+      "step": 370,
+      "seat": 1,
+      "day": 15,
+      "hour": 9,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 30047.0
+    },
+    {
+      "step": 374,
+      "seat": 1,
+      "day": 15,
+      "hour": 13,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 31241.0
+    },
+    {
+      "step": 379,
+      "seat": 0,
+      "day": 15,
+      "hour": 18,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 29578.0
+    },
+    {
+      "step": 379,
+      "seat": 1,
+      "day": 15,
+      "hour": 18,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 31211.0
+    },
+    {
+      "step": 402,
+      "seat": 1,
+      "day": 16,
+      "hour": 17,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 37078.0
+    },
+    {
+      "step": 407,
+      "seat": 1,
+      "day": 16,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 2,
+      "seed_after_engine_market": 3,
+      "seed_order_committed": true,
+      "money_after_engine_market": 39403.0
+    },
+    {
+      "step": 417,
+      "seat": 1,
+      "day": 17,
+      "hour": 8,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 44200.0
+    },
+    {
+      "step": 419,
+      "seat": 1,
+      "day": 17,
+      "hour": 10,
+      "base_slots": 1,
+      "market": [
+        [
+          "SELL",
+          "WOOL",
+          6
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 3,
+      "seed_after_engine_market": 4,
+      "seed_order_committed": true,
+      "money_after_engine_market": 44170.0
+    },
+    {
+      "step": 425,
+      "seat": 1,
+      "day": 17,
+      "hour": 16,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 45329.0
+    },
+    {
+      "step": 429,
+      "seat": 1,
+      "day": 17,
+      "hour": 20,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 47105.0
+    },
+    {
+      "step": 444,
+      "seat": 1,
+      "day": 18,
+      "hour": 11,
+      "base_slots": 1,
+      "market": [
+        [
+          "SELL",
+          "MILK",
+          9
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 51509.0
+    },
+    {
+      "step": 447,
+      "seat": 1,
+      "day": 18,
+      "hour": 14,
+      "base_slots": 1,
+      "market": [
+        [
+          "SELL",
+          "MILK",
+          9
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 51499.0
+    },
+    {
+      "step": 453,
+      "seat": 1,
+      "day": 18,
+      "hour": 20,
+      "base_slots": 1,
+      "market": [
+        [
+          "SELL",
+          "STRAWBERRY",
+          10
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 52484.0
+    },
+    {
+      "step": 455,
+      "seat": 1,
+      "day": 18,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 56949.0
+    },
+    {
+      "step": 477,
+      "seat": 1,
+      "day": 19,
+      "hour": 20,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 61170.0
+    },
+    {
+      "step": 479,
+      "seat": 1,
+      "day": 19,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 62637.0
+    },
+    {
+      "step": 496,
+      "seat": 1,
+      "day": 20,
+      "hour": 15,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 67977.0
+    },
+    {
+      "step": 497,
+      "seat": 1,
+      "day": 20,
+      "hour": 16,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 67977.0
+    },
+    {
+      "step": 498,
+      "seat": 1,
+      "day": 20,
+      "hour": 17,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 67977.0
+    },
+    {
+      "step": 501,
+      "seat": 1,
+      "day": 20,
+      "hour": 20,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 69698.0
+    },
+    {
+      "step": 503,
+      "seat": 1,
+      "day": 20,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 69688.0
+    },
+    {
+      "step": 514,
+      "seat": 1,
+      "day": 21,
+      "hour": 9,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 75405.0
+    },
+    {
+      "step": 517,
+      "seat": 1,
+      "day": 21,
+      "hour": 12,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 75395.0
+    },
+    {
+      "step": 519,
+      "seat": 1,
+      "day": 21,
+      "hour": 14,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 2,
+      "seed_after_engine_market": 3,
+      "seed_order_committed": true,
+      "money_after_engine_market": 76641.0
+    },
+    {
+      "step": 527,
+      "seat": 1,
+      "day": 21,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 78588.0
+    },
+    {
+      "step": 543,
+      "seat": 1,
+      "day": 22,
+      "hour": 14,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 82660.0
+    },
+    {
+      "step": 551,
+      "seat": 1,
+      "day": 22,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 84060.0
+    },
+    {
+      "step": 563,
+      "seat": 1,
+      "day": 23,
+      "hour": 10,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 88463.0
+    },
+    {
+      "step": 565,
+      "seat": 1,
+      "day": 23,
+      "hour": 12,
+      "base_slots": 1,
+      "market": [
+        [
+          "SELL",
+          "STRAWBERRY",
+          8
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 1,
+      "seed_after_engine_market": 2,
+      "seed_order_committed": true,
+      "money_after_engine_market": 88453.0
+    },
+    {
+      "step": 569,
+      "seat": 1,
+      "day": 23,
+      "hour": 16,
+      "base_slots": 1,
+      "market": [
+        [
+          "SELL",
+          "STRAWBERRY",
+          8
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 2,
+      "seed_after_engine_market": 3,
+      "seed_order_committed": true,
+      "money_after_engine_market": 88679.0
+    },
+    {
+      "step": 573,
+      "seat": 1,
+      "day": 23,
+      "hour": 20,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 2,
+      "seed_after_engine_market": 3,
+      "seed_order_committed": true,
+      "money_after_engine_market": 88891.0
+    },
+    {
+      "step": 575,
+      "seat": 1,
+      "day": 23,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 88891.0
+    },
+    {
+      "step": 594,
+      "seat": 1,
+      "day": 24,
+      "hour": 17,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 93342.0
+    },
+    {
+      "step": 599,
+      "seat": 1,
+      "day": 24,
+      "hour": 22,
+      "base_slots": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ],
+      "seed_before": 0,
+      "seed_after_engine_market": 1,
+      "seed_order_committed": true,
+      "money_after_engine_market": 93292.0
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,23 @@
+{
+  "candidate": "experiments/v58_expansion/v58_expansion_candidate.py",
+  "candidate_sha256": "20c5a4a2e0d96d39cdd9e26de9daff0e685b66b5ec7f943f1e85ae38330e09fc",
+  "opponents": {
+    "v50": "experiments/v50_agent.py",
+    "v53": "experiments/v53_agent.py"
+  },
+  "opponent_sha256": {
+    "v50": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+    "v53": "a57b3f14c067926d0960eb829fb6d95761dc1e7b4d011c71fda353702cdb47b1"
+  },
+  "seeds": [
+    93700,
+    93701,
+    93702,
+    93703
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "engine": "kaggle-environments 1.32.7"
+}

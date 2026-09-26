@@ -1,0 +1,14 @@
+{
+  "candidate": "experiments/v61_cashflow/agent_hirepriority.py",
+  "candidate_sha256": "ee4fdeba696e164bb7bb9b5702e0ebf160085283a916256f929fdf11adc33c9c",
+  "opponent": "experiments/v50_agent.py",
+  "opponent_sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+  "seeds": [
+    94700
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "name": "v61-hirepriority-vs-v50-seed94700"
+}

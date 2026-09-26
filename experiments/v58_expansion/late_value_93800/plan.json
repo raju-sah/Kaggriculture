@@ -1,0 +1,40 @@
+{
+  "arms": {
+    "baseline": {
+      "path": "experiments/v57_broad/v57_reset_candidate.py",
+      "sha256": "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+    },
+    "late_value": {
+      "path": "experiments/v58_expansion/v58_late_value_candidate.py",
+      "sha256": "ec0e983d6ba2db269c2382e0c923ff6260a33a4ba3e94fa4103074279fdb0527"
+    }
+  },
+  "opponents": {
+    "v54": {
+      "path": "agents/v54_agent.py",
+      "sha256": "9c374f64e8e82027167f8018f344dc82edff1d75ac9c3d593dcd13f564c1fee1"
+    },
+    "v56": {
+      "path": "agents/v56_agent.py",
+      "sha256": "d9e9670921b62afedfa8cbc7086d2a2ec19e153ee26006cef477eadd462bd19c"
+    }
+  },
+  "seeds": [
+    93800,
+    93801,
+    93802,
+    93803,
+    93804
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "games": 40,
+  "change": "from step 630, rank existing SELL slots by current quote times requested quantity",
+  "engine": {
+    "package": "kaggle-environments",
+    "version": "1.32.7",
+    "sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+  }
+}

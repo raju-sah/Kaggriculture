@@ -1,0 +1,217 @@
+{
+  "method": "saved v57 market actions; copied pinned engine market quote and commit rules; current shared inventory only; opponent same-turn market response excluded",
+  "totals": {
+    "frames": 7448,
+    "action_divergences": 464,
+    "oracle_gain": -31105,
+    "positive_frames": 4,
+    "wheat_sale_frames": 1340,
+    "wheat_sales_suppressed": 460,
+    "active_animal_wheat_sells_after": 480,
+    "actor_action_mutations": 0
+  },
+  "optimizer_runtime_seconds_p95": 0.015562984990538098,
+  "optimizer_runtime_seconds_median": 0.0021407720050774515,
+  "replays": [
+    {
+      "replay": "BoeyProxy-seed-511533100-ab-repeat-0.json",
+      "seat": 0,
+      "market_frames": 371,
+      "changed_frames": 24,
+      "oracle_cash_delta": -1020,
+      "wheat_sell_frames": 67,
+      "wheat_suppressed_frames": 23,
+      "active_animal_wheat_sell_frames_after": 24
+    },
+    {
+      "replay": "BoeyProxy-seed-511533100-ba-repeat-0.json",
+      "seat": 1,
+      "market_frames": 371,
+      "changed_frames": 24,
+      "oracle_cash_delta": -1020,
+      "wheat_sell_frames": 67,
+      "wheat_suppressed_frames": 23,
+      "active_animal_wheat_sell_frames_after": 24
+    },
+    {
+      "replay": "boey-seed-1060984117-ab-repeat-0.json",
+      "seat": 0,
+      "market_frames": 373,
+      "changed_frames": 23,
+      "oracle_cash_delta": -1401,
+      "wheat_sell_frames": 67,
+      "wheat_suppressed_frames": 23,
+      "active_animal_wheat_sell_frames_after": 24
+    },
+    {
+      "replay": "boey-seed-1060984117-ba-repeat-0.json",
+      "seat": 1,
+      "market_frames": 373,
+      "changed_frames": 23,
+      "oracle_cash_delta": -1401,
+      "wheat_sell_frames": 67,
+      "wheat_suppressed_frames": 23,
+      "active_animal_wheat_sell_frames_after": 24
+    },
+    {
+      "replay": "boey-seed-511533100-ab-repeat-0.json",
+      "seat": 0,
+      "market_frames": 371,
+      "changed_frames": 24,
+      "oracle_cash_delta": -1020,
+      "wheat_sell_frames": 67,
+      "wheat_suppressed_frames": 23,
+      "active_animal_wheat_sell_frames_after": 24
+    },
+    {
+      "replay": "boey-seed-511533100-ba-repeat-0.json",
+      "seat": 1,
+      "market_frames": 371,
+      "changed_frames": 24,
+      "oracle_cash_delta": -1020,
+      "wheat_sell_frames": 67,
+      "wheat_suppressed_frames": 23,
+      "active_animal_wheat_sell_frames_after": 24
+    },
+    {
+      "replay": "boey-seed-742596438-ab-repeat-0.json",
+      "seat": 0,
+      "market_frames": 372,
+      "changed_frames": 23,
+      "oracle_cash_delta": -1402,
+      "wheat_sell_frames": 67,
+      "wheat_suppressed_frames": 23,
+      "active_animal_wheat_sell_frames_after": 24
+    },
+    {
+      "replay": "boey-seed-742596438-ba-repeat-0.json",
+      "seat": 1,
+      "market_frames": 372,
+      "changed_frames": 23,
+      "oracle_cash_delta": -1402,
+      "wheat_sell_frames": 67,
+      "wheat_suppressed_frames": 23,
+      "active_animal_wheat_sell_frames_after": 24
+    },
+    {
+      "replay": "ernnn-seed-1060984117-ab-repeat-0.json",
+      "seat": 0,
+      "market_frames": 373,
+      "changed_frames": 23,
+      "oracle_cash_delta": -1969,
+      "wheat_sell_frames": 67,
+      "wheat_suppressed_frames": 23,
+      "active_animal_wheat_sell_frames_after": 24
+    },
+    {
+      "replay": "ernnn-seed-1060984117-ba-repeat-0.json",
+      "seat": 1,
+      "market_frames": 373,
+      "changed_frames": 23,
+      "oracle_cash_delta": -1969,
+      "wheat_sell_frames": 67,
+      "wheat_suppressed_frames": 23,
+      "active_animal_wheat_sell_frames_after": 24
+    },
+    {
+      "replay": "ernnn-seed-511533100-ab-repeat-0.json",
+      "seat": 0,
+      "market_frames": 373,
+      "changed_frames": 23,
+      "oracle_cash_delta": -1954,
+      "wheat_sell_frames": 67,
+      "wheat_suppressed_frames": 23,
+      "active_animal_wheat_sell_frames_after": 24
+    },
+    {
+      "replay": "ernnn-seed-511533100-ba-repeat-0.json",
+      "seat": 1,
+      "market_frames": 373,
+      "changed_frames": 23,
+      "oracle_cash_delta": -1527,
+      "wheat_sell_frames": 67,
+      "wheat_suppressed_frames": 23,
+      "active_animal_wheat_sell_frames_after": 24
+    },
+    {
+      "replay": "ernnn-seed-742596438-ab-repeat-0.json",
+      "seat": 0,
+      "market_frames": 373,
+      "changed_frames": 23,
+      "oracle_cash_delta": -2120,
+      "wheat_sell_frames": 67,
+      "wheat_suppressed_frames": 23,
+      "active_animal_wheat_sell_frames_after": 24
+    },
+    {
+      "replay": "ernnn-seed-742596438-ba-repeat-0.json",
+      "seat": 1,
+      "market_frames": 373,
+      "changed_frames": 23,
+      "oracle_cash_delta": -2120,
+      "wheat_sell_frames": 67,
+      "wheat_suppressed_frames": 23,
+      "active_animal_wheat_sell_frames_after": 24
+    },
+    {
+      "replay": "lizs-seed-1060984117-ab-repeat-0.json",
+      "seat": 0,
+      "market_frames": 372,
+      "changed_frames": 23,
+      "oracle_cash_delta": -1713,
+      "wheat_sell_frames": 67,
+      "wheat_suppressed_frames": 23,
+      "active_animal_wheat_sell_frames_after": 24
+    },
+    {
+      "replay": "lizs-seed-1060984117-ba-repeat-0.json",
+      "seat": 1,
+      "market_frames": 372,
+      "changed_frames": 23,
+      "oracle_cash_delta": -1713,
+      "wheat_sell_frames": 67,
+      "wheat_suppressed_frames": 23,
+      "active_animal_wheat_sell_frames_after": 24
+    },
+    {
+      "replay": "lizs-seed-511533100-ab-repeat-0.json",
+      "seat": 0,
+      "market_frames": 373,
+      "changed_frames": 23,
+      "oracle_cash_delta": -1516,
+      "wheat_sell_frames": 67,
+      "wheat_suppressed_frames": 23,
+      "active_animal_wheat_sell_frames_after": 24
+    },
+    {
+      "replay": "lizs-seed-511533100-ba-repeat-0.json",
+      "seat": 1,
+      "market_frames": 373,
+      "changed_frames": 23,
+      "oracle_cash_delta": -1516,
+      "wheat_sell_frames": 67,
+      "wheat_suppressed_frames": 23,
+      "active_animal_wheat_sell_frames_after": 24
+    },
+    {
+      "replay": "lizs-seed-742596438-ab-repeat-0.json",
+      "seat": 0,
+      "market_frames": 373,
+      "changed_frames": 23,
+      "oracle_cash_delta": -1651,
+      "wheat_sell_frames": 67,
+      "wheat_suppressed_frames": 23,
+      "active_animal_wheat_sell_frames_after": 24
+    },
+    {
+      "replay": "lizs-seed-742596438-ba-repeat-0.json",
+      "seat": 1,
+      "market_frames": 373,
+      "changed_frames": 23,
+      "oracle_cash_delta": -1651,
+      "wheat_sell_frames": 67,
+      "wheat_suppressed_frames": 23,
+      "active_animal_wheat_sell_frames_after": 24
+    }
+  ]
+}

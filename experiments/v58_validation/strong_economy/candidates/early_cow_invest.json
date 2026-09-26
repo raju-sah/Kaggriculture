@@ -1,0 +1,9 @@
+{
+  "cow_ratio": 0.75,
+  "max_seed_acres": 18,
+  "max_sheep": 4,
+  "max_cows": 7,
+  "max_hires": 6,
+  "land_cap": 3,
+  "cash_reserve": 2000
+}

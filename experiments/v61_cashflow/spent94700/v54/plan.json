@@ -1,0 +1,14 @@
+{
+  "candidate": "experiments/v61_cashflow/agent.py",
+  "candidate_sha256": "e0793a4690310fa4f3d4789925e9aab075b94321d75781545fbafd400c42e489",
+  "opponent": "agents/v54_agent.py",
+  "opponent_sha256": "9c374f64e8e82027167f8018f344dc82edff1d75ac9c3d593dcd13f564c1fee1",
+  "seeds": [
+    94700
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "name": "v61-vs-v54-seed94700"
+}

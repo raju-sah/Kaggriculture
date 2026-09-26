@@ -1,0 +1,51 @@
+{
+  "provenance": [
+    {
+      "episode_id": "113508987",
+      "elite_name": "Boey",
+      "seat": 0,
+      "steps": 720,
+      "sha256": "2f82968a73b6b616645d841cd1d5d9f5722f450e8a59a199fa996792003368f8"
+    },
+    {
+      "episode_id": "113508988",
+      "elite_name": "DSM",
+      "seat": 0,
+      "steps": 720,
+      "sha256": "1b6be94632fbe56de2c6f3e5d13c7604ad6f06e630be6c594211fff3ad824a6a"
+    },
+    {
+      "episode_id": "113508989",
+      "elite_name": "DECEM",
+      "seat": 1,
+      "steps": 720,
+      "sha256": "5179fbfa17b539535b75b1e02ef3cf7277c3cd7ab7b93621f579d0bb6de65bcf"
+    },
+    {
+      "episode_id": "113507961",
+      "elite_name": "M & M & P & Q",
+      "seat": 0,
+      "steps": 720,
+      "sha256": "de4c61aea51e4478e8464c40a2d14b4f1fc069d07ec57b42165ffb0f093052ea"
+    }
+  ],
+  "train_episodes": [
+    "113508987",
+    "113508988",
+    "113508989"
+  ],
+  "heldout_episode": "113507961",
+  "train_steps": 2160,
+  "metrics": {
+    "heldout_steps": 720,
+    "micro_precision": 0.3179521403374964,
+    "micro_recall": 0.7025489783020855,
+    "micro_f1": 0.43777894460488315,
+    "exact_set_accuracy": 0.0,
+    "positive_intent_rate": 1.0,
+    "mkt:_f1": 0.19318734793187348,
+    "act:_f1": 0.5281323027143627
+  },
+  "model_sha256": "eabb20517c0bcf0559bd63e894f972174e5e3b878fc796bf13e00539514830b0",
+  "caveat": "Public replay actions are noisy labels for per-turn intents, not proof of an optimal policy. Only aggregate feature/category counts are written."
+}

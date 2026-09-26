@@ -1,0 +1,19 @@
+{
+  "seed": 92503,
+  "purpose": "standalone package and timing on a previously used development seed",
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "rewards": [
+    124005.0,
+    116233.0
+  ],
+  "calls": 719,
+  "import_seconds": 0.1753945350064896,
+  "median_ms": 0.7965629993123002,
+  "p95_ms": 2.4015550006879494,
+  "max_ms": 7.26736499927938,
+  "act_timeout_ms": 1000,
+  "cwd_was_empty_temporary_directory": true
+}

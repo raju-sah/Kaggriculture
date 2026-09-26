@@ -1,0 +1,3880 @@
+{
+  "replay_audit": {
+    "replay": "experiments/v58_policy/wheat_fert_screen/throughput/replays/v50-seed-93700-ab-repeat-0.json",
+    "seed": 93700,
+    "candidate_seat": 0,
+    "candidate_reward": 35446.0,
+    "opponent_reward": 105552.0,
+    "candidate_accepted_sales": {
+      "WHEAT": {
+        "units": 671,
+        "cash": 19860.0
+      },
+      "FERTILIZER": {
+        "units": 96,
+        "cash": 7189.0
+      },
+      "WOOL": {
+        "units": 3,
+        "cash": 627.0
+      },
+      "MELON": {
+        "units": 64,
+        "cash": 12993.0
+      },
+      "EGG": {
+        "units": 38,
+        "cash": 1871.0
+      },
+      "STRAWBERRY": {
+        "units": 136,
+        "cash": 12331.0
+      },
+      "TOMATO": {
+        "units": 66,
+        "cash": 9061.0
+      },
+      "CARROT": {
+        "units": 85,
+        "cash": 5486.0
+      }
+    },
+    "wheat_sale_frames_from_day3": [
+      {
+        "frame": 73,
+        "input_day": 3,
+        "input_hour": 0,
+        "input_shed_wheat": 6,
+        "input_carried_wheat": 0,
+        "submitted_units": 6,
+        "accepted_units": 3,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            6
+          ]
+        ],
+        "farmer_action": [
+          "PICKUP",
+          "WHEAT",
+          3
+        ]
+      },
+      {
+        "frame": 93,
+        "input_day": 3,
+        "input_hour": 20,
+        "input_shed_wheat": 3,
+        "input_carried_wheat": 12,
+        "submitted_units": 3,
+        "accepted_units": 3,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "NORTH"
+        ]
+      },
+      {
+        "frame": 94,
+        "input_day": 3,
+        "input_hour": 21,
+        "input_shed_wheat": 0,
+        "input_carried_wheat": 12,
+        "submitted_units": 1,
+        "accepted_units": 1,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ]
+        ],
+        "farmer_action": [
+          "COLLECT_FERTILIZER"
+        ]
+      },
+      {
+        "frame": 97,
+        "input_day": 4,
+        "input_hour": 0,
+        "input_shed_wheat": 11,
+        "input_carried_wheat": 0,
+        "submitted_units": 10,
+        "accepted_units": 6,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "PICKUP",
+          "WHEAT",
+          5
+        ]
+      },
+      {
+        "frame": 110,
+        "input_day": 4,
+        "input_hour": 13,
+        "input_shed_wheat": 1,
+        "input_carried_wheat": 6,
+        "submitted_units": 1,
+        "accepted_units": 1,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ]
+        ],
+        "farmer_action": [
+          "FEED"
+        ]
+      },
+      {
+        "frame": 112,
+        "input_day": 4,
+        "input_hour": 15,
+        "input_shed_wheat": 1,
+        "input_carried_wheat": 7,
+        "submitted_units": 1,
+        "accepted_units": 1,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ]
+        ],
+        "farmer_action": [
+          "COLLECT_FERTILIZER"
+        ]
+      },
+      {
+        "frame": 114,
+        "input_day": 4,
+        "input_hour": 17,
+        "input_shed_wheat": 1,
+        "input_carried_wheat": 7,
+        "submitted_units": 1,
+        "accepted_units": 1,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ]
+        ],
+        "farmer_action": [
+          "FEED"
+        ]
+      },
+      {
+        "frame": 116,
+        "input_day": 4,
+        "input_hour": 19,
+        "input_shed_wheat": 1,
+        "input_carried_wheat": 6,
+        "submitted_units": 1,
+        "accepted_units": 1,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ]
+        ],
+        "farmer_action": [
+          "COLLECT_FERTILIZER"
+        ]
+      },
+      {
+        "frame": 118,
+        "input_day": 4,
+        "input_hour": 21,
+        "input_shed_wheat": 1,
+        "input_carried_wheat": 6,
+        "submitted_units": 1,
+        "accepted_units": 1,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ]
+        ],
+        "farmer_action": [
+          "EAST"
+        ]
+      },
+      {
+        "frame": 119,
+        "input_day": 4,
+        "input_hour": 22,
+        "input_shed_wheat": 2,
+        "input_carried_wheat": 4,
+        "submitted_units": 2,
+        "accepted_units": 2,
+        "same_turn_buys": 1,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            4
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            1
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ]
+        ],
+        "farmer_action": [
+          "PLACE",
+          "FERTILIZER",
+          5
+        ]
+      },
+      {
+        "frame": 120,
+        "input_day": 4,
+        "input_hour": 23,
+        "input_shed_wheat": 1,
+        "input_carried_wheat": 4,
+        "submitted_units": 1,
+        "accepted_units": 1,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ]
+        ],
+        "farmer_action": [
+          "PASS"
+        ]
+      },
+      {
+        "frame": 121,
+        "input_day": 5,
+        "input_hour": 0,
+        "input_shed_wheat": 4,
+        "input_carried_wheat": 0,
+        "submitted_units": 4,
+        "accepted_units": 4,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            4
+          ]
+        ],
+        "farmer_action": [
+          "WEST"
+        ]
+      },
+      {
+        "frame": 146,
+        "input_day": 6,
+        "input_hour": 1,
+        "input_shed_wheat": 8,
+        "input_carried_wheat": 0,
+        "submitted_units": 8,
+        "accepted_units": 5,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            8
+          ]
+        ],
+        "farmer_action": [
+          "WEST"
+        ]
+      },
+      {
+        "frame": 152,
+        "input_day": 6,
+        "input_hour": 7,
+        "input_shed_wheat": 2,
+        "input_carried_wheat": 1,
+        "submitted_units": 2,
+        "accepted_units": 2,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ]
+        ],
+        "farmer_action": [
+          "EAST"
+        ]
+      },
+      {
+        "frame": 154,
+        "input_day": 6,
+        "input_hour": 9,
+        "input_shed_wheat": 2,
+        "input_carried_wheat": 1,
+        "submitted_units": 2,
+        "accepted_units": 2,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            3
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ]
+        ],
+        "farmer_action": [
+          "NORTH"
+        ]
+      },
+      {
+        "frame": 158,
+        "input_day": 6,
+        "input_hour": 13,
+        "input_shed_wheat": 3,
+        "input_carried_wheat": 0,
+        "submitted_units": 3,
+        "accepted_units": 3,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "PASS"
+        ]
+      },
+      {
+        "frame": 160,
+        "input_day": 6,
+        "input_hour": 15,
+        "input_shed_wheat": 3,
+        "input_carried_wheat": 0,
+        "submitted_units": 3,
+        "accepted_units": 3,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            1
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            2
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "PLANT",
+          "STRAWBERRY"
+        ]
+      },
+      {
+        "frame": 169,
+        "input_day": 7,
+        "input_hour": 0,
+        "input_shed_wheat": 6,
+        "input_carried_wheat": 0,
+        "submitted_units": 6,
+        "accepted_units": 4,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            6
+          ]
+        ],
+        "farmer_action": [
+          "PICKUP",
+          "WHEAT",
+          2
+        ]
+      },
+      {
+        "frame": 193,
+        "input_day": 8,
+        "input_hour": 0,
+        "input_shed_wheat": 1,
+        "input_carried_wheat": 0,
+        "submitted_units": 1,
+        "accepted_units": 1,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ]
+        ],
+        "farmer_action": [
+          "WEST"
+        ]
+      },
+      {
+        "frame": 198,
+        "input_day": 8,
+        "input_hour": 5,
+        "input_shed_wheat": 1,
+        "input_carried_wheat": 0,
+        "submitted_units": 1,
+        "accepted_units": 1,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ]
+        ],
+        "farmer_action": [
+          "DROP"
+        ]
+      },
+      {
+        "frame": 200,
+        "input_day": 8,
+        "input_hour": 7,
+        "input_shed_wheat": 1,
+        "input_carried_wheat": 0,
+        "submitted_units": 1,
+        "accepted_units": 0,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ]
+        ],
+        "farmer_action": [
+          "NORTH"
+        ]
+      },
+      {
+        "frame": 208,
+        "input_day": 8,
+        "input_hour": 15,
+        "input_shed_wheat": 0,
+        "input_carried_wheat": 5,
+        "submitted_units": 1,
+        "accepted_units": 1,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ]
+        ],
+        "farmer_action": [
+          "CARE"
+        ]
+      },
+      {
+        "frame": 217,
+        "input_day": 9,
+        "input_hour": 0,
+        "input_shed_wheat": 8,
+        "input_carried_wheat": 0,
+        "submitted_units": 8,
+        "accepted_units": 6,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            8
+          ]
+        ],
+        "farmer_action": [
+          "PICKUP",
+          "WHEAT",
+          2
+        ]
+      },
+      {
+        "frame": 220,
+        "input_day": 9,
+        "input_hour": 3,
+        "input_shed_wheat": 3,
+        "input_carried_wheat": 2,
+        "submitted_units": 3,
+        "accepted_units": 3,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "COLLECT_FERTILIZER"
+        ]
+      },
+      {
+        "frame": 222,
+        "input_day": 9,
+        "input_hour": 5,
+        "input_shed_wheat": 3,
+        "input_carried_wheat": 2,
+        "submitted_units": 3,
+        "accepted_units": 3,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "WEST"
+        ]
+      },
+      {
+        "frame": 224,
+        "input_day": 9,
+        "input_hour": 7,
+        "input_shed_wheat": 3,
+        "input_carried_wheat": 2,
+        "submitted_units": 3,
+        "accepted_units": 3,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "FEED"
+        ]
+      },
+      {
+        "frame": 228,
+        "input_day": 9,
+        "input_hour": 11,
+        "input_shed_wheat": 3,
+        "input_carried_wheat": 2,
+        "submitted_units": 3,
+        "accepted_units": 3,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "WEST"
+        ]
+      },
+      {
+        "frame": 230,
+        "input_day": 9,
+        "input_hour": 13,
+        "input_shed_wheat": 3,
+        "input_carried_wheat": 2,
+        "submitted_units": 3,
+        "accepted_units": 3,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "NORTH"
+        ]
+      },
+      {
+        "frame": 232,
+        "input_day": 9,
+        "input_hour": 15,
+        "input_shed_wheat": 3,
+        "input_carried_wheat": 2,
+        "submitted_units": 3,
+        "accepted_units": 3,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "NORTH"
+        ]
+      },
+      {
+        "frame": 241,
+        "input_day": 10,
+        "input_hour": 0,
+        "input_shed_wheat": 4,
+        "input_carried_wheat": 0,
+        "submitted_units": 4,
+        "accepted_units": 4,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            4
+          ]
+        ],
+        "farmer_action": [
+          "NORTH"
+        ]
+      },
+      {
+        "frame": 251,
+        "input_day": 10,
+        "input_hour": 10,
+        "input_shed_wheat": 14,
+        "input_carried_wheat": 0,
+        "submitted_units": 10,
+        "accepted_units": 10,
+        "same_turn_buys": 5,
+        "market_orders": [
+          [
+            "SELL",
+            "MELON",
+            22
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            5
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "PLACE",
+          "MELON",
+          6
+        ]
+      },
+      {
+        "frame": 252,
+        "input_day": 10,
+        "input_hour": 11,
+        "input_shed_wheat": 6,
+        "input_carried_wheat": 3,
+        "submitted_units": 6,
+        "accepted_units": 6,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "MELON",
+            11
+          ],
+          [
+            "BUY_LAND"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            6
+          ]
+        ],
+        "farmer_action": [
+          "NORTH"
+        ]
+      },
+      {
+        "frame": 254,
+        "input_day": 10,
+        "input_hour": 13,
+        "input_shed_wheat": 2,
+        "input_carried_wheat": 3,
+        "submitted_units": 2,
+        "accepted_units": 1,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "MELON",
+            5
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ]
+        ],
+        "farmer_action": [
+          "HARVEST"
+        ]
+      },
+      {
+        "frame": 265,
+        "input_day": 11,
+        "input_hour": 0,
+        "input_shed_wheat": 3,
+        "input_carried_wheat": 0,
+        "submitted_units": 3,
+        "accepted_units": 3,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "MELON",
+            10
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "SOUTH"
+        ]
+      },
+      {
+        "frame": 268,
+        "input_day": 11,
+        "input_hour": 3,
+        "input_shed_wheat": 3,
+        "input_carried_wheat": 0,
+        "submitted_units": 3,
+        "accepted_units": 0,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "FEED"
+        ]
+      },
+      {
+        "frame": 270,
+        "input_day": 11,
+        "input_hour": 5,
+        "input_shed_wheat": 3,
+        "input_carried_wheat": 3,
+        "submitted_units": 3,
+        "accepted_units": 3,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            1
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "COLLECT_FERTILIZER"
+        ]
+      },
+      {
+        "frame": 272,
+        "input_day": 11,
+        "input_hour": 7,
+        "input_shed_wheat": 3,
+        "input_carried_wheat": 3,
+        "submitted_units": 3,
+        "accepted_units": 1,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            2
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "WEST"
+        ]
+      },
+      {
+        "frame": 274,
+        "input_day": 11,
+        "input_hour": 9,
+        "input_shed_wheat": 3,
+        "input_carried_wheat": 5,
+        "submitted_units": 3,
+        "accepted_units": 3,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            1
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "CARE"
+        ]
+      },
+      {
+        "frame": 276,
+        "input_day": 11,
+        "input_hour": 11,
+        "input_shed_wheat": 3,
+        "input_carried_wheat": 5,
+        "submitted_units": 3,
+        "accepted_units": 3,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "SOUTH"
+        ]
+      },
+      {
+        "frame": 278,
+        "input_day": 11,
+        "input_hour": 13,
+        "input_shed_wheat": 3,
+        "input_carried_wheat": 5,
+        "submitted_units": 3,
+        "accepted_units": 3,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            2
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "PLANT",
+          "STRAWBERRY"
+        ]
+      },
+      {
+        "frame": 280,
+        "input_day": 11,
+        "input_hour": 15,
+        "input_shed_wheat": 3,
+        "input_carried_wheat": 5,
+        "submitted_units": 3,
+        "accepted_units": 3,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ],
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            1
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ],
+        "farmer_action": [
+          "SOUTH"
+        ]
+      },
+      {
+        "frame": 290,
+        "input_day": 12,
+        "input_hour": 1,
+        "input_shed_wheat": 11,
+        "input_carried_wheat": 0,
+        "submitted_units": 10,
+        "accepted_units": 0,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "WEST"
+        ]
+      },
+      {
+        "frame": 313,
+        "input_day": 13,
+        "input_hour": 0,
+        "input_shed_wheat": 19,
+        "input_carried_wheat": 0,
+        "submitted_units": 10,
+        "accepted_units": 10,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "NORTH"
+        ]
+      },
+      {
+        "frame": 314,
+        "input_day": 13,
+        "input_hour": 1,
+        "input_shed_wheat": 9,
+        "input_carried_wheat": 0,
+        "submitted_units": 4,
+        "accepted_units": 4,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            4
+          ],
+          [
+            "HIRE"
+          ]
+        ],
+        "farmer_action": [
+          "CARE"
+        ]
+      },
+      {
+        "frame": 315,
+        "input_day": 13,
+        "input_hour": 2,
+        "input_shed_wheat": 1,
+        "input_carried_wheat": 4,
+        "submitted_units": 1,
+        "accepted_units": 1,
+        "same_turn_buys": 3,
+        "market_orders": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            3
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ]
+        ],
+        "farmer_action": [
+          "NORTH"
+        ]
+      },
+      {
+        "frame": 316,
+        "input_day": 13,
+        "input_hour": 3,
+        "input_shed_wheat": 2,
+        "input_carried_wheat": 5,
+        "submitted_units": 2,
+        "accepted_units": 0,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ]
+        ],
+        "farmer_action": [
+          "COLLECT_FERTILIZER"
+        ]
+      },
+      {
+        "frame": 320,
+        "input_day": 13,
+        "input_hour": 7,
+        "input_shed_wheat": 3,
+        "input_carried_wheat": 7,
+        "submitted_units": 3,
+        "accepted_units": 0,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "PICKUP",
+          "WHEAT",
+          3
+        ]
+      },
+      {
+        "frame": 337,
+        "input_day": 14,
+        "input_hour": 0,
+        "input_shed_wheat": 25,
+        "input_carried_wheat": 0,
+        "submitted_units": 10,
+        "accepted_units": 10,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "PICKUP",
+          "WHEAT",
+          3
+        ]
+      },
+      {
+        "frame": 338,
+        "input_day": 14,
+        "input_hour": 1,
+        "input_shed_wheat": 12,
+        "input_carried_wheat": 3,
+        "submitted_units": 1,
+        "accepted_units": 1,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            2
+          ]
+        ],
+        "farmer_action": [
+          "FEED"
+        ]
+      },
+      {
+        "frame": 339,
+        "input_day": 14,
+        "input_hour": 2,
+        "input_shed_wheat": 7,
+        "input_carried_wheat": 7,
+        "submitted_units": 7,
+        "accepted_units": 7,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            7
+          ]
+        ],
+        "farmer_action": [
+          "HARVEST"
+        ]
+      },
+      {
+        "frame": 344,
+        "input_day": 14,
+        "input_hour": 7,
+        "input_shed_wheat": 1,
+        "input_carried_wheat": 7,
+        "submitted_units": 1,
+        "accepted_units": 1,
+        "same_turn_buys": 1,
+        "market_orders": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            1
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ]
+        ],
+        "farmer_action": [
+          "NORTH"
+        ]
+      },
+      {
+        "frame": 361,
+        "input_day": 15,
+        "input_hour": 0,
+        "input_shed_wheat": 27,
+        "input_carried_wheat": 0,
+        "submitted_units": 10,
+        "accepted_units": 10,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "PICKUP",
+          "WHEAT",
+          4
+        ]
+      },
+      {
+        "frame": 362,
+        "input_day": 15,
+        "input_hour": 1,
+        "input_shed_wheat": 13,
+        "input_carried_wheat": 4,
+        "submitted_units": 10,
+        "accepted_units": 10,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "EGG",
+            4
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            4
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "WEST"
+        ]
+      },
+      {
+        "frame": 363,
+        "input_day": 15,
+        "input_hour": 2,
+        "input_shed_wheat": 2,
+        "input_carried_wheat": 5,
+        "submitted_units": 2,
+        "accepted_units": 0,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ]
+        ],
+        "farmer_action": [
+          "WEST"
+        ]
+      },
+      {
+        "frame": 385,
+        "input_day": 16,
+        "input_hour": 0,
+        "input_shed_wheat": 29,
+        "input_carried_wheat": 0,
+        "submitted_units": 10,
+        "accepted_units": 10,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "HARVEST"
+        ]
+      },
+      {
+        "frame": 386,
+        "input_day": 16,
+        "input_hour": 1,
+        "input_shed_wheat": 19,
+        "input_carried_wheat": 0,
+        "submitted_units": 4,
+        "accepted_units": 4,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "SELL",
+            "EGG",
+            3
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            4
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ],
+        "farmer_action": [
+          "PICKUP",
+          "WHEAT",
+          2
+        ]
+      },
+      {
+        "frame": 387,
+        "input_day": 16,
+        "input_hour": 2,
+        "input_shed_wheat": 4,
+        "input_carried_wheat": 11,
+        "submitted_units": 4,
+        "accepted_units": 0,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            4
+          ]
+        ],
+        "farmer_action": [
+          "NORTH"
+        ]
+      },
+      {
+        "frame": 400,
+        "input_day": 16,
+        "input_hour": 15,
+        "input_shed_wheat": 2,
+        "input_carried_wheat": 15,
+        "submitted_units": 2,
+        "accepted_units": 2,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ]
+        ],
+        "farmer_action": [
+          "EAST"
+        ]
+      },
+      {
+        "frame": 409,
+        "input_day": 17,
+        "input_hour": 0,
+        "input_shed_wheat": 36,
+        "input_carried_wheat": 0,
+        "submitted_units": 10,
+        "accepted_units": 10,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "WEST"
+        ]
+      },
+      {
+        "frame": 410,
+        "input_day": 17,
+        "input_hour": 1,
+        "input_shed_wheat": 26,
+        "input_carried_wheat": 0,
+        "submitted_units": 4,
+        "accepted_units": 4,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "SELL",
+            "EGG",
+            4
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            4
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ],
+        "farmer_action": [
+          "WEST"
+        ]
+      },
+      {
+        "frame": 411,
+        "input_day": 17,
+        "input_hour": 2,
+        "input_shed_wheat": 12,
+        "input_carried_wheat": 10,
+        "submitted_units": 10,
+        "accepted_units": 10,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "NORTH"
+        ]
+      },
+      {
+        "frame": 433,
+        "input_day": 18,
+        "input_hour": 0,
+        "input_shed_wheat": 34,
+        "input_carried_wheat": 0,
+        "submitted_units": 10,
+        "accepted_units": 10,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "PICKUP",
+          "WHEAT",
+          2
+        ]
+      },
+      {
+        "frame": 434,
+        "input_day": 18,
+        "input_hour": 1,
+        "input_shed_wheat": 22,
+        "input_carried_wheat": 2,
+        "submitted_units": 10,
+        "accepted_units": 10,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            3
+          ],
+          [
+            "SELL",
+            "EGG",
+            5
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ],
+        "farmer_action": [
+          "EAST"
+        ]
+      },
+      {
+        "frame": 435,
+        "input_day": 18,
+        "input_hour": 2,
+        "input_shed_wheat": 3,
+        "input_carried_wheat": 11,
+        "submitted_units": 3,
+        "accepted_units": 0,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "BUY_LAND"
+          ],
+          [
+            "BUY_SEED",
+            "TOMATO",
+            10
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "EAST"
+        ]
+      },
+      {
+        "frame": 449,
+        "input_day": 18,
+        "input_hour": 16,
+        "input_shed_wheat": 2,
+        "input_carried_wheat": 24,
+        "submitted_units": 2,
+        "accepted_units": 2,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ]
+        ],
+        "farmer_action": [
+          "WEST"
+        ]
+      },
+      {
+        "frame": 457,
+        "input_day": 19,
+        "input_hour": 0,
+        "input_shed_wheat": 33,
+        "input_carried_wheat": 0,
+        "submitted_units": 10,
+        "accepted_units": 10,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "EAST"
+        ]
+      },
+      {
+        "frame": 458,
+        "input_day": 19,
+        "input_hour": 1,
+        "input_shed_wheat": 23,
+        "input_carried_wheat": 0,
+        "submitted_units": 2,
+        "accepted_units": 2,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ]
+        ],
+        "farmer_action": [
+          "CARE"
+        ]
+      },
+      {
+        "frame": 459,
+        "input_day": 19,
+        "input_hour": 2,
+        "input_shed_wheat": 16,
+        "input_carried_wheat": 5,
+        "submitted_units": 10,
+        "accepted_units": 10,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            13
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "PICKUP",
+          "WHEAT",
+          2
+        ]
+      },
+      {
+        "frame": 481,
+        "input_day": 20,
+        "input_hour": 0,
+        "input_shed_wheat": 33,
+        "input_carried_wheat": 0,
+        "submitted_units": 10,
+        "accepted_units": 10,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "PICKUP",
+          "WHEAT"
+        ]
+      },
+      {
+        "frame": 482,
+        "input_day": 20,
+        "input_hour": 1,
+        "input_shed_wheat": 22,
+        "input_carried_wheat": 1,
+        "submitted_units": 10,
+        "accepted_units": 10,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "EGG",
+            7
+          ],
+          [
+            "SELL",
+            "STRAWBERRY",
+            1
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            4
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "SOUTH"
+        ]
+      },
+      {
+        "frame": 483,
+        "input_day": 20,
+        "input_hour": 2,
+        "input_shed_wheat": 4,
+        "input_carried_wheat": 9,
+        "submitted_units": 4,
+        "accepted_units": 0,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            4
+          ]
+        ],
+        "farmer_action": [
+          "PICKUP",
+          "FERTILIZER"
+        ]
+      },
+      {
+        "frame": 505,
+        "input_day": 21,
+        "input_hour": 0,
+        "input_shed_wheat": 45,
+        "input_carried_wheat": 0,
+        "submitted_units": 10,
+        "accepted_units": 10,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "PICKUP",
+          "WHEAT",
+          5
+        ]
+      },
+      {
+        "frame": 506,
+        "input_day": 21,
+        "input_hour": 1,
+        "input_shed_wheat": 30,
+        "input_carried_wheat": 5,
+        "submitted_units": 12,
+        "accepted_units": 12,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "EGG",
+            1
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            12
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ],
+        "farmer_action": [
+          "EAST"
+        ]
+      },
+      {
+        "frame": 507,
+        "input_day": 21,
+        "input_hour": 2,
+        "input_shed_wheat": 6,
+        "input_carried_wheat": 17,
+        "submitted_units": 5,
+        "accepted_units": 5,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            6
+          ],
+          [
+            "HIRE"
+          ]
+        ],
+        "farmer_action": [
+          "COLLECT_FERTILIZER"
+        ]
+      },
+      {
+        "frame": 509,
+        "input_day": 21,
+        "input_hour": 4,
+        "input_shed_wheat": 3,
+        "input_carried_wheat": 15,
+        "submitted_units": 3,
+        "accepted_units": 3,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "COLLECT_FERTILIZER"
+        ]
+      },
+      {
+        "frame": 530,
+        "input_day": 22,
+        "input_hour": 1,
+        "input_shed_wheat": 44,
+        "input_carried_wheat": 2,
+        "submitted_units": 15,
+        "accepted_units": 15,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "EGG",
+            2
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            4
+          ],
+          [
+            "HIRE"
+          ]
+        ],
+        "farmer_action": [
+          "NORTH"
+        ]
+      },
+      {
+        "frame": 531,
+        "input_day": 22,
+        "input_hour": 2,
+        "input_shed_wheat": 20,
+        "input_carried_wheat": 11,
+        "submitted_units": 10,
+        "accepted_units": 10,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            4
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "HARVEST"
+        ]
+      },
+      {
+        "frame": 532,
+        "input_day": 22,
+        "input_hour": 3,
+        "input_shed_wheat": 4,
+        "input_carried_wheat": 17,
+        "submitted_units": 2,
+        "accepted_units": 2,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "SOUTH"
+        ]
+      },
+      {
+        "frame": 533,
+        "input_day": 22,
+        "input_hour": 4,
+        "input_shed_wheat": 2,
+        "input_carried_wheat": 17,
+        "submitted_units": 2,
+        "accepted_units": 2,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ]
+        ],
+        "farmer_action": [
+          "PLACE",
+          "MILK",
+          3
+        ]
+      },
+      {
+        "frame": 554,
+        "input_day": 23,
+        "input_hour": 1,
+        "input_shed_wheat": 47,
+        "input_carried_wheat": 0,
+        "submitted_units": 23,
+        "accepted_units": 23,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            23
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            4
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ],
+        "farmer_action": [
+          "WEST"
+        ]
+      },
+      {
+        "frame": 555,
+        "input_day": 23,
+        "input_hour": 2,
+        "input_shed_wheat": 11,
+        "input_carried_wheat": 13,
+        "submitted_units": 10,
+        "accepted_units": 10,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            4
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "WEST"
+        ]
+      },
+      {
+        "frame": 578,
+        "input_day": 24,
+        "input_hour": 1,
+        "input_shed_wheat": 48,
+        "input_carried_wheat": 0,
+        "submitted_units": 16,
+        "accepted_units": 16,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            3
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            16
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            4
+          ],
+          [
+            "HIRE"
+          ]
+        ],
+        "farmer_action": [
+          "HARVEST"
+        ]
+      },
+      {
+        "frame": 581,
+        "input_day": 24,
+        "input_hour": 4,
+        "input_shed_wheat": 21,
+        "input_carried_wheat": 11,
+        "submitted_units": 10,
+        "accepted_units": 10,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "NORTH"
+        ]
+      },
+      {
+        "frame": 582,
+        "input_day": 24,
+        "input_hour": 5,
+        "input_shed_wheat": 9,
+        "input_carried_wheat": 13,
+        "submitted_units": 3,
+        "accepted_units": 3,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "WATER"
+        ]
+      },
+      {
+        "frame": 583,
+        "input_day": 24,
+        "input_hour": 6,
+        "input_shed_wheat": 6,
+        "input_carried_wheat": 13,
+        "submitted_units": 6,
+        "accepted_units": 6,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            6
+          ]
+        ],
+        "farmer_action": [
+          "HARVEST"
+        ]
+      },
+      {
+        "frame": 601,
+        "input_day": 25,
+        "input_hour": 0,
+        "input_shed_wheat": 55,
+        "input_carried_wheat": 0,
+        "submitted_units": 10,
+        "accepted_units": 10,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "STRAWBERRY",
+            1
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "PICKUP",
+          "WHEAT"
+        ]
+      },
+      {
+        "frame": 602,
+        "input_day": 25,
+        "input_hour": 1,
+        "input_shed_wheat": 44,
+        "input_carried_wheat": 1,
+        "submitted_units": 16,
+        "accepted_units": 16,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "EGG",
+            4
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            16
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ],
+        "farmer_action": [
+          "WEST"
+        ]
+      },
+      {
+        "frame": 603,
+        "input_day": 25,
+        "input_hour": 2,
+        "input_shed_wheat": 23,
+        "input_carried_wheat": 6,
+        "submitted_units": 10,
+        "accepted_units": 10,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            11
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "WEST"
+        ]
+      },
+      {
+        "frame": 606,
+        "input_day": 25,
+        "input_hour": 5,
+        "input_shed_wheat": 8,
+        "input_carried_wheat": 11,
+        "submitted_units": 8,
+        "accepted_units": 8,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "STRAWBERRY",
+            3
+          ],
+          [
+            "BUY_SEED",
+            "CARROT",
+            1
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            8
+          ]
+        ],
+        "farmer_action": [
+          "COLLECT_FERTILIZER"
+        ]
+      },
+      {
+        "frame": 622,
+        "input_day": 25,
+        "input_hour": 21,
+        "input_shed_wheat": 2,
+        "input_carried_wheat": 41,
+        "submitted_units": 2,
+        "accepted_units": 2,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ],
+          [
+            "BUY_SEED",
+            "CARROT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "WATER"
+        ]
+      },
+      {
+        "frame": 626,
+        "input_day": 26,
+        "input_hour": 1,
+        "input_shed_wheat": 60,
+        "input_carried_wheat": 0,
+        "submitted_units": 27,
+        "accepted_units": 27,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "EGG",
+            2
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            27
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ],
+        "farmer_action": [
+          "PICKUP",
+          "WHEAT"
+        ]
+      },
+      {
+        "frame": 629,
+        "input_day": 26,
+        "input_hour": 4,
+        "input_shed_wheat": 17,
+        "input_carried_wheat": 16,
+        "submitted_units": 5,
+        "accepted_units": 5,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            5
+          ]
+        ],
+        "farmer_action": [
+          "NORTH"
+        ]
+      },
+      {
+        "frame": 631,
+        "input_day": 26,
+        "input_hour": 6,
+        "input_shed_wheat": 12,
+        "input_carried_wheat": 16,
+        "submitted_units": 12,
+        "accepted_units": 12,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            12
+          ]
+        ],
+        "farmer_action": [
+          "CARE"
+        ]
+      },
+      {
+        "frame": 650,
+        "input_day": 27,
+        "input_hour": 1,
+        "input_shed_wheat": 70,
+        "input_carried_wheat": 1,
+        "submitted_units": 6,
+        "accepted_units": 6,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            3
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            6
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ]
+        ],
+        "farmer_action": [
+          "FEED"
+        ]
+      },
+      {
+        "frame": 651,
+        "input_day": 27,
+        "input_hour": 2,
+        "input_shed_wheat": 58,
+        "input_carried_wheat": 7,
+        "submitted_units": 58,
+        "accepted_units": 49,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            10
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            58
+          ]
+        ],
+        "farmer_action": [
+          "CARE"
+        ]
+      },
+      {
+        "frame": 669,
+        "input_day": 27,
+        "input_hour": 20,
+        "input_shed_wheat": 0,
+        "input_carried_wheat": 37,
+        "submitted_units": 1,
+        "accepted_units": 1,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "STRAWBERRY",
+            5
+          ],
+          [
+            "SELL",
+            "TOMATO",
+            4
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ]
+        ],
+        "farmer_action": [
+          "PASS"
+        ]
+      },
+      {
+        "frame": 674,
+        "input_day": 28,
+        "input_hour": 1,
+        "input_shed_wheat": 40,
+        "input_carried_wheat": 6,
+        "submitted_units": 2,
+        "accepted_units": 2,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "SELL",
+            "CARROT",
+            2
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ],
+        "farmer_action": [
+          "NORTH"
+        ]
+      },
+      {
+        "frame": 675,
+        "input_day": 28,
+        "input_hour": 2,
+        "input_shed_wheat": 27,
+        "input_carried_wheat": 17,
+        "submitted_units": 27,
+        "accepted_units": 21,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "CARROT",
+            16
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            27
+          ],
+          [
+            "SELL",
+            "STRAWBERRY",
+            12
+          ]
+        ],
+        "farmer_action": [
+          "NORTH"
+        ]
+      },
+      {
+        "frame": 692,
+        "input_day": 28,
+        "input_hour": 19,
+        "input_shed_wheat": 0,
+        "input_carried_wheat": 41,
+        "submitted_units": 6,
+        "accepted_units": 6,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            6
+          ]
+        ],
+        "farmer_action": [
+          "WATER"
+        ]
+      },
+      {
+        "frame": 695,
+        "input_day": 28,
+        "input_hour": 22,
+        "input_shed_wheat": 0,
+        "input_carried_wheat": 56,
+        "submitted_units": 5,
+        "accepted_units": 5,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "TOMATO",
+            18
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            5
+          ]
+        ],
+        "farmer_action": [
+          "NORTH"
+        ]
+      },
+      {
+        "frame": 696,
+        "input_day": 28,
+        "input_hour": 23,
+        "input_shed_wheat": 0,
+        "input_carried_wheat": 55,
+        "submitted_units": 10,
+        "accepted_units": 10,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ],
+        "farmer_action": [
+          "WATER"
+        ]
+      },
+      {
+        "frame": 697,
+        "input_day": 29,
+        "input_hour": 0,
+        "input_shed_wheat": 49,
+        "input_carried_wheat": 0,
+        "submitted_units": 36,
+        "accepted_units": 36,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            36
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ],
+        "farmer_action": [
+          "WEST"
+        ]
+      },
+      {
+        "frame": 698,
+        "input_day": 29,
+        "input_hour": 1,
+        "input_shed_wheat": 13,
+        "input_carried_wheat": 0,
+        "submitted_units": 13,
+        "accepted_units": 13,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "CARROT",
+            30
+          ],
+          [
+            "SELL",
+            "EGG",
+            4
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            13
+          ]
+        ],
+        "farmer_action": [
+          "WEST"
+        ]
+      },
+      {
+        "frame": 707,
+        "input_day": 29,
+        "input_hour": 10,
+        "input_shed_wheat": 0,
+        "input_carried_wheat": 10,
+        "submitted_units": 2,
+        "accepted_units": 2,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ]
+        ],
+        "farmer_action": [
+          "NORTH"
+        ]
+      },
+      {
+        "frame": 711,
+        "input_day": 29,
+        "input_hour": 14,
+        "input_shed_wheat": 0,
+        "input_carried_wheat": 13,
+        "submitted_units": 2,
+        "accepted_units": 2,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ]
+        ],
+        "farmer_action": [
+          "EAST"
+        ]
+      },
+      {
+        "frame": 712,
+        "input_day": 29,
+        "input_hour": 15,
+        "input_shed_wheat": 0,
+        "input_carried_wheat": 11,
+        "submitted_units": 2,
+        "accepted_units": 2,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "TOMATO",
+            10
+          ],
+          [
+            "SELL",
+            "CARROT",
+            5
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ]
+        ],
+        "farmer_action": [
+          "DROP"
+        ]
+      },
+      {
+        "frame": 716,
+        "input_day": 29,
+        "input_hour": 19,
+        "input_shed_wheat": 0,
+        "input_carried_wheat": 11,
+        "submitted_units": 6,
+        "accepted_units": 6,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "TOMATO",
+            8
+          ],
+          [
+            "SELL",
+            "CARROT",
+            17
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            6
+          ]
+        ],
+        "farmer_action": [
+          "HARVEST"
+        ]
+      },
+      {
+        "frame": 717,
+        "input_day": 29,
+        "input_hour": 20,
+        "input_shed_wheat": 0,
+        "input_carried_wheat": 7,
+        "submitted_units": 2,
+        "accepted_units": 2,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "CARROT",
+            9
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ]
+        ],
+        "farmer_action": [
+          "SOUTH"
+        ]
+      },
+      {
+        "frame": 718,
+        "input_day": 29,
+        "input_hour": 21,
+        "input_shed_wheat": 0,
+        "input_carried_wheat": 5,
+        "submitted_units": 3,
+        "accepted_units": 3,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ],
+        "farmer_action": [
+          "PLACE",
+          "MILK",
+          1000
+        ]
+      },
+      {
+        "frame": 719,
+        "input_day": 29,
+        "input_hour": 22,
+        "input_shed_wheat": 0,
+        "input_carried_wheat": 2,
+        "submitted_units": 2,
+        "accepted_units": 2,
+        "same_turn_buys": 0,
+        "market_orders": [
+          [
+            "SELL",
+            "CARROT",
+            3
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ]
+        ],
+        "farmer_action": [
+          "DROP"
+        ]
+      }
+    ],
+    "day5_wheat_pickup_attempts": [
+      {
+        "frame": 122,
+        "input_hour": 1,
+        "unit": 1,
+        "position": [
+          4,
+          4
+        ],
+        "requested": 2,
+        "shed_before": 0,
+        "pickup_feasible_units": 0
+      },
+      {
+        "frame": 123,
+        "input_hour": 2,
+        "unit": 0,
+        "position": [
+          4,
+          4
+        ],
+        "requested": 2,
+        "shed_before": 0,
+        "pickup_feasible_units": 0
+      },
+      {
+        "frame": 124,
+        "input_hour": 3,
+        "unit": 2,
+        "position": [
+          4,
+          4
+        ],
+        "requested": 2,
+        "shed_before": 0,
+        "pickup_feasible_units": 0
+      }
+    ],
+    "feed_results_by_input_day": {
+      "0": {
+        "success": 2
+      },
+      "1": {
+        "success": 4
+      },
+      "2": {
+        "success": 4
+      },
+      "3": {
+        "success": 3
+      },
+      "4": {
+        "success": 5
+      },
+      "5": {
+        "no_wheat_on_animal": 6
+      },
+      "6": {
+        "success": 3,
+        "no_wheat_on_animal": 4,
+        "wrong_tile_or_already_fed": 1
+      },
+      "7": {
+        "success": 1,
+        "no_wheat_on_animal": 2,
+        "wrong_tile_or_already_fed": 4
+      },
+      "8": {
+        "wrong_tile_or_already_fed": 4,
+        "no_wheat_on_animal": 2
+      },
+      "9": {
+        "wrong_tile_or_already_fed": 11,
+        "no_wheat_on_animal": 1
+      },
+      "10": {
+        "wrong_tile_or_already_fed": 15,
+        "success": 1
+      },
+      "11": {
+        "wrong_tile_or_already_fed": 11,
+        "no_wheat_on_animal": 1,
+        "success": 1
+      },
+      "12": {
+        "wrong_tile_or_already_fed": 15,
+        "success": 2
+      },
+      "13": {
+        "wrong_tile_or_already_fed": 15,
+        "success": 2
+      },
+      "14": {
+        "wrong_tile_or_already_fed": 12,
+        "success": 2
+      },
+      "15": {
+        "wrong_tile_or_already_fed": 14,
+        "success": 2
+      },
+      "16": {
+        "wrong_tile_or_already_fed": 12,
+        "success": 1,
+        "no_wheat_on_animal": 1
+      },
+      "17": {
+        "wrong_tile_or_already_fed": 14,
+        "success": 2
+      },
+      "18": {
+        "wrong_tile_or_already_fed": 12,
+        "success": 2
+      },
+      "19": {
+        "wrong_tile_or_already_fed": 14,
+        "no_wheat_on_animal": 2
+      },
+      "20": {
+        "wrong_tile_or_already_fed": 10,
+        "success": 1,
+        "no_wheat_on_animal": 1
+      },
+      "21": {
+        "wrong_tile_or_already_fed": 11,
+        "success": 1
+      },
+      "22": {
+        "wrong_tile_or_already_fed": 13,
+        "success": 1
+      },
+      "23": {
+        "wrong_tile_or_already_fed": 16,
+        "success": 1
+      },
+      "24": {
+        "wrong_tile_or_already_fed": 10,
+        "success": 1
+      },
+      "25": {
+        "wrong_tile_or_already_fed": 16
+      },
+      "26": {
+        "wrong_tile_or_already_fed": 12,
+        "success": 1
+      },
+      "27": {
+        "wrong_tile_or_already_fed": 16,
+        "success": 1
+      },
+      "28": {
+        "wrong_tile_or_already_fed": 6
+      }
+    },
+    "first_feed_events_on_day5": [
+      {
+        "frame": 123,
+        "day": 5,
+        "hour": 2,
+        "unit": 1,
+        "result": "no_wheat_on_animal",
+        "animal": "COW",
+        "carried_wheat": 0,
+        "shed_wheat": 0
+      },
+      {
+        "frame": 125,
+        "day": 5,
+        "hour": 4,
+        "unit": 0,
+        "result": "no_wheat_on_animal",
+        "animal": "SHEEP",
+        "carried_wheat": 0,
+        "shed_wheat": 0
+      },
+      {
+        "frame": 126,
+        "day": 5,
+        "hour": 5,
+        "unit": 2,
+        "result": "no_wheat_on_animal",
+        "animal": "COW",
+        "carried_wheat": 0,
+        "shed_wheat": 0
+      },
+      {
+        "frame": 127,
+        "day": 5,
+        "hour": 6,
+        "unit": 1,
+        "result": "no_wheat_on_animal",
+        "animal": "COW",
+        "carried_wheat": 0,
+        "shed_wheat": 0
+      },
+      {
+        "frame": 129,
+        "day": 5,
+        "hour": 8,
+        "unit": 2,
+        "result": "no_wheat_on_animal",
+        "animal": "COW",
+        "carried_wheat": 0,
+        "shed_wheat": 0
+      },
+      {
+        "frame": 137,
+        "day": 5,
+        "hour": 16,
+        "unit": 0,
+        "result": "no_wheat_on_animal",
+        "animal": "SHEEP",
+        "carried_wheat": 0,
+        "shed_wheat": 0
+      }
+    ],
+    "herd_at_day_boundaries": {
+      "0": {
+        "animals": {},
+        "max_consecutive_unfed": 0
+      },
+      "1": {
+        "animals": {
+          "SHEEP": 2,
+          "COW": 2
+        },
+        "max_consecutive_unfed": 1
+      },
+      "2": {
+        "animals": {
+          "SHEEP": 2,
+          "COW": 2
+        },
+        "max_consecutive_unfed": 0
+      },
+      "3": {
+        "animals": {
+          "COW": 3,
+          "SHEEP": 2
+        },
+        "max_consecutive_unfed": 1
+      },
+      "4": {
+        "animals": {
+          "COW": 4,
+          "SHEEP": 2
+        },
+        "max_consecutive_unfed": 1
+      },
+      "5": {
+        "animals": {
+          "COW": 4,
+          "SHEEP": 2
+        },
+        "max_consecutive_unfed": 1
+      },
+      "6": {
+        "animals": {
+          "SHEEP": 2,
+          "COW": 3
+        },
+        "max_consecutive_unfed": 1
+      },
+      "7": {
+        "animals": {
+          "GOOSE": 2,
+          "SHEEP": 1,
+          "COW": 1
+        },
+        "max_consecutive_unfed": 1
+      },
+      "8": {
+        "animals": {
+          "COW": 2,
+          "SHEEP": 1,
+          "GOOSE": 1
+        },
+        "max_consecutive_unfed": 1
+      },
+      "9": {
+        "animals": {
+          "SHEEP": 1
+        },
+        "max_consecutive_unfed": 1
+      },
+      "10": {
+        "animals": {},
+        "max_consecutive_unfed": 0
+      },
+      "11": {
+        "animals": {
+          "GOOSE": 1
+        },
+        "max_consecutive_unfed": 0
+      },
+      "12": {
+        "animals": {
+          "GOOSE": 2
+        },
+        "max_consecutive_unfed": 1
+      },
+      "13": {
+        "animals": {
+          "GOOSE": 2
+        },
+        "max_consecutive_unfed": 0
+      },
+      "14": {
+        "animals": {
+          "GOOSE": 2
+        },
+        "max_consecutive_unfed": 0
+      },
+      "15": {
+        "animals": {
+          "GOOSE": 2
+        },
+        "max_consecutive_unfed": 0
+      },
+      "16": {
+        "animals": {
+          "GOOSE": 2
+        },
+        "max_consecutive_unfed": 0
+      },
+      "17": {
+        "animals": {
+          "GOOSE": 2
+        },
+        "max_consecutive_unfed": 1
+      },
+      "18": {
+        "animals": {
+          "GOOSE": 2
+        },
+        "max_consecutive_unfed": 0
+      },
+      "19": {
+        "animals": {
+          "GOOSE": 2
+        },
+        "max_consecutive_unfed": 0
+      },
+      "20": {
+        "animals": {
+          "GOOSE": 2
+        },
+        "max_consecutive_unfed": 1
+      },
+      "21": {
+        "animals": {
+          "GOOSE": 1
+        },
+        "max_consecutive_unfed": 0
+      },
+      "22": {
+        "animals": {
+          "GOOSE": 1
+        },
+        "max_consecutive_unfed": 0
+      },
+      "23": {
+        "animals": {
+          "GOOSE": 1
+        },
+        "max_consecutive_unfed": 0
+      },
+      "24": {
+        "animals": {
+          "GOOSE": 1
+        },
+        "max_consecutive_unfed": 0
+      },
+      "25": {
+        "animals": {
+          "GOOSE": 1
+        },
+        "max_consecutive_unfed": 0
+      },
+      "26": {
+        "animals": {
+          "GOOSE": 1
+        },
+        "max_consecutive_unfed": 1
+      },
+      "27": {
+        "animals": {
+          "GOOSE": 1
+        },
+        "max_consecutive_unfed": 0
+      },
+      "28": {
+        "animals": {
+          "GOOSE": 1
+        },
+        "max_consecutive_unfed": 0
+      },
+      "29": {
+        "animals": {
+          "GOOSE": 1
+        },
+        "max_consecutive_unfed": 1
+      }
+    }
+  },
+  "paired_screen": [
+    {
+      "game_id": "v50-seed-93700-ab-repeat-0",
+      "seed": 93700,
+      "candidate_seat": 0,
+      "control_margin": 28082.0,
+      "overlay_margin": -70106.0,
+      "change": -98188.0
+    },
+    {
+      "game_id": "v50-seed-93700-ba-repeat-0",
+      "seed": 93700,
+      "candidate_seat": 1,
+      "control_margin": 28082.0,
+      "overlay_margin": -70106.0,
+      "change": -98188.0
+    },
+    {
+      "game_id": "v50-seed-93701-ab-repeat-0",
+      "seed": 93701,
+      "candidate_seat": 0,
+      "control_margin": -33808.0,
+      "overlay_margin": -85785.0,
+      "change": -51977.0
+    },
+    {
+      "game_id": "v50-seed-93701-ba-repeat-0",
+      "seed": 93701,
+      "candidate_seat": 1,
+      "control_margin": -31001.0,
+      "overlay_margin": -79538.0,
+      "change": -48537.0
+    },
+    {
+      "game_id": "v50-seed-93702-ab-repeat-0",
+      "seed": 93702,
+      "candidate_seat": 0,
+      "control_margin": 22559.0,
+      "overlay_margin": -46289.0,
+      "change": -68848.0
+    },
+    {
+      "game_id": "v50-seed-93702-ba-repeat-0",
+      "seed": 93702,
+      "candidate_seat": 1,
+      "control_margin": 34861.0,
+      "overlay_margin": -46289.0,
+      "change": -81150.0
+    },
+    {
+      "game_id": "v50-seed-93703-ab-repeat-0",
+      "seed": 93703,
+      "candidate_seat": 0,
+      "control_margin": -23609.0,
+      "overlay_margin": -82855.0,
+      "change": -59246.0
+    },
+    {
+      "game_id": "v50-seed-93703-ba-repeat-0",
+      "seed": 93703,
+      "candidate_seat": 1,
+      "control_margin": -23609.0,
+      "overlay_margin": -82855.0,
+      "change": -59246.0
+    },
+    {
+      "game_id": "v53-seed-93700-ab-repeat-0",
+      "seed": 93700,
+      "candidate_seat": 0,
+      "control_margin": 26888.0,
+      "overlay_margin": -70735.0,
+      "change": -97623.0
+    },
+    {
+      "game_id": "v53-seed-93700-ba-repeat-0",
+      "seed": 93700,
+      "candidate_seat": 1,
+      "control_margin": 26888.0,
+      "overlay_margin": -70735.0,
+      "change": -97623.0
+    },
+    {
+      "game_id": "v53-seed-93701-ba-repeat-0",
+      "seed": 93701,
+      "candidate_seat": 1,
+      "control_margin": -31995.0,
+      "overlay_margin": -80163.0,
+      "change": -48168.0
+    },
+    {
+      "game_id": "v53-seed-93702-ab-repeat-0",
+      "seed": 93702,
+      "candidate_seat": 0,
+      "control_margin": 21219.0,
+      "overlay_margin": -47148.0,
+      "change": -68367.0
+    }
+  ]
+}

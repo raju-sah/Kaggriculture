@@ -1,0 +1,1496 @@
+{
+  "completed_matches_returned_by_kaggle": 6,
+  "matches": [
+    {
+      "candidate_seat": 0,
+      "episode_id": 113765357,
+      "module_version": "1.32.7",
+      "opponent_land_buys": [],
+      "players": [
+        {
+          "action_counts": {
+            "farmer:BUILD_PASTURE": 1,
+            "farmer:CARE": 36,
+            "farmer:COLLECT_FERTILIZER": 13,
+            "farmer:DROP": 17,
+            "farmer:EAST": 86,
+            "farmer:FEED": 84,
+            "farmer:HARVEST": 19,
+            "farmer:NORTH": 137,
+            "farmer:PASS": 16,
+            "farmer:PICKUP": 30,
+            "farmer:PLACE": 1,
+            "farmer:PLANT": 13,
+            "farmer:SOUTH": 84,
+            "farmer:WATER": 59,
+            "farmer:WEST": 124,
+            "market:BUY_ANIMAL": 4,
+            "market:BUY_PRODUCT": 127,
+            "market:BUY_SEED": 51,
+            "market:HIRE": 148,
+            "market:SELL": 139,
+            "worker:BUILD_COOP": 2,
+            "worker:BUILD_PASTURE": 4,
+            "worker:CARE": 150,
+            "worker:COLLECT_FERTILIZER": 75,
+            "worker:DIG": 4,
+            "worker:DROP": 117,
+            "worker:EAST": 420,
+            "worker:FEED": 101,
+            "worker:HARVEST": 155,
+            "worker:NORTH": 639,
+            "worker:PASS": 165,
+            "worker:PICKUP": 181,
+            "worker:PLACE": 6,
+            "worker:PLANT": 59,
+            "worker:SOUTH": 356,
+            "worker:WATER": 263,
+            "worker:WEST": 702
+          },
+          "animals": {
+            "COW": 2,
+            "GOOSE": 2,
+            "SHEEP": 3
+          },
+          "hands": 5,
+          "market_quantities": {
+            "BUY_ANIMAL:COW": {
+              "orders": 1,
+              "units": 2
+            },
+            "BUY_ANIMAL:GOOSE": {
+              "orders": 2,
+              "units": 2
+            },
+            "BUY_ANIMAL:SHEEP": {
+              "orders": 1,
+              "units": 3
+            },
+            "BUY_PRODUCT:WHEAT": {
+              "orders": 127,
+              "units": 150
+            },
+            "BUY_SEED:MELON": {
+              "orders": 18,
+              "units": 23
+            },
+            "BUY_SEED:WHEAT": {
+              "orders": 33,
+              "units": 59
+            },
+            "SELL:EGG": {
+              "orders": 29,
+              "units": 68
+            },
+            "SELL:FERTILIZER": {
+              "orders": 47,
+              "units": 86
+            },
+            "SELL:MELON": {
+              "orders": 11,
+              "units": 58
+            },
+            "SELL:MILK": {
+              "orders": 21,
+              "units": 72
+            },
+            "SELL:WHEAT": {
+              "orders": 9,
+              "units": 99
+            },
+            "SELL:WOOL": {
+              "orders": 22,
+              "units": 99
+            }
+          },
+          "max_hands_seen": 5,
+          "money": 43656.0,
+          "name": "Rajusah",
+          "plants": {},
+          "reward": 43656.0,
+          "seat": 0,
+          "tile_kinds": {
+            "COOP": 2,
+            "PASTURE": 5,
+            "WEED": 4
+          },
+          "unlocked": [
+            "NW"
+          ]
+        },
+        {
+          "action_counts": {
+            "farmer:BUILD_PASTURE": 1,
+            "farmer:CARE": 36,
+            "farmer:COLLECT_FERTILIZER": 13,
+            "farmer:DROP": 17,
+            "farmer:EAST": 86,
+            "farmer:FEED": 84,
+            "farmer:HARVEST": 19,
+            "farmer:NORTH": 137,
+            "farmer:PASS": 16,
+            "farmer:PICKUP": 30,
+            "farmer:PLACE": 1,
+            "farmer:PLANT": 13,
+            "farmer:SOUTH": 84,
+            "farmer:WATER": 59,
+            "farmer:WEST": 124,
+            "market:BUY_ANIMAL": 4,
+            "market:BUY_PRODUCT": 127,
+            "market:BUY_SEED": 51,
+            "market:HIRE": 148,
+            "market:SELL": 139,
+            "worker:BUILD_COOP": 2,
+            "worker:BUILD_PASTURE": 4,
+            "worker:CARE": 150,
+            "worker:COLLECT_FERTILIZER": 75,
+            "worker:DIG": 4,
+            "worker:DROP": 117,
+            "worker:EAST": 420,
+            "worker:FEED": 101,
+            "worker:HARVEST": 155,
+            "worker:NORTH": 639,
+            "worker:PASS": 165,
+            "worker:PICKUP": 181,
+            "worker:PLACE": 6,
+            "worker:PLANT": 59,
+            "worker:SOUTH": 356,
+            "worker:WATER": 263,
+            "worker:WEST": 702
+          },
+          "animals": {
+            "COW": 2,
+            "GOOSE": 2,
+            "SHEEP": 3
+          },
+          "hands": 5,
+          "market_quantities": {
+            "BUY_ANIMAL:COW": {
+              "orders": 1,
+              "units": 2
+            },
+            "BUY_ANIMAL:GOOSE": {
+              "orders": 2,
+              "units": 2
+            },
+            "BUY_ANIMAL:SHEEP": {
+              "orders": 1,
+              "units": 3
+            },
+            "BUY_PRODUCT:WHEAT": {
+              "orders": 127,
+              "units": 150
+            },
+            "BUY_SEED:MELON": {
+              "orders": 18,
+              "units": 23
+            },
+            "BUY_SEED:WHEAT": {
+              "orders": 33,
+              "units": 59
+            },
+            "SELL:EGG": {
+              "orders": 29,
+              "units": 68
+            },
+            "SELL:FERTILIZER": {
+              "orders": 47,
+              "units": 86
+            },
+            "SELL:MELON": {
+              "orders": 11,
+              "units": 58
+            },
+            "SELL:MILK": {
+              "orders": 21,
+              "units": 72
+            },
+            "SELL:WHEAT": {
+              "orders": 9,
+              "units": 99
+            },
+            "SELL:WOOL": {
+              "orders": 22,
+              "units": 99
+            }
+          },
+          "max_hands_seen": 5,
+          "money": 43656.0,
+          "name": "Rajusah",
+          "plants": {},
+          "reward": 43656.0,
+          "seat": 1,
+          "tile_kinds": {
+            "COOP": 2,
+            "PASTURE": 5,
+            "WEED": 4
+          },
+          "unlocked": [
+            "NW"
+          ]
+        }
+      ],
+      "replay_file": "episode-113765357-replay.json",
+      "replay_sha256": "11322a7de396d84e5b1c80de67c55bac90821af45d992a05ff37794b77606fe7",
+      "seed": 0,
+      "source_action_replay": {
+        "checked": 719,
+        "matched": 719
+      },
+      "state": "DONE",
+      "steps": 720
+    },
+    {
+      "candidate_seat": 0,
+      "episode_id": 113766768,
+      "module_version": "1.32.7",
+      "opponent_land_buys": [
+        {
+          "day": 7,
+          "order": [
+            "BUY_LAND"
+          ],
+          "step": 170
+        },
+        {
+          "day": 10,
+          "order": [
+            "BUY_LAND"
+          ],
+          "step": 261
+        }
+      ],
+      "players": [
+        {
+          "action_counts": {
+            "farmer:BUILD_PASTURE": 1,
+            "farmer:CARE": 35,
+            "farmer:COLLECT_FERTILIZER": 12,
+            "farmer:DROP": 16,
+            "farmer:EAST": 90,
+            "farmer:FEED": 83,
+            "farmer:HARVEST": 19,
+            "farmer:NORTH": 133,
+            "farmer:PASS": 16,
+            "farmer:PICKUP": 30,
+            "farmer:PLACE": 1,
+            "farmer:PLANT": 15,
+            "farmer:SOUTH": 81,
+            "farmer:WATER": 59,
+            "farmer:WEST": 129,
+            "market:BUY_ANIMAL": 4,
+            "market:BUY_PRODUCT": 128,
+            "market:BUY_SEED": 54,
+            "market:HIRE": 148,
+            "market:SELL": 139,
+            "worker:BUILD_COOP": 2,
+            "worker:BUILD_PASTURE": 4,
+            "worker:CARE": 151,
+            "worker:COLLECT_FERTILIZER": 76,
+            "worker:DIG": 4,
+            "worker:DROP": 118,
+            "worker:EAST": 415,
+            "worker:FEED": 102,
+            "worker:HARVEST": 155,
+            "worker:NORTH": 645,
+            "worker:PASS": 163,
+            "worker:PICKUP": 182,
+            "worker:PLACE": 6,
+            "worker:PLANT": 57,
+            "worker:SOUTH": 360,
+            "worker:WATER": 265,
+            "worker:WEST": 694
+          },
+          "animals": {
+            "COW": 2,
+            "GOOSE": 2,
+            "SHEEP": 3
+          },
+          "hands": 5,
+          "market_quantities": {
+            "BUY_ANIMAL:COW": {
+              "orders": 1,
+              "units": 2
+            },
+            "BUY_ANIMAL:GOOSE": {
+              "orders": 2,
+              "units": 2
+            },
+            "BUY_ANIMAL:SHEEP": {
+              "orders": 1,
+              "units": 3
+            },
+            "BUY_PRODUCT:WHEAT": {
+              "orders": 128,
+              "units": 150
+            },
+            "BUY_SEED:MELON": {
+              "orders": 21,
+              "units": 25
+            },
+            "BUY_SEED:WHEAT": {
+              "orders": 33,
+              "units": 59
+            },
+            "SELL:EGG": {
+              "orders": 29,
+              "units": 68
+            },
+            "SELL:FERTILIZER": {
+              "orders": 47,
+              "units": 86
+            },
+            "SELL:MELON": {
+              "orders": 11,
+              "units": 58
+            },
+            "SELL:MILK": {
+              "orders": 21,
+              "units": 72
+            },
+            "SELL:WHEAT": {
+              "orders": 9,
+              "units": 99
+            },
+            "SELL:WOOL": {
+              "orders": 22,
+              "units": 99
+            }
+          },
+          "max_hands_seen": 5,
+          "money": 27581.0,
+          "name": "Rajusah",
+          "plants": {},
+          "reward": 27581.0,
+          "seat": 0,
+          "tile_kinds": {
+            "COOP": 2,
+            "PASTURE": 5,
+            "WEED": 4
+          },
+          "unlocked": [
+            "NW"
+          ]
+        },
+        {
+          "action_counts": {
+            "farmer:BUILD_PASTURE": 3,
+            "farmer:CARE": 8,
+            "farmer:COLLECT_FERTILIZER": 10,
+            "farmer:DROP": 3,
+            "farmer:EAST": 78,
+            "farmer:FEED": 112,
+            "farmer:FERTILIZE": 4,
+            "farmer:HARVEST": 15,
+            "farmer:NORTH": 81,
+            "farmer:PASS": 46,
+            "farmer:PICKUP": 177,
+            "farmer:PLACE": 3,
+            "farmer:PLANT": 7,
+            "farmer:SOUTH": 56,
+            "farmer:WATER": 32,
+            "farmer:WEST": 85,
+            "market:BUY_ANIMAL": 14,
+            "market:BUY_LAND": 2,
+            "market:BUY_PRODUCT": 279,
+            "market:BUY_SEED": 54,
+            "market:HIRE": 306,
+            "market:SELL": 545,
+            "worker:BUILD_PASTURE": 11,
+            "worker:CARE": 300,
+            "worker:COLLECT_FERTILIZER": 308,
+            "worker:DIG": 27,
+            "worker:DROP": 77,
+            "worker:EAST": 779,
+            "worker:FEED": 207,
+            "worker:FERTILIZE": 103,
+            "worker:HARVEST": 322,
+            "worker:NORTH": 1154,
+            "worker:PASS": 332,
+            "worker:PICKUP": 162,
+            "worker:PLACE": 24,
+            "worker:PLANT": 124,
+            "worker:SOUTH": 873,
+            "worker:WATER": 819,
+            "worker:WEST": 1013
+          },
+          "animals": {
+            "COW": 8,
+            "SHEEP": 5
+          },
+          "hands": 12,
+          "market_quantities": {
+            "BUY_ANIMAL:COW": {
+              "orders": 8,
+              "units": 8
+            },
+            "BUY_ANIMAL:SHEEP": {
+              "orders": 6,
+              "units": 6
+            },
+            "BUY_PRODUCT:WHEAT": {
+              "orders": 279,
+              "units": 967
+            },
+            "BUY_SEED:MELON": {
+              "orders": 9,
+              "units": 21
+            },
+            "BUY_SEED:STRAWBERRY": {
+              "orders": 25,
+              "units": 44
+            },
+            "BUY_SEED:WHEAT": {
+              "orders": 20,
+              "units": 66
+            },
+            "SELL:CARROT": {
+              "orders": 4,
+              "units": 13
+            },
+            "SELL:EGG": {
+              "orders": 1,
+              "units": 8
+            },
+            "SELL:FERTILIZER": {
+              "orders": 92,
+              "units": 445
+            },
+            "SELL:MELON": {
+              "orders": 40,
+              "units": 311
+            },
+            "SELL:MILK": {
+              "orders": 106,
+              "units": 979
+            },
+            "SELL:STRAWBERRY": {
+              "orders": 99,
+              "units": 1049
+            },
+            "SELL:TOMATO": {
+              "orders": 1,
+              "units": 4
+            },
+            "SELL:WHEAT": {
+              "orders": 135,
+              "units": 1131
+            },
+            "SELL:WOOL": {
+              "orders": 67,
+              "units": 469
+            }
+          },
+          "max_hands_seen": 12,
+          "money": 77863.0,
+          "name": "sunchang71",
+          "plants": {
+            "STRAWBERRY": 6,
+            "WHEAT": 1
+          },
+          "reward": 77863.0,
+          "seat": 1,
+          "tile_kinds": {
+            "PASTURE": 14,
+            "PLANT": 7,
+            "WEED": 19
+          },
+          "unlocked": [
+            "NW",
+            "NE",
+            "SW"
+          ]
+        }
+      ],
+      "replay_file": "episode-113766768-replay.json",
+      "replay_sha256": "9c351001d444f1a25013ba3e101c0a8e42d93f6c1aa11fc61ff02d8ac8a63b03",
+      "seed": 585360995,
+      "source_action_replay": {
+        "checked": 719,
+        "matched": 719
+      },
+      "state": "DONE",
+      "steps": 720
+    },
+    {
+      "candidate_seat": 1,
+      "episode_id": 113767976,
+      "module_version": "1.32.7",
+      "opponent_land_buys": [
+        {
+          "day": 6,
+          "order": [
+            "BUY_LAND"
+          ],
+          "step": 162
+        },
+        {
+          "day": 10,
+          "order": [
+            "BUY_LAND"
+          ],
+          "step": 242
+        }
+      ],
+      "players": [
+        {
+          "action_counts": {
+            "farmer:BUILD_PASTURE": 1,
+            "farmer:CARE": 36,
+            "farmer:COLLECT_FERTILIZER": 12,
+            "farmer:DROP": 17,
+            "farmer:EAST": 88,
+            "farmer:FEED": 83,
+            "farmer:HARVEST": 19,
+            "farmer:NORTH": 135,
+            "farmer:PASS": 16,
+            "farmer:PICKUP": 30,
+            "farmer:PLACE": 1,
+            "farmer:PLANT": 14,
+            "farmer:SOUTH": 83,
+            "farmer:WATER": 58,
+            "farmer:WEST": 127,
+            "market:BUY_ANIMAL": 4,
+            "market:BUY_PRODUCT": 128,
+            "market:BUY_SEED": 52,
+            "market:HIRE": 148,
+            "market:SELL": 139,
+            "worker:BUILD_COOP": 2,
+            "worker:BUILD_PASTURE": 4,
+            "worker:CARE": 150,
+            "worker:COLLECT_FERTILIZER": 75,
+            "worker:DIG": 5,
+            "worker:DROP": 117,
+            "worker:EAST": 418,
+            "worker:FEED": 102,
+            "worker:HARVEST": 155,
+            "worker:NORTH": 639,
+            "worker:PASS": 164,
+            "worker:PICKUP": 182,
+            "worker:PLACE": 6,
+            "worker:PLANT": 58,
+            "worker:SOUTH": 358,
+            "worker:WATER": 266,
+            "worker:WEST": 698
+          },
+          "animals": {
+            "COW": 2,
+            "GOOSE": 2,
+            "SHEEP": 3
+          },
+          "hands": 5,
+          "market_quantities": {
+            "BUY_ANIMAL:COW": {
+              "orders": 1,
+              "units": 2
+            },
+            "BUY_ANIMAL:GOOSE": {
+              "orders": 2,
+              "units": 2
+            },
+            "BUY_ANIMAL:SHEEP": {
+              "orders": 1,
+              "units": 3
+            },
+            "BUY_PRODUCT:WHEAT": {
+              "orders": 128,
+              "units": 150
+            },
+            "BUY_SEED:MELON": {
+              "orders": 19,
+              "units": 24
+            },
+            "BUY_SEED:WHEAT": {
+              "orders": 33,
+              "units": 59
+            },
+            "SELL:EGG": {
+              "orders": 29,
+              "units": 68
+            },
+            "SELL:FERTILIZER": {
+              "orders": 47,
+              "units": 86
+            },
+            "SELL:MELON": {
+              "orders": 11,
+              "units": 58
+            },
+            "SELL:MILK": {
+              "orders": 21,
+              "units": 72
+            },
+            "SELL:WHEAT": {
+              "orders": 9,
+              "units": 99
+            },
+            "SELL:WOOL": {
+              "orders": 22,
+              "units": 99
+            }
+          },
+          "max_hands_seen": 5,
+          "money": 54831.0,
+          "name": "Rajusah",
+          "plants": {},
+          "reward": 54831.0,
+          "seat": 1,
+          "tile_kinds": {
+            "COOP": 2,
+            "PASTURE": 5,
+            "WEED": 4
+          },
+          "unlocked": [
+            "NW"
+          ]
+        },
+        {
+          "action_counts": {
+            "farmer:BUILD_PASTURE": 3,
+            "farmer:CARE": 73,
+            "farmer:COLLECT_FERTILIZER": 74,
+            "farmer:DIG": 2,
+            "farmer:DROP": 6,
+            "farmer:EAST": 39,
+            "farmer:FEED": 63,
+            "farmer:HARVEST": 21,
+            "farmer:NORTH": 51,
+            "farmer:PASS": 163,
+            "farmer:PICKUP": 33,
+            "farmer:PLACE": 3,
+            "farmer:PLANT": 5,
+            "farmer:SOUTH": 56,
+            "farmer:WATER": 41,
+            "farmer:WEST": 87,
+            "market:BUY_ANIMAL": 8,
+            "market:BUY_LAND": 2,
+            "market:BUY_PRODUCT": 157,
+            "market:BUY_SEED": 63,
+            "market:HIRE": 240,
+            "market:SELL": 158,
+            "worker:BUILD_PASTURE": 12,
+            "worker:CARE": 219,
+            "worker:COLLECT_FERTILIZER": 233,
+            "worker:DIG": 43,
+            "worker:DROP": 43,
+            "worker:EAST": 573,
+            "worker:FEED": 236,
+            "worker:FERTILIZE": 71,
+            "worker:HARVEST": 365,
+            "worker:NORTH": 790,
+            "worker:PASS": 764,
+            "worker:PICKUP": 109,
+            "worker:PLACE": 11,
+            "worker:PLANT": 189,
+            "worker:SOUTH": 512,
+            "worker:WATER": 945,
+            "worker:WEST": 719
+          },
+          "animals": {
+            "COW": 4,
+            "SHEEP": 3
+          },
+          "hands": 0,
+          "market_quantities": {
+            "BUY_ANIMAL:COW": {
+              "orders": 6,
+              "units": 9
+            },
+            "BUY_ANIMAL:SHEEP": {
+              "orders": 2,
+              "units": 5
+            },
+            "BUY_PRODUCT:WHEAT": {
+              "orders": 157,
+              "units": 242
+            },
+            "BUY_SEED:MELON": {
+              "orders": 4,
+              "units": 21
+            },
+            "BUY_SEED:STRAWBERRY": {
+              "orders": 8,
+              "units": 37
+            },
+            "BUY_SEED:WHEAT": {
+              "orders": 51,
+              "units": 148
+            },
+            "SELL:FERTILIZER": {
+              "orders": 52,
+              "units": 265
+            },
+            "SELL:MELON": {
+              "orders": 16,
+              "units": 138
+            },
+            "SELL:MILK": {
+              "orders": 26,
+              "units": 292
+            },
+            "SELL:STRAWBERRY": {
+              "orders": 20,
+              "units": 482
+            },
+            "SELL:WHEAT": {
+              "orders": 29,
+              "units": 313
+            },
+            "SELL:WOOL": {
+              "orders": 15,
+              "units": 205
+            }
+          },
+          "max_hands_seen": 14,
+          "money": 106774.0,
+          "name": "Facouse",
+          "plants": {
+            "WHEAT": 7
+          },
+          "reward": 106774.0,
+          "seat": 0,
+          "tile_kinds": {
+            "PASTURE": 14,
+            "PLANT": 7,
+            "WEED": 37
+          },
+          "unlocked": [
+            "NW",
+            "NE",
+            "SW"
+          ]
+        }
+      ],
+      "replay_file": "episode-113767976-replay.json",
+      "replay_sha256": "8cd17674a9a87f6fb1ab4425640edf72706876f63d890682a112344ed334424e",
+      "seed": 182741576,
+      "source_action_replay": {
+        "checked": 719,
+        "matched": 719
+      },
+      "state": "DONE",
+      "steps": 720
+    },
+    {
+      "candidate_seat": 0,
+      "episode_id": 113769161,
+      "module_version": "1.32.7",
+      "opponent_land_buys": [],
+      "players": [
+        {
+          "action_counts": {
+            "farmer:BUILD_PASTURE": 1,
+            "farmer:CARE": 34,
+            "farmer:COLLECT_FERTILIZER": 10,
+            "farmer:DROP": 21,
+            "farmer:EAST": 92,
+            "farmer:FEED": 81,
+            "farmer:HARVEST": 26,
+            "farmer:NORTH": 130,
+            "farmer:PASS": 19,
+            "farmer:PICKUP": 29,
+            "farmer:PLACE": 1,
+            "farmer:PLANT": 11,
+            "farmer:SOUTH": 73,
+            "farmer:WATER": 51,
+            "farmer:WEST": 141,
+            "market:BUY_ANIMAL": 4,
+            "market:BUY_PRODUCT": 124,
+            "market:BUY_SEED": 56,
+            "market:HIRE": 148,
+            "market:SELL": 127,
+            "worker:BUILD_COOP": 2,
+            "worker:BUILD_PASTURE": 4,
+            "worker:CARE": 152,
+            "worker:COLLECT_FERTILIZER": 57,
+            "worker:DIG": 2,
+            "worker:DROP": 100,
+            "worker:EAST": 408,
+            "worker:FEED": 104,
+            "worker:HARVEST": 151,
+            "worker:NORTH": 669,
+            "worker:PASS": 169,
+            "worker:PICKUP": 180,
+            "worker:PLACE": 6,
+            "worker:PLANT": 68,
+            "worker:SOUTH": 325,
+            "worker:WATER": 288,
+            "worker:WEST": 714
+          },
+          "animals": {
+            "COW": 2,
+            "GOOSE": 2,
+            "SHEEP": 3
+          },
+          "hands": 5,
+          "market_quantities": {
+            "BUY_ANIMAL:COW": {
+              "orders": 1,
+              "units": 2
+            },
+            "BUY_ANIMAL:GOOSE": {
+              "orders": 2,
+              "units": 2
+            },
+            "BUY_ANIMAL:SHEEP": {
+              "orders": 1,
+              "units": 3
+            },
+            "BUY_PRODUCT:WHEAT": {
+              "orders": 124,
+              "units": 148
+            },
+            "BUY_SEED:MELON": {
+              "orders": 19,
+              "units": 22
+            },
+            "BUY_SEED:WHEAT": {
+              "orders": 37,
+              "units": 62
+            },
+            "SELL:EGG": {
+              "orders": 28,
+              "units": 68
+            },
+            "SELL:FERTILIZER": {
+              "orders": 34,
+              "units": 65
+            },
+            "SELL:MELON": {
+              "orders": 10,
+              "units": 53
+            },
+            "SELL:MILK": {
+              "orders": 20,
+              "units": 72
+            },
+            "SELL:WHEAT": {
+              "orders": 12,
+              "units": 115
+            },
+            "SELL:WOOL": {
+              "orders": 23,
+              "units": 99
+            }
+          },
+          "max_hands_seen": 5,
+          "money": 57524.0,
+          "name": "Rajusah",
+          "plants": {},
+          "reward": 57524.0,
+          "seat": 0,
+          "tile_kinds": {
+            "COOP": 2,
+            "PASTURE": 5,
+            "WEED": 7
+          },
+          "unlocked": [
+            "NW"
+          ]
+        },
+        {
+          "action_counts": {
+            "farmer:EAST": 45,
+            "farmer:HARVEST": 36,
+            "farmer:NORTH": 125,
+            "farmer:PASS": 35,
+            "farmer:PLANT": 31,
+            "farmer:SOUTH": 85,
+            "farmer:WATER": 243,
+            "farmer:WEST": 120,
+            "market:BUY_ANIMAL": 1,
+            "market:BUY_PRODUCT": 28,
+            "market:BUY_SEED": 33,
+            "market:HIRE": 29,
+            "market:SELL": 70,
+            "worker:BUILD_PASTURE": 1,
+            "worker:COLLECT_FERTILIZER": 28,
+            "worker:DROP": 2,
+            "worker:EAST": 2,
+            "worker:FEED": 28,
+            "worker:HARVEST": 2,
+            "worker:NORTH": 1,
+            "worker:PASS": 533,
+            "worker:PICKUP": 29,
+            "worker:PLACE": 1,
+            "worker:SOUTH": 1,
+            "worker:WEST": 39
+          },
+          "animals": {
+            "COW": 1
+          },
+          "hands": 0,
+          "market_quantities": {
+            "BUY_ANIMAL:COW": {
+              "orders": 1,
+              "units": 1
+            },
+            "BUY_PRODUCT:WHEAT": {
+              "orders": 28,
+              "units": 28
+            },
+            "BUY_SEED:CARROT": {
+              "orders": 4,
+              "units": 4
+            },
+            "BUY_SEED:MELON": {
+              "orders": 21,
+              "units": 21
+            },
+            "BUY_SEED:STRAWBERRY": {
+              "orders": 4,
+              "units": 4
+            },
+            "BUY_SEED:WHEAT": {
+              "orders": 4,
+              "units": 4
+            },
+            "SELL:CARROT": {
+              "orders": 1,
+              "units": 3
+            },
+            "SELL:FERTILIZER": {
+              "orders": 28,
+              "units": 28
+            },
+            "SELL:MELON": {
+              "orders": 7,
+              "units": 94
+            },
+            "SELL:MILK": {
+              "orders": 2,
+              "units": 11
+            },
+            "SELL:STRAWBERRY": {
+              "orders": 4,
+              "units": 12
+            },
+            "SELL:WHEAT": {
+              "orders": 28,
+              "units": 30
+            }
+          },
+          "max_hands_seen": 1,
+          "money": 26384.0,
+          "name": "Peter Mugoya",
+          "plants": {},
+          "reward": 26384.0,
+          "seat": 1,
+          "tile_kinds": {
+            "PASTURE": 1,
+            "WEED": 9
+          },
+          "unlocked": [
+            "NW"
+          ]
+        }
+      ],
+      "replay_file": "episode-113769161-replay.json",
+      "replay_sha256": "24b1372b8fd9e668f37b683fd172bee044b3a3280db2e4c090e0330b76545f18",
+      "seed": 2012648151,
+      "source_action_replay": {
+        "checked": 719,
+        "matched": 719
+      },
+      "state": "DONE",
+      "steps": 720
+    },
+    {
+      "candidate_seat": 0,
+      "episode_id": 113770383,
+      "module_version": "1.32.7",
+      "opponent_land_buys": [],
+      "players": [
+        {
+          "action_counts": {
+            "farmer:BUILD_PASTURE": 1,
+            "farmer:CARE": 34,
+            "farmer:COLLECT_FERTILIZER": 10,
+            "farmer:DROP": 21,
+            "farmer:EAST": 92,
+            "farmer:FEED": 81,
+            "farmer:HARVEST": 26,
+            "farmer:NORTH": 130,
+            "farmer:PASS": 19,
+            "farmer:PICKUP": 29,
+            "farmer:PLACE": 1,
+            "farmer:PLANT": 11,
+            "farmer:SOUTH": 73,
+            "farmer:WATER": 51,
+            "farmer:WEST": 141,
+            "market:BUY_ANIMAL": 4,
+            "market:BUY_PRODUCT": 124,
+            "market:BUY_SEED": 56,
+            "market:HIRE": 148,
+            "market:SELL": 127,
+            "worker:BUILD_COOP": 2,
+            "worker:BUILD_PASTURE": 4,
+            "worker:CARE": 152,
+            "worker:COLLECT_FERTILIZER": 57,
+            "worker:DIG": 2,
+            "worker:DROP": 100,
+            "worker:EAST": 408,
+            "worker:FEED": 104,
+            "worker:HARVEST": 151,
+            "worker:NORTH": 669,
+            "worker:PASS": 169,
+            "worker:PICKUP": 180,
+            "worker:PLACE": 6,
+            "worker:PLANT": 68,
+            "worker:SOUTH": 325,
+            "worker:WATER": 288,
+            "worker:WEST": 714
+          },
+          "animals": {
+            "COW": 2,
+            "GOOSE": 2,
+            "SHEEP": 3
+          },
+          "hands": 5,
+          "market_quantities": {
+            "BUY_ANIMAL:COW": {
+              "orders": 1,
+              "units": 2
+            },
+            "BUY_ANIMAL:GOOSE": {
+              "orders": 2,
+              "units": 2
+            },
+            "BUY_ANIMAL:SHEEP": {
+              "orders": 1,
+              "units": 3
+            },
+            "BUY_PRODUCT:WHEAT": {
+              "orders": 124,
+              "units": 148
+            },
+            "BUY_SEED:MELON": {
+              "orders": 19,
+              "units": 22
+            },
+            "BUY_SEED:WHEAT": {
+              "orders": 37,
+              "units": 62
+            },
+            "SELL:EGG": {
+              "orders": 28,
+              "units": 68
+            },
+            "SELL:FERTILIZER": {
+              "orders": 34,
+              "units": 65
+            },
+            "SELL:MELON": {
+              "orders": 10,
+              "units": 53
+            },
+            "SELL:MILK": {
+              "orders": 20,
+              "units": 72
+            },
+            "SELL:WHEAT": {
+              "orders": 12,
+              "units": 115
+            },
+            "SELL:WOOL": {
+              "orders": 23,
+              "units": 99
+            }
+          },
+          "max_hands_seen": 5,
+          "money": 37209.0,
+          "name": "Rajusah",
+          "plants": {},
+          "reward": 37209.0,
+          "seat": 0,
+          "tile_kinds": {
+            "COOP": 2,
+            "PASTURE": 5,
+            "WEED": 7
+          },
+          "unlocked": [
+            "NW"
+          ]
+        },
+        {
+          "action_counts": {
+            "farmer:CARE": 46,
+            "farmer:COLLECT_FERTILIZER": 17,
+            "farmer:DIG": 3,
+            "farmer:DROP": 1,
+            "farmer:EAST": 30,
+            "farmer:FEED": 31,
+            "farmer:FERTILIZE": 17,
+            "farmer:HARVEST": 33,
+            "farmer:NORTH": 118,
+            "farmer:PASS": 31,
+            "farmer:PICKUP": 66,
+            "farmer:PLACE": 8,
+            "farmer:PLANT": 13,
+            "farmer:SOUTH": 49,
+            "farmer:WATER": 143,
+            "farmer:WEST": 114,
+            "market:BUY_ANIMAL": 3,
+            "market:BUY_PRODUCT": 126,
+            "market:BUY_SEED": 14,
+            "market:HIRE": 128,
+            "market:SELL": 39,
+            "worker:BUILD_PASTURE": 11,
+            "worker:CARE": 105,
+            "worker:COLLECT_FERTILIZER": 127,
+            "worker:DIG": 12,
+            "worker:EAST": 277,
+            "worker:FEED": 100,
+            "worker:FERTILIZE": 31,
+            "worker:HARVEST": 93,
+            "worker:NORTH": 526,
+            "worker:PASS": 248,
+            "worker:PICKUP": 143,
+            "worker:PLACE": 1,
+            "worker:PLANT": 38,
+            "worker:SOUTH": 263,
+            "worker:WATER": 392,
+            "worker:WEST": 573
+          },
+          "animals": {
+            "COW": 5,
+            "SHEEP": 4
+          },
+          "hands": 4,
+          "market_quantities": {
+            "BUY_ANIMAL:COW": {
+              "orders": 2,
+              "units": 5
+            },
+            "BUY_ANIMAL:SHEEP": {
+              "orders": 1,
+              "units": 4
+            },
+            "BUY_PRODUCT:WHEAT": {
+              "orders": 126,
+              "units": 155
+            },
+            "BUY_SEED:CARROT": {
+              "orders": 3,
+              "units": 3
+            },
+            "BUY_SEED:MELON": {
+              "orders": 6,
+              "units": 41
+            },
+            "BUY_SEED:STRAWBERRY": {
+              "orders": 2,
+              "units": 20
+            },
+            "BUY_SEED:WHEAT": {
+              "orders": 3,
+              "units": 8
+            },
+            "SELL:CARROT": {
+              "orders": 1,
+              "units": 6
+            },
+            "SELL:FERTILIZER": {
+              "orders": 2,
+              "units": 90
+            },
+            "SELL:MELON": {
+              "orders": 4,
+              "units": 122
+            },
+            "SELL:MILK": {
+              "orders": 7,
+              "units": 91
+            },
+            "SELL:STRAWBERRY": {
+              "orders": 5,
+              "units": 75
+            },
+            "SELL:WHEAT": {
+              "orders": 15,
+              "units": 62
+            },
+            "SELL:WOOL": {
+              "orders": 5,
+              "units": 28
+            }
+          },
+          "max_hands_seen": 5,
+          "money": 42306.0,
+          "name": "nasa Furiy",
+          "plants": {},
+          "reward": 42306.0,
+          "seat": 1,
+          "tile_kinds": {
+            "PASTURE": 9
+          },
+          "unlocked": [
+            "NW"
+          ]
+        }
+      ],
+      "replay_file": "episode-113770383-replay.json",
+      "replay_sha256": "6b66204b20507e2d733d6fe7a7c869c2fe209aca1e56c4c1788a398b58088d7d",
+      "seed": 267154532,
+      "source_action_replay": {
+        "checked": 719,
+        "matched": 719
+      },
+      "state": "DONE",
+      "steps": 720
+    },
+    {
+      "candidate_seat": 0,
+      "episode_id": 113771594,
+      "module_version": "1.32.7",
+      "opponent_land_buys": [
+        {
+          "day": 11,
+          "order": [
+            "BUY_LAND"
+          ],
+          "step": 267
+        },
+        {
+          "day": 18,
+          "order": [
+            "BUY_LAND"
+          ],
+          "step": 434
+        }
+      ],
+      "players": [
+        {
+          "action_counts": {
+            "farmer:BUILD_PASTURE": 1,
+            "farmer:CARE": 34,
+            "farmer:COLLECT_FERTILIZER": 10,
+            "farmer:DROP": 21,
+            "farmer:EAST": 92,
+            "farmer:FEED": 81,
+            "farmer:HARVEST": 26,
+            "farmer:NORTH": 130,
+            "farmer:PASS": 19,
+            "farmer:PICKUP": 29,
+            "farmer:PLACE": 1,
+            "farmer:PLANT": 11,
+            "farmer:SOUTH": 73,
+            "farmer:WATER": 51,
+            "farmer:WEST": 141,
+            "market:BUY_ANIMAL": 4,
+            "market:BUY_PRODUCT": 124,
+            "market:BUY_SEED": 56,
+            "market:HIRE": 148,
+            "market:SELL": 127,
+            "worker:BUILD_COOP": 2,
+            "worker:BUILD_PASTURE": 4,
+            "worker:CARE": 152,
+            "worker:COLLECT_FERTILIZER": 57,
+            "worker:DIG": 2,
+            "worker:DROP": 100,
+            "worker:EAST": 408,
+            "worker:FEED": 104,
+            "worker:HARVEST": 151,
+            "worker:NORTH": 669,
+            "worker:PASS": 169,
+            "worker:PICKUP": 180,
+            "worker:PLACE": 6,
+            "worker:PLANT": 68,
+            "worker:SOUTH": 325,
+            "worker:WATER": 288,
+            "worker:WEST": 714
+          },
+          "animals": {
+            "COW": 2,
+            "GOOSE": 2,
+            "SHEEP": 3
+          },
+          "hands": 5,
+          "market_quantities": {
+            "BUY_ANIMAL:COW": {
+              "orders": 1,
+              "units": 2
+            },
+            "BUY_ANIMAL:GOOSE": {
+              "orders": 2,
+              "units": 2
+            },
+            "BUY_ANIMAL:SHEEP": {
+              "orders": 1,
+              "units": 3
+            },
+            "BUY_PRODUCT:WHEAT": {
+              "orders": 124,
+              "units": 148
+            },
+            "BUY_SEED:MELON": {
+              "orders": 19,
+              "units": 22
+            },
+            "BUY_SEED:WHEAT": {
+              "orders": 37,
+              "units": 62
+            },
+            "SELL:EGG": {
+              "orders": 28,
+              "units": 68
+            },
+            "SELL:FERTILIZER": {
+              "orders": 34,
+              "units": 65
+            },
+            "SELL:MELON": {
+              "orders": 10,
+              "units": 53
+            },
+            "SELL:MILK": {
+              "orders": 20,
+              "units": 72
+            },
+            "SELL:WHEAT": {
+              "orders": 12,
+              "units": 115
+            },
+            "SELL:WOOL": {
+              "orders": 23,
+              "units": 99
+            }
+          },
+          "max_hands_seen": 5,
+          "money": 48603.0,
+          "name": "Rajusah",
+          "plants": {},
+          "reward": 48603.0,
+          "seat": 0,
+          "tile_kinds": {
+            "COOP": 2,
+            "PASTURE": 5,
+            "WEED": 7
+          },
+          "unlocked": [
+            "NW"
+          ]
+        },
+        {
+          "action_counts": {
+            "farmer:BUILD_PASTURE": 1,
+            "farmer:CARE": 71,
+            "farmer:COLLECT_FERTILIZER": 72,
+            "farmer:DIG": 5,
+            "farmer:EAST": 39,
+            "farmer:FEED": 67,
+            "farmer:FERTILIZE": 6,
+            "farmer:HARVEST": 49,
+            "farmer:NORTH": 112,
+            "farmer:PASS": 4,
+            "farmer:PICKUP": 31,
+            "farmer:PLACE": 4,
+            "farmer:PLANT": 35,
+            "farmer:SOUTH": 18,
+            "farmer:WATER": 116,
+            "farmer:WEST": 90,
+            "market:BUY_ANIMAL": 4,
+            "market:BUY_LAND": 2,
+            "market:BUY_PRODUCT": 3,
+            "market:BUY_SEED": 138,
+            "market:HIRE": 190,
+            "market:SELL": 59,
+            "worker:BUILD_PASTURE": 13,
+            "worker:CARE": 175,
+            "worker:COLLECT_FERTILIZER": 134,
+            "worker:DIG": 49,
+            "worker:EAST": 502,
+            "worker:FEED": 111,
+            "worker:FERTILIZE": 47,
+            "worker:HARVEST": 261,
+            "worker:NORTH": 690,
+            "worker:PASS": 178,
+            "worker:PICKUP": 277,
+            "worker:PLANT": 198,
+            "worker:SOUTH": 222,
+            "worker:WATER": 842,
+            "worker:WEST": 647
+          },
+          "animals": {
+            "COW": 4
+          },
+          "hands": 8,
+          "market_quantities": {
+            "BUY_ANIMAL:COW": {
+              "orders": 4,
+              "units": 4
+            },
+            "BUY_PRODUCT:WHEAT": {
+              "orders": 3,
+              "units": 30
+            },
+            "BUY_SEED:MELON": {
+              "orders": 22,
+              "units": 31
+            },
+            "BUY_SEED:STRAWBERRY": {
+              "orders": 11,
+              "units": 49
+            },
+            "BUY_SEED:WHEAT": {
+              "orders": 105,
+              "units": 132
+            },
+            "SELL:MELON": {
+              "orders": 22,
+              "units": 96
+            },
+            "SELL:MILK": {
+              "orders": 20,
+              "units": 129
+            },
+            "SELL:STRAWBERRY": {
+              "orders": 9,
+              "units": 32
+            },
+            "SELL:WHEAT": {
+              "orders": 8,
+              "units": 60
+            }
+          },
+          "max_hands_seen": 8,
+          "money": 48174.0,
+          "name": "Mohamed Judi",
+          "plants": {
+            "STRAWBERRY": 13,
+            "WHEAT": 7
+          },
+          "reward": 48174.0,
+          "seat": 1,
+          "tile_kinds": {
+            "PASTURE": 5,
+            "PLANT": 20,
+            "WEED": 2
+          },
+          "unlocked": [
+            "NW",
+            "NE",
+            "SW"
+          ]
+        }
+      ],
+      "replay_file": "episode-113771594-replay.json",
+      "replay_sha256": "f746859ab04ff6a4959b2cf7411e25906a74458047deb6208a033859c81143cf",
+      "seed": 1764493568,
+      "source_action_replay": {
+        "checked": 719,
+        "matched": 719
+      },
+      "state": "DONE",
+      "steps": 720
+    }
+  ],
+  "module_versions": [
+    "1.32.7"
+  ],
+  "public_matches": 5,
+  "source_sha256": "d82c430c9562b6b213b92899d4df59aa9b9b58bcc8bdf3522b9e819da03e083d",
+  "submission_id": 56583862,
+  "submission_public_score_initial_observation": 506.5,
+  "submission_public_score_latest": 492.1
+}

@@ -1,0 +1,45 @@
+{
+  "created_at": "2026-09-26T00:00:00Z",
+  "purpose": "Predeclared baseline screen for v58 validation protocol; this is not final holdout evidence.",
+  "candidate": "experiments/v57_broad/v57_reset_candidate.py",
+  "candidate_sha256": "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+  "seeds": [92900, 92901, 92902, 92903, 92904],
+  "seats": [0, 1],
+  "repeats": 1,
+  "opponents": {
+    "v48": "experiments/v48_agent.py",
+    "v50": "experiments/v50_agent.py",
+    "v51": "experiments/v51_agent.py",
+    "v52": "experiments/v52_agent.py",
+    "v53": "experiments/v53_agent.py",
+    "v54": "agents/v54_agent.py",
+    "v55": "agents/v55_agent.py",
+    "v56": "agents/v56_agent.py",
+    "boey_replay_proxy": "experiments/boey_agent.py",
+    "ernnn_backbone": "experiments/ernnn_agent.py",
+    "lizs_backbone": "experiments/lizs_agent.py"
+  },
+  "reserved_final_candidate_seed_range": "93000-93049",
+  "reserved_final_candidate_design": "50 fresh seeds x 2 seats x 11 opponents = 1100 matches for the exact final artifact, after code freeze; no code tuning or opponent/seed changes during this run.",
+  "requested_100_percent_sweep": {
+    "opponents": ["v48", "v50", "v51", "v52", "v53", "v54", "v55", "v56"],
+    "games_per_opponent": 10,
+    "design": "Five seeds, both seats, one game per seed-seat combination.",
+    "criterion": "10/10 strict wins against each of the eight historical agents, reported separately from the broader readiness gate."
+  },
+  "selection_rules": [
+    "This screen is for protocol and baseline characterization only; it cannot be used as final candidate holdout evidence.",
+    "Use all listed seeds, both seats, and every listed opponent. Do not remove games or substitute seeds based on outcomes.",
+    "A failed or timed-out match is an error and fails the error gate; document reruns separately and retain the original record.",
+    "Keep paired seed blocks intact for uncertainty calculations.",
+    "Do not modify agents/main.py or submit to Kaggle."
+  ],
+  "final_readiness_gate": {
+    "zero_execution_errors": true,
+    "minimum_strict_win_rate": 0.95,
+    "minimum_each_opponent_win_rate": 0.90,
+    "minimum_each_seat_win_rate": 0.90,
+    "minimum_seed_block_bootstrap_lower_95_percent": 0.90,
+    "top_ten_claim": "Not inferable from offline games alone; require current official leaderboard evidence from an authorized submission plus head-to-head public replay evidence against current top entries."
+  }
+}

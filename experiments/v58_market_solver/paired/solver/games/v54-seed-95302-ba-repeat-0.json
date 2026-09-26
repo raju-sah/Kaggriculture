@@ -1,0 +1,67 @@
+{
+  "action_counts": [
+    null,
+    null
+  ],
+  "agents": [
+    {
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v54_agent.py",
+      "sha256": "4e3db1b153262b9dca86d3731b158e27bd7b782691ade2beaca6f2f379ff9f99"
+    },
+    {
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_market_solver/market_solver_agent.py",
+      "sha256": "a70f853039fd11b8e736979240e221aa3077874a20998e8c5cd57b0e23003225"
+    }
+  ],
+  "candidate_error": true,
+  "candidate_result": "loss",
+  "candidate_seat": 1,
+  "candidate_status": "ERROR",
+  "coin_difference_seat_0": null,
+  "environment": {
+    "engine_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/envs/kaggriculture/kaggriculture.py",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "episode_steps": 720,
+    "name": "kaggriculture",
+    "package": "kaggle-environments",
+    "package_version": "1.32.7",
+    "python_version": "3.12.3",
+    "specification_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/envs/kaggriculture/kaggriculture.json",
+    "specification_sha256": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867"
+  },
+  "error": {
+    "message": "Invalid raw Python: NameError(\"name '__file__' is not defined\")",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/agent.py\", line 57, in get_last_callable\n    exec(code_object, env)\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_market_solver/market_solver_agent.py\", line 9, in <module>\n    ROOT = Path(__file__).resolve().parents[2]\n                ^^^^^^^^\nNameError: name '__file__' is not defined. Did you mean: '__name__'?\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/simulation/match_worker.py\", line 99, in run_match\n    environment.run([str(path) for path in absolute_agents])\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/core.py\", line 327, in run\n    actions, logs = runner.act()\n                    ^^^^^^^^^^^^\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/core.py\", line 745, in act\n    results = list(map(act_agent, act_args))\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/core.py\", line 180, in act_agent\n    return agent.act(state[\"observation\"])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/agent.py\", line 180, in act\n    action = self.agent(*args)\n             ^^^^^^^^^^^^^^^^^\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/agent.py\", line 149, in callable_agent\n    agent = get_last_callable(raw_agent, path=raw) or raw_agent\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/agent.py\", line 72, in get_last_callable\n    raise InvalidArgument(\"Invalid raw Python: \" + repr(e))\nkaggle_environments.errors.InvalidArgument: Invalid raw Python: NameError(\"name '__file__' is not defined\")\n",
+    "type": "InvalidArgument"
+  },
+  "failed_agent_seat": 1,
+  "final_coins": [
+    null,
+    null
+  ],
+  "game_id": "v54-seed-95302-ba-repeat-0",
+  "infrastructure_error": false,
+  "log_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_market_solver/paired/solver/logs/v54-seed-95302-ba-repeat-0.log",
+  "ok": false,
+  "opponent": "v54",
+  "opponent_error": false,
+  "opponent_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v54_agent.py",
+  "opponent_seat": 0,
+  "opponent_status": "ERROR",
+  "raw_replay_sha256": null,
+  "repeat": 0,
+  "replay_path": null,
+  "replay_retained": false,
+  "replay_sha256": null,
+  "resolved_seed": null,
+  "runtime_seconds": 0.5724496559996624,
+  "seed": 95302,
+  "statuses": [
+    "ERROR",
+    "ERROR"
+  ],
+  "swapped": true,
+  "timed_out": false,
+  "winner_seat": null,
+  "worker_exit_code": 1
+}

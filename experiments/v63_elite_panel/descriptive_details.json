@@ -1,0 +1,207 @@
+{
+  "most_common_shop_sets_day12": [
+    {
+      "n_games": 3,
+      "shop_set": [
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "n_games": 2,
+      "shop_set": [
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "n_games": 2,
+      "shop_set": [
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "n_games": 2,
+      "shop_set": [
+        "BRUNCH_SPOT",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "n_games": 2,
+      "shop_set": [
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "n_games": 1,
+      "shop_set": [
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "n_games": 1,
+      "shop_set": [
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "n_games": 1,
+      "shop_set": [
+        "ICE_CREAM_SHOP",
+        "PET_CAFE"
+      ]
+    },
+    {
+      "n_games": 1,
+      "shop_set": [
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "n_games": 1,
+      "shop_set": [
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "PIZZA_SHOP"
+      ]
+    }
+  ],
+  "most_common_shop_sets_day6": [
+    {
+      "n_games": 4,
+      "shop_set": [
+        "PET_CAFE",
+        "PIZZA_SHOP"
+      ]
+    },
+    {
+      "n_games": 4,
+      "shop_set": [
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP"
+      ]
+    },
+    {
+      "n_games": 3,
+      "shop_set": [
+        "PIZZA_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "n_games": 3,
+      "shop_set": [
+        "FARMERS_MARKET",
+        "PET_CAFE"
+      ]
+    },
+    {
+      "n_games": 3,
+      "shop_set": [
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    {
+      "n_games": 3,
+      "shop_set": [
+        "ICE_CREAM_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "n_games": 3,
+      "shop_set": [
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ]
+    },
+    {
+      "n_games": 2,
+      "shop_set": [
+        "PIZZA_SHOP"
+      ]
+    },
+    {
+      "n_games": 2,
+      "shop_set": [
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ]
+    },
+    {
+      "n_games": 2,
+      "shop_set": [
+        "BRUNCH_SPOT",
+        "YARN_STORE"
+      ]
+    }
+  ],
+  "product_net_sale_less_direct_product_purchase_winner_minus_loser": {
+    "CARROT": {
+      "median": -814.0,
+      "n_pairs": 50,
+      "positive_pairs": 19
+    },
+    "EGG": {
+      "median": 985,
+      "n_pairs": 47,
+      "positive_pairs": 28
+    },
+    "FERTILIZER": {
+      "median": 333.5,
+      "n_pairs": 50,
+      "positive_pairs": 27
+    },
+    "MELON": {
+      "median": 196.5,
+      "n_pairs": 50,
+      "positive_pairs": 31
+    },
+    "MILK": {
+      "median": 2183.5,
+      "n_pairs": 50,
+      "positive_pairs": 37
+    },
+    "STRAWBERRY": {
+      "median": 1575.5,
+      "n_pairs": 50,
+      "positive_pairs": 33
+    },
+    "TOMATO": {
+      "median": -1157,
+      "n_pairs": 43,
+      "positive_pairs": 15
+    },
+    "WHEAT": {
+      "median": 1119.5,
+      "n_pairs": 50,
+      "positive_pairs": 32
+    },
+    "WOOL": {
+      "median": 229.0,
+      "n_pairs": 50,
+      "positive_pairs": 34
+    }
+  },
+  "unique_shop_set_regimes_by_day": {
+    "12": 44,
+    "20": 45,
+    "6": 25
+  }
+}

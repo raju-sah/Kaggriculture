@@ -1,0 +1,775 @@
+{
+  "candidate_sha256": "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+  "distinct_replay_count": 58,
+  "selected_games": [
+    {
+      "agent_hashes": [
+        "d9e9670921b62afedfa8cbc7086d2a2ec19e153ee26006cef477eadd462bd19c",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v56-seed-92718-ba-repeat-0",
+      "game_record": "experiments/v57_broad/diagnostics/reset/games/v56-seed-92718-ba-repeat-0.json",
+      "opponent": "v56",
+      "replay_path": "experiments/v57_broad/diagnostics/reset/replays/v56-seed-92718-ba-repeat-0.json",
+      "replay_sha256": "8470b1580f0f418ffae06857a0b436ffbdbdcd73c2240aab5d3c1539c11fd3c7",
+      "reset_seat": 1,
+      "seed": 92718
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b"
+      ],
+      "game_id": "v50-seed-92802-ab-repeat-0",
+      "game_record": "experiments/v58_planner_eval/model_based/spent_seed_92802/reset/games/v50-seed-92802-ab-repeat-0.json",
+      "opponent": "v50",
+      "replay_path": "experiments/v58_planner_eval/model_based/spent_seed_92802/reset/replays/v50-seed-92802-ab-repeat-0.json",
+      "replay_sha256": "9021876d26b46ee5455b061f8a6eafe2be521b8f68526b1067ba02a115fd6a71",
+      "reset_seat": 0,
+      "seed": 92802
+    },
+    {
+      "agent_hashes": [
+        "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v50-seed-92802-ba-repeat-0",
+      "game_record": "experiments/v58_planner_eval/model_based/spent_seed_92802/reset/games/v50-seed-92802-ba-repeat-0.json",
+      "opponent": "v50",
+      "replay_path": "experiments/v58_planner_eval/model_based/spent_seed_92802/reset/replays/v50-seed-92802-ba-repeat-0.json",
+      "replay_sha256": "8de781caedd9736286ac621c678250b5f121e615cc19171acb57618c1cac3ea2",
+      "reset_seat": 1,
+      "seed": 92802
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "274f5913c4c4787cf825d10fde4de65f79b61d25c764aa6761d36d0840c04eb4"
+      ],
+      "game_id": "v51-seed-92804-ab-repeat-0",
+      "game_record": "experiments/v58_diagnostics/games/v51-seed-92804-ab-repeat-0.json",
+      "opponent": "v51",
+      "replay_path": "experiments/v58_diagnostics/replays/v51-seed-92804-ab-repeat-0.json",
+      "replay_sha256": "6d385c49caa3776ebbf6cd812a998333b0e84d9c5c4989c89589d491924d1d4d",
+      "reset_seat": 0,
+      "seed": 92804
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a"
+      ],
+      "game_id": "v48-seed-92900-ab-repeat-0",
+      "game_record": "experiments/v58_policy/baseline_vs_v48/games/v48-seed-92900-ab-repeat-0.json",
+      "opponent": "v48",
+      "replay_path": "experiments/v58_policy/baseline_vs_v48/replays/v48-seed-92900-ab-repeat-0.json",
+      "replay_sha256": "5b3bc7d3522bfa7ef098a50869e0facbc3a21dfe1975148ea92f429c2539f3a2",
+      "reset_seat": 0,
+      "seed": 92900
+    },
+    {
+      "agent_hashes": [
+        "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v48-seed-92900-ba-repeat-0",
+      "game_record": "experiments/v58_policy/baseline_vs_v48/games/v48-seed-92900-ba-repeat-0.json",
+      "opponent": "v48",
+      "replay_path": "experiments/v58_policy/baseline_vs_v48/replays/v48-seed-92900-ba-repeat-0.json",
+      "replay_sha256": "e71fb06f56945c325035e9aa27454df7302ed3fb01efb438a640fd4dd18b4d1c",
+      "reset_seat": 1,
+      "seed": 92900
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a"
+      ],
+      "game_id": "v48-seed-92901-ab-repeat-0",
+      "game_record": "experiments/v58_policy/baseline_vs_v48/games/v48-seed-92901-ab-repeat-0.json",
+      "opponent": "v48",
+      "replay_path": "experiments/v58_policy/baseline_vs_v48/replays/v48-seed-92901-ab-repeat-0.json",
+      "replay_sha256": "e903db385426ff1f3d87ac376fcb120c212ce6f4499d4d2c4f9f9f0931aa3ce8",
+      "reset_seat": 0,
+      "seed": 92901
+    },
+    {
+      "agent_hashes": [
+        "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v48-seed-92901-ba-repeat-0",
+      "game_record": "experiments/v58_policy/baseline_vs_v48/games/v48-seed-92901-ba-repeat-0.json",
+      "opponent": "v48",
+      "replay_path": "experiments/v58_policy/baseline_vs_v48/replays/v48-seed-92901-ba-repeat-0.json",
+      "replay_sha256": "6f1a7628c4d214671492a7d7fc2a663b9e3a5766d01a66def4cfbbfa5beeb5e5",
+      "reset_seat": 1,
+      "seed": 92901
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "a53025fce6e901df0083d3115c8e422d77c8c86fac86be99da3e4725b6a50e5b"
+      ],
+      "game_id": "v52-seed-92902-ab-repeat-0",
+      "game_record": "experiments/runs/v58_validation_baseline/games/v52-seed-92902-ab-repeat-0.json",
+      "opponent": "v52",
+      "replay_path": "experiments/runs/v58_validation_baseline/replays/v52-seed-92902-ab-repeat-0.json",
+      "replay_sha256": "4f38436db301b6266148544374b56293d7a16e4d27c8b90935de538960ff1114",
+      "reset_seat": 0,
+      "seed": 92902
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a"
+      ],
+      "game_id": "v48-seed-93200-ab-repeat-0",
+      "game_record": "experiments/v58_policy/frozen_reset/games/v48-seed-93200-ab-repeat-0.json",
+      "opponent": "v48",
+      "replay_path": "experiments/v58_policy/frozen_reset/replays/v48-seed-93200-ab-repeat-0.json",
+      "replay_sha256": "0ffd0b8f75dbfd9f593374bca044f092934438e34ce1f3264e4f65ce87abc9ee",
+      "reset_seat": 0,
+      "seed": 93200
+    },
+    {
+      "agent_hashes": [
+        "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v48-seed-93200-ba-repeat-0",
+      "game_record": "experiments/v58_policy/frozen_reset/games/v48-seed-93200-ba-repeat-0.json",
+      "opponent": "v48",
+      "replay_path": "experiments/v58_policy/frozen_reset/replays/v48-seed-93200-ba-repeat-0.json",
+      "replay_sha256": "357110b1e4d7bb66c5ba00a0593ad4af7762f9ff844ff43549af3eb038a66c82",
+      "reset_seat": 1,
+      "seed": 93200
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a"
+      ],
+      "game_id": "v48-seed-93201-ab-repeat-0",
+      "game_record": "experiments/v58_policy/frozen_reset/games/v48-seed-93201-ab-repeat-0.json",
+      "opponent": "v48",
+      "replay_path": "experiments/v58_policy/frozen_reset/replays/v48-seed-93201-ab-repeat-0.json",
+      "replay_sha256": "990c3708dd23de6c3017a7ecfb5222e5f52943aabeec1923ad0b3d0f500fc6b2",
+      "reset_seat": 0,
+      "seed": 93201
+    },
+    {
+      "agent_hashes": [
+        "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v48-seed-93201-ba-repeat-0",
+      "game_record": "experiments/v58_policy/frozen_reset/games/v48-seed-93201-ba-repeat-0.json",
+      "opponent": "v48",
+      "replay_path": "experiments/v58_policy/frozen_reset/replays/v48-seed-93201-ba-repeat-0.json",
+      "replay_sha256": "03ae4b18d969e085532ae3d9d6187469cb9a8e1686a8bba2baadfb41284d7020",
+      "reset_seat": 1,
+      "seed": 93201
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a"
+      ],
+      "game_id": "v48-seed-93202-ab-repeat-0",
+      "game_record": "experiments/v58_policy/frozen_reset/games/v48-seed-93202-ab-repeat-0.json",
+      "opponent": "v48",
+      "replay_path": "experiments/v58_policy/frozen_reset/replays/v48-seed-93202-ab-repeat-0.json",
+      "replay_sha256": "baf46355f39df7288e08791c099458bc94cb5b538053f19ff2a23fd729773efb",
+      "reset_seat": 0,
+      "seed": 93202
+    },
+    {
+      "agent_hashes": [
+        "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v48-seed-93202-ba-repeat-0",
+      "game_record": "experiments/v58_policy/frozen_reset/games/v48-seed-93202-ba-repeat-0.json",
+      "opponent": "v48",
+      "replay_path": "experiments/v58_policy/frozen_reset/replays/v48-seed-93202-ba-repeat-0.json",
+      "replay_sha256": "258457b9b230967578f6bc7d295d76026a6b4102aa1f635bdea5a79af6cad0a1",
+      "reset_seat": 1,
+      "seed": 93202
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a"
+      ],
+      "game_id": "v48-seed-93203-ab-repeat-0",
+      "game_record": "experiments/v58_policy/frozen_reset/games/v48-seed-93203-ab-repeat-0.json",
+      "opponent": "v48",
+      "replay_path": "experiments/v58_policy/frozen_reset/replays/v48-seed-93203-ab-repeat-0.json",
+      "replay_sha256": "50fa1013b880243d491c204e998276babd79a2327065235e03b63cf396a2612b",
+      "reset_seat": 0,
+      "seed": 93203
+    },
+    {
+      "agent_hashes": [
+        "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v48-seed-93203-ba-repeat-0",
+      "game_record": "experiments/v58_policy/frozen_reset/games/v48-seed-93203-ba-repeat-0.json",
+      "opponent": "v48",
+      "replay_path": "experiments/v58_policy/frozen_reset/replays/v48-seed-93203-ba-repeat-0.json",
+      "replay_sha256": "83f2c28f29e5ea7aeff6b0a7304a32f8c8c1c542e42a632b48fb28f549c391b0",
+      "reset_seat": 1,
+      "seed": 93203
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a"
+      ],
+      "game_id": "v48-seed-93204-ab-repeat-0",
+      "game_record": "experiments/v58_policy/frozen_reset/games/v48-seed-93204-ab-repeat-0.json",
+      "opponent": "v48",
+      "replay_path": "experiments/v58_policy/frozen_reset/replays/v48-seed-93204-ab-repeat-0.json",
+      "replay_sha256": "4f328adf43da7efb309cce64f3709fc3fe09081e870e11469f35b796a324f7c7",
+      "reset_seat": 0,
+      "seed": 93204
+    },
+    {
+      "agent_hashes": [
+        "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v48-seed-93204-ba-repeat-0",
+      "game_record": "experiments/v58_policy/frozen_reset/games/v48-seed-93204-ba-repeat-0.json",
+      "opponent": "v48",
+      "replay_path": "experiments/v58_policy/frozen_reset/replays/v48-seed-93204-ba-repeat-0.json",
+      "replay_sha256": "72b632ea275a8991333fbc3c0c2d835cac1f6a4adb622c93b8faf404bd042b5e",
+      "reset_seat": 1,
+      "seed": 93204
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a"
+      ],
+      "game_id": "v48-seed-93205-ab-repeat-0",
+      "game_record": "experiments/v58_policy/frozen_reset/games/v48-seed-93205-ab-repeat-0.json",
+      "opponent": "v48",
+      "replay_path": "experiments/v58_policy/frozen_reset/replays/v48-seed-93205-ab-repeat-0.json",
+      "replay_sha256": "9b0c10a4280027bc5c0df51d56f887fe6c85176b7ca5133c721a40110225f405",
+      "reset_seat": 0,
+      "seed": 93205
+    },
+    {
+      "agent_hashes": [
+        "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v48-seed-93205-ba-repeat-0",
+      "game_record": "experiments/v58_policy/frozen_reset/games/v48-seed-93205-ba-repeat-0.json",
+      "opponent": "v48",
+      "replay_path": "experiments/v58_policy/frozen_reset/replays/v48-seed-93205-ba-repeat-0.json",
+      "replay_sha256": "9d40475d49ab1e3d50d771fa94ad4269259796ef31e0b3c88fcbd3be6e14191b",
+      "reset_seat": 1,
+      "seed": 93205
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "9c374f64e8e82027167f8018f344dc82edff1d75ac9c3d593dcd13f564c1fee1"
+      ],
+      "game_id": "v54-seed-93600-ab-repeat-0",
+      "game_record": "experiments/v58_expansion/diagnostic_93600/baseline/games/v54-seed-93600-ab-repeat-0.json",
+      "opponent": "v54",
+      "replay_path": "experiments/v58_expansion/diagnostic_93600/baseline/replays/v54-seed-93600-ab-repeat-0.json",
+      "replay_sha256": "646dc086e362759d53ca3a02994acb7fa5f134bd717cb20649c58926b33528cd",
+      "reset_seat": 0,
+      "seed": 93600
+    },
+    {
+      "agent_hashes": [
+        "9c374f64e8e82027167f8018f344dc82edff1d75ac9c3d593dcd13f564c1fee1",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v54-seed-93600-ba-repeat-0",
+      "game_record": "experiments/v58_expansion/diagnostic_93600/baseline/games/v54-seed-93600-ba-repeat-0.json",
+      "opponent": "v54",
+      "replay_path": "experiments/v58_expansion/diagnostic_93600/baseline/replays/v54-seed-93600-ba-repeat-0.json",
+      "replay_sha256": "f14b583751436a8beb017fa891624a5fa7c757efe0f4543b9e09216ccfdc4b2c",
+      "reset_seat": 1,
+      "seed": 93600
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "9c374f64e8e82027167f8018f344dc82edff1d75ac9c3d593dcd13f564c1fee1"
+      ],
+      "game_id": "v54-seed-93602-ab-repeat-0",
+      "game_record": "experiments/v58_expansion/diagnostic_93602/baseline/games/v54-seed-93602-ab-repeat-0.json",
+      "opponent": "v54",
+      "replay_path": "experiments/v58_expansion/diagnostic_93602/baseline/replays/v54-seed-93602-ab-repeat-0.json",
+      "replay_sha256": "ba4a1e7bf36995f60bafe7d0910b4455610dbf8e8b61cc0b6d02c5d2dc9402cc",
+      "reset_seat": 0,
+      "seed": 93602
+    },
+    {
+      "agent_hashes": [
+        "9c374f64e8e82027167f8018f344dc82edff1d75ac9c3d593dcd13f564c1fee1",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v54-seed-93602-ba-repeat-0",
+      "game_record": "experiments/v58_expansion/diagnostic_93602/baseline/games/v54-seed-93602-ba-repeat-0.json",
+      "opponent": "v54",
+      "replay_path": "experiments/v58_expansion/diagnostic_93602/baseline/replays/v54-seed-93602-ba-repeat-0.json",
+      "replay_sha256": "f8e2102ad4456180dd39f61a4c86c2b59cda98b305f86cb4de7809160e5aea6f",
+      "reset_seat": 1,
+      "seed": 93602
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b"
+      ],
+      "game_id": "v50-seed-93700-ab-repeat-0",
+      "game_record": "experiments/v58_market_solver/spent93700/baseline/games/v50-seed-93700-ab-repeat-0.json",
+      "opponent": "v50",
+      "replay_path": "experiments/v58_market_solver/spent93700/baseline/replays/v50-seed-93700-ab-repeat-0.json",
+      "replay_sha256": "54611f93923e31596a1576b3910c65f200b07d43f5fbdcdf686d8ba6288d0b8c",
+      "reset_seat": 0,
+      "seed": 93700
+    },
+    {
+      "agent_hashes": [
+        "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v50-seed-93700-ba-repeat-0",
+      "game_record": "experiments/v58_market_solver/spent93700/baseline/games/v50-seed-93700-ba-repeat-0.json",
+      "opponent": "v50",
+      "replay_path": "experiments/v58_market_solver/spent93700/baseline/replays/v50-seed-93700-ba-repeat-0.json",
+      "replay_sha256": "a12202a894d52efbd1c0df5762a96192342a8b341702d7804a57f56025dbd4ec",
+      "reset_seat": 1,
+      "seed": 93700
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "a57b3f14c067926d0960eb829fb6d95761dc1e7b4d011c71fda353702cdb47b1"
+      ],
+      "game_id": "v53-seed-94110-ab-repeat-0",
+      "game_record": "experiments/v58_expansion/elite_route/all8_94110/baseline/games/v53-seed-94110-ab-repeat-0.json",
+      "opponent": "v53",
+      "replay_path": "experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v53-seed-94110-ab-repeat-0.json",
+      "replay_sha256": "f76c3474ca6486d7b5beb15abbe487bb663f7a5a106e72ae479553717dc7dc19",
+      "reset_seat": 0,
+      "seed": 94110
+    },
+    {
+      "agent_hashes": [
+        "a57b3f14c067926d0960eb829fb6d95761dc1e7b4d011c71fda353702cdb47b1",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v53-seed-94110-ba-repeat-0",
+      "game_record": "experiments/v58_expansion/elite_route/all8_94110/baseline/games/v53-seed-94110-ba-repeat-0.json",
+      "opponent": "v53",
+      "replay_path": "experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v53-seed-94110-ba-repeat-0.json",
+      "replay_sha256": "f29ab5692f648be57d25ac895254678e64989ede9f0dfdb7864f299f564ba94a",
+      "reset_seat": 1,
+      "seed": 94110
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "97edf39ce1f2f72f3874f555bf413a9a8d3f94072397c0ca000c37b7c5931878"
+      ],
+      "game_id": "v55-seed-94111-ab-repeat-0",
+      "game_record": "experiments/v58_expansion/elite_route/all8_94110/baseline/games/v55-seed-94111-ab-repeat-0.json",
+      "opponent": "v55",
+      "replay_path": "experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v55-seed-94111-ab-repeat-0.json",
+      "replay_sha256": "ae944509bf0468d5a0573b4e9f5e09c5abd9d584e47447af37536537e5f73385",
+      "reset_seat": 0,
+      "seed": 94111
+    },
+    {
+      "agent_hashes": [
+        "97edf39ce1f2f72f3874f555bf413a9a8d3f94072397c0ca000c37b7c5931878",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v55-seed-94111-ba-repeat-0",
+      "game_record": "experiments/v58_expansion/elite_route/all8_94110/baseline/games/v55-seed-94111-ba-repeat-0.json",
+      "opponent": "v55",
+      "replay_path": "experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v55-seed-94111-ba-repeat-0.json",
+      "replay_sha256": "2cf8d4e2a6e88cb13a935988956a24e8e346d3c4080d24023a1eabd31e0e4537",
+      "reset_seat": 1,
+      "seed": 94111
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "274f5913c4c4787cf825d10fde4de65f79b61d25c764aa6761d36d0840c04eb4"
+      ],
+      "game_id": "v51-seed-94112-ab-repeat-0",
+      "game_record": "experiments/v58_expansion/elite_route/all8_94110/baseline/games/v51-seed-94112-ab-repeat-0.json",
+      "opponent": "v51",
+      "replay_path": "experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v51-seed-94112-ab-repeat-0.json",
+      "replay_sha256": "40045ad97409ef60126823a2b0e5fbea9c5c17979c047fb1952d8fb4c8cdc252",
+      "reset_seat": 0,
+      "seed": 94112
+    },
+    {
+      "agent_hashes": [
+        "274f5913c4c4787cf825d10fde4de65f79b61d25c764aa6761d36d0840c04eb4",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v51-seed-94112-ba-repeat-0",
+      "game_record": "experiments/v58_expansion/elite_route/all8_94110/baseline/games/v51-seed-94112-ba-repeat-0.json",
+      "opponent": "v51",
+      "replay_path": "experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v51-seed-94112-ba-repeat-0.json",
+      "replay_sha256": "bd8597aac81b3f9e962265a226a8e52a8e56fb343ab1612bf80c0188263be69a",
+      "reset_seat": 1,
+      "seed": 94112
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "a53025fce6e901df0083d3115c8e422d77c8c86fac86be99da3e4725b6a50e5b"
+      ],
+      "game_id": "v52-seed-94113-ab-repeat-0",
+      "game_record": "experiments/v58_expansion/elite_route/all8_94110/baseline/games/v52-seed-94113-ab-repeat-0.json",
+      "opponent": "v52",
+      "replay_path": "experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v52-seed-94113-ab-repeat-0.json",
+      "replay_sha256": "4a97d7971321f7b562437a626780ccdbf154203a904a8146215b9619a180a1db",
+      "reset_seat": 0,
+      "seed": 94113
+    },
+    {
+      "agent_hashes": [
+        "a53025fce6e901df0083d3115c8e422d77c8c86fac86be99da3e4725b6a50e5b",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v52-seed-94113-ba-repeat-0",
+      "game_record": "experiments/v58_expansion/elite_route/all8_94110/baseline/games/v52-seed-94113-ba-repeat-0.json",
+      "opponent": "v52",
+      "replay_path": "experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v52-seed-94113-ba-repeat-0.json",
+      "replay_sha256": "3599fee10b07e97be5798a5f61b5ccb0408d1dc2681b336234f5fc37b6342b4f",
+      "reset_seat": 1,
+      "seed": 94113
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "a57b3f14c067926d0960eb829fb6d95761dc1e7b4d011c71fda353702cdb47b1"
+      ],
+      "game_id": "v53-seed-94114-ab-repeat-0",
+      "game_record": "experiments/v58_expansion/elite_route/all8_94110/baseline/games/v53-seed-94114-ab-repeat-0.json",
+      "opponent": "v53",
+      "replay_path": "experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v53-seed-94114-ab-repeat-0.json",
+      "replay_sha256": "d955706cb0ba1c0dc153a8235bba1167b3a078c2faee5f26a40d175162a7d717",
+      "reset_seat": 0,
+      "seed": 94114
+    },
+    {
+      "agent_hashes": [
+        "a57b3f14c067926d0960eb829fb6d95761dc1e7b4d011c71fda353702cdb47b1",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v53-seed-94114-ba-repeat-0",
+      "game_record": "experiments/v58_expansion/elite_route/all8_94110/baseline/games/v53-seed-94114-ba-repeat-0.json",
+      "opponent": "v53",
+      "replay_path": "experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v53-seed-94114-ba-repeat-0.json",
+      "replay_sha256": "1e18265684a323924fb772f7f43925f475789d827a04c06fa8964b62b4f81a47",
+      "reset_seat": 1,
+      "seed": 94114
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "d9e9670921b62afedfa8cbc7086d2a2ec19e153ee26006cef477eadd462bd19c"
+      ],
+      "game_id": "v56-seed-94400-ab-repeat-0",
+      "game_record": "experiments/runs/v58_validation_original_route/baseline/games/v56-seed-94400-ab-repeat-0.json",
+      "opponent": "v56",
+      "replay_path": "experiments/runs/v58_validation_original_route/baseline/replays/v56-seed-94400-ab-repeat-0.json",
+      "replay_sha256": "54f2b899769121f8385fd86946101c12dc8307551db3b5c91aba5ecd8de33d95",
+      "reset_seat": 0,
+      "seed": 94400
+    },
+    {
+      "agent_hashes": [
+        "d9e9670921b62afedfa8cbc7086d2a2ec19e153ee26006cef477eadd462bd19c",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v56-seed-94400-ba-repeat-0",
+      "game_record": "experiments/runs/v58_validation_original_route/baseline/games/v56-seed-94400-ba-repeat-0.json",
+      "opponent": "v56",
+      "replay_path": "experiments/runs/v58_validation_original_route/baseline/replays/v56-seed-94400-ba-repeat-0.json",
+      "replay_sha256": "2732504e7afd14409cac5e2c4c341b17f95f93fbf841f15ece113a97061039a4",
+      "reset_seat": 1,
+      "seed": 94400
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b"
+      ],
+      "game_id": "v50-seed-94401-ab-repeat-0",
+      "game_record": "experiments/runs/v58_validation_original_route/baseline/games/v50-seed-94401-ab-repeat-0.json",
+      "opponent": "v50",
+      "replay_path": "experiments/runs/v58_validation_original_route/baseline/replays/v50-seed-94401-ab-repeat-0.json",
+      "replay_sha256": "7e1a1230c49709ba59e0d7a8af4bc749b144c8a809258b4cbbc462acbc34b3ff",
+      "reset_seat": 0,
+      "seed": 94401
+    },
+    {
+      "agent_hashes": [
+        "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v50-seed-94401-ba-repeat-0",
+      "game_record": "experiments/runs/v58_validation_original_route/baseline/games/v50-seed-94401-ba-repeat-0.json",
+      "opponent": "v50",
+      "replay_path": "experiments/runs/v58_validation_original_route/baseline/replays/v50-seed-94401-ba-repeat-0.json",
+      "replay_sha256": "e9bb4465a279ccfcf43b5421874de49396438601f2162740e80b2bf37b16389e",
+      "reset_seat": 1,
+      "seed": 94401
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b"
+      ],
+      "game_id": "v50-seed-94500-ab-repeat-0",
+      "game_record": "experiments/v58_original_second/reset_probe/games/v50-seed-94500-ab-repeat-0.json",
+      "opponent": "v50",
+      "replay_path": "experiments/v58_original_second/reset_probe/replays/v50-seed-94500-ab-repeat-0.json",
+      "replay_sha256": "2d955fcdd9f52b64e80332f8687ca9cafacf3dce9093053cea9bc46d4ebaa4a5",
+      "reset_seat": 0,
+      "seed": 94500
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "ee4fdeba696e164bb7bb9b5702e0ebf160085283a916256f929fdf11adc33c9c"
+      ],
+      "game_id": "v61-hirepriority-vs-frozen-v57-seed94700-seed-94700-ba-repeat-0",
+      "game_record": "experiments/v61_cashflow/spent94700/hirepriority/v57_reset/games/v61-hirepriority-vs-frozen-v57-seed94700-seed-94700-ba-repeat-0.json",
+      "opponent": "v61-hirepriority-vs-frozen-v57-seed94700",
+      "replay_path": "experiments/v61_cashflow/spent94700/hirepriority/v57_reset/replays/v61-hirepriority-vs-frozen-v57-seed94700-seed-94700-ba-repeat-0.json",
+      "replay_sha256": "e3f4e609bccace6e9a011c439dcbced48e099a436630202b8a6e0503dfdd6092",
+      "reset_seat": 0,
+      "seed": 94700
+    },
+    {
+      "agent_hashes": [
+        "ee4fdeba696e164bb7bb9b5702e0ebf160085283a916256f929fdf11adc33c9c",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v61-hirepriority-vs-frozen-v57-seed94700-seed-94700-ab-repeat-0",
+      "game_record": "experiments/v61_cashflow/spent94700/hirepriority/v57_reset/games/v61-hirepriority-vs-frozen-v57-seed94700-seed-94700-ab-repeat-0.json",
+      "opponent": "v61-hirepriority-vs-frozen-v57-seed94700",
+      "replay_path": "experiments/v61_cashflow/spent94700/hirepriority/v57_reset/replays/v61-hirepriority-vs-frozen-v57-seed94700-seed-94700-ab-repeat-0.json",
+      "replay_sha256": "f24505bb3c91e9242e34140eaa328af34791f51cdb4c055c99ec8be9e31bd235",
+      "reset_seat": 1,
+      "seed": 94700
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "a57b3f14c067926d0960eb829fb6d95761dc1e7b4d011c71fda353702cdb47b1"
+      ],
+      "game_id": "v53-seed-95300-ab-repeat-0",
+      "game_record": "experiments/v58_market_solver/paired/baseline/games/v53-seed-95300-ab-repeat-0.json",
+      "opponent": "v53",
+      "replay_path": "experiments/v58_market_solver/paired/baseline/replays/v53-seed-95300-ab-repeat-0.json",
+      "replay_sha256": "4d930d3f34db39c643a2e0aeab88d68a78ef78e8664240d3829b61ad407772b8",
+      "reset_seat": 0,
+      "seed": 95300
+    },
+    {
+      "agent_hashes": [
+        "a57b3f14c067926d0960eb829fb6d95761dc1e7b4d011c71fda353702cdb47b1",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v53-seed-95300-ba-repeat-0",
+      "game_record": "experiments/v58_market_solver/paired/baseline/games/v53-seed-95300-ba-repeat-0.json",
+      "opponent": "v53",
+      "replay_path": "experiments/v58_market_solver/paired/baseline/replays/v53-seed-95300-ba-repeat-0.json",
+      "replay_sha256": "d9d4a6d2a1f67ed6e0ba26249c9775ec32c27056de79501d928e989cecc18625",
+      "reset_seat": 1,
+      "seed": 95300
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b"
+      ],
+      "game_id": "v50-seed-95301-ab-repeat-0",
+      "game_record": "experiments/v58_market_solver/paired/baseline/games/v50-seed-95301-ab-repeat-0.json",
+      "opponent": "v50",
+      "replay_path": "experiments/v58_market_solver/paired/baseline/replays/v50-seed-95301-ab-repeat-0.json",
+      "replay_sha256": "a61345a951cbb884eff2227e8975c51cc33c4c1708e9682510fe5dce1211d95b",
+      "reset_seat": 0,
+      "seed": 95301
+    },
+    {
+      "agent_hashes": [
+        "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v50-seed-95301-ba-repeat-0",
+      "game_record": "experiments/v58_market_solver/paired/baseline/games/v50-seed-95301-ba-repeat-0.json",
+      "opponent": "v50",
+      "replay_path": "experiments/v58_market_solver/paired/baseline/replays/v50-seed-95301-ba-repeat-0.json",
+      "replay_sha256": "8a88be3f1fc70791ae16a1ba3f92d742c2c248a664ca8f7cc919c5a9907cc86d",
+      "reset_seat": 1,
+      "seed": 95301
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b"
+      ],
+      "game_id": "v50-seed-95302-ab-repeat-0",
+      "game_record": "experiments/v58_market_solver/paired/baseline/games/v50-seed-95302-ab-repeat-0.json",
+      "opponent": "v50",
+      "replay_path": "experiments/v58_market_solver/paired/baseline/replays/v50-seed-95302-ab-repeat-0.json",
+      "replay_sha256": "963ec55e0e408088c03952857204f65519767be685799fa32d49aba215c2fedc",
+      "reset_seat": 0,
+      "seed": 95302
+    },
+    {
+      "agent_hashes": [
+        "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v50-seed-95302-ba-repeat-0",
+      "game_record": "experiments/v58_market_solver/paired/baseline/games/v50-seed-95302-ba-repeat-0.json",
+      "opponent": "v50",
+      "replay_path": "experiments/v58_market_solver/paired/baseline/replays/v50-seed-95302-ba-repeat-0.json",
+      "replay_sha256": "21db167cd84d6fbcecbc553321b50774e5bc8e12fde2948334725d804a05cf7f",
+      "reset_seat": 1,
+      "seed": 95302
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "e789afe1b281096ffa539d2fb9bd42dfddef1cca6f5f4d2fca3adcff653e93c1"
+      ],
+      "game_id": "v57_reset_candidate-seed-95600-ba-repeat-0",
+      "game_record": "experiments/v59_state_teacher/headtohead95600/games/v57_reset_candidate-seed-95600-ba-repeat-0.json",
+      "opponent": "v57_reset_candidate",
+      "replay_path": "experiments/v59_state_teacher/headtohead95600/replays/v57_reset_candidate-seed-95600-ba-repeat-0.json",
+      "replay_sha256": "4b2a95814a89cb28db28dbe2060b994ae84ad123ebd311bf2d9258fa8a9631d5",
+      "reset_seat": 0,
+      "seed": 95600
+    },
+    {
+      "agent_hashes": [
+        "e789afe1b281096ffa539d2fb9bd42dfddef1cca6f5f4d2fca3adcff653e93c1",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v57_reset_candidate-seed-95600-ab-repeat-0",
+      "game_record": "experiments/v59_state_teacher/headtohead95600/games/v57_reset_candidate-seed-95600-ab-repeat-0.json",
+      "opponent": "v57_reset_candidate",
+      "replay_path": "experiments/v59_state_teacher/headtohead95600/replays/v57_reset_candidate-seed-95600-ab-repeat-0.json",
+      "replay_sha256": "3180ee112779aefc6438509c2a29d1b4e92f91bdf995012588471cc80d5966a8",
+      "reset_seat": 1,
+      "seed": 95600
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b"
+      ],
+      "game_id": "v50-seed-95610-ab-repeat-0",
+      "game_record": "experiments/v59_route_rules/mix_gate/control95610_v50/games/v50-seed-95610-ab-repeat-0.json",
+      "opponent": "v50",
+      "replay_path": "experiments/v59_route_rules/mix_gate/control95610_v50/replays/v50-seed-95610-ab-repeat-0.json",
+      "replay_sha256": "bb6f8695d239feb8d954d85a75e1655cce40f6e9de65c37b393db60697ea6841",
+      "reset_seat": 0,
+      "seed": 95610
+    },
+    {
+      "agent_hashes": [
+        "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v50-seed-95610-ba-repeat-0",
+      "game_record": "experiments/v59_route_rules/mix_gate/control95610_v50/games/v50-seed-95610-ba-repeat-0.json",
+      "opponent": "v50",
+      "replay_path": "experiments/v59_route_rules/mix_gate/control95610_v50/replays/v50-seed-95610-ba-repeat-0.json",
+      "replay_sha256": "1610e83d40d221d0c009292ee3ec7c7b1660f8822d7a46053f64778b9955719e",
+      "reset_seat": 1,
+      "seed": 95610
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b"
+      ],
+      "game_id": "v50-seed-95611-ab-repeat-0",
+      "game_record": "experiments/v59_route_rules/mix_gate/control95611_v50/games/v50-seed-95611-ab-repeat-0.json",
+      "opponent": "v50",
+      "replay_path": "experiments/v59_route_rules/mix_gate/control95611_v50/replays/v50-seed-95611-ab-repeat-0.json",
+      "replay_sha256": "6c6d80177f3a50a94b9ed944f62a917837643d0bcff503d598829481b2a9fad0",
+      "reset_seat": 0,
+      "seed": 95611
+    },
+    {
+      "agent_hashes": [
+        "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "v50-seed-95611-ba-repeat-0",
+      "game_record": "experiments/v59_route_rules/mix_gate/control95611_v50/games/v50-seed-95611-ba-repeat-0.json",
+      "opponent": "v50",
+      "replay_path": "experiments/v59_route_rules/mix_gate/control95611_v50/replays/v50-seed-95611-ba-repeat-0.json",
+      "replay_sha256": "7341f1c3a31e6d598d96e2da990970c6ab61d350ba7df28ed4285627ad3ee456",
+      "reset_seat": 1,
+      "seed": 95611
+    },
+    {
+      "agent_hashes": [
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+        "75e9924d5d6c8a68bbce71bb5065dda835d8e265d13210de4cef2419e9d9f25c"
+      ],
+      "game_id": "BoeyProxy-seed-511533100-ab-repeat-0",
+      "game_record": "experiments/v58_elite/v57reset_vs_boeyproxy_511533100/games/BoeyProxy-seed-511533100-ab-repeat-0.json",
+      "opponent": "BoeyProxy",
+      "replay_path": "experiments/v58_elite/v57reset_vs_boeyproxy_511533100/replays/BoeyProxy-seed-511533100-ab-repeat-0.json",
+      "replay_sha256": "f72d7229e3ca48fb1d7afe0029c661874aa8dff0b89958bdbe5f63432e54d021",
+      "reset_seat": 0,
+      "seed": 511533100
+    },
+    {
+      "agent_hashes": [
+        "75e9924d5d6c8a68bbce71bb5065dda835d8e265d13210de4cef2419e9d9f25c",
+        "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e"
+      ],
+      "game_id": "BoeyProxy-seed-511533100-ba-repeat-0",
+      "game_record": "experiments/v58_elite/v57reset_vs_boeyproxy_511533100/games/BoeyProxy-seed-511533100-ba-repeat-0.json",
+      "opponent": "BoeyProxy",
+      "replay_path": "experiments/v58_elite/v57reset_vs_boeyproxy_511533100/replays/BoeyProxy-seed-511533100-ba-repeat-0.json",
+      "replay_sha256": "26633efbbbd074d171440e9f7f3039e58062b788c4cb767bde4922798a1f57aa",
+      "reset_seat": 1,
+      "seed": 511533100
+    }
+  ],
+  "selected_opponent_lineages": [
+    "BoeyProxy",
+    "v48",
+    "v50",
+    "v51",
+    "v52",
+    "v53",
+    "v54",
+    "v55",
+    "v56",
+    "v57_reset_candidate",
+    "v61-hirepriority-vs-frozen-v57-seed94700"
+  ],
+  "settlement": "one-frame aligned accepted_sales.settle; engine cash reconciliation required zero mismatches",
+  "unique_seed_count": 31
+}

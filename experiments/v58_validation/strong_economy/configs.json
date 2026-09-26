@@ -1,0 +1,15 @@
+{
+  "purpose": "One generation only: compare three predeclared observation-conditioned economy overlays to the frozen reset backbone, then stop unless at least one has measurable paired gain and zero errors.",
+  "dev_seeds": [95200, 95201, 95202, 95203, 95204, 95205, 95206, 95207],
+  "opponents": ["v50", "v53", "v54"],
+  "seat_orders": [0, 1],
+  "population": [
+    {"name":"balanced","cow_ratio":0.90,"max_seed_acres":14,"max_sheep":8,"max_cows":5,"max_hires":7,"land_cap":4,"cash_reserve":500},
+    {"name":"early_cow_invest","cow_ratio":0.75,"max_seed_acres":18,"max_sheep":4,"max_cows":7,"max_hires":6,"land_cap":3,"cash_reserve":2000},
+    {"name":"conserve_cash","cow_ratio":1.05,"max_seed_acres":10,"max_sheep":4,"max_cows":3,"max_hires":4,"land_cap":2,"cash_reserve":4000},
+    {"name":"high_throughput","cow_ratio":0.85,"max_seed_acres":20,"max_sheep":10,"max_cows":8,"max_hires":7,"land_cap":4,"cash_reserve":1000}
+  ],
+  "objective": "mean candidate-minus-opponent terminal coin margin across all paired seed/opponent/seat blocks; tie-break on worst opponent mean then strict wins",
+  "stop_gate": "Do not recommend beyond this one generation unless at least one config beats the frozen reset on paired margin with zero errors and has nonzero actual economic-action changes through the exact loader.",
+  "rights": "Internal research only. The frozen reset route derives from a public Lizs replay; this wrapper does not resolve route originality or submission rights."
+}

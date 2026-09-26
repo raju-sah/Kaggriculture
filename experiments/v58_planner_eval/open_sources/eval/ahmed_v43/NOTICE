@@ -1,0 +1,11 @@
+Local benchmark snapshot of Kaggriculture V43: Recovering Lost Harvests, by Ahmed
+Berat Özer. Kaggle notebook states Apache License 2.0. Source snapshot SHA-256:
+919fc1d61050cd96f799979e49177ae3ac7bce98ec9835724238bea73f4a08ed
+
+The source itself attributes included Apache-2.0 derivations to thomastschinkel,
+yhay81, destbreso, aurax7, tetsutani, prvsiyan, Dmitrii Gluzdov, and other linked
+notebooks. It identifies 13 public action schedules and shop-pair routing attributed
+to yhay81/shop-router-0909, plus routing/public action data attributed to yhay81/
+shop-router-0908. Apache permission for notebook-authored code does not independently
+resolve rights in replay-derived action traces. This snapshot is for internal opponent
+evaluation only and must not be adapted into or submitted as a route policy.

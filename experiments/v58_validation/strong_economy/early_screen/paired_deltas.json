@@ -1,0 +1,555 @@
+{
+  "baseline_control_games": 12,
+  "baseline_mean_coins": 80258.33333333333,
+  "baseline_wins": 12,
+  "arms": [
+    {
+      "config": "balanced",
+      "mean_delta": -114605.5,
+      "median_delta": -110735.0,
+      "positive_game_deltas": 0,
+      "positive_seed_opponent_cells": 0,
+      "blocks": [
+        {
+          "seed": 95200,
+          "opponent": "v50",
+          "mean_delta": -83983.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v53",
+          "mean_delta": -82438.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v54",
+          "mean_delta": -77013.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v50",
+          "mean_delta": -153787.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v53",
+          "mean_delta": -152925.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v54",
+          "mean_delta": -137487.0
+        }
+      ],
+      "paired": [
+        {
+          "seed": 95200,
+          "opponent": "v50",
+          "seat": 0,
+          "candidate_margin": -65452.0,
+          "baseline_margin": 18531.0,
+          "delta": -83983.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v50",
+          "seat": 1,
+          "candidate_margin": -65452.0,
+          "baseline_margin": 18531.0,
+          "delta": -83983.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v50",
+          "seat": 0,
+          "candidate_margin": -138851.0,
+          "baseline_margin": 14936.0,
+          "delta": -153787.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v50",
+          "seat": 1,
+          "candidate_margin": -138851.0,
+          "baseline_margin": 14936.0,
+          "delta": -153787.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v53",
+          "seat": 0,
+          "candidate_margin": -65293.0,
+          "baseline_margin": 17145.0,
+          "delta": -82438.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v53",
+          "seat": 1,
+          "candidate_margin": -65293.0,
+          "baseline_margin": 17145.0,
+          "delta": -82438.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v53",
+          "seat": 0,
+          "candidate_margin": -138828.0,
+          "baseline_margin": 14097.0,
+          "delta": -152925.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v53",
+          "seat": 1,
+          "candidate_margin": -138828.0,
+          "baseline_margin": 14097.0,
+          "delta": -152925.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v54",
+          "seat": 0,
+          "candidate_margin": -65934.0,
+          "baseline_margin": 11079.0,
+          "delta": -77013.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v54",
+          "seat": 1,
+          "candidate_margin": -65934.0,
+          "baseline_margin": 11079.0,
+          "delta": -77013.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v54",
+          "seat": 0,
+          "candidate_margin": -125703.0,
+          "baseline_margin": 11784.0,
+          "delta": -137487.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v54",
+          "seat": 1,
+          "candidate_margin": -125703.0,
+          "baseline_margin": 11784.0,
+          "delta": -137487.0
+        }
+      ]
+    },
+    {
+      "config": "early_cow_invest",
+      "mean_delta": -182564.0,
+      "median_delta": -187514.0,
+      "positive_game_deltas": 0,
+      "positive_seed_opponent_cells": 0,
+      "blocks": [
+        {
+          "seed": 95200,
+          "opponent": "v50",
+          "mean_delta": -197310.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v53",
+          "mean_delta": -195800.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v54",
+          "mean_delta": -184756.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v50",
+          "mean_delta": -164096.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v53",
+          "mean_delta": -163150.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v54",
+          "mean_delta": -190272.0
+        }
+      ],
+      "paired": [
+        {
+          "seed": 95200,
+          "opponent": "v50",
+          "seat": 0,
+          "candidate_margin": -178779.0,
+          "baseline_margin": 18531.0,
+          "delta": -197310.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v50",
+          "seat": 1,
+          "candidate_margin": -178779.0,
+          "baseline_margin": 18531.0,
+          "delta": -197310.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v50",
+          "seat": 0,
+          "candidate_margin": -149160.0,
+          "baseline_margin": 14936.0,
+          "delta": -164096.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v50",
+          "seat": 1,
+          "candidate_margin": -149160.0,
+          "baseline_margin": 14936.0,
+          "delta": -164096.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v53",
+          "seat": 0,
+          "candidate_margin": -178655.0,
+          "baseline_margin": 17145.0,
+          "delta": -195800.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v53",
+          "seat": 1,
+          "candidate_margin": -178655.0,
+          "baseline_margin": 17145.0,
+          "delta": -195800.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v53",
+          "seat": 0,
+          "candidate_margin": -149053.0,
+          "baseline_margin": 14097.0,
+          "delta": -163150.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v53",
+          "seat": 1,
+          "candidate_margin": -149053.0,
+          "baseline_margin": 14097.0,
+          "delta": -163150.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v54",
+          "seat": 0,
+          "candidate_margin": -173677.0,
+          "baseline_margin": 11079.0,
+          "delta": -184756.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v54",
+          "seat": 1,
+          "candidate_margin": -173677.0,
+          "baseline_margin": 11079.0,
+          "delta": -184756.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v54",
+          "seat": 0,
+          "candidate_margin": -178488.0,
+          "baseline_margin": 11784.0,
+          "delta": -190272.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v54",
+          "seat": 1,
+          "candidate_margin": -178488.0,
+          "baseline_margin": 11784.0,
+          "delta": -190272.0
+        }
+      ]
+    },
+    {
+      "config": "conserve_cash",
+      "mean_delta": -180421.33333333334,
+      "median_delta": -184911.5,
+      "positive_game_deltas": 0,
+      "positive_seed_opponent_cells": 0,
+      "blocks": [
+        {
+          "seed": 95200,
+          "opponent": "v50",
+          "mean_delta": -198210.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v53",
+          "mean_delta": -196737.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v54",
+          "mean_delta": -189927.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v50",
+          "mean_delta": -159354.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v53",
+          "mean_delta": -158404.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v54",
+          "mean_delta": -179896.0
+        }
+      ],
+      "paired": [
+        {
+          "seed": 95200,
+          "opponent": "v50",
+          "seat": 0,
+          "candidate_margin": -179679.0,
+          "baseline_margin": 18531.0,
+          "delta": -198210.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v50",
+          "seat": 1,
+          "candidate_margin": -179679.0,
+          "baseline_margin": 18531.0,
+          "delta": -198210.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v50",
+          "seat": 0,
+          "candidate_margin": -144418.0,
+          "baseline_margin": 14936.0,
+          "delta": -159354.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v50",
+          "seat": 1,
+          "candidate_margin": -144418.0,
+          "baseline_margin": 14936.0,
+          "delta": -159354.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v53",
+          "seat": 0,
+          "candidate_margin": -179592.0,
+          "baseline_margin": 17145.0,
+          "delta": -196737.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v53",
+          "seat": 1,
+          "candidate_margin": -179592.0,
+          "baseline_margin": 17145.0,
+          "delta": -196737.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v53",
+          "seat": 0,
+          "candidate_margin": -144307.0,
+          "baseline_margin": 14097.0,
+          "delta": -158404.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v53",
+          "seat": 1,
+          "candidate_margin": -144307.0,
+          "baseline_margin": 14097.0,
+          "delta": -158404.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v54",
+          "seat": 0,
+          "candidate_margin": -178848.0,
+          "baseline_margin": 11079.0,
+          "delta": -189927.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v54",
+          "seat": 1,
+          "candidate_margin": -178848.0,
+          "baseline_margin": 11079.0,
+          "delta": -189927.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v54",
+          "seat": 0,
+          "candidate_margin": -168112.0,
+          "baseline_margin": 11784.0,
+          "delta": -179896.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v54",
+          "seat": 1,
+          "candidate_margin": -168112.0,
+          "baseline_margin": 11784.0,
+          "delta": -179896.0
+        }
+      ]
+    },
+    {
+      "config": "high_throughput",
+      "mean_delta": -124918.66666666667,
+      "median_delta": -122641.5,
+      "positive_game_deltas": 0,
+      "positive_seed_opponent_cells": 0,
+      "blocks": [
+        {
+          "seed": 95200,
+          "opponent": "v50",
+          "mean_delta": -149896.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v53",
+          "mean_delta": -148272.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v54",
+          "mean_delta": -110994.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v50",
+          "mean_delta": -103586.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v53",
+          "mean_delta": -102475.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v54",
+          "mean_delta": -134289.0
+        }
+      ],
+      "paired": [
+        {
+          "seed": 95200,
+          "opponent": "v50",
+          "seat": 0,
+          "candidate_margin": -131365.0,
+          "baseline_margin": 18531.0,
+          "delta": -149896.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v50",
+          "seat": 1,
+          "candidate_margin": -131365.0,
+          "baseline_margin": 18531.0,
+          "delta": -149896.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v50",
+          "seat": 0,
+          "candidate_margin": -88650.0,
+          "baseline_margin": 14936.0,
+          "delta": -103586.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v50",
+          "seat": 1,
+          "candidate_margin": -88650.0,
+          "baseline_margin": 14936.0,
+          "delta": -103586.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v53",
+          "seat": 0,
+          "candidate_margin": -131127.0,
+          "baseline_margin": 17145.0,
+          "delta": -148272.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v53",
+          "seat": 1,
+          "candidate_margin": -131127.0,
+          "baseline_margin": 17145.0,
+          "delta": -148272.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v53",
+          "seat": 0,
+          "candidate_margin": -88378.0,
+          "baseline_margin": 14097.0,
+          "delta": -102475.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v53",
+          "seat": 1,
+          "candidate_margin": -88378.0,
+          "baseline_margin": 14097.0,
+          "delta": -102475.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v54",
+          "seat": 0,
+          "candidate_margin": -99915.0,
+          "baseline_margin": 11079.0,
+          "delta": -110994.0
+        },
+        {
+          "seed": 95200,
+          "opponent": "v54",
+          "seat": 1,
+          "candidate_margin": -99915.0,
+          "baseline_margin": 11079.0,
+          "delta": -110994.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v54",
+          "seat": 0,
+          "candidate_margin": -122505.0,
+          "baseline_margin": 11784.0,
+          "delta": -134289.0
+        },
+        {
+          "seed": 95201,
+          "opponent": "v54",
+          "seat": 1,
+          "candidate_margin": -122505.0,
+          "baseline_margin": 11784.0,
+          "delta": -134289.0
+        }
+      ]
+    }
+  ]
+}

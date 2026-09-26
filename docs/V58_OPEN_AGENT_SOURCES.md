@@ -1,0 +1,33 @@
+# V58 open Kaggriculture agent source audit
+
+Checked 2026-09-26. This audit separates an author’s stated source-code license from the permission status of data embedded in the agent. Public visibility alone is not a reuse license. No candidate or submission source was changed, and no Kaggle submission was made.
+
+## Decision
+
+Kaito Fukami’s version 13 notebook is a usable **local-only executable opponent** for internal benchmarking, under the notebook page’s Apache 2.0 license and with attribution. It is **not an eligible observation-derived route policy for adaptation**: the notebook describes its runtime as routing among complete medoid action trajectories copied from three public replay episodes. Kaggle’s Apache license statement applies to the notebook release; it does not independently settle rights in third-party replay-derived action sequences. The local snapshot is therefore isolated under `experiments/v58_planner_eval/open_sources/kaito_v13_local_opponent/`, explicitly barred from submission or redistribution, and must not be mined for policy code or action schedules.
+
+The exact Kaggle notebook source hash is `17006781a3cea5a36ac3c48cb491015d616dde847ff7302e205ed2aede931cf0`. The notebook page resolves to script version 13 (`scriptVersionId=344404785`), identifies Apache 2.0, and displays score 2882.0. Its own text reports 103 wins / 25 losses in 128 local games and explicitly says this is not a Public-LB score. Those are separate claims and should not be conflated. The embedded standalone runtime extracted byte-for-byte from the compressed notebook payload is 63,309 bytes, SHA-256 `69f06a802b62aa08f28705dab5728eb924bb6a7c23ffe0164f65b104cc3dadf3`.
+
+The isolated runtime passed Kaggle Environments’ `get_last_callable` loader and a complete 720-step smoke game at seed 94900 against the frozen reset agent: Kaito 85,660; frozen reset 98,408. No actor errors occurred. This is a loader/smoke check, not comparative performance evidence. Reproduce it with:
+
+```sh
+.venv/bin/python experiments/v58_planner_eval/open_sources/kaito_v13_local_opponent/smoke.py
+```
+
+A reasonable future opponent-panel design for a **new, independently authored** candidate is 10 fresh seeds starting at 94900, each in both seat orders, against Kaito v13 and the frozen reset, v50, v53, and v54 controls: 100 games total. Report paired candidate-minus-control cash, wins/ties/losses, both seat splits, and errors. Only spend those seeds after the new route passes a spent-seed diagnostic and exact loader check. Do not feed the candidate action tape, episode identifiers, or Kaito’s source into its policy.
+
+## Source checks
+
+| Source | Publicly stated license and score | Static source finding | Use decision |
+|---|---|---|---|
+| [Kaito Fukami, 103/128 Fresh Public | v43 Sparse Shop Hybrid](https://www.kaggle.com/code/kaitofukami/103-128-fresh-public-v43-sparse-shop-hybrid) | Kaggle page: Apache 2.0; score 2882.0; version 13 of 13. Notebook text: 103/128 local games, not Public-LB. | Exact medoids cite public episodes 96815867, 96905004, 96824976; observed lineages named BurntPotato and ActiveMusyoku. | Local-only opponent snapshot retained with hash, LICENSE, and NOTICE. Do not adapt its action schedules or submit/redistribute it. |
+| [Ahmed Berat Özer, Kaggriculture V43: Recovering Lost Harvests](https://www.kaggle.com/code/ahmedberatozer/kaggriculture-v43-recovering-lost-harvests) | Kaggle page: Apache 2.0; score 2712.0. | Its notebook’s embedded source header credits yhay81/shop-router-0909 for “New action tapes and ordered shop-pair map” and shop-router-0908 for routing/public action data. Pulled notebook hash: `8bd567ed2aae2afa7e3bd1b77dac0de2a50055792965200c497b4fcc88becd90`. | Do not adapt or use as observation-only planner. Notebook was inspected statically; payload was not materialized or run. |
+| [tetsutani, Market-Smart Farming | Kaggriculture](https://www.kaggle.com/code/tetsutani/market-smart-farming-kaggriculture) | Kaggle page: Apache 2.0; score 2750.4. | Notebook says its overlay changes opening WHEAT pressure while preserving an existing controller; bundled source attributes new action tapes and ordered shop-pair map to yhay81/shop-router-0909. | Not an independent route source. Static inspection only. |
+| [Lynn Sakurai, Farming Score V4: A Better Shop](https://www.kaggle.com/code/lynnsakurai/farming-score-v4-a-better-shop) | Kaggle page: Apache 2.0; score 2678.3. | Notebook explicitly describes a “route-replay chassis” and a precomputed 719-action tape; it credits yhay81/shop-router-0909 for new action tapes. | Not an observation-only source. Static inspection only. |
+| [COK-ZhangZiliang/Kaggriculture](https://github.com/COK-ZhangZiliang/Kaggriculture) | Repository provides Apache 2.0 LICENSE. README documents an observation-based deterministic V10 agent, but its stated target is 2600+ and “has not yet been observed”; it reports a 600 dynamic score at the time checked. | README claims runtime decisions use live public state and no replay lookup/future actions. This is an author statement, not an independent source audit. | Legally clearer observation-policy scaffold, but no evidence it is a high-performing agent comparable to the requested leaderboard source. |
+
+The Kaggle notebook pages state Apache 2.0, and the [Apache 2.0 license text](https://www.apache.org/licenses/LICENSE-2.0.html) grants rights to reproduce and prepare derivatives subject to its conditions, including preserving notices and marking modified files. That grants do not remove the need to check third-party content embedded in a notebook. Kaggle’s competition rules also require original work and rights to make the required warranties; the project’s replay-specific assessment is in [`V58_REPLAY_RIGHTS.md`](V58_REPLAY_RIGHTS.md). For the local-only Kaito benchmark, attribution and the full Apache license are kept beside the extracted runtime. No standalone upstream NOTICE file was present in the extracted payload; the accompanying NOTICE records the notebook’s own provenance statements and makes no ownership claim over replay actions.
+
+## Scope and limits
+
+The search covered public Kaggle notebooks by Kaito Fukami, Ahmed Berat Özer, Tetsutani, and Lynn Sakurai, plus an Apache-licensed observation-based GitHub repository. Several strong public notebooks are explicitly replay-route derivatives. The GitHub option is cleanly described as state-conditioned but has no comparable high-score evidence. This is not proof that no suitable source exists; it is the result of this focused source-and-license audit. Kaggle’s displayed score is a mutable page field and is recorded as seen on 2026-09-26, not a stable historical measurement.

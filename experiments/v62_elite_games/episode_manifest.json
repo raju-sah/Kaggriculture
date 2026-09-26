@@ -1,0 +1,160 @@
+{
+  "games": [
+    {
+      "created_at_kaggle": "2026-09-26 13:32:50.648000",
+      "episode_id": 113718271,
+      "episode_list_command": "kaggle competitions episodes 56521745 --format csv",
+      "episode_state": "EpisodeState.COMPLETED",
+      "episode_type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+      "module_version": "1.32.7",
+      "players": [
+        "DSM",
+        "Boey"
+      ],
+      "replay_sha256": "8a5ca36d7f334c1b440be92dcc410ac104b06a0a1e89167d33f6035eb39285c1",
+      "rewards": [
+        85693.0,
+        82688.0
+      ],
+      "seed": 546446009,
+      "source_command": "kaggle competitions replay 113718271 -p experiments/v62_elite_games/replays -q",
+      "steps": 720,
+      "submission_id": 56521745,
+      "submission_owner_or_label": "Boey"
+    },
+    {
+      "created_at_kaggle": "2026-09-26 14:00:49.941000",
+      "episode_id": 113726340,
+      "episode_list_command": "kaggle competitions episodes 56521745 --format csv",
+      "episode_state": "EpisodeState.COMPLETED",
+      "episode_type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+      "module_version": "1.32.7",
+      "players": [
+        "DSM",
+        "Boey"
+      ],
+      "replay_sha256": "a44b568541c0e5d290aa44fa726a4082cd56c20259e902c1834c80de40aea90a",
+      "rewards": [
+        72702.0,
+        75245.0
+      ],
+      "seed": 451120056,
+      "source_command": "kaggle competitions replay 113726340 -p experiments/v62_elite_games/replays -q",
+      "steps": 720,
+      "submission_id": 56521745,
+      "submission_owner_or_label": "Boey"
+    },
+    {
+      "created_at_kaggle": "2026-09-26 13:56:54.710000",
+      "episode_id": 113725041,
+      "episode_list_command": "kaggle competitions episodes 56521745 --format csv",
+      "episode_state": "EpisodeState.COMPLETED",
+      "episode_type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+      "module_version": "1.32.7",
+      "players": [
+        "Boey",
+        "Fourth Quadrant"
+      ],
+      "replay_sha256": "fd54a5833c91bba3a547b3b55a99d7038fa8044d44e9f8f3f5f2bf5bc75b2226",
+      "rewards": [
+        120369.0,
+        125458.0
+      ],
+      "seed": 953430265,
+      "source_command": "kaggle competitions replay 113725041 -p experiments/v62_elite_games/replays -q",
+      "steps": 720,
+      "submission_id": 56521745,
+      "submission_owner_or_label": "Boey"
+    },
+    {
+      "created_at_kaggle": "2026-09-26 13:28:46.627000",
+      "episode_id": 113716848,
+      "episode_list_command": "kaggle competitions episodes 56553720 --format csv",
+      "episode_state": "EpisodeState.COMPLETED",
+      "episode_type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+      "module_version": "1.32.7",
+      "players": [
+        "Unknown Mother-Goose",
+        "M & M & P & Q"
+      ],
+      "replay_sha256": "3cbda3e818e24dbc1731635a4f62bd5b63371be095f2b7e7900d6613262c33a4",
+      "rewards": [
+        125973.0,
+        129636.0
+      ],
+      "seed": 780882698,
+      "source_command": "kaggle competitions replay 113716848 -p experiments/v62_elite_games/replays -q",
+      "steps": 720,
+      "submission_id": 56553720,
+      "submission_owner_or_label": "M & M & P & Q"
+    },
+    {
+      "created_at_kaggle": "2026-09-26 07:52:41.127000",
+      "episode_id": 113619306,
+      "episode_list_command": "kaggle competitions episodes 56552482 --format csv",
+      "episode_state": "EpisodeState.COMPLETED",
+      "episode_type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+      "module_version": "1.32.7",
+      "players": [
+        "DECEM",
+        "DSM"
+      ],
+      "replay_sha256": "39e5e871af4c0eac685fa57d59c4401f83385cb75fd67bad1a3a08206c21be2d",
+      "rewards": [
+        120032.0,
+        131846.0
+      ],
+      "seed": 1032774738,
+      "source_command": "kaggle competitions replay 113619306 -p experiments/v62_elite_games/replays -q",
+      "steps": 720,
+      "submission_id": 56552482,
+      "submission_owner_or_label": "DECEM"
+    },
+    {
+      "created_at_kaggle": "2026-09-26 07:44:45.697000",
+      "episode_id": 113616641,
+      "episode_list_command": "kaggle competitions episodes 56552482 --format csv",
+      "episode_state": "EpisodeState.COMPLETED",
+      "episode_type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+      "module_version": "1.32.7",
+      "players": [
+        "DECEM",
+        "Unknown Mother-Goose"
+      ],
+      "replay_sha256": "b31dc89e84519124ac4c991d776f5241df8a22cb393f43b47c0a5308ba367978",
+      "rewards": [
+        92109.0,
+        91962.0
+      ],
+      "seed": 335515366,
+      "source_command": "kaggle competitions replay 113616641 -p experiments/v62_elite_games/replays -q",
+      "steps": 720,
+      "submission_id": 56552482,
+      "submission_owner_or_label": "DECEM"
+    },
+    {
+      "created_at_kaggle": "2026-09-26 07:28:40.215000",
+      "episode_id": 113612113,
+      "episode_list_command": "kaggle competitions episodes 56552482 --format csv",
+      "episode_state": "EpisodeState.COMPLETED",
+      "episode_type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+      "module_version": "1.32.7",
+      "players": [
+        "DECEM",
+        "Fourth Quadrant"
+      ],
+      "replay_sha256": "5c9b24dff6fbdb2a27128a77a2226241e3acbec60752c7278e9a605fa6f884ec",
+      "rewards": [
+        86974.0,
+        81271.0
+      ],
+      "seed": 1477243741,
+      "source_command": "kaggle competitions replay 113612113 -p experiments/v62_elite_games/replays -q",
+      "steps": 720,
+      "submission_id": 56552482,
+      "submission_owner_or_label": "DECEM"
+    }
+  ],
+  "selection": "User supplied episode 113718271 plus six other distinct recent public games; latest available dates selected across current Boey, M & M & P & Q, and DECEM submission episode lists, with top-board opponents present in the replay seats.",
+  "source": "Official Kaggle competitions episodes/replay CLI"
+}

@@ -1,0 +1,165 @@
+{
+  "by_candidate_seat": {
+    "0": {
+      "candidate_errors": 3,
+      "decisive_win_rate": 0.0,
+      "decisive_win_rate_wilson_95": [
+        5.551115123125783e-17,
+        0.5614970317550454
+      ],
+      "draws": 0,
+      "games": 3,
+      "infrastructure_errors": 0,
+      "losses": 3,
+      "mean_final_coins_candidate": null,
+      "mean_runtime_seconds": 0.15986873033883361,
+      "median_coin_difference_candidate": null,
+      "opponent_errors": 0,
+      "paired_seed_bootstrap_win_rate_95": [
+        0.0,
+        0.0
+      ],
+      "score_rate": 0.0,
+      "timeouts": 0,
+      "win_rate": 0.0,
+      "win_rate_wilson_95": [
+        5.551115123125783e-17,
+        0.5614970317550454
+      ],
+      "wins": 0
+    },
+    "1": {
+      "candidate_errors": 3,
+      "decisive_win_rate": 0.0,
+      "decisive_win_rate_wilson_95": [
+        5.551115123125783e-17,
+        0.5614970317550454
+      ],
+      "draws": 0,
+      "games": 3,
+      "infrastructure_errors": 0,
+      "losses": 3,
+      "mean_final_coins_candidate": null,
+      "mean_runtime_seconds": 0.20593409932916984,
+      "median_coin_difference_candidate": null,
+      "opponent_errors": 0,
+      "paired_seed_bootstrap_win_rate_95": [
+        0.0,
+        0.0
+      ],
+      "score_rate": 0.0,
+      "timeouts": 0,
+      "win_rate": 0.0,
+      "win_rate_wilson_95": [
+        5.551115123125783e-17,
+        0.5614970317550454
+      ],
+      "wins": 0
+    }
+  },
+  "by_opponent": {
+    "v50": {
+      "candidate_errors": 2,
+      "decisive_win_rate": 0.0,
+      "decisive_win_rate_wilson_95": [
+        0.0,
+        0.6576197724933469
+      ],
+      "draws": 0,
+      "games": 2,
+      "infrastructure_errors": 0,
+      "losses": 2,
+      "mean_final_coins_candidate": null,
+      "mean_runtime_seconds": 0.15545042150188237,
+      "median_coin_difference_candidate": null,
+      "opponent_errors": 0,
+      "paired_seed_bootstrap_win_rate_95": null,
+      "score_rate": 0.0,
+      "timeouts": 0,
+      "win_rate": 0.0,
+      "win_rate_wilson_95": [
+        0.0,
+        0.6576197724933469
+      ],
+      "wins": 0
+    },
+    "v53": {
+      "candidate_errors": 2,
+      "decisive_win_rate": 0.0,
+      "decisive_win_rate_wilson_95": [
+        0.0,
+        0.6576197724933469
+      ],
+      "draws": 0,
+      "games": 2,
+      "infrastructure_errors": 0,
+      "losses": 2,
+      "mean_final_coins_candidate": null,
+      "mean_runtime_seconds": 0.2606555340025807,
+      "median_coin_difference_candidate": null,
+      "opponent_errors": 0,
+      "paired_seed_bootstrap_win_rate_95": null,
+      "score_rate": 0.0,
+      "timeouts": 0,
+      "win_rate": 0.0,
+      "win_rate_wilson_95": [
+        0.0,
+        0.6576197724933469
+      ],
+      "wins": 0
+    },
+    "v54": {
+      "candidate_errors": 2,
+      "decisive_win_rate": 0.0,
+      "decisive_win_rate_wilson_95": [
+        0.0,
+        0.6576197724933469
+      ],
+      "draws": 0,
+      "games": 2,
+      "infrastructure_errors": 0,
+      "losses": 2,
+      "mean_final_coins_candidate": null,
+      "mean_runtime_seconds": 0.1325982889975421,
+      "median_coin_difference_candidate": null,
+      "opponent_errors": 0,
+      "paired_seed_bootstrap_win_rate_95": null,
+      "score_rate": 0.0,
+      "timeouts": 0,
+      "win_rate": 0.0,
+      "win_rate_wilson_95": [
+        0.0,
+        0.6576197724933469
+      ],
+      "wins": 0
+    }
+  },
+  "candidate_errors": 6,
+  "decisive_win_rate": 0.0,
+  "decisive_win_rate_wilson_95": [
+    2.7755575615628914e-17,
+    0.3903342879021653
+  ],
+  "determinism_checks": [],
+  "deterministic": null,
+  "draws": 0,
+  "games": 6,
+  "infrastructure_errors": 0,
+  "losses": 6,
+  "mean_final_coins_candidate": null,
+  "mean_runtime_seconds": 0.1829014148340017,
+  "median_coin_difference_candidate": null,
+  "opponent_errors": 0,
+  "paired_seed_bootstrap_win_rate_95": [
+    0.0,
+    0.0
+  ],
+  "score_rate": 0.0,
+  "timeouts": 0,
+  "win_rate": 0.0,
+  "win_rate_wilson_95": [
+    2.7755575615628914e-17,
+    0.3903342879021653
+  ],
+  "wins": 0
+}

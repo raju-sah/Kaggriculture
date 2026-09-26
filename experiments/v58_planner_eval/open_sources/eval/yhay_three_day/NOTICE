@@ -1,0 +1,8 @@
+Local benchmark snapshot of Three-Day Shop Router, by Yusuke Hayashi (yhay81).
+Kaggle notebook states Apache License 2.0. The notebook separately exposes a generated
+719-turn action tape in source/tape.inc; its provenance/ownership is not stated in the
+notebook text. Apache licensing of authored source code does not independently resolve
+rights in action sequences. This snapshot is for internal opponent evaluation only
+and must not be adapted into or submitted as a route policy.
+
+The extracted runtime sources preserve SPDX-License-Identifier: Apache-2.0 headers.

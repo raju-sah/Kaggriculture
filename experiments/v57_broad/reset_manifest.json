@@ -1,0 +1,9 @@
+{
+  "candidate": "experiments/v57_broad/v57_reset_candidate.py",
+  "sha256": "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+  "archive_sha256": "79c131651ed553bfb472d3b7bd5a7dfc8b52916e542de7bd4f9fe83741cb3490",
+  "change": "Invalidate pending weed transactions after overnight actor reset",
+  "parent_sha256": "6b2e3ace3b9d500047e9ae8f2da4fd7729cf65f2f29b16315a2b8aa1b476ba59",
+  "submitted": false,
+  "validation_plan": "experiments/runs/v57_reset_validation/plan.json"
+}

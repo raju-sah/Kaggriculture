@@ -1,0 +1,16 @@
+{
+  "source": "Public Kaggle Kaggriculture episode replay, DSM seat 0 vs M & M & P & Q",
+  "episode_id": 113508988,
+  "public_submission_id": 56557996,
+  "source_team": "DSM",
+  "source_replay_path": "experiments/v58_elite/replays/episode-113508988-replay.json",
+  "source_replay_sha256": "1b6be94632fbe56de2c6f3e5d13c7604ad6f06e630be6c594211fff3ad824a6a",
+  "route_method": "actions from replay steps[1:], seat 0; no source code recovered",
+  "action_count": 719,
+  "baseline_route_policy": "experiments/v57_broad/v57_reset_candidate.py",
+  "baseline_route_sha256": "4173479fe1f80d031d570d1ea23b694dfe86e1d162317a4c9c7df0058a40208e",
+  "candidate_path": "experiments/v58_expansion/elite_route/v58_dsm_replay_route.py",
+  "candidate_sha256": "88e26b19baebbf7c547190560de374884acb940f20dc5085ffef7ccc51f24671",
+  "adaptation": "identical frozen v57 reset overlays and state repair; only _ACTIONS stream replaced",
+  "license_status": "Replay is public and discoverable through Kaggle CLI; no explicit reuse license for this derived action stream was found. Internal experiment only, retain attribution, do not redistribute or submit without rights review."
+}
