@@ -1,0 +1,105 @@
+{
+  "purpose": "spent-seed-only search over second-land timing and strawberry expansion price gate",
+  "source_basis": "experiments/v70_capacity/agent.py",
+  "source_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e",
+  "opponents": {
+    "V56": "agents/v56_agent.py",
+    "V70": "experiments/v70_capacity/agent.py"
+  },
+  "screen_seeds": [
+    94700,
+    92802
+  ],
+  "confirm_seed": 92804,
+  "excluded_from_finalist_selection": [
+    "gate100_land8",
+    "gate100_land10"
+  ],
+  "seat_orders": [
+    "ab",
+    "ba"
+  ],
+  "variants": [
+    {
+      "name": "gate100_land8",
+      "path": "experiments/v72_search/agents/gate100_land8.py",
+      "sha256": "78425b086b077780c12e910b4b869a0a9d32e39e366d25efcce116c250d01120",
+      "strawberry_price_gate": 100,
+      "third_quadrant_unlock_day": 8,
+      "expanded_plot_area": "V70 layout-derived wheat/melon, strawberry trigger uses expansion cells",
+      "base_source_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e"
+    },
+    {
+      "name": "gate100_land10",
+      "path": "experiments/v72_search/agents/gate100_land10.py",
+      "sha256": "0c8e276e1ee12473013e57d6dcd0b0a9792ccca400eab795cee90591c023a940",
+      "strawberry_price_gate": 100,
+      "third_quadrant_unlock_day": 10,
+      "expanded_plot_area": "V70 layout-derived wheat/melon, strawberry trigger uses expansion cells",
+      "base_source_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e"
+    },
+    {
+      "name": "gate100_land12",
+      "path": "experiments/v72_search/agents/gate100_land12.py",
+      "sha256": "1e92e937965a6b98af5b0b80873800094fa97bc06d3fa716a9ae654501c03bba",
+      "strawberry_price_gate": 100,
+      "third_quadrant_unlock_day": 12,
+      "expanded_plot_area": "V70 layout-derived wheat/melon, strawberry trigger uses expansion cells",
+      "base_source_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e"
+    },
+    {
+      "name": "gate150_land8",
+      "path": "experiments/v72_search/agents/gate150_land8.py",
+      "sha256": "2e121dbc01f5b5ea4af2a7b94255214e7b33e6308395d7833aed3b16f158253a",
+      "strawberry_price_gate": 150,
+      "third_quadrant_unlock_day": 8,
+      "expanded_plot_area": "V70 layout-derived wheat/melon, strawberry trigger uses expansion cells",
+      "base_source_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e"
+    },
+    {
+      "name": "gate150_land10",
+      "path": "experiments/v72_search/agents/gate150_land10.py",
+      "sha256": "fc5de8db250e25c67b24aef778166e217b04febc27d083991932a9d76f3c2935",
+      "strawberry_price_gate": 150,
+      "third_quadrant_unlock_day": 10,
+      "expanded_plot_area": "V70 layout-derived wheat/melon, strawberry trigger uses expansion cells",
+      "base_source_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e"
+    },
+    {
+      "name": "gate150_land12",
+      "path": "experiments/v72_search/agents/gate150_land12.py",
+      "sha256": "c6bae3ded53a0abd2d1e01f5b11296637b80fe855bcbc6956ac59341bb558403",
+      "strawberry_price_gate": 150,
+      "third_quadrant_unlock_day": 12,
+      "expanded_plot_area": "V70 layout-derived wheat/melon, strawberry trigger uses expansion cells",
+      "base_source_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e"
+    },
+    {
+      "name": "gate200_land8",
+      "path": "experiments/v72_search/agents/gate200_land8.py",
+      "sha256": "a002a4b2d1f98453105bfeb4bde4c3c3c3d8dc645c5930c28588a3347b35f4ce",
+      "strawberry_price_gate": 200,
+      "third_quadrant_unlock_day": 8,
+      "expanded_plot_area": "V70 layout-derived wheat/melon, strawberry trigger uses expansion cells",
+      "base_source_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e"
+    },
+    {
+      "name": "gate200_land10",
+      "path": "experiments/v72_search/agents/gate200_land10.py",
+      "sha256": "cd667e1f6c5049ca06fb48c3cc883a4540f63bb4aea4b3124a3648e3ef04386b",
+      "strawberry_price_gate": 200,
+      "third_quadrant_unlock_day": 10,
+      "expanded_plot_area": "V70 layout-derived wheat/melon, strawberry trigger uses expansion cells",
+      "base_source_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e"
+    },
+    {
+      "name": "gate200_land12",
+      "path": "experiments/v72_search/agents/gate200_land12.py",
+      "sha256": "714bad24dd18fe93fad1d45eb78d4027d69b218d5d839155bdc67a75648a82ec",
+      "strawberry_price_gate": 200,
+      "third_quadrant_unlock_day": 12,
+      "expanded_plot_area": "V70 layout-derived wheat/melon, strawberry trigger uses expansion cells",
+      "base_source_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e"
+    }
+  ]
+}

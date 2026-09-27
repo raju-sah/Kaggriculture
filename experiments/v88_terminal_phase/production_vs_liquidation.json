@@ -1,0 +1,3882 @@
+[
+ {
+  "seat": 0,
+  "seed": "92802",
+  "v50": {
+   "animal_yield_d24": 29,
+   "animal_yield_d29": 30,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 76,
+   "crop_yield_d29": 56,
+   "final_cash": 77947.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 77
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 85
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 51
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 79
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 253
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 15
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_planner_eval/model_based/spent_seed_92802/allocator/replays/v50-seed-92802-ab-repeat-0.json",
+   "seat": 0,
+   "sell_cash_all": 112183,
+   "sell_cash_d24_29": {
+    "CARROT": 10634,
+    "EGG": 3217,
+    "FERTILIZER": 1588,
+    "MILK": 212,
+    "STRAWBERRY": 2017,
+    "TOMATO": 6589,
+    "WHEAT": 7001,
+    "WOOL": 3496
+   },
+   "sell_units_all": 1669,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 77,
+    "FERTILIZER": 75,
+    "MILK": 51,
+    "STRAWBERRY": 79,
+    "TOMATO": 80,
+    "WHEAT": 238,
+    "WOOL": 15
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 4,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 15,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 7,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 40,
+    "WOOL": 2
+   },
+   "shed_total_d24": 100,
+   "shed_total_d29": 94
+  },
+  "v56": {
+   "animal_yield_d24": 20,
+   "animal_yield_d29": 2,
+   "buy_units_d24_29": {
+    "FERTILIZER": 2,
+    "WHEAT": 17
+   },
+   "crop_yield_d24": 79,
+   "crop_yield_d29": 8,
+   "final_cash": 52341.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 17,
+     "ordered": 17
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 14
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 25
+    },
+    "SELL:MELON": {
+     "accepted": 0,
+     "ordered": 36
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 18
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 16
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 51
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 24
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v69_dispatch/panel_vs_v56/replays/v56-seed-92802-ab-repeat-0.json",
+   "seat": 0,
+   "sell_cash_all": 62930,
+   "sell_cash_d24_29": {
+    "EGG": 579,
+    "FERTILIZER": 1270,
+    "MELON": 5454,
+    "MILK": 3785,
+    "STRAWBERRY": 3242,
+    "WHEAT": 1977,
+    "WOOL": 5796
+   },
+   "sell_units_all": 578,
+   "sell_units_d24_29": {
+    "EGG": 14,
+    "FERTILIZER": 25,
+    "MELON": 36,
+    "MILK": 18,
+    "STRAWBERRY": 16,
+    "WHEAT": 51,
+    "WOOL": 24
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 7,
+    "GOOSE": 1,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 4,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 2,
+    "FERTILIZER": 7,
+    "GOOSE": 1,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 2,
+    "TOMATO": 0,
+    "WHEAT": 9,
+    "WOOL": 0
+   },
+   "shed_total_d24": 21,
+   "shed_total_d29": 15
+  }
+ },
+ {
+  "seat": 1,
+  "seed": "92802",
+  "v50": {
+   "animal_yield_d24": 29,
+   "animal_yield_d29": 30,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 76,
+   "crop_yield_d29": 56,
+   "final_cash": 77947.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 77
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 85
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 51
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 79
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 253
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 15
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_planner_eval/model_based/spent_seed_92802/allocator/replays/v50-seed-92802-ba-repeat-0.json",
+   "seat": 1,
+   "sell_cash_all": 112183,
+   "sell_cash_d24_29": {
+    "CARROT": 10634,
+    "EGG": 3217,
+    "FERTILIZER": 1588,
+    "MILK": 212,
+    "STRAWBERRY": 2017,
+    "TOMATO": 6589,
+    "WHEAT": 7001,
+    "WOOL": 3496
+   },
+   "sell_units_all": 1669,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 77,
+    "FERTILIZER": 75,
+    "MILK": 51,
+    "STRAWBERRY": 79,
+    "TOMATO": 80,
+    "WHEAT": 238,
+    "WOOL": 15
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 4,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 23,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 6,
+    "SHEEP": 0,
+    "STRAWBERRY": 18,
+    "TOMATO": 0,
+    "WHEAT": 45,
+    "WOOL": 8
+   },
+   "shed_total_d24": 100,
+   "shed_total_d29": 79
+  },
+  "v56": {
+   "animal_yield_d24": 20,
+   "animal_yield_d29": 2,
+   "buy_units_d24_29": {
+    "FERTILIZER": 2,
+    "WHEAT": 17
+   },
+   "crop_yield_d24": 79,
+   "crop_yield_d29": 8,
+   "final_cash": 52341.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 17,
+     "ordered": 17
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 14
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 25
+    },
+    "SELL:MELON": {
+     "accepted": 0,
+     "ordered": 36
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 18
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 16
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 51
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 24
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v69_dispatch/panel_vs_v56/replays/v56-seed-92802-ba-repeat-0.json",
+   "seat": 1,
+   "sell_cash_all": 62930,
+   "sell_cash_d24_29": {
+    "EGG": 579,
+    "FERTILIZER": 1270,
+    "MELON": 5454,
+    "MILK": 3785,
+    "STRAWBERRY": 3242,
+    "WHEAT": 1977,
+    "WOOL": 5796
+   },
+   "sell_units_all": 578,
+   "sell_units_d24_29": {
+    "EGG": 14,
+    "FERTILIZER": 25,
+    "MELON": 36,
+    "MILK": 18,
+    "STRAWBERRY": 16,
+    "WHEAT": 51,
+    "WOOL": 24
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 7,
+    "GOOSE": 1,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 4,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 16,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 7,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 35,
+    "WOOL": 2
+   },
+   "shed_total_d24": 96,
+   "shed_total_d29": 96
+  }
+ },
+ {
+  "seat": 0,
+  "seed": "94110",
+  "v50": {
+   "animal_yield_d24": 32,
+   "animal_yield_d29": 30,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 125855.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 88
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 60
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 15
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v50-seed-94110-ab-repeat-0.json",
+   "seat": 0,
+   "sell_cash_all": 160418,
+   "sell_cash_d24_29": {
+    "CARROT": 3128,
+    "EGG": 3569,
+    "FERTILIZER": 1378,
+    "MILK": 14160,
+    "STRAWBERRY": 7654,
+    "TOMATO": 4235,
+    "WHEAT": 7397,
+    "WOOL": 3618
+   },
+   "sell_units_all": 1734,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 78,
+    "MILK": 60,
+    "STRAWBERRY": 83,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 15
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 16,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 7,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 35,
+    "WOOL": 2
+   },
+   "shed_total_d24": 96,
+   "shed_total_d29": 96
+  },
+  "v56": {
+   "animal_yield_d24": 32,
+   "animal_yield_d29": 30,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 129870.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 88
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 60
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 15
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v56-seed-94110-ab-repeat-0.json",
+   "seat": 0,
+   "sell_cash_all": 165145,
+   "sell_cash_d24_29": {
+    "CARROT": 3190,
+    "EGG": 3337,
+    "FERTILIZER": 2060,
+    "MILK": 13768,
+    "STRAWBERRY": 11645,
+    "TOMATO": 4845,
+    "WHEAT": 7053,
+    "WOOL": 3723
+   },
+   "sell_units_all": 1734,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 78,
+    "MILK": 60,
+    "STRAWBERRY": 83,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 15
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 16,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 7,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 35,
+    "WOOL": 2
+   },
+   "shed_total_d24": 96,
+   "shed_total_d29": 96
+  }
+ },
+ {
+  "seat": 1,
+  "seed": "94110",
+  "v50": {
+   "animal_yield_d24": 32,
+   "animal_yield_d29": 30,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 125855.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 88
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 60
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 15
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v50-seed-94110-ba-repeat-0.json",
+   "seat": 1,
+   "sell_cash_all": 160418,
+   "sell_cash_d24_29": {
+    "CARROT": 3128,
+    "EGG": 3569,
+    "FERTILIZER": 1378,
+    "MILK": 14160,
+    "STRAWBERRY": 7654,
+    "TOMATO": 4235,
+    "WHEAT": 7397,
+    "WOOL": 3618
+   },
+   "sell_units_all": 1734,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 78,
+    "MILK": 60,
+    "STRAWBERRY": 83,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 15
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 23,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 6,
+    "SHEEP": 0,
+    "STRAWBERRY": 18,
+    "TOMATO": 0,
+    "WHEAT": 45,
+    "WOOL": 8
+   },
+   "shed_total_d24": 100,
+   "shed_total_d29": 79
+  },
+  "v56": {
+   "animal_yield_d24": 32,
+   "animal_yield_d29": 30,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 129870.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 88
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 60
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 15
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v56-seed-94110-ba-repeat-0.json",
+   "seat": 1,
+   "sell_cash_all": 165145,
+   "sell_cash_d24_29": {
+    "CARROT": 3190,
+    "EGG": 3337,
+    "FERTILIZER": 2060,
+    "MILK": 13768,
+    "STRAWBERRY": 11645,
+    "TOMATO": 4845,
+    "WHEAT": 7053,
+    "WOOL": 3723
+   },
+   "sell_units_all": 1734,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 78,
+    "MILK": 60,
+    "STRAWBERRY": 83,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 15
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 16,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 7,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 35,
+    "WOOL": 2
+   },
+   "shed_total_d24": 96,
+   "shed_total_d29": 96
+  }
+ },
+ {
+  "seat": 0,
+  "seed": "94111",
+  "v50": {
+   "animal_yield_d24": 32,
+   "animal_yield_d29": 30,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 104819.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 88
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 60
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 15
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v50-seed-94111-ab-repeat-0.json",
+   "seat": 0,
+   "sell_cash_all": 139243,
+   "sell_cash_d24_29": {
+    "CARROT": 2566,
+    "EGG": 3484,
+    "FERTILIZER": 1381,
+    "MILK": 14672,
+    "STRAWBERRY": 3353,
+    "TOMATO": 5295,
+    "WHEAT": 6959,
+    "WOOL": 3700
+   },
+   "sell_units_all": 1734,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 78,
+    "MILK": 60,
+    "STRAWBERRY": 83,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 15
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 16,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 7,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 35,
+    "WOOL": 2
+   },
+   "shed_total_d24": 96,
+   "shed_total_d29": 96
+  },
+  "v56": {
+   "animal_yield_d24": 32,
+   "animal_yield_d29": 30,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 100658.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 88
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 60
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 15
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v56-seed-94111-ab-repeat-0.json",
+   "seat": 0,
+   "sell_cash_all": 135803,
+   "sell_cash_d24_29": {
+    "CARROT": 2731,
+    "EGG": 3325,
+    "FERTILIZER": 2060,
+    "MILK": 13776,
+    "STRAWBERRY": 2063,
+    "TOMATO": 5109,
+    "WHEAT": 6486,
+    "WOOL": 3766
+   },
+   "sell_units_all": 1734,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 78,
+    "MILK": 60,
+    "STRAWBERRY": 83,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 15
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 16,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 7,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 35,
+    "WOOL": 2
+   },
+   "shed_total_d24": 96,
+   "shed_total_d29": 96
+  }
+ },
+ {
+  "seat": 1,
+  "seed": "94111",
+  "v50": {
+   "animal_yield_d24": 32,
+   "animal_yield_d29": 30,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 104819.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 88
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 60
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 15
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v50-seed-94111-ba-repeat-0.json",
+   "seat": 1,
+   "sell_cash_all": 139243,
+   "sell_cash_d24_29": {
+    "CARROT": 2566,
+    "EGG": 3484,
+    "FERTILIZER": 1381,
+    "MILK": 14672,
+    "STRAWBERRY": 3353,
+    "TOMATO": 5295,
+    "WHEAT": 6959,
+    "WOOL": 3700
+   },
+   "sell_units_all": 1734,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 78,
+    "MILK": 60,
+    "STRAWBERRY": 83,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 15
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 23,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 6,
+    "SHEEP": 0,
+    "STRAWBERRY": 18,
+    "TOMATO": 0,
+    "WHEAT": 45,
+    "WOOL": 8
+   },
+   "shed_total_d24": 100,
+   "shed_total_d29": 79
+  },
+  "v56": {
+   "animal_yield_d24": 32,
+   "animal_yield_d29": 30,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 100658.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 88
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 60
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 15
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v56-seed-94111-ba-repeat-0.json",
+   "seat": 1,
+   "sell_cash_all": 135803,
+   "sell_cash_d24_29": {
+    "CARROT": 2731,
+    "EGG": 3325,
+    "FERTILIZER": 2060,
+    "MILK": 13776,
+    "STRAWBERRY": 2063,
+    "TOMATO": 5109,
+    "WHEAT": 6486,
+    "WOOL": 3766
+   },
+   "sell_units_all": 1734,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 78,
+    "MILK": 60,
+    "STRAWBERRY": 83,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 15
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 16,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 7,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 35,
+    "WOOL": 2
+   },
+   "shed_total_d24": 96,
+   "shed_total_d29": 96
+  }
+ },
+ {
+  "seat": 0,
+  "seed": "94112",
+  "v50": {
+   "animal_yield_d24": 36,
+   "animal_yield_d29": 32,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 133947.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 86
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 76
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 7
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v50-seed-94112-ab-repeat-0.json",
+   "seat": 0,
+   "sell_cash_all": 168432,
+   "sell_cash_d24_29": {
+    "CARROT": 5172,
+    "EGG": 3599,
+    "FERTILIZER": 1362,
+    "MILK": 18280,
+    "STRAWBERRY": 12248,
+    "TOMATO": 5295,
+    "WHEAT": 9550,
+    "WOOL": 11
+   },
+   "sell_units_all": 1738,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 76,
+    "MILK": 76,
+    "STRAWBERRY": 80,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 7
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 16,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 11,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 35,
+    "WOOL": 0
+   },
+   "shed_total_d24": 98,
+   "shed_total_d29": 96
+  },
+  "v56": {
+   "animal_yield_d24": 36,
+   "animal_yield_d29": 32,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 131309.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 86
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 76
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 7
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v56-seed-94112-ab-repeat-0.json",
+   "seat": 0,
+   "sell_cash_all": 166493,
+   "sell_cash_d24_29": {
+    "CARROT": 4874,
+    "EGG": 3378,
+    "FERTILIZER": 2047,
+    "MILK": 17855,
+    "STRAWBERRY": 11496,
+    "TOMATO": 5109,
+    "WHEAT": 9359,
+    "WOOL": 11
+   },
+   "sell_units_all": 1738,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 76,
+    "MILK": 76,
+    "STRAWBERRY": 80,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 7
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 16,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 11,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 35,
+    "WOOL": 0
+   },
+   "shed_total_d24": 98,
+   "shed_total_d29": 96
+  }
+ },
+ {
+  "seat": 1,
+  "seed": "94112",
+  "v50": {
+   "animal_yield_d24": 36,
+   "animal_yield_d29": 32,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 133947.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 86
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 76
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 7
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v50-seed-94112-ba-repeat-0.json",
+   "seat": 1,
+   "sell_cash_all": 168432,
+   "sell_cash_d24_29": {
+    "CARROT": 5172,
+    "EGG": 3599,
+    "FERTILIZER": 1362,
+    "MILK": 18280,
+    "STRAWBERRY": 12248,
+    "TOMATO": 5295,
+    "WHEAT": 9550,
+    "WOOL": 11
+   },
+   "sell_units_all": 1738,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 76,
+    "MILK": 76,
+    "STRAWBERRY": 80,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 7
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 23,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 6,
+    "SHEEP": 0,
+    "STRAWBERRY": 18,
+    "TOMATO": 0,
+    "WHEAT": 45,
+    "WOOL": 8
+   },
+   "shed_total_d24": 100,
+   "shed_total_d29": 79
+  },
+  "v56": {
+   "animal_yield_d24": 36,
+   "animal_yield_d29": 32,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 131309.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 86
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 76
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 7
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v56-seed-94112-ba-repeat-0.json",
+   "seat": 1,
+   "sell_cash_all": 166493,
+   "sell_cash_d24_29": {
+    "CARROT": 4874,
+    "EGG": 3378,
+    "FERTILIZER": 2047,
+    "MILK": 17855,
+    "STRAWBERRY": 11496,
+    "TOMATO": 5109,
+    "WHEAT": 9359,
+    "WOOL": 11
+   },
+   "sell_units_all": 1738,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 76,
+    "MILK": 76,
+    "STRAWBERRY": 80,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 7
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 16,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 7,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 35,
+    "WOOL": 2
+   },
+   "shed_total_d24": 96,
+   "shed_total_d29": 96
+  }
+ },
+ {
+  "seat": 0,
+  "seed": "94113",
+  "v50": {
+   "animal_yield_d24": 34,
+   "animal_yield_d29": 30,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 55,
+   "final_cash": 105032.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 89
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 86
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 68
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 77
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 250
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 7
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v50-seed-94113-ab-repeat-0.json",
+   "seat": 0,
+   "sell_cash_all": 139580,
+   "sell_cash_d24_29": {
+    "CARROT": 4081,
+    "EGG": 3363,
+    "FERTILIZER": 1407,
+    "MILK": 9991,
+    "STRAWBERRY": 2001,
+    "TOMATO": 10306,
+    "WHEAT": 9167,
+    "WOOL": 1647
+   },
+   "sell_units_all": 1698,
+   "sell_units_d24_29": {
+    "CARROT": 89,
+    "EGG": 80,
+    "FERTILIZER": 76,
+    "MILK": 68,
+    "STRAWBERRY": 77,
+    "TOMATO": 80,
+    "WHEAT": 235,
+    "WOOL": 7
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 3,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 15,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 9,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 39,
+    "WOOL": 0
+   },
+   "shed_total_d24": 99,
+   "shed_total_d29": 95
+  },
+  "v56": {
+   "animal_yield_d24": 34,
+   "animal_yield_d29": 30,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 55,
+   "final_cash": 104509.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 89
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 86
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 68
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 77
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 250
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 7
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v56-seed-94113-ab-repeat-0.json",
+   "seat": 0,
+   "sell_cash_all": 139760,
+   "sell_cash_d24_29": {
+    "CARROT": 3673,
+    "EGG": 3220,
+    "FERTILIZER": 2079,
+    "MILK": 13111,
+    "STRAWBERRY": 514,
+    "TOMATO": 9566,
+    "WHEAT": 8947,
+    "WOOL": 1721
+   },
+   "sell_units_all": 1698,
+   "sell_units_d24_29": {
+    "CARROT": 89,
+    "EGG": 80,
+    "FERTILIZER": 76,
+    "MILK": 68,
+    "STRAWBERRY": 77,
+    "TOMATO": 80,
+    "WHEAT": 235,
+    "WOOL": 7
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 3,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 15,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 9,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 39,
+    "WOOL": 0
+   },
+   "shed_total_d24": 99,
+   "shed_total_d29": 95
+  }
+ },
+ {
+  "seat": 1,
+  "seed": "94113",
+  "v50": {
+   "animal_yield_d24": 36,
+   "animal_yield_d29": 32,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 132940.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 86
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 76
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 7
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v50-seed-94113-ba-repeat-0.json",
+   "seat": 1,
+   "sell_cash_all": 167423,
+   "sell_cash_d24_29": {
+    "CARROT": 4121,
+    "EGG": 3486,
+    "FERTILIZER": 1369,
+    "MILK": 17592,
+    "STRAWBERRY": 9757,
+    "TOMATO": 10306,
+    "WHEAT": 8962,
+    "WOOL": 104
+   },
+   "sell_units_all": 1738,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 76,
+    "MILK": 76,
+    "STRAWBERRY": 80,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 7
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 23,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 6,
+    "SHEEP": 0,
+    "STRAWBERRY": 18,
+    "TOMATO": 0,
+    "WHEAT": 45,
+    "WOOL": 8
+   },
+   "shed_total_d24": 100,
+   "shed_total_d29": 79
+  },
+  "v56": {
+   "animal_yield_d24": 36,
+   "animal_yield_d29": 32,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 106912.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 86
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 76
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 7
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v56-seed-94113-ba-repeat-0.json",
+   "seat": 1,
+   "sell_cash_all": 142170,
+   "sell_cash_d24_29": {
+    "CARROT": 3708,
+    "EGG": 3341,
+    "FERTILIZER": 2085,
+    "MILK": 13046,
+    "STRAWBERRY": 526,
+    "TOMATO": 9566,
+    "WHEAT": 8715,
+    "WOOL": 1726
+   },
+   "sell_units_all": 1741,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 76,
+    "MILK": 76,
+    "STRAWBERRY": 83,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 7
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 15,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 7,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 39,
+    "WOOL": 1
+   },
+   "shed_total_d24": 98,
+   "shed_total_d29": 95
+  }
+ },
+ {
+  "seat": 0,
+  "seed": "94114",
+  "v50": {
+   "animal_yield_d24": 32,
+   "animal_yield_d29": 30,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 64233.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 88
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 60
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 15
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v50-seed-94114-ab-repeat-0.json",
+   "seat": 0,
+   "sell_cash_all": 98763,
+   "sell_cash_d24_29": {
+    "CARROT": 4765,
+    "EGG": 4643,
+    "FERTILIZER": 1366,
+    "MILK": 194,
+    "STRAWBERRY": 482,
+    "TOMATO": 4235,
+    "WHEAT": 6767,
+    "WOOL": 3673
+   },
+   "sell_units_all": 1734,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 78,
+    "MILK": 60,
+    "STRAWBERRY": 83,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 15
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 16,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 7,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 35,
+    "WOOL": 2
+   },
+   "shed_total_d24": 96,
+   "shed_total_d29": 96
+  },
+  "v56": {
+   "animal_yield_d24": 32,
+   "animal_yield_d29": 30,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 60894.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 88
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 60
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 15
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v56-seed-94114-ab-repeat-0.json",
+   "seat": 0,
+   "sell_cash_all": 96137,
+   "sell_cash_d24_29": {
+    "CARROT": 4685,
+    "EGG": 3553,
+    "FERTILIZER": 2060,
+    "MILK": 66,
+    "STRAWBERRY": 191,
+    "TOMATO": 3585,
+    "WHEAT": 5894,
+    "WOOL": 3761
+   },
+   "sell_units_all": 1734,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 78,
+    "MILK": 60,
+    "STRAWBERRY": 83,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 15
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 16,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 7,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 35,
+    "WOOL": 2
+   },
+   "shed_total_d24": 96,
+   "shed_total_d29": 96
+  }
+ },
+ {
+  "seat": 1,
+  "seed": "94114",
+  "v50": {
+   "animal_yield_d24": 32,
+   "animal_yield_d29": 30,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 64233.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 88
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 60
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 15
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v50-seed-94114-ba-repeat-0.json",
+   "seat": 1,
+   "sell_cash_all": 98763,
+   "sell_cash_d24_29": {
+    "CARROT": 4765,
+    "EGG": 4643,
+    "FERTILIZER": 1366,
+    "MILK": 194,
+    "STRAWBERRY": 482,
+    "TOMATO": 4235,
+    "WHEAT": 6767,
+    "WOOL": 3673
+   },
+   "sell_units_all": 1734,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 78,
+    "MILK": 60,
+    "STRAWBERRY": 83,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 15
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 23,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 6,
+    "SHEEP": 0,
+    "STRAWBERRY": 18,
+    "TOMATO": 0,
+    "WHEAT": 45,
+    "WOOL": 8
+   },
+   "shed_total_d24": 100,
+   "shed_total_d29": 79
+  },
+  "v56": {
+   "animal_yield_d24": 32,
+   "animal_yield_d29": 30,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 60894.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 88
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 60
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 15
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_expansion/elite_route/all8_94110/baseline/replays/v56-seed-94114-ba-repeat-0.json",
+   "seat": 1,
+   "sell_cash_all": 96137,
+   "sell_cash_d24_29": {
+    "CARROT": 4685,
+    "EGG": 3553,
+    "FERTILIZER": 2060,
+    "MILK": 66,
+    "STRAWBERRY": 191,
+    "TOMATO": 3585,
+    "WHEAT": 5894,
+    "WOOL": 3761
+   },
+   "sell_units_all": 1734,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 78,
+    "MILK": 60,
+    "STRAWBERRY": 83,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 15
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 16,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 7,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 35,
+    "WOOL": 2
+   },
+   "shed_total_d24": 96,
+   "shed_total_d29": 96
+  }
+ },
+ {
+  "seat": 0,
+  "seed": "94400",
+  "v50": {
+   "animal_yield_d24": 32,
+   "animal_yield_d29": 30,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 75819.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 88
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 60
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 15
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/runs/v58_validation_original_route/baseline/replays/v50-seed-94400-ab-repeat-0.json",
+   "seat": 0,
+   "sell_cash_all": 110277,
+   "sell_cash_d24_29": {
+    "CARROT": 6422,
+    "EGG": 3426,
+    "FERTILIZER": 1362,
+    "MILK": 1076,
+    "STRAWBERRY": 170,
+    "TOMATO": 13484,
+    "WHEAT": 6955,
+    "WOOL": 3618
+   },
+   "sell_units_all": 1734,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 78,
+    "MILK": 60,
+    "STRAWBERRY": 83,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 15
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 16,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 7,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 35,
+    "WOOL": 2
+   },
+   "shed_total_d24": 96,
+   "shed_total_d29": 96
+  },
+  "v56": {
+   "animal_yield_d24": 32,
+   "animal_yield_d29": 30,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 71344.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 88
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 60
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 15
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/runs/v58_validation_original_route/baseline/replays/v56-seed-94400-ab-repeat-0.json",
+   "seat": 0,
+   "sell_cash_all": 106516,
+   "sell_cash_d24_29": {
+    "CARROT": 5157,
+    "EGG": 3320,
+    "FERTILIZER": 2060,
+    "MILK": 1602,
+    "STRAWBERRY": 497,
+    "TOMATO": 10314,
+    "WHEAT": 6294,
+    "WOOL": 3752
+   },
+   "sell_units_all": 1734,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 78,
+    "MILK": 60,
+    "STRAWBERRY": 83,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 15
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 16,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 7,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 35,
+    "WOOL": 2
+   },
+   "shed_total_d24": 96,
+   "shed_total_d29": 96
+  }
+ },
+ {
+  "seat": 1,
+  "seed": "94400",
+  "v50": {
+   "animal_yield_d24": 32,
+   "animal_yield_d29": 30,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 75819.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 88
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 60
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 15
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/runs/v58_validation_original_route/baseline/replays/v50-seed-94400-ba-repeat-0.json",
+   "seat": 1,
+   "sell_cash_all": 110277,
+   "sell_cash_d24_29": {
+    "CARROT": 6422,
+    "EGG": 3426,
+    "FERTILIZER": 1362,
+    "MILK": 1076,
+    "STRAWBERRY": 170,
+    "TOMATO": 13484,
+    "WHEAT": 6955,
+    "WOOL": 3618
+   },
+   "sell_units_all": 1734,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 78,
+    "MILK": 60,
+    "STRAWBERRY": 83,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 15
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 23,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 6,
+    "SHEEP": 0,
+    "STRAWBERRY": 18,
+    "TOMATO": 0,
+    "WHEAT": 45,
+    "WOOL": 8
+   },
+   "shed_total_d24": 100,
+   "shed_total_d29": 79
+  },
+  "v56": {
+   "animal_yield_d24": 32,
+   "animal_yield_d29": 30,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 71344.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 88
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 60
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 15
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/runs/v58_validation_original_route/baseline/replays/v56-seed-94400-ba-repeat-0.json",
+   "seat": 1,
+   "sell_cash_all": 106516,
+   "sell_cash_d24_29": {
+    "CARROT": 5157,
+    "EGG": 3320,
+    "FERTILIZER": 2060,
+    "MILK": 1602,
+    "STRAWBERRY": 497,
+    "TOMATO": 10314,
+    "WHEAT": 6294,
+    "WOOL": 3752
+   },
+   "sell_units_all": 1734,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 78,
+    "MILK": 60,
+    "STRAWBERRY": 83,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 15
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 16,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 7,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 35,
+    "WOOL": 2
+   },
+   "shed_total_d24": 96,
+   "shed_total_d29": 96
+  }
+ },
+ {
+  "seat": 0,
+  "seed": "94401",
+  "v50": {
+   "animal_yield_d24": 36,
+   "animal_yield_d29": 32,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 88426.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 86
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 76
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 7
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/runs/v58_validation_original_route/baseline/replays/v50-seed-94401-ab-repeat-0.json",
+   "seat": 0,
+   "sell_cash_all": 122525,
+   "sell_cash_d24_29": {
+    "CARROT": 5001,
+    "EGG": 4741,
+    "FERTILIZER": 1348,
+    "MILK": 2608,
+    "STRAWBERRY": 2933,
+    "TOMATO": 4235,
+    "WHEAT": 6549,
+    "WOOL": 11
+   },
+   "sell_units_all": 1741,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 76,
+    "MILK": 76,
+    "STRAWBERRY": 83,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 7
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 16,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 11,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 35,
+    "WOOL": 0
+   },
+   "shed_total_d24": 98,
+   "shed_total_d29": 96
+  },
+  "v56": {
+   "animal_yield_d24": 36,
+   "animal_yield_d29": 32,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 87735.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 86
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 76
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 83
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 244
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 7
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/runs/v58_validation_original_route/baseline/replays/v56-seed-94401-ab-repeat-0.json",
+   "seat": 0,
+   "sell_cash_all": 125087,
+   "sell_cash_d24_29": {
+    "CARROT": 5883,
+    "EGG": 4468,
+    "FERTILIZER": 4119,
+    "MILK": 1245,
+    "STRAWBERRY": 2437,
+    "TOMATO": 3585,
+    "WHEAT": 5376,
+    "WOOL": 1661
+   },
+   "sell_units_all": 1741,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 83,
+    "FERTILIZER": 76,
+    "MILK": 76,
+    "STRAWBERRY": 83,
+    "TOMATO": 80,
+    "WHEAT": 229,
+    "WOOL": 7
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 0,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 16,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 11,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 35,
+    "WOOL": 0
+   },
+   "shed_total_d24": 98,
+   "shed_total_d29": 96
+  }
+ },
+ {
+  "seat": 1,
+  "seed": "94401",
+  "v50": {
+   "animal_yield_d24": 36,
+   "animal_yield_d29": 32,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 88815.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 81
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 86
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 76
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 79
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 247
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 7
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/runs/v58_validation_original_route/baseline/replays/v50-seed-94401-ba-repeat-0.json",
+   "seat": 1,
+   "sell_cash_all": 122914,
+   "sell_cash_d24_29": {
+    "CARROT": 5001,
+    "EGG": 4655,
+    "FERTILIZER": 1348,
+    "MILK": 2993,
+    "STRAWBERRY": 3498,
+    "TOMATO": 4235,
+    "WHEAT": 6623,
+    "WOOL": 11
+   },
+   "sell_units_all": 1723,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 81,
+    "FERTILIZER": 76,
+    "MILK": 76,
+    "STRAWBERRY": 79,
+    "TOMATO": 80,
+    "WHEAT": 232,
+    "WOOL": 7
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 4,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 23,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 6,
+    "SHEEP": 0,
+    "STRAWBERRY": 18,
+    "TOMATO": 0,
+    "WHEAT": 45,
+    "WOOL": 8
+   },
+   "shed_total_d24": 100,
+   "shed_total_d29": 79
+  },
+  "v56": {
+   "animal_yield_d24": 36,
+   "animal_yield_d29": 32,
+   "buy_units_d24_29": {
+    "FERTILIZER": 61,
+    "WHEAT": 2
+   },
+   "crop_yield_d24": 77,
+   "crop_yield_d29": 56,
+   "final_cash": 90790.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:FERTILIZER": {
+     "accepted": 61,
+     "ordered": 61
+    },
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 2,
+     "ordered": 2
+    },
+    "SELL:CARROT": {
+     "accepted": 0,
+     "ordered": 90
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 81
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 86
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 76
+    },
+    "SELL:STRAWBERRY": {
+     "accepted": 0,
+     "ordered": 79
+    },
+    "SELL:TOMATO": {
+     "accepted": 0,
+     "ordered": 80
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 247
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 7
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/runs/v58_validation_original_route/baseline/replays/v56-seed-94401-ba-repeat-0.json",
+   "seat": 1,
+   "sell_cash_all": 125620,
+   "sell_cash_d24_29": {
+    "CARROT": 4938,
+    "EGG": 3449,
+    "FERTILIZER": 2047,
+    "MILK": 4156,
+    "STRAWBERRY": 7478,
+    "TOMATO": 3585,
+    "WHEAT": 5861,
+    "WOOL": 11
+   },
+   "sell_units_all": 1723,
+   "sell_units_d24_29": {
+    "CARROT": 90,
+    "EGG": 81,
+    "FERTILIZER": 76,
+    "MILK": 76,
+    "STRAWBERRY": 79,
+    "TOMATO": 80,
+    "WHEAT": 232,
+    "WOOL": 7
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 0,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 4,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 16,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 7,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 35,
+    "WOOL": 2
+   },
+   "shed_total_d24": 96,
+   "shed_total_d29": 96
+  }
+ },
+ {
+  "seat": 0,
+  "seed": "94700",
+  "v50": {
+   "animal_yield_d24": 22,
+   "animal_yield_d29": 4,
+   "buy_units_d24_29": {
+    "WHEAT": 35
+   },
+   "crop_yield_d24": 22,
+   "crop_yield_d29": 12,
+   "final_cash": 38685.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 35,
+     "ordered": 35
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 24
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 18
+    },
+    "SELL:MELON": {
+     "accepted": 0,
+     "ordered": 5
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 18
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 19
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 24
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/submission_candidate_20260926/spent94700_controls/replays/v50-seed-94700-ab-repeat-0.json",
+   "seat": 0,
+   "sell_cash_all": 47322,
+   "sell_cash_d24_29": {
+    "EGG": 1397,
+    "FERTILIZER": 820,
+    "MELON": 710,
+    "MILK": 3037,
+    "WHEAT": 827,
+    "WOOL": 5106
+   },
+   "sell_units_all": 471,
+   "sell_units_d24_29": {
+    "EGG": 24,
+    "FERTILIZER": 18,
+    "MELON": 5,
+    "MILK": 18,
+    "WHEAT": 19,
+    "WOOL": 24
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 2,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 6,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 4,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 7,
+    "WOOL": 0
+   },
+   "shed_total_d24": 11,
+   "shed_total_d29": 16
+  },
+  "v56": {
+   "animal_yield_d24": 22,
+   "animal_yield_d29": 4,
+   "buy_units_d24_29": {
+    "WHEAT": 33
+   },
+   "crop_yield_d24": 22,
+   "crop_yield_d29": 12,
+   "final_cash": 44930.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 33,
+     "ordered": 33
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 24
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 31
+    },
+    "SELL:MELON": {
+     "accepted": 0,
+     "ordered": 5
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 18
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 17
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 24
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/submission_candidate_20260926/spent94700_v56/replays/v56-seed-94700-ab-repeat-0.json",
+   "seat": 0,
+   "sell_cash_all": 53469,
+   "sell_cash_d24_29": {
+    "EGG": 1028,
+    "FERTILIZER": 1589,
+    "MELON": 710,
+    "MILK": 3839,
+    "WHEAT": 743,
+    "WOOL": 5820
+   },
+   "sell_units_all": 482,
+   "sell_units_d24_29": {
+    "EGG": 24,
+    "FERTILIZER": 31,
+    "MELON": 5,
+    "MILK": 18,
+    "WHEAT": 17,
+    "WOOL": 24
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 2,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 6,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 4,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 7,
+    "WOOL": 0
+   },
+   "shed_total_d24": 11,
+   "shed_total_d29": 15
+  }
+ },
+ {
+  "seat": 1,
+  "seed": "94700",
+  "v50": {
+   "animal_yield_d24": 22,
+   "animal_yield_d29": 4,
+   "buy_units_d24_29": {
+    "WHEAT": 35
+   },
+   "crop_yield_d24": 22,
+   "crop_yield_d29": 12,
+   "final_cash": 38685.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 35,
+     "ordered": 35
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 24
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 18
+    },
+    "SELL:MELON": {
+     "accepted": 0,
+     "ordered": 5
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 18
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 19
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 24
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/submission_candidate_20260926/spent94700_controls/replays/v50-seed-94700-ba-repeat-0.json",
+   "seat": 1,
+   "sell_cash_all": 47322,
+   "sell_cash_d24_29": {
+    "EGG": 1397,
+    "FERTILIZER": 820,
+    "MELON": 710,
+    "MILK": 3037,
+    "WHEAT": 827,
+    "WOOL": 5106
+   },
+   "sell_units_all": 471,
+   "sell_units_d24_29": {
+    "EGG": 24,
+    "FERTILIZER": 18,
+    "MELON": 5,
+    "MILK": 18,
+    "WHEAT": 19,
+    "WOOL": 24
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 2,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 6,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 23,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 6,
+    "SHEEP": 0,
+    "STRAWBERRY": 18,
+    "TOMATO": 0,
+    "WHEAT": 45,
+    "WOOL": 8
+   },
+   "shed_total_d24": 100,
+   "shed_total_d29": 79
+  },
+  "v56": {
+   "animal_yield_d24": 22,
+   "animal_yield_d29": 4,
+   "buy_units_d24_29": {
+    "WHEAT": 33
+   },
+   "crop_yield_d24": 22,
+   "crop_yield_d29": 12,
+   "final_cash": 44930.0,
+   "ordered_vs_accepted_d24_29": {
+    "BUY_PRODUCT:WHEAT": {
+     "accepted": 33,
+     "ordered": 33
+    },
+    "SELL:EGG": {
+     "accepted": 0,
+     "ordered": 24
+    },
+    "SELL:FERTILIZER": {
+     "accepted": 0,
+     "ordered": 31
+    },
+    "SELL:MELON": {
+     "accepted": 0,
+     "ordered": 5
+    },
+    "SELL:MILK": {
+     "accepted": 0,
+     "ordered": 18
+    },
+    "SELL:WHEAT": {
+     "accepted": 0,
+     "ordered": 17
+    },
+    "SELL:WOOL": {
+     "accepted": 0,
+     "ordered": 24
+    }
+   },
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/submission_candidate_20260926/spent94700_v56/replays/v56-seed-94700-ba-repeat-0.json",
+   "seat": 1,
+   "sell_cash_all": 53469,
+   "sell_cash_d24_29": {
+    "EGG": 1028,
+    "FERTILIZER": 1589,
+    "MELON": 710,
+    "MILK": 3839,
+    "WHEAT": 743,
+    "WOOL": 5820
+   },
+   "sell_units_all": 482,
+   "sell_units_d24_29": {
+    "EGG": 24,
+    "FERTILIZER": 31,
+    "MELON": 5,
+    "MILK": 18,
+    "WHEAT": 17,
+    "WOOL": 24
+   },
+   "shed_end_d23": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 0,
+    "FERTILIZER": 2,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 0,
+    "SHEEP": 0,
+    "STRAWBERRY": 0,
+    "TOMATO": 0,
+    "WHEAT": 6,
+    "WOOL": 0
+   },
+   "shed_end_d29": {},
+   "shed_start_d24": {
+    "CARROT": 0,
+    "COW": 0,
+    "EGG": 12,
+    "FERTILIZER": 16,
+    "GOOSE": 0,
+    "MELON": 0,
+    "MILK": 7,
+    "SHEEP": 0,
+    "STRAWBERRY": 24,
+    "TOMATO": 0,
+    "WHEAT": 35,
+    "WOOL": 2
+   },
+   "shed_total_d24": 96,
+   "shed_total_d29": 96
+  }
+ }
+]

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "provenance": "Saved Kaggriculture 1.32.7 replays, seed 94700, candidate seat 0 versus frozen V56. Exact engine cash settlement was reconciled with zero mismatches as documented in NEXT_EXPERIMENT.md. These are observations, not Jev labels.",
+  "cases": [
+    {
+      "id": "repaired_joint_94700",
+      "source_report": "runs/weed_repair_94700_92802/report.json",
+      "source_replay": "runs/weed_repair_94700_92802/replays/V56-seed-94700-ab-repeat-0.json",
+      "replay_file_sha256": "e7bd7eb238e4e9cd022e07604193cd421c8e12e69378bbb333a7ec9c02d67660",
+      "state": {
+        "phase": "Full game and early expansion window",
+        "observed_outcome": {"final_cash": 70962, "accepted_sales": 92873, "day_6_to_11_accepted_sales": 7863, "opponent_final_cash": 152982},
+        "observed_capacity": {"day_9_cash": 50, "day_9_hands": 5, "day_12_cash": 1031, "day_12_hands": 10, "day_12_lands": 2, "end_sheep_placed": 8, "end_sheep_in_shed": 0},
+        "observed_actions": {"plant_actions": 120},
+        "question_focus": "Why does the extra livestock improve later sales yet leave early production far below the opponent?"
+      }
+    },
+    {
+      "id": "third_land_macro_94700",
+      "source_report": "runs/macro_variant_94700/report.json",
+      "source_replay": "runs/macro_variant_94700/replays/V56-seed-94700-ab-repeat-0.json",
+      "replay_file_sha256": "5fd6c6677cb31c13fa69dcd052673dc8d9c018320c996a61d71528f1e3932f8d",
+      "state": {
+        "phase": "Days 10 through 16 after third-land purchase",
+        "observed_outcome": {"final_cash": 45639, "accepted_sales": 65740, "accepted_melon_sales_full_game": 0, "accepted_wool_sales_full_game": 10078, "accepted_strawberry_sales_full_game": 28068},
+        "observed_capacity": {"day_10_total_spending": 4200, "day_10_end_cash": 2031, "day_11_spending": 1235, "day_12_cash": 408, "day_12_hands": 5, "day_12_lands": 3},
+        "observed_service": {"days_11_to_16_accepted_sales": 0, "days_10_to_13_harvest_actions": 0, "days_12_to_14_care_actions": 0, "days_11_to_13_water_actions_per_day": "19 to 31", "melon_plants_day_12": 10, "melon_plants_day_14": 1},
+        "question_focus": "Which observed constraint deserves a controlled causal test after the third-land investment?"
+      }
+    },
+    {
+      "id": "early_melon_overlay_94700",
+      "source_report": "runs/melon_window_94700/report.json",
+      "source_replay": "runs/melon_window_94700/replays/V56-seed-94700-ab-repeat-0.json",
+      "replay_file_sha256": "8bf565c7dcfb797ee0c13f2b650cba7d308764379b97948d71c78a6f9ab255ad",
+      "state": {
+        "phase": "Early-melon harvest and later service period",
+        "observed_outcome": {"final_cash": 46240, "accepted_sales": 66570, "accepted_melon_sales_full_game": 11909, "accepted_wool_sales_full_game": 14316},
+        "observed_capacity": {"day_12_cash": 6389, "day_12_hands": 10, "day_12_lands": 2},
+        "observed_service": {"melon_tiles_harvested_day_10": 6, "accepted_melon_sales_day_11": 4727, "total_move_actions": 4340, "feed_actions": 278, "care_actions": 253},
+        "comparison_from_saved_first_joint": {"final_cash": 69525, "accepted_melon_sales_full_game": 13006, "accepted_wool_sales_full_game": 33282, "total_move_actions": 4127, "feed_actions": 248, "care_actions": 228},
+        "question_focus": "Which observed loss mechanism merits testing despite the earlier melon cash receipt?"
+      }
+    }
+  ]
+}

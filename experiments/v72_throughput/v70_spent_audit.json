@@ -1,0 +1,5193 @@
+[
+  {
+    "seed": 94700,
+    "seat": 0,
+    "cash": 57066.0,
+    "opponent_cash": 146563.0,
+    "metrics": {
+      "hands_productive_actions": 1502,
+      "hands_move_actions": 3567,
+      "productive_share_of_nonpass_actions": 0.2963,
+      "productive_by_op": {
+        "PICKUP": 211,
+        "BUILD_PASTURE": 4,
+        "PLACE": 6,
+        "PLANT": 113,
+        "WATER": 482,
+        "CARE": 154,
+        "COLLECT_FERTILIZER": 120,
+        "FEED": 99,
+        "DROP": 76,
+        "HARVEST": 228,
+        "DIG": 3,
+        "BUILD_COOP": 2,
+        "FERTILIZE": 4
+      },
+      "care_due_animal_days": 187,
+      "care_served_animal_days": 179,
+      "feed_due_animal_days": 187,
+      "feed_served_animal_days": 181,
+      "animal_escapes": 0,
+      "crop_harvest_actions": {
+        "WHEAT": 102,
+        "WOOL": 24,
+        "MILK": 22,
+        "MELON": 17,
+        "EGG": 29,
+        "STRAWBERRY": 48
+      },
+      "harvested_units": {
+        "WHEAT": 304,
+        "WOOL": 97,
+        "MILK": 71,
+        "MELON": 68,
+        "EGG": 62,
+        "STRAWBERRY": 56
+      },
+      "crop_decay_yield_units": {},
+      "ripe_crop_tile_days": {
+        "MELON": 226,
+        "WHEAT": 441,
+        "STRAWBERRY": 48
+      },
+      "unharvested_ripe_crop_tile_days": {
+        "MELON": 209,
+        "WHEAT": 339,
+        "STRAWBERRY": 0
+      },
+      "strawberry_water_actions": 107,
+      "strawberry_harvest_actions": 48,
+      "accepted_sales_units": {
+        "FERTILIZER": 149,
+        "WHEAT": 230,
+        "WOOL": 97,
+        "MILK": 71,
+        "MELON": 68,
+        "EGG": 62,
+        "STRAWBERRY": 56
+      },
+      "attempted_sales_units": {
+        "FERTILIZER": 149,
+        "WHEAT": 230,
+        "WOOL": 97,
+        "MILK": 71,
+        "MELON": 68,
+        "EGG": 62,
+        "STRAWBERRY": 56
+      },
+      "accepted_strawberry_sales_units": 56,
+      "attempted_strawberry_sales_units": 56,
+      "strawberry_live_hours": 4689,
+      "strawberry_counts_by_day": {
+        "0": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 6
+        },
+        "1": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "2": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "3": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 10
+        },
+        "4": {
+          "strawberry": 0,
+          "wheat": 7,
+          "melon": 10
+        },
+        "5": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "6": {
+          "strawberry": 1,
+          "wheat": 17,
+          "melon": 10
+        },
+        "7": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "8": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "9": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "10": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "11": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "12": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "13": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "14": {
+          "strawberry": 12,
+          "wheat": 15,
+          "melon": 8
+        },
+        "15": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "16": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "17": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "18": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "19": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "20": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "21": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "22": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "23": {
+          "strawberry": 11,
+          "wheat": 17,
+          "melon": 8
+        },
+        "24": {
+          "strawberry": 0,
+          "wheat": 17,
+          "melon": 3
+        },
+        "25": {
+          "strawberry": 0,
+          "wheat": 17,
+          "melon": 1
+        },
+        "26": {
+          "strawberry": 0,
+          "wheat": 11,
+          "melon": 1
+        },
+        "27": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 0
+        },
+        "28": {
+          "strawberry": 0,
+          "wheat": 4,
+          "melon": 0
+        }
+      }
+    },
+    "daily": {
+      "0": {
+        "hours": 24,
+        "hand_slots": 92,
+        "PICKUP": 4,
+        "WEST": 18,
+        "NORTH": 17,
+        "BUILD_PASTURE": 4,
+        "EAST": 11,
+        "PLACE": 4,
+        "PLANT": 11,
+        "WATER": 11,
+        "SOUTH": 10,
+        "CARE": 2
+      },
+      "1": {
+        "hours": 24,
+        "hand_slots": 92,
+        "NORTH": 9,
+        "WEST": 11,
+        "PICKUP": 6,
+        "COLLECT_FERTILIZER": 4,
+        "CARE": 3,
+        "EAST": 2,
+        "FEED": 3,
+        "DROP": 3,
+        "PASS": 42,
+        "SOUTH": 3,
+        "PLANT": 3,
+        "WATER": 3
+      },
+      "2": {
+        "hours": 24,
+        "hand_slots": 115,
+        "PICKUP": 3,
+        "WEST": 19,
+        "PASS": 18,
+        "NORTH": 19,
+        "WATER": 15,
+        "FEED": 1,
+        "SOUTH": 14,
+        "EAST": 14,
+        "CARE": 4,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 3
+      },
+      "3": {
+        "hours": 24,
+        "hand_slots": 115,
+        "PICKUP": 6,
+        "WEST": 15,
+        "PASS": 59,
+        "FEED": 2,
+        "CARE": 3,
+        "NORTH": 11,
+        "WATER": 4,
+        "EAST": 5,
+        "COLLECT_FERTILIZER": 3,
+        "SOUTH": 4,
+        "PLANT": 1,
+        "DROP": 2
+      },
+      "4": {
+        "hours": 24,
+        "hand_slots": 115,
+        "PICKUP": 6,
+        "WEST": 25,
+        "NORTH": 25,
+        "PASS": 3,
+        "WATER": 18,
+        "FEED": 2,
+        "HARVEST": 8,
+        "EAST": 17,
+        "SOUTH": 7,
+        "PLANT": 4
+      },
+      "5": {
+        "hours": 24,
+        "hand_slots": 115,
+        "WEST": 17,
+        "PICKUP": 4,
+        "NORTH": 16,
+        "PASS": 35,
+        "FEED": 2,
+        "CARE": 3,
+        "WATER": 8,
+        "SOUTH": 6,
+        "EAST": 12,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 3,
+        "DIG": 2,
+        "BUILD_COOP": 1,
+        "DROP": 2
+      },
+      "6": {
+        "hours": 24,
+        "hand_slots": 230,
+        "WEST": 29,
+        "PICKUP": 6,
+        "NORTH": 32,
+        "PASS": 72,
+        "WATER": 19,
+        "EAST": 38,
+        "FEED": 2,
+        "CARE": 4,
+        "SOUTH": 9,
+        "HARVEST": 2,
+        "COLLECT_FERTILIZER": 4,
+        "DROP": 5,
+        "PLANT": 8
+      },
+      "7": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 7,
+        "WEST": 36,
+        "PASS": 34,
+        "NORTH": 38,
+        "FEED": 3,
+        "WATER": 17,
+        "CARE": 5,
+        "SOUTH": 14,
+        "EAST": 59,
+        "COLLECT_FERTILIZER": 5,
+        "PLANT": 10,
+        "DROP": 2
+      },
+      "8": {
+        "hours": 24,
+        "hand_slots": 159,
+        "PICKUP": 6,
+        "NORTH": 25,
+        "WEST": 35,
+        "PASS": 22,
+        "WATER": 24,
+        "EAST": 23,
+        "FEED": 2,
+        "HARVEST": 5,
+        "CARE": 3,
+        "SOUTH": 4,
+        "PLANT": 5,
+        "COLLECT_FERTILIZER": 3,
+        "DROP": 2
+      },
+      "9": {
+        "hours": 24,
+        "hand_slots": 207,
+        "PICKUP": 4,
+        "NORTH": 34,
+        "EAST": 27,
+        "WEST": 37,
+        "FEED": 3,
+        "PASS": 44,
+        "WATER": 21,
+        "SOUTH": 14,
+        "HARVEST": 7,
+        "CARE": 4,
+        "PLANT": 3,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 4
+      },
+      "10": {
+        "hours": 24,
+        "hand_slots": 230,
+        "WATER": 26,
+        "PICKUP": 5,
+        "NORTH": 37,
+        "EAST": 35,
+        "WEST": 29,
+        "PASS": 38,
+        "FEED": 4,
+        "CARE": 4,
+        "HARVEST": 10,
+        "SOUTH": 25,
+        "PLACE": 1,
+        "PLANT": 8,
+        "COLLECT_FERTILIZER": 4,
+        "DROP": 4
+      },
+      "11": {
+        "hours": 24,
+        "hand_slots": 207,
+        "PICKUP": 5,
+        "NORTH": 32,
+        "EAST": 30,
+        "WEST": 27,
+        "FEED": 3,
+        "PASS": 63,
+        "WATER": 18,
+        "SOUTH": 13,
+        "CARE": 6,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 5
+      },
+      "12": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 9,
+        "EAST": 35,
+        "NORTH": 36,
+        "WATER": 22,
+        "WEST": 51,
+        "PASS": 15,
+        "FEED": 3,
+        "CARE": 6,
+        "SOUTH": 20,
+        "HARVEST": 15,
+        "PLANT": 9,
+        "COLLECT_FERTILIZER": 5,
+        "BUILD_COOP": 1,
+        "DROP": 3
+      },
+      "13": {
+        "hours": 24,
+        "hand_slots": 203,
+        "PICKUP": 6,
+        "WEST": 52,
+        "NORTH": 38,
+        "PASS": 10,
+        "EAST": 36,
+        "FEED": 4,
+        "WATER": 21,
+        "HARVEST": 6,
+        "SOUTH": 14,
+        "CARE": 6,
+        "PLACE": 1,
+        "PLANT": 6,
+        "COLLECT_FERTILIZER": 3
+      },
+      "14": {
+        "hours": 24,
+        "hand_slots": 183,
+        "PICKUP": 6,
+        "EAST": 37,
+        "WEST": 40,
+        "PASS": 11,
+        "NORTH": 27,
+        "WATER": 22,
+        "FEED": 4,
+        "SOUTH": 14,
+        "HARVEST": 10,
+        "CARE": 6,
+        "PLANT": 5,
+        "COLLECT_FERTILIZER": 1
+      },
+      "15": {
+        "hours": 24,
+        "hand_slots": 183,
+        "PICKUP": 6,
+        "WEST": 40,
+        "NORTH": 33,
+        "PASS": 9,
+        "EAST": 33,
+        "FEED": 4,
+        "WATER": 20,
+        "SOUTH": 21,
+        "CARE": 3,
+        "HARVEST": 5,
+        "PLANT": 3,
+        "COLLECT_FERTILIZER": 6
+      },
+      "16": {
+        "hours": 24,
+        "hand_slots": 314,
+        "PICKUP": 19,
+        "WEST": 58,
+        "EAST": 79,
+        "PASS": 5,
+        "NORTH": 56,
+        "WATER": 30,
+        "FEED": 4,
+        "CARE": 7,
+        "SOUTH": 40,
+        "HARVEST": 8,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 3,
+        "FERTILIZE": 1
+      },
+      "17": {
+        "hours": 24,
+        "hand_slots": 247,
+        "PICKUP": 5,
+        "WEST": 65,
+        "PASS": 10,
+        "EAST": 58,
+        "NORTH": 39,
+        "FEED": 4,
+        "WATER": 10,
+        "CARE": 7,
+        "HARVEST": 17,
+        "SOUTH": 21,
+        "COLLECT_FERTILIZER": 7,
+        "PLANT": 1,
+        "DROP": 3
+      },
+      "18": {
+        "hours": 24,
+        "hand_slots": 314,
+        "PICKUP": 16,
+        "WEST": 51,
+        "NORTH": 53,
+        "EAST": 76,
+        "PASS": 9,
+        "WATER": 31,
+        "FEED": 4,
+        "CARE": 6,
+        "HARVEST": 13,
+        "SOUTH": 39,
+        "PLANT": 5,
+        "COLLECT_FERTILIZER": 6,
+        "FERTILIZE": 2,
+        "DROP": 3
+      },
+      "19": {
+        "hours": 24,
+        "hand_slots": 268,
+        "PICKUP": 6,
+        "WEST": 59,
+        "NORTH": 38,
+        "PASS": 28,
+        "EAST": 58,
+        "FEED": 5,
+        "WATER": 11,
+        "HARVEST": 15,
+        "CARE": 7,
+        "SOUTH": 24,
+        "COLLECT_FERTILIZER": 6,
+        "DROP": 8,
+        "PLANT": 2,
+        "DIG": 1
+      },
+      "20": {
+        "hours": 24,
+        "hand_slots": 293,
+        "PICKUP": 14,
+        "NORTH": 53,
+        "WEST": 58,
+        "WATER": 30,
+        "PASS": 7,
+        "EAST": 68,
+        "FEED": 4,
+        "CARE": 7,
+        "HARVEST": 9,
+        "SOUTH": 34,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 4,
+        "FERTILIZE": 1
+      },
+      "21": {
+        "hours": 24,
+        "hand_slots": 247,
+        "PICKUP": 5,
+        "WEST": 60,
+        "PASS": 11,
+        "EAST": 59,
+        "NORTH": 38,
+        "WATER": 12,
+        "FEED": 4,
+        "SOUTH": 22,
+        "CARE": 7,
+        "HARVEST": 20,
+        "PLANT": 3,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 1
+      },
+      "22": {
+        "hours": 24,
+        "hand_slots": 313,
+        "PICKUP": 15,
+        "WEST": 63,
+        "PASS": 11,
+        "EAST": 78,
+        "WATER": 31,
+        "NORTH": 47,
+        "FEED": 4,
+        "HARVEST": 10,
+        "CARE": 7,
+        "SOUTH": 36,
+        "PLANT": 5,
+        "COLLECT_FERTILIZER": 6
+      },
+      "23": {
+        "hours": 24,
+        "hand_slots": 225,
+        "PICKUP": 5,
+        "WEST": 63,
+        "NORTH": 32,
+        "EAST": 63,
+        "PASS": 9,
+        "FEED": 4,
+        "WATER": 9,
+        "HARVEST": 15,
+        "SOUTH": 11,
+        "CARE": 7,
+        "PLANT": 1,
+        "COLLECT_FERTILIZER": 6
+      },
+      "24": {
+        "hours": 24,
+        "hand_slots": 183,
+        "PICKUP": 6,
+        "NORTH": 36,
+        "WEST": 31,
+        "PASS": 17,
+        "EAST": 19,
+        "WATER": 14,
+        "FEED": 4,
+        "CARE": 7,
+        "HARVEST": 15,
+        "SOUTH": 20,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 7,
+        "DROP": 3
+      },
+      "25": {
+        "hours": 24,
+        "hand_slots": 181,
+        "PICKUP": 5,
+        "WEST": 21,
+        "NORTH": 26,
+        "PASS": 54,
+        "EAST": 14,
+        "FEED": 4,
+        "WATER": 10,
+        "CARE": 7,
+        "HARVEST": 7,
+        "SOUTH": 16,
+        "COLLECT_FERTILIZER": 7,
+        "PLANT": 4,
+        "DROP": 6
+      },
+      "26": {
+        "hours": 24,
+        "hand_slots": 184,
+        "PICKUP": 6,
+        "NORTH": 27,
+        "WEST": 23,
+        "WATER": 10,
+        "PASS": 55,
+        "EAST": 15,
+        "FEED": 4,
+        "CARE": 7,
+        "HARVEST": 9,
+        "SOUTH": 15,
+        "COLLECT_FERTILIZER": 7,
+        "DROP": 6
+      },
+      "27": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 6,
+        "EAST": 11,
+        "NORTH": 24,
+        "WEST": 22,
+        "PASS": 127,
+        "WATER": 6,
+        "FEED": 4,
+        "HARVEST": 8,
+        "CARE": 5,
+        "SOUTH": 11,
+        "DROP": 6
+      },
+      "28": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 8,
+        "WEST": 30,
+        "NORTH": 32,
+        "PASS": 127,
+        "CARE": 6,
+        "FEED": 4,
+        "EAST": 3,
+        "WATER": 5,
+        "HARVEST": 8,
+        "SOUTH": 4,
+        "DROP": 3
+      },
+      "29": {
+        "hours": 23,
+        "hand_slots": 198,
+        "PICKUP": 6,
+        "WEST": 19,
+        "NORTH": 25,
+        "PASS": 119,
+        "FEED": 4,
+        "WATER": 4,
+        "HARVEST": 6,
+        "CARE": 5,
+        "SOUTH": 5,
+        "EAST": 3,
+        "DROP": 2
+      }
+    },
+    "daily_hands": {
+      "0": [
+        4
+      ],
+      "1": [
+        4
+      ],
+      "2": [
+        5
+      ],
+      "3": [
+        5
+      ],
+      "4": [
+        5
+      ],
+      "5": [
+        5
+      ],
+      "6": [
+        10
+      ],
+      "7": [
+        10
+      ],
+      "8": [
+        7
+      ],
+      "9": [
+        9
+      ],
+      "10": [
+        10
+      ],
+      "11": [
+        9
+      ],
+      "12": [
+        10
+      ],
+      "13": [
+        9
+      ],
+      "14": [
+        8
+      ],
+      "15": [
+        8
+      ],
+      "16": [
+        14
+      ],
+      "17": [
+        11
+      ],
+      "18": [
+        14
+      ],
+      "19": [
+        12
+      ],
+      "20": [
+        13
+      ],
+      "21": [
+        11
+      ],
+      "22": [
+        14
+      ],
+      "23": [
+        10
+      ],
+      "24": [
+        8
+      ],
+      "25": [
+        8
+      ],
+      "26": [
+        8
+      ],
+      "27": [
+        10
+      ],
+      "28": [
+        10
+      ]
+    },
+    "drop_days": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      17,
+      18,
+      19,
+      21,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "pickup_days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ]
+  },
+  {
+    "seed": 94700,
+    "seat": 1,
+    "cash": 57066.0,
+    "opponent_cash": 146563.0,
+    "metrics": {
+      "hands_productive_actions": 1502,
+      "hands_move_actions": 3567,
+      "productive_share_of_nonpass_actions": 0.2963,
+      "productive_by_op": {
+        "PICKUP": 211,
+        "BUILD_PASTURE": 4,
+        "PLACE": 6,
+        "PLANT": 113,
+        "WATER": 482,
+        "CARE": 154,
+        "COLLECT_FERTILIZER": 120,
+        "FEED": 99,
+        "DROP": 76,
+        "HARVEST": 228,
+        "DIG": 3,
+        "BUILD_COOP": 2,
+        "FERTILIZE": 4
+      },
+      "care_due_animal_days": 187,
+      "care_served_animal_days": 179,
+      "feed_due_animal_days": 187,
+      "feed_served_animal_days": 181,
+      "animal_escapes": 0,
+      "crop_harvest_actions": {
+        "WHEAT": 102,
+        "WOOL": 24,
+        "MILK": 22,
+        "MELON": 17,
+        "EGG": 29,
+        "STRAWBERRY": 48
+      },
+      "harvested_units": {
+        "WHEAT": 304,
+        "WOOL": 97,
+        "MILK": 71,
+        "MELON": 68,
+        "EGG": 62,
+        "STRAWBERRY": 56
+      },
+      "crop_decay_yield_units": {},
+      "ripe_crop_tile_days": {
+        "MELON": 226,
+        "WHEAT": 441,
+        "STRAWBERRY": 48
+      },
+      "unharvested_ripe_crop_tile_days": {
+        "MELON": 209,
+        "WHEAT": 339,
+        "STRAWBERRY": 0
+      },
+      "strawberry_water_actions": 107,
+      "strawberry_harvest_actions": 48,
+      "accepted_sales_units": {
+        "FERTILIZER": 149,
+        "WHEAT": 230,
+        "WOOL": 97,
+        "MILK": 71,
+        "MELON": 68,
+        "EGG": 62,
+        "STRAWBERRY": 56
+      },
+      "attempted_sales_units": {
+        "FERTILIZER": 149,
+        "WHEAT": 230,
+        "WOOL": 97,
+        "MILK": 71,
+        "MELON": 68,
+        "EGG": 62,
+        "STRAWBERRY": 56
+      },
+      "accepted_strawberry_sales_units": 56,
+      "attempted_strawberry_sales_units": 56,
+      "strawberry_live_hours": 4689,
+      "strawberry_counts_by_day": {
+        "0": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 6
+        },
+        "1": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "2": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "3": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 10
+        },
+        "4": {
+          "strawberry": 0,
+          "wheat": 7,
+          "melon": 10
+        },
+        "5": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "6": {
+          "strawberry": 1,
+          "wheat": 17,
+          "melon": 10
+        },
+        "7": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "8": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "9": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "10": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "11": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "12": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "13": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "14": {
+          "strawberry": 12,
+          "wheat": 15,
+          "melon": 8
+        },
+        "15": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "16": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "17": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "18": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "19": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "20": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "21": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "22": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "23": {
+          "strawberry": 11,
+          "wheat": 17,
+          "melon": 8
+        },
+        "24": {
+          "strawberry": 0,
+          "wheat": 17,
+          "melon": 3
+        },
+        "25": {
+          "strawberry": 0,
+          "wheat": 17,
+          "melon": 1
+        },
+        "26": {
+          "strawberry": 0,
+          "wheat": 11,
+          "melon": 1
+        },
+        "27": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 0
+        },
+        "28": {
+          "strawberry": 0,
+          "wheat": 4,
+          "melon": 0
+        }
+      }
+    },
+    "daily": {
+      "0": {
+        "hours": 24,
+        "hand_slots": 92,
+        "PICKUP": 4,
+        "WEST": 18,
+        "NORTH": 17,
+        "BUILD_PASTURE": 4,
+        "EAST": 11,
+        "PLACE": 4,
+        "PLANT": 11,
+        "WATER": 11,
+        "SOUTH": 10,
+        "CARE": 2
+      },
+      "1": {
+        "hours": 24,
+        "hand_slots": 92,
+        "NORTH": 9,
+        "WEST": 11,
+        "PICKUP": 6,
+        "COLLECT_FERTILIZER": 4,
+        "CARE": 3,
+        "EAST": 2,
+        "FEED": 3,
+        "DROP": 3,
+        "PASS": 42,
+        "SOUTH": 3,
+        "PLANT": 3,
+        "WATER": 3
+      },
+      "2": {
+        "hours": 24,
+        "hand_slots": 115,
+        "PICKUP": 3,
+        "WEST": 19,
+        "PASS": 18,
+        "NORTH": 19,
+        "WATER": 15,
+        "FEED": 1,
+        "SOUTH": 14,
+        "EAST": 14,
+        "CARE": 4,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 3
+      },
+      "3": {
+        "hours": 24,
+        "hand_slots": 115,
+        "PICKUP": 6,
+        "WEST": 15,
+        "PASS": 59,
+        "FEED": 2,
+        "CARE": 3,
+        "NORTH": 11,
+        "WATER": 4,
+        "EAST": 5,
+        "COLLECT_FERTILIZER": 3,
+        "SOUTH": 4,
+        "PLANT": 1,
+        "DROP": 2
+      },
+      "4": {
+        "hours": 24,
+        "hand_slots": 115,
+        "PICKUP": 6,
+        "WEST": 25,
+        "NORTH": 25,
+        "PASS": 3,
+        "WATER": 18,
+        "FEED": 2,
+        "HARVEST": 8,
+        "EAST": 17,
+        "SOUTH": 7,
+        "PLANT": 4
+      },
+      "5": {
+        "hours": 24,
+        "hand_slots": 115,
+        "WEST": 17,
+        "PICKUP": 4,
+        "NORTH": 16,
+        "PASS": 35,
+        "FEED": 2,
+        "CARE": 3,
+        "WATER": 8,
+        "SOUTH": 6,
+        "EAST": 12,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 3,
+        "DIG": 2,
+        "BUILD_COOP": 1,
+        "DROP": 2
+      },
+      "6": {
+        "hours": 24,
+        "hand_slots": 230,
+        "WEST": 29,
+        "PICKUP": 6,
+        "NORTH": 32,
+        "PASS": 72,
+        "WATER": 19,
+        "EAST": 38,
+        "FEED": 2,
+        "CARE": 4,
+        "SOUTH": 9,
+        "HARVEST": 2,
+        "COLLECT_FERTILIZER": 4,
+        "DROP": 5,
+        "PLANT": 8
+      },
+      "7": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 7,
+        "WEST": 36,
+        "PASS": 34,
+        "NORTH": 38,
+        "FEED": 3,
+        "WATER": 17,
+        "CARE": 5,
+        "SOUTH": 14,
+        "EAST": 59,
+        "COLLECT_FERTILIZER": 5,
+        "PLANT": 10,
+        "DROP": 2
+      },
+      "8": {
+        "hours": 24,
+        "hand_slots": 159,
+        "PICKUP": 6,
+        "NORTH": 25,
+        "WEST": 35,
+        "PASS": 22,
+        "WATER": 24,
+        "EAST": 23,
+        "FEED": 2,
+        "HARVEST": 5,
+        "CARE": 3,
+        "SOUTH": 4,
+        "PLANT": 5,
+        "COLLECT_FERTILIZER": 3,
+        "DROP": 2
+      },
+      "9": {
+        "hours": 24,
+        "hand_slots": 207,
+        "PICKUP": 4,
+        "NORTH": 34,
+        "EAST": 27,
+        "WEST": 37,
+        "FEED": 3,
+        "PASS": 44,
+        "WATER": 21,
+        "SOUTH": 14,
+        "HARVEST": 7,
+        "CARE": 4,
+        "PLANT": 3,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 4
+      },
+      "10": {
+        "hours": 24,
+        "hand_slots": 230,
+        "WATER": 26,
+        "PICKUP": 5,
+        "NORTH": 37,
+        "EAST": 35,
+        "WEST": 29,
+        "PASS": 38,
+        "FEED": 4,
+        "CARE": 4,
+        "HARVEST": 10,
+        "SOUTH": 25,
+        "PLACE": 1,
+        "PLANT": 8,
+        "COLLECT_FERTILIZER": 4,
+        "DROP": 4
+      },
+      "11": {
+        "hours": 24,
+        "hand_slots": 207,
+        "PICKUP": 5,
+        "NORTH": 32,
+        "EAST": 30,
+        "WEST": 27,
+        "FEED": 3,
+        "PASS": 63,
+        "WATER": 18,
+        "SOUTH": 13,
+        "CARE": 6,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 5
+      },
+      "12": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 9,
+        "EAST": 35,
+        "NORTH": 36,
+        "WATER": 22,
+        "WEST": 51,
+        "PASS": 15,
+        "FEED": 3,
+        "CARE": 6,
+        "SOUTH": 20,
+        "HARVEST": 15,
+        "PLANT": 9,
+        "COLLECT_FERTILIZER": 5,
+        "BUILD_COOP": 1,
+        "DROP": 3
+      },
+      "13": {
+        "hours": 24,
+        "hand_slots": 203,
+        "PICKUP": 6,
+        "WEST": 52,
+        "NORTH": 38,
+        "PASS": 10,
+        "EAST": 36,
+        "FEED": 4,
+        "WATER": 21,
+        "HARVEST": 6,
+        "SOUTH": 14,
+        "CARE": 6,
+        "PLACE": 1,
+        "PLANT": 6,
+        "COLLECT_FERTILIZER": 3
+      },
+      "14": {
+        "hours": 24,
+        "hand_slots": 183,
+        "PICKUP": 6,
+        "EAST": 37,
+        "WEST": 40,
+        "PASS": 11,
+        "NORTH": 27,
+        "WATER": 22,
+        "FEED": 4,
+        "SOUTH": 14,
+        "HARVEST": 10,
+        "CARE": 6,
+        "PLANT": 5,
+        "COLLECT_FERTILIZER": 1
+      },
+      "15": {
+        "hours": 24,
+        "hand_slots": 183,
+        "PICKUP": 6,
+        "WEST": 40,
+        "NORTH": 33,
+        "PASS": 9,
+        "EAST": 33,
+        "FEED": 4,
+        "WATER": 20,
+        "SOUTH": 21,
+        "CARE": 3,
+        "HARVEST": 5,
+        "PLANT": 3,
+        "COLLECT_FERTILIZER": 6
+      },
+      "16": {
+        "hours": 24,
+        "hand_slots": 314,
+        "PICKUP": 19,
+        "WEST": 58,
+        "EAST": 79,
+        "PASS": 5,
+        "NORTH": 56,
+        "WATER": 30,
+        "FEED": 4,
+        "CARE": 7,
+        "SOUTH": 40,
+        "HARVEST": 8,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 3,
+        "FERTILIZE": 1
+      },
+      "17": {
+        "hours": 24,
+        "hand_slots": 247,
+        "PICKUP": 5,
+        "WEST": 65,
+        "PASS": 10,
+        "EAST": 58,
+        "NORTH": 39,
+        "FEED": 4,
+        "WATER": 10,
+        "CARE": 7,
+        "HARVEST": 17,
+        "SOUTH": 21,
+        "COLLECT_FERTILIZER": 7,
+        "PLANT": 1,
+        "DROP": 3
+      },
+      "18": {
+        "hours": 24,
+        "hand_slots": 314,
+        "PICKUP": 16,
+        "WEST": 51,
+        "NORTH": 53,
+        "EAST": 76,
+        "PASS": 9,
+        "WATER": 31,
+        "FEED": 4,
+        "CARE": 6,
+        "HARVEST": 13,
+        "SOUTH": 39,
+        "PLANT": 5,
+        "COLLECT_FERTILIZER": 6,
+        "FERTILIZE": 2,
+        "DROP": 3
+      },
+      "19": {
+        "hours": 24,
+        "hand_slots": 268,
+        "PICKUP": 6,
+        "WEST": 59,
+        "NORTH": 38,
+        "PASS": 28,
+        "EAST": 58,
+        "FEED": 5,
+        "WATER": 11,
+        "HARVEST": 15,
+        "CARE": 7,
+        "SOUTH": 24,
+        "COLLECT_FERTILIZER": 6,
+        "DROP": 8,
+        "PLANT": 2,
+        "DIG": 1
+      },
+      "20": {
+        "hours": 24,
+        "hand_slots": 293,
+        "PICKUP": 14,
+        "NORTH": 53,
+        "WEST": 58,
+        "WATER": 30,
+        "PASS": 7,
+        "EAST": 68,
+        "FEED": 4,
+        "CARE": 7,
+        "HARVEST": 9,
+        "SOUTH": 34,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 4,
+        "FERTILIZE": 1
+      },
+      "21": {
+        "hours": 24,
+        "hand_slots": 247,
+        "PICKUP": 5,
+        "WEST": 60,
+        "PASS": 11,
+        "EAST": 59,
+        "NORTH": 38,
+        "WATER": 12,
+        "FEED": 4,
+        "SOUTH": 22,
+        "CARE": 7,
+        "HARVEST": 20,
+        "PLANT": 3,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 1
+      },
+      "22": {
+        "hours": 24,
+        "hand_slots": 313,
+        "PICKUP": 15,
+        "WEST": 63,
+        "PASS": 11,
+        "EAST": 78,
+        "WATER": 31,
+        "NORTH": 47,
+        "FEED": 4,
+        "HARVEST": 10,
+        "CARE": 7,
+        "SOUTH": 36,
+        "PLANT": 5,
+        "COLLECT_FERTILIZER": 6
+      },
+      "23": {
+        "hours": 24,
+        "hand_slots": 225,
+        "PICKUP": 5,
+        "WEST": 63,
+        "NORTH": 32,
+        "EAST": 63,
+        "PASS": 9,
+        "FEED": 4,
+        "WATER": 9,
+        "HARVEST": 15,
+        "SOUTH": 11,
+        "CARE": 7,
+        "PLANT": 1,
+        "COLLECT_FERTILIZER": 6
+      },
+      "24": {
+        "hours": 24,
+        "hand_slots": 183,
+        "PICKUP": 6,
+        "NORTH": 36,
+        "WEST": 31,
+        "PASS": 17,
+        "EAST": 19,
+        "WATER": 14,
+        "FEED": 4,
+        "CARE": 7,
+        "HARVEST": 15,
+        "SOUTH": 20,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 7,
+        "DROP": 3
+      },
+      "25": {
+        "hours": 24,
+        "hand_slots": 181,
+        "PICKUP": 5,
+        "WEST": 21,
+        "NORTH": 26,
+        "PASS": 54,
+        "EAST": 14,
+        "FEED": 4,
+        "WATER": 10,
+        "CARE": 7,
+        "HARVEST": 7,
+        "SOUTH": 16,
+        "COLLECT_FERTILIZER": 7,
+        "PLANT": 4,
+        "DROP": 6
+      },
+      "26": {
+        "hours": 24,
+        "hand_slots": 184,
+        "PICKUP": 6,
+        "NORTH": 27,
+        "WEST": 23,
+        "WATER": 10,
+        "PASS": 55,
+        "EAST": 15,
+        "FEED": 4,
+        "CARE": 7,
+        "HARVEST": 9,
+        "SOUTH": 15,
+        "COLLECT_FERTILIZER": 7,
+        "DROP": 6
+      },
+      "27": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 6,
+        "EAST": 11,
+        "NORTH": 24,
+        "WEST": 22,
+        "PASS": 127,
+        "WATER": 6,
+        "FEED": 4,
+        "HARVEST": 8,
+        "CARE": 5,
+        "SOUTH": 11,
+        "DROP": 6
+      },
+      "28": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 8,
+        "WEST": 30,
+        "NORTH": 32,
+        "PASS": 127,
+        "CARE": 6,
+        "FEED": 4,
+        "EAST": 3,
+        "WATER": 5,
+        "HARVEST": 8,
+        "SOUTH": 4,
+        "DROP": 3
+      },
+      "29": {
+        "hours": 23,
+        "hand_slots": 198,
+        "PICKUP": 6,
+        "WEST": 19,
+        "NORTH": 25,
+        "PASS": 119,
+        "FEED": 4,
+        "WATER": 4,
+        "HARVEST": 6,
+        "CARE": 5,
+        "SOUTH": 5,
+        "EAST": 3,
+        "DROP": 2
+      }
+    },
+    "daily_hands": {
+      "0": [
+        4
+      ],
+      "1": [
+        4
+      ],
+      "2": [
+        5
+      ],
+      "3": [
+        5
+      ],
+      "4": [
+        5
+      ],
+      "5": [
+        5
+      ],
+      "6": [
+        10
+      ],
+      "7": [
+        10
+      ],
+      "8": [
+        7
+      ],
+      "9": [
+        9
+      ],
+      "10": [
+        10
+      ],
+      "11": [
+        9
+      ],
+      "12": [
+        10
+      ],
+      "13": [
+        9
+      ],
+      "14": [
+        8
+      ],
+      "15": [
+        8
+      ],
+      "16": [
+        14
+      ],
+      "17": [
+        11
+      ],
+      "18": [
+        14
+      ],
+      "19": [
+        12
+      ],
+      "20": [
+        13
+      ],
+      "21": [
+        11
+      ],
+      "22": [
+        14
+      ],
+      "23": [
+        10
+      ],
+      "24": [
+        8
+      ],
+      "25": [
+        8
+      ],
+      "26": [
+        8
+      ],
+      "27": [
+        10
+      ],
+      "28": [
+        10
+      ]
+    },
+    "drop_days": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      17,
+      18,
+      19,
+      21,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "pickup_days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ]
+  },
+  {
+    "seed": 92802,
+    "seat": 0,
+    "cash": 59722.0,
+    "opponent_cash": 130658.0,
+    "metrics": {
+      "hands_productive_actions": 1499,
+      "hands_move_actions": 3351,
+      "productive_share_of_nonpass_actions": 0.3091,
+      "productive_by_op": {
+        "PICKUP": 228,
+        "BUILD_PASTURE": 4,
+        "PLACE": 6,
+        "PLANT": 112,
+        "WATER": 476,
+        "CARE": 150,
+        "COLLECT_FERTILIZER": 114,
+        "FEED": 98,
+        "DROP": 83,
+        "HARVEST": 218,
+        "DIG": 4,
+        "BUILD_COOP": 2,
+        "FERTILIZE": 4
+      },
+      "care_due_animal_days": 188,
+      "care_served_animal_days": 180,
+      "feed_due_animal_days": 188,
+      "feed_served_animal_days": 180,
+      "animal_escapes": 0,
+      "crop_harvest_actions": {
+        "WHEAT": 98,
+        "WOOL": 24,
+        "MILK": 22,
+        "MELON": 17,
+        "EGG": 30,
+        "STRAWBERRY": 48
+      },
+      "harvested_units": {
+        "WHEAT": 292,
+        "WOOL": 97,
+        "MILK": 71,
+        "MELON": 68,
+        "EGG": 63,
+        "STRAWBERRY": 56
+      },
+      "crop_decay_yield_units": {},
+      "ripe_crop_tile_days": {
+        "MELON": 226,
+        "WHEAT": 424,
+        "STRAWBERRY": 48
+      },
+      "unharvested_ripe_crop_tile_days": {
+        "MELON": 209,
+        "WHEAT": 326,
+        "STRAWBERRY": 0
+      },
+      "strawberry_water_actions": 104,
+      "strawberry_harvest_actions": 48,
+      "accepted_sales_units": {
+        "FERTILIZER": 136,
+        "WHEAT": 227,
+        "WOOL": 97,
+        "MILK": 71,
+        "MELON": 68,
+        "EGG": 63,
+        "STRAWBERRY": 56
+      },
+      "attempted_sales_units": {
+        "FERTILIZER": 136,
+        "WHEAT": 227,
+        "WOOL": 97,
+        "MILK": 71,
+        "MELON": 68,
+        "EGG": 63,
+        "STRAWBERRY": 56
+      },
+      "accepted_strawberry_sales_units": 56,
+      "attempted_strawberry_sales_units": 56,
+      "strawberry_live_hours": 4659,
+      "strawberry_counts_by_day": {
+        "0": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 6
+        },
+        "1": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "2": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "3": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 10
+        },
+        "4": {
+          "strawberry": 0,
+          "wheat": 7,
+          "melon": 10
+        },
+        "5": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "6": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "7": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "8": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "9": {
+          "strawberry": 9,
+          "wheat": 14,
+          "melon": 10
+        },
+        "10": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "11": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "12": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "13": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "14": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "15": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "16": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "17": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 8
+        },
+        "18": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "19": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "20": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "21": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "22": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "23": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "24": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 3
+        },
+        "25": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 1
+        },
+        "26": {
+          "strawberry": 3,
+          "wheat": 13,
+          "melon": 1
+        },
+        "27": {
+          "strawberry": 0,
+          "wheat": 13,
+          "melon": 0
+        },
+        "28": {
+          "strawberry": 0,
+          "wheat": 8,
+          "melon": 0
+        }
+      }
+    },
+    "daily": {
+      "0": {
+        "hours": 24,
+        "hand_slots": 92,
+        "PICKUP": 4,
+        "WEST": 18,
+        "NORTH": 17,
+        "BUILD_PASTURE": 4,
+        "EAST": 11,
+        "PLACE": 4,
+        "PLANT": 11,
+        "WATER": 11,
+        "SOUTH": 10,
+        "CARE": 2
+      },
+      "1": {
+        "hours": 24,
+        "hand_slots": 92,
+        "NORTH": 9,
+        "WEST": 11,
+        "PICKUP": 6,
+        "COLLECT_FERTILIZER": 4,
+        "CARE": 3,
+        "EAST": 2,
+        "FEED": 3,
+        "DROP": 3,
+        "PASS": 42,
+        "SOUTH": 3,
+        "PLANT": 3,
+        "WATER": 3
+      },
+      "2": {
+        "hours": 24,
+        "hand_slots": 115,
+        "PICKUP": 3,
+        "WEST": 19,
+        "PASS": 18,
+        "NORTH": 19,
+        "WATER": 15,
+        "FEED": 1,
+        "SOUTH": 14,
+        "EAST": 14,
+        "CARE": 4,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 3
+      },
+      "3": {
+        "hours": 24,
+        "hand_slots": 115,
+        "PICKUP": 6,
+        "WEST": 15,
+        "PASS": 59,
+        "FEED": 2,
+        "CARE": 3,
+        "NORTH": 11,
+        "WATER": 4,
+        "EAST": 5,
+        "COLLECT_FERTILIZER": 3,
+        "SOUTH": 4,
+        "PLANT": 1,
+        "DROP": 2
+      },
+      "4": {
+        "hours": 24,
+        "hand_slots": 115,
+        "PICKUP": 6,
+        "WEST": 25,
+        "NORTH": 25,
+        "PASS": 3,
+        "WATER": 18,
+        "FEED": 2,
+        "HARVEST": 8,
+        "EAST": 17,
+        "SOUTH": 7,
+        "PLANT": 4
+      },
+      "5": {
+        "hours": 24,
+        "hand_slots": 115,
+        "WEST": 17,
+        "PICKUP": 4,
+        "NORTH": 16,
+        "PASS": 35,
+        "FEED": 2,
+        "CARE": 3,
+        "WATER": 8,
+        "SOUTH": 6,
+        "EAST": 12,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 3,
+        "DIG": 2,
+        "BUILD_COOP": 1,
+        "DROP": 2
+      },
+      "6": {
+        "hours": 24,
+        "hand_slots": 230,
+        "WEST": 28,
+        "PICKUP": 6,
+        "NORTH": 29,
+        "PASS": 121,
+        "WATER": 11,
+        "EAST": 10,
+        "FEED": 2,
+        "CARE": 4,
+        "SOUTH": 8,
+        "HARVEST": 2,
+        "COLLECT_FERTILIZER": 4,
+        "DROP": 5
+      },
+      "7": {
+        "hours": 24,
+        "hand_slots": 230,
+        "WEST": 24,
+        "PICKUP": 5,
+        "NORTH": 28,
+        "PASS": 142,
+        "FEED": 3,
+        "WATER": 8,
+        "SOUTH": 8,
+        "CARE": 3,
+        "COLLECT_FERTILIZER": 4,
+        "DROP": 4,
+        "EAST": 1
+      },
+      "8": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 7,
+        "WEST": 33,
+        "NORTH": 33,
+        "PASS": 101,
+        "WATER": 14,
+        "FEED": 3,
+        "CARE": 5,
+        "HARVEST": 6,
+        "SOUTH": 6,
+        "EAST": 9,
+        "COLLECT_FERTILIZER": 5,
+        "PLANT": 4,
+        "DROP": 4
+      },
+      "9": {
+        "hours": 24,
+        "hand_slots": 207,
+        "PICKUP": 4,
+        "WEST": 42,
+        "NORTH": 34,
+        "PASS": 4,
+        "FEED": 3,
+        "WATER": 23,
+        "EAST": 55,
+        "HARVEST": 7,
+        "SOUTH": 12,
+        "CARE": 5,
+        "PLANT": 16,
+        "COLLECT_FERTILIZER": 2
+      },
+      "10": {
+        "hours": 24,
+        "hand_slots": 183,
+        "PICKUP": 5,
+        "WEST": 40,
+        "NORTH": 25,
+        "PASS": 14,
+        "FEED": 2,
+        "WATER": 16,
+        "EAST": 47,
+        "SOUTH": 12,
+        "CARE": 6,
+        "PLACE": 1,
+        "HARVEST": 2,
+        "PLANT": 6,
+        "COLLECT_FERTILIZER": 4,
+        "DROP": 3
+      },
+      "11": {
+        "hours": 24,
+        "hand_slots": 184,
+        "PICKUP": 11,
+        "NORTH": 25,
+        "WATER": 21,
+        "EAST": 26,
+        "WEST": 20,
+        "PASS": 50,
+        "FEED": 4,
+        "SOUTH": 14,
+        "CARE": 4,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 4
+      },
+      "12": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 10,
+        "EAST": 39,
+        "NORTH": 33,
+        "WEST": 50,
+        "PASS": 21,
+        "WATER": 20,
+        "FEED": 3,
+        "CARE": 6,
+        "HARVEST": 13,
+        "SOUTH": 16,
+        "PLANT": 9,
+        "COLLECT_FERTILIZER": 5,
+        "BUILD_COOP": 1,
+        "DROP": 3,
+        "PLACE": 1
+      },
+      "13": {
+        "hours": 24,
+        "hand_slots": 204,
+        "PICKUP": 7,
+        "WEST": 41,
+        "PASS": 11,
+        "EAST": 30,
+        "NORTH": 35,
+        "WATER": 26,
+        "FEED": 4,
+        "HARVEST": 10,
+        "SOUTH": 20,
+        "CARE": 7,
+        "PLANT": 9,
+        "COLLECT_FERTILIZER": 4
+      },
+      "14": {
+        "hours": 24,
+        "hand_slots": 183,
+        "PICKUP": 6,
+        "WEST": 32,
+        "NORTH": 27,
+        "PASS": 24,
+        "EAST": 30,
+        "FEED": 4,
+        "WATER": 17,
+        "SOUTH": 19,
+        "HARVEST": 6,
+        "CARE": 6,
+        "PLANT": 3,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 4
+      },
+      "15": {
+        "hours": 24,
+        "hand_slots": 184,
+        "PICKUP": 6,
+        "NORTH": 33,
+        "EAST": 24,
+        "WEST": 31,
+        "PASS": 19,
+        "WATER": 18,
+        "FEED": 4,
+        "SOUTH": 25,
+        "CARE": 7,
+        "HARVEST": 4,
+        "COLLECT_FERTILIZER": 7,
+        "DROP": 6
+      },
+      "16": {
+        "hours": 24,
+        "hand_slots": 204,
+        "PICKUP": 10,
+        "WEST": 45,
+        "NORTH": 38,
+        "PASS": 10,
+        "EAST": 29,
+        "FEED": 4,
+        "WATER": 18,
+        "HARVEST": 8,
+        "CARE": 7,
+        "SOUTH": 22,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 7,
+        "DROP": 2
+      },
+      "17": {
+        "hours": 24,
+        "hand_slots": 226,
+        "PICKUP": 6,
+        "WEST": 41,
+        "NORTH": 45,
+        "PASS": 12,
+        "EAST": 34,
+        "WATER": 27,
+        "FEED": 4,
+        "HARVEST": 11,
+        "SOUTH": 28,
+        "CARE": 4,
+        "PLANT": 7,
+        "COLLECT_FERTILIZER": 6,
+        "DROP": 1
+      },
+      "18": {
+        "hours": 24,
+        "hand_slots": 271,
+        "PICKUP": 15,
+        "EAST": 59,
+        "WEST": 47,
+        "PASS": 10,
+        "NORTH": 48,
+        "FEED": 4,
+        "WATER": 28,
+        "SOUTH": 35,
+        "CARE": 6,
+        "HARVEST": 9,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 4,
+        "FERTILIZE": 2
+      },
+      "19": {
+        "hours": 24,
+        "hand_slots": 247,
+        "PICKUP": 10,
+        "WEST": 52,
+        "NORTH": 37,
+        "PASS": 22,
+        "WATER": 14,
+        "EAST": 51,
+        "FEED": 4,
+        "CARE": 5,
+        "SOUTH": 29,
+        "HARVEST": 9,
+        "COLLECT_FERTILIZER": 7,
+        "DROP": 7
+      },
+      "20": {
+        "hours": 24,
+        "hand_slots": 271,
+        "PICKUP": 15,
+        "EAST": 49,
+        "WEST": 50,
+        "PASS": 5,
+        "NORTH": 55,
+        "WATER": 26,
+        "FEED": 4,
+        "SOUTH": 37,
+        "CARE": 7,
+        "HARVEST": 11,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 6,
+        "DROP": 1,
+        "DIG": 1
+      },
+      "21": {
+        "hours": 24,
+        "hand_slots": 269,
+        "PICKUP": 7,
+        "WEST": 54,
+        "NORTH": 50,
+        "PASS": 16,
+        "WATER": 21,
+        "FEED": 4,
+        "EAST": 50,
+        "CARE": 6,
+        "HARVEST": 20,
+        "SOUTH": 25,
+        "PLANT": 7,
+        "COLLECT_FERTILIZER": 6,
+        "DROP": 2,
+        "FERTILIZE": 1
+      },
+      "22": {
+        "hours": 24,
+        "hand_slots": 292,
+        "PICKUP": 16,
+        "WEST": 50,
+        "PASS": 13,
+        "EAST": 64,
+        "NORTH": 53,
+        "FEED": 4,
+        "WATER": 26,
+        "HARVEST": 11,
+        "SOUTH": 39,
+        "CARE": 7,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 3,
+        "DROP": 1,
+        "FERTILIZE": 1
+      },
+      "23": {
+        "hours": 24,
+        "hand_slots": 225,
+        "PICKUP": 9,
+        "WEST": 37,
+        "NORTH": 32,
+        "PASS": 33,
+        "WATER": 13,
+        "FEED": 4,
+        "EAST": 41,
+        "CARE": 7,
+        "SOUTH": 26,
+        "HARVEST": 10,
+        "COLLECT_FERTILIZER": 7,
+        "DROP": 6
+      },
+      "24": {
+        "hours": 24,
+        "hand_slots": 250,
+        "PICKUP": 11,
+        "EAST": 41,
+        "WEST": 47,
+        "NORTH": 56,
+        "PASS": 4,
+        "WATER": 22,
+        "FEED": 4,
+        "CARE": 6,
+        "HARVEST": 19,
+        "SOUTH": 33,
+        "PLANT": 5,
+        "COLLECT_FERTILIZER": 2
+      },
+      "25": {
+        "hours": 24,
+        "hand_slots": 289,
+        "PICKUP": 6,
+        "WEST": 43,
+        "NORTH": 48,
+        "PASS": 38,
+        "WATER": 19,
+        "EAST": 48,
+        "FEED": 4,
+        "CARE": 6,
+        "HARVEST": 19,
+        "SOUTH": 37,
+        "PLANT": 7,
+        "COLLECT_FERTILIZER": 6,
+        "DROP": 8
+      },
+      "26": {
+        "hours": 24,
+        "hand_slots": 183,
+        "PICKUP": 6,
+        "EAST": 29,
+        "WEST": 37,
+        "NORTH": 25,
+        "PASS": 44,
+        "WATER": 8,
+        "FEED": 4,
+        "HARVEST": 11,
+        "CARE": 6,
+        "SOUTH": 9,
+        "DROP": 3,
+        "DIG": 1
+      },
+      "27": {
+        "hours": 24,
+        "hand_slots": 184,
+        "PICKUP": 6,
+        "NORTH": 23,
+        "WEST": 19,
+        "WATER": 8,
+        "PASS": 94,
+        "FEED": 4,
+        "CARE": 5,
+        "SOUTH": 9,
+        "HARVEST": 4,
+        "EAST": 8,
+        "DROP": 4
+      },
+      "28": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 8,
+        "WEST": 30,
+        "NORTH": 32,
+        "PASS": 123,
+        "FEED": 4,
+        "CARE": 6,
+        "WATER": 5,
+        "HARVEST": 8,
+        "SOUTH": 9,
+        "EAST": 2,
+        "DROP": 3
+      },
+      "29": {
+        "hours": 23,
+        "hand_slots": 198,
+        "PICKUP": 7,
+        "NORTH": 26,
+        "WEST": 16,
+        "WATER": 8,
+        "EAST": 4,
+        "PASS": 110,
+        "FEED": 4,
+        "HARVEST": 10,
+        "SOUTH": 7,
+        "CARE": 4,
+        "DROP": 2
+      }
+    },
+    "daily_hands": {
+      "0": [
+        4
+      ],
+      "1": [
+        4
+      ],
+      "2": [
+        5
+      ],
+      "3": [
+        5
+      ],
+      "4": [
+        5
+      ],
+      "5": [
+        5
+      ],
+      "6": [
+        10
+      ],
+      "7": [
+        10
+      ],
+      "8": [
+        10
+      ],
+      "9": [
+        9
+      ],
+      "10": [
+        8
+      ],
+      "11": [
+        8
+      ],
+      "12": [
+        10
+      ],
+      "13": [
+        9
+      ],
+      "14": [
+        8
+      ],
+      "15": [
+        8
+      ],
+      "16": [
+        9
+      ],
+      "17": [
+        10
+      ],
+      "18": [
+        12
+      ],
+      "19": [
+        11
+      ],
+      "20": [
+        12
+      ],
+      "21": [
+        12
+      ],
+      "22": [
+        13
+      ],
+      "23": [
+        10
+      ],
+      "24": [
+        11
+      ],
+      "25": [
+        13
+      ],
+      "26": [
+        8
+      ],
+      "27": [
+        8
+      ],
+      "28": [
+        10
+      ]
+    },
+    "drop_days": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      21,
+      22,
+      23,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "pickup_days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ]
+  },
+  {
+    "seed": 92802,
+    "seat": 1,
+    "cash": 59722.0,
+    "opponent_cash": 130658.0,
+    "metrics": {
+      "hands_productive_actions": 1498,
+      "hands_move_actions": 3350,
+      "productive_share_of_nonpass_actions": 0.309,
+      "productive_by_op": {
+        "PICKUP": 228,
+        "BUILD_PASTURE": 4,
+        "PLACE": 6,
+        "PLANT": 112,
+        "WATER": 476,
+        "CARE": 150,
+        "COLLECT_FERTILIZER": 114,
+        "FEED": 98,
+        "DROP": 83,
+        "HARVEST": 218,
+        "DIG": 3,
+        "BUILD_COOP": 2,
+        "FERTILIZE": 4
+      },
+      "care_due_animal_days": 188,
+      "care_served_animal_days": 180,
+      "feed_due_animal_days": 188,
+      "feed_served_animal_days": 180,
+      "animal_escapes": 0,
+      "crop_harvest_actions": {
+        "WHEAT": 98,
+        "WOOL": 24,
+        "MILK": 22,
+        "MELON": 17,
+        "EGG": 30,
+        "STRAWBERRY": 48
+      },
+      "harvested_units": {
+        "WHEAT": 292,
+        "WOOL": 97,
+        "MILK": 71,
+        "MELON": 68,
+        "EGG": 63,
+        "STRAWBERRY": 56
+      },
+      "crop_decay_yield_units": {},
+      "ripe_crop_tile_days": {
+        "MELON": 226,
+        "WHEAT": 424,
+        "STRAWBERRY": 48
+      },
+      "unharvested_ripe_crop_tile_days": {
+        "MELON": 209,
+        "WHEAT": 326,
+        "STRAWBERRY": 0
+      },
+      "strawberry_water_actions": 104,
+      "strawberry_harvest_actions": 48,
+      "accepted_sales_units": {
+        "FERTILIZER": 136,
+        "WHEAT": 227,
+        "WOOL": 97,
+        "MILK": 71,
+        "MELON": 68,
+        "EGG": 63,
+        "STRAWBERRY": 56
+      },
+      "attempted_sales_units": {
+        "FERTILIZER": 136,
+        "WHEAT": 227,
+        "WOOL": 97,
+        "MILK": 71,
+        "MELON": 68,
+        "EGG": 63,
+        "STRAWBERRY": 56
+      },
+      "accepted_strawberry_sales_units": 56,
+      "attempted_strawberry_sales_units": 56,
+      "strawberry_live_hours": 4659,
+      "strawberry_counts_by_day": {
+        "0": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 6
+        },
+        "1": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "2": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "3": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 10
+        },
+        "4": {
+          "strawberry": 0,
+          "wheat": 7,
+          "melon": 10
+        },
+        "5": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "6": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "7": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "8": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "9": {
+          "strawberry": 9,
+          "wheat": 14,
+          "melon": 10
+        },
+        "10": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "11": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "12": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "13": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "14": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "15": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "16": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "17": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 8
+        },
+        "18": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "19": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "20": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "21": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "22": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "23": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "24": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 3
+        },
+        "25": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 1
+        },
+        "26": {
+          "strawberry": 3,
+          "wheat": 13,
+          "melon": 1
+        },
+        "27": {
+          "strawberry": 0,
+          "wheat": 13,
+          "melon": 0
+        },
+        "28": {
+          "strawberry": 0,
+          "wheat": 8,
+          "melon": 0
+        }
+      }
+    },
+    "daily": {
+      "0": {
+        "hours": 24,
+        "hand_slots": 92,
+        "PICKUP": 4,
+        "WEST": 18,
+        "NORTH": 17,
+        "BUILD_PASTURE": 4,
+        "EAST": 11,
+        "PLACE": 4,
+        "PLANT": 11,
+        "WATER": 11,
+        "SOUTH": 10,
+        "CARE": 2
+      },
+      "1": {
+        "hours": 24,
+        "hand_slots": 92,
+        "NORTH": 9,
+        "WEST": 11,
+        "PICKUP": 6,
+        "COLLECT_FERTILIZER": 4,
+        "CARE": 3,
+        "EAST": 2,
+        "FEED": 3,
+        "DROP": 3,
+        "PASS": 42,
+        "SOUTH": 3,
+        "PLANT": 3,
+        "WATER": 3
+      },
+      "2": {
+        "hours": 24,
+        "hand_slots": 115,
+        "PICKUP": 3,
+        "WEST": 19,
+        "PASS": 18,
+        "NORTH": 19,
+        "WATER": 15,
+        "FEED": 1,
+        "SOUTH": 14,
+        "EAST": 14,
+        "CARE": 4,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 3
+      },
+      "3": {
+        "hours": 24,
+        "hand_slots": 115,
+        "PICKUP": 6,
+        "WEST": 15,
+        "PASS": 59,
+        "FEED": 2,
+        "CARE": 3,
+        "NORTH": 11,
+        "WATER": 4,
+        "EAST": 5,
+        "COLLECT_FERTILIZER": 3,
+        "SOUTH": 4,
+        "PLANT": 1,
+        "DROP": 2
+      },
+      "4": {
+        "hours": 24,
+        "hand_slots": 115,
+        "PICKUP": 6,
+        "WEST": 25,
+        "NORTH": 25,
+        "PASS": 3,
+        "WATER": 18,
+        "FEED": 2,
+        "HARVEST": 8,
+        "EAST": 17,
+        "SOUTH": 7,
+        "PLANT": 4
+      },
+      "5": {
+        "hours": 24,
+        "hand_slots": 115,
+        "WEST": 17,
+        "PICKUP": 4,
+        "NORTH": 16,
+        "PASS": 35,
+        "FEED": 2,
+        "CARE": 3,
+        "WATER": 8,
+        "SOUTH": 6,
+        "EAST": 12,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 3,
+        "DIG": 2,
+        "BUILD_COOP": 1,
+        "DROP": 2
+      },
+      "6": {
+        "hours": 24,
+        "hand_slots": 230,
+        "WEST": 28,
+        "PICKUP": 6,
+        "NORTH": 29,
+        "PASS": 121,
+        "WATER": 11,
+        "EAST": 10,
+        "FEED": 2,
+        "CARE": 4,
+        "SOUTH": 8,
+        "HARVEST": 2,
+        "COLLECT_FERTILIZER": 4,
+        "DROP": 5
+      },
+      "7": {
+        "hours": 24,
+        "hand_slots": 230,
+        "WEST": 24,
+        "PICKUP": 5,
+        "NORTH": 28,
+        "PASS": 142,
+        "FEED": 3,
+        "WATER": 8,
+        "SOUTH": 8,
+        "CARE": 3,
+        "COLLECT_FERTILIZER": 4,
+        "DROP": 4,
+        "EAST": 1
+      },
+      "8": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 7,
+        "WEST": 33,
+        "NORTH": 33,
+        "PASS": 101,
+        "WATER": 14,
+        "FEED": 3,
+        "CARE": 5,
+        "HARVEST": 6,
+        "SOUTH": 6,
+        "EAST": 9,
+        "COLLECT_FERTILIZER": 5,
+        "PLANT": 4,
+        "DROP": 4
+      },
+      "9": {
+        "hours": 24,
+        "hand_slots": 207,
+        "PICKUP": 4,
+        "WEST": 42,
+        "NORTH": 34,
+        "PASS": 4,
+        "FEED": 3,
+        "WATER": 23,
+        "EAST": 55,
+        "HARVEST": 7,
+        "SOUTH": 12,
+        "CARE": 5,
+        "PLANT": 16,
+        "COLLECT_FERTILIZER": 2
+      },
+      "10": {
+        "hours": 24,
+        "hand_slots": 183,
+        "PICKUP": 5,
+        "WEST": 40,
+        "NORTH": 25,
+        "PASS": 14,
+        "FEED": 2,
+        "WATER": 16,
+        "EAST": 47,
+        "SOUTH": 12,
+        "CARE": 6,
+        "PLACE": 1,
+        "HARVEST": 2,
+        "PLANT": 6,
+        "COLLECT_FERTILIZER": 4,
+        "DROP": 3
+      },
+      "11": {
+        "hours": 24,
+        "hand_slots": 184,
+        "PICKUP": 11,
+        "NORTH": 25,
+        "WATER": 21,
+        "EAST": 26,
+        "WEST": 20,
+        "PASS": 50,
+        "FEED": 4,
+        "SOUTH": 14,
+        "CARE": 4,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 4
+      },
+      "12": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 10,
+        "EAST": 39,
+        "NORTH": 33,
+        "WEST": 50,
+        "PASS": 21,
+        "WATER": 20,
+        "FEED": 3,
+        "CARE": 6,
+        "HARVEST": 13,
+        "SOUTH": 16,
+        "PLANT": 9,
+        "COLLECT_FERTILIZER": 5,
+        "BUILD_COOP": 1,
+        "DROP": 3,
+        "PLACE": 1
+      },
+      "13": {
+        "hours": 24,
+        "hand_slots": 204,
+        "PICKUP": 7,
+        "WEST": 41,
+        "PASS": 11,
+        "EAST": 30,
+        "NORTH": 35,
+        "WATER": 26,
+        "FEED": 4,
+        "HARVEST": 10,
+        "SOUTH": 20,
+        "CARE": 7,
+        "PLANT": 9,
+        "COLLECT_FERTILIZER": 4
+      },
+      "14": {
+        "hours": 24,
+        "hand_slots": 183,
+        "PICKUP": 6,
+        "WEST": 32,
+        "NORTH": 27,
+        "PASS": 24,
+        "EAST": 30,
+        "FEED": 4,
+        "WATER": 17,
+        "SOUTH": 19,
+        "HARVEST": 6,
+        "CARE": 6,
+        "PLANT": 3,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 4
+      },
+      "15": {
+        "hours": 24,
+        "hand_slots": 184,
+        "PICKUP": 6,
+        "NORTH": 33,
+        "EAST": 24,
+        "WEST": 31,
+        "PASS": 19,
+        "WATER": 18,
+        "FEED": 4,
+        "SOUTH": 25,
+        "CARE": 7,
+        "HARVEST": 4,
+        "COLLECT_FERTILIZER": 7,
+        "DROP": 6
+      },
+      "16": {
+        "hours": 24,
+        "hand_slots": 204,
+        "PICKUP": 10,
+        "WEST": 45,
+        "NORTH": 38,
+        "PASS": 10,
+        "EAST": 29,
+        "FEED": 4,
+        "WATER": 18,
+        "HARVEST": 8,
+        "CARE": 7,
+        "SOUTH": 22,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 7,
+        "DROP": 2
+      },
+      "17": {
+        "hours": 24,
+        "hand_slots": 226,
+        "PICKUP": 6,
+        "WEST": 41,
+        "NORTH": 45,
+        "PASS": 12,
+        "EAST": 34,
+        "WATER": 27,
+        "FEED": 4,
+        "HARVEST": 11,
+        "SOUTH": 28,
+        "CARE": 4,
+        "PLANT": 7,
+        "COLLECT_FERTILIZER": 6,
+        "DROP": 1
+      },
+      "18": {
+        "hours": 24,
+        "hand_slots": 271,
+        "PICKUP": 15,
+        "EAST": 59,
+        "WEST": 47,
+        "PASS": 10,
+        "NORTH": 48,
+        "FEED": 4,
+        "WATER": 28,
+        "SOUTH": 35,
+        "CARE": 6,
+        "HARVEST": 9,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 4,
+        "FERTILIZE": 2
+      },
+      "19": {
+        "hours": 24,
+        "hand_slots": 247,
+        "PICKUP": 10,
+        "WEST": 52,
+        "NORTH": 37,
+        "PASS": 22,
+        "WATER": 14,
+        "EAST": 51,
+        "FEED": 4,
+        "CARE": 5,
+        "SOUTH": 29,
+        "HARVEST": 9,
+        "COLLECT_FERTILIZER": 7,
+        "DROP": 7
+      },
+      "20": {
+        "hours": 24,
+        "hand_slots": 271,
+        "PICKUP": 15,
+        "EAST": 49,
+        "WEST": 50,
+        "PASS": 5,
+        "NORTH": 55,
+        "WATER": 26,
+        "FEED": 4,
+        "SOUTH": 37,
+        "CARE": 7,
+        "HARVEST": 11,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 6,
+        "DROP": 1,
+        "DIG": 1
+      },
+      "21": {
+        "hours": 24,
+        "hand_slots": 269,
+        "PICKUP": 7,
+        "WEST": 54,
+        "NORTH": 50,
+        "PASS": 16,
+        "WATER": 21,
+        "FEED": 4,
+        "EAST": 50,
+        "CARE": 6,
+        "HARVEST": 20,
+        "SOUTH": 25,
+        "PLANT": 7,
+        "COLLECT_FERTILIZER": 6,
+        "DROP": 2,
+        "FERTILIZE": 1
+      },
+      "22": {
+        "hours": 24,
+        "hand_slots": 292,
+        "PICKUP": 16,
+        "WEST": 50,
+        "PASS": 13,
+        "EAST": 64,
+        "NORTH": 53,
+        "FEED": 4,
+        "WATER": 26,
+        "HARVEST": 11,
+        "SOUTH": 39,
+        "CARE": 7,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 3,
+        "DROP": 1,
+        "FERTILIZE": 1
+      },
+      "23": {
+        "hours": 24,
+        "hand_slots": 225,
+        "PICKUP": 9,
+        "WEST": 37,
+        "NORTH": 32,
+        "PASS": 33,
+        "WATER": 13,
+        "FEED": 4,
+        "EAST": 41,
+        "CARE": 7,
+        "SOUTH": 26,
+        "HARVEST": 10,
+        "COLLECT_FERTILIZER": 7,
+        "DROP": 6
+      },
+      "24": {
+        "hours": 24,
+        "hand_slots": 250,
+        "PICKUP": 11,
+        "EAST": 41,
+        "WEST": 47,
+        "NORTH": 56,
+        "PASS": 4,
+        "WATER": 22,
+        "FEED": 4,
+        "CARE": 6,
+        "HARVEST": 19,
+        "SOUTH": 33,
+        "PLANT": 5,
+        "COLLECT_FERTILIZER": 2
+      },
+      "25": {
+        "hours": 24,
+        "hand_slots": 289,
+        "PICKUP": 6,
+        "WEST": 43,
+        "NORTH": 48,
+        "PASS": 38,
+        "WATER": 19,
+        "EAST": 48,
+        "FEED": 4,
+        "CARE": 6,
+        "HARVEST": 19,
+        "SOUTH": 37,
+        "PLANT": 7,
+        "COLLECT_FERTILIZER": 6,
+        "DROP": 8
+      },
+      "26": {
+        "hours": 24,
+        "hand_slots": 183,
+        "PICKUP": 6,
+        "EAST": 29,
+        "WEST": 37,
+        "NORTH": 25,
+        "PASS": 46,
+        "WATER": 8,
+        "FEED": 4,
+        "HARVEST": 11,
+        "CARE": 6,
+        "SOUTH": 8,
+        "DROP": 3
+      },
+      "27": {
+        "hours": 24,
+        "hand_slots": 184,
+        "PICKUP": 6,
+        "NORTH": 23,
+        "WEST": 19,
+        "WATER": 8,
+        "PASS": 94,
+        "FEED": 4,
+        "CARE": 5,
+        "SOUTH": 9,
+        "HARVEST": 4,
+        "EAST": 8,
+        "DROP": 4
+      },
+      "28": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 8,
+        "WEST": 30,
+        "NORTH": 32,
+        "PASS": 123,
+        "FEED": 4,
+        "CARE": 6,
+        "WATER": 5,
+        "HARVEST": 8,
+        "SOUTH": 9,
+        "EAST": 2,
+        "DROP": 3
+      },
+      "29": {
+        "hours": 23,
+        "hand_slots": 198,
+        "PICKUP": 7,
+        "NORTH": 26,
+        "WEST": 16,
+        "WATER": 8,
+        "EAST": 4,
+        "PASS": 110,
+        "FEED": 4,
+        "HARVEST": 10,
+        "SOUTH": 7,
+        "CARE": 4,
+        "DROP": 2
+      }
+    },
+    "daily_hands": {
+      "0": [
+        4
+      ],
+      "1": [
+        4
+      ],
+      "2": [
+        5
+      ],
+      "3": [
+        5
+      ],
+      "4": [
+        5
+      ],
+      "5": [
+        5
+      ],
+      "6": [
+        10
+      ],
+      "7": [
+        10
+      ],
+      "8": [
+        10
+      ],
+      "9": [
+        9
+      ],
+      "10": [
+        8
+      ],
+      "11": [
+        8
+      ],
+      "12": [
+        10
+      ],
+      "13": [
+        9
+      ],
+      "14": [
+        8
+      ],
+      "15": [
+        8
+      ],
+      "16": [
+        9
+      ],
+      "17": [
+        10
+      ],
+      "18": [
+        12
+      ],
+      "19": [
+        11
+      ],
+      "20": [
+        12
+      ],
+      "21": [
+        12
+      ],
+      "22": [
+        13
+      ],
+      "23": [
+        10
+      ],
+      "24": [
+        11
+      ],
+      "25": [
+        13
+      ],
+      "26": [
+        8
+      ],
+      "27": [
+        8
+      ],
+      "28": [
+        10
+      ]
+    },
+    "drop_days": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      21,
+      22,
+      23,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "pickup_days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ]
+  },
+  {
+    "seed": 92804,
+    "seat": 0,
+    "cash": 54767.0,
+    "opponent_cash": 131700.0,
+    "metrics": {
+      "hands_productive_actions": 1502,
+      "hands_move_actions": 3567,
+      "productive_share_of_nonpass_actions": 0.2963,
+      "productive_by_op": {
+        "PICKUP": 211,
+        "BUILD_PASTURE": 4,
+        "PLACE": 6,
+        "PLANT": 113,
+        "WATER": 482,
+        "CARE": 154,
+        "COLLECT_FERTILIZER": 120,
+        "FEED": 99,
+        "DROP": 76,
+        "HARVEST": 228,
+        "DIG": 3,
+        "BUILD_COOP": 2,
+        "FERTILIZE": 4
+      },
+      "care_due_animal_days": 187,
+      "care_served_animal_days": 179,
+      "feed_due_animal_days": 187,
+      "feed_served_animal_days": 181,
+      "animal_escapes": 0,
+      "crop_harvest_actions": {
+        "WHEAT": 102,
+        "WOOL": 24,
+        "MILK": 22,
+        "MELON": 17,
+        "EGG": 29,
+        "STRAWBERRY": 48
+      },
+      "harvested_units": {
+        "WHEAT": 304,
+        "WOOL": 97,
+        "MILK": 71,
+        "MELON": 68,
+        "EGG": 62,
+        "STRAWBERRY": 56
+      },
+      "crop_decay_yield_units": {},
+      "ripe_crop_tile_days": {
+        "MELON": 226,
+        "WHEAT": 441,
+        "STRAWBERRY": 48
+      },
+      "unharvested_ripe_crop_tile_days": {
+        "MELON": 209,
+        "WHEAT": 339,
+        "STRAWBERRY": 0
+      },
+      "strawberry_water_actions": 107,
+      "strawberry_harvest_actions": 48,
+      "accepted_sales_units": {
+        "FERTILIZER": 149,
+        "WHEAT": 230,
+        "WOOL": 97,
+        "MILK": 71,
+        "MELON": 68,
+        "EGG": 62,
+        "STRAWBERRY": 56
+      },
+      "attempted_sales_units": {
+        "FERTILIZER": 149,
+        "WHEAT": 230,
+        "WOOL": 97,
+        "MILK": 71,
+        "MELON": 68,
+        "EGG": 62,
+        "STRAWBERRY": 56
+      },
+      "accepted_strawberry_sales_units": 56,
+      "attempted_strawberry_sales_units": 56,
+      "strawberry_live_hours": 4689,
+      "strawberry_counts_by_day": {
+        "0": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 6
+        },
+        "1": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "2": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "3": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 10
+        },
+        "4": {
+          "strawberry": 0,
+          "wheat": 7,
+          "melon": 10
+        },
+        "5": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "6": {
+          "strawberry": 1,
+          "wheat": 17,
+          "melon": 10
+        },
+        "7": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "8": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "9": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "10": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "11": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "12": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "13": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "14": {
+          "strawberry": 12,
+          "wheat": 15,
+          "melon": 8
+        },
+        "15": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "16": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "17": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "18": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "19": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "20": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "21": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "22": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "23": {
+          "strawberry": 11,
+          "wheat": 17,
+          "melon": 8
+        },
+        "24": {
+          "strawberry": 0,
+          "wheat": 17,
+          "melon": 3
+        },
+        "25": {
+          "strawberry": 0,
+          "wheat": 17,
+          "melon": 1
+        },
+        "26": {
+          "strawberry": 0,
+          "wheat": 11,
+          "melon": 1
+        },
+        "27": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 0
+        },
+        "28": {
+          "strawberry": 0,
+          "wheat": 4,
+          "melon": 0
+        }
+      }
+    },
+    "daily": {
+      "0": {
+        "hours": 24,
+        "hand_slots": 92,
+        "PICKUP": 4,
+        "WEST": 18,
+        "NORTH": 17,
+        "BUILD_PASTURE": 4,
+        "EAST": 11,
+        "PLACE": 4,
+        "PLANT": 11,
+        "WATER": 11,
+        "SOUTH": 10,
+        "CARE": 2
+      },
+      "1": {
+        "hours": 24,
+        "hand_slots": 92,
+        "NORTH": 9,
+        "WEST": 11,
+        "PICKUP": 6,
+        "COLLECT_FERTILIZER": 4,
+        "CARE": 3,
+        "EAST": 2,
+        "FEED": 3,
+        "DROP": 3,
+        "PASS": 42,
+        "SOUTH": 3,
+        "PLANT": 3,
+        "WATER": 3
+      },
+      "2": {
+        "hours": 24,
+        "hand_slots": 115,
+        "PICKUP": 3,
+        "WEST": 19,
+        "PASS": 18,
+        "NORTH": 19,
+        "WATER": 15,
+        "FEED": 1,
+        "SOUTH": 14,
+        "EAST": 14,
+        "CARE": 4,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 3
+      },
+      "3": {
+        "hours": 24,
+        "hand_slots": 115,
+        "PICKUP": 6,
+        "WEST": 15,
+        "PASS": 59,
+        "FEED": 2,
+        "CARE": 3,
+        "NORTH": 11,
+        "WATER": 4,
+        "EAST": 5,
+        "COLLECT_FERTILIZER": 3,
+        "SOUTH": 4,
+        "PLANT": 1,
+        "DROP": 2
+      },
+      "4": {
+        "hours": 24,
+        "hand_slots": 115,
+        "PICKUP": 6,
+        "WEST": 25,
+        "NORTH": 25,
+        "PASS": 3,
+        "WATER": 18,
+        "FEED": 2,
+        "HARVEST": 8,
+        "EAST": 17,
+        "SOUTH": 7,
+        "PLANT": 4
+      },
+      "5": {
+        "hours": 24,
+        "hand_slots": 115,
+        "WEST": 17,
+        "PICKUP": 4,
+        "NORTH": 16,
+        "PASS": 35,
+        "FEED": 2,
+        "CARE": 3,
+        "WATER": 8,
+        "SOUTH": 6,
+        "EAST": 12,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 3,
+        "DIG": 2,
+        "BUILD_COOP": 1,
+        "DROP": 2
+      },
+      "6": {
+        "hours": 24,
+        "hand_slots": 230,
+        "WEST": 29,
+        "PICKUP": 6,
+        "NORTH": 32,
+        "PASS": 72,
+        "WATER": 19,
+        "EAST": 38,
+        "FEED": 2,
+        "CARE": 4,
+        "SOUTH": 9,
+        "HARVEST": 2,
+        "COLLECT_FERTILIZER": 4,
+        "DROP": 5,
+        "PLANT": 8
+      },
+      "7": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 7,
+        "WEST": 36,
+        "PASS": 34,
+        "NORTH": 38,
+        "FEED": 3,
+        "WATER": 17,
+        "CARE": 5,
+        "SOUTH": 14,
+        "EAST": 59,
+        "COLLECT_FERTILIZER": 5,
+        "PLANT": 10,
+        "DROP": 2
+      },
+      "8": {
+        "hours": 24,
+        "hand_slots": 159,
+        "PICKUP": 6,
+        "NORTH": 25,
+        "WEST": 35,
+        "PASS": 22,
+        "WATER": 24,
+        "EAST": 23,
+        "FEED": 2,
+        "HARVEST": 5,
+        "CARE": 3,
+        "SOUTH": 4,
+        "PLANT": 5,
+        "COLLECT_FERTILIZER": 3,
+        "DROP": 2
+      },
+      "9": {
+        "hours": 24,
+        "hand_slots": 207,
+        "PICKUP": 4,
+        "NORTH": 34,
+        "EAST": 27,
+        "WEST": 37,
+        "FEED": 3,
+        "PASS": 44,
+        "WATER": 21,
+        "SOUTH": 14,
+        "HARVEST": 7,
+        "CARE": 4,
+        "PLANT": 3,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 4
+      },
+      "10": {
+        "hours": 24,
+        "hand_slots": 230,
+        "WATER": 26,
+        "PICKUP": 5,
+        "NORTH": 37,
+        "EAST": 35,
+        "WEST": 29,
+        "PASS": 38,
+        "FEED": 4,
+        "CARE": 4,
+        "HARVEST": 10,
+        "SOUTH": 25,
+        "PLACE": 1,
+        "PLANT": 8,
+        "COLLECT_FERTILIZER": 4,
+        "DROP": 4
+      },
+      "11": {
+        "hours": 24,
+        "hand_slots": 207,
+        "PICKUP": 5,
+        "NORTH": 32,
+        "EAST": 30,
+        "WEST": 27,
+        "FEED": 3,
+        "PASS": 63,
+        "WATER": 18,
+        "SOUTH": 13,
+        "CARE": 6,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 5
+      },
+      "12": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 9,
+        "EAST": 35,
+        "NORTH": 36,
+        "WATER": 22,
+        "WEST": 51,
+        "PASS": 15,
+        "FEED": 3,
+        "CARE": 6,
+        "SOUTH": 20,
+        "HARVEST": 15,
+        "PLANT": 9,
+        "COLLECT_FERTILIZER": 5,
+        "BUILD_COOP": 1,
+        "DROP": 3
+      },
+      "13": {
+        "hours": 24,
+        "hand_slots": 203,
+        "PICKUP": 6,
+        "WEST": 52,
+        "NORTH": 38,
+        "PASS": 10,
+        "EAST": 36,
+        "FEED": 4,
+        "WATER": 21,
+        "HARVEST": 6,
+        "SOUTH": 14,
+        "CARE": 6,
+        "PLACE": 1,
+        "PLANT": 6,
+        "COLLECT_FERTILIZER": 3
+      },
+      "14": {
+        "hours": 24,
+        "hand_slots": 183,
+        "PICKUP": 6,
+        "EAST": 37,
+        "WEST": 40,
+        "PASS": 11,
+        "NORTH": 27,
+        "WATER": 22,
+        "FEED": 4,
+        "SOUTH": 14,
+        "HARVEST": 10,
+        "CARE": 6,
+        "PLANT": 5,
+        "COLLECT_FERTILIZER": 1
+      },
+      "15": {
+        "hours": 24,
+        "hand_slots": 183,
+        "PICKUP": 6,
+        "WEST": 40,
+        "NORTH": 33,
+        "PASS": 9,
+        "EAST": 33,
+        "FEED": 4,
+        "WATER": 20,
+        "SOUTH": 21,
+        "CARE": 3,
+        "HARVEST": 5,
+        "PLANT": 3,
+        "COLLECT_FERTILIZER": 6
+      },
+      "16": {
+        "hours": 24,
+        "hand_slots": 314,
+        "PICKUP": 19,
+        "WEST": 58,
+        "EAST": 79,
+        "PASS": 5,
+        "NORTH": 56,
+        "WATER": 30,
+        "FEED": 4,
+        "CARE": 7,
+        "SOUTH": 40,
+        "HARVEST": 8,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 3,
+        "FERTILIZE": 1
+      },
+      "17": {
+        "hours": 24,
+        "hand_slots": 247,
+        "PICKUP": 5,
+        "WEST": 65,
+        "PASS": 10,
+        "EAST": 58,
+        "NORTH": 39,
+        "FEED": 4,
+        "WATER": 10,
+        "CARE": 7,
+        "HARVEST": 17,
+        "SOUTH": 21,
+        "COLLECT_FERTILIZER": 7,
+        "PLANT": 1,
+        "DROP": 3
+      },
+      "18": {
+        "hours": 24,
+        "hand_slots": 314,
+        "PICKUP": 16,
+        "WEST": 51,
+        "NORTH": 53,
+        "EAST": 76,
+        "PASS": 9,
+        "WATER": 31,
+        "FEED": 4,
+        "CARE": 6,
+        "HARVEST": 13,
+        "SOUTH": 39,
+        "PLANT": 5,
+        "COLLECT_FERTILIZER": 6,
+        "FERTILIZE": 2,
+        "DROP": 3
+      },
+      "19": {
+        "hours": 24,
+        "hand_slots": 268,
+        "PICKUP": 6,
+        "WEST": 59,
+        "NORTH": 38,
+        "PASS": 28,
+        "EAST": 58,
+        "FEED": 5,
+        "WATER": 11,
+        "HARVEST": 15,
+        "CARE": 7,
+        "SOUTH": 24,
+        "COLLECT_FERTILIZER": 6,
+        "DROP": 8,
+        "PLANT": 2,
+        "DIG": 1
+      },
+      "20": {
+        "hours": 24,
+        "hand_slots": 293,
+        "PICKUP": 14,
+        "NORTH": 53,
+        "WEST": 58,
+        "WATER": 30,
+        "PASS": 7,
+        "EAST": 68,
+        "FEED": 4,
+        "CARE": 7,
+        "HARVEST": 9,
+        "SOUTH": 34,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 4,
+        "FERTILIZE": 1
+      },
+      "21": {
+        "hours": 24,
+        "hand_slots": 247,
+        "PICKUP": 5,
+        "WEST": 60,
+        "PASS": 11,
+        "EAST": 59,
+        "NORTH": 38,
+        "WATER": 12,
+        "FEED": 4,
+        "SOUTH": 22,
+        "CARE": 7,
+        "HARVEST": 20,
+        "PLANT": 3,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 1
+      },
+      "22": {
+        "hours": 24,
+        "hand_slots": 313,
+        "PICKUP": 15,
+        "WEST": 63,
+        "PASS": 11,
+        "EAST": 78,
+        "WATER": 31,
+        "NORTH": 47,
+        "FEED": 4,
+        "HARVEST": 10,
+        "CARE": 7,
+        "SOUTH": 36,
+        "PLANT": 5,
+        "COLLECT_FERTILIZER": 6
+      },
+      "23": {
+        "hours": 24,
+        "hand_slots": 225,
+        "PICKUP": 5,
+        "WEST": 63,
+        "NORTH": 32,
+        "EAST": 63,
+        "PASS": 9,
+        "FEED": 4,
+        "WATER": 9,
+        "HARVEST": 15,
+        "SOUTH": 11,
+        "CARE": 7,
+        "PLANT": 1,
+        "COLLECT_FERTILIZER": 6
+      },
+      "24": {
+        "hours": 24,
+        "hand_slots": 183,
+        "PICKUP": 6,
+        "NORTH": 36,
+        "WEST": 31,
+        "PASS": 17,
+        "EAST": 19,
+        "WATER": 14,
+        "FEED": 4,
+        "CARE": 7,
+        "HARVEST": 15,
+        "SOUTH": 20,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 7,
+        "DROP": 3
+      },
+      "25": {
+        "hours": 24,
+        "hand_slots": 181,
+        "PICKUP": 5,
+        "WEST": 21,
+        "NORTH": 26,
+        "PASS": 54,
+        "EAST": 14,
+        "FEED": 4,
+        "WATER": 10,
+        "CARE": 7,
+        "HARVEST": 7,
+        "SOUTH": 16,
+        "COLLECT_FERTILIZER": 7,
+        "PLANT": 4,
+        "DROP": 6
+      },
+      "26": {
+        "hours": 24,
+        "hand_slots": 184,
+        "PICKUP": 6,
+        "NORTH": 27,
+        "WEST": 23,
+        "WATER": 10,
+        "PASS": 55,
+        "EAST": 15,
+        "FEED": 4,
+        "CARE": 7,
+        "HARVEST": 9,
+        "SOUTH": 15,
+        "COLLECT_FERTILIZER": 7,
+        "DROP": 6
+      },
+      "27": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 6,
+        "EAST": 11,
+        "NORTH": 24,
+        "WEST": 22,
+        "PASS": 127,
+        "WATER": 6,
+        "FEED": 4,
+        "HARVEST": 8,
+        "CARE": 5,
+        "SOUTH": 11,
+        "DROP": 6
+      },
+      "28": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 8,
+        "WEST": 30,
+        "NORTH": 32,
+        "PASS": 127,
+        "CARE": 6,
+        "FEED": 4,
+        "EAST": 3,
+        "WATER": 5,
+        "HARVEST": 8,
+        "SOUTH": 4,
+        "DROP": 3
+      },
+      "29": {
+        "hours": 23,
+        "hand_slots": 198,
+        "PICKUP": 6,
+        "WEST": 19,
+        "NORTH": 25,
+        "PASS": 119,
+        "FEED": 4,
+        "WATER": 4,
+        "HARVEST": 6,
+        "CARE": 5,
+        "SOUTH": 5,
+        "EAST": 3,
+        "DROP": 2
+      }
+    },
+    "daily_hands": {
+      "0": [
+        4
+      ],
+      "1": [
+        4
+      ],
+      "2": [
+        5
+      ],
+      "3": [
+        5
+      ],
+      "4": [
+        5
+      ],
+      "5": [
+        5
+      ],
+      "6": [
+        10
+      ],
+      "7": [
+        10
+      ],
+      "8": [
+        7
+      ],
+      "9": [
+        9
+      ],
+      "10": [
+        10
+      ],
+      "11": [
+        9
+      ],
+      "12": [
+        10
+      ],
+      "13": [
+        9
+      ],
+      "14": [
+        8
+      ],
+      "15": [
+        8
+      ],
+      "16": [
+        14
+      ],
+      "17": [
+        11
+      ],
+      "18": [
+        14
+      ],
+      "19": [
+        12
+      ],
+      "20": [
+        13
+      ],
+      "21": [
+        11
+      ],
+      "22": [
+        14
+      ],
+      "23": [
+        10
+      ],
+      "24": [
+        8
+      ],
+      "25": [
+        8
+      ],
+      "26": [
+        8
+      ],
+      "27": [
+        10
+      ],
+      "28": [
+        10
+      ]
+    },
+    "drop_days": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      17,
+      18,
+      19,
+      21,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "pickup_days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ]
+  },
+  {
+    "seed": 92804,
+    "seat": 1,
+    "cash": 54767.0,
+    "opponent_cash": 131700.0,
+    "metrics": {
+      "hands_productive_actions": 1502,
+      "hands_move_actions": 3567,
+      "productive_share_of_nonpass_actions": 0.2963,
+      "productive_by_op": {
+        "PICKUP": 211,
+        "BUILD_PASTURE": 4,
+        "PLACE": 6,
+        "PLANT": 113,
+        "WATER": 482,
+        "CARE": 154,
+        "COLLECT_FERTILIZER": 120,
+        "FEED": 99,
+        "DROP": 76,
+        "HARVEST": 228,
+        "DIG": 3,
+        "BUILD_COOP": 2,
+        "FERTILIZE": 4
+      },
+      "care_due_animal_days": 187,
+      "care_served_animal_days": 179,
+      "feed_due_animal_days": 187,
+      "feed_served_animal_days": 181,
+      "animal_escapes": 0,
+      "crop_harvest_actions": {
+        "WHEAT": 102,
+        "WOOL": 24,
+        "MILK": 22,
+        "MELON": 17,
+        "EGG": 29,
+        "STRAWBERRY": 48
+      },
+      "harvested_units": {
+        "WHEAT": 304,
+        "WOOL": 97,
+        "MILK": 71,
+        "MELON": 68,
+        "EGG": 62,
+        "STRAWBERRY": 56
+      },
+      "crop_decay_yield_units": {},
+      "ripe_crop_tile_days": {
+        "MELON": 226,
+        "WHEAT": 441,
+        "STRAWBERRY": 48
+      },
+      "unharvested_ripe_crop_tile_days": {
+        "MELON": 209,
+        "WHEAT": 339,
+        "STRAWBERRY": 0
+      },
+      "strawberry_water_actions": 107,
+      "strawberry_harvest_actions": 48,
+      "accepted_sales_units": {
+        "FERTILIZER": 149,
+        "WHEAT": 230,
+        "WOOL": 97,
+        "MILK": 71,
+        "MELON": 68,
+        "EGG": 62,
+        "STRAWBERRY": 56
+      },
+      "attempted_sales_units": {
+        "FERTILIZER": 149,
+        "WHEAT": 230,
+        "WOOL": 97,
+        "MILK": 71,
+        "MELON": 68,
+        "EGG": 62,
+        "STRAWBERRY": 56
+      },
+      "accepted_strawberry_sales_units": 56,
+      "attempted_strawberry_sales_units": 56,
+      "strawberry_live_hours": 4689,
+      "strawberry_counts_by_day": {
+        "0": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 6
+        },
+        "1": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "2": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "3": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 10
+        },
+        "4": {
+          "strawberry": 0,
+          "wheat": 7,
+          "melon": 10
+        },
+        "5": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "6": {
+          "strawberry": 1,
+          "wheat": 17,
+          "melon": 10
+        },
+        "7": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "8": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "9": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "10": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "11": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "12": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "13": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "14": {
+          "strawberry": 12,
+          "wheat": 15,
+          "melon": 8
+        },
+        "15": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "16": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "17": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "18": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "19": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "20": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "21": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "22": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "23": {
+          "strawberry": 11,
+          "wheat": 17,
+          "melon": 8
+        },
+        "24": {
+          "strawberry": 0,
+          "wheat": 17,
+          "melon": 3
+        },
+        "25": {
+          "strawberry": 0,
+          "wheat": 17,
+          "melon": 1
+        },
+        "26": {
+          "strawberry": 0,
+          "wheat": 11,
+          "melon": 1
+        },
+        "27": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 0
+        },
+        "28": {
+          "strawberry": 0,
+          "wheat": 4,
+          "melon": 0
+        }
+      }
+    },
+    "daily": {
+      "0": {
+        "hours": 24,
+        "hand_slots": 92,
+        "PICKUP": 4,
+        "WEST": 18,
+        "NORTH": 17,
+        "BUILD_PASTURE": 4,
+        "EAST": 11,
+        "PLACE": 4,
+        "PLANT": 11,
+        "WATER": 11,
+        "SOUTH": 10,
+        "CARE": 2
+      },
+      "1": {
+        "hours": 24,
+        "hand_slots": 92,
+        "NORTH": 9,
+        "WEST": 11,
+        "PICKUP": 6,
+        "COLLECT_FERTILIZER": 4,
+        "CARE": 3,
+        "EAST": 2,
+        "FEED": 3,
+        "DROP": 3,
+        "PASS": 42,
+        "SOUTH": 3,
+        "PLANT": 3,
+        "WATER": 3
+      },
+      "2": {
+        "hours": 24,
+        "hand_slots": 115,
+        "PICKUP": 3,
+        "WEST": 19,
+        "PASS": 18,
+        "NORTH": 19,
+        "WATER": 15,
+        "FEED": 1,
+        "SOUTH": 14,
+        "EAST": 14,
+        "CARE": 4,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 3
+      },
+      "3": {
+        "hours": 24,
+        "hand_slots": 115,
+        "PICKUP": 6,
+        "WEST": 15,
+        "PASS": 59,
+        "FEED": 2,
+        "CARE": 3,
+        "NORTH": 11,
+        "WATER": 4,
+        "EAST": 5,
+        "COLLECT_FERTILIZER": 3,
+        "SOUTH": 4,
+        "PLANT": 1,
+        "DROP": 2
+      },
+      "4": {
+        "hours": 24,
+        "hand_slots": 115,
+        "PICKUP": 6,
+        "WEST": 25,
+        "NORTH": 25,
+        "PASS": 3,
+        "WATER": 18,
+        "FEED": 2,
+        "HARVEST": 8,
+        "EAST": 17,
+        "SOUTH": 7,
+        "PLANT": 4
+      },
+      "5": {
+        "hours": 24,
+        "hand_slots": 115,
+        "WEST": 17,
+        "PICKUP": 4,
+        "NORTH": 16,
+        "PASS": 35,
+        "FEED": 2,
+        "CARE": 3,
+        "WATER": 8,
+        "SOUTH": 6,
+        "EAST": 12,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 3,
+        "DIG": 2,
+        "BUILD_COOP": 1,
+        "DROP": 2
+      },
+      "6": {
+        "hours": 24,
+        "hand_slots": 230,
+        "WEST": 29,
+        "PICKUP": 6,
+        "NORTH": 32,
+        "PASS": 72,
+        "WATER": 19,
+        "EAST": 38,
+        "FEED": 2,
+        "CARE": 4,
+        "SOUTH": 9,
+        "HARVEST": 2,
+        "COLLECT_FERTILIZER": 4,
+        "DROP": 5,
+        "PLANT": 8
+      },
+      "7": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 7,
+        "WEST": 36,
+        "PASS": 34,
+        "NORTH": 38,
+        "FEED": 3,
+        "WATER": 17,
+        "CARE": 5,
+        "SOUTH": 14,
+        "EAST": 59,
+        "COLLECT_FERTILIZER": 5,
+        "PLANT": 10,
+        "DROP": 2
+      },
+      "8": {
+        "hours": 24,
+        "hand_slots": 159,
+        "PICKUP": 6,
+        "NORTH": 25,
+        "WEST": 35,
+        "PASS": 22,
+        "WATER": 24,
+        "EAST": 23,
+        "FEED": 2,
+        "HARVEST": 5,
+        "CARE": 3,
+        "SOUTH": 4,
+        "PLANT": 5,
+        "COLLECT_FERTILIZER": 3,
+        "DROP": 2
+      },
+      "9": {
+        "hours": 24,
+        "hand_slots": 207,
+        "PICKUP": 4,
+        "NORTH": 34,
+        "EAST": 27,
+        "WEST": 37,
+        "FEED": 3,
+        "PASS": 44,
+        "WATER": 21,
+        "SOUTH": 14,
+        "HARVEST": 7,
+        "CARE": 4,
+        "PLANT": 3,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 4
+      },
+      "10": {
+        "hours": 24,
+        "hand_slots": 230,
+        "WATER": 26,
+        "PICKUP": 5,
+        "NORTH": 37,
+        "EAST": 35,
+        "WEST": 29,
+        "PASS": 38,
+        "FEED": 4,
+        "CARE": 4,
+        "HARVEST": 10,
+        "SOUTH": 25,
+        "PLACE": 1,
+        "PLANT": 8,
+        "COLLECT_FERTILIZER": 4,
+        "DROP": 4
+      },
+      "11": {
+        "hours": 24,
+        "hand_slots": 207,
+        "PICKUP": 5,
+        "NORTH": 32,
+        "EAST": 30,
+        "WEST": 27,
+        "FEED": 3,
+        "PASS": 63,
+        "WATER": 18,
+        "SOUTH": 13,
+        "CARE": 6,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 5
+      },
+      "12": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 9,
+        "EAST": 35,
+        "NORTH": 36,
+        "WATER": 22,
+        "WEST": 51,
+        "PASS": 15,
+        "FEED": 3,
+        "CARE": 6,
+        "SOUTH": 20,
+        "HARVEST": 15,
+        "PLANT": 9,
+        "COLLECT_FERTILIZER": 5,
+        "BUILD_COOP": 1,
+        "DROP": 3
+      },
+      "13": {
+        "hours": 24,
+        "hand_slots": 203,
+        "PICKUP": 6,
+        "WEST": 52,
+        "NORTH": 38,
+        "PASS": 10,
+        "EAST": 36,
+        "FEED": 4,
+        "WATER": 21,
+        "HARVEST": 6,
+        "SOUTH": 14,
+        "CARE": 6,
+        "PLACE": 1,
+        "PLANT": 6,
+        "COLLECT_FERTILIZER": 3
+      },
+      "14": {
+        "hours": 24,
+        "hand_slots": 183,
+        "PICKUP": 6,
+        "EAST": 37,
+        "WEST": 40,
+        "PASS": 11,
+        "NORTH": 27,
+        "WATER": 22,
+        "FEED": 4,
+        "SOUTH": 14,
+        "HARVEST": 10,
+        "CARE": 6,
+        "PLANT": 5,
+        "COLLECT_FERTILIZER": 1
+      },
+      "15": {
+        "hours": 24,
+        "hand_slots": 183,
+        "PICKUP": 6,
+        "WEST": 40,
+        "NORTH": 33,
+        "PASS": 9,
+        "EAST": 33,
+        "FEED": 4,
+        "WATER": 20,
+        "SOUTH": 21,
+        "CARE": 3,
+        "HARVEST": 5,
+        "PLANT": 3,
+        "COLLECT_FERTILIZER": 6
+      },
+      "16": {
+        "hours": 24,
+        "hand_slots": 314,
+        "PICKUP": 19,
+        "WEST": 58,
+        "EAST": 79,
+        "PASS": 5,
+        "NORTH": 56,
+        "WATER": 30,
+        "FEED": 4,
+        "CARE": 7,
+        "SOUTH": 40,
+        "HARVEST": 8,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 3,
+        "FERTILIZE": 1
+      },
+      "17": {
+        "hours": 24,
+        "hand_slots": 247,
+        "PICKUP": 5,
+        "WEST": 65,
+        "PASS": 10,
+        "EAST": 58,
+        "NORTH": 39,
+        "FEED": 4,
+        "WATER": 10,
+        "CARE": 7,
+        "HARVEST": 17,
+        "SOUTH": 21,
+        "COLLECT_FERTILIZER": 7,
+        "PLANT": 1,
+        "DROP": 3
+      },
+      "18": {
+        "hours": 24,
+        "hand_slots": 314,
+        "PICKUP": 16,
+        "WEST": 51,
+        "NORTH": 53,
+        "EAST": 76,
+        "PASS": 9,
+        "WATER": 31,
+        "FEED": 4,
+        "CARE": 6,
+        "HARVEST": 13,
+        "SOUTH": 39,
+        "PLANT": 5,
+        "COLLECT_FERTILIZER": 6,
+        "FERTILIZE": 2,
+        "DROP": 3
+      },
+      "19": {
+        "hours": 24,
+        "hand_slots": 268,
+        "PICKUP": 6,
+        "WEST": 59,
+        "NORTH": 38,
+        "PASS": 28,
+        "EAST": 58,
+        "FEED": 5,
+        "WATER": 11,
+        "HARVEST": 15,
+        "CARE": 7,
+        "SOUTH": 24,
+        "COLLECT_FERTILIZER": 6,
+        "DROP": 8,
+        "PLANT": 2,
+        "DIG": 1
+      },
+      "20": {
+        "hours": 24,
+        "hand_slots": 293,
+        "PICKUP": 14,
+        "NORTH": 53,
+        "WEST": 58,
+        "WATER": 30,
+        "PASS": 7,
+        "EAST": 68,
+        "FEED": 4,
+        "CARE": 7,
+        "HARVEST": 9,
+        "SOUTH": 34,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 4,
+        "FERTILIZE": 1
+      },
+      "21": {
+        "hours": 24,
+        "hand_slots": 247,
+        "PICKUP": 5,
+        "WEST": 60,
+        "PASS": 11,
+        "EAST": 59,
+        "NORTH": 38,
+        "WATER": 12,
+        "FEED": 4,
+        "SOUTH": 22,
+        "CARE": 7,
+        "HARVEST": 20,
+        "PLANT": 3,
+        "COLLECT_FERTILIZER": 5,
+        "DROP": 1
+      },
+      "22": {
+        "hours": 24,
+        "hand_slots": 313,
+        "PICKUP": 15,
+        "WEST": 63,
+        "PASS": 11,
+        "EAST": 78,
+        "WATER": 31,
+        "NORTH": 47,
+        "FEED": 4,
+        "HARVEST": 10,
+        "CARE": 7,
+        "SOUTH": 36,
+        "PLANT": 5,
+        "COLLECT_FERTILIZER": 6
+      },
+      "23": {
+        "hours": 24,
+        "hand_slots": 225,
+        "PICKUP": 5,
+        "WEST": 63,
+        "NORTH": 32,
+        "EAST": 63,
+        "PASS": 9,
+        "FEED": 4,
+        "WATER": 9,
+        "HARVEST": 15,
+        "SOUTH": 11,
+        "CARE": 7,
+        "PLANT": 1,
+        "COLLECT_FERTILIZER": 6
+      },
+      "24": {
+        "hours": 24,
+        "hand_slots": 183,
+        "PICKUP": 6,
+        "NORTH": 36,
+        "WEST": 31,
+        "PASS": 17,
+        "EAST": 19,
+        "WATER": 14,
+        "FEED": 4,
+        "CARE": 7,
+        "HARVEST": 15,
+        "SOUTH": 20,
+        "PLANT": 4,
+        "COLLECT_FERTILIZER": 7,
+        "DROP": 3
+      },
+      "25": {
+        "hours": 24,
+        "hand_slots": 181,
+        "PICKUP": 5,
+        "WEST": 21,
+        "NORTH": 26,
+        "PASS": 54,
+        "EAST": 14,
+        "FEED": 4,
+        "WATER": 10,
+        "CARE": 7,
+        "HARVEST": 7,
+        "SOUTH": 16,
+        "COLLECT_FERTILIZER": 7,
+        "PLANT": 4,
+        "DROP": 6
+      },
+      "26": {
+        "hours": 24,
+        "hand_slots": 184,
+        "PICKUP": 6,
+        "NORTH": 27,
+        "WEST": 23,
+        "WATER": 10,
+        "PASS": 55,
+        "EAST": 15,
+        "FEED": 4,
+        "CARE": 7,
+        "HARVEST": 9,
+        "SOUTH": 15,
+        "COLLECT_FERTILIZER": 7,
+        "DROP": 6
+      },
+      "27": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 6,
+        "EAST": 11,
+        "NORTH": 24,
+        "WEST": 22,
+        "PASS": 127,
+        "WATER": 6,
+        "FEED": 4,
+        "HARVEST": 8,
+        "CARE": 5,
+        "SOUTH": 11,
+        "DROP": 6
+      },
+      "28": {
+        "hours": 24,
+        "hand_slots": 230,
+        "PICKUP": 8,
+        "WEST": 30,
+        "NORTH": 32,
+        "PASS": 127,
+        "CARE": 6,
+        "FEED": 4,
+        "EAST": 3,
+        "WATER": 5,
+        "HARVEST": 8,
+        "SOUTH": 4,
+        "DROP": 3
+      },
+      "29": {
+        "hours": 23,
+        "hand_slots": 198,
+        "PICKUP": 6,
+        "WEST": 19,
+        "NORTH": 25,
+        "PASS": 119,
+        "FEED": 4,
+        "WATER": 4,
+        "HARVEST": 6,
+        "CARE": 5,
+        "SOUTH": 5,
+        "EAST": 3,
+        "DROP": 2
+      }
+    },
+    "daily_hands": {
+      "0": [
+        4
+      ],
+      "1": [
+        4
+      ],
+      "2": [
+        5
+      ],
+      "3": [
+        5
+      ],
+      "4": [
+        5
+      ],
+      "5": [
+        5
+      ],
+      "6": [
+        10
+      ],
+      "7": [
+        10
+      ],
+      "8": [
+        7
+      ],
+      "9": [
+        9
+      ],
+      "10": [
+        10
+      ],
+      "11": [
+        9
+      ],
+      "12": [
+        10
+      ],
+      "13": [
+        9
+      ],
+      "14": [
+        8
+      ],
+      "15": [
+        8
+      ],
+      "16": [
+        14
+      ],
+      "17": [
+        11
+      ],
+      "18": [
+        14
+      ],
+      "19": [
+        12
+      ],
+      "20": [
+        13
+      ],
+      "21": [
+        11
+      ],
+      "22": [
+        14
+      ],
+      "23": [
+        10
+      ],
+      "24": [
+        8
+      ],
+      "25": [
+        8
+      ],
+      "26": [
+        8
+      ],
+      "27": [
+        10
+      ],
+      "28": [
+        10
+      ]
+    },
+    "drop_days": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      17,
+      18,
+      19,
+      21,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "pickup_days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ]
+  }
+]

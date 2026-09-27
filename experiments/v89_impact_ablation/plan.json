@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "experiment": "V89 bounded ablation of reorder_market(impact_slots) in the V56 wrapper",
+  "candidate": "experiments/v89_impact_ablation/candidate.py",
+  "candidate_sha256": "b772baee2a9149ec52d0e7c440c1e0cdbc3ad95572c8701b5ba4014ee649b9f8",
+  "base_agent": "agents/v56_agent.py",
+  "base_agent_sha256": "d9e9670921b62afedfa8cbc7086d2a2ec19e153ee26006cef477eadd462bd19c",
+  "ablation": {
+    "removed": "action = reorder_market(obs, action, mode=\"impact_slots\")",
+    "removed_at": "single call site inside agent(), the only behavioural difference",
+    "retained": [
+      "embedded _ACTIONS tape (719 entries, byte-identical)",
+      "step normalization for seat 1",
+      "_PLANNER(obs, configuration) base call",
+      "CLEARANCE_STEP = 629 and terminal_market(..., \"collision\", replace=False)",
+      "apply_overlay(obs, action, \"late_collision\")",
+      "the except fallback returning all-PASS"
+    ],
+    "note": "reorder_market remains imported and defined, so the module surface is unchanged; only the call is removed."
+  },
+  "opponents": {
+    "v50": "experiments/v50_agent.py",
+    "v56": "agents/v56_agent.py"
+  },
+  "seeds": [92802, 93700, 94700, 95100, 95200, 95300, 95301, 95302, 95500, 95501, 95502, 95503],
+  "seed_status": "all already spent; 12 of the 28 spent seeds that have direct V50-vs-V56 head-to-head replays on disk",
+  "repeats": 1,
+  "seats": "both ab and ba for every opponent, 48 games total",
+  "replay_policy": "all",
+  "output_dir": "experiments/v89_impact_ablation/runs/panel_92802",
+  "runner": ".venv/bin/python -m simulation.tournament (exact loader, pinned Kaggriculture 1.32.7)",
+  "predeclared_gate": {
+    "zero_errors": "candidate_errors + opponent_errors + infrastructure_errors + timeouts == 0",
+    "wins_vs_v50": ">60% (i.e. >=15 of 24)",
+    "wins_vs_v56": ">60% (i.e. >=15 of 24)",
+    "median_margin_vs_v50": "positive",
+    "median_margin_vs_v56": "positive",
+    "on_pass": "report for root-heldout screening; DO NOT submit",
+    "on_fail": "stop and report; no retune, no rerun, no fresh seed"
+  },
+  "frozen_before_run": true,
+  "notes": "SHA and gate frozen before any game is run. This is a wrapper ablation, not a new production tape."
+}

@@ -1,1161 +1,920 @@
-"""Two-cow/four-sheep/two-goose champion: YARN-triggered second sheep pair with a fifth exclusive hand, zone-locked labor, and a conditional fertilized strawberry plot.
+"""V92: bounded day-23 hour-23 shed-capacity guard on the frozen V50 lineage.
 
-Clones the fertilized-strawberry champion and adds exactly one conservative scale
-step: two sheep on two new west pastures, serviced by a dedicated third hand.
-Zones never overlap (farmer: cow pastures + build/place; hand-1: wheat, sole
-planter; hand-2: strawberries; hand-3: sheep). Role order is index-stable: the
-straw placeholder is always hired second when sheep are active. Exactly one
-planter per crop (demand-cap rule). Feed buffer is maintained, never gated by day.
+New standalone file. No frozen file is modified. The frozen V50 agent is exec'd
+into a private namespace and ONE overlay is applied to its market orders.
+
+Why this exists
+---------------
+V91 (experiments/v91_overflow_guard/README.md) established, with exact pinned-engine
+reconstruction, that on the day-23 -> day-24 boundary the shed reaches its
+capacity of 100 and `_drop_inventories_to_shed` silently discards the tail of the
+carried inventory. On the audited game (seed 92802, V50 seat 1) the discard was
+heterogeneous and worth real money:
+
+    WOOL 4 @ $133 = $532, WHEAT 4 @ $37 = $148,
+    FERTILIZER 5 @ $29 = $145, STRAWBERRY 3 @ $3 = $9   -> 16 units, $834
+
+The first V91 report claimed this was $42 of strawberry; that was wrong, because
+it omitted the HARVEST that runs before the market and the overnight drop. This
+file is built on the corrected composition.
+
+Engine order, confirmed in source (kaggriculture 1.32.7):
+    _apply_unit_action  (unit actions, incl. HARVEST / COLLECT_FERTILIZER)
+ -> _process_market    (BUY_PRODUCT lands in shed, SELL removes)
+ -> _end_of_day        -> _drop_inventories_to_shed  (capacity 100, OVERFLOW DISCARDED)
+
+So the shed occupancy at the moment of the overnight drop is the quantity that
+matters, and a last-hour BUY_PRODUCT can push it over.
+
+V91 also found that PREPENDING a SELL does not help: SELL and BUY_PRODUCT settle
+in a lockstep loop in submitted order, so freed slots are immediately refilled.
+Only reducing the committed buy quantity leaves headroom. This guard therefore
+trims buys rather than trying to sell.
+
+The guard
+---------
+Active only on day 23, hour 23, and only when the projected post-drop total would
+exceed the shed capacity. Projection:
+
+    shed_now + carried_now + committed_buys + conservative_harvest_allowance
+
+`carried_now` is the sum of every farmer/hand inventory, which is what the
+overnight drop will attempt to store. `conservative_harvest_allowance` reserves
+headroom for units this turn's own HARVEST actions could still produce, so the
+projection errs toward trimming.
+
+When the projection would overflow, the guard reduces WHEAT and FERTILIZER buy
+quantities until the projection fits. FERTILIZER is trimmed first because it is
+the cheaper unit at the observed d23 quote ($29 against WHEAT $37) and the
+observed discard tail was mostly WHEAT and FERTILIZER. The FERTILIZER buy is
+also capped at MAX_FERT_BUY. It never adds orders, never touches actor
+actions, never touches any other hour, and never touches SELL orders the frozen
+route already made.
+
+Reserve floor
+-------------
+The floor is expressed as units that must REMAIN BOUGHT, not units left
+unpurchased, and it is deliberately small:
+
+  * fert_keep = min(FERTILIZER ordered, MIN_FERT_RESERVE) - the farm always
+    buys some soil;
+  * wheat_keep = min(WHEAT ordered, shed WHEAT already held) - the farm never
+    buys less wheat than it is already storing, so existing feed is untouched.
+
+An earlier draft used a per-live-animal wheat floor (one WHEAT per animal, the
+engine's daily FEED cost). On the audited state that floor was 16 against a
+16-unit wheat buy, which forbade trimming wheat at all and left a 28-unit excess
+uncorrectable. The binding reserve is what the shed already holds, not what the
+herd would ideally consume in a day: shed contents persist across the overnight
+and feed the next day, whereas an unplaced purchase is pure overflow risk. This
+is a deliberate weakening of that earlier floor, made because the stronger
+version made the guard inoperative.
 """
 
-COW_COST = 400
-SHEEP_COST = 500
-GOOSE_COST = 300
-GOOSE_COOPS = ((2, 2), (3, 2))
-WHEAT_SEED_COST = 10
-WHEAT_HARVEST_DAY = 4
-STOP_PLANT_DAY = 25
-SHED_ACCESS = (4, 4)
-COW_PASTURES = ((4, 4), (3, 4))
-SHEEP_PASTURES = ((0, 3), (0, 2))
-SHEEP2_PASTURES = ((3, 2), (4, 2))
-WHEAT_FIELD = ((2, 4), (1, 4), (0, 4))
+import copy as _v92_copy
 
-# --- State-derived opener + day-2 bridge ---
-# The opening footprint is generated from the first unlocked quadrant and
-# Manhattan travel costs. Duties are derived from live tile state every turn.
-# Engine-verified mechanics baked into the planner:
-#   - a fresh plant counts 1 unwatered day at creation, so EVERY plant must
-#     be watered on its planting day or it dies that night;
-#   - animals escape after 2 consecutive unfed days; care bonuses need
-#     fed+cared on the same day; each animal yields 1 fertilizer/day;
-#   - one-shot crops die to decay after max_yield_day+1 (wheat day 5,
-#     melon day 13), so harvests are deadline tasks;
-#   - aggregate PLANT orders for a crop exceeding held seeds are ALL
-#     rejected that turn, so plant tasks are guarded by seed stock.
-MELON_SEED_COST = 80  # engine CROPS["MELON"]["seed"]
-MELON_MAX_YIELD_DAY = 12
-OPENING_HANDS_TARGET = 4
-BRIDGE_HANDS_TARGET = 5   # extra hand funds the mid-season watering load
-WHEAT_MAX_YIELD_DAY = 4
-MELON_WATER_WINDOW_LAST = 10  # 5 waters saturate the 6-unit yield
-WHEAT_REPLANT_BY_DAY = 25
-MELON_REPLANT_BY_DAY = 16
-GOOSE_BUILD_FIRST_DAY = 4
-GOOSE_BUILD_LAST_DAY = 14  # the (3,2) melon tile only frees on day 13
-GOOSE_BUY_FIRST_DAY = 10
-GOOSE_BUY_LAST_DAY = 14
-SHED_TILES = ((4, 4), (5, 4), (4, 5), (5, 5))  # engine _shed_access_tiles(10)
-
-STRAW_SEED_COST = 100
-STRAW_FIRST_YIELD_DAY = 10
-STRAW_PLANT_BY_DAY = 8
-STRAW_FIELD = ((1, 3), (2, 3), (3, 3), (4, 3))
-STRAW2_FIELD = ((1, 1), (2, 1), (3, 1), (4, 1))
-STRAW_SHOPS = ("BRUNCH_SPOT", "ICE_CREAM_SHOP", "SMOOTHIE_SHOP", "FARMERS_MARKET")
-MILK_SHOPS = ("PIZZA_SHOP", "ICE_CREAM_SHOP", "SMOOTHIE_SHOP")
+GUARD_DAY = 23
+GUARD_HOUR = 23
+SHED_CAPACITY = 100
+HARVEST_ALLOWANCE = 6      # conservative slack for units this hour's HARVEST may add
+MIN_FERT_RESERVE = 4       # minimum FERTILIZER units to keep buying
+MAX_FERT_BUY = 12          # cap the fertilizer buy; excess soil is not needed in one hour
 
 
-def _move_toward(position, target):
-    x, y = position
-    tx, ty = target
-    if x < tx:
-        return ["EAST"]
-    if x > tx:
-        return ["WEST"]
-    if y < ty:
-        return ["SOUTH"]
-    if y > ty:
-        return ["NORTH"]
-    return ["PASS"]
+# ---------------------------------------------------------------------------
+# Frozen V50 source, embedded verbatim.
+#
+# This file must be self-contained: the Kaggle submission runner receives only
+# this one file and has no access to the repository, so reading V50 from an
+# absolute local path would raise, fall into the all-PASS except branch, and
+# silently submit a do-nothing agent. An earlier draft did exactly that and
+# would have passed any local test that had the repo present.
+#
+# The embedded text is the exact contents of experiments/v50_agent.py
+# (sha256 e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b).
+# verify_embedded_source.py re-checks that claim against the real file.
+# ---------------------------------------------------------------------------
+_V50_SOURCE_B64 = (
+    "IiIidjUwOiBIaWdoLVZlbG9jaXR5IDUtSGFuZC8yLUNvdyBPcGVuaW5nICsgQ2xvc2VkLUxvb3Ag"
+    "V2VlZCBSZXBhaXIgKyBNYXJrZXQgSW1wYWN0IE9yZGVyaW5nICsgTGF0ZS1Db2xsaXNpb24gVGVy"
+    "bWluYWwgT3ZlcmxheS4iIiIKCmltcG9ydCBiYXNlNjQKaW1wb3J0IGpzb24KaW1wb3J0IHN5cwpp"
+    "bXBvcnQgdHlwZXMKaW1wb3J0IHpsaWIKCgpkZWYgX3Y1MF9wYWNrYWdlKG5hbWUpOgogICAgbW9k"
+    "dWxlID0gc3lzLm1vZHVsZXMuZ2V0KG5hbWUpCiAgICBpZiBtb2R1bGUgaXMgTm9uZToKICAgICAg"
+    "ICBtb2R1bGUgPSB0eXBlcy5Nb2R1bGVUeXBlKG5hbWUpCiAgICAgICAgbW9kdWxlLl9fZmlsZV9f"
+    "ID0gIjxidW5kbGVkLXBhY2thZ2U6IiArIG5hbWUgKyAiPiIKICAgICAgICBtb2R1bGUuX19wYWNr"
+    "YWdlX18gPSBuYW1lCiAgICAgICAgbW9kdWxlLl9fcGF0aF9fID0gW10KICAgICAgICBzeXMubW9k"
+    "dWxlc1tuYW1lXSA9IG1vZHVsZQogICAgcmV0dXJuIG1vZHVsZQoKCmRlZiBfdjUwX2xvYWQobmFt"
+    "ZSwgc291cmNlKToKICAgIHBhcmVudCwgXywgY2hpbGQgPSBuYW1lLnJwYXJ0aXRpb24oIi4iKQog"
+    "ICAgaWYgcGFyZW50OgogICAgICAgIF92NTBfcGFja2FnZShwYXJlbnQpCiAgICBtb2R1bGUgPSB0"
+    "eXBlcy5Nb2R1bGVUeXBlKG5hbWUpCiAgICBtb2R1bGUuX19maWxlX18gPSAiPGJ1bmRsZWQ6IiAr"
+    "IG5hbWUgKyAiPiIKICAgIG1vZHVsZS5fX3BhY2thZ2VfXyA9IHBhcmVudAogICAgc3lzLm1vZHVs"
+    "ZXNbbmFtZV0gPSBtb2R1bGUKICAgIGV4ZWMoY29tcGlsZShzb3VyY2UsIG1vZHVsZS5fX2ZpbGVf"
+    "XywgImV4ZWMiKSwgbW9kdWxlLl9fZGljdF9fKQogICAgaWYgcGFyZW50OgogICAgICAgIHNldGF0"
+    "dHIoc3lzLm1vZHVsZXNbcGFyZW50XSwgY2hpbGQsIG1vZHVsZSkKICAgIHJldHVybiBtb2R1bGUK"
+    "CgpfVjUwX01PRFVMRVMgPSBqc29uLmxvYWRzKHpsaWIuZGVjb21wcmVzcyhiYXNlNjQuYjg1ZGVj"
+    "b2RlKAooCiAgICAnYy1ybEtpRk8tRGxIamtEPCg9MW4xVkE5PXRKI0wlJj1QSXlTdShZaEppUj82"
+    "OSNqTWhXUjFXbzcqJnUmWXhNNk1NOz8oITYjJllmKzNBSTYrOW9QOUJkXkhGJFQmYVR0RVFgYicK"
+    "ICAgICdTeXpMJWhYPDJZeHZzT3hPP0ZlUlpZTmNpdUJPLWJqKkAleFJlNig0Q2k4V0BVUypSPmxI"
+    "Vi1MUmheX29RUHlkbG1xbTNec0JoRDlkMyNhM0lEWXZ1ODZfVnM/IzxLSE99NHJLJwogICAgJ0RD"
+    "WmFWQGJrc0phV0E+SmNieWlxaWF5aU5ue0BSaXROSGlHaSg7MHxsVTI0e3FfPmwweHlZeHRvcGVo"
+    "NWJkTjVJMXBkSmFzLShPJFUtNiUrJlgmO2lPPHJfdigpWFFWRlVnQTwnCiAgICAnRC1FdSl4XnI8"
+    "NCVQO1FybDNfT35TTWN2e0ZJaS1UZnVIbn5nUlhfUCUzI1VgJjF4e3F2TCpoWj56KlUxRisjejRz"
+    "WWE+K2tMe3Y+al8kb1pgMEokM1J4cU07ZnZiNXp8OTUmPicKICAgICdXdmpRZWRpfUNrKyRPcThR"
+    "b2hZckYhTCV8U0peRE5ncCV0bDBVJHx3eHVFKDlANjZ6JHhGfXZoODclIUd5VTdhUGl6S2diJUoz"
+    "NkBxeml6WSErSV89XypZUlU8czche1J4TkgpJwogICAgJ3VoTUJZTlJwP3BhVmJFMXdAUjFMKWk9"
+    "RSlPe1ZNQjNSPzdVdk59eX12UlJxV2ROfG4+SHZLd1ZDQ2x8QyVuX0VSczh7NzhkNihETWZJWjJa"
+    "cUl7UFpTMiphNHFGZ1NeMD12enonCiAgICAnXlNyKnJHNGxkSVpgK2BpaGdqO3pPPEdATCordWQ0"
+    "PGtfPzFAMUxFKG1Vbm11RjdDYTJiJDB5cz9AIUxveygmMlBhcXMhYnYoc1BIcEhIOXQlenlwO156"
+    "PDQzYkBKbm5AUH1edicKICAgICc+aCReWHQ1WXN7ZTArOXhgYnlSUj5FdX1iYE5QVEN0RWJQTntg"
+    "PClwd1MlMzFhZCFJVCpUPTZXLX5WSEJ7TDlubCRJbHF+QUR7am1RQ2ZFVUB+NHhON3lRd1Y7SyRS"
+    "YG1uWnlAJwogICAgJzFfTE1IJDdqRjNuKjlDYj41bzZYQjNPfkI5VkxmQHAmN1REPFdjZnlAUmp7"
+    "WXtraiNvVGRhM3p6RVE3NyQtJl51VT4pJTVCbEFfUzIhMGhIZDJRVH1hK1AhbU96aXBifEN5WWcn"
+    "CiAgICAnSnZsaTswJnleZTlzS0YhJD5qMHppe3I7blU7VHI9NFM4JHZqOEJVNyYxSlVneWlGSkR0"
+    "Y1Mtd1RgJWc8YTReKG96RnlyUCRANXg0SVk1fiYlQ3pRWT5TU2lgcmBmVmpJPEliKicKICAgICcq"
+    "fnd+RXU2b0o4VktNI1BKcXBnZT5kUUlTM1ZjMiUzPkBVdUpUTE0oPit0dChrfWF5dEhaK3J7dUN2"
+    "KUJvbGRpPT5SZ3VUWUJzNnotIXQ5a2ItSXx0aDsyZGdATF9XM14hdmUlJwogICAgJ3UweiM8Tzcj"
+    "LWBTR1ZVQ3ctbml5NFh5TyZrOVBkJkJFS3BvTTZuZ14xNDNZX0UrNlJVWCs2Q3JRbmtxNlcobjRZ"
+    "R3JOWWZ1UE1WU3lHZlR6TUg+Pj5udFlibEs7ZjNGWUBXWCMnCiAgICAnWHU1elA7anJnV0dLdnlq"
+    "QnRqb1BzJEU0ZzJFKyleMjZ4M0peO3s7MmVLTnZ8dmBhJjdrTX5tciYyMjBDZntvNnspYXJhfVlh"
+    "KEp7QGl+SllXMW5nUy1fa1dncjN3IXxlQUl9eScKICAgICclJShMPjJkaHZXSDMhd0R4KHIyXlU1"
+    "eSUwZmJIX0M/KG18eFAyQjEqOHRqM314LWNUJHZwe1l0OClXYXtld2NPNj9WWCY9MFQ3VTIhMTEp"
+    "VyR+dER5ZUYzdG9KS358Nyt2fE5DJwogICAgJzlpJVNoUUpUSmRBWmppTTxEN3Qkc35OMVErbEJf"
+    "bjF1I2Z6YSg8Km9JVWFpO0g5ejZPXnF7ei0pb3R7ZWotNGFPUnFkZnp1RkMoUXpVZyEkKjFAR29g"
+    "MDFYRDdoRGZrQGUxenQnCiAgICAnQ3VnVEc5PT4+WHtQK2FPI0ltZ044aylWayZmKH19QDNTZHpV"
+    "JiY8I1c2YkRgQFE5cH5Aam4zSG0jWkIzbiN9MSRlWnlgNT9IVClaWk1CWn1uIXx0SVdWYzYmVkJt"
+    "PDdEfmA/OScKICAgICchcmc/THlAWlFsT0sxN0M/eEB+MCN8UWk0YmxlPlAmQXpFUlR8Pz5VQER5"
+    "KT5NPTRpJVc9QDw3TV51UU5Sb1lFdFNgZylNVUEjajhFbnFJZ0YpKkM+SkVBO3RffCo8NUpgPl5i"
+    "JwogICAgJ3BDTHFoSmBrIT8lY0JxcVd9UG8rZXFzUmhEU2BtdkxTbzhBNnsqVT5QPiZHckckP01t"
+    "O18kVFNqWTJsYGVKQCRWalg2PTI5NXlWMjgkTWdYRCpHKEhCNTJlcWBIbnxtKXxmYCYnCiAgICAn"
+    "NnA3dUQ1U1NfZT9eJiFmYCZHayVrc0ZaYjFhOW5mNHZaK1UofEorVlgpKD1BX3IwV3BffFolMUhF"
+    "YFp0OGpLdHMoJSE/M2dNaFdUZyNqUlQ+eFNvcTk/cUE4YW5+N0EyYio8eScKICAgICdXUUU9VT1w"
+    "UjNIaFJMQGgwUSMtbUYxKDI4YCtORVF7QzM+a3lpVDdkRkxSaFVZfD5SO1dYSzV+NCEtVXN4WT80"
+    "RjBzQilmLVU0MDsrViQtOEB5e251YHEtSS1jZU11R2ZFVU5CJwogICAgJz5zNkt8UWBvVzxrVk9S"
+    "OFM5NCh1ejA5RDtXS21BdjsyUXxJaFpOdmVQX35mSm41ZzNKJSNnM0pNLWNIMU1nZGYqVHExVmkk"
+    "M2ZmSDNhc3FXO3FVNTI2KHQrak9DI1p9T1UkKz4nCiAgICAnWGV+cmRBaDwlK0NeWnVsUDBkdEgw"
+    "UHFYMWdvfUgpZEJCI3Q5cVN2M2tXeCh+MWZERyNVPWw3fCsjYGZUSlFIPWdjdU1eZmZzbW1xM0Y9"
+    "XyVSelh+VkRqSCtZLStTZExKUDZhcCcKICAgICdxXmVpekRMeHstWEJXYE1TSEdUfTFUUWI9eUxm"
+    "eShLRStrfU5PVGNMPVdQdDBLS0R5PjREa0wmeSFpIVF6T21YZmlGUD0lOV8/PjhVS2NBVUl7Z05B"
+    "OXFCbk53JT0jRz9acks9JwogICAgJzJZYUgoZz9rJERBRDslcUBqODVIKn5panY+I1hBSThfYDxz"
+    "PHt7aUNpWTRgTjtTc1k4MlFJKl5wSj9xUDY/b2pDZWU2a2JrUXAmaVQ4LXY8JWFNMkxjNiQhS1NK"
+    "fXBjUHhsKSYnCiAgICAnfDgxUjtxPVV8XzhpPzA/UmhFZU9ZQ1BgeXgxVXQmbn5xX00yMUVua3tQ"
+    "eyNlZnU/byRXTDsoaVRFMnotZ3tXKkdNQXBeeGV+eXp2Q2ZiZmp1Mmt+Q2ZecD92eTFIZVV3SmN9"
+    "PycKICAgICdPblhAWShzcUozPE92WT84KU9+ZCFWJFRJcWk8d2wpcTEmSCs/dURQN0FONXBITTxF"
+    "WDNSdCFPOSR3a1Z4aXI2ZzAyP1dJWDJCe1dBcT9KIXY+ciZqYUFBKjw7YjNTbTNoX3RfJwogICAg"
+    "J3hqdEhFWUV7MFk3bVZySWN+RktkLUkwcntMfEV+JGhoWE5DQkVjN1owbiNZWDtsdWJTeiNpfVY2"
+    "bSlGc1Y+KEB4RDUoVl4pKTc8PXpjT0o0VEd0KUd6R3RnV2hgclBwKis7Y18nCiAgICAna3pSR3RJ"
+    "bzJIfjVCUzhQQWoqaTlNOENJcnd3TyhqUEYwSyp7KXVCKzhWKj5+KiFDZ0FmdFVmVWhVUzUra2wt"
+    "K3NhR3Q3Tit3QGN3bmp5PiUmTGswb3lVcjZqNzFpaDIzVnMxQScKICAgICd6bll8UCh8blBfdkJZ"
+    "KmlxPHxkVndxZHl2S3NgRSNPNmE7bVJLYCtlY3N5SmNEYyk+IVk7LT4pUHBUcGgjYk5MeXF7SEVr"
+    "JlhNNnQoWEpIdkhwen5DUHtkO2h3bkFfY0opZ3MxJwogICAgJ3d0fEduQ25yeEZWRDF4QzlfJnlg"
+    "XmdyVEk8MmRHc1YhUSQzSUxtWFFTZVhiXj02U3RDTWdaSC1tenNmTG5IZzBnOWF1YSVyXjx8JkBw"
+    "X2w1RVBkbCh0VSMmbFdxR31nam4pT2YnCiAgICAnYlM3fGomc0sxS0gkJEsmWEdoSGQ1UGQ4JHpB"
+    "OUk2PWM+fUtacX5LdVlyMjVqVmx2Q3M0dlFPamBeKE9+JilrPTtTfCptaHFzVXxxVGdKdFVZPndu"
+    "RmUhP3EhYEtwITl1ZGRyRicKICAgICduZz87WENGeTA9IUVXJEwocX0qeEY4PWNYN3w7OCorSlVX"
+    "aDs4c0g+NDZDSjM7Z1kzPlgpbjNOSFUyJGNhX2hyIVBjO1RjdztMP0E9M09RJSNnaF8zWHQhUXVC"
+    "UkMhOTAhfTQtJwogICAgJyFEWVZSVzN9OGc4QCpic0duWH1ibkpwR2NfQk1tM3JJblp8JUt4YHlk"
+    "Uj48SSk8d1o0Szc+aUxSPGVjPmBLWFhMUVVhSiFxaX48QShNeH5TQ2hSbWF6aUd3e3c/IVo9UDwy"
+    "RmEnCiAgICAnTWprazJWckdqMVpZYSglPlN9PClGamNqPlQ0THUmejxoek8qQW1Yejh9fX11XiNm"
+    "RW1WJHFWdi1uMDExMiM+QWMke1VMLXVNelo9bnJiPyVVJiVAP08+WkxuIyQoV0xZVUtSJScKICAg"
+    "ICdtVk1PMUckN3QyNmRWaUxuI1U9TUJXYSFrQlBvOHNlUk5yUVVsYWpqSCUtNENDQnd9XkhRZHVB"
+    "IWUjTWhpezF8NFEzNXIqLXRiS0R0Y2ZyTzspIVpuNT9YTFNfcyFAJChTIXd+JwogICAgJ19vV2Ux"
+    "LUB5ZWpLLT9JO2w9I1RlZS04KT1TVEBsOU1BVGhHMU9ePnUobGs9YlReSXp5QXBHWmtCREJHQjhL"
+    "SFd0SFo0JUJmUnZWdF42RnF8OSpHX1JZNUQrSUhifEZmSU1DX1AnCiAgICAnYmIzaVl3aCVxPDwq"
+    "VFBhMFBzZll0ZE1ZM2ltV05aMGAhY0tfKl41bzRAUmteZGllazAoOzkpPmAkKkFFdT9JPjc7Yzl9"
+    "WSlBSiolZip1RHE3cWA8VkVuTlR5RnVSUlkzNzAlcicKICAgICd5NUxmU0thVXMkSj02NEQ9e1ct"
+    "UiRyRk9OT1dAKEhWMGpiPkp6WFBtPH4yRjtNSz98LThnWTArLWIwRTM0QVBrQHgwaTJwKkY0YVh7"
+    "UntSXkp0bDYteDdubUYtPShYV2tsb2ttJwogICAgJzNlRkpSVUBSYjQ2SChINVVDcDJ0JlJWcXlg"
+    "NWRjJVFROCUlczY7WlJBN0lXI2l9ZERsbUk4UG56REVpMTdXNmw+RCh7aVYqbCl5XytgX0BxS2xO"
+    "V2ohKVZrblVaVXlUaStVZlMnCiAgICAnOTJ9TUVAX05BYzlFJCRtaXthYWY9N2kocDxSdnxiLW17"
+    "SD5JbVptKHlVaFNqanh+Uz4wUlU3PSstP0ghJWp3eXhwOWxoTzJBVkg4NVdkP0M7cE9TQzA+VDNl"
+    "QXk4dzleUEBFYycKICAgICd5YCtGPDE8QEFeLTkxcEdOaHhxVzM4R1ExNnUwc2QzI15PVkBwPHVu"
+    "b1AzNmRtLVFqUlJpcUtnNDhsY2VpQ2BNN1otNlBQXldUeE5Haj9WQ3BtJXZwRyo1R3gkV3RLMHQ5"
+    "JUJHJwogICAgJ0F7dn13NlFnNlN1VCEhQ1Y7dXswcERKcSg7czdzaSp7PCZFZ0t6R19NWiZzS2I0"
+    "NVdxVW10d2tMcyR7MzgtMGZWRFJ0ZERDfEA8QCFRJUUraXRBdTRxV0B7Pz19JVJkaSgrayUnCiAg"
+    "ICAnXjVMVXpob1Y/a1B4OyNxUks3LXhCe1U2eG9hUWBHVnN9PlF5TlNKMGoyQHh1ejZ8aUtYb2xU"
+    "T29CPCFUc1V1elJhYyM0I3Z6XjlTc0olT1FvRm9MUmRVbjFaajNxfTMmdzZ8ZycKICAgICc7X0o5"
+    "VWx9VT9hcSVhKzs1TE00VnF0NktSO09AO0UqWnZzX3l0UiYta0VeU1QpOFk/eFB2Z0NkY1YxO35W"
+    "WjN7KVRiQGU9IT5ld3N1SDcqWENhJntfMV47ZHokYX4+cGVGeCpoJwogICAgJyhWMys7ZlAjeGEw"
+    "ejIwIytPaFkjVmV7cUBQfHZUS1ltfVlYaTIqNVdoMk92JEB5SWwxPGFPO21XeURCKUxBZT9oNmJ7"
+    "M3BhMyNWeitofENzOSQ7VWFZK0t6Ny1ecD13SCFiezYnCiAgICAnJDdsYVd0ZE1JOUJJXmtpdUxu"
+    "KCVBRlpZeiQrcVRjcDs9dk5MZyV5fGo9aD9+UFJeLSNhTWFFUnI+SHhkRDY/fHI1aVpqekd2KkZB"
+    "PDs7XmQ5aDBeVld8dEp7NGMhMDZAPzB6NicKICAgICdyWkFRKFpPVnlPPDRmY2MwSTBIamNlbiY/"
+    "bEUwTlhlaFh2YTRCRnU/YTBaQV5BSypnTzlGY3dmcXZZNnBSPFpAPm4tSWYmNEJuNzlAP0FKQ20q"
+    "dEBZQHtMUkQjYn5GOCF3R1kqJwogICAgJy1qTTkqS1lBRXVNJTV9e2wrcTY/UzdmYj9jZGx0VF51"
+    "WThOPjVlXntDM2VKX258bEA4YUwxazxkRnNhQWM/JHJ1dngoRENlPE45VzE4JVZXKEdOSjVLNU0r"
+    "IUQ+eEp0QElwd0snCiAgICAndUphWkFINj5SRF5sTW5iPjRXbzh5biNgQFYrKkxgK0p7RVEoYGkq"
+    "SlEmNXVKRClBPWJsOT5AIXlySEFXNUA4Plg2JWVDRGZXUlFLOz9iS2YpP19KRiFMakNYM3AxeyZF"
+    "fmpxPicKICAgICdmNm1II2Qrc2tmRWdCdHw/PyVhMi13YjE/QEdje2UycD03U3pzTFNTPXl5Ykdn"
+    "M1FMQHBFMWU/OGpkdHBgJEYtNVQpTTY2RUxsN3NkcyY2SWZiZ0pGKDJSKGcrYkQ/YSQ3Q0dFJwog"
+    "ICAgJ19XbiRKZjJPQFopODN6SEA2V1hOWFdJS1M/ZnNlZHshRHYrcm9CSlktaylqaiYkUmJ2K1dS"
+    "eEB7aDlYdU9uWk4oeSs3MDVwSzAmVXdEKUopYCFudFJuZkNybmR3LV9BS2h4ZnknCiAgICAnWTQ2"
+    "WHBfaDtKc0d3dURFX1duJEpmMk9AWik4M3pIQDZXWE5YV0lLUz9mc2VkeyFEdityb0JKWS1rKWpq"
+    "JiRSYnYrV1J4QHtoOVh1T25aTih5KzcwNXBYdEJLcFh1O1dPPlAzMScKICAgICc0Rmc0fHJxNGZu"
+    "eFVOPFlGWjFHSVI9aUQ/d3tUQXNrRj5ZWERUO2FlUlhXIVEtUkc5dGQmbjU8Qj4rNzZJbGExQzw8"
+    "cz9vJSZEcStKLWFvJlBSaUAoP2N1QFRBVzUoQUdEZ2BnJwogICAgJ29JM08pS3NGJm16WFA/JWRg"
+    "TUM8N3deQVk8dSR4QUUoKVYhVT9EOSUqc3JyOUw3b1UtIWwrNj9Tc1JQSzs3ZHRFbzNCY0NwdSEq"
+    "MTV9bUgjbH48P31gckE1TlhKcHQyJW1KKD0nCiAgICAnTn09KUMhKmpjVy1DNSs5XmR4fDV3WW9f"
+    "YzN3VHdNbU0mWShWSTleZjNHT2I2YF5vRnF5ZmwrKVFQJFAjKkw+OWk0MGFOdXVGMVFyIWw3cykm"
+    "KlA7Z2V7LVBGcGFJSWRxTiF6YycKICAgICdeM314QXRkaSNwMTBvMjxnMG08S2xKenBRQkZvOTtp"
+    "d0A2cG03IVAhdjZtVz9RPHhxa19GKE9nKEFTST8oZD9nY2ohe0RWPjNXNTlGPFlSPDhZdzRDMnU2"
+    "KUo9P3FwKEltVz5UJwogICAgJ0d3ell8JDZVRlYmRkE/dlBadTd4dSEqV0JvNkI/cyh9aEtAVX10"
+    "e0xHVihzallxVHFjbWF5bjApTy1XYSgqZyZjO2FnPSopPCV+JWN8ezE2dUllMGokYWtXOXtyVX5g"
+    "MztZMEonCiAgICAnZGskLWl0UjN2dUFNVzR3O19UXztsZ1NVeVBFWEdnKG87Vl9LS3VGUCkjU3pU"
+    "KzQxdzIobHlMRFZSYTZfPzRjTGM1U1hubUBMI31Ye2s5QEsrO0gjPlUybytUfDJwaE9KaTl1TicK"
+    "ICAgICdNRWZ0UHtXWXVgLVJQdihrP185bU1tKXdrVWt3ZH0hPVZkZElRWVZhQFJmeiZkYmYyQjRs"
+    "UzRpZTxFTWdNRGlqX1MzRUVRJE4waipRZGtnPTc9KWNYMUg+UFhXTllPTipPNSZoJwogICAgJzlt"
+    "WGFSVFN4NzMqRXRaMmFCejYmT31iX0QrQ2leI0lGJDRNdlUle0xkKU1vKGIxKTJjIXVHMFhBd1A4"
+    "NE9WNWJWa3hOKDNjVnZeU0pARH05cWMwZyh2N3Vle0poS3NYcWZqYUYnCiAgICAne3R9I2ZfZCNo"
+    "fCpROzIrVUJ7fn5VMWxBOHBkNnZPaF9hVkhWJmVsS0EjbFg/dWpEYEp0KV5iLS1LNzU9ZV49d3ZN"
+    "a21IQE5fcjFraDkwfDh5bnxZQGhXU05XOzhyISVQVlRwficKICAgICdMV0J3MWtzPVFaOVM9dSRo"
+    "fi1zZE9JODg0SDlaKSVIWGJTK1crTW83UXJ2ZUI/RmlDJis2JERlKDEoYX1JYjJOcXJ6bHImYj5f"
+    "ZDVOZGhuM0x4dkhJUjgpUENkOz8+PlojUCR6JwogICAgJ14rfGBDK2BuKTlFej13PmVgfEV5bldK"
+    "JElgWk8xWTYtVHM3S0h5d0dUWVYoKzc5Kkt3dTg4aW80eDRma1ZqM3dKOFd6LXFleTllTEZZWXJR"
+    "SChvPjAzcipqZnpwY3dVVzNAJConCiAgICAnMzRlbkhUd1YrMylzMyZeVVh1TmAmZno5cTw/OT1E"
+    "QnprPGAhbklVUF8xfjtTMHpVTjsjWD8tZGU7YlhLa3A0SlY1TCpadj5sZnAtcVgraF85RC16K2Zx"
+    "JStAd1puNUsyTFVAcCcKICAgICdhKWdLYWZYbVVVM0RBR0txMiZRSmQ+fXlJKkZaY2Fydk5FTjJr"
+    "Mm5OLVNaTDRKUiUlYnpucTEkVkUhIVIlNUYxQHteblVva2FvVE1rdTQ4cVZiMWdXaiRrbTlfIXJw"
+    "SDhRV30tJwogICAgJ1ArY1E7VVFPXmhzZGR6ViE8U3tiSUJLJVIzUlReJTZrRHVlc1FoKmRvMy1G"
+    "Pmple3toPV5nQTB0Zzx3N2pTTWg5ZzZ3P2NtMCtBVi1gfD9JMzIpRld5QDdXSnl6TzsoMjdheHgn"
+    "CiAgICAnRmJzJHJhcEZLUTJLcF5VRjlKNnIheUZ6Y1h2OTw3N1l6QHJrQj1EeWdgVGFlOUp4dzBB"
+    "ajRKUFBkWHx6Z0NZaWZfMXw8M2o0cUZYPWZyXj5HRyRhPkcyZCtPSkskbjNHd0xmeycKICAgICdF"
+    "cGxrOGc/c1JqTFR3RHFzOG5XVD85YDwjdmk/JUo+TXV2a1UqJEpJc25RfVYqT2h3NTQmPFViM045"
+    "Q2Bua0A8WSh2KG5uNHh4PnhYRiVYT3NsLWo2eFFWc2QrY2h4MlArS3RAJwogICAgJyg9KzBkMiRg"
+    "WnJaPzN4UVJ5V3w5KnYxcV57YlFBN28hMkh9TDhwdVc3JiNgZ0tiJHRUN3hZY3A1RnV9PFdVcD59"
+    "TWsqYWkhTDk8cTtvZGNuO05JKG5xaFAoJig3N20zMWhldXcnCiAgICAnKzZFVFRfYHVqbXFLaGUl"
+    "KlM8VGl6VTx1TEQkfV9aR0l2fm1aV0NKfjdMPWd0YWx1O1JMdXwwQ0dpRXIwRHkhOXstbFVqcHR9"
+    "ZDBiOXhrZnRvJn1APzwoYiF6OyNRam14cyVZPycKICAgICc9SUl+VmduUyV7akE3U3RtQy1TYU8y"
+    "SlQhSyU3eTZeandOTnRXQ0opaXJCY3g1cHpgTkZpK0J6M0BNWT1MVTJ0YUo7MWAlRUojP21pVV9s"
+    "VnYwZTdvayhNUH5GayF3bihSUD8zJwogICAgJ2p6LWg8KG82YkViTD03eW12KjxjRz5zZFdOKCN6"
+    "RnVCRW1hWT1nRDctYUJWdmpoMV9PTGxGbSNQNlIra3JQcVJLSiQ2K3lxajAwOykxYiFMbTUyYGJY"
+    "TlA7fWBjWWx7dW50QWAnCiAgICAnby04NCRaOHV5QiMjM0hKJDQtdStqSDZPdkRLPktrTmtOWmp5"
+    "QmlfS0AzaXJUZDhxWSNwbjhiMW5RaE0hYjwlaGFBTW9HJFM8LVNtTnUyQm1hYXBAMk1hIUZ4WHF7"
+    "b3lzYWlRWicKICAgICctQEFlYjUkPGNrZipRbUc/QW1AKDFJPWRReVJtN2VrUSFEVEUjQDktNTlN"
+    "eytwZzs2ZmFRXiQhNEVAfVUreEcpMFNOUnBXOSh2UzVFRUEyPz51YFAzQHZ6V0E2YjtvT0RLWTEw"
+    "JwogICAgJ0lZUE9Ye3hBKG1peEZKaW4tVDhFcGE8SlJUfGBqenZyJTtUanBSaHo5ZyNqKkI4Jk9r"
+    "YnM0M0twe242czIxOHFBJVFSb3Y9eEktdDE4OUdhVkZhKVdpOzB5UWhOfi1RcjEjbVonCiAgICAn"
+    "NTA0dFNeenAqTCRaNmFjKzh1cTh1dlJzYUAhZD1fdEZ7KXIxKTNfNVpCQEAkTEJ6dlktNjFyRGV1"
+    "MV54bVVYMlF6Mjx3TDsmcjFLLSkodGRZdEphQmh0Y0dtYkR9STFkUDt1QCcKICAgICdLUEB6PnQp"
+    "OUVhbHRIXlBsWnlncylBM31wYElvSE1DRjlWcyEoUHVCSmQ8KEZQbFkzUT9fVW1wKkoyek5qYTtP"
+    "fEdSZkFWb3R6JiZOT2E1TGkpZyVLSk13UjNeZEBHcVdYfSVtJwogICAgJzdOXjRLMUtsT3A/bkpp"
+    "fVQqendsNGVtbUBvUmtJN2g8YldHYSRHcTFBaU4/KVZLUHF2YjE+e2l6TC00KDVKbFpEaSQwdykq"
+    "cTlQKFQld1F3ZSk3MnpONiktXms4N2NaZ0JLYDInCiAgICAnQWJGeHNwOGtqbW5OeVpgO1hSKHZC"
+    "SU90KXRSe20oRVRBe0BPbmE3Vj92WWU9SlRxbXNOPGpab0F3JjIhJDQ5MzteViRAVVQpNmJPODZ2"
+    "eDxrVlhrOUFCXlpaLXtaT3NpV2I9QycKICAgICdZRih1QklxVEdVM0spKUw0UXNLVXE5YVpDeXA+"
+    "RHUtZD9pQVNTUSFZWCMyelAycndGK1clIT91djNzXyNLQihmeG03bVNCTjZLZFRtQnheOzVaQ147"
+    "dChYU2hTZEw8WlRnSSl9JwogICAgJ3UoSjJkb05nSjVFUmtCNXctYUx1amlzO3twNyZGV3J1ejx0"
+    "TSRHZjNfMSYkRUB0LVJhZTUtOWRNfGZpeXJzZz1RbU1PNSZkfFpINE9WT1laQTZhI2Q7dUZUUERa"
+    "RlhgeT1yfWonCiAgICAnKDRqI2M/S0V8eC1sVz5KbFduckpjeHMtbkQlRmJncllzTV9JMmNPQUd8"
+    "USVKZExVcXRVamVHRVFMRD94aVEoWSRuMGlpOVJJWDFLU3o3UXNHMn4mNjAoOSNCWnhSfUB1PHd2"
+    "cCcKICAgICdlZj04aTB7ejBCZXd6VVdkO0o8a3xEOyFpN25AU0whJjl6PXJ5TUt0REZtcW5Sc2oo"
+    "ellMdTRZQ0AkMEs4eCUoJkojLWBhR310QTJyaVpYZGJ9LXIhOW1nMHtCTExyMG5MLTBKJwogICAg"
+    "JyU5Jl5jPkt9QlFqUl9TWmR+bih2c3E0QDdGSFd9fHcjNk5RNVJQbU1vPmVXbT0kZ0VxQFVKM2Jz"
+    "dj5SYy0xfHhKeDV7dT04cihfU2RYQkJ2VnFvdkpGO0AwR1FEbTdCQHRRNXsnCiAgICAneDNPS3st"
+    "ZSYhZXdHZU9VZk9sREtxQzVnfTd3QTYxdEVBXn10e0MpNkpGPnBiYm8zPTMle2NOSTtDS1Z1ISVL"
+    "Kj9qOUQpOWdiQlI7byR6VUxRRFQxaVlDT3d3Ki1AaD1PPT8oQycKICAgICdxR19EdUgra0kwMH03"
+    "ejVvcEJnPUpePXtkTVJtR3pVbSUoaHlvI0RZSHswaDFPcmh3LWEzU31gOD5ae3NwUyNUeWhKQT50"
+    "UCNwV1djKmlfJmMhKzNfOT53bUFIblFJQShaI3FCJwogICAgJ2pobzxiaEQ0bUIzcEZ5R0hiaHB+"
+    "OGNoT0phaFpwPHMwe0otWXU7UXY8Vn5DQmF5TDYtPXtFRDt7JUF6eWZnUn5AIVpfTFBac01Ialpm"
+    "SF9sdlVKQX40TVAqfl9TN1Q8ZkE9SFEnCiAgICAnZ1dLbllyZ2tiP297JTJ2TDM7N0BeeWpUWmlX"
+    "cSo3VSZQZWQ3e15PVFJafnk8bk8pcmJ7QDE2Xm89bHUqRUg5b058TURzeGU1NGBwOE1+b0dVKys3"
+    "RlApU3NUN0I4OWBJUnxvRicKICAgICduNHtnV099YCg1UD1tfSNFOSQ3Mms1fjskKl5XRjRYejxI"
+    "eF9pLUMlMmxRUWVgZVEoc0NIQmlGTzY7Sj95M1VnJlJAcD1hbEM5aSMjNW1TTV8qfkt6Zlp1M3ln"
+    "aFN8MVU3Wm9mJwogICAgJ0Apb31oRlkwM0RLanRJUUh1YG8qT1dzQ2pPUmxQM017UDFVVUIhRSol"
+    "QWFtVV9rdExhPyFWKUY+XjU1dHpkZHwzQXBVbGU3MU1ILXQpZ2lWUHo4QD53UDxadylreDU7O0wk"
+    "P3UnCiAgICAnKmJ8SDJQfTQ8TyFSdmxlbVBfLVoqPEZ4RndHYSg2d01EQWhWPlpmRjY9ckZqUEp4"
+    "fDk8NV5YfmR7Un5GVFEofT8oJk9TKitpZzttdWFgMH1mZXRfQW5fUHl1MmNucV9KbktmKycKICAg"
+    "ICdVZVU4Wl5vJDlrPTdGNUw7UVFtM0NsZkxQaTVpbjBlaV5ZNGVIMlIqQFlTJXZqdVh1fDFJdFZf"
+    "JT04UXsjVFJXdmRHSi0zdypidTs4KiZUYFJnUXN8S2JeanFoI2ZHfmB1X09tJwogICAgJzZKPWJn"
+    "KlVlN1c4ZDFKQGB0U2RLSlY3WGBzP0ZhWlZ9JTluekNaaSptJlpSJVVjT0w8dnwlNTloJXd2dEFJ"
+    "RTNFT2tUYl5KdiZpTil5fi0oWHM3ZXw/Qnd7bDk5YTtyJXFGLTknCiAgICAnV185dnZeNyF9JTRj"
+    "fW0mdSlscU5kaXZfOHJ6ZXtgNUMqNW1YVXxYMFVRWEVUTXZyfkJLeEBrQWwqOGZhanItJmo4ZF9k"
+    "ek9qd1diYz1rQUE5TkZkbHpobGgwMCRPKklxMXkzZycKICAgICcwKGJzQXpncUpaKU55eyU0OUhk"
+    "cSM7KnNBXnkpMXNzXz87d3FqQjFoVFVxKDhjJHtISGozZjBfd0lJdm1Ma3tTRD0jQ29zO21kU15Z"
+    "b0hsSillR3ZYelRnWSg7dlU5ZHA1OGkyJwogICAgJzAzPz82V1MmdlR1OFIxakJnRnYwdTw/JmBU"
+    "Nj9uODgyZj8hNiM0Q2ghSnhibnA+JUg1Y3I9SHxgJX1XLUF5PW5kbVImd0MlN0R6ZGM9N0BOe2px"
+    "XyY7Vjc5d2d2X1NzbCMkNGsnCiAgICAnQCN2WStJcTZ8eGd+PG99X3M4YV5QKHkmdC1qOzU7O2pu"
+    "blh0cGloJGszYUIjVEx4elhabnxXcElvanNOaD98WDNIJFFSTzheZGt4OUF+cEJkQ2RMJEFKfEBB"
+    "OG8xTkp6fFRFRCcKICAgICdlNC1YVmVlNXxQPUpiNH0tWHtkX0JORTxDQVdnaWgydkVjU1lBeytG"
+    "KmVxfUJJP1lBZyMwQyhYTE0qIVEoQnQ+ayFWKyopaVFVZ0lVcnUhbWhpOGBFekBSN2FsJGd4WSts"
+    "fiVTJwogICAgJ3AkMzZmc3Z+K0JCUkwhXkFvdGFPcCNfPFdfdyt7TT9aQjZvKGd+ciROJn1+PTNE"
+    "VmBCakBrelUmPWd5aj5jVDFBMTc1TT9BQXlXdjMkYlFhYD8wYj9nKSNKRDM8PU0tJEMhZzAnCiAg"
+    "ICAnQG9jP1o8V3F7d2RgKz0+blhGY2hNSGFXaHQ2bT5GNlp9e29VX2MkcyU5JGBLKD5MX3FsWiVp"
+    "JSlXXmA3eXxeeWFGI0p1QjJINGFpZl82QWErSWcocE9QcyhKV05XcjAoXihBYScKICAgICd0Z05q"
+    "eDZzYW1ZYUJtP29IQztPaCNnRlVhNUUtOEplYks5N1NpQ0xPRSozSWFsMj9OK0BtJXZBRUlnSnNL"
+    "OUJtKSFJJXhwP3NkXzErQiE+aHUoOVYzNEd6STB5UDslSmh2TTZUJwogICAgJ2BnUzFwSC1hIyh8"
+    "QjA/WkF7WGNCdXlPSTdDQWM1WCR8MVBpcDZTOEFuKWhNe243aU16TFl2YWp4OCRYTT1mMT5lP3Zh"
+    "Z2BLKiFRMDJEKj0lRyVxazU4dHNFOVZQJk9MKXNQS0snCiAgICAnN29ZeyVhcV9fKTM8aElDR2dR"
+    "PUVhcTxEIVNSUGVOYkEwTGA/SSRPfjxFNkQ4K1l2V2EwPE57T05MaXZjbTE4V1YjPEREJU1mPGMw"
+    "PUpfSE9PbCp9Yz00fSpfMkRHazJOdHsrWScKICAgICc+dzUkTjRjTTs1dUx4YEUpcV5pI0hFO1g5"
+    "Q1NHYVNKZys5PXV6Nzh4MlFvNUpQMXU9JHg7SE0qNVduanZPO3VMUXVnKnBMKFdRJTtMT2F5Z0pE"
+    "amwyJE9qVS1lIXpjIVdUfX40JwogICAgJ1YyakZ2Yk8odX0rVWJTcE9KVG1ncVFWWntxY0xDdWQ4"
+    "KnFCODlvS25vUkFpe3skYmh4U3Z3R2c1SlV1NCk3JVB2NDVlIXJEeil+OTgzezcjUkh3Jmh2PUxr"
+    "eGstaSZ0SWNyO1knCiAgICAnNlUyN29ZNkImaVNlfl5KQVhNWGs8QzRSKndPaW1YbXNgUENSQk1N"
+    "JDcqakRycVQ7MTFRZitpLVBGUHpIeXhUKmAzLW4rPXNAPytLa0xKI21sRWtwSWczKSRaWTh8cUQh"
+    "Z2A5PicKICAgICdiNDBEZjJPakUyXkRZPj54aX1kSWBETmZ0UShjX14jYDRpREVTYGBBNztPeGN7"
+    "M2V1JE5XYjNiamNPdFpZNiokNTl1RG4kK3tsNVhpV2xgOCVeUGxWOyt9VThBWlRKLVluOHN1Jwog"
+    "ICAgJzlPNEM5QURQNDxZU2kofUJRQyUoRTVAOFluZz9UP0FHWXlsTFliMFZ3TkBBemROOFJOaUVg"
+    "eHxnQ3JePUVebnVOXkRWO35nO25WJFJlRXBDcjIyKV5MfD0yO2lybChfYnQyeyQnCiAgICAnIXwh"
+    "OG5JOXUkX2VOTSFYIStEVHc2NFNrZSVEI3x9WFlmVGdeN2Q7NWhaU0ZCdDAlbDVZOVM4ND10ZHVj"
+    "M1gtclUrRCgkVSlxfG9kNGVYUTdFXlMtXnJGK2FmdF98U0dRK2RLVicKICAgICdqb15QaE5wMmlR"
+    "WHsxYUJ6ZHJhWWhXXyZ5RyhLLTV7Kk1DJCQzNWN6aTBfMDVCbEBAWlJkRlJGTzZhQn5udTsleTw4"
+    "fUNuUUx7WTMjQVFTfSNjKGAhRXU0RFckT0g1bUlsc0pgJwogICAgJzRxbEkoVXRVY1Epa2ZaTG5H"
+    "aSslP1h5M2w1N0NARE4wRFVENWs2MGRxQmA1U1UmaXc0Z0BhP3g+ZHpXa0VLTmZEdTs2JShkPks0"
+    "bVBJNnVLZUdwVk00MTxIViszYiY8bytBQjMnCiAgICAnKWk8UE9ePUMmZnc/QSgqMnp9ZShiY0pk"
+    "ZzlpR3QlJjhvRnVWdkh5RExEYVlFM1ZwdWVrKk05cUlvajFEanlsd0BTTllXeWRmXzBvREdDIVkz"
+    "MD1wMT97VTtxcXsofkBKJjtNSScKICAgICc+N1QrK1goUmd6RXo+YXk3MU8jWk5pUGJVYmh9KDsx"
+    "PyRrIXU9V3pSe2NrcUhsI1g8PHpOfkk1JH1DYVFAU3o+N0IqdzJ4LWQkclBFZSE5KD8lXntuJHxJ"
+    "djc/V2FwfnFwO0UoJwogICAgJ0FQUjt9Pyh4IW9gM0BuSXckUk54ZnNgVk9gc2JYQSsmYzAyQ0pN"
+    "VHVlajRgTlNMdlM9b3ltKChHYHZINkNPPU5uQEQzNTBKUSFhTT8tLStMNz0kPyo/aXs2UT0hOXQr"
+    "P2kjMTUnCiAgICAnY30ySTMpWUxrTT9QNGBLUTs8WDBGPE1qUGl5eUQpUFlqQ0c5NH19ZTRlOUBy"
+    "WGg9QXZQbU9vOWs0djxWT1l9I15DRjFacThUKHV9QkI5TTVXTzApOUFYSkVJNG1UQW92MkxpbScK"
+    "ICAgICdAOGsySGdiNWY3cDsrN0tUVG5fdE1BQyVfN3dRRl47MTxSayRxJms2IT1xUnxSKyMtalg3"
+    "JWtsKG1Xa0lCQCM4bzJRQTAqVjhrdEB5VmE9PHNIdXtAJiZySVdvVHN4e14xbHZ9JwogICAgJ0Qj"
+    "aGQjYiFtYmY3XiQ/RUdZbSljVUVxOG5nMTdodjNUamtoJGFaKHR2JHJmcl90eDxoPSQ8T2VRX19m"
+    "Q2pWWVFwc0cwdT5iakZ7cXBrJEJPR2sme2hpP2ZAWFk9KH1ENlNaQFMnCiAgICAncTBzS0NHS2pj"
+    "U1I5PDNTPmluKHlsfHhOVS0xRiliSVkoQyomR0Qhdmg/JGU9YiYwc3wrRUd8Pyg0P0tUTWklZ0xY"
+    "NnEyIVJacWwzRGF2PXdIPzU7cHpwdSt4e3lTbytRT2ZxPicKICAgICdDTGJRZ0hkPVV5bCM3KTZu"
+    "cSk4dFUyfF9FdzNPKDFZZCpePjU7NGgyZkJvezBINEJOTWdkJj1fPHJFSzBWK2NfVmMrIyNiVWko"
+    "P1VGOGxnSHRZdlR9QEhvU0kkK15CVTk8VW9ZJwogICAgJ2QwTFZJSUQ1MTkqKVV1ITZUVHlwPE92"
+    "YDBJPUBqYXJmUExDSSpfSnIxLXg+SlV2KXdkcWRQYWgpfno/fmRrbW5DPWZCRzhoPStHNUtKfnhz"
+    "RCZmPzQ3TiZJOUM3OGAhZE4oXkwnCiAgICAnWWZ8OHQpJGNqP08+an42ZzdlVGJXOVdMOzJBKjVC"
+    "K2NDO2EtRkFkKE5VQDxeRCshbCp4YVJZVT92P1FKYjU1NmcxMWVGMCY+RTJWN1VTczxKYUlZNjhf"
+    "MDRMaDcpYylhYX1MUycKICAgICdpfHExVzsjTm5vcGZpRk84cmNQTWw1bFNCIzwjTHpVb0Zhb2Zg"
+    "WGImclkrNjU3fTRwdU1tdGA8emNBJmNSbWpNWmxMbHIzPzUoWVJTe0JzNT5JX05UZmtrcSFFKlo+"
+    "VSheY1NrJwogICAgJz9VQV9lYj5pSHk0d2FOfkc1eVBQIzl+WUgtQVZUQjNgb148S1JTWTRlWkt9"
+    "VTtXKVU+TEBXUlA5YShZXlJNSk8mV0w2PX1GQDJkOz5RMl9SeTwzXzVRPT1Fe3lTJCFXUG9geTYn"
+    "CiAgICAnJDhOZCVfdXNzT1M0XmNaQkVpMkMmcXNlYj5wbVdQTnQ3eDJqfTJkOTB6QEw9cC1kMGdf"
+    "KUckbF4pXj8qNi1hYj1vZiREezVNeUB8azIye0xYIyhPVFhqSTklP0hZUz4/VitiYycKICAgICdh"
+    "VWl5cDtoRm5sUS13cFhMZyRmczh3I0BTIVRJUGE7eUMpPGhjTWpjUUlzPiZIXmooSCFFQzUhP2pa"
+    "QkwrNyl5MW8mcXFBIz0+aEolTCp3NUUpc0NzRj96MzdvWCl3KUp2JVQqJwogICAgJyQqdDgtQFVD"
+    "IWpCYWNTajt1NUorTWpzWlR5U2A/d2tEMTB5cXJTS0g1dFckeE0lRjlQcW1rUnc3dTtmYDs1SGV3"
+    "NFg8bEg5Y2Z2KEc7SGc2KShQOEdfTD1Qe09XWTc+X2k8UyQnCiAgICAnS1J7cnsoNDwpOSlTPFd+"
+    "SlExOWsyKiZHYlJoJn48bW9AUVlVTzBDLVkzSjdNQjYpUHROSCs3PXotPTRiOHkpfiMjdlhvUUwz"
+    "d1A5KWdXPWFqUntJZSgkJWR7QlZvb0FDKWYpVCcKICAgICdESyZLcDVuT1gqQlVCe209d19jNSlh"
+    "PWZGa0c8cV4lR3JpWSZ5NSpsYlRiKCl2IX4tR057eCl4WjBRRSEtUXFAey1LNVIyaEcjdjt5cmBG"
+    "dW9VemQrTTUlakBVJFJvaSN1cFBfJwogICAgJ3kqPXMxYTZYcENHeCVGTjJuNWtidHojRzdXY3pA"
+    "I3k5Yj1EO059TFIkTSRFRk1PSXdaKkJ5JHQ8ZTIpQiN8OGN6azNHNHhhc1gzSiFsPSpBdDtmK31z"
+    "ajhwU2wxRUBnZWsjeGwnCiAgICAnSX5mLVYjJVE9dCFCfH4mS3c5WFhNSjhWT2xIMnc9K0pmPjZA"
+    "M3lEelJedGV5WlR3eFJqTVYhcW8mQ3FVcUk8Jnp1bDNBLVIzUF9zdkFqK2RnQkgrcG8lcF5mNjBT"
+    "eztNLUBAcycKICAgICdWUGkrTSN7I0RvQjQ4VDZYKzBBYFpeIz90Zz5NJWorP1UhP2NYOGBuOENB"
+    "Uk1pNXxeOyNPKShpIXxHTlUzYE4jbkthekpDMUtXbWt0U1pAISpTTjJTckxrZCh4eGo5Kj9+MEBZ"
+    "JwogICAgJyljbTFwaiNfRlNwdzZvY2R+cT9vUms4YG4xTFQ1dTI7Y2BwazRkM0R6TW0pc25SZykq"
+    "OSg2SER3KnVZYDwzfChNTlAlWkg+dkV8JUo0TnhkMmRVV2hrckchcUU+I040MUA0OzEnCiAgICAn"
+    "Zy0+fFo8JTxedioraiYkWjBZZFJJKG5QVm19TyN2IzNON3Q1ckw7PWNLNUJ+TWFOUE5IeXBMTllw"
+    "WHVnOT8hZng+NSNoK0l6cX0pSCkqUkRJY3kqK2YpejgxV3dPSTdFfjdPTicKICAgICdjUSopfXk9"
+    "fkMhRWRwazlhTy1IJD81Z2Q7PFZlPmxEKXdGRFRzS15zWGw9eFlPaWAwT2BfeipiXjhKbylWKGc4"
+    "N19AI2EyMTk8X2k/YEMybz85Xko5UFNmZ29xRTRSRXpVP0dgJwogICAgJ3ViJXRRVXAoJEZAOzU1"
+    "R3BQfkpYekxlT1B3bllvWUw9dWs1TlQ+Z3xabHpQK3EzOVQlQ2ZFNjhQS0goWlc/a20rME88Mlom"
+    "QHZGOyZTQzN1MkMjJExtR1NEaik+IzlXQm9WNVcnCiAgICAnKyZqSFJgNz9eb25VfmhsNU9aekNn"
+    "I192UVU7cHYmcj5BRXAoRm1sUU5LVT9XK3lORClDQHdDSDlmJSFseE9KSEJaezN9NWd8RHQmbTdn"
+    "JmR0PWF8IUY0Vzw2UV58YTBRXn57KicKICAgICdqUk1gPkd8aXAza2ghfH13VT4hPkNQdUBIWiha"
+    "emU/VjdQfj1HX0dHUz9vJnc4TUxPR0s3RWJmNVh+JnMyMDU5fVlaK0NYc14mXykxcDgmMmY5eH5m"
+    "cTVNaVpxTyZ3S04rc25DJwogICAgJ01nK19LOSN8cG8hVTF9KVQpb01OZXpwbmZNcnxeYG41QkNf"
+    "ZUBEKSpvKiV6VXMkeGNaVTB1NiVWSzJAVnFFX1JBdGRHUnN6MzlENlE5cVJjQDRHLXg7XkUpOUtC"
+    "cWR7akJZd14nCiAgICAneUU3RyMqMU9NMCMyNUsqWW9lJD9fZTc/VyNga3o1TVpGOCVgXj9WfTl5"
+    "I3MxeTNrekhAITRjLWVGdnU+YDRyaGNobWxUe0I2KEtZTi02MjNeUV9GUlU1Wjd0TWFBP0o7aWAh"
+    "OScKICAgICd3VDNZJks2QXU9RX5Ia2lJdzlWPm1QfD5gPnJUKGx1JGNffHpINzhZVmlwJlRvcE05"
+    "fCtFY0dZeGtLYkE0OytxP1daNmR0ISpNaDNfcGRecCRDZSZ2RDl3MXI1PWYya1pRPkstJwogICAg"
+    "J0VSNy19O2JnOFgqKGJ0Xy1UR0JlQ2hBZHwqT0xrUlJVaTN1MHNVej8qYGVCVmMyRC1AR0VJMz1i"
+    "Y0FVUWd1fXBwa2JxQF42eTB4M2Q/WSU/K25JaGspN3ZsXztGemQhR0FuNT0nCiAgICAnKUNvemlT"
+    "Nzsya0JDQzBoVjVofTBfcXZnY0RBPSo0ZCokbEwyd0tuMk4kdnsmOGx6QlE8JW9wMXgoYWZQYXBt"
+    "Ty1QPXRCO0wzbT1EQFhATVd8QTE9dTQ/ZkJgaCZWaDcrWnx6ZScKICAgICdvUGIoaGw9VXE9RnVq"
+    "b09UVCM/bDt1akluK3N1biZQZS0pWmNGOVp9Wm47TEQmeUA/IzFsbiNHJHRMOVN2fDQoem83cVhm"
+    "QUtrWH56X2libDBRaFJMSEJtfGReNHhEY2orIWdXJwogICAgJ09PaEg9YXUxRyNqKm5+bHJWQEV7"
+    "b2R9elZSUmFmbz9UO2BSQ2V7fDM2IXhDNkR3RyVTdj8rMDJCSDwoWGMmUn03czZ2NTUjY0dqMVU1"
+    "NjVBTkRkfm5BZHtReTI3Pn5xTF5aMFInCiAgICAnaXAhfX08T0lxVWtxdHlRQHcwPm8mNHthUXZW"
+    "SGd4d0B1MkZaQiE7MyVuTSllYzBIenMzUm1AQFpSfjMkMV43bmFYNmg5PlhfRHozZWtyVUdGcDBe"
+    "OEgtRG5BcWhvPyZeTjVlIScKICAgICdhUjNiR3d+ZkU5VndNYDtEUlJIa21IfSskaFNhQCZTRTVM"
+    "T0BvbzsmcTJ2WXB4SHAxP2BeaHRrcDZDMHN2bCR4ZkRqVFR2bUJ0TDJoZHlvI0tsMCMpOCkhSCQm"
+    "WFVnJDl7dSRUJwogICAgJzl9K0s1VXlFdGBUMSojKiNuNlpnUH41IUUoX2xFUD1Qdz9VeFdsb15P"
+    "RGAqd29McHY8NWYkZzN1V1ghXnt1UUEwNjhnTEA3YytuamNWUnhgaX5SPGM9eHZzfiVrajdjO3RS"
+    "NGknCiAgICAnQUJEK29CbW9lSXE3JjFSeG44eUw4b2RBQHJfMTVCOTBiVmREJnUjfSZCNmZfV253"
+    "ZnAhLX5mMiN0TEJ5d1ZxPWJ2SDl9ZT5FaG5+KCUkdkx6U0N2Qk1KfGpAKlIjb2pmciE+fCcKICAg"
+    "ICdsVXYqfE0hLSU2YzVkdT5ae0s0PDRPdUVhUVg0amlRJGI7ezYmbVF0RT9xPXk+KDhYU2ppI0Zt"
+    "XmZUNUxPPVNHXmxtVCtZQlg4VnkkV3JJKW9+OzVrdTlhQGdSbVlyMU9XMTYjJwogICAgJ3BsJVVg"
+    "NW9TeEF4MFlmeysqQGUyUDhTbn1RfkR9VyRDa0g0LSVJe1E9WUhTdihuNHsjWGEwczw2dUdXZ01f"
+    "X1klOEI0ZClhfENmVlBoXz51RUwpYWIpOWJmTkQyR3I2RSNLeT0nCiAgICAndk92anNVbVhXQnhs"
+    "OGRtamxgY2lFNlRqbUB5UFFVdUE0cmsmciFqTzVgOTBlRTBxcm5VTnxMKyskbFVieWd+Y1NsaitS"
+    "OWVifWZ9Slk0X0E4T01ONlRmLVg4PkB9JUlXWjxlSycKICAgICdXfDtmdlUwTmtLQElyLWVtdkMx"
+    "bUkkNHIpbTAxT1d6U0xsXy08UzBAWmhvM2BSPGpESHFJZ2F2Vm5MUTZhP3xuTkJQRUtsRCg8YzI7"
+    "ej9KWnRnZVNKK1dgeWslWktNPl8qOSleJwogICAgJ1FZZXwjUXY8UXo/ez9TeF9mY0luQCkjOH5i"
+    "VkFpX2V+KDJkWXkpZnNtbis0QT9uSU1SWikmNGFqbSk4JE1ITT89VGckSDAtUkspWHlTfnRwQFNG"
+    "NkZlMHlQTE5mZTRAMXc5bDwnCiAgICAndDxsR0tBPTAyZXhkKDg9Sn5UOTA/YHN3TUs8VkZWPnhy"
+    "ZzwyI3xYUWFeN0BzSW08biFSNnxFS3EtM3ZPZkIpLTB2P3RjPCpCNkNTaSlkP1RVfEtKO2N9YXtj"
+    "JVlhZTZLam54PCcKICAgICclMzZiek1GayNSI1IkS0NqYTsqWmhQSFR8TCEyfnhGcDg0YF9lVXhK"
+    "KDB5ZiotO2hjV2VkYlduMUE4KkIpb2F0X3VEJlI2SSpOcXhqUSYhUW9LPmtMUyU9ZTBWOSU4YTJF"
+    "SGhDJwogICAgJ0tScF8wJUkrJWdzelQpPUpjTFh2MnEzI3gqUj9UOUFnYEohblgrPioyY1Q+fkI2"
+    "dn1WRDRYT0w+RWZjR3MwQiQ/TE1MYmhMN15PUUJRV3pZakdjVVBpZlhOckpMPHZIX15lTTQnCiAg"
+    "ICAnPXs5ZGxpYlZsYGx7VnU7cFl6bmd2QHZHdk97VF8tTmd4KGt0cUMpPHBfbXoxYDJ5MlZZUXV8"
+    "a3ZDN2lmWkorVVZYM2EkfU5ke09KUDlqSFcyKE9AZ2V5ZnMzIXQwaT01MVFDRCcKICAgICdYMVJq"
+    "fklfUj1TT3h8b3thUEFQTlZwcE5TcmwxdWg/UiR6SXIlQH0qTkZMaGgwdVQ/cTdpdkRfJjZidFlK"
+    "N19uWE8yX1khM0BNcktRRXw1KXBUMVBGezdzQzA3MmBxMF9FJTliJwogICAgJ09qIVJmaGpAV0pK"
+    "X0QkeHRzaDA+VT5GSUVBQFdTdk5FY3I9cmxsQjAobyVlKkdEdGkte15nMTg5bTZ0a0tuNCFrRzNA"
+    "VChJciR0WnE5ZmtPM2YjVGY1djVROEBZdSpScHIqNzsnCiAgICAnWU9ZKl9JVjkxLWghMTRGTkB0"
+    "Y19DTzJ6aGlTb3EpcjRCWG1jPWk8UShDfk9GNzU5T0VQRml9UylJcUtSIyNjaktSNHhHbEZ3dlBU"
+    "fE43dTd0eGJBQXhrUT8mT0xSbDYre1pESycKICAgICdjeyZWcm8obWgwZ01xMXUhdD0/XzRLJFdk"
+    "PlQ5NDckZUlaUTV3OSp4SjRAZTh2PjR0dkx3QDU5dyQwaV5FRzYyJU1YQyppKD5EfElpUEZaSldp"
+    "eyRPPFUmdzBhPUQoKkZeSTMyJwogICAgJzxkO15kSEBPQ2F3PF5tVTE3SypFOWNTemMlKVlSTiRg"
+    "VXtvOTFJMGF4SmxCZl9RYXZXO1pfS0toOCtEWHBnczhSSUNBWU5nJTl1TGBjXyl8MnZeNkxfaSVp"
+    "LUo+fXpzP29lMU8nCiAgICAnKl5lI2QlYmg1aEBFRzFTOHtXUn01aWUjS2N2ITYrVWZqK28ycSkt"
+    "QGJ2YDJeMWYlNiRjUnJnTiMoZWJ5OE5qc3VnZzZFfFFoe0tONjVOJnFPYH0lIShUQzAjODF7Z1dr"
+    "fGN4RCcKICAgICc9TUB8THcrMXNIZVN3dGUhR09ZTzI5OVVvZnRRSDhzLXV3eCRReUo1NTZkTy0j"
+    "flZEIXFifXF6cEVtWj8lcVozJV5PbFkpT3phUlRxcVF7fW1BKFQ4a0d4LXk8dGlrTHN4bzB+Jwog"
+    "ICAgJytYZHZRLUVgV3smYyUmeTB7PTh4OUNOeWEpMzhSJG8oeDR8bnlaczsmbUQjeEY7TSFsJVd5"
+    "cjY+UlgzX25EYCF2YXB6XnhUYCZ+MiswTj5BTFFsMCgjSSMxIUU5RkI7ekZSJWwnCiAgICAncnFw"
+    "eFlSS0h7YGtCcXEkVkxeUFQ1ejttP2U/e3d3Kl5sSCgjTjlDa2F5S3wtWmlWMkAkZ0opZXg7MTBS"
+    "VjRLQEtkTH5wMTBfU0wpREt7JD12dFhiLTZiVl50JmJuNnF4b1NNPicKICAgICdAJCopXkkkc3Bl"
+    "VD1RJllwZHc4PVYkQClodHlzR2M/SXo1TnVrYX1SNnR9QUtUXz42OTl5ayNMezRGQmFIJShCLW8r"
+    "SGU9aCNMJjxNYnJmb3RNe2EqQzhrKFBAYmtkaV5JcD0mJwogICAgJ3VSaVRqOWR0cT96TnExdDQ7"
+    "QjV5YElJJUZUR3k0MGk8eHZ8O2J4R0xZN0lLd3ZxIzRCQiQ3QXArcX15MElWb2llXiFgKT90eTEh"
+    "VThYdzhIMERuPURHRitGJlU5PjcmMldIa1cnCiAgICAnalpLdjZ5TjVKKHkoYlRQcEJtJTFGK31s"
+    "aDljYEVNdFJiJGwkbStDUGN4QikzWFhxT0l7Zm9iUHVFbS1SSkxFP2orOGxBSD02SiRnRllKKUNx"
+    "LSV+S0J1NCNVeVhadDNXKU9GUicKICAgICdMQHNLJiE3alFKandHPDVCeS1YNU14R2NvcVVHWXYp"
+    "M0dPPE8+RnxXV0JpRm82ZVcobW41REhMODZIaGdaNE9pfXk+QE0/U20mWERrMXxnZXpBI1F6bnAh"
+    "aTZ5R0Y4QzFMYWB5JwogICAgJ3RVNHZDMygoXyU8TCZnZl5KPC16JWJhZUZQeE5ZS0k5PylObmtK"
+    "WCVqQjJXc1hYKlI4OFh6TTd1SFhVKW9SYXJDdHpCei13P19yYVVEbVBKcEpUeWt5Si1iJTZgVHh0"
+    "Pl4qRi0nCiAgICAncz81YTVzcSNxSj4qcnclNVZLbX0kUkgqMDRBeXZERERpSkIkKUx4SFk/R1he"
+    "RipqcHlGSGNCUGt4dFBea3JIdU5veSMmXiEzfnhGcDRwZGhtRFQ2b1lnaipydWhZZmNDRiZNSCcK"
+    "ICAgICdtcUp8fUhmN0UwUH1ARzxIdV44Z3lIanlYayF7KH5EdzBCT1FtMWRTUEJlPVdQRD0wfEZA"
+    "Yj5IVD9BN29wR19JTkpue25VTWF5SHA0Sk1PZSZrd0lqLTNmWTMzWGpvN0soSXA4JwogICAgJyh6"
+    "ejM7P1JVKmxsc0xkQVh9YWNoPnkyUSRVWTFNTUg3T3Q2cGJiMCV2alp4UyN6YX1ydEFgb0kqMHY2"
+    "RSVuMz5fSXItJiZ1U3Z9MmhPcUhCKkh+SEdrNnQ5MzdkJHhRNypHU1YnCiAgICAnVShMfU9pa1Fu"
+    "QWNteUYrUytYdCQmK1lUKV8lZDRNbXVwOWplQHdCJE9gZFhRTzB7fVM+OCk5SUk3cElUMy1YPkxC"
+    "WV8zXndrZFVrSSUzJmtpQjZ0MUpHMUcpWXpZIVhqMi0jbicKICAgICc+RW9ZJmVVWVM5QCh4Nz1A"
+    "WlRxQXIhT0E5Y3l8Mndncm8xVUdEI1ZFdmFBfl4xTGBzdCRxeSRkUHhNRyhGaDhYJDZ0S2JjeEZZ"
+    "b0YqcmshZWFGeHcrXk1aaW9Ba3w/O0koKmg0JwogICAgJ3NoUlNgPjhnMm1vbG1kZkElaHZ3WCkk"
+    "JXhzZmJZJFFSQ211TjheTEVvTFVpYmM4XzhRRylOdkFfb0FUODU8NW9PX2syNkAlekYhZUBKK0lK"
+    "OHN+PHdTfEx3ayNDPm5ocmFAajwnCiAgICAnd25qYD4lcD1DJmo0Zms/e0V9dj50aXllLXQmWXpy"
+    "T0IwbDloRGltP2ZFZj9Seit2Qy0kT0A0aHI4P2duWVA/ND0yQn5XKE40ZTVRN316bl5sJDtJcHI5"
+    "TnBzTVMqNlFRZT99LScKICAgICd0aDxVK0dqbmwjRU5uZ1B2STQ4RnktXnBMIXp9OCNnOyUjMGBJ"
+    "JFNFMnlzRTJMOFpLOF55RX1yZzRSMSt1TFNjZmZNVzNBej8+OWI3STVJZFVqMiRHKCFFNkImVWNY"
+    "dXtQOEkhJwogICAgJ0dCQEBwIWRvNj8rIUdzRCF9YG9TbzhmeVJRMzlwIU0mOXghOG11bW9vM1lV"
+    "dURhPEBBIz5TVUhTQko8REJeJSl5byZVJlVeKkx2U1lVXkNyNFdoNlJBLTI9QHtvPjw7ZlIpemon"
+    "CiAgICAnMHAwTU40ditLMmFUWmxXPkl+N0I+c0h+aSFZak5iPT0qIzV7cnE7Xi1NcjRrVXZoJE1Z"
+    "O289XkxuT29vWStrVGpNejUtVFVCIU9qdkBUcDBNJTJkbEcyVjlTVyElQWE+MmczOScKICAgICdK"
+    "UCR8UCZgVWEmbVlHcTZHTTBARVJmTWpqLShmKjBVPyh2QTxaQEBpKkt9alQwTk5ySl4wXl5OSiRt"
+    "MXhLSTUoXzIxPTdOM0prKz1iQWVsTF4xdVFKK2tafExCU3czTE9QcFleJwogICAgJ014Wk5JZkBi"
+    "Z1kxdzJHeDdwX1VqbUtNckprRXwte0wxZXRgJXdtWE1aOUMyIVBzNShtTjVvLSlMfHFhPTlFSDs2"
+    "Mik7Um9oQ1QwWVc0TXQwd3FgendrRCZ4e0lQUGo4azNXYjwnCiAgICAnKFU2LU1DMXdke15WUks9"
+    "ZWNYRCYtPnRpJGNRMmxZZXcqLUgybHJqT01rK0tqWkRUcHB5X1pKd15QdTczQHhYc18/NjlsSXUm"
+    "UGJ7Qmxwa1RkWjwwfkZHNGY9YTRrOSFQY2oyNCcKICAgICdYVlc8PT9SSVJ1Rj5ZLTF0c2shfC11"
+    "OypsNT05WkNrP2t6ciRqUyhgTG5uZjk+JjgmV2RqbElrK3tvQk1WeX5CbSZ6JE52Tl42X2p7fGBH"
+    "KWUrMUUmMWl4WVojWFZwVHMzUU5kJwogICAgJ2tVcV97fEVfZERjMWt9X1BTeyVnVkRSWDBASEla"
+    "IyRfMmErYEpIN0JhSFN1Nyk5WStYQ1pgeUtWTzNxe09TbldOSTVzIz5OZlhVQHBDcVN6aUA9Wm0m"
+    "QVIzWUVFWTdiYEU7P1MnCiAgICAnMktaTChOcE5oUVJoMGQ1c2hEPV4wMCE0cncqaWE0WUlMK0Q8"
+    "NUFNVXhWYVVXZ0Z6RFg/RFgtXm4yUG1pRUJmV1RYMUxfKzJUSlBkSWUlPFA3YCpjeEo9PDZaNTE9"
+    "bk9vVEQ+RycKICAgICdzal93Y2tpek1aX35ScGdmUWBteGpZKXpsJkUoNU9KT3FVbEotX1NfVE5q"
+    "ZztyTT1gNW1DLSRZUEA4UjcyIT9DR3FGUF99a2AlRF8obHdZQ0x0eGgjdjtva1BCPlpxaDN8PW8o"
+    "JwogICAgJyVkO2huJmYlbkZFamVIfkZKQ208ZlhVd0xCcUBNS0I1OGRANX5iMmEjY2hlNEFneUcx"
+    "Z0lse152TGd3R0Ekb3sqbEw/eV91UFQhJEJ9fE4+Y3ptOUI3OzZ6QCNFQlg5Qko8SiMnCiAgICAn"
+    "WUYmT0AkTT4tIU5lfGdebChGYlYtVnNybldHZ0s4bVg0eTw1aHtzYzJIez5yOExIV3ZxT1hgYWc/"
+    "anlQMCUqVTV0TCNpN2R0YXxvT1ohOH1GfCg7clZ5cy14Mj5AdyY3ISpJUScKICAgICdPbktLUnFy"
+    "N0Y0SFpxJWI0Mz5hdXFFT2UzdiEreFotekpZZjFzQn13ZGI/O3RUaT9GfCs7Q0crJEByJGRKbjt5"
+    "Jis1fV9oP0IwSSZ7cVQ7OUk5UnJfanNYXy0qTE1UMEd8TXNBJwogICAgJ2JUVnV0TUB5eDtHNFBI"
+    "PVVmVTNBPikxUEJre2lBYkxuO1hxVFMtPTkwe1pHbUxeMUlOXnsoTnc4Xz49JWdsWnduSzgyPEdx"
+    "JXJjZnZPODcyNG1meXp4NTU9dFU4OHdEbilOOzsnCiAgICAnQUJBXnQ8LWxWV2VkUkViRDgrX2oz"
+    "QWFPQTh6aF5gI2JuWitHaDVGO2t+diNhR1lpMG9LVyVBZmw0NUI5JWcxRUgkbzU3QWpYSXtjS155"
+    "WSM8KU1nflN0RTVOdkIySn1jYmt+cycKICAgICdnQ3h1XlYlWHVpYzBgVXt7MSEtO0skYzVNQ3x2"
+    "VWNuZmdONjZNUXhAVj9TIVhFJn1kZSUtNkFHRm4tS0JHQjk+TTdFJCUmM2ItMmRBWm5acksmJk0z"
+    "dUdVJVhOeCpmWW45dz0xJwogICAgJ2E+R00qQ3JEayo3ZUZ1YW9IeXJlV2REclI2UD1JYksqRXxL"
+    "eHtZR0B1TExYKF52TF98d2VTVHBndFFNdnZfZkhvY3AyQE1oYHs3aFRjN1ZyeiNgXnB1Q0grNWpu"
+    "Wj9lZj4yKEAnCiAgICAndnB6TjAkMlNsZ19JSn0zZEdmZzFrY1NTMSp1fXVAemFVfjZBKTlhQz91"
+    "NytZamA7RURWRDlRXyVYWkNIM2oxfmtpcmNOQk0lckNSdV5YejF7UzNYRCpPMWV1ZUY2cVIpOXxU"
+    "NicKICAgICclaCZ8fng0KjcrVSlBSkU9SUMmNiZOVCNjaXNIZzZxRzE4R0JkeCRqbEJYdTc8OzQ/"
+    "NkxaVmo1XzdwWXkhelBiYTMmYjM/OD9MTkhYYmVgLThxUlJDYEo5dUQxbWtoLUhnSSYmJwogICAg"
+    "Jz90MHA7QnxiNk4mUVc5dHA9WXhGP1BgRnh1eit5RzFQN3NsMUtXcEQhJVRZKDFBS1NRUiY4RSM0"
+    "eThTRT0wVWZXS3VES2xwZnQlZmFjWj0yaU5OVCNYclFDMz1TPTdHPGl2PnwnCiAgICAnSn1xeDxh"
+    "Xmg3aEFwRW9TR31DVC0jJShzU09ASStzMXtmTHxNJk9hZzRHQjhXRT5OQ3lzfGA0TT0oOV9hY3p7"
+    "Nlgza3M2SnAxYmNkbERiMmcxfUR1UzJBMkk8ckRWVT1pRHw4eScKICAgICdJUm5XRkY8WVNubmdj"
+    "az0mcVpIPDlSRWVVcjt1NTQkWHFPYj9gRmtjQWpnZWtuM0RzSjM7T1pMcXFIVThNU3w8Zz1kfU9m"
+    "Z2ZfdF5LYV5tNG4mcGQ1WHZeMT9JaF5IJUFiazxOJwogICAgJz5ALX1TQSV6ZkFjRWB+N20lelNo"
+    "V3Bpbi1qR3ZoV29PbGpIanJUKigwVHhlVFl+WUdpOG9Xdzs2UGE/bzZ5aU9xNzl7WWl3RCojNXVw"
+    "ZSFCTUslI1JgTmg1b3tEezJqWCl6TUEnCiAgICAnQnpAJXZabFI2PE53Qns1OStyU1QmYX19Xjlu"
+    "c35kdzN0MUhETHV6JUh6WUJveVdVdnY/WTR4REE3ZTxLMlFwfENiQW8qcllSdGJEXiVEdk8/YUQr"
+    "YFUtXyhQJExub0d8Q1cpeicKICAgICdqTFlVfF5EdWZZM2V3X3g5I31sS1E3fXdyVH1JfXdVWHdY"
+    "MS1LUmBOSktvaDdTYlIjPl9zOWVSQWsqUlQqNS0hTSlXe0x4dUo5S257ZlJLPCFASSNTQ0BQZU0/"
+    "PFQ1aytxU1k0JwogICAgJ1ljT14mRTF+VGlKX2RKX1Q4dk0qYVc+dV5NbDk5fjElNzE1KGglYEh5"
+    "bVBoPmY0PFh8NSgqfmNCRk59bj4xZzI4czZzX3QtfWtQSjJufkB7QFQ3KTRQZVNSQntFeUlBWmQ0"
+    "JjYnCiAgICAnMTh0K24zbVgtb0RINytCdH5+Yyh5NTVYVUMkUH5PWSYqeD5LTmhRX2Q9dzNFY1VC"
+    "NFkqd3I3NXZsXnl7dSRzNFAjQEJFJE1GS15GOGVwZ2N2YE1QJXo8d31kUCE2NzBrKyM3VicKICAg"
+    "ICctKUVPYGhrNWwqKVFOVThAK2RranZYWDcjVzR9azdqZmdXYiZnQzFOJF8wITFpVEVffUFgTlZF"
+    "cmtDOSpyMVBRXzFhVzBmREVeQlo7fTBZQiUtMEpZOC1eXntmayYhMWxOQnlzJwogICAgJ1VjayF7"
+    "eGZaekhsXylMOVN0VFIzaSh1YCZzMGd4SSRtb2deejNBbGdmd2cjISQ3YzFhZC0yRStTJVYlc2Vq"
+    "Xkg1cShoKjhfKDspRUtZYVk/KW9PXzIrN2lvXmkhYyZTLWQxPSEnCiAgICAnVk9rUWVAVj5SRXQq"
+    "UEZ6aVNuNzR3ZkV6QUxRfHpkU2RHfT1PQjliY3p8bUs4WWJBYDgpbWtCJlUxaEJtMFBWNkJ6RFFm"
+    "dk41JTEzVjVwKDJ5LXc+TSY5ZGQ5eWR9MXl4Xjd3KycKICAgICc/S01CPVY4SFpGKmk9YCU/bCFn"
+    "MXtfMkQtST5IYXU3Ump9WWYwI0whMig+bjswbiVEc0YtQ2RtYCg0VX1NRkVQTlh0fiZKQiZXPjlK"
+    "eih7VVJ2YUBpcHxIR3Y1TENjOHlOa1RZJwogICAgJ19AMGFkRFk4X0BXQF9FaW57dC1MN2J0U31N"
+    "RjhNYjI4blNHZXNkJlklXyh3Z3U+JmdsK2pVd0lyY3hNT3kmKj0wPl89YXNaOSE4ZyQ5eTk8TDdT"
+    "Q3deMSEqX1l6NV9EQWp4T0knCiAgICAnU016d3VxRGwmcmwrd2ckZHV8fClIKXtQTiE3QkBzJE1z"
+    "dHNVUDVRaWEjampeYVJXUWRvd1c2aW1QYDg1QV4hRn17MCtWfkQhKmIhenxGSDU0SEZ6e3BXUF4w"
+    "Zm1+azg9RVdeRicKICAgICc1SzlweGx6SmMwZ0M0fVJwRzhiI3N4PWV3bDMrbzQmR20+e0BmQ1ZY"
+    "THclOTBVY3RgNzU7UWw4UHFMdndIfnlMOFBSNzg1KSYxNCRIbH4hND09an04bzt5RGdpRmZYdTgh"
+    "SHdCJwogICAgJ0hmWjdCUCVWKlRlST9oOVpofHxmYjVhS2lGUHVRU3R3bl5hX21NbCRzUEVXUFE/"
+    "fDlYT21eQyZHSyprSE0wZSZQel92UUgqamNAY0dSXkRXaF51PFotUENCSWxzVCRTK2Z9OTMnCiAg"
+    "ICAnR3xVKWtTZHJVUjx9T2VwZGEkJEhFTCtyUWVpJipgVHVoOUopbDUqQXEwSF5hXnd7U1pEOUlu"
+    "KGppUz9UNlVkayhON1Q/eUAkZUsjOEpAQl5pb3g9eHgpblNsNVN8RnZKVC1VaicKICAgICd0MW9C"
+    "YSZQXzMyJjhzQ0RHKFIxcGwkKmU1dXZMNEpLezxBIXtKNX5haWpoUmNmfmRuK2pYYmpaZEFxTVVu"
+    "IX5IV01Aak5Aby05KyR6QzU+QE4oKUNtVjlpUW08bzBFYm1PYVVPJwogICAgJ052YzlMKV87Yz94"
+    "JTdaZyZTRW1KVDV2Xn5FSEpKLVcoY01FYExBTCFiRVk3eFdYNnNjTVomekY0QHh+WFIyKlo4ayE7"
+    "PmE1QXBpQ3RUSDlhcHZieH4mVE8jWiMlWC0tam9INDQnCiAgICAnS1JXd2hIYShJT2p9WWhGTVZm"
+    "SkZiZiZCTUNsUllVZnVncyNffCljeFNzZzx7cWVuak9gVyZHYklZcz9sPkBjbUpyeGF7TyE8YD9r"
+    "PWpAVmU3OF9ZQSR1Wit8TjxBaVE2ZiViYCcKICAgICdqPmFTdDlDR3t0eE5+K0VeMkxve3JgajxV"
+    "Jk4kKmU7JE8xWFl8QChRajNVKlgwSytYRkFxe3dEIWZ1N0orPTRfVEV5VVdTQmFhPVFSdXMzZGcj"
+    "OG9hcFoxQk43djZub1hnN1c4JwogICAgJ0lXOFh2KDtHPz1Le0t9UnslVk81bXB4RGFQc2hgJUlJ"
+    "KX5CdDxrYXxvSyFUO2JAWnJ4IXI8aGQxd19mMD89P1ZuRUFgYEJ0PnZhJnpjJVdTP0dqbHthXm9S"
+    "NEx5cXhIe3dXTVonCiAgICAnO3lheTA5YT9EQVhhVX1nTXBCSHwzKUZMcyM5MXR5LV4jSlE5UitD"
+    "Vz1pNmI2TDJDIUotRXMqUCElaj1KbGhKbj0mUy1ubkAwaXdBOGNxWWU3fCRCRnAhUmBucWNqZk1e"
+    "fU5GdycKICAgICdeZDgrSzlzUVZ6V3NHO0FKUG54aERXcm53OTNFdmVXIV5SMUYyKnFSaFM3d2g/"
+    "amdReVY3UCtLZnlKSDJCfE82ZFY+Sm1aVnpIS2Q3b3V5I0FEenlnTjJ9I0pnIzBAVU5Zd2FxJwog"
+    "ICAgJzR9aSZQO1RxRmhaJmhifFRYU2Z7QCtEaEFmfT47Y3MqKjgldGgtSjkkWkhqJmRYRn42QzNp"
+    "dz8yZ3RIKCp6SEpJP0k0dFBFUUk7VVptKFo2S0lNX3dyYmZ6MV5Vb184KjFZKSonCiAgICAnRFJy"
+    "ZkhwcUdrZGgqITV+cTdAIVA5TnU4WjdrSSRFSGEpfjA7OSsmQ0w9MDFRd21zY3JHUD58aHc1eT1B"
+    "alltMl4+S319b0ZJT0s9eUtSeUp0KWNkSnhiPFhpIVgwMXp5OykhKCcKICAgICc/Rz5uWSh7X2NU"
+    "NCRye0F3KVRzUDdOdkAjaW5remlNdXdLUWFTaT1BJTVANnp3RlFXLSR5YFZGXzFrU3xuLVJkQjF7"
+    "RFM1cW8qRWMpR2s+SlNGXzVOP0cjKkctQGphKEUhZz8kJwogICAgJ1pGcEdhZlM2KCE1IXtYMk0y"
+    "eT1PeXtTIWpWVlhrITlgcmAwc0M0OEdNNHBObHotQHhnPil9aEp5TUBTKSghNFpFezJHIUZYdj9h"
+    "SXNMIVA4Wkhfekg1O3khViFhezliNjQrakInCiAgICAnJT1ZWi1HSzR1d0ZYPGx5RzQ3bjZqM3JF"
+    "fSV3TXxVbF8zQ3pfbGl5JmhMJlljekMzUnxQJGEwVWVtaVJCeTIzPGMtM0laeVdBOEZuWWJfVlRz"
+    "aTVePT9lWHMkVkdwO3dTMldoIScKICAgICc1ZFBuZCtOOE0re1gwTS1YVjNfM1RCalNmaTN9IzUp"
+    "VURnPG8yezIxNy09an1SbTBWNHRrM2stPklEbmtwckRJSHc+RjJDRmBNalc9LWhGRWxKN1NzcCM2"
+    "bGRpTig5aHY8WHJfJwogICAgJzAzdyspYjxwRFI5dVoxeG16KjRSLUtKb1djZEBrKWdqSHdzYmBe"
+    "Nl5OeyNfMVFveWRWSzRxUUlkOXheQ0d0PWZ1PVF8eFZCbTtLNCY8MHw+V3UmLXFfUkxwMDtGPTAm"
+    "cG0oY3UnCiAgICAnSWd0cjtKSUxUcG1nT1Ihbmo0X24qfihUSzBGT2UwO2ZART12RE07a3g2OVd8"
+    "KF5mZnFgVEMrfVYpKEpsIyFaPXl4eThWWW9Cd2RpcT94WWoqVU5eaURqSEteUlYkTGdtfV8xWCcK"
+    "ICAgICdfZGZuIyVFQCYkJwopCikpLmRlY29kZSgidXRmLTgiKSkKCmZvciBfbmFtZSwgX3NvdXJj"
+    "ZSBpbiBfVjUwX01PRFVMRVMuaXRlbXMoKToKICAgIF92NTBfbG9hZChfbmFtZSwgX3NvdXJjZSkK"
+    "CmZyb20gc2NyaXB0cy52MTlfdGVybWluYWwgaW1wb3J0IGFwcGx5X292ZXJsYXkKZnJvbSB2MjMu"
+    "cGxhbm5lciBpbXBvcnQgYnVpbGRfc3BhcnNlX3BsYW5uZXIsIFBsYW5uZXJDb25maWcKZnJvbSB2"
+    "MjMuc3RhdGVfZW5jb2RlciBpbXBvcnQgZ2V0IGFzIF92NTBfZ2V0CgpfQUNUSU9OUyA9IGpzb24u"
+    "bG9hZHMoemxpYi5kZWNvbXByZXNzKGJhc2U2NC5iODVkZWNvZGUoCigKICAgICdjLXJrPE8+Yk9E"
+    "YXtNYTtvIyFBbipgKHdmTjl2c3NSeSEwWlheSGlLNyEyU3czPmZSZipmKyFmLUo7MHVlamt3OzV0"
+    "LUgwODFQfVNKcnZvbXMkTiFBV0BLZEtGYVExR1V3YH1rJwogICAgJ0FBa1MtI1hvKWIlWm1AIUEz"
+    "d2dofE5ncmR8TXVIfHtMNm5ue09JOTd7XyklSXxOaSY/ZGlid2pVaXxSK1pAKyVIeT9PaWomOEhW"
+    "JXteezxnLVN4d1YmQzQmcF97KW9yeVo3Jj4nCiAgICAnS1IoLWp7cWUmZWVjYktkJmk/OEN7KHJ2"
+    "elp1YXpfWipEKlJsdDJFYmNlbEcyVSV5bFJeemlLS3BXcHJFYHM9e24rfXU1azdXflZ7cExWK3NV"
+    "O2t9MnU4JWpMbSplYGZSUFd5VycKICAgICdgU1hZVWNZZ2lDeVdQaTZrRG1AUm5TRVVSJCRXMEJy"
+    "eWhVJWFjR09AUHJqRXVfbE04Iy1vTzN6JWUoI2JgQyhQJD1SVXJ3I2Q4OzVDZThjKF5fIWhLWkQw"
+    "aDtaK1FDN3BGaG44JwogICAgJzg3I0AwWWhsaiZVeWx+fWBxUzw8ZEIqQmhwPFQxejBEc3hOenhm"
+    "IygrRz1mc0AkOSRoV0VtZDZIVThRMXI3OXg/VGxEWkVwaVJPakFJM1VhI3AlYmR0NFE5QHBCX2ZH"
+    "Yy1aN1MnCiAgICAnQ2VKe29uQSpRUV4rIVdtak54Yms9X3tIMS1lTGlabVZ5amNVVlplN2sxSmZh"
+    "aXAzV2lGS1k3N1hzXm4qJEtpWFgmcHNVOEBDe0FRaj4mantMRiQ3NT8qJG5OZEs7X0pDfnhFMycK"
+    "ICAgICdlSCs5fCZ9JikjJDtjTjNqZjE/UCQzSDJLVihzRmJfemk4ZUczNCg+K1E7bC1NPkJgWmZC"
+    "M1klMTVkb194ZVl1R007VXs9PlhXQ2FzfTY2ezV2I3M+WX5kMDRfYnh3bVR0ZU1OJwogICAgJypM"
+    "PU9xbj1INi1WQz15VSVidigmb2NuKGt6WVh+bSRGSkRgdE5MWChAODlwPGVFUmlJeVczQ2ktb058"
+    "al48akpiTGoxZGAhTkd0aWBwU2RIdjsybyhIfTdNfSQqKF5nRGZAXkcnCiAgICAnMWZTcHorK0Q5"
+    "TlZkNHZ7eW0mRnAlez0wRysxVSFqISs+ans5Jkx2YGp6WUhoRyM5NnhLNUBPJnRzYHZtYnRmSjtK"
+    "UXpreTtkclYmbiZ6bntGZ2J0KisjVFVEdXstNClDZzxNSicKICAgICdgKXxhMUpre05kdG02Tk5y"
+    "Zz0xYF93eE9CN3BWaTJUdEV1d3NEVCMqRzkhMG07XnBRcmgzO0lmQU5LT1Q7QnReaE9PNmU4NlBG"
+    "TkA2MGI8XzIxZGluTS0mYDhpaUFsYz0xYWNaJwogICAgJ3hzQGV7cDdmQ009UE01Myl2X3grMWJj"
+    "S0E5MXArbFF7eEY3eldKeD8rck1fdXN7Q0NYdCowTFMlNVVXYGx8SShzeXMjLWdyfihkQnVyWCR7"
+    "cHZZbCllUHYhfFk5I1FVeTlrcUonCiAgICAnWEhGX19sXnZyOFl9diRjIVUhVGFyV1pvSzg3NT8m"
+    "M2Ale2tgUmJzZE9XcyglP1ZjWkx2T1RvKGZtdldUK295aEh7P2dlUFNDRl9LbnhCP0Jnezl9VmU4"
+    "RGtLKWN3TnZRemh8OycKICAgICd6TzNQMnBtIyVAK3hjeW9wNjxzYCE4cEc4eUlleXVPNDA9MT4l"
+    "enVpdU5veyE8WHt4RDJrNFRZckZFbSh1RWBNMj9NNT0rbGFKe2VEY0IkbTkpY3hAKldOJkxnVDUk"
+    "bi1XcTxsJwogICAgJ3h+JSQqNDxDYjs1V31aa20rX3BsYzx9U2RYJT17cT1aUDJEZGkjQCtXJWdO"
+    "RXF3dFooUGIqdzlhJlNUbk4hb2FDWipNKjxBRmFBcD4lO1c/LXR9dUlQaEU0fE93WjFWI1NVKTsn"
+    "CiAgICAnWDhxbEhpO0UzP1ZlejRMX2pwWmI+cElOYVp3X2hKK355JiE+VEB9JGJ5T0JeeCNNe3Yh"
+    "KE5pTmtLUnN9e0F7X1olT3YkX0FVNEshRXJYaXlpJnglOCFBWE4yT1Z1QU8tSX5XWScKICAgICc2"
+    "WnNqckZNNjcyMGVOYUNVP1g0YGhVS041OUErTEdMWUhMfSFqRUNJIXhmVTY3TSRHQihDfXo/XlZn"
+    "MCE1WD1UdVBZUH1CJGdVdE93OVBFWShSQkRzNWlMfjc1Iyk9ViQ8KSRKJwogICAgJz8jeSFKOURR"
+    "JjVFIzszcWByZldiMkUocHg4IU0kU3tTZWttWiFwcXM5TzlCe1oqJTF3WnhrWCgxZXFQaWE0KSN3"
+    "bn49PTZ0VnJucnk3MDYrZH5kVkAoUnJ4KCZvWCNEQjNYWD8nCiAgICAnNHp6QCQ5UjhTVnNiQU9t"
+    "dEg5WFZBZ31tJUslenh6QilKTmhoZXIzR0VDKF5oX3phcGxEanpASFVmPXomeVNARko2TDt8XjUx"
+    "QX1Qc0NjNT1DOUAqWGVYPWVfZTFzLSh5Yi1mKCcKICAgICdOQTtmMlNyM3pWaWlTLXl0RlMjYVhQ"
+    "KFllV2lBQT1tWFNESFRHY1NNb1I7Xk5yKH05O25BcHpFR2o/eT9MLTs4SDZrY1d1aHFEfClOTiYo"
+    "bGJua0JPZV9ZTVYhOzNKYVRTPGFaJwogICAgJ1FrRUNTbXlSKShpSyQ+O0JkSTxLPV41MW9IWklq"
+    "YiZXYDxqJT9nOW5pMDxJeUQmY3pQMFY5SVBScz5II1BjOSNpNGo4bEJAdDZfMHhxMH01diZ7Zl5O"
+    "KkZmRihAI2U4Y207a3InCiAgICAnc05UTnRMPjE2bUlLRiZ7b30hIV9LRV5jNGRNPmFxMzh5MENL"
+    "eVYtVVJ5PVpDMlNUYyFSOX1PTEk3RyQqSnl4aC1xNE9MSmhYUzdCMGFwazw2cntDLTA4Rn4pUWF1"
+    "S0VRcTl+MScKICAgICdGcSpZfkxRZUxubWZOTj40TSlxKSo5KFEwMXlYUnxII1k7ZSRaZGthdnsm"
+    "TD5AJG0oUjR0YlhnP20/YStrcTxwUm1QQlYzdSRTWWF2WkYwbyREVCt+dW9vNFJORmU1YzM5fEdZ"
+    "JwogICAgJ25jWHcxKUwzTDA9eG1ZOF85ZCRqRURrPUFFVTZqMnBJZllSe0Y7TmJZXkwzXnczR05C"
+    "MW5HaGI+PU5LUkJ6em1wPjwrMTlFUDBSPG14QU9KVlVxUWFqK1JjczJAUmsjdH0hcCknCiAgICAn"
+    "KFJVYVkjRng0SHkzUUptdVglaUNqNzY4MVV7UWJYaT1AbEhRSGk/dmMpVzB6dTM8fkBmOzw3R1lu"
+    "Sn1VSyNgMzZhYT5GemtGd0FlRDZuTjZvPG5fend3VDhkbTU8SDZuXitNVCcKICAgICc5KFRLeEpQ"
+    "YklsNFk4U002JS1+NjVRJlQ5Xkhybz8xKjJKLVA5cUwzKV54Pmg2fmI4LVN9fH15UWR2UXZIY0VD"
+    "MT1tb2BVZ3c0JDYjUEFzU3RDQ1doTWpLJmVIfVUzKWVOPVcpJwogICAgJytyaV5fNylnbE9rSVZo"
+    "YC1IJSNlbWBVfFBsbnhKV3cjfkFscXNobGY/cU5WfDB1SEw5MX09TiY1UlY+IXlienRXN15ZQzYw"
+    "IWtsaEw/SWE9RzB1WjQodXQkZz1+QmVaaWFyTHMnCiAgICAnUiNDMXwwZWhDMmtudzdNJmwwSU9x"
+    "VlpHSnhUcW9PJClEZW1MSlRqPFMwKHhLITBSMGxDa0pVKFR2X2lZZExCfmVqZyZZcHZkcUxQIWV8"
+    "aXZtQi1+alB4Mip5ZEg0UiRVO2g3NicKICAgICdpQlFvVyV+UEB7Y2RUY0pwVDcyTmxkWV5uNTtQ"
+    "cGtMXjxnREsoSFo/WE9tMVkrUjxkdCg2dTNCTWhlJkZTUTB3Z0I3OWdSZiVsc25VITlVZkpzUjBA"
+    "PyROJVA0OS1kVT02XlEmJwogICAgJ0p8fCg5NjJxfjdocndaKW1WeEhMdm42bX5HdFlkTDhqaTkq"
+    "WnQ7PiFBSVFaSDI8YU9eV1p7ZFFfPzZsUSY0fj4keEl6THd6Q0d9cCNGRilAQzgyZHIwe1BJMkFs"
+    "I005Yz1sLUYnCiAgICAnSyFZc1M1Rm4lbkUzbTUyMmZSM01XcyE0QnAzUWZ1eVZAQiEleWQ5ODgo"
+    "N2JYaUUyRVVqZTlPPTVEfDNra2ZGZjA7Mm9QU2l6WCpXJTdASzRUK3owWkIxJmB3VkVDMWpNQ2h0"
+    "QCcKICAgICdgZkk+REw2LWdqO3MrcWxpPTlwNXQ/UmZxa3VZSFNfcDBJNkQ/U1l6MG9+N1hCMz5F"
+    "e2BDQENHUWlZNz1ZeEZuK1YpVTE8YmBHQ1JlNEl1LTx2Y25NaFdgNCN0KD1FPmBUZXxvJwogICAg"
+    "JylebHdpMC1lPHw+aWMzPmMtRUV9eys4QiRodi1rWmxzV2t4cUF7PipsdCQ7ZVA4cHRSTng8dzko"
+    "ckRIVDY4bld1P2k2VHs+N2VDZz4weVl5WSVmakxrclNIQlJIeS1sPjwmWSQnCiAgICAnalV4VHYp"
+    "JCRmK2U2ZSRxMnpEZTxvb2VvPU53QUI8N3MxUXZrKFUhYW5vN2lHZ3wmMTxndSt6akFtSW4yQmF7"
+    "OCs+ZCtXUE43N0Mwdj1VWUQ7bk9mTWM7TiZ8OHJ0bTNwKHgkdScKICAgICc1bHRSU3RlVHlTNUxS"
+    "TFZFbklkdTV8V0dTM3hQdHwyVTtxdDB2alAxM2ZJN0BWOHxFajFZM3c7RGdvQWB1VWpqKT0zNTN7"
+    "K0c8TlhHfCFSSHopa145XntqWT4rI3BHekNKOTlpJwogICAgJzckKClKQyNWJXE1RU1ybm18Myk9"
+    "X2N9dGZEJU1jYW0pb2Y9Knh1SmA9SWRQaW1OWk1oQU5vbzhgMkhzckE3TFlHX21oK2QpeGpGLXBn"
+    "Tik1KSM2SkBRbUl8b1UjbG07QTZhT3snCiAgICAnU3Q8PF8rYWlxZWo3SDlFWHsoMHx7KGJaLShh"
+    "NysxczA3VyNnfD4xVTBCe20ya31MVjQxRClyb2FyMzM4TExMa2h7d2B2cHFTcHtvZ0M7fENrWnpM"
+    "SWc9MG1aYUdzWUlqbShGPScKICAgICdlM15XKj90RnA9PEkkN2NidXsqZlZZZj1udmd1OWFHJGgo"
+    "byNRNEpsekVnQWI7Wm8oLTJRZFI8XjF6WmVVUkQ4JU08SERmS29BUCY1NUZNekdrQXZgbXJjaWF3"
+    "ZT5rR15GaDxmJwogICAgJzJRKUtNa3ZMZnpBJT1wMjRDVFhza1c1aCo8Uz1RXmRJOSVOS0o3cmJs"
+    "OzB8STB5VUspTDRMXykxMTVfMk9aSUgwWklyYTtRIT9MM2FVQVQqeXZOI19tKW92QWtOYXxTOTdr"
+    "NVYnCiAgICAnO2Q/SjlGP29tdC12ND4+WCExODtSPElGRXdCMXNzaSVGPnNMSmp+dnFuWUlTLVg0"
+    "KURyTy13bUhEVzl2Q21PNF9sZGFMJTFaMU5JNUctUHdhe0VBZ29mRyM9PF9NfEVxdldYVScKICAg"
+    "ICdxKGRrZStRPzx8WElkbGhobVg3ViZDU2grMCU2TChUI3k2d3ZMaXZoYUkkYzJKIVIlPnpYZWV5"
+    "aSRTJilXbzlJKnhSd0p7Mzl4YnIoPjcrNz95P0NfaiVRWlk0JF5kNEMzdSV4JwogICAgJ0FJb1hQ"
+    "Y303XyMqNk1CM3A5YFlARTBrb0NtU2RBP2kkYiMrRmpwJFdiSH1MU2YrMXsxOU0/O0dYVHIjZWp4"
+    "QlA9U0g2O0A9QTdgSUo4dkNNNFEpcm9na2RgWSFWIyVVcXA3biYnCiAgICAnODxPUUBESEZPWmBa"
+    "OzFramgjcGZldzZwalk3JFJubSZ8fk97SiRqNmtAUWJLamk2KCRmc3g7Z3lpWTYxP3dLZDRSbkxR"
+    "UmN3e2VEWitmfmhwTzRWUlN0fmduTGtTRmMkOH1tZScKICAgICc9TjhENXReOVVwYSNSeGN0QGBx"
+    "aTlpblo7STtaQ2B0bWcpdXojZ3dOTU9ybENxLVR6amReVEVNK2NzeCFFfWRlZk5rKXhVYnRXPXl5"
+    "cXJ7Tjx0SjJoSSYkfDdWKz9YXkRhXnlsJwogICAgJ18hIXhmSCVsc0MhdGgjUnQhckBObjtTNGR7"
+    "RHhafGE/fXkhNndgV24xZSsyXjJaRTx1OzQheTNOWFRwSF4mfThrT0dpUUcrbkoqdUdMSXFNeEcl"
+    "cG9qVzZOPjV5Qk5tO0IwQ2MnCiAgICAnPzlhOFJITSNeRkVvZ2Z2T1Q9SkNSZT1nMHQ8d0A/SShL"
+    "PE44STZPJEtJYiFWYClMKW9fcFBwcGghZXNJKTlAfGVyQ0dtcVFjWlNjX2crc0xiNEVqYWRlKFdo"
+    "Y2wlK0F0P24wcycKICAgICdjWjVyczZoZHNsPXZpJFJMemctb0x7RFYxMjFMXjloTlc2IzxRXypx"
+    "KlhtdjRDSlVRcGJyJW5mXlRISnBiaDRSdFIzQ09pM3NqMGhqVmh6RWE3JU8+U0YzJEMhI2Nwcisj"
+    "R2xnJwogICAgJ3BnNkNHaSYpVUlRU349em4zQH19KmsjUXY+U3BFOXRmK3JJKSMzdW4jd31jQVVx"
+    "ek5Kc3pmaVN1aUFLXkoobVB0Kn1ZUWZKWiV7O2l+NXA3ck1SJTlqMT48RWZldEV8cUd7WmUnCiAg"
+    "ICAnWSZCSlc+R1c1MXRQaiF6b0cyUk05QD9UNj9HSkJ+YlkkI2ViKXQwJDJufHYmbWYkJFZVcGc3"
+    "ODBIZU4oWnYhd202P0Ria3kjO2NVRzt+dChwakpDM05XezNuMFhpdFVsazFNRycKICAgICcqZ0s5"
+    "JTdoMkJtaCVyO2ohd0JrKi1JPFRISjlOWndpUCNVNW0jeU99QEZvdys8dyhuaG8+eW5+cTkqRkxC"
+    "d24zT3UtTHd7N3RGQS01YXE1O3oxV1VuNlhGJDFNdzJYaHFEM04/JwogICAgJ2ZkKGB7JUN2YGRV"
+    "T0ZPMSFvclptSCVNS0NsSkdIQVZgb1RiNDJ2KntkfiVKajszKnxwJX0mZz9oelVfOG4xfmxrKW5n"
+    "PldiSHd7Ty13SkwmNmRfcFI9UXxjMXM0MnNePiNEYjgnCiAgICAnRSg8NDxrVnsrVysoaCNmVX50"
+    "PExMNzNLK240MnIhUTkybG4lRHxxQGEwOCppZEB0cXxMej5HKzNiLXRaWiZufTN3XnpNaTVfUWg4"
+    "NDZEY3xzSU1qNnkpQi1EQlNtJFEqVylLPicKICAgICcjcC1LbmtpfEQ3TFBYZERGMnN2Y3tRKCgp"
+    "TXI+KjNjPll9X2ppeEJAK0EmM29KRFBZVD5ZRlBaPlhpJD1WM0dqbzhjZ1lRYzF4eW5teSNOPUlV"
+    "cE42Tk9eJklUWiVFXiRTdkwyJwogICAgJyg1aClyU3B8bDk7dTFKMlBtaj45RHBRTSRmUGpeVG4j"
+    "Z0xHV1JxPWQtJGJfeis3OTZpI3E9UDhgczdSb21OZGhDWStNZXw8LUtrYV4paU56cChffTIjZ0dg"
+    "ZTgoRTZiej12Sz4nCiAgICAnamQocWA9d040THVgVjlCN0sjbHJaWFNkWTFtdU1GRD0zMy16Rjkw"
+    "aUg+Xk5Id3tRSUpXZ0pOQnFGampLOEdNNm1JfDgyKVFUeVV2QiZKVDlNQzIkcVAzV0o8PXVIS2pE"
+    "dWlOVicKICAgICctTVhBN0QtO1ZIJDxTOyVKVEZxJSFhOXhUd0coNm0lMGE4PWt0NFYmSCphQT42"
+    "MT1aaHM3RmgtUDIobiZNYGR1KFYkOyN2OHAwZmBeU1JQSm52ZyN0bzFVQ1E0VGNDSWdEYEZDJwog"
+    "ICAgJ14mTysoREhxUilydnkwQSl+MTM4UlZQN1pnczklVTttcGUhYj5ge01GMTI7Z3JLcDF5SX5U"
+    "bG8tWiRHT05FNXlSPjFidVcpP29Cd2g4JiNXPSYqO2dPVWdial8hO0s2SmhGV3EnCiAgICAnRDwj"
+    "RWkzNmxBNFlMaEpaXmZUdHQ/OTRVJERlMlNWT19sa3lhXzFrTDR8SkptbndSZSRqWn1XJnVtQHQo"
+    "T2YjaXFnVyp9X1FOQmRyei18PFVhfEhIbXEtTz17NSlYWCElenZYVycKICAgICdSK0hqXjhIbnpf"
+    "aW9gbypMV1M4TmoxaHghJF8+LU00ZnQ3aHolT2hIcVduJTtNJHVjbzc1I2dnQnlAJU9QNjthRXY3"
+    "JiVwQi03WHhMaVlpUXgrai0peiQyaHJnY2FJZnpNUVBSJwogICAgJzFGSGhAKXFQNSpIM0BvaVFL"
+    "K1B1azxnbHs3dWhtTzVtREY4YjRfQUAjbFNFR0IqTygwZzNVZXFGKVc4T0lGNm0+STVKbkNAUUBU"
+    "OzBBMllmUmhgYjsjMyhnZUBfcEBnUSVtKG4nCiAgICAnMiFrNkFwUkJybENwJnJ+UihTIXYmZSpZ"
+    "OFo/ckNoT3xfQ1F4MFBXOFNEa21Acz1jODhfQm55NysrcF9RUGlXeyNJWU5+LV9ZMWt8SVhkejUh"
+    "PGpuTEQrcCpeamFWLUBsWFVKWicKICAgICdEQ0E1TlNxTS09ajdYPDZGWHhtdXMmWXZxeXpLfGRN"
+    "PCpFfkd7NXtQWiZXSyk8eVMyPkRUbTFoRWpxMFRoPzJRRW5jUj5gbChyYEtCamlmMD44RHhyPWpn"
+    "KjBTezNFdDN6dDQ0JwogICAgJ2ImZXVrcVlAcEk4Xkw+cGhaUThXK3RlfH1rRCFaM3tPLWA4Ukhg"
+    "M2FlclY3JF4xX29FYFNoTj1oJkBFRHBlNEcjN2YoQEZwOCFifndoM2l6YzJUZHRWYStyeFEhUV5G"
+    "eU0jNFonCiAgICAnQEV+UUJfdzxSYytjPlNrbFBWM2ExfGNAKEh2dV8pKio7TUI/X0dZd01yPihu"
+    "QHZLNTdaZmBqPGJDTUpCWVp5OWgmfXktb3Z+NUQoNjRqUThfOzJqKzU3NihyI3d8R1BTQUZPMycK"
+    "ICAgICc2aTc9NShrR0tfTU1CMTJqPEBsQzRFSEI1Xyt8MndUNCllcUBodTx7YVZEJTJxZW9vRCVu"
+    "dzx8RTxZYndeLXh7YHVxVT0kdXY2fUojVyFJb2tEej5WZWg0dGBXIV5lN0U/WTNWJwogICAgJ2Zq"
+    "eSM4K2RwYSo4bVV9Q20xJkB8dWQxRlNzU000XiMhOGJmdSg8PyVVI1VFemEySnlGR1kkQnU+SmR6"
+    "VD88OUFuTEh0SEhTJWZSKGtrVHA/RFhKWTY+IUYjbmVqJTE+MCR+PW0nCiAgICAnbH4lTmZwJUpn"
+    "a1NoNjRXXyFMMiRhV3BqaDQ7bHxLazgyPD9BajxOSGpBPFFwN3ozK3YjMXJlYEZrVDdZNEUxI0Fg"
+    "TXItZ1ZTZ044STVYUFJsQ3hkd1NtVVFubTEwRH52MnxPWicKICAgICdGY1RFUl9PMVhPXzV8P31N"
+    "MCM3b2xZM1ZMcX0tU3hTaChuJTtAaWI4N1pQMFVnZUAmOHpgNWNfLVBrKikkUWwrNW5GNT5eSjRp"
+    "RCt6YyVodCV1cCNQUU9qTFZ6KzdVQVlJa1o9JwogICAgJ0B2UTRxV3gmeUskalppe0A9ZCt1d1Va"
+    "ODdOOCZSYD1hUXdmTHcqfW88T3VpZUJIQiRAMH5RVUxrYXI+RGhpYiY8dFdtWExvezkmKTRFTUp2"
+    "P2txP304UGIqKjFib0BsdnF6JU8nCiAgICAneHJNPjRFO01DPm0yVjV7ZCktaUpGNmt1a1dqV0Zv"
+    "XkJLZm1VUkEkJkFBaTA0cVhKTyU4YSloaVctdH0wJHd+UThLcV5VRTMjNC1nWiRHJG9hSjVncTFP"
+    "OzQ1KE5aRiFfUFo+dicKICAgICdzbU5DbUVJSjkyem5MLX5YXmtTIVZfYlVLKD0xP2xTMSQ5Rkwr"
+    "TGg8Q0Rhb19xTEd9PjlNYTs0bTNVUz1LYGs3NHAkZk90UmdQRDI9N3ZyVnV9KzN+JGQyVzBMWWVz"
+    "cyl+Slo0JwogICAgJ0hQWlY9VSVgWn1ES1NQIVBPJiQpZD4xa04hS3MtZDFkPVd9UWRUV3E7TD5U"
+    "Y2Q3NXVGR1VYJEM1P0tzRyl7bD0rZlBePXM8d31AI3k8MzxeYElJcUBITjhrJV9ZUzMkRiY/P08n"
+    "CiAgICAnTzxFMSEoaygqOzsjdUQkSTZhemphWEoxJlpZMHU7NXpkNX5wRCFQaz0wX35MM29uMDtA"
+    "MCRjfnJTWktiSDt7Rys8SVhOTUI/PTtEJV5ncUQ0Mzl6a2BuP0d2KEtYI0ljJFg5YCcKICAgICdx"
+    "KHJvMCtxYHRCYS1CVFVWNStnUzl8d1U4UUxWSHJMQ3dqQ3A+WmFpKHlCJG1gSXB5ZjN9dlBBTjZi"
+    "eFhlOE9vaVVISSt0anwwRTBsKGI5P2p4ZmVfMUBvPFQoQmxlMmh9bXVHJwogICAgJz50aGthV0lo"
+    "P3Q7NmgwYDg8bWh9ZldTRU5pJHE+dkBCcT4yI1JnYlV5Un1yeUxhQ2NWJlIqKjJIZkc9Pj5SJlJK"
+    "NzE4TUkwUzV1KjNIQFVsYXVkSHQ3Mz5eSlQ4TkFhP01LQDYnCiAgICAnWG49Wld6MmNjTiktM3RY"
+    "MHUhWU1wSHRvJWdKSHQkZlZ8NEMreXw/QmFGfVRYbUQxfXgldUlSNmB3WTRKNEIqODNyYz9EWGV5"
+    "Y05yaUFsaFcmSkIpeUdeKjdoKGU5WXJfUjYmcycKICAgICc8TVZaemc7U1A5NVJxbFU4JFNXRGQp"
+    "Mk9pRz5rIXo8bmw5UCVGfCZ6Rl59PkIyczZ3QGFrfWNSRShiV1g0PlhIRmQ/OG0jUHZ+eiQpQnRq"
+    "ZGpuJHN4MWYrTzRkYytoJGxxUVZCJwogICAgJ2ZhN2NrQk9XNzB1Zm5sSWB+LU9uS3wwPGo1WHQj"
+    "TWl9QVZ8UDtsQkNhUlcydUZ1Q0tOSVplI1Z4d3RQMlY4S3Jid1VTO014QExQb2tzSjtgWkpyWjtB"
+    "fXRhRmJtWT48cFZEc3snCiAgICAnVGFxfHV3NUlzZl9JYGtOU1g/WlNFNE1URFFRbCNkdWE3JTtC"
+    "NzM0dGxRNklKYzYqMXI+WHJRdCg0cUBuSilBYnlhN0khVzNZNmw/MDI/ZGpBZFU+TG01X0wwRDQj"
+    "X08yZTVyZCcKICAgICdgTmpZcGxJNnJzTXplN0dQQUw2ajVDVmB4dDdBZ0t4fFdsdFE8YWwhM2I/"
+    "YylXc0NRRSFsb2gtPG15bHhDV1hmVjVaWk1LUzk7Mm9Vek1xKD1NYG1tYy0lTT9FTlQ1dHBFTn5m"
+    "JwogICAgJ1FTSjQpP0NgKEJ0KTtmVGwzVTcwK28jMXhoKGdXMDAkU0xOVEtqcVo/eDgxaTRFQURm"
+    "Ulo2Qkk5bClKUyRkXyhwSCNkXypNSkhrK2tYeyVyPiQhO0FkUFgtN2NYaEhGdmU1P18nCiAgICAn"
+    "JTwxVUgmZWZ1fEQ9LSY0dz16cGYoT2MzUUtgelY3PCQySUVKTUFpK0dVJU9nRygrcGZeWXlucGU0"
+    "RXNfcyNZbEVUcUIjU09BWWAqeC1ZR2tjQ2VeWEh6QlN4I018VVR4ZjxRdCcKICAgICdkWUs8MyVW"
+    "NURsdVJzcUllaU0ka1d6bDVxbE0+N0V3OSomPVBMczRjeGlDR2FIRXw4OGw7Ym9PZCVLRlV3YEx0"
+    "P3JHQWZTR2JWMFQwUnNzRFctKU9pYUwoTl44ak1gcjQyPjNAJwogICAgJ1MpJVI/e09kfUF4I0Jy"
+    "bW9vOUN2LTBgR2ZvbWdzXkZ9akBZWDQlJUd5IyMzODJsMXg2WUJNPzZwMHVoX0d8VzZoQTAkNUdZ"
+    "LU13VSNfPD5fMF96eD1NVn5pQlgmOE93WmRkSWEnCiAgICAnTGhAdnAlcEZuNGc5azNVbCpkPTBN"
+    "OHpXc0NRWjNRPyYmO0E3SiF4MGlTezN9MyE9Rm5gaDY7PVNranpGMVMpeE5sSGRTZitlcSlyU1oo"
+    "LTZCRk53YjF0Yik+aldNT2ZsJUllQycKICAgICdBaVEhZUZUTzh2cXVSWXkoMXU1TndLaDVrPEVG"
+    "LXUhJD5FKTJ0eTJ4KXZpK0pAe35xLSp6PnpsNjd7U1VJKUVpRS1GcCEjek9jM1ZJJHNUUHhhPH51"
+    "X0IoS31MKmVsRE10TnNvJwogICAgJ3IlYExsTjlNQGFrTUVzcD1Ee3NTeDJgZmtRPWdxVzg+TjBZ"
+    "QWUxX0l7fFpBUm9mWT5sPEBOdEBTe1clUiE/KFV1IzVma1V4YGM/fCo7eT0meFhgXiVmaUNJVDNw"
+    "ejBlPXBYY28nCiAgICAnTlkpaWFCRlN3V180flphVz00Kn15bzZEJiZrV0pCTkwyeUBwalZ1SlJ5"
+    "ck03Nzsye3BZVFVGanEjKyl4MX47fS1BWGNZM3VfN3o0Nkl0e0lTWXxHcE58ekNzJVhDdGY3VGFt"
+    "QScKICAgICd4Sm52VTVjenZpZEJpTXotM15BdHh5NCgxa0k5d01PMnVhUl9LKiNyU0U7LUg4TVN7"
+    "PnZ0JHUyU3dwTEUpZHoqJG42TSE+O1J7dDN0ITU0VmopTm07dlF8ZH1MZXdCZDxCMHl6JwogICAg"
+    "J3RleFh+bmhEcytaQUF4ZEJCPVReTGpYZTlsTXVSKl5RRy01d0o/ZWgmSiZnZGZ6b1p8dFBfWjFN"
+    "bm98dTtwRE49MF9VUUNecFQjSU4zb3daJUUxJU5ISElwZGRsTEs4PFo5NWYnCiAgICAnYG07PUUl"
+    "K2FeWXQwc2RrXlhqUXEqKz1ZLT1mRTRoekU2ejs2VldXTHktTUR4YTg/YHtRTmpeOGxNRypnM0xD"
+    "WHQ3YkM+eXd4KllaITcwb3g0TEhWKTFZYjQhMTZUbEZtQTF6NicKICAgICcjelZCbzZ0MzAmYCFE"
+    "YW1pQmoxZHZMa0ktXmttbUM5dng5IU0xYHRSP31PVDMjYUJeO3Z8WU0kI0RXdilgZzJibXJDWEU9"
+    "O2VxfFNkV0V0P2tLVjs9Mm9uVCklTGs4IyhzWm00JwogICAgJ3NpZ1hBbGN1Nz4oOyt+IUtCJHJa"
+    "d3tSNnQ3Tyl4YCREWmM9VkZJJG9TIWJnND1CYz9HalN0VUM5cVdqeTFDMEhGRUdrIV5eMSFpU2F3"
+    "e21acHlJRSFLOSpGJlB7M3FjSXtPMEcnCiAgICAnbTMydmJDNlc3fVMkciRxZVl0fT5BdCZuNmc4"
+    "S1ZYNTxTPWs7Wispemp0Uy1BODdOVWExSlF7PWFRV2ticCYrUndHej0yQ0Z0RzA7RT44bXdJJn5P"
+    "S0N8Wk9EY1UtRWJGMH55TCcKICAgICctfDJlRHZeZnB+VDV4UUxhJjNmSVhlNFMtO09aVVdYakNr"
+    "XyY/WCRKSTQkOUtAYFlBKkE5Sjs3LXcqUFYoayYlbVY4VjRMezdQUXh2d3tnV0ZIZjxYcUgpNC1F"
+    "T0AmKXBjejFwJwogICAgJ0MpclNXeGUzdlM2YmtBfD1Td00kUkxFISkjbCZLKTt7QEtHNClFPCo1"
+    "alVzN2ZHRlM9UGJGYThPfnxWZUNiUXMjQmBfdHhYbFduRT1NO1g2XzFKPVoyU3ZFX1pVVVBPSSNS"
+    "emonCiAgICAnS04qJCZwdnhhV3pKeyR6O3RMdlM1Wl8pRWczRHo+JCtlJnhiVn0hZzJQX04lQVIw"
+    "SVE2c2VqU2ZTQXFWbjxwNHYqKSZ6Ykh6Ujc+SFRnRVgkVFlNP0VAKSo2WntNLWhFQ3JkeCcKICAg"
+    "ICdvKWwye001bz9gZFEzR2NWIWU/QEJ2Zzs0IW5oekBfaioqRlAyNDRAcyhMez5sfFkmdWVPQ2lH"
+    "MyZoU3lNQ29weVNkeXdDOVU/Vml5Vk9vVVNaMmUhVS1HdHUla0oyKDJYYXcxJwogICAgJ19vV2p0"
+    "PUxpS1l6U20tSU5GfT5LTj9DWHp1WUZxO3R9OTgrbUREeG5mb3ozWUNwNEBNcmlPfWQxKTRAS3E5"
+    "KlYpbztLQiRDb3lROHNYX1dwWFEoKG1TJSYyYHNELTkhSGhBTDEnCiAgICAnI3RDaU4mU3YhYmdn"
+    "RTN1cUleTEJNXlk/QCZYaHtYUWtRcVJiQVckLW9IUzlPdjx0SnMmPHomaWFOc34lbzNWUlRSdX1L"
+    "RGQ7QjNGUiszWUtweWIqY2t0WjFHdHRHa1JORVRNXicKICAgICdpYn5qJTZ7QEk4ZWRYSzBhVmQ/"
+    "QW9ZeG53Q3FiRGdpYl5iSE9QeSYxIztXJjx0KmkzfEFmKyM1eDMoKXI3KSl3YkY8PGNZPX47cikq"
+    "QXs/elZvVDIkUH1GZTE/VDlJfGwwIW1DJwogICAgJyRPKEJxNXBmdSRrajt4IT5nTFYjbjhaQm8k"
+    "YT5qVFNHOWJZVCgocEkoM0hDNlBGYiNsVzdSPUU1ZntebFloUENLXzluUE00PiNle0ZEYn5NZkky"
+    "d3opXnRVQ21uNGQjNXo/WHknCiAgICAnZDhlWColfm9ZSipoWmxXUVBtV3Z5PjVsIyFKSmZBYFl5"
+    "bndtV0VnRiV5KEVKK1Q7O0R0LTV2Qz54NiFhck11M2o1TkNTcTVJbWN6IWQjPGI1R2ZPUEl3YHJG"
+    "dT14VV4+QE9ObicKICAgICdYPUNEKCNIKGRgbWJYYXhZUVlaOEI1fUl8UWwze21WQ2hUUCZ3YWdq"
+    "MjhobXghSzVIUipzbzJwRDU8XytVTCh1PTVINCE+ZjsmNzEhOHpyIUlGQ1g4VCpvMVU5O1JrTlpl"
+    "ISZSJwogICAgJyR1cENTbkxobEJ3VT1PcyFscDd1UTklfiFQTTNVdjVzT1pLLVNoUEBELVRmTHVN"
+    "fGdFX1F3YlZKeXc/WFlXU353Y3wjYDUwc2xQJHQ0WUlfUi1qVUtvJl89YHp4N080T0AoaDAnCiAg"
+    "ICAndjxOUUN4d3RIODNSTzlHbXxNb2VRfjM4ZTdCPyVTejM8amVTYSYpREF2MClGKSlqPDJJOXor"
+    "Wjg3TS15fEhgWjk/NDlBTSRtd1h+KSp8Qn0xYWZnN29SN3NAaVIyMEY7aGl1YCcKICAgICc7Kk9e"
+    "VjR4NyojKGl0IVV3aUtDI0daNTNKbkdUMi1SOU9QY1oxaHFLRjxGdlBmWWJjJDd5fj18UU9QdTs3"
+    "WTNLLTluPnE2SStUZGNGSTNkIW9HZ19QPiR1K2VGMGs3YzNtWlhjJwogICAgJyRDMDI+UnFUKi1O"
+    "PzwjYyRlbSlCTTFyNDI/alEmfGtjJlo9bnl2SzQlTWxAYHkmTnF4R3IpNypZI2JkITMqRUNLY3V1"
+    "N28yM3ZBX1ZgZmJ8b0QkcDE0NitGa2s8TVlZRjQ7bzInCiAgICAnZkVMbi1PcHdBRHE9SkUkbUxa"
+    "YmJ7KVA3eCQ9cV5zaHdkcU5OaHgwPVBPQXpNP2NYXjkzTXA5NVh5WjhRQzhVbSZOfTUxU09FbTdP"
+    "OSFyWndzPmM+LUBnaSMobFVHSjAyU29ZRScKICAgICdlMThhK0JLTlpWZkAtYlB6X0BFZkgqYCpE"
+    "aCl4JE87MmB5UEB1NiF9PFZPJjhgdEktXmJrRjlQdH1iSSZzNyN1fVY1QDckamI+MH4/PjZZXk4p"
+    "ZklVLWExWEt1R3UqUGo1dXRqJwogICAgJ2c/PChPa1E4Nz5nfWlIKXY0cGIqU2xLSUR5fUMqTWBy"
+    "aG8/Plh0OShYRmROYiMxV0EmIzBfMVJsOyY2SzNyb1VVU183JiNfZ0dXPzBBanJyUXhGPVpCXlNw"
+    "Jl9LUWtjel5qen0nCiAgICAnJDt0b19XYHRhbj0mfT1vPTg+SnU/aE5PSUdJOzlmKHQ7XmRvRlMp"
+    "VkhsJUUoLU5fIWs7eyFjQmB2eml0aXB+dmg+ZzdtRUZ9UV5xb1QqISpRVkBqbDVtTk12NilGUVhX"
+    "cCMyeycKICAgICdRYXpBWThuRD98R0tjZ1ckYV5SQiVFPyhqZyo9QFRee1VMJXsycVR7ZSZzKDAw"
+    "WV5hZ0p6WUFZTShVcGpmTDVxTEBfTCl4VlhabXhZRXElYWJ3RWE3ZFVFNkdDMyojfClCaXl0Jwog"
+    "ICAgJzwlKH5sZHJKeitiU3p+QFlhY1J7dGROSURRcFlZXjEwQzBfK0YqcVdwVmptWlNXPEB4eCk3"
+    "dlQtQGA7Z25gVXlUMm58YkZteH45Rk8mIWNgXiNzeF52VjAmQ2EpfXJ3N2duR1EnCiAgICAnUGEl"
+    "UzZEJXkxe2NrMChuVWhPSFF2O1JyRThwVGV5KUtwYWNBbGxlSTJrajk2Tm9NOGZBRl8lNz1+WGhz"
+    "UG4qfjRkfEdTaDxnKEIrPEN6ZFMocTdvQFNiSiU4dy12NjhPdWNYeCcKICAgICdTZ3pUQikxT1c8"
+    "VTM8PVVjV0RrREEmQFAmbFhYV21wZmtnaTdFX2JVUm02ZmAyKi1mNzA4eTB5cU90JjVyQUF9UGct"
+    "MyQkPlc5em8tb08zeiZDVU1tTHZ3Mnx6aElIUkQ5R2Y8JwogICAgJylPcWVFcj81bilTRlNtcnZu"
+    "JXQ2aVMocHMlUEAob0tBeyNWYFI4YCs1bHcpeFRoRFhqa1VjOShZbTk5bz5fJSRuKDF2Z3lVfmJ5"
+    "JCE/QjJkYTc7MDQrbn50SllYLWpyUShyWX4nCiAgICAnaXQrU2s5RCZFRFBEJj8mZFF8IVgmaFBF"
+    "IUQzVjdmIyNpdWFeSiN2TnJxN0FUViVaaHpIKXpzYyZ8bz5pUEFLaiVSVmZAPWF4Zks/STJLSUJE"
+    "K3VIU0dJKVVFNWZkNzJWOGo4WCcKICAgICdoJWd+eDArMlA0RGNWZHk2TmM2WjwhMT5WREQ9KVgj"
+    "O0JPb0t7MnY/bmE8dnk1Jm0pJGZ1ZntgPzk5dVRfQyVabUZ+RHF8OGFSa1dYdlZwTzUyTTRwPWg1"
+    "TVFeNjsrMUg/fn4pJwogICAgJ3hASXNLVz1UbmA9JC1DPHtCYiVkeFFYRFRgMFo+Q0tTYFU7JkY+"
+    "O0UpcTxicWY2cSF3RDV7SzFhQko/clZCPGBIUSRQd3NwTkBZS2FVWUQkaFUqX15IaEhjaGh3S15X"
+    "JngkYDAnCiAgICAnMzQ1aklZUEMxKCtDQERfQFh9Y1pKeGc8QiNwNl8xZzN5cmdLfD1YRjV5YS1j"
+    "QmpPUF8tVUZQSU02T2AxOSgyI1okckNKMzt1O196cHhBZGNWaGctVHJKLV8hQzJSdiM2SWRUeicK"
+    "ICAgICc0QzU1RzFmVGBwU0J5aFlGO3RkRzN0bFI1YmRxMGU4PihhcXN4NzklYCUrM35CZjJ0e25A"
+    "UWFeX3l4eXtVJjtWcGJWM156entoV2lTYyR8bmFLTW5FVT1FZFNUd1UhS2coJEA3JwogICAgJ3tw"
+    "V2NpZEl6Sz0oI1JEZkIoPjwhb1IybnF7M0l7PkctWiM2elctOD57fV9jaDckanlLO20wdjNiNjh1"
+    "YEhxSlBEP35DOEBFTW95TENaMXAtSnZecklUPjN2aHskLWdAKzlRWnAnCiAgICAnTnZAWUNpaHQj"
+    "NEB1Q0Ftbl9vSzhEKWV2X1ViVXU5aVlMKWdwYDdzUit5Y1VIOyZZV31kfG9HKilXOD9OeXpmS0FP"
+    "X0A0eEQ0OV9VXz9qcHU3aE14e2VDSkB1T2gwMGwkVTRxRScKICAgICcjND0ldDNOcEw9TlN8Y1Io"
+    "ajk9fjs+IXszTGVaZX0tX3ZgN3JaKlFNI2hsMFVlc0hZc3t9PGtDZThUJwopCikpLmRlY29kZSgi"
+    "dXRmLTgiKSkKCl9QTEFOTkVSID0gYnVpbGRfc3BhcnNlX3BsYW5uZXIoX0FDVElPTlMsIFBsYW5u"
+    "ZXJDb25maWcoKSkKCgpkZWYgYWdlbnQob2JzLCBjb25maWd1cmF0aW9uPU5vbmUpOgogICAgdHJ5"
+    "OgogICAgICAgIGFjdGlvbiA9IF9QTEFOTkVSKG9icywgY29uZmlndXJhdGlvbikKICAgICAgICBy"
+    "ZXR1cm4gYXBwbHlfb3ZlcmxheShvYnMsIGFjdGlvbiwgImxhdGVfY29sbGlzaW9uIikKICAgIGV4"
+    "Y2VwdCBFeGNlcHRpb246CiAgICAgICAgc2VhdCA9IDEgaWYgaW50KF92NTBfZ2V0KG9icywgInBs"
+    "YXllciIsIDApIG9yIDApID09IDEgZWxzZSAwCiAgICAgICAgZmFybXMgPSBsaXN0KF92NTBfZ2V0"
+    "KG9icywgImZhcm1zIiwgW10pIG9yIFtdKQogICAgICAgIGZhcm0gPSBmYXJtc1tzZWF0XSBpZiBz"
+    "ZWF0IDwgbGVuKGZhcm1zKSBlbHNlIHt9CiAgICAgICAgcmV0dXJuIHsKICAgICAgICAgICAgImZh"
+    "cm1lciI6IFsiUEFTUyJdLAogICAgICAgICAgICAiaGFuZHMiOiBbWyJQQVNTIl0gZm9yIF8gaW4g"
+    "KF92NTBfZ2V0KGZhcm0sICJoYW5kcyIsIFtdKSBvciBbXSldLAogICAgICAgICAgICAibWFya2V0"
+    "IjogW10sCiAgICAgICAgfQoKCmRlZiBfa2FnZ2xlX3N1Ym1pc3Npb25fZW50cnlwb2ludChvYnMs"
+    "IGNvbmZpZ3VyYXRpb249Tm9uZSk6CiAgICByZXR1cm4gYWdlbnQob2JzLCBjb25maWd1cmF0aW9u"
+    "KQo="
+)
+
+def _load_embedded():
+    import base64 as _b64
+    source = _b64.b64decode(_V50_SOURCE_B64).decode("utf-8")
+    namespace = {"__name__": "v92_frozen_v50"}
+    exec(compile(source, "<embedded v50_agent.py>", "exec"), namespace)  # noqa: S102
+    return namespace
 
 
-def _nearest(position, targets):
-    x, y = position
-    return min(targets, key=lambda p: (abs(p[0] - x) + abs(p[1] - y), p[1], p[0]))
+_v50_ns = _load_embedded()
+_v50_agent = _v50_ns["agent"]
 
 
-_OPENING_LAYOUT_CACHE = {}
+
+def _v92_shed_total(private):
+    return sum((private.get("shed") or {}).values())
 
 
-def _opening_layout(tiles, unlocked):
-    """Derive a compact 5-pasture/10+10 crop layout from available land.
-
-    Pastures occupy the five cells closest to the shed-facing quadrant corner.
-    Crop cells are split into two ten-cell clusters by testing every pair of
-    candidate centers and minimizing aggregate Manhattan worker travel.
-    Only the first unlocked quadrant participates, keeping the footprint
-    stable when later land purchases expand the farm.
-    """
-    height = len(tiles)
-    width = len(tiles[0]) if height else 0
-    label = (unlocked or ["NW"])[0]
-    cache_key = (width, height, label)
-    if cache_key in _OPENING_LAYOUT_CACHE:
-        return _OPENING_LAYOUT_CACHE[cache_key]
-    west = "W" in label
-    north = "N" in label
-    x0, x1 = (0, width // 2) if west else (width // 2, width)
-    y0, y1 = (0, height // 2) if north else (height // 2, height)
-    cells = [(x, y) for y in range(y0, y1) for x in range(x0, x1)]
-    home = (x1 - 1 if west else x0, y1 - 1 if north else y0)
-    md = lambda a, b: abs(a[0] - b[0]) + abs(a[1] - b[1])
-    pasture = sorted(cells, key=lambda p: (md(p, home), p[1], p[0]))[:5]
-    plots = [p for p in cells if p not in set(pasture)]
-    best = None
-    for i, a in enumerate(plots):
-        for b in plots[i + 1:]:
-            # Assign exactly ten plots to each field by relative center cost.
-            ranked = sorted(plots, key=lambda p: (md(p, a) - md(p, b), p[1], p[0]))
-            field_a, field_b = ranked[:10], ranked[10:]
-            cost = sum(md(p, a) for p in field_a) + sum(md(p, b) for p in field_b)
-            cost += md(home, a) + md(home, b)
-            key = (cost, a[1], a[0], b[1], b[0])
-            if best is None or key < best[0]:
-                best = (key, field_a, field_b)
-    if best is None:
-        result = ((), (), (), (), ())
-        _OPENING_LAYOUT_CACHE[cache_key] = result
-        return result
-    # Stable identity assignment removes any dependence on iteration order.
-    f0, f1 = best[1], best[2]
-    if (min((p[1], p[0]) for p in f1)) < (min((p[1], p[0]) for p in f0)):
-        f0, f1 = f1, f0
-    melon = sorted(f1, key=lambda p: (md(p, home), p[1], p[0]))
-    wheat = sorted(f0, key=lambda p: (md(p, home), p[1], p[0]))
-    cows = tuple(pasture[:2])
-    sheep = tuple(pasture[2:])
-    result = (tuple(wheat), tuple(melon[:6]), tuple(melon[6:]), cows, sheep)
-    _OPENING_LAYOUT_CACHE[cache_key] = result
-    return result
-
-
-def _wheat_action(position, inventory, tiles, seeds, day):
-    if inventory:
-        return ["DROP"] if position == SHED_ACCESS else _move_toward(position, SHED_ACCESS)
-
-    mature, dry, weeds, empty = [], [], [], []
-    for point in WHEAT_FIELD:
-        tile = tiles[point[1]][point[0]]
-        if tile is None:
-            empty.append(point)
-        elif isinstance(tile, dict) and tile.get("kind") == "WEED":
-            weeds.append(point)
-        elif isinstance(tile, dict) and tile.get("kind") == "PLANT" and tile.get("crop") == "WHEAT":
-            if day - tile["planted_day"] >= WHEAT_HARVEST_DAY:
-                mature.append(point)
-            elif not tile.get("watered_today", False):
-                dry.append(point)
-
-    if mature:
-        target = _nearest(position, mature)
-        return ["HARVEST"] if position == target else _move_toward(position, target)
-    if dry:
-        target = _nearest(position, dry)
-        return ["WATER"] if position == target else _move_toward(position, target)
-    if weeds:
-        target = _nearest(position, weeds)
-        return ["DIG"] if position == target else _move_toward(position, target)
-    if empty and seeds and day <= STOP_PLANT_DAY:
-        target = _nearest(position, empty)
-        return ["PLANT", "WHEAT"] if position == target else _move_toward(position, target)
-    return ["PASS"]
-
-
-def _straw_fert_due(tiles, day, field=STRAW_FIELD):
-    """Return field points with a strawberry production tomorrow that is not yet fertilized for today."""
-    due = []
-    for point in field:
-        tile = tiles[point[1]][point[0]]
-        if isinstance(tile, dict) and tile.get("kind") == "PLANT" and tile.get("crop") == "STRAWBERRY":
-            planted_day = tile["planted_day"]
-            offset = day + 1 - planted_day - 10
-            if 0 <= offset and offset % 2 == 0 and (offset // 2 + 1) <= 4:
-                if tile.get("fertilized_until_day", -1) < day:
-                    due.append(point)
-    return due
-
-
-def _straw_action(position, inventory, tiles, seeds, day, carried_fert, shed_fert, field=STRAW_FIELD):
-    mature, dry, weeds, empty = [], [], [], []
-    for point in field:
-        tile = tiles[point[1]][point[0]]
-        if tile is None:
-            empty.append(point)
-        elif isinstance(tile, dict) and tile.get("kind") == "WEED":
-            weeds.append(point)
-        elif isinstance(tile, dict) and tile.get("kind") == "PLANT" and tile.get("crop") == "STRAWBERRY":
-            if day - tile["planted_day"] >= STRAW_FIRST_YIELD_DAY and tile.get("yield_units", 0) > 0:
-                mature.append(point)
-            elif not tile.get("watered_today", False):
-                dry.append(point)
-
-    due = _straw_fert_due(tiles, day, field)
-
-    if mature:
-        target = _nearest(position, mature)
-        return ["HARVEST"] if position == target else _move_toward(position, target)
-
-    # Drop non-fertilizer items at the shed. Carry FERTILIZER when a field tile is due.
-    if inventory:
-        carrying_only_fert = set(inventory.keys()) == {"FERTILIZER"}
-        if not carrying_only_fert or not due:
-            return ["DROP"] if position == SHED_ACCESS else _move_toward(position, SHED_ACCESS)
-
-    if dry:
-        target = _nearest(position, dry)
-        return ["WATER"] if position == target else _move_toward(position, target)
-
-    if due and carried_fert > 0:
-        target = _nearest(position, due)
-        return ["FERTILIZE"] if position == target else _move_toward(position, target)
-    if due and carried_fert == 0 and shed_fert > 0:
-        return ["PICKUP", "FERTILIZER", min(shed_fert, max(1, len(due)))] if position == SHED_ACCESS else _move_toward(position, SHED_ACCESS)
-
-    if weeds:
-        target = _nearest(position, weeds)
-        return ["DIG"] if position == target else _move_toward(position, target)
-    if empty and seeds and day <= STRAW_PLANT_BY_DAY:
-        target = _nearest(position, empty)
-        return ["PLANT", "STRAWBERRY"] if position == target else _move_toward(position, target)
-    return ["PASS"]
-
-
-def _flock_action(position, inventory, tiles, shed, day, fert_price_ok, zones=None):
-    """Flock generalist (feed/care/harvest/collect) over exclusive zone tiles.
-
-    zones pins tile ownership: hand-3 gets SHEEP_PASTURES, hand-4+ gets
-    GOOSE_COOPS. Exclusive ownership keeps daily service load inside one
-    worker's capacity so care bonuses are actually earned.
-    """
-    if zones is None:
-        zones = SHEEP_PASTURES + GOOSE_COOPS
-    hungry, uncared, wool_ready, fert_ready = [], [], [], []
-    for point in zones:
-        tile = tiles[point[1]][point[0]]
-        if isinstance(tile, dict) and tile.get("animal") in ("SHEEP", "GOOSE"):
-            if tile.get("yield_units", 0) > 0:
-                wool_ready.append(point)
-            if not tile.get("fed_today", False):
-                hungry.append(point)
-            if not tile.get("cared_today", False):
-                uncared.append(point)
-            if tile.get("fertilizer_available", False):
-                fert_ready.append(point)
-
-    carried_wheat = inventory.get("WHEAT", 0)
-    shed_wheat = shed.get("WHEAT", 0)
-
-    if hungry and carried_wheat:
-        target = _nearest(position, hungry)
-        return ["FEED"] if position == target else _move_toward(position, target)
-    if hungry and shed_wheat:
-        return (
-            ["PICKUP", "WHEAT", min(shed_wheat, max(1, len(hungry)))]
-            if position == SHED_ACCESS
-            else _move_toward(position, SHED_ACCESS)
-        )
-    if uncared:
-        target = _nearest(position, uncared)
-        return ["CARE"] if position == target else _move_toward(position, target)
-    if wool_ready:
-        target = _nearest(position, wool_ready)
-        return ["HARVEST"] if position == target else _move_toward(position, target)
-    if fert_ready and fert_price_ok:
-        target = _nearest(position, fert_ready)
-        return ["COLLECT_FERTILIZER"] if position == target else _move_toward(position, target)
-    if inventory:
-        return ["DROP"] if position == SHED_ACCESS else _move_toward(position, SHED_ACCESS)
-    return ["PASS"]
-
-
-def _champion_agent(observation):
-    player = observation["player"]
-    farm = observation["farms"][player]
-    private = observation["private"]
-    tiles = farm["tiles"]
-    day = observation["day"]
-    hour = observation["hour"]
-    inventories = private.get("inventories", [{}])
-    farmer_inventory = inventories[0]
-    shed = private.get("shed", {})
-    farmer_position = tuple(farm["farmer"])
-
-    shops = observation.get("town", {}).get("unlocked_shops", [])
-    milk_shops = sum(1 for s in shops if s in MILK_SHOPS)
-    straw_seeds = private.get("seeds", {}).get("STRAWBERRY", 0)
-    straw_tiles_live = any(
-        isinstance(tiles[point[1]][point[0]], dict)
-        and tiles[point[1]][point[0]].get("kind") == "PLANT"
-        and tiles[point[1]][point[0]].get("crop") == "STRAWBERRY"
-        for point in STRAW_FIELD
+def _v92_carried_total(private):
+    return sum(
+        sum((inv or {}).values())
+        for inv in (private.get("inventories") or [])
     )
-    straw_active = (
-        straw_tiles_live
-        or straw_seeds > 0
-        or (day >= 6 and day <= STRAW_PLANT_BY_DAY and milk_shops == 0)
-    )
-    # Second 4-tile strawberry plot (exp-0043a): disjoint NW row y=1 with its
-    # own dedicated hand (hand-6). exp-0023 proved one hand cannot clear/water
-    # 8 tiles, so capacity doubles only with doubled plot labor. One planter
-    # per crop/plot is preserved: hand-2 plants STRAW_FIELD only, hand-6
-    # plants STRAW2_FIELD only. Single causal trigger from engine economics
-    # and public shop demand: the first town unlock is public from day 3 and
-    # reads the season demand mix. A strawberry consumer
-    # (BRUNCH/ICE_CREAM/SMOOTHIE/FARMERS) means the drain side we sell into
-    # is deep, so +32 units stay on the scarcity branch (~269/unit, +8.6k
-    # gross for ~400 seed + fib-8 hire). Otherwise the plot never activates
-    # and the policy is byte-identical to the champion. The trigger is read
-    # from day 3 on (first unlock exists from day 3; later unlocks only add
-    # shops) but planting still respects the champion's day<=8 deadline and
-    # the same animal-care-first capital order, so days 0-2 commitment is
-    # untouched.
-    d3_straw = any(s in STRAW_SHOPS for s in shops) and day >= 3
-    straw2_tiles_live = any(
-        isinstance(tiles[point[1]][point[0]], dict)
-        and tiles[point[1]][point[0]].get("kind") == "PLANT"
-        and tiles[point[1]][point[0]].get("crop") == "STRAWBERRY"
-        for point in STRAW2_FIELD
-    )
-    straw2_active = bool(straw2_tiles_live or (d3_straw and (straw_seeds > 0 or (6 <= day <= STRAW_PLANT_BY_DAY))))
-    # Keep STRAW2 strictly staged behind days 0-2 commitment: no hires/seeds
-    # before day 3 even if shops arrive early in edge configs. Hires/seed
-    # buys additionally stage to day 6+ (see hire ladder + seed queue) so
-    # days 3-5 cash funds the sheep pair first.
-    if day < 3:
-        straw2_active = bool(straw2_tiles_live)
-
-    # Cow zone (farmer): original two pastures only.
-    bare, empty_pasture, hungry, uncared, milk_ready = [], [], [], [], []
-    placed_cows = 0
-    for point in COW_PASTURES:
-        tile = tiles[point[1]][point[0]]
-        if tile is None:
-            bare.append(point)
-        elif isinstance(tile, dict) and tile.get("kind") == "PASTURE" and "animal" not in tile:
-            empty_pasture.append(point)
-        elif isinstance(tile, dict) and tile.get("animal") == "COW":
-            placed_cows += 1
-            if tile.get("yield_units", 0) > 0:
-                milk_ready.append(point)
-            if not tile.get("fed_today", False):
-                hungry.append(point)
-            if not tile.get("cared_today", False):
-                uncared.append(point)
-
-    # exp-0044: care for ALL placed animals, not just COW_PASTURES. The
-    # scripted top-opener places cows/sheep at tiles outside the champion's
-    # zones (e.g. cow2 at (3,1), sheep at (3,3)/(2,3)/(3,4)); animals escape
-    # after 2 consecutive unfed days, so off-zone livestock must be covered
-    # or the opener's roster bleeds away on days 2-3.
-    for _y in range(len(tiles)):
-        for _x in range(len(tiles[_y])):
-            if (_x, _y) in COW_PASTURES:
-                continue
-            _tile = tiles[_y][_x]
-            if isinstance(_tile, dict) and "animal" in _tile:
-                if not _tile.get("fed_today", False):
-                    hungry.append((_x, _y))
-                if not _tile.get("cared_today", False):
-                    uncared.append((_x, _y))
-
-    # Sheep zone (third hand): two west pastures.
-    sheep_bare = []
-    sheep_placed = 0
-    for point in SHEEP_PASTURES:
-        tile = tiles[point[1]][point[0]]
-        if tile is None:
-            sheep_bare.append(point)
-            bare.append(point)
-        elif isinstance(tile, dict) and tile.get("animal") == "SHEEP":
-            sheep_placed += 1
-    sheep_carried = sum(inv.get("SHEEP", 0) for inv in inventories)
-    sheep_total = sheep_placed + sheep_carried + shed.get("SHEEP", 0)
-    sheep_active = sheep_total >= 1 or (3 <= day <= 6)
-    # Second sheep pair (fifth hand): only on early YARN draw. Wool break-even
-    # needs yarn-driven drain: 2 sheep x ~6 events x ~2.5u x ~230 = ~7k gross
-    # for ~1.1k capital+hire. Placed by ~day 8 for 6 productions (P+6..P+21).
-    yarn_seen = "YARN_STORE" in shops
-    sheep2_bare = []
-    sheep2_placed = 0
-    for point in SHEEP2_PASTURES:
-        tile = tiles[point[1]][point[0]]
-        if tile is None:
-            sheep2_bare.append(point)
-            bare.append(point)
-        elif isinstance(tile, dict) and tile.get("animal") == "SHEEP":
-            sheep2_placed += 1
-    sheep2_total = sheep2_placed + sheep_carried + shed.get("SHEEP", 0)
-    sheep2_active = sheep2_total >= 1 or (yarn_seen and 3 <= day <= 8)
-    # Goose coops: built days 9+, stocked days 10-12.
-    goose_bare = []
-    goose_placed = 0
-    for point in GOOSE_COOPS:
-        tile = tiles[point[1]][point[0]]
-        if tile is None:
-            goose_bare.append(point)
-            bare.append(point)
-        elif isinstance(tile, dict) and tile.get("animal") == "GOOSE":
-            goose_placed += 1
-    goose_carried = sum(inv.get("GOOSE", 0) for inv in inventories)
-    goose_total = goose_placed + goose_carried + shed.get("GOOSE", 0)
-
-    wheat_empty = []
-    for point in WHEAT_FIELD:
-        tile = tiles[point[1]][point[0]]
-        if tile is None:
-            wheat_empty.append(point)
-
-    straw_empty = []
-    if straw_active:
-        for point in STRAW_FIELD:
-            tile = tiles[point[1]][point[0]]
-            if tile is None:
-                straw_empty.append(point)
-
-    straw2_empty = []
-    if straw2_active:
-        for point in STRAW2_FIELD:
-            tile = tiles[point[1]][point[0]]
-            if tile is None:
-                straw2_empty.append(point)
-
-    carried_cows = sum(inv.get("COW", 0) for inv in inventories)
-    total_cows = placed_cows + carried_cows + shed.get("COW", 0)
-    carried_wheat = farmer_inventory.get("WHEAT", 0)
-    shed_wheat = shed.get("WHEAT", 0)
-    wheat_seeds = private.get("seeds", {}).get("WHEAT", 0)
-    shed_fert = shed.get("FERTILIZER", 0)
-
-    market = []
-    if hour == 0 and not farm.get("hands"):
-        market.append(["HIRE"])
-    # Hands reset daily: queue together for index-stable roles (1 wheat,
-    # 2 straw, 3 sheep, 4 geese, 5 sheep2, 6 straw2). Placeholders keep roles
-    # stable: each earlier role is hired whenever any later role is active, so
-    # the sheep2 hand is always index 5 and the straw2 hand is always index 6.
-    # Sixth hire costs fib=8 coins/day; it is ordered only on the d3_straw
-    # trigger AND from day 6+ so days 3-5 hires match the champion exactly
-    # (non-trigger days keep the champion's hire ladder every day).
-    _straw2_hire = straw2_active and day >= 6
-    geese_active = goose_total >= 1 or (10 <= day <= 12)
-    if (straw_active or sheep_active or geese_active or sheep2_active or _straw2_hire) and hour == 0 and not farm.get("hands"):
-        market.append(["HIRE"])
-    if (sheep_active or geese_active or sheep2_active or _straw2_hire) and hour == 0 and not farm.get("hands"):
-        market.append(["HIRE"])
-    if (geese_active or sheep2_active or _straw2_hire) and hour == 0 and not farm.get("hands"):
-        market.append(["HIRE"])
-    if (sheep2_active or _straw2_hire) and hour == 0 and not farm.get("hands"):
-        market.append(["HIRE"])
-    if _straw2_hire and hour == 0 and not farm.get("hands"):
-        market.append(["HIRE"])
-    if shed.get("MILK", 0):
-        market.append(["SELL", "MILK", shed["MILK"]])
-    if shed.get("WOOL", 0):
-        market.append(["SELL", "WOOL", shed["WOOL"]])
-    if shed.get("EGG", 0):
-        market.append(["SELL", "EGG", shed["EGG"]])
-
-    straw_open = any(
-        isinstance(tiles[point[1]][point[0]], dict)
-        and tiles[point[1]][point[0]].get("kind") == "PLANT"
-        and tiles[point[1]][point[0]].get("crop") == "STRAWBERRY"
-        and tiles[point[1]][point[0]].get("planted_day", 0) + 16 >= day
-        for point in STRAW_FIELD + STRAW2_FIELD
-    )
-    if straw_open and day <= 24:
-        # Reserve 16/process: 8 waves x 2 plots. The deeper reserve applies
-        # only when the second plot actually exists; non-trigger games keep
-        # the champion's exact 16 so behavior is identical there.
-        _reserve = 24 if straw2_active else 16
-        sell_fert = max(0, shed_fert - _reserve)
-    else:
-        sell_fert = shed_fert
-    if sell_fert > 0:
-        market.append(["SELL", "FERTILIZER", sell_fert])
-
-    if shed.get("STRAWBERRY", 0):
-        market.append(["SELL", "STRAWBERRY", shed["STRAWBERRY"]])
-    if day <= STOP_PLANT_DAY:
-        seed_shortfall = max(0, len(wheat_empty) - wheat_seeds)
-        if seed_shortfall and farm["money"] >= WHEAT_SEED_COST:
-            market.append(["BUY_SEED", "WHEAT", min(seed_shortfall, int(farm["money"] // WHEAT_SEED_COST))])
-    if straw_active and day <= STRAW_PLANT_BY_DAY:
-        straw_shortfall = max(0, len(straw_empty) - straw_seeds)
-        if straw_shortfall and farm["money"] >= STRAW_SEED_COST:
-            market.append(["BUY_SEED", "STRAWBERRY", min(straw_shortfall, int(farm["money"] // STRAW_SEED_COST))])
-    if day == 0 and total_cows < len(COW_PASTURES) and farm["money"] >= COW_COST:
-        market.append(["BUY_ANIMAL", "COW", 1])
-    all_sheep = sheep_placed + sheep2_placed + sheep_carried + shed.get("SHEEP", 0)
-    if 3 <= day <= 6 and all_sheep < 2 and farm["money"] >= SHEEP_COST + 100:
-        market.append(["BUY_ANIMAL", "SHEEP", 1])
-    if yarn_seen and 3 <= day <= 10 and all_sheep < 4 and farm["money"] >= SHEEP_COST + 100:
-        market.append(["BUY_ANIMAL", "SHEEP", 1])
-    if 10 <= day <= 12 and goose_total < 2 and farm["money"] >= GOOSE_COST + 100:
-        market.append(["BUY_ANIMAL", "GOOSE", 1])
-    if straw2_active and day >= 6 and day <= STRAW_PLANT_BY_DAY:
-        # Queued AFTER animals so sheep/goose capital is never crowded out.
-        # Covers only the second plot net of seeds already held/queued for
-        # plot 1; plot 1 keeps its champion priority. Staged to day 6+:
-        # days 3-5 cash is reserved for the sheep pair (SHEEP_COST+100
-        # floor) and the feed buffer, so plot-2 seed commits only after the
-        # core opening is funded. Same day<=8 deadline as plot 1.
-        straw2_net = max(0, len(straw2_empty) - max(0, straw_seeds - len(straw_empty)))
-        if straw2_net and farm["money"] >= STRAW_SEED_COST + 100:
-            market.append(["BUY_SEED", "STRAWBERRY", min(straw2_net, int((farm["money"] - 100) // STRAW_SEED_COST))])
-    # Capital schedule (animal care + early cash stay safe): animals first,
-    # then plot-1 seeds, then plot-2 seeds. Plot-2 seed buys require the
-    # d3_straw trigger AND a +100 reserve above the animal floor so sheep
-    # days 3-6 are never crowded out. No late low-yield plants: both plots
-    # share the champion day<=8 deadline.
-    # Feed buffer maintained all season: ~4 days cover for every placed animal.
-    placed_total = placed_cows + sheep_placed + goose_placed + sheep2_placed
-    feed_have = shed_wheat + carried_wheat
-    # Day-0 reserve buys once: stock-gated so it cannot repeat every turn.
-    # (Unconditional day-gated orders repeat 24x and bankrupt the farm.)
-    if day == 0 and feed_have < 12 and farm["money"] >= 300:
-        market.append(["BUY_PRODUCT", "WHEAT", min(12 - feed_have, max(1, int(farm["money"] // 25)))])
-    if placed_total and feed_have < placed_total * 4 and farm["money"] >= 25:
-        market.append(["BUY_PRODUCT", "WHEAT", min(placed_total * 4 - feed_have, max(1, int(farm["money"] // 25)))])
-
-    fert_ready = [
-        point
-        for point in COW_PASTURES
-        if isinstance(tiles[point[1]][point[0]], dict)
-        and "animal" in tiles[point[1]][point[0]]
-        and tiles[point[1]][point[0]].get("fertilizer_available") is True
-    ]
-    fert_price_ok = observation.get("market", {}).get("prices", {}).get("FERTILIZER", 0) >= 40
-
-    carried_cow = farmer_inventory.get("COW", 0)
-    carried_sheep = farmer_inventory.get("SHEEP", 0)
-    carried_goose = farmer_inventory.get("GOOSE", 0)
-    goose_empty = [
-        point for point in GOOSE_COOPS
-        if isinstance(tiles[point[1]][point[0]], dict)
-        and tiles[point[1]][point[0]].get("kind") == "COOP"
-        and "animal" not in tiles[point[1]][point[0]]
-    ]
-    if bare:
-        target = _nearest(farmer_position, bare)
-        build_op = "BUILD_COOP" if target in GOOSE_COOPS else "BUILD_PASTURE"
-        farmer = [build_op] if farmer_position == target else _move_toward(farmer_position, target)
-    elif carried_cow and empty_pasture:
-        target = _nearest(farmer_position, empty_pasture)
-        farmer = ["PLACE", "COW"] if farmer_position == target else _move_toward(farmer_position, target)
-    elif carried_sheep:
-        sheep_empty = [
-            point for point in SHEEP_PASTURES + SHEEP2_PASTURES
-            if isinstance(tiles[point[1]][point[0]], dict)
-            and tiles[point[1]][point[0]].get("kind") == "PASTURE"
-            and "animal" not in tiles[point[1]][point[0]]
-        ]
-        if sheep_empty:
-            target = _nearest(farmer_position, sheep_empty)
-            farmer = ["PLACE", "SHEEP"] if farmer_position == target else _move_toward(farmer_position, target)
-        else:
-            farmer = ["DROP"] if farmer_position == SHED_ACCESS else _move_toward(farmer_position, SHED_ACCESS)
-    elif carried_goose and goose_empty:
-        target = _nearest(farmer_position, goose_empty)
-        farmer = ["PLACE", "GOOSE"] if farmer_position == target else _move_toward(farmer_position, target)
-    elif milk_ready:
-        target = _nearest(farmer_position, milk_ready)
-        farmer = ["HARVEST"] if farmer_position == target else _move_toward(farmer_position, target)
-    elif hungry and carried_wheat:
-        target = _nearest(farmer_position, hungry)
-        farmer = ["FEED"] if farmer_position == target else _move_toward(farmer_position, target)
-    elif hungry and shed_wheat:
-        farmer = (
-            ["PICKUP", "WHEAT", min(shed_wheat, len(hungry))]
-            if farmer_position == SHED_ACCESS
-            else _move_toward(farmer_position, SHED_ACCESS)
-        )
-    elif uncared:
-        target = _nearest(farmer_position, uncared)
-        farmer = ["CARE"] if farmer_position == target else _move_toward(farmer_position, target)
-    elif fert_ready and fert_price_ok and not carried_cow:
-        target = _nearest(farmer_position, fert_ready)
-        farmer = ["COLLECT_FERTILIZER"] if farmer_position == target else _move_toward(farmer_position, target)
-    elif farmer_inventory:
-        farmer = ["DROP"] if farmer_position == SHED_ACCESS else _move_toward(farmer_position, SHED_ACCESS)
-    elif empty_pasture and shed.get("COW", 0):
-        farmer = (
-            ["PICKUP", "COW", 1]
-            if farmer_position == SHED_ACCESS
-            else _move_toward(farmer_position, SHED_ACCESS)
-        )
-    elif shed.get("GOOSE", 0) and goose_empty:
-        # Ferry shed geese to built empty coops.
-        farmer = (
-            ["PICKUP", "GOOSE", 1]
-            if farmer_position == SHED_ACCESS
-            else _move_toward(farmer_position, SHED_ACCESS)
-        )
-    elif shed.get("SHEEP", 0):
-        # Ferry shed sheep to built empty sheep pastures (either pair).
-        sheep_empty = [
-            point for point in SHEEP_PASTURES + SHEEP2_PASTURES
-            if isinstance(tiles[point[1]][point[0]], dict)
-            and tiles[point[1]][point[0]].get("kind") == "PASTURE"
-            and "animal" not in tiles[point[1]][point[0]]
-        ]
-        if sheep_empty:
-            farmer = (
-                ["PICKUP", "SHEEP", 1]
-                if farmer_position == SHED_ACCESS
-                else _move_toward(farmer_position, SHED_ACCESS)
-            )
-        else:
-            farmer = ["DROP"] if farmer_position == SHED_ACCESS else _move_toward(farmer_position, SHED_ACCESS)
-    else:
-        farmer = ["PASS"]
-
-    hand_actions = []
-    for index, position in enumerate(farm.get("hands", []), start=1):
-        hand_inventory = inventories[index] if index < len(inventories) else {}
-        if index == 1:
-            hand_actions.append(_wheat_action(tuple(position), hand_inventory, tiles, wheat_seeds, day))
-        elif index == 2:
-            hand_actions.append(_straw_action(tuple(position), hand_inventory, tiles, straw_seeds, day, hand_inventory.get("FERTILIZER", 0), shed_fert))
-        elif index == 3:
-            hand_actions.append(_flock_action(tuple(position), hand_inventory, tiles, shed, day, fert_price_ok, SHEEP_PASTURES))
-        elif index == 4:
-            hand_actions.append(_flock_action(tuple(position), hand_inventory, tiles, shed, day, fert_price_ok, GOOSE_COOPS))
-        elif index == 5:
-            hand_actions.append(_flock_action(tuple(position), hand_inventory, tiles, shed, day, fert_price_ok, SHEEP2_PASTURES))
-        else:
-            # Hand-6: sole planter of STRAW2_FIELD. Fixed tile ownership:
-            # hand-2 never enters STRAW2_FIELD and hand-6 never enters
-            # STRAW_FIELD, so full watering/fertilizing holds on both plots.
-            # Plant serialization: the engine drops ALL same-crop PLANTs on a
-            # turn when demand exceeds seeds, so hand-6 plants only after
-            # plot 1 is full (seeds=0 keeps it on water/weed/fertilize duty).
-            # This keeps one effective planter per crop per turn.
-            _s6_seeds = 0 if straw_empty else straw_seeds
-            hand_actions.append(_straw_action(tuple(position), hand_inventory, tiles, _s6_seeds, day, hand_inventory.get("FERTILIZER", 0), shed_fert, STRAW2_FIELD))
-
-    return {"farmer": farmer, "hands": hand_actions, "market": market}
 
 
-def _dist(a, b):
-    return abs(a[0] - b[0]) + abs(a[1] - b[1])
-
-
-def _nearest_shed(pos):
-    return min(SHED_TILES, key=lambda p: (_dist(pos, p), p))
-
-
-def _go(pos, target, op):
-    return list(op) if pos == target else _move_toward(pos, target)
-
-
-def _empty_structures(tiles, kind):
-    out = []
-    for y in range(5):
-        for x in range(5):
-            tile = tiles[y][x]
-            if isinstance(tile, dict) and tile.get("kind") == kind and "animal" not in tile:
-                out.append((x, y))
-    return out
-
-
-def _bridge_state(observation):
-    player = observation["player"]
-    farm = observation["farms"][player]
-    private = observation.get("private", None) or {}
-    inventories = private.get("inventories", None) or [{}]
-    units = [["farmer", tuple(farm["farmer"]), dict(inventories[0] if inventories else {})]]
-    for i, pos in enumerate(farm.get("hands", None) or []):
-        inv = inventories[i + 1] if i + 1 < len(inventories) else {}
-        units.append([f"hand{i + 1}", tuple(pos), dict(inv)])
-    return {
-        "tiles": farm["tiles"],
-        "unlocked": list(farm.get("unlocked_quadrants", None) or ["NW"]),
-        "day": observation["day"],
-        "hour": observation.get("hour", 0),
-        "units": units,
-        "shed": dict(private.get("shed", None) or {}),
-        "seeds": dict(private.get("seeds", None) or {}),
-        "money": float(farm["money"]),
-        "prices": ((observation.get("market", None) or {}).get("prices", None) or {}),
-    }
-
-
-def _emit_task(task, unit, shed):
-    _pri, _seq, pos, kind, payload, _bound = task
-    _name, upos, uinv = unit
-    if kind == "place":
-        return _go(upos, pos, ["PLACE", payload])
-    if kind == "build":
-        return _go(upos, pos, ["BUILD_COOP" if payload["structure"] == "COOP" else "BUILD_PASTURE"])
-    if kind == "fetch":
-        target = _nearest_shed(upos)
-        if upos == target:
-            return ["PICKUP", payload, 1]
-        return _move_toward(upos, target)
-    if kind == "feed":
-        if uinv.get("WHEAT"):
-            return _go(upos, pos, ["FEED"])
-        target = _nearest_shed(upos)
-        if upos == target:
-            if shed.get("WHEAT", 0) > 0:
-                return ["PICKUP", "WHEAT", min(3, shed["WHEAT"])]
-            return ["PASS"]
-        return _move_toward(upos, target)
-    if kind == "care":
-        return _go(upos, pos, ["CARE"])
-    if kind == "harvest":
-        return _go(upos, pos, ["HARVEST"])
-    if kind == "water":
-        return _go(upos, pos, ["WATER"])
-    if kind == "collect":
-        return _go(upos, pos, ["COLLECT_FERTILIZER"])
-    if kind == "drop":
-        target = _nearest_shed(upos)
-        if upos == target:
-            return ["DROP"]
-        return _move_toward(upos, target)
-    if kind == "plant":
-        return _go(upos, pos, ["PLANT", payload])
-    if kind == "dig":
-        return _go(upos, pos, ["DIG"])
-    return ["PASS"]
-
-
-def _bridge_market(s, stats, day):
-    shed = s["shed"]
-    seeds = s["seeds"]
-    money = s["money"]
-    prices = s["prices"]
-    market = []
-
-    # Sells first (orders execute in order): continuous cash flow.
-    for item in ("FERTILIZER", "MILK", "WOOL", "EGG", "MELON"):
-        if shed.get(item, 0) > 0:
-            market.append(["SELL", item, shed[item]])
-    shed_wheat = shed.get("WHEAT", 0)
-    wheat_buffer = stats["animals_placed"] + 2
-    if day >= 2 and shed_wheat - wheat_buffer >= 5:
-        market.append(["SELL", "WHEAT", shed_wheat - wheat_buffer])
-    # Day-0 cash bridge: the capital ladder needs the last wheat seeds, which
-    # current stock can bridge the final seed purchase.
-    if day == 0 and money < 100 and shed_wheat > 2:
-        market.append(["SELL", "WHEAT", 1])
-
-    # Hires: hands reset daily, n-th hire of the day costs fib(n).
-    target = OPENING_HANDS_TARGET if day <= 1 else BRIDGE_HANDS_TARGET
-    n_hands = len(s["units"]) - 1
-    if n_hands < target and money >= 15:
-        market.extend([["HIRE"]] * (target - n_hands))
-
-    # Day-0 all-in capital ladder, guarded by current cash.
-    if day == 0:
-        cow_want = 2 - stats["cow_total"]
-        if cow_want > 0 and money >= COW_COST * cow_want:
-            market.append(["BUY_ANIMAL", "COW", cow_want])
-        sheep_want = 3 - stats["sheep_total"]
-        if sheep_want > 0 and money >= SHEEP_COST * sheep_want:
-            market.append(["BUY_ANIMAL", "SHEEP", sheep_want])
-
-    # Geese once coop slots exist (coops are built by the duty planner).
-    slots = len(_empty_structures(s["tiles"], "COOP"))
-    slots += sum(1 for p in GOOSE_COOPS if s["tiles"][p[1]][p[0]] is None)
-    if (
-        GOOSE_BUY_FIRST_DAY <= day <= GOOSE_BUY_LAST_DAY
-        and stats["goose_total"] < 2
-        and slots > 0
-        and money >= GOOSE_COST + 50
-    ):
-        market.append(["BUY_ANIMAL", "GOOSE", min(2 - stats["goose_total"], slots)])
-
-    # Feed buffer before seed money (survival first): one day of cover per
-    # placed animal. Day 0 buys nothing — animals can wait a day without
-    # escaping and fertilizer income funds day-1 feeding. The day-1 reserve
-    # is low on purpose: the first wheat must be bought at h0 because the
-    # animals' two-day escape clock started during the day-0 build rush.
-    if day >= 1 and stats["animals_placed"] > 0:
-        feed_have = shed_wheat + stats["carried_wheat"]
-        feed_need = stats["animals_placed"] - feed_have
-        reserve = 25 if day == 1 else 60
-        if feed_need > 0 and money >= reserve + 1:
-            price = max(1, int(prices.get("WHEAT", 25)))
-            n = min(feed_need, 3, int((money - reserve) // price))
-            if n > 0:
-                market.append(["BUY_PRODUCT", "WHEAT", n])
-
-    # Seeds. Melon pairs on the opener days with
-    # a single-seed fallback when cash is tight, then continuous replenishment
-    # for replant cycles; reserves protect feed cash.
-    melon_target = 6 if day == 0 else 10
-    melon_want = melon_target - stats["melon_planted"] - seeds.get("MELON", 0)
-    if day <= MELON_REPLANT_BY_DAY and melon_want > 0:
-        n = min(2, melon_want)
-        reserve = 20 if day <= 1 else 120
-        if money >= n * MELON_SEED_COST + reserve:
-            market.append(["BUY_SEED", "MELON", n])
-        elif money >= MELON_SEED_COST + reserve:
-            market.append(["BUY_SEED", "MELON", 1])
-    wheat_want = (
-        10 + (6 if day == 0 else 0)
-        - stats["wheat_planted"] - seeds.get("WHEAT", 0)
-    )
-    if day <= WHEAT_REPLANT_BY_DAY and wheat_want > 0:
-        reserve = 20 if day <= 1 else 60
-        n = min(wheat_want, int((money - reserve) // WHEAT_SEED_COST))
-        if n > 0:
-            market.append(["BUY_SEED", "WHEAT", n])
-    return market
-
-
-# Sticky per-unit goals (per player): carriers keep their build/place spot
-# across turns and open tasks keep their unit, so re-deriving the same plan
-# each turn does not make units oscillate between equally-distant targets.
-_UNIT_GOALS = {}
-
-
-def _bridge_agent(observation):
-    """exp-0044: state-derived top opener (days 0-1) + monotone day-2 bridge.
-
-    Every turn derives duties from live tile state: place/fetch/build the
-    five-pasture roster, feed/care all animals, harvest before crop decay,
-    water every unwatered plant (planting-day watering is mandatory), plant
-    the fixed wheat/melon footprints from seed stock, collect and sell the
-    daily fertilizer flow. The opening capital ladder targets the fixed
-    starting herd, worker count, and crop portfolio from live farm state.
-    """
-    s = _bridge_state(observation)
-    tiles = s["tiles"]
-    day = s["day"]
-    shed = s["shed"]
-    seeds = s["seeds"]
-    prices = s["prices"]
-    units = s["units"]
-
-    wheat_tiles, melon_day0, melon_day1, cow_spots, sheep_spots = _opening_layout(tiles, s["unlocked"])
-    melon_tiles = melon_day0 if day == 0 else melon_day0 + melon_day1
-    pasture_spots = cow_spots + sheep_spots
-
-    animal_tiles = {}
-    for y in range(len(tiles)):
-        for x in range(len(tiles[y])):
-            tile = tiles[y][x]
-            if isinstance(tile, dict) and "animal" in tile:
-                animal_tiles[(x, y)] = tile
-
-    cows_placed = sum(1 for t in animal_tiles.values() if t["animal"] == "COW")
-    sheep_placed = sum(1 for t in animal_tiles.values() if t["animal"] == "SHEEP")
-    goose_placed = sum(1 for t in animal_tiles.values() if t["animal"] == "GOOSE")
-    animals_placed = cows_placed + sheep_placed + goose_placed
-    carried = {"COW": 0, "SHEEP": 0, "GOOSE": 0}
-    carried_wheat = 0
-    for _name, _pos, inv in units:
-        for animal in carried:
-            carried[animal] += inv.get(animal, 0)
-        carried_wheat += inv.get("WHEAT", 0)
-    melon_planted = sum(
+def _v92_live_animals(farm):
+    return sum(
         1
-        for p in melon_tiles
-        if isinstance(tiles[p[1]][p[0]], dict)
-        and tiles[p[1]][p[0]].get("kind") == "PLANT"
-        and tiles[p[1]][p[0]].get("crop") == "MELON"
+        for row in farm.get("tiles") or []
+        for tile in row
+        if isinstance(tile, dict) and tile.get("animal")
     )
-    wheat_planted = sum(
-        1
-        for p in wheat_tiles
-        if isinstance(tiles[p[1]][p[0]], dict)
-        and tiles[p[1]][p[0]].get("kind") == "PLANT"
-        and tiles[p[1]][p[0]].get("crop") == "WHEAT"
-    )
-    stats = {
-        "cow_total": cows_placed + carried["COW"] + shed.get("COW", 0),
-        "sheep_total": sheep_placed + carried["SHEEP"] + shed.get("SHEEP", 0),
-        "goose_total": goose_placed + carried["GOOSE"] + shed.get("GOOSE", 0),
-        "goose_placed": goose_placed,
-        "animals_placed": animals_placed,
-        "melon_planted": melon_planted,
-        "wheat_planted": wheat_planted,
-        "carried_wheat": carried_wheat,
-    }
 
-    # Priorities (lower = first). Day 0: builds, animal placement and the
-    # plant/water pair own the whole day — feeding/care slip to day 1 (one
-    # unfed day is recoverable; a missed planting-day watering kills the
-    # plant that night). Day 1+: feeding and care are escape/bonus-critical
-    # and outrank the watering wave, which has until nightfall anyway;
-    # fertilizer collection follows right behind (it funds feed and seeds).
-    plant_pri = 1 if day <= 1 else 4
-    water_pri = 1 if day == 0 else 3
-    fresh_water_pri = 0.5  # a plant from TODAY dies tonight unless watered now
-    collect_pri = 0.45 if day <= 1 else 4
-    feed_pri = 6 if day == 0 else 0.4
-    care_pri = 7 if day == 0 else 2
-    harvest_animal_pri = 2 if day <= 1 else 2.5
 
-    tasks = []
+def _v92_buy_units(orders, item):
+    return sum(int(o[2]) for o in orders if len(o) > 2 and o[0] == "BUY_PRODUCT" and o[1] == item)
 
-    def add(pri, pos, kind, payload=None, bound=None):
-        tasks.append([pri, len(tasks), pos, kind, payload, bound])
 
-    # Per-turn target claims: bound tasks pick distinct structures/spots so
-    # two carriers never converge on the same tile (the second PLACE/BUILD
-    # would no-op and strand the animal or waste the hand).
-    claimed = set()
+def _v92_apply(obs, action):
+    day = int(obs.get("day", 0) or 0)
+    hour = int(obs.get("hour", 0) or 0)
+    if day != GUARD_DAY or hour != GUARD_HOUR:
+        return action
 
-    # 0: carried animals -> place on an empty structure or build their spot.
-    # Carriers keep their chosen spot across turns (sticky goal) so a build
-    # target never switches mid-walk.
-    goals = _UNIT_GOALS.setdefault(observation["player"], {})
-    for ui, (_name, pos, inv) in enumerate(units):
-        for animal in ("COW", "SHEEP", "GOOSE"):
-            if not inv.get(animal):
-                goals.pop(ui, None)
-                continue
-            structure = "COOP" if animal == "GOOSE" else "PASTURE"
-            spots = (
-                GOOSE_COOPS
-                if animal == "GOOSE"
-                else (cow_spots if animal == "COW" else sheep_spots)
-            )
-            goal = goals.get(ui)
-            tile = tiles[goal[1]][goal[0]] if goal else None
-            goal_valid = (
-                goal in spots
-                and (
-                    (isinstance(tile, dict) and tile.get("kind") == structure and "animal" not in tile)
-                    or tile is None
-                )
-            )
-            if not goal_valid:
-                empty = [p for p in _empty_structures(tiles, structure) if p not in claimed]
-                buildable = [p for p in spots if tiles[p[1]][p[0]] is None and p not in claimed]
-                if empty:
-                    goal = min(empty, key=lambda p: (_dist(pos, p), p))
-                    claimed.add(goal)
-                    add(0, goal, "place", animal, ui)
-                    goals[ui] = goal
-                    continue
-                if buildable:
-                    goal = min(buildable, key=lambda p: (_dist(pos, p), p))
-                    claimed.add(goal)
-                    goals[ui] = goal
-                    add(0, goal, "build", {"structure": structure}, ui)
-                    continue
-                continue  # no slot this turn; keep carrying
-            claimed.add(goal)
-            if isinstance(tile, dict):
-                add(0, goal, "place", animal, ui)
-            else:
-                add(0, goal, "build", {"structure": structure}, ui)
+    seat = int(obs.get("player", 0) or 0)
+    farms = obs.get("farms") or []
+    if seat >= len(farms):
+        return action
+    farm = farms[seat]
+    private = obs.get("private") or {}
 
-    # 1: fetch shed animals while placement slots exist. Geese are fetched on
-    # any day a free coop exists (their buy window is days 10-14; an unfetched
-    # goose strands in the shed and produces nothing).
-    if day <= 2:
-        for animal in ("COW", "SHEEP"):
-            n_shed = shed.get(animal, 0)
-            if n_shed <= 0:
-                continue
-            spots = cow_spots if animal == "COW" else sheep_spots
-            slots = len([p for p in _empty_structures(tiles, "PASTURE") if p not in claimed])
-            slots += sum(1 for p in spots if tiles[p[1]][p[0]] is None and p not in claimed)
-            slots -= carried[animal]
-            for _ in range(min(n_shed, max(0, slots))):
-                add(1, (4, 4), "fetch", animal)
-    goose_shed = shed.get("GOOSE", 0)
-    if goose_shed > 0:
-        free_coops = len([p for p in _empty_structures(tiles, "COOP") if p not in claimed])
-        for _ in range(min(goose_shed, max(0, free_coops - carried["GOOSE"]))):
-            add(1, (4, 4), "fetch", "GOOSE")
+    orders = list(action.get("market") or [])
+    wheat_buys = _v92_buy_units(orders, "WHEAT")
+    fert_buys = _v92_buy_units(orders, "FERTILIZER")
+    if wheat_buys <= 0 and fert_buys <= 0:
+        return action
 
-    # 1: day-0 pastures (the farmer builds its own spawn corner while the
-    # market buys the first cow).
-    if day == 0:
-        for p in pasture_spots:
-            if tiles[p[1]][p[0]] is None and p not in claimed:
-                claimed.add(p)
-                add(1, p, "build", {"structure": "PASTURE"})
+    shed_now = _v92_shed_total(private)
+    carried_now = _v92_carried_total(private)
+    projected = shed_now + carried_now + wheat_buys + fert_buys + HARVEST_ALLOWANCE
+    if projected <= SHED_CAPACITY:
+        return action
 
-    # 2: feed hungry animals (escape needs 2 consecutive unfed days). Only as
-    # many tasks as there is wheat to actually deliver, and skipped entirely
-    # when no wheat exists anywhere — a pickup shuttle with an empty shed
-    # must not occupy units.
-    feed_have = stats["carried_wheat"] + shed.get("WHEAT", 0)
-    if feed_have > 0:
-        for p, t in sorted(animal_tiles.items()):
-            if not t.get("fed_today", False) and feed_have > 0:
-                feed_have -= 1
-                add(feed_pri, p, "feed")
+    # Reserve floor, expressed as units that must REMAIN BOUGHT rather than units
+    # left unpurchased. An earlier version of this guard used a per-animal wheat
+    # floor, which on the audited state (16 animals, a 16-unit wheat buy) forbade
+    # trimming wheat at all and left the overflow uncorrectable. The binding
+    # reserve is what the farm still holds in the shed: shed wheat and shed
+    # fertilizer are what feed the next day, not this turn's order quantity.
+    shed = private.get("shed") or {}
+    shed_wheat = int(shed.get("WHEAT", 0) or 0)
+    shed_fert = int(shed.get("FERTILIZER", 0) or 0)
+    # Keep buying at least the smaller of what was ordered and a small floor, so
+    # the farm never abandons feed/soil entirely, and keep existing shed stock.
+    wheat_keep = min(wheat_buys, max(0, min(shed_wheat, wheat_buys)))
+    fert_keep = min(fert_buys, MIN_FERT_RESERVE)
 
-    # 2: deadline harvests (decay kills one-shot crops after max_yield_day+1).
-    for p in wheat_tiles:
-        tile = tiles[p[1]][p[0]]
-        if (
-            isinstance(tile, dict)
-            and tile.get("kind") == "PLANT"
-            and tile.get("crop") == "WHEAT"
-            and tile.get("yield_units", 0) > 0
-            and (day - tile["planted_day"] >= WHEAT_MAX_YIELD_DAY or tile["yield_units"] >= 4)
-        ):
-            add(2, p, "harvest")
-    for p in melon_tiles:
-        tile = tiles[p[1]][p[0]]
-        if (
-            isinstance(tile, dict)
-            and tile.get("kind") == "PLANT"
-            and tile.get("crop") == "MELON"
-            and tile.get("yield_units", 0) > 0
-            and (tile["yield_units"] >= 5 or day - tile["planted_day"] >= MELON_MAX_YIELD_DAY)
-        ):
-            add(2, p, "harvest")
+    new_wheat = wheat_buys
+    new_fert = min(fert_buys, MAX_FERT_BUY)
+    if new_fert < fert_keep:
+        new_fert = fert_keep
 
-    # 3: care (fed+cared same day accrues the production bonus).
-    for p, t in sorted(animal_tiles.items()):
-        if not t.get("cared_today", False):
-            add(care_pri, p, "care")
+    # Recompute projection with the adjusted buys and trim in bulk, not one unit
+    # per pass: a one-unit-per-pass loop cannot cover a double-digit excess.
+    def projected(wheat_qty, fert_qty):
+        return shed_now + carried_now + wheat_qty + fert_qty + HARVEST_ALLOWANCE
 
-    # 4: harvest animal products (milk day 8+, wool day 6+, eggs).
-    for p, t in sorted(animal_tiles.items()):
-        if t.get("yield_units", 0) > 0:
-            add(harvest_animal_pri, p, "harvest")
-
-    # 3: goose coops (day 4+; outranks replanting so the coop spots are not
-    # recropped). Window extends to day 14: the (3,2) melon tile only frees
-    # on day 13 (its day-1 planting reaches age 12 then).
-    if GOOSE_BUILD_FIRST_DAY <= day <= GOOSE_BUILD_LAST_DAY and stats["goose_placed"] < 2:
-        for p in GOOSE_COOPS:
-            if tiles[p[1]][p[0]] is None:
-                add(3, p, "build", {"structure": "COOP"})
-
-    # 3: water every unwatered plant while its window is open. A plant from
-    # TODAY gets the fresh-water priority: it counts 1 unwatered day at
-    # creation, so missing tonight kills it regardless of the yield window.
-    for p in wheat_tiles:
-        tile = tiles[p[1]][p[0]]
-        if (
-            isinstance(tile, dict)
-            and tile.get("kind") == "PLANT"
-            and tile.get("crop") == "WHEAT"
-            and not tile.get("watered_today", False)
-            and day - tile["planted_day"] <= WHEAT_MAX_YIELD_DAY
-        ):
-            add(fresh_water_pri if tile["planted_day"] == day else water_pri, p, "water")
-    for p in melon_tiles:
-        tile = tiles[p[1]][p[0]]
-        if (
-            isinstance(tile, dict)
-            and tile.get("kind") == "PLANT"
-            and tile.get("crop") == "MELON"
-            and not tile.get("watered_today", False)
-            and day - tile["planted_day"] <= MELON_WATER_WINDOW_LAST
-        ):
-            add(fresh_water_pri if tile["planted_day"] == day else water_pri, p, "water")
-
-    # 6: collect fertilizer (1/animal/day) and ship products to the shed so
-    # same-turn sells can see them.
-    if prices.get("FERTILIZER", 0) >= 40:
-        for p, t in sorted(animal_tiles.items()):
-            if t.get("fertilizer_available", False):
-                add(collect_pri, p, "collect")
-    for ui, (_name, pos, inv) in enumerate(units):
-        if any(v for k, v in inv.items() if k not in ("WHEAT", "COW", "SHEEP", "GOOSE")):
-            add(6, _nearest_shed(pos), "drop", None, ui)
-
-    # Plant the fixed footprints from seed stock (aggregate-PLANT safe).
-    # Per-tile deadline: a plant only pays if it can still be watered today
-    # (plant + water + travel must fit before hour 23); as that slack closes
-    # the task's priority is boosted so it jumps the watering queue.
-    def _plant_task(p, crop, stock):
-        if stock <= 0 or not (tiles[p[1]][p[0]] is None):
-            return stock
-        mind = min(_dist(u[1], p) for u in units)
-        slack = 21 - s["hour"] - mind
-        if slack < -1:
-            return stock
-        # Urgency: as the plant+water window closes, jump the normal watering
-        # queue — but never ahead of a fresh-plant water (floor 0.5).
-        add(max(0.5, plant_pri - max(0, 6 - slack)), p, "plant", crop)
-        return stock - 1
-
-    # While the coop build window is open with geese still owed, reserve the
-    # coop spots from replanting: the same-turn harvest->replant pipeline
-    # otherwise never leaves those tiles None, so BUILD_COOP can never fire
-    # (this stranded two bought geese in the shed in the regression audit).
-    reserve_coop_spots = (
-        GOOSE_BUILD_FIRST_DAY <= day <= GOOSE_BUILD_LAST_DAY and stats["goose_placed"] < 2
-    )
-    melon_stock = seeds.get("MELON", 0)
-    if day <= MELON_REPLANT_BY_DAY:
-        for p in melon_tiles:
-            if reserve_coop_spots and p in GOOSE_COOPS:
-                continue
-            melon_stock = _plant_task(p, "MELON", melon_stock)
-    wheat_stock = seeds.get("WHEAT", 0)
-    if day <= WHEAT_REPLANT_BY_DAY:
-        for p in wheat_tiles:
-            if reserve_coop_spots and p in GOOSE_COOPS:
-                continue
-            wheat_stock = _plant_task(p, "WHEAT", wheat_stock)
-
-    # 7: weeds block planting on the planned footprints.
-    for p in melon_tiles + wheat_tiles:
-        tile = tiles[p[1]][p[0]]
-        if isinstance(tile, dict) and tile.get("kind") == "WEED":
-            add(7, p, "dig")
-
-    # Assignment: bound tasks first. Open tasks are swept by priority and
-    # then by proximity (nearest task first) so units work outward from the
-    # shed instead of convoying across the map to far tasks while near ones
-    # starve. Feed tasks prefer wheat carriers; each unit keeps tile affinity.
-    goals = _UNIT_GOALS.setdefault(observation["player"], {})
-    last_task = goals.setdefault("_last", {})
-    plan = {}
-    free = set(range(len(units)))
-
-    def _task_order(task):
-        if task[5] is not None:
-            return (0, task[0], 0, task[1])
-        kind, pos = task[3], task[2]
-        mindist = min(_dist(units[ui][1], pos) for ui in range(len(units)))
-        return (1, task[0], mindist, task[1])
-
-    for task in sorted(tasks, key=_task_order):
-        if task[5] is not None:
-            if task[5] in free:
-                plan[task[5]] = _emit_task(task, units[task[5]], shed)
-                free.discard(task[5])
-            continue
-        if not free:
+    guard_passes = 0
+    while projected(new_wheat, new_fert) > SHED_CAPACITY and guard_passes < 32:
+        guard_passes += 1
+        # Trim fertilizer first (cheapest per unit), then wheat, but never below
+        # the floors.
+        if new_fert > fert_keep:
+            new_fert -= 1
+        elif new_wheat > wheat_keep:
+            new_wheat -= 1
+        else:
             break
-        kind, pos = task[3], task[2]
-        best, best_cost = None, None
-        for ui in sorted(free):
-            _name, upos, uinv = units[ui]
-            cost = _dist(upos, pos)
-            if kind == "feed" and not uinv.get("WHEAT"):
-                cost += _dist(upos, _nearest_shed(upos)) + 3
-            if kind == "build" and ui == 0 and pos != (4, 4):
-                cost += 4  # the farmer keeps shed-corner duties on day 0
-            if last_task.get(ui) == pos:
-                cost -= 2.5  # affinity: keep a unit on its previous tile
-            if best_cost is None or cost < best_cost:
-                best, best_cost = ui, cost
-        plan[best] = _emit_task(task, units[best], shed)
-        last_task[best] = pos
-        free.discard(best)
 
-    actions = [plan.get(ui, ["PASS"]) for ui in range(len(units))]
-    return {
-        "farmer": actions[0],
-        "hands": actions[1:],
-        "market": _bridge_market(s, stats, day),
-    }
+    if new_wheat == wheat_buys and new_fert == fert_buys:
+        return action
+
+    new_orders = []
+    for order in orders:
+        if len(order) > 2 and order[0] == "BUY_PRODUCT" and order[1] == "FERTILIZER":
+            if new_fert > 0:
+                new_orders.append(["BUY_PRODUCT", "FERTILIZER", new_fert])
+        elif len(order) > 2 and order[0] == "BUY_PRODUCT" and order[1] == "WHEAT":
+            if new_wheat > 0:
+                new_orders.append(["BUY_PRODUCT", "WHEAT", new_wheat])
+        else:
+            new_orders.append(list(order))
+
+    action = _v92_copy.deepcopy(action)
+    action["market"] = new_orders
+    return action
 
 
+def _v92_entrypoint(obs, configuration=None):
+    return _v92_apply(obs, _v50_agent(obs, configuration))
 
-def agent(observation):
-    # exp-0044: the state-derived top opener + day-2 bridge drives every
-    # turn; the champion body remains only as an anomaly fallback.
-    try:
-        return _bridge_agent(observation)
-    except Exception:
-        return _champion_agent(observation)
+
+def _kaggle_submission_entrypoint(obs, configuration=None):
+    return _v92_entrypoint(obs, configuration)

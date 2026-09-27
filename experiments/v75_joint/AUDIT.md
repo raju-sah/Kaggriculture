@@ -1,0 +1,23 @@
+# V75 joint tranche 1 audit (spent seed 94700)
+
+The historically tested source is now frozen as `agent_tranche1.py`, SHA-256 `6c409254327383845307de2221884970743aa0b12254b38dc5e22c5014730d0c`. The current `agent.py` is the later weed-placement repair, documented separately in `README.md`. This audit uses the four saved replays and `report.json` under `runs/tranche1_94700/`. The engine was Kaggriculture 1.32.7. Replaying market settlement with `experiments/v75_elite_cashflow/reconstruct.py` yielded **zero cash mismatches** in each game. Accepted sales below therefore mean completed transactions, not submitted sell orders.
+
+| Opponent / seat | Candidate cash | Opponent cash | Margin | Candidate accepted sales | Candidate spending* | Result |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| V56 / 0 | 69,525 | 152,727 | -83,202 | 89,424 | 22,899 | Loss |
+| V56 / 1 | 69,525 | 152,727 | -83,202 | 89,424 | 22,899 | Loss |
+| V70 / 0 | 72,543 | 70,568 | +1,975 | 92,231 | 22,688 | Win |
+| V70 / 1 | 48,665 | 60,974 | -12,309 | 69,494 | 23,829 | Loss |
+
+*Spending includes accepted product, seed, and animal purchases plus land/hiring costs. Every row reconciles as 3,000 initial cash + sales - spending = final cash. Both seat orders against V56 produce identical economic paths; the V70 matchup is sensitive to seat order and the shared market.
+
+The **separate frozen V70-versus-V56 comparison** at the same spent seed (`experiments/v70_capacity/spent94700_vs_v56/`) gave V70 57,066 cash and 73,052 accepted sales in each seat, against V56's 146,563 cash. Thus the joint agent gains **12,459 own cash** and **16,372 accepted sales** versus that saved baseline, though its paired games against V70 split 1–1. The shared market changes opponent cash, so the saved baseline is an own-cash reference, not a head-to-head margin.
+
+Against V56, the candidate's sales by product were wool 33,282, milk 15,392, strawberry 12,156, melon 13,006, fertilizer 9,124, wheat 3,948, egg 2,516. V56 sold 189,260 total versus the candidate's 89,424: strawberry alone was 55,351, milk 45,411, wheat 15,368, fertilizer 19,877, and wool 14,393. The added sheep make wool the candidate's strongest product, but do not close the roughly 99,836 sales gap. Candidate early sales were 2,680 on days 0–5 and 7,863 on days 6–11; day 9 ended at only 50 cash and five hands. By day 12 it had two lands, two cows, six sheep, two geese, eleven strawberry plants, and 1,429 cash. V56 had three lands, six cows, four sheep, seven geese, 33 strawberries, and 24,666 cash. Candidate service actions were 121 plant, 489 water, 234 harvest, 248 feed, 228 care, and 144 fertilizer collections, with no execution errors. Its crop production is much smaller despite active work.
+
+The V70 paired seats show a market interaction rather than a stable improvement: candidate wool sales were 33,045 in seat 0 and 13,305 in seat 1; total sales fell from 92,231 to 69,494. Both candidate games spent roughly 23,000. In the V56 games, one sheep remained in the shed at the end; during days 15–20 two sheep remained in the shed. End state had no empty pasture. The service planner's crop reservations leave little buildable room in the second quadrant, while goose coops can occupy cells there. This limits the value of buying toward the eight-sheep target. The source changes versus repaired service V75 are limited to the higher sheep target, earlier/cheaper second land, higher staffing target at eight animals, and lower animal/strawberry cash reserves.
+
+Two bounded next experiments:
+
+1. **Capacity and placement:** Buy an additional sheep only when a distinct pasture can be built or is already empty after all crop and coop reservations; prioritize using the planned coop cells once they clear, or defer goose purchases until then. Gate: no livestock held in the shed after day 14, all bought livestock placed within 48 hours, zero errors, and own cash at least 69,525 in **both** V56 seats on 94700. Inspect accepted wool/egg/milk sales and day 12 cash; reject if capacity repair merely trades away crops.
+2. **Crop/animal mix with funded expansion:** On the repaired placement base, test one staged alternative that redirects marginal sheep capital and two-land space toward a third land, more strawberry plots and cows only after early sales cover seed, feed, and labor. Gate on spent 94700 both seats: own cash above 84,525 (a further +15,000), accepted sales above 105,000, day 12 strawberry count materially above 11, no stranded animals, and no errors. Expand to spent 92802 only after the first gate, then reserve 92804 for confirmation under the existing `README.md` protocol. No fresh seeds or submission from these data.

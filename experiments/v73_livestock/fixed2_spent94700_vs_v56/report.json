@@ -1,0 +1,449 @@
+{
+  "candidate": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/agent.py",
+  "finished_at": "2026-09-26T18:33:44.274257+00:00",
+  "games": [
+    {
+      "action_counts": [
+        {
+          "farmer": {
+            "BUILD_PASTURE": 1,
+            "CARE": 20,
+            "COLLECT_FERTILIZER": 15,
+            "DROP": 10,
+            "EAST": 86,
+            "FEED": 82,
+            "HARVEST": 24,
+            "NORTH": 103,
+            "PASS": 103,
+            "PICKUP": 32,
+            "PLACE": 1,
+            "PLANT": 21,
+            "SOUTH": 63,
+            "WATER": 49,
+            "WEST": 109
+          },
+          "hands": {
+            "BUILD_COOP": 4,
+            "BUILD_PASTURE": 4,
+            "CARE": 195,
+            "COLLECT_FERTILIZER": 82,
+            "DIG": 1,
+            "DROP": 90,
+            "EAST": 888,
+            "FEED": 135,
+            "FERTILIZE": 4,
+            "HARVEST": 248,
+            "NORTH": 984,
+            "PASS": 1160,
+            "PICKUP": 273,
+            "PLACE": 8,
+            "PLANT": 113,
+            "SOUTH": 571,
+            "WATER": 482,
+            "WEST": 1001
+          },
+          "market": {
+            "BUY_ANIMAL": 5,
+            "BUY_LAND": 1,
+            "BUY_PRODUCT": 132,
+            "BUY_SEED": 72,
+            "HIRE": 426,
+            "SELL": 143
+          }
+        },
+        {
+          "farmer": {
+            "BUILD_PASTURE": 2,
+            "CARE": 32,
+            "COLLECT_FERTILIZER": 56,
+            "DIG": 1,
+            "DROP": 17,
+            "EAST": 53,
+            "FEED": 24,
+            "FERTILIZE": 22,
+            "HARVEST": 49,
+            "NORTH": 113,
+            "PASS": 15,
+            "PICKUP": 8,
+            "PLACE": 10,
+            "PLANT": 38,
+            "SOUTH": 66,
+            "WATER": 130,
+            "WEST": 83
+          },
+          "hands": {
+            "BUILD_COOP": 3,
+            "BUILD_PASTURE": 23,
+            "CARE": 431,
+            "COLLECT_FERTILIZER": 430,
+            "DIG": 28,
+            "DROP": 98,
+            "EAST": 565,
+            "FEED": 441,
+            "FERTILIZE": 196,
+            "HARVEST": 447,
+            "NORTH": 808,
+            "PASS": 199,
+            "PICKUP": 201,
+            "PLACE": 65,
+            "PLANT": 259,
+            "SOUTH": 525,
+            "WATER": 907,
+            "WEST": 910
+          },
+          "market": {
+            "BUY_ANIMAL": 56,
+            "BUY_LAND": 2,
+            "BUY_PRODUCT": 809,
+            "BUY_SEED": 202,
+            "HIRE": 289,
+            "SELL": 3453
+          }
+        }
+      ],
+      "agents": [
+        {
+          "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/agent.py",
+          "sha256": "a093f27dbbc1256cb927ec951a6b05565308dc86fc9c1a84b5cd9982ae3bc37e"
+        },
+        {
+          "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/boey_v56_test.py",
+          "sha256": "5aae7d29c7278192b92082ef90bf6e6f8c8c0a4f8340876cc98cb6cb77190281"
+        }
+      ],
+      "candidate_error": false,
+      "candidate_result": "loss",
+      "candidate_seat": 0,
+      "candidate_status": "DONE",
+      "coin_difference_seat_0": -83707.0,
+      "environment": {
+        "engine_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/envs/kaggriculture/kaggriculture.py",
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "episode_steps": 720,
+        "name": "kaggriculture",
+        "package": "kaggle-environments",
+        "package_version": "1.32.7",
+        "python_version": "3.12.3",
+        "specification_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/envs/kaggriculture/kaggriculture.json",
+        "specification_sha256": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867"
+      },
+      "error": null,
+      "final_coins": [
+        60790.0,
+        144497.0
+      ],
+      "game_id": "V56-seed-94700-ab-repeat-0",
+      "infrastructure_error": false,
+      "log_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/fixed2_spent94700_vs_v56/logs/V56-seed-94700-ab-repeat-0.log",
+      "ok": true,
+      "opponent": "V56",
+      "opponent_error": false,
+      "opponent_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/boey_v56_test.py",
+      "opponent_seat": 1,
+      "opponent_status": "DONE",
+      "raw_replay_sha256": "8bf69dd76eef574ddcd53fa2c0cc5cd6f598db6df4c9c50583c4a6b64db6dc39",
+      "repeat": 0,
+      "replay_normalization": {
+        "removed_top_level_fields": [
+          "id"
+        ]
+      },
+      "replay_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/fixed2_spent94700_vs_v56/replays/V56-seed-94700-ab-repeat-0.json",
+      "replay_retained": true,
+      "replay_sha256": "0803efc7edffa6443152d6df0b398914025a1fbe86571c1c0831cfd51579a953",
+      "resolved_seed": 94700,
+      "runtime_seconds": 14.396700634999434,
+      "seed": 94700,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "swapped": false,
+      "timed_out": false,
+      "winner_seat": 1,
+      "worker_exit_code": 0
+    },
+    {
+      "action_counts": [
+        {
+          "farmer": {
+            "BUILD_PASTURE": 2,
+            "CARE": 32,
+            "COLLECT_FERTILIZER": 56,
+            "DIG": 1,
+            "DROP": 17,
+            "EAST": 53,
+            "FEED": 24,
+            "FERTILIZE": 22,
+            "HARVEST": 49,
+            "NORTH": 113,
+            "PASS": 15,
+            "PICKUP": 8,
+            "PLACE": 10,
+            "PLANT": 38,
+            "SOUTH": 66,
+            "WATER": 130,
+            "WEST": 83
+          },
+          "hands": {
+            "BUILD_COOP": 3,
+            "BUILD_PASTURE": 23,
+            "CARE": 431,
+            "COLLECT_FERTILIZER": 429,
+            "DIG": 31,
+            "DROP": 98,
+            "EAST": 565,
+            "FEED": 441,
+            "FERTILIZE": 196,
+            "HARVEST": 447,
+            "NORTH": 808,
+            "PASS": 199,
+            "PICKUP": 201,
+            "PLACE": 65,
+            "PLANT": 259,
+            "SOUTH": 525,
+            "WATER": 905,
+            "WEST": 910
+          },
+          "market": {
+            "BUY_ANIMAL": 56,
+            "BUY_LAND": 2,
+            "BUY_PRODUCT": 809,
+            "BUY_SEED": 202,
+            "HIRE": 289,
+            "SELL": 3453
+          }
+        },
+        {
+          "farmer": {
+            "BUILD_PASTURE": 1,
+            "CARE": 20,
+            "COLLECT_FERTILIZER": 15,
+            "DROP": 10,
+            "EAST": 86,
+            "FEED": 82,
+            "HARVEST": 24,
+            "NORTH": 103,
+            "PASS": 103,
+            "PICKUP": 32,
+            "PLACE": 1,
+            "PLANT": 21,
+            "SOUTH": 63,
+            "WATER": 49,
+            "WEST": 109
+          },
+          "hands": {
+            "BUILD_COOP": 4,
+            "BUILD_PASTURE": 4,
+            "CARE": 195,
+            "COLLECT_FERTILIZER": 82,
+            "DIG": 1,
+            "DROP": 90,
+            "EAST": 888,
+            "FEED": 135,
+            "FERTILIZE": 4,
+            "HARVEST": 248,
+            "NORTH": 984,
+            "PASS": 1160,
+            "PICKUP": 273,
+            "PLACE": 8,
+            "PLANT": 113,
+            "SOUTH": 571,
+            "WATER": 482,
+            "WEST": 1001
+          },
+          "market": {
+            "BUY_ANIMAL": 5,
+            "BUY_LAND": 1,
+            "BUY_PRODUCT": 132,
+            "BUY_SEED": 72,
+            "HIRE": 426,
+            "SELL": 143
+          }
+        }
+      ],
+      "agents": [
+        {
+          "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/boey_v56_test.py",
+          "sha256": "5aae7d29c7278192b92082ef90bf6e6f8c8c0a4f8340876cc98cb6cb77190281"
+        },
+        {
+          "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/agent.py",
+          "sha256": "a093f27dbbc1256cb927ec951a6b05565308dc86fc9c1a84b5cd9982ae3bc37e"
+        }
+      ],
+      "candidate_error": false,
+      "candidate_result": "loss",
+      "candidate_seat": 1,
+      "candidate_status": "DONE",
+      "coin_difference_seat_0": 47540.0,
+      "environment": {
+        "engine_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/envs/kaggriculture/kaggriculture.py",
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "episode_steps": 720,
+        "name": "kaggriculture",
+        "package": "kaggle-environments",
+        "package_version": "1.32.7",
+        "python_version": "3.12.3",
+        "specification_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/envs/kaggriculture/kaggriculture.json",
+        "specification_sha256": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867"
+      },
+      "error": null,
+      "final_coins": [
+        97696.0,
+        50156.0
+      ],
+      "game_id": "V56-seed-94700-ba-repeat-0",
+      "infrastructure_error": false,
+      "log_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/fixed2_spent94700_vs_v56/logs/V56-seed-94700-ba-repeat-0.log",
+      "ok": true,
+      "opponent": "V56",
+      "opponent_error": false,
+      "opponent_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/boey_v56_test.py",
+      "opponent_seat": 0,
+      "opponent_status": "DONE",
+      "raw_replay_sha256": "46c6747a64b92b9cc57d83d11406ae1c80055a2a80d8142790360095a16f5d0d",
+      "repeat": 0,
+      "replay_normalization": {
+        "removed_top_level_fields": [
+          "id"
+        ]
+      },
+      "replay_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/fixed2_spent94700_vs_v56/replays/V56-seed-94700-ba-repeat-0.json",
+      "replay_retained": true,
+      "replay_sha256": "869ddc9832db73851bc19dff0df2e6e9af1638752fa8f620d58b9867debd513f",
+      "resolved_seed": 94700,
+      "runtime_seconds": 14.31357296500937,
+      "seed": 94700,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "swapped": true,
+      "timed_out": false,
+      "winner_seat": 0,
+      "worker_exit_code": 0
+    }
+  ],
+  "opponents": [
+    {
+      "name": "V56",
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/boey_v56_test.py"
+    }
+  ],
+  "repeats": 1,
+  "replay_policy": "all",
+  "schema_version": 2,
+  "seeds": [
+    94700
+  ],
+  "started_at": "2026-09-26T18:33:28.046089+00:00",
+  "summary": {
+    "by_candidate_seat": {
+      "0": {
+        "candidate_errors": 0,
+        "decisive_win_rate": 0.0,
+        "decisive_win_rate_wilson_95": [
+          0.0,
+          0.7934506856227626
+        ],
+        "draws": 0,
+        "games": 1,
+        "infrastructure_errors": 0,
+        "losses": 1,
+        "mean_final_coins_candidate": 60790.0,
+        "mean_runtime_seconds": 14.396700634999434,
+        "median_coin_difference_candidate": -83707.0,
+        "opponent_errors": 0,
+        "paired_seed_bootstrap_win_rate_95": null,
+        "score_rate": 0.0,
+        "timeouts": 0,
+        "win_rate": 0.0,
+        "win_rate_wilson_95": [
+          0.0,
+          0.7934506856227626
+        ],
+        "wins": 0
+      },
+      "1": {
+        "candidate_errors": 0,
+        "decisive_win_rate": 0.0,
+        "decisive_win_rate_wilson_95": [
+          0.0,
+          0.7934506856227626
+        ],
+        "draws": 0,
+        "games": 1,
+        "infrastructure_errors": 0,
+        "losses": 1,
+        "mean_final_coins_candidate": 50156.0,
+        "mean_runtime_seconds": 14.31357296500937,
+        "median_coin_difference_candidate": -47540.0,
+        "opponent_errors": 0,
+        "paired_seed_bootstrap_win_rate_95": null,
+        "score_rate": 0.0,
+        "timeouts": 0,
+        "win_rate": 0.0,
+        "win_rate_wilson_95": [
+          0.0,
+          0.7934506856227626
+        ],
+        "wins": 0
+      }
+    },
+    "by_opponent": {
+      "V56": {
+        "candidate_errors": 0,
+        "decisive_win_rate": 0.0,
+        "decisive_win_rate_wilson_95": [
+          0.0,
+          0.6576197724933469
+        ],
+        "draws": 0,
+        "games": 2,
+        "infrastructure_errors": 0,
+        "losses": 2,
+        "mean_final_coins_candidate": 55473.0,
+        "mean_runtime_seconds": 14.355136800004402,
+        "median_coin_difference_candidate": -65623.5,
+        "opponent_errors": 0,
+        "paired_seed_bootstrap_win_rate_95": null,
+        "score_rate": 0.0,
+        "timeouts": 0,
+        "win_rate": 0.0,
+        "win_rate_wilson_95": [
+          0.0,
+          0.6576197724933469
+        ],
+        "wins": 0
+      }
+    },
+    "candidate_errors": 0,
+    "decisive_win_rate": 0.0,
+    "decisive_win_rate_wilson_95": [
+      0.0,
+      0.6576197724933469
+    ],
+    "determinism_checks": [],
+    "deterministic": null,
+    "draws": 0,
+    "games": 2,
+    "infrastructure_errors": 0,
+    "losses": 2,
+    "mean_final_coins_candidate": 55473.0,
+    "mean_runtime_seconds": 14.355136800004402,
+    "median_coin_difference_candidate": -65623.5,
+    "opponent_errors": 0,
+    "paired_seed_bootstrap_win_rate_95": null,
+    "score_rate": 0.0,
+    "timeouts": 0,
+    "win_rate": 0.0,
+    "win_rate_wilson_95": [
+      0.0,
+      0.6576197724933469
+    ],
+    "wins": 0
+  },
+  "wall_seconds": 16.228168,
+  "workers": 2
+}

@@ -1,0 +1,28 @@
+{
+  "expansion_rows": [
+    {
+      "name": "land10_crop_only",
+      "opponent": "V56",
+      "phase": "expand_v56",
+      "sha256": "41e8f42527fed2a7a4daec30e55de800daf0c553189b42e83fec28850ff7770f",
+      "games": 2,
+      "wins": 0,
+      "candidate_errors": 0,
+      "mean_own_cash": 52944.0,
+      "mean_margin": -47082.0,
+      "mean_direct_production_actions": 1386.0,
+      "by_seed": {
+        "92802": {
+          "cash": 52944.0,
+          "margin": -47082.0,
+          "direct_production_actions": 1386.0
+        }
+      },
+      "mean_match_runtime_seconds": 13.254401046506246,
+      "wall_seconds": 14.924334464012645,
+      "report": "experiments/v74_templates/runs/expand_v56_land10_crop_only/report.json",
+      "cash_lift_vs_v70_seed94700": 1602.0,
+      "cash_lift_vs_v70_seed92802": -6778.0
+    }
+  ]
+}

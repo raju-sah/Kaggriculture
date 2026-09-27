@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "experiment": "V92 bounded day-23 hour-23 shed-capacity guard on the frozen V50 lineage",
+  "candidate": "experiments/v92_overflow_guard/candidate.py",
+  "candidate_sha256": "0d5d356baa25703f1a7b753527d1b39e1c7d63478985913be5b3c2550261b806",
+  "candidate_bytes": 66855,
+  "base_agent": "experiments/v50_agent.py",
+  "base_agent_sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+  "opponent": "agents/v56_agent.py",
+  "control": "experiments/v50_agent.py",
+  "control_sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+  "packaging": {
+    "self_contained": true,
+    "embedded_v50_encoding": "base64 of the exact bytes of experiments/v50_agent.py, decoded and exec'd at import",
+    "why": "the Kaggle submission runner receives only this one file; reading V50 from an absolute local path would raise inside the frozen agent's try/except, fall through to its all-PASS fallback, and silently submit a do-nothing agent",
+    "verified_by": "experiments/v92_overflow_guard/verify_embedded_source.py",
+    "checks": [
+      "embedded text decodes to experiments/v50_agent.py byte-for-byte (sha e6b50128e023e3b9)",
+      "kaggle_environments.agent.get_last_callable selects _kaggle_submission_entrypoint",
+      "a full 720-step game completes with only this file copied into an empty temp directory"
+    ]
+  },
+  "guard": {
+    "active_only_when": "day == 23 AND hour == 23",
+    "projection": "shed_now + carried_now + committed_WHEAT_buys + committed_FERTILIZER_buys + HARVEST_ALLOWANCE(6) > shedCapacity(100)",
+    "actions_when_triggered": [
+      "cap FERTILIZER buy at MAX_FERT_BUY = 12",
+      "trim FERTILIZER first (cheaper unit, $29 vs WHEAT $37), then WHEAT, one unit per iteration up to 32 iterations, until the projection fits"
+    ],
+    "reserve_floor": {
+      "fert_keep": "min(FERTILIZER ordered, MIN_FERT_RESERVE=4) - always buys some soil",
+      "wheat_keep": "min(WHEAT ordered, shed WHEAT already held) - never buys less wheat than already stored",
+      "note": "an earlier draft used a per-live-animal wheat floor; on the audited state that floor was 16 against a 16-unit buy, forbade trimming wheat entirely, and left a 28-unit excess uncorrectable. The floor was weakened deliberately because the stronger version made the guard inoperative."
+    },
+    "never": [
+      "adds orders",
+      "touches any farmer/hand action",
+      "touches SELL orders the frozen route already made",
+      "touches BUY_SEED, HIRE, BUY_LAND, BUY_ANIMAL",
+      "fires on any other day or hour"
+    ],
+    "verified_on_audited_state": {
+      "state": "seed 92802, V50 seat 1, obs at day 23 hour 23 (from a saved head-to-head replay, SHA provenance)",
+      "frozen_v50": "shed 100, 16 units discarded, cash 54868",
+      "v92_guard": "shed 91, 0 units discarded, cash 55658",
+      "actor_actions": "identical between frozen and candidate"
+    }
+  },
+  "seeds": [92802, 93700, 94700, 95100, 95200, 95300, 95301, 95302, 95500, 95501, 95502, 95503],
+  "seed_status": "all already spent; 12 of the 28 spent seeds that have direct V50-vs-V56 head-to-head replays",
+  "repeats": 1,
+  "seats": "both ab and ba for every pairing",
+  "games": "48 (candidate vs V50, candidate vs V56) + 24 (frozen V50 control vs V56) = 72",
+  "replay_policy": "errors",
+  "output_dir": "experiments/v92_overflow_guard/runs",
+  "runner": ".venv/bin/python -m simulation.tournament (exact loader, pinned Kaggriculture 1.32.7)",
+  "predeclared_gate": {
+    "zero_errors": "candidate_errors + opponent_errors + infrastructure_errors + timeouts == 0 across all runs",
+    "wins_vs_v50": ">= 60% of 24, i.e. >= 15 wins",
+    "median_margin_vs_v50": "strictly positive",
+    "no_score_rate_regression_vs_v56": "candidate score_rate against V56 must be within 5 percentage points of the matched frozen V50 control score_rate against V56, same 12 seeds, both seats",
+    "on_pass": "report to root; root decides on any Kaggle submission",
+    "on_fail": "STOP. No tuning on the screen, no rerun, no fresh seed, no variant iteration."
+  },
+  "frozen_before_run": true,
+  "supersedes": "schema_version 1 of this file, which recorded candidate_sha256 225c2fdf794c72d912e33500f05a06384d4026153ef8055a151441e088a9323a. That draft read the frozen V50 from an absolute path and used a per-animal wheat reserve floor; both were fixed before any panel game was run, so the earlier hash must not be cited as the candidate."
+}

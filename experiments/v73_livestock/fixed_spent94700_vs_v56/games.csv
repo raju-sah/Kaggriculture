@@ -1,0 +1,3 @@
+game_id,opponent,seed,repeat,candidate_seat,candidate_result,candidate_status,opponent_status,candidate_error,opponent_error,infrastructure_error,timed_out,candidate_final_coins,opponent_final_coins,coin_difference_candidate,runtime_seconds,replay_sha256,log_path
+V56-seed-94700-ab-repeat-0,V56,94700,0,0,loss,ERROR,ERROR,True,False,False,False,,,,0.1185379349917639,,/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/fixed_spent94700_vs_v56/logs/V56-seed-94700-ab-repeat-0.log
+V56-seed-94700-ba-repeat-0,V56,94700,0,1,loss,ERROR,ERROR,True,False,False,False,,,,0.8657000950188376,,/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/fixed_spent94700_vs_v56/logs/V56-seed-94700-ba-repeat-0.log

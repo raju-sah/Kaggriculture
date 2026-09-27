@@ -1,0 +1,626 @@
+{
+  "assumptions": [
+    "One extra crop tile is evaluated on the second quadrant; the $1,000 first land purchase is allocated across 25 crop tiles ($40/tile).",
+    "Harvest schedule assumes same-day replant after harvest when a second cycle fits; only complete harvests by day 29 count.",
+    "Prices use exact engine 1.32.7 market_price at the observed shared market inventory for each actual harvest date, plus the marginal plot's prior sales. The observed baseline market path includes actual shops, opponents and the played V67 route; it is a counterfactual local approximation, not a new game.",
+    "Task turns count plant, watering and harvest actions only. Movement, queue delay, crop-care conflicts and added-hire opportunity costs are excluded from per-plot net, so this is an upper bound on labor-adjusted ROI."
+  ],
+  "cases": [
+    {
+      "MELON": {
+        "average_sale_price": 225.4,
+        "harvest_events": [
+          {
+            "day": 15,
+            "units": 5
+          },
+          {
+            "day": 24,
+            "units": 5
+          }
+        ],
+        "land_cost_share": 40.0,
+        "last_harvest_day": 24,
+        "marginal_supply_price_impact_cash": -46,
+        "net_after_seed_land_before_labor": 2054.0,
+        "net_after_worst_v67_direct_hire_wage": 2021.06,
+        "net_per_explicit_task_turn": 114.11,
+        "price_impact_low_high": [
+          213,
+          237
+        ],
+        "projected_market_cash": 2254,
+        "seed_cost": 160,
+        "spot_path_cash_without_marginal_supply": 2300,
+        "worker_task_turns": 18,
+        "yield_units": 10
+      },
+      "STRAWBERRY": {
+        "average_sale_price": 229.0,
+        "harvest_events": [
+          {
+            "day": 16,
+            "units": 1
+          },
+          {
+            "day": 18,
+            "units": 1
+          },
+          {
+            "day": 20,
+            "units": 1
+          },
+          {
+            "day": 22,
+            "units": 1
+          }
+        ],
+        "land_cost_share": 40.0,
+        "last_harvest_day": 22,
+        "marginal_supply_price_impact_cash": -3,
+        "net_after_seed_land_before_labor": 776.0,
+        "net_after_worst_v67_direct_hire_wage": 750.38,
+        "net_per_explicit_task_turn": 55.43,
+        "price_impact_low_high": [
+          211,
+          248
+        ],
+        "projected_market_cash": 916,
+        "seed_cost": 100,
+        "spot_path_cash_without_marginal_supply": 919,
+        "worker_task_turns": 14,
+        "yield_units": 4
+      },
+      "TOMATO": {
+        "average_sale_price": 251.38,
+        "harvest_events": [
+          {
+            "day": 17,
+            "units": 4
+          },
+          {
+            "day": 28,
+            "units": 4
+          }
+        ],
+        "land_cost_share": 40.0,
+        "last_harvest_day": 28,
+        "marginal_supply_price_impact_cash": -57,
+        "net_after_seed_land_before_labor": 1871.0,
+        "net_after_worst_v67_direct_hire_wage": 1841.72,
+        "net_per_explicit_task_turn": 116.94,
+        "price_impact_low_high": [
+          87,
+          419
+        ],
+        "projected_market_cash": 2011,
+        "seed_cost": 100,
+        "spot_path_cash_without_marginal_supply": 2068,
+        "worker_task_turns": 16,
+        "yield_units": 8
+      },
+      "WHEAT": {
+        "average_sale_price": 39.6,
+        "harvest_events": [
+          {
+            "day": 10,
+            "units": 4
+          },
+          {
+            "day": 14,
+            "units": 4
+          },
+          {
+            "day": 18,
+            "units": 4
+          },
+          {
+            "day": 22,
+            "units": 4
+          },
+          {
+            "day": 26,
+            "units": 4
+          }
+        ],
+        "land_cost_share": 40.0,
+        "last_harvest_day": 26,
+        "marginal_supply_price_impact_cash": -8,
+        "net_after_seed_land_before_labor": 702.0,
+        "net_after_worst_v67_direct_hire_wage": 647.1,
+        "net_per_explicit_task_turn": 23.4,
+        "price_impact_low_high": [
+          34,
+          45
+        ],
+        "projected_market_cash": 792,
+        "seed_cost": 50,
+        "spot_path_cash_without_marginal_supply": 800,
+        "worker_task_turns": 30,
+        "yield_units": 20
+      },
+      "horizon_days": 23,
+      "observed_market_and_shops": {
+        "12": {
+          "prices": {
+            "MELON": 240,
+            "STRAWBERRY": 180,
+            "TOMATO": 75,
+            "WHEAT": 36
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP",
+            "SMOOTHIE_SHOP"
+          ]
+        },
+        "20": {
+          "prices": {
+            "MELON": 232,
+            "STRAWBERRY": 235,
+            "TOMATO": 121,
+            "WHEAT": 41
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE"
+          ]
+        },
+        "29": {
+          "prices": {
+            "MELON": 209,
+            "STRAWBERRY": 289,
+            "TOMATO": 488,
+            "WHEAT": 47
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT",
+            "PIZZA_SHOP"
+          ]
+        },
+        "6": {
+          "prices": {
+            "MELON": 268,
+            "STRAWBERRY": 144,
+            "TOMATO": 63,
+            "WHEAT": 31
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET"
+          ]
+        },
+        "9": {
+          "prices": {
+            "MELON": 271,
+            "STRAWBERRY": 165,
+            "TOMATO": 68,
+            "WHEAT": 33
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP"
+          ]
+        }
+      },
+      "plant_day": 6
+    },
+    {
+      "MELON": {
+        "average_sale_price": 232.4,
+        "harvest_events": [
+          {
+            "day": 18,
+            "units": 5
+          }
+        ],
+        "land_cost_share": 40.0,
+        "last_harvest_day": 18,
+        "marginal_supply_price_impact_cash": -8,
+        "net_after_seed_land_before_labor": 1042.0,
+        "net_after_worst_v67_direct_hire_wage": 1025.53,
+        "net_per_explicit_task_turn": 115.78,
+        "price_impact_low_high": [
+          231,
+          234
+        ],
+        "projected_market_cash": 1162,
+        "seed_cost": 80,
+        "spot_path_cash_without_marginal_supply": 1170,
+        "worker_task_turns": 9,
+        "yield_units": 5
+      },
+      "STRAWBERRY": {
+        "average_sale_price": 248.0,
+        "harvest_events": [
+          {
+            "day": 19,
+            "units": 1
+          },
+          {
+            "day": 21,
+            "units": 1
+          },
+          {
+            "day": 23,
+            "units": 1
+          },
+          {
+            "day": 25,
+            "units": 1
+          }
+        ],
+        "land_cost_share": 40.0,
+        "last_harvest_day": 25,
+        "marginal_supply_price_impact_cash": -1,
+        "net_after_seed_land_before_labor": 852.0,
+        "net_after_worst_v67_direct_hire_wage": 826.38,
+        "net_per_explicit_task_turn": 60.86,
+        "price_impact_low_high": [
+          229,
+          267
+        ],
+        "projected_market_cash": 992,
+        "seed_cost": 100,
+        "spot_path_cash_without_marginal_supply": 993,
+        "worker_task_turns": 14,
+        "yield_units": 4
+      },
+      "TOMATO": {
+        "average_sale_price": 119.5,
+        "harvest_events": [
+          {
+            "day": 20,
+            "units": 4
+          }
+        ],
+        "land_cost_share": 40.0,
+        "last_harvest_day": 20,
+        "marginal_supply_price_impact_cash": -6,
+        "net_after_seed_land_before_labor": 388.0,
+        "net_after_worst_v67_direct_hire_wage": 373.36,
+        "net_per_explicit_task_turn": 48.5,
+        "price_impact_low_high": [
+          118,
+          121
+        ],
+        "projected_market_cash": 478,
+        "seed_cost": 50,
+        "spot_path_cash_without_marginal_supply": 484,
+        "worker_task_turns": 8,
+        "yield_units": 4
+      },
+      "WHEAT": {
+        "average_sale_price": 41.8,
+        "harvest_events": [
+          {
+            "day": 13,
+            "units": 4
+          },
+          {
+            "day": 17,
+            "units": 4
+          },
+          {
+            "day": 21,
+            "units": 4
+          },
+          {
+            "day": 25,
+            "units": 4
+          },
+          {
+            "day": 29,
+            "units": 4
+          }
+        ],
+        "land_cost_share": 40.0,
+        "last_harvest_day": 29,
+        "marginal_supply_price_impact_cash": -8,
+        "net_after_seed_land_before_labor": 746.0,
+        "net_after_worst_v67_direct_hire_wage": 691.1,
+        "net_per_explicit_task_turn": 24.87,
+        "price_impact_low_high": [
+          37,
+          47
+        ],
+        "projected_market_cash": 836,
+        "seed_cost": 50,
+        "spot_path_cash_without_marginal_supply": 844,
+        "worker_task_turns": 30,
+        "yield_units": 20
+      },
+      "horizon_days": 20,
+      "observed_market_and_shops": {
+        "12": {
+          "prices": {
+            "MELON": 240,
+            "STRAWBERRY": 180,
+            "TOMATO": 75,
+            "WHEAT": 36
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP",
+            "SMOOTHIE_SHOP"
+          ]
+        },
+        "20": {
+          "prices": {
+            "MELON": 232,
+            "STRAWBERRY": 235,
+            "TOMATO": 121,
+            "WHEAT": 41
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE"
+          ]
+        },
+        "29": {
+          "prices": {
+            "MELON": 209,
+            "STRAWBERRY": 289,
+            "TOMATO": 488,
+            "WHEAT": 47
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT",
+            "PIZZA_SHOP"
+          ]
+        },
+        "6": {
+          "prices": {
+            "MELON": 268,
+            "STRAWBERRY": 144,
+            "TOMATO": 63,
+            "WHEAT": 31
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET"
+          ]
+        },
+        "9": {
+          "prices": {
+            "MELON": 271,
+            "STRAWBERRY": 165,
+            "TOMATO": 68,
+            "WHEAT": 33
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP"
+          ]
+        }
+      },
+      "plant_day": 9
+    },
+    {
+      "MELON": {
+        "average_sale_price": 228.0,
+        "harvest_events": [
+          {
+            "day": 21,
+            "units": 5
+          }
+        ],
+        "land_cost_share": 40.0,
+        "last_harvest_day": 21,
+        "marginal_supply_price_impact_cash": -10,
+        "net_after_seed_land_before_labor": 1020.0,
+        "net_after_worst_v67_direct_hire_wage": 1003.53,
+        "net_per_explicit_task_turn": 113.33,
+        "price_impact_low_high": [
+          226,
+          230
+        ],
+        "projected_market_cash": 1140,
+        "seed_cost": 80,
+        "spot_path_cash_without_marginal_supply": 1150,
+        "worker_task_turns": 9,
+        "yield_units": 5
+      },
+      "STRAWBERRY": {
+        "average_sale_price": 266.75,
+        "harvest_events": [
+          {
+            "day": 22,
+            "units": 1
+          },
+          {
+            "day": 24,
+            "units": 1
+          },
+          {
+            "day": 26,
+            "units": 1
+          },
+          {
+            "day": 28,
+            "units": 1
+          }
+        ],
+        "land_cost_share": 40.0,
+        "last_harvest_day": 28,
+        "marginal_supply_price_impact_cash": -1,
+        "net_after_seed_land_before_labor": 927.0,
+        "net_after_worst_v67_direct_hire_wage": 901.38,
+        "net_per_explicit_task_turn": 66.21,
+        "price_impact_low_high": [
+          249,
+          284
+        ],
+        "projected_market_cash": 1067,
+        "seed_cost": 100,
+        "spot_path_cash_without_marginal_supply": 1068,
+        "worker_task_turns": 14,
+        "yield_units": 4
+      },
+      "TOMATO": {
+        "average_sale_price": 197.0,
+        "harvest_events": [
+          {
+            "day": 23,
+            "units": 4
+          }
+        ],
+        "land_cost_share": 40.0,
+        "last_harvest_day": 23,
+        "marginal_supply_price_impact_cash": -8,
+        "net_after_seed_land_before_labor": 698.0,
+        "net_after_worst_v67_direct_hire_wage": 683.36,
+        "net_per_explicit_task_turn": 87.25,
+        "price_impact_low_high": [
+          195,
+          199
+        ],
+        "projected_market_cash": 788,
+        "seed_cost": 50,
+        "spot_path_cash_without_marginal_supply": 796,
+        "worker_task_turns": 8,
+        "yield_units": 4
+      },
+      "WHEAT": {
+        "average_sale_price": 42.5,
+        "harvest_events": [
+          {
+            "day": 16,
+            "units": 4
+          },
+          {
+            "day": 20,
+            "units": 4
+          },
+          {
+            "day": 24,
+            "units": 4
+          },
+          {
+            "day": 28,
+            "units": 4
+          }
+        ],
+        "land_cost_share": 40.0,
+        "last_harvest_day": 28,
+        "marginal_supply_price_impact_cash": 0,
+        "net_after_seed_land_before_labor": 600.0,
+        "net_after_worst_v67_direct_hire_wage": 556.08,
+        "net_per_explicit_task_turn": 25.0,
+        "price_impact_low_high": [
+          39,
+          46
+        ],
+        "projected_market_cash": 680,
+        "seed_cost": 40,
+        "spot_path_cash_without_marginal_supply": 680,
+        "worker_task_turns": 24,
+        "yield_units": 16
+      },
+      "horizon_days": 17,
+      "observed_market_and_shops": {
+        "12": {
+          "prices": {
+            "MELON": 240,
+            "STRAWBERRY": 180,
+            "TOMATO": 75,
+            "WHEAT": 36
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP",
+            "SMOOTHIE_SHOP"
+          ]
+        },
+        "20": {
+          "prices": {
+            "MELON": 232,
+            "STRAWBERRY": 235,
+            "TOMATO": 121,
+            "WHEAT": 41
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE"
+          ]
+        },
+        "29": {
+          "prices": {
+            "MELON": 209,
+            "STRAWBERRY": 289,
+            "TOMATO": 488,
+            "WHEAT": 47
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT",
+            "PIZZA_SHOP"
+          ]
+        },
+        "6": {
+          "prices": {
+            "MELON": 268,
+            "STRAWBERRY": 144,
+            "TOMATO": 63,
+            "WHEAT": 31
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET"
+          ]
+        },
+        "9": {
+          "prices": {
+            "MELON": 271,
+            "STRAWBERRY": 165,
+            "TOMATO": 68,
+            "WHEAT": 33
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "PIZZA_SHOP"
+          ]
+        }
+      },
+      "plant_day": 12
+    }
+  ],
+  "module_version": "1.32.7",
+  "seed": 94700,
+  "source_replay": "V66-seed-94700-ab-repeat-0.json"
+}

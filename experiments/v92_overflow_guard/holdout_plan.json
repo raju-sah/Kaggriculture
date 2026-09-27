@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "experiment": "V92 FRESH SEALED HOLDOUT",
+  "purpose": "First unbiased estimate of the frozen V92 candidate. The spent panel (12 spent seeds) gave 24-0 vs V50, but those seeds were used during earlier V50-lineage development and the median margin was only +412. This holdout uses 12 seeds never used in any of the project's 6206 prior saved games.",
+  "candidate": "experiments/v92_overflow_guard/candidate.py",
+  "candidate_sha256": "0d5d356baa25703f1a7b753527d1b39e1c7d63478985913be5b3c2550261b806",
+  "candidate_frozen": true,
+  "no_edits_permitted": "The candidate is frozen. No retune, no parameter change, no variant. Any edit invalidates this holdout.",
+  "opponent": "agents/v56_agent.py",
+  "opponent_sha256": "d9e9670921b62afedfa8cbc7086d2a2ec19e153ee26006cef477eadd462bd19c",
+  "control": "experiments/v50_agent.py",
+  "control_sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b",
+  "seeds": [93000, 93001, 93002, 93003, 93004, 93005, 93006, 93007, 93008, 93009, 93010, 93011],
+  "seed_status": "FRESH AND SEALED. Verified: each has 0 prior games across all experiments/**/games.jsonl (6206 games, 704 distinct seeds). These are consumed by this holdout and must not be reused for further tuning.",
+  "repeats": 1,
+  "seats": "both ab and ba for every pairing",
+  "games": "48 (candidate vs V50, candidate vs V56) + 24 (frozen V50 control vs V56) = 72",
+  "replay_policy": "errors",
+  "runner": ".venv/bin/python -m simulation.tournament (exact loader, pinned Kaggriculture 1.32.7)",
+  "output_dir": "experiments/v92_overflow_guard/runs/holdout",
+  "predeclared_gate": {
+    "zero_errors": "candidate_errors + opponent_errors + infrastructure_errors + timeouts == 0 across all runs",
+    "wins_vs_v50": ">= 80% of 24, i.e. >= 20 wins",
+    "median_margin_vs_v50": "strictly positive",
+    "no_score_rate_regression_vs_v56": "candidate score_rate against V56 within 5 percentage points of the matched frozen V50 control score_rate against V56, same 12 seeds, both seats",
+    "on_pass": "report to root. Root decides on the Kaggle submission.",
+    "on_fail": "STOP. No retune, no rerun, no fresh seed, no variant iteration."
+  },
+  "frozen_before_run": true,
+  "prior_evidence_for_context": {
+    "spent_panel_candidate_vs_v50": "24W-0L-0D, median margin +412",
+    "spent_panel_candidate_vs_v56": "11W-13L, score rate 45.8%",
+    "spent_panel_control_vs_v56": "11W-13L, score rate 45.8%",
+    "null_selfplay_frozen_v50_vs_itself": "0W-0L-24D, median margin 0 (identical policies draw)",
+    "note": "the 24-0 is a real effect, not self-play, because the identical-policy null is 24 draws"
+  }
+}

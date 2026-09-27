@@ -1,0 +1,108 @@
+{
+  "objective": "screen eight original day-level macro templates plus a V70 control on spent seed 94700; own cash is primary",
+  "baseline_source": "experiments/v70_capacity/agent.py",
+  "baseline_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e",
+  "opponents": {
+    "V56": "agents/v56_agent.py",
+    "V70": "experiments/v70_capacity/agent.py"
+  },
+  "screen_seeds": [
+    94700
+  ],
+  "expansion_seed": 92802,
+  "confirm_seed": 92804,
+  "promotion_gate": {
+    "vs_v70_cash_lift_each_screen_seed": 15000,
+    "hidden_errors": 0
+  },
+  "template_feasibility": {
+    "engine": "kaggriculture 1.32.7 exact local package",
+    "cash": "land+seed purchases remain gated on live cash and $1,000 reserve; wheat/feed buys are preserved",
+    "feed": "existing live animal-count feed policy is unchanged",
+    "route": "existing state-derived worker assignment recomputes routes every observation; no fixed trajectories",
+    "deadline": "fresh crops must be watered on planting day; strawberry expansion by day 11 for yield by day 21; one-shot wheat/melon expiry rules retained"
+  },
+  "templates": [
+    {
+      "name": "v70_control",
+      "third_land_day": null,
+      "berry_area": 12,
+      "berry_gate": 150,
+      "path": "experiments/v74_templates/agents/v70_control.py",
+      "sha256": "43426c236985e59efb86088fc60fc0b1fff3e5115d3e6faaebd451be2ecd2b50",
+      "base_source_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e"
+    },
+    {
+      "name": "land8_berry6_gate100",
+      "third_land_day": 8,
+      "berry_area": 6,
+      "berry_gate": 100,
+      "path": "experiments/v74_templates/agents/land8_berry6_gate100.py",
+      "sha256": "a249202bb6e9173e906638a941a48c48801f7b9cf0f554a398cfba1040f16a9c",
+      "base_source_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e"
+    },
+    {
+      "name": "land10_berry6_gate150",
+      "third_land_day": 10,
+      "berry_area": 6,
+      "berry_gate": 150,
+      "path": "experiments/v74_templates/agents/land10_berry6_gate150.py",
+      "sha256": "af279cbe5f6ea5a9136a17be8c7982822ef43e0169ce729afa4078b361efc7b3",
+      "base_source_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e"
+    },
+    {
+      "name": "land12_berry6_gate150",
+      "third_land_day": 12,
+      "berry_area": 6,
+      "berry_gate": 150,
+      "path": "experiments/v74_templates/agents/land12_berry6_gate150.py",
+      "sha256": "6017a30b800ab99b58f2e9db381b820dd7c4541c1bfe65fc4f15e6c0287254e3",
+      "base_source_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e"
+    },
+    {
+      "name": "land8_berry12_gate150",
+      "third_land_day": 8,
+      "berry_area": 12,
+      "berry_gate": 150,
+      "path": "experiments/v74_templates/agents/land8_berry12_gate150.py",
+      "sha256": "5dbd85e85e3bc6bb061d3bd81cb619210f7b2afc06cab80f42a5b9940392b4b6",
+      "base_source_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e"
+    },
+    {
+      "name": "land10_berry12_gate100",
+      "third_land_day": 10,
+      "berry_area": 12,
+      "berry_gate": 100,
+      "path": "experiments/v74_templates/agents/land10_berry12_gate100.py",
+      "sha256": "df22d7ee052aa0113af5110b34848dcb277ca430eb52bfc5bd3fef8281628cfa",
+      "base_source_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e"
+    },
+    {
+      "name": "land12_berry12_gate100",
+      "third_land_day": 12,
+      "berry_area": 12,
+      "berry_gate": 100,
+      "path": "experiments/v74_templates/agents/land12_berry12_gate100.py",
+      "sha256": "f602def275fd4871b2845a9cdf7acc7a10d0a69a06e7065e2ebe156f896b3a80",
+      "base_source_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e"
+    },
+    {
+      "name": "land10_crop_only",
+      "third_land_day": 10,
+      "berry_area": 0,
+      "berry_gate": 150,
+      "path": "experiments/v74_templates/agents/land10_crop_only.py",
+      "sha256": "41e8f42527fed2a7a4daec30e55de800daf0c553189b42e83fec28850ff7770f",
+      "base_source_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e"
+    },
+    {
+      "name": "land8_berry6_gate200",
+      "third_land_day": 8,
+      "berry_area": 6,
+      "berry_gate": 200,
+      "path": "experiments/v74_templates/agents/land8_berry6_gate200.py",
+      "sha256": "5c84451c408597291e51671b74a9f1a0887a414aa060ba41a019e7dc757bfa60",
+      "base_source_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e"
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "candidate": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/agent.py",
+  "finished_at": "2026-09-26T18:32:45.281641+00:00",
+  "games": [
+    {
+      "action_counts": [
+        null,
+        null
+      ],
+      "agents": [
+        {
+          "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/agent.py",
+          "sha256": "df8b4c827f6cb92e62cff4beb62c3b405f17b531745a39c20d0a6a8fbd6bc219"
+        },
+        {
+          "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/boey_v56_test.py",
+          "sha256": "5aae7d29c7278192b92082ef90bf6e6f8c8c0a4f8340876cc98cb6cb77190281"
+        }
+      ],
+      "candidate_error": true,
+      "candidate_result": "loss",
+      "candidate_seat": 0,
+      "candidate_status": "ERROR",
+      "coin_difference_seat_0": null,
+      "environment": {
+        "engine_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/envs/kaggriculture/kaggriculture.py",
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "episode_steps": 720,
+        "name": "kaggriculture",
+        "package": "kaggle-environments",
+        "package_version": "1.32.7",
+        "python_version": "3.12.3",
+        "specification_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/envs/kaggriculture/kaggriculture.json",
+        "specification_sha256": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867"
+      },
+      "error": {
+        "message": "name 'goose_expansion_gate' is not defined",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/agent.py\", line 1349, in agent\n    return _bridge_agent(observation)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/agent.py\", line 993, in _bridge_agent\n    \"goose_goal\": goose_goal,\n                  ^^^^^^^^^^\nNameError: name 'goose_goal' is not defined. Did you mean: 'goose_coops'?\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/simulation/match_worker.py\", line 99, in run_match\n    environment.run([str(path) for path in absolute_agents])\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/core.py\", line 327, in run\n    actions, logs = runner.act()\n                    ^^^^^^^^^^^^\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/core.py\", line 745, in act\n    results = list(map(act_agent, act_args))\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/core.py\", line 180, in act_agent\n    return agent.act(state[\"observation\"])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/agent.py\", line 180, in act\n    action = self.agent(*args)\n             ^^^^^^^^^^^^^^^^^\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/agent.py\", line 154, in callable_agent\n    return agent(*args) if callable(agent) else agent\n           ^^^^^^^^^^^^\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/agent.py\", line 1351, in agent\n    return _champion_agent(observation)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/agent.py\", line 432, in _champion_agent\n    goose_goal = 4 if goose_expansion_gate or goose_total > 2 else 2\n                      ^^^^^^^^^^^^^^^^^^^^\nNameError: name 'goose_expansion_gate' is not defined\n",
+        "type": "NameError"
+      },
+      "failed_agent_seat": 0,
+      "final_coins": [
+        null,
+        null
+      ],
+      "game_id": "V56-seed-94700-ab-repeat-0",
+      "infrastructure_error": false,
+      "log_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/fixed_spent94700_vs_v56/logs/V56-seed-94700-ab-repeat-0.log",
+      "ok": false,
+      "opponent": "V56",
+      "opponent_error": false,
+      "opponent_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/boey_v56_test.py",
+      "opponent_seat": 1,
+      "opponent_status": "ERROR",
+      "raw_replay_sha256": null,
+      "repeat": 0,
+      "replay_path": null,
+      "replay_retained": false,
+      "replay_sha256": null,
+      "resolved_seed": null,
+      "runtime_seconds": 0.1185379349917639,
+      "seed": 94700,
+      "statuses": [
+        "ERROR",
+        "ERROR"
+      ],
+      "swapped": false,
+      "timed_out": false,
+      "winner_seat": null,
+      "worker_exit_code": 1
+    },
+    {
+      "action_counts": [
+        null,
+        null
+      ],
+      "agents": [
+        {
+          "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/boey_v56_test.py",
+          "sha256": "5aae7d29c7278192b92082ef90bf6e6f8c8c0a4f8340876cc98cb6cb77190281"
+        },
+        {
+          "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/agent.py",
+          "sha256": "df8b4c827f6cb92e62cff4beb62c3b405f17b531745a39c20d0a6a8fbd6bc219"
+        }
+      ],
+      "candidate_error": true,
+      "candidate_result": "loss",
+      "candidate_seat": 1,
+      "candidate_status": "ERROR",
+      "coin_difference_seat_0": null,
+      "environment": {
+        "engine_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/envs/kaggriculture/kaggriculture.py",
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "episode_steps": 720,
+        "name": "kaggriculture",
+        "package": "kaggle-environments",
+        "package_version": "1.32.7",
+        "python_version": "3.12.3",
+        "specification_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/envs/kaggriculture/kaggriculture.json",
+        "specification_sha256": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867"
+      },
+      "error": {
+        "message": "name 'goose_expansion_gate' is not defined",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/agent.py\", line 1349, in agent\n    return _bridge_agent(observation)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/agent.py\", line 993, in _bridge_agent\n    \"goose_goal\": goose_goal,\n                  ^^^^^^^^^^\nNameError: name 'goose_goal' is not defined. Did you mean: 'goose_coops'?\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/simulation/match_worker.py\", line 99, in run_match\n    environment.run([str(path) for path in absolute_agents])\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/core.py\", line 327, in run\n    actions, logs = runner.act()\n                    ^^^^^^^^^^^^\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/core.py\", line 745, in act\n    results = list(map(act_agent, act_args))\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/core.py\", line 180, in act_agent\n    return agent.act(state[\"observation\"])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/agent.py\", line 180, in act\n    action = self.agent(*args)\n             ^^^^^^^^^^^^^^^^^\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/.venv/lib/python3.12/site-packages/kaggle_environments/agent.py\", line 154, in callable_agent\n    return agent(*args) if callable(agent) else agent\n           ^^^^^^^^^^^^\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/agent.py\", line 1351, in agent\n    return _champion_agent(observation)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/agent.py\", line 432, in _champion_agent\n    goose_goal = 4 if goose_expansion_gate or goose_total > 2 else 2\n                      ^^^^^^^^^^^^^^^^^^^^\nNameError: name 'goose_expansion_gate' is not defined\n",
+        "type": "NameError"
+      },
+      "failed_agent_seat": 1,
+      "final_coins": [
+        null,
+        null
+      ],
+      "game_id": "V56-seed-94700-ba-repeat-0",
+      "infrastructure_error": false,
+      "log_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v73_livestock/fixed_spent94700_vs_v56/logs/V56-seed-94700-ba-repeat-0.log",
+      "ok": false,
+      "opponent": "V56",
+      "opponent_error": false,
+      "opponent_path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/boey_v56_test.py",
+      "opponent_seat": 0,
+      "opponent_status": "ERROR",
+      "raw_replay_sha256": null,
+      "repeat": 0,
+      "replay_path": null,
+      "replay_retained": false,
+      "replay_sha256": null,
+      "resolved_seed": null,
+      "runtime_seconds": 0.8657000950188376,
+      "seed": 94700,
+      "statuses": [
+        "ERROR",
+        "ERROR"
+      ],
+      "swapped": true,
+      "timed_out": false,
+      "winner_seat": null,
+      "worker_exit_code": 1
+    }
+  ],
+  "opponents": [
+    {
+      "name": "V56",
+      "path": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/boey_v56_test.py"
+    }
+  ],
+  "repeats": 1,
+  "replay_policy": "all",
+  "schema_version": 2,
+  "seeds": [
+    94700
+  ],
+  "started_at": "2026-09-26T18:32:43.070434+00:00",
+  "summary": {
+    "by_candidate_seat": {
+      "0": {
+        "candidate_errors": 1,
+        "decisive_win_rate": 0.0,
+        "decisive_win_rate_wilson_95": [
+          0.0,
+          0.7934506856227626
+        ],
+        "draws": 0,
+        "games": 1,
+        "infrastructure_errors": 0,
+        "losses": 1,
+        "mean_final_coins_candidate": null,
+        "mean_runtime_seconds": 0.1185379349917639,
+        "median_coin_difference_candidate": null,
+        "opponent_errors": 0,
+        "paired_seed_bootstrap_win_rate_95": null,
+        "score_rate": 0.0,
+        "timeouts": 0,
+        "win_rate": 0.0,
+        "win_rate_wilson_95": [
+          0.0,
+          0.7934506856227626
+        ],
+        "wins": 0
+      },
+      "1": {
+        "candidate_errors": 1,
+        "decisive_win_rate": 0.0,
+        "decisive_win_rate_wilson_95": [
+          0.0,
+          0.7934506856227626
+        ],
+        "draws": 0,
+        "games": 1,
+        "infrastructure_errors": 0,
+        "losses": 1,
+        "mean_final_coins_candidate": null,
+        "mean_runtime_seconds": 0.8657000950188376,
+        "median_coin_difference_candidate": null,
+        "opponent_errors": 0,
+        "paired_seed_bootstrap_win_rate_95": null,
+        "score_rate": 0.0,
+        "timeouts": 0,
+        "win_rate": 0.0,
+        "win_rate_wilson_95": [
+          0.0,
+          0.7934506856227626
+        ],
+        "wins": 0
+      }
+    },
+    "by_opponent": {
+      "V56": {
+        "candidate_errors": 2,
+        "decisive_win_rate": 0.0,
+        "decisive_win_rate_wilson_95": [
+          0.0,
+          0.6576197724933469
+        ],
+        "draws": 0,
+        "games": 2,
+        "infrastructure_errors": 0,
+        "losses": 2,
+        "mean_final_coins_candidate": null,
+        "mean_runtime_seconds": 0.49211901500530075,
+        "median_coin_difference_candidate": null,
+        "opponent_errors": 0,
+        "paired_seed_bootstrap_win_rate_95": null,
+        "score_rate": 0.0,
+        "timeouts": 0,
+        "win_rate": 0.0,
+        "win_rate_wilson_95": [
+          0.0,
+          0.6576197724933469
+        ],
+        "wins": 0
+      }
+    },
+    "candidate_errors": 2,
+    "decisive_win_rate": 0.0,
+    "decisive_win_rate_wilson_95": [
+      0.0,
+      0.6576197724933469
+    ],
+    "determinism_checks": [],
+    "deterministic": null,
+    "draws": 0,
+    "games": 2,
+    "infrastructure_errors": 0,
+    "losses": 2,
+    "mean_final_coins_candidate": null,
+    "mean_runtime_seconds": 0.49211901500530075,
+    "median_coin_difference_candidate": null,
+    "opponent_errors": 0,
+    "paired_seed_bootstrap_win_rate_95": null,
+    "score_rate": 0.0,
+    "timeouts": 0,
+    "win_rate": 0.0,
+    "win_rate_wilson_95": [
+      0.0,
+      0.6576197724933469
+    ],
+    "wins": 0
+  },
+  "wall_seconds": 2.211207,
+  "workers": 2
+}

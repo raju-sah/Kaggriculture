@@ -1,0 +1,14 @@
+{
+  "candidate": "experiments/v68_routing/agent.py",
+  "candidate_sha256": "ae3f80624f11a195b567d950e70487ff3f366897065c6d6c4c934504baa83e8a",
+  "opponent": "experiments/v67_original/agent.py",
+  "opponent_sha256": "3957e2b5cc48218ac1259899e5ca7c8f7a71d61dd2fabf7faa4ef1226d5ce364",
+  "seeds": [
+    94700
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "name": "v67"
+}

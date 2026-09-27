@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "purpose": "Prepared, phase-gated local validation for a future original V68 policy. No validation games have been run by this plan.",
+  "engine": "kaggle-environments 1.32.7",
+  "candidate": "REQUIRED_AT_RUN_TIME; candidate SHA-256 is frozen by the first spent_gate phase and required unchanged thereafter",
+  "historical_opponents": {
+    "v48": {"path": "experiments/v48_agent.py", "sha256": "dadee25a9840313218384208c53b2c4752f82c3209cc654632e0b96c65e2664a"},
+    "v50": {"path": "experiments/v50_agent.py", "sha256": "e6b50128e023e3b9fafa1841e4cd520c5e581acb48e8628657585c18272eab2b"},
+    "v51": {"path": "experiments/v51_agent.py", "sha256": "274f5913c4c4787cf825d10fde4de65f79b61d25c764aa6761d36d0840c04eb4"},
+    "v52": {"path": "experiments/v52_agent.py", "sha256": "a53025fce6e901df0083d3115c8e422d77c8c86fac86be99da3e4725b6a50e5b"},
+    "v53": {"path": "experiments/v53_agent.py", "sha256": "a57b3f14c067926d0960eb829fb6d95761dc1e7b4d011c71fda353702cdb47b1"},
+    "v54": {"path": "agents/v54_agent.py", "sha256": "9c374f64e8e82027167f8018f344dc82edff1d75ac9c3d593dcd13f564c1fee1"},
+    "v55": {"path": "agents/v55_agent.py", "sha256": "97edf39ce1f2f72f3874f555bf413a9a8d3f94072397c0ca000c37b7c5931878"},
+    "v56": {"path": "agents/v56_agent.py", "sha256": "d9e9670921b62afedfa8cbc7086d2a2ec19e153ee26006cef477eadd462bd19c"}
+  },
+  "strong_local_opponents": {
+    "v67_original": {"path": "experiments/v67_original/agent.py", "sha256": "3957e2b5cc48218ac1259899e5ca7c8f7a71d61dd2fabf7faa4ef1226d5ce364", "role": "Current strongest original local challenger; use for local screening only."},
+    "kaito_v13_local": {"path": "experiments/v58_planner_eval/open_sources/kaito_v13_local_opponent/main.py", "sha256": "69f06a802b62aa08f28705dab5728eb924bb6a7c23ffe0164f65b104cc3dadf3", "role": "Internal local-only executable benchmark; attribution required; never adapt, submit, publish, or redistribute."},
+    "boey_replay_proxy": {"path": "experiments/boey_agent.py", "sha256": "75e9924d5d6c8a68bbce71bb5065dda835d8e265d13210de4cef2419e9d9f25c", "role": "Local reconstructed proxy from public behavior; stress-test only, not live adaptive policy."},
+    "ernnn_backbone_proxy": {"path": "experiments/ernnn_agent.py", "sha256": "4fe6d1584f3cba03db2ef842f9eb61127a60eca09abed90fb770be8d047dcbd4", "role": "Local reconstructed proxy from public behavior; stress-test only, not live adaptive policy."},
+    "lizs_backbone_proxy": {"path": "experiments/lizs_agent.py", "sha256": "9c374f64e8e82027167f8018f344dc82edff1d75ac9c3d593dcd13f564c1fee1", "role": "Local reconstructed proxy from public behavior; stress-test only, not live adaptive policy."}
+  },
+  "seed_ledger": {
+    "spent_pre_screen": {"range": "94700", "use": "Already-spent candidate gate against V67 and V56 only; repeated results are diagnostic and never fresh evidence."},
+    "v66_v67_spent": ["92802", "92804", "94700"],
+    "v59_allocations_preserved": ["95800-95829 reserved paired panel", "95900-95914 reserved validation stages"],
+    "v61_documented_unused": ["96000-96001"],
+    "fresh_smoke": {"range": "96200-96201", "use": "V68 smoke only."},
+    "fresh_historical_gate": {"range": "96202-96206", "use": "V68 historical gate only."},
+    "fresh_stronger_panel": {"range": "96210-96219", "use": "V68 stronger-local-opponent screen only."},
+    "fresh_broader_panel": {"range": "96300-96329", "use": "V68 paired broad panel only after prior gates."},
+    "sealed_final_holdout": {"range": "93000-93049", "use": "Remains sealed; not available for development, diagnostics, or this protocol."},
+    "collision_rule": "Never reuse 94700 as fresh evidence. Keep all spent/reserved ranges above disjoint; check candidate branch ledgers before running. The 93000-93049 final holdout stays sealed regardless of local outcomes."
+  },
+  "stages": {
+    "spent_gate": {"seeds": [94700], "opponents": ["v67_original", "v56"], "games": 4, "gate": "Both seat orders must be strict wins against each of V67 and V56 (2/2 each), zero errors/timeouts/incomplete games. This is only a candidate eligibility filter on a spent seed."},
+    "smoke": {"seeds": [96200, 96201], "opponents": ["v67_original", "v56"], "games": 8, "gate": "Zero errors, timeouts, invalid/incomplete games; both seats against both opponents. Diagnostic only."},
+    "historical_gate": {"seeds": [96202, 96203, 96204, 96205, 96206], "opponents": ["v48", "v50", "v51", "v52", "v53", "v54", "v55", "v56"], "games": 80, "gate": "Zero errors and exactly 10/10 strict wins against every historical agent; five seeds x both seats. Draws and errors are non-wins."},
+    "stronger_panel": {"seeds": [96210, 96211, 96212, 96213, 96214, 96215, 96216, 96217, 96218, 96219], "opponents": ["v67_original", "kaito_v13_local", "boey_replay_proxy", "ernnn_backbone_proxy", "lizs_backbone_proxy"], "games": 100, "gate": "Zero errors; >=95% strict wins overall; >=90% against each opponent and in each seat; whole-seed-block 95% bootstrap lower bound >=90%. This is a screening panel, not live top-ten evidence."},
+    "broader_paired_panel": {"seeds": [96300, 96301, 96302, 96303, 96304, 96305, 96306, 96307, 96308, 96309, 96310, 96311, 96312, 96313, 96314, 96315, 96316, 96317, 96318, 96319, 96320, 96321, 96322, 96323, 96324, 96325, 96326, 96327, 96328, 96329], "opponents": ["v48", "v50", "v51", "v52", "v53", "v54", "v55", "v56", "v67_original", "kaito_v13_local", "boey_replay_proxy", "ernnn_backbone_proxy", "lizs_backbone_proxy"], "games": 780, "gate": "Zero errors; strictly >95% strict wins overall; >=90% against every opponent and in each candidate seat; whole-seed-block 95% bootstrap lower bound >=90%. Report exact uncertainty, margins, seat splits, all errors, and shop unlock schedules."},
+    "sealed_final_holdout": {"seeds": "93000-93049", "games": 0, "status": "SEALED; not implemented as a runnable phase. Do not run or inspect under this protocol."}
+  },
+  "metrics": {
+    "uncertainty": "Two-sided 95% Clopper-Pearson intervals plus 20,000-replicate percentile bootstrap resampling whole seed blocks; report RNG seed 68001.",
+    "per_game": "Save strict result, candidate seat, both final scores, margin, statuses, timeout/error fields, runtime, source hashes, and ordered shop unlocks with day/step.",
+    "top_ten": "Local games cannot establish Kaggle top-ten readiness. A top-ten claim needs a dated official leaderboard result for an authorized submission and current live episodes/opponents."
+  },
+  "current_official_context_2026-09-26": {"team_rank": 3448, "teams": 10049, "team_score": 1189.7, "tenth_place_score": 2880.3, "submitted_v66_score": 442.2, "source": "Latest official leaderboard ZIP queried 2026-09-26T17:14:31 UTC; dynamic values, refresh before any external-readiness claim."}
+}

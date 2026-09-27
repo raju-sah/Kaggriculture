@@ -1,0 +1,23 @@
+{
+  "candidate": "experiments/v71_portfolio/agent.py",
+  "candidate_sha256": "b2f4174e40e12809557b97ac17f57463acb1c3eb491d33d671ad4487374fae5f",
+  "baseline": "experiments/v70_capacity/agent.py",
+  "baseline_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e",
+  "challenger": "agents/v56_agent.py",
+  "engine_version": "1.32.7",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "spent_seeds": [94700, 92802, 92804],
+  "seat_swapped": true,
+  "reports": {
+    "vs_v70": "experiments/v71_portfolio/spent_vs_v70/report.json",
+    "vs_v56": "experiments/v71_portfolio/spent_vs_v56/report.json"
+  },
+  "outcome": {
+    "vs_v70_record": "5-1",
+    "vs_v70_mean_margin": 761.67,
+    "vs_v56_record": "0-6",
+    "vs_v56_mean_margin": -78866.67,
+    "vs_v56_mean_candidate_cash": 56452.33,
+    "promoted": false
+  }
+}

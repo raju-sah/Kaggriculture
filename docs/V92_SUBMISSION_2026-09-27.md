@@ -1,0 +1,13 @@
+# V92 Kaggle submission — 2026-09-27
+
+Submitted `experiments/v92_overflow_guard/candidate.py` to Kaggriculture as **56607889**. Kaggle marked the submission `COMPLETE` after validation. Its first public score was **600.0**, with only the validation episode (114156966) listed. The first ten public episodes produced **seven wins and three losses**, leaving the public rating at **1020.6** when checked after episode 114172061. The first five wins raised it as high as 1155.1; three consecutive losses lowered it. Thus the official score has not beaten V50's 1233.2, despite the small controlled local improvement.
+
+At 2026-09-27 13:13 UTC, Kaggle listed 14 public games at **9–5** and a mutable public score of **990.8**. The ten-game fixed-cohort diagnosis and the rolling 14-game audit are recorded in `docs/V92_OFFICIAL_10_GAME_DIAGNOSIS_2026-09-27.md` and `experiments/v92_official/`.
+
+The submitted file is SHA-256 `0d5d356baa25703f1a7b753527d1b39e1c7d63478985913be5b3c2550261b806`. It embeds the frozen V50 source and adds a day-23 final-hour shed-capacity guard. An isolated-directory Kaggle loader check and a complete game passed before submission.
+
+The predeclared fresh holdout used twelve previously unused seeds, 93000–93011, in both seats. V92 beat V50 **24–0**, with a **+$598 median coin margin** and zero errors. Against V56 it scored **10–14**, identical to frozen V50's **10–14** on the same seeds. The spent-seed screen separately scored **24–0** versus V50 with a **+$412 median margin**. See `experiments/v92_overflow_guard/HOLDOUT.md`, `holdout_plan.json`, and `runs/` for the source hashes and per-game records.
+
+This establishes a repeatable but small local improvement over V50. It does not establish a better public Kaggle rating; that remains to be checked after ladder games are played. V50's recorded public score before submission was 1233.2.
+
+**Replay-alignment correction:** Kaggle stores the response to `steps[n].observation` in `steps[n+1].action`. The earlier same-frame read falsely said the guard was inactive. For seat-1 replays the recorded observation also omits `step`; reconstructing it as `day*24+hour` is needed for exact source-action checks. With these corrections, the local V92 source reproduces the recorded step-576 action in **all first 11 public games**. V50 would buy 16 WHEAT and 11 FERTILIZER at the step-575 observation in all 11; V92 trims these to 4 and 4. The guard therefore fired in every audited official game. The first public loss was episode 114166061 (Rajusah 106,894 vs Kumar Saurabh 129,600). The replay corpus is stored under `experiments/kaggle/v92_official/`.

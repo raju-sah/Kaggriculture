@@ -1,0 +1,148 @@
+[
+ {
+  "accepted_delta_by_op_item": {},
+  "accepted_txn_count_v56": 3425,
+  "accepted_txn_count_v89": 2608,
+  "first_change": {
+   "day": 25,
+   "hour": 0,
+   "step": 600,
+   "v56_market": [
+    [
+     "SELL",
+     "STRAWBERRY",
+     8
+    ],
+    [
+     "SELL",
+     "FERTILIZER",
+     14
+    ],
+    [
+     "SELL",
+     "WOOL",
+     4
+    ],
+    [
+     "SELL",
+     "MILK",
+     14
+    ],
+    [
+     "HIRE"
+    ],
+    [
+     "HIRE"
+    ],
+    [
+     "HIRE"
+    ],
+    [
+     "HIRE"
+    ],
+    [
+     "HIRE"
+    ],
+    [
+     "HIRE"
+    ]
+   ],
+   "v89_market": [
+    [
+     "SELL",
+     "FERTILIZER",
+     14
+    ],
+    [
+     "SELL",
+     "STRAWBERRY",
+     8
+    ],
+    [
+     "SELL",
+     "WOOL",
+     4
+    ],
+    [
+     "SELL",
+     "MILK",
+     14
+    ],
+    [
+     "HIRE"
+    ],
+    [
+     "HIRE"
+    ],
+    [
+     "HIRE"
+    ],
+    [
+     "HIRE"
+    ],
+    [
+     "HIRE"
+    ],
+    [
+     "HIRE"
+    ]
+   ]
+  },
+  "frames_changed": 1,
+  "frames_total": 720,
+  "game_id": "V56-seed-92802-ab-repeat-0",
+  "market_order_delta_top": {},
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v75_joint/runs/tranche1_92802/replays/V56-seed-92802-ab-repeat-0.json",
+  "seat_final_cash_v56": 116335.0,
+  "seat_final_cash_v89": 116335.0,
+  "seat_sell_proceeds_v56": 152630,
+  "seat_sell_proceeds_v89": 59641,
+  "seed": 92802,
+  "v56_seat": 1
+ },
+ {
+  "accepted_delta_by_op_item": {},
+  "accepted_txn_count_v56": 3264,
+  "accepted_txn_count_v89": 2447,
+  "first_change": {
+   "day": 6,
+   "hour": 19,
+   "step": 163,
+   "v56_market": [
+    [
+     "SELL",
+     "WHEAT",
+     9
+    ],
+    [
+     "SELL",
+     "WOOL",
+     2
+    ]
+   ],
+   "v89_market": [
+    [
+     "SELL",
+     "WOOL",
+     2
+    ],
+    [
+     "SELL",
+     "WHEAT",
+     9
+    ]
+   ]
+  },
+  "frames_changed": 1,
+  "frames_total": 720,
+  "game_id": "V56-seed-92804-ab-repeat-0",
+  "market_order_delta_top": {},
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v69_dispatch/batchassign_panel/replays/V56-seed-92804-ab-repeat-0.json",
+  "seat_final_cash_v56": 146882.0,
+  "seat_final_cash_v89": 146882.0,
+  "seat_sell_proceeds_v56": 184499,
+  "seat_sell_proceeds_v89": 72914,
+  "seed": 92804,
+  "v56_seat": 1
+ }
+]

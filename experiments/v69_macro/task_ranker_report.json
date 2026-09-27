@@ -1,0 +1,47 @@
+{
+  "action_family_top1_accuracy": 0.05191160996141705,
+  "candidate_sha256s": [
+    "5c7555e4b06aa9a5ec194f209fdb6264ff468fcab0bbe8d731348aca95e37493",
+    "da917ad121ced97b2a67551a8b763208fbadb79ef3bf9adc74a4c635b05eafb8"
+  ],
+  "exact_action_top1_accuracy": 0.04893019992984918,
+  "majority_action_baseline_accuracy": 0.18944723618090453,
+  "majority_action_baseline_note": "Corrected denominator is the 11,940 training decisions; the preliminary generated report used the test-set denominator. Model top-1 remains substantially below baseline.",
+  "masked_action_exact_accuracy": 0.23623290073658365,
+  "masked_action_family_counts": {
+    "BUILD_COOP": 112,
+    "BUILD_PASTURE": 1242,
+    "CARE": 250,
+    "COLLECT_FERTILIZER": 2,
+    "DIG": 12,
+    "DROP": 54,
+    "EAST": 310,
+    "FEED": 106,
+    "HARVEST": 14,
+    "NORTH": 448,
+    "PASS": 564,
+    "PICKUP": 348,
+    "PLACE": 36,
+    "PLANT": 16,
+    "SOUTH": 1574,
+    "WATER": 1610,
+    "WEST": 4706
+  },
+  "masked_engine_applicability": 1.0,
+  "min_samples_leaf": 30,
+  "note": "Offline action-ranking diagnostic only; no policy replacement or game evaluation. Labels are V69 authored actions, not public competitor actions.",
+  "pass_fallback_count": 0,
+  "raw_top1_engine_applicability": 0.3048053314626447,
+  "seed_scope": "94700 spent seed only; train/test separated by V69 source variant, not independent seed",
+  "source_replay_sha256s": [
+    "1408a762b4c8ff5a929f00d021973969543dddce9ac679bbe5432f0e7be46dba",
+    "61ab0ecc4b7a0e9d510f3c250ba110e2c32a06713d76b536c4e12e233bbc1d1f",
+    "b187499509d83cba870e80f159811af912dc40b390fd76cb0db244c76f7b94aa",
+    "d4319c687709a8bf4400a4574f288065ef1d9909dc585a7df641b2ae9d46995c"
+  ],
+  "test_games": "experiments/v69_macro/late_wheat94700_vs_v56/report.json",
+  "test_unit_decisions": 11404,
+  "train_games": "experiments/v69_macro/spent94700_vs_v56/report.json",
+  "train_unit_decisions": 11940,
+  "tree_depth_max": 7
+}

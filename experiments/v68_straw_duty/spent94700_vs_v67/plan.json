@@ -1,0 +1,14 @@
+{
+  "candidate": "experiments/v68_straw_duty/agent.py",
+  "candidate_sha256": "3f13a4375fbd67ba859dc5e23f56cae1dd70c646b5a3c855cf816fff73dc54a2",
+  "opponent": "experiments/v67_original/agent.py",
+  "opponent_sha256": "3957e2b5cc48218ac1259899e5ca7c8f7a71d61dd2fabf7faa4ef1226d5ce364",
+  "seeds": [
+    94700
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "name": "v67"
+}

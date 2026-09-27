@@ -1,0 +1,24 @@
+{
+  "candidate": "experiments/v70_capacity/agent.py",
+  "candidate_sha256": "2002db9b4bbf20c654805adc35617eb787be3e9cb64e5aae46ae1044aad3b73e",
+  "baseline": "experiments/v69_dispatch/agent_v70_batchassign_frozen.py",
+  "baseline_sha256": "a74027a6b053915beedde6a43da0d6aea81c70119406a1d3b566a003548f9bac",
+  "other_opponent": "agents/v56_agent.py",
+  "engine_version": "1.32.7",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "spent_seeds": [94700, 92802, 92804],
+  "seat_swapped": true,
+  "reports": {
+    "batch_94700": "experiments/v70_capacity/spent94700_vs_batch/report.json",
+    "batch_92802_92804": "experiments/v70_capacity/spent92802_92804_vs_batch/report.json",
+    "v56_94700": "experiments/v70_capacity/spent94700_vs_v56/report.json",
+    "v56_92802_92804": "experiments/v70_capacity/spent92802_92804_vs_v56/report.json"
+  },
+  "outcome": {
+    "vs_batch_record": "6-0",
+    "vs_batch_mean_margin": 3877.33,
+    "vs_v56_record": "0-6",
+    "vs_v56_mean_margin": -79123.0,
+    "promoted": false
+  }
+}

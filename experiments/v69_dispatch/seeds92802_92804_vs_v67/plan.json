@@ -1,0 +1,15 @@
+{
+  "candidate": "experiments/v69_dispatch/agent.py",
+  "candidate_sha256": "8c69e1f4d756a83effc43b966b808df8441aec22c159396e2b7cd98a15a3112f",
+  "opponent": "experiments/v67_original/agent.py",
+  "opponent_sha256": "3957e2b5cc48218ac1259899e5ca7c8f7a71d61dd2fabf7faa4ef1226d5ce364",
+  "seeds": [
+    92802,
+    92804
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "name": "v67"
+}

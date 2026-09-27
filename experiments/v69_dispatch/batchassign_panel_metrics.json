@@ -1,0 +1,2758 @@
+[
+  {
+    "opponent": "V56",
+    "seed": 94700,
+    "candidate_seat": 0,
+    "cash": 49705.0,
+    "opponent_cash": 148352.0,
+    "candidate_result": "loss",
+    "candidate_metrics": {
+      "hands_productive_actions": 1368,
+      "hands_move_actions": 2832,
+      "productive_share_of_nonpass_actions": 0.3257,
+      "productive_by_op": {
+        "PICKUP": 160,
+        "BUILD_PASTURE": 4,
+        "PLACE": 6,
+        "PLANT": 114,
+        "WATER": 477,
+        "CARE": 142,
+        "COLLECT_FERTILIZER": 94,
+        "FEED": 98,
+        "DROP": 58,
+        "HARVEST": 209,
+        "DIG": 4,
+        "BUILD_COOP": 2
+      },
+      "care_due_animal_days": 186,
+      "care_served_animal_days": 169,
+      "feed_due_animal_days": 186,
+      "feed_served_animal_days": 180,
+      "animal_escapes": 0,
+      "crop_harvest_actions": {
+        "WHEAT": 100,
+        "WOOL": 24,
+        "MILK": 22,
+        "MELON": 18,
+        "EGG": 27,
+        "STRAWBERRY": 37
+      },
+      "harvested_units": {
+        "WHEAT": 297,
+        "WOOL": 93,
+        "MILK": 67,
+        "MELON": 72,
+        "EGG": 60,
+        "STRAWBERRY": 38
+      },
+      "crop_decay_yield_units": {
+        "WHEAT": 1
+      },
+      "ripe_crop_tile_days": {
+        "MELON": 239,
+        "WHEAT": 441,
+        "STRAWBERRY": 69
+      },
+      "unharvested_ripe_crop_tile_days": {
+        "MELON": 221,
+        "WHEAT": 341,
+        "STRAWBERRY": 32
+      },
+      "strawberry_water_actions": 103,
+      "strawberry_harvest_actions": 37,
+      "accepted_sales_units": {
+        "FERTILIZER": 139,
+        "WHEAT": 228,
+        "WOOL": 93,
+        "MILK": 67,
+        "MELON": 72,
+        "EGG": 60,
+        "STRAWBERRY": 38
+      },
+      "attempted_sales_units": {
+        "FERTILIZER": 139,
+        "WHEAT": 228,
+        "WOOL": 93,
+        "MILK": 67,
+        "MELON": 72,
+        "EGG": 60,
+        "STRAWBERRY": 38
+      },
+      "accepted_strawberry_sales_units": 38,
+      "attempted_strawberry_sales_units": 38,
+      "strawberry_live_hours": 4661,
+      "strawberry_counts_by_day": {
+        "0": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 6
+        },
+        "1": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "2": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "3": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 10
+        },
+        "4": {
+          "strawberry": 0,
+          "wheat": 7,
+          "melon": 10
+        },
+        "5": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "6": {
+          "strawberry": 0,
+          "wheat": 13,
+          "melon": 10
+        },
+        "7": {
+          "strawberry": 11,
+          "wheat": 16,
+          "melon": 10
+        },
+        "8": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "9": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "10": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "11": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "12": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "13": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 8
+        },
+        "14": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "15": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "16": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "17": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "18": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "19": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "20": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "21": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "22": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "23": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "24": {
+          "strawberry": 1,
+          "wheat": 17,
+          "melon": 4
+        },
+        "25": {
+          "strawberry": 0,
+          "wheat": 17,
+          "melon": 2
+        },
+        "26": {
+          "strawberry": 0,
+          "wheat": 15,
+          "melon": 2
+        },
+        "27": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 0
+        },
+        "28": {
+          "strawberry": 0,
+          "wheat": 4,
+          "melon": 0
+        }
+      }
+    }
+  },
+  {
+    "opponent": "V56",
+    "seed": 94700,
+    "candidate_seat": 1,
+    "cash": 49705.0,
+    "opponent_cash": 148352.0,
+    "candidate_result": "loss",
+    "candidate_metrics": {
+      "hands_productive_actions": 1368,
+      "hands_move_actions": 2832,
+      "productive_share_of_nonpass_actions": 0.3257,
+      "productive_by_op": {
+        "PICKUP": 160,
+        "BUILD_PASTURE": 4,
+        "PLACE": 6,
+        "PLANT": 114,
+        "WATER": 477,
+        "CARE": 142,
+        "COLLECT_FERTILIZER": 94,
+        "FEED": 98,
+        "DROP": 58,
+        "HARVEST": 209,
+        "DIG": 4,
+        "BUILD_COOP": 2
+      },
+      "care_due_animal_days": 186,
+      "care_served_animal_days": 169,
+      "feed_due_animal_days": 186,
+      "feed_served_animal_days": 180,
+      "animal_escapes": 0,
+      "crop_harvest_actions": {
+        "WHEAT": 100,
+        "WOOL": 24,
+        "MILK": 22,
+        "MELON": 18,
+        "EGG": 27,
+        "STRAWBERRY": 37
+      },
+      "harvested_units": {
+        "WHEAT": 297,
+        "WOOL": 93,
+        "MILK": 67,
+        "MELON": 72,
+        "EGG": 60,
+        "STRAWBERRY": 38
+      },
+      "crop_decay_yield_units": {
+        "WHEAT": 1
+      },
+      "ripe_crop_tile_days": {
+        "MELON": 239,
+        "WHEAT": 441,
+        "STRAWBERRY": 69
+      },
+      "unharvested_ripe_crop_tile_days": {
+        "MELON": 221,
+        "WHEAT": 341,
+        "STRAWBERRY": 32
+      },
+      "strawberry_water_actions": 103,
+      "strawberry_harvest_actions": 37,
+      "accepted_sales_units": {
+        "FERTILIZER": 139,
+        "WHEAT": 228,
+        "WOOL": 93,
+        "MILK": 67,
+        "MELON": 72,
+        "EGG": 60,
+        "STRAWBERRY": 38
+      },
+      "attempted_sales_units": {
+        "FERTILIZER": 139,
+        "WHEAT": 228,
+        "WOOL": 93,
+        "MILK": 67,
+        "MELON": 72,
+        "EGG": 60,
+        "STRAWBERRY": 38
+      },
+      "accepted_strawberry_sales_units": 38,
+      "attempted_strawberry_sales_units": 38,
+      "strawberry_live_hours": 4661,
+      "strawberry_counts_by_day": {
+        "0": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 6
+        },
+        "1": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "2": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "3": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 10
+        },
+        "4": {
+          "strawberry": 0,
+          "wheat": 7,
+          "melon": 10
+        },
+        "5": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "6": {
+          "strawberry": 0,
+          "wheat": 13,
+          "melon": 10
+        },
+        "7": {
+          "strawberry": 11,
+          "wheat": 16,
+          "melon": 10
+        },
+        "8": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "9": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "10": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "11": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "12": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "13": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 8
+        },
+        "14": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "15": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "16": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "17": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "18": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "19": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "20": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "21": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "22": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "23": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "24": {
+          "strawberry": 1,
+          "wheat": 17,
+          "melon": 4
+        },
+        "25": {
+          "strawberry": 0,
+          "wheat": 17,
+          "melon": 2
+        },
+        "26": {
+          "strawberry": 0,
+          "wheat": 15,
+          "melon": 2
+        },
+        "27": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 0
+        },
+        "28": {
+          "strawberry": 0,
+          "wheat": 4,
+          "melon": 0
+        }
+      }
+    }
+  },
+  {
+    "opponent": "V69",
+    "seed": 94700,
+    "candidate_seat": 0,
+    "cash": 48832.0,
+    "opponent_cash": 33586.0,
+    "candidate_result": "win",
+    "candidate_metrics": {
+      "hands_productive_actions": 1371,
+      "hands_move_actions": 2798,
+      "productive_share_of_nonpass_actions": 0.3289,
+      "productive_by_op": {
+        "PICKUP": 177,
+        "BUILD_PASTURE": 4,
+        "PLACE": 6,
+        "PLANT": 108,
+        "WATER": 474,
+        "CARE": 146,
+        "COLLECT_FERTILIZER": 88,
+        "FEED": 97,
+        "DROP": 62,
+        "HARVEST": 204,
+        "BUILD_COOP": 2,
+        "DIG": 3
+      },
+      "care_due_animal_days": 184,
+      "care_served_animal_days": 165,
+      "feed_due_animal_days": 184,
+      "feed_served_animal_days": 179,
+      "animal_escapes": 0,
+      "crop_harvest_actions": {
+        "WHEAT": 103,
+        "WOOL": 24,
+        "MILK": 21,
+        "MELON": 18,
+        "EGG": 27,
+        "STRAWBERRY": 44
+      },
+      "harvested_units": {
+        "WHEAT": 297,
+        "WOOL": 94,
+        "MILK": 68,
+        "MELON": 72,
+        "EGG": 57,
+        "STRAWBERRY": 48
+      },
+      "crop_decay_yield_units": {},
+      "ripe_crop_tile_days": {
+        "MELON": 240,
+        "WHEAT": 439,
+        "STRAWBERRY": 60
+      },
+      "unharvested_ripe_crop_tile_days": {
+        "MELON": 222,
+        "WHEAT": 336,
+        "STRAWBERRY": 16
+      },
+      "strawberry_water_actions": 104,
+      "strawberry_harvest_actions": 44,
+      "accepted_sales_units": {
+        "FERTILIZER": 125,
+        "WHEAT": 241,
+        "WOOL": 94,
+        "MILK": 68,
+        "MELON": 72,
+        "EGG": 57,
+        "STRAWBERRY": 48
+      },
+      "attempted_sales_units": {
+        "FERTILIZER": 125,
+        "WHEAT": 241,
+        "WOOL": 94,
+        "MILK": 68,
+        "MELON": 72,
+        "EGG": 57,
+        "STRAWBERRY": 48
+      },
+      "accepted_strawberry_sales_units": 48,
+      "attempted_strawberry_sales_units": 48,
+      "strawberry_live_hours": 4656,
+      "strawberry_counts_by_day": {
+        "0": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 6
+        },
+        "1": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "2": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "3": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 10
+        },
+        "4": {
+          "strawberry": 0,
+          "wheat": 8,
+          "melon": 10
+        },
+        "5": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "6": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "7": {
+          "strawberry": 9,
+          "wheat": 15,
+          "melon": 10
+        },
+        "8": {
+          "strawberry": 11,
+          "wheat": 15,
+          "melon": 10
+        },
+        "9": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "10": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "11": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 10
+        },
+        "12": {
+          "strawberry": 12,
+          "wheat": 15,
+          "melon": 7
+        },
+        "13": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 8
+        },
+        "14": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "15": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "16": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "17": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "18": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "19": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "20": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "21": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "22": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "23": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "24": {
+          "strawberry": 3,
+          "wheat": 17,
+          "melon": 6
+        },
+        "25": {
+          "strawberry": 1,
+          "wheat": 17,
+          "melon": 2
+        },
+        "26": {
+          "strawberry": 0,
+          "wheat": 16,
+          "melon": 1
+        },
+        "27": {
+          "strawberry": 0,
+          "wheat": 12,
+          "melon": 0
+        },
+        "28": {
+          "strawberry": 0,
+          "wheat": 5,
+          "melon": 0
+        }
+      }
+    }
+  },
+  {
+    "opponent": "V69",
+    "seed": 94700,
+    "candidate_seat": 1,
+    "cash": 51649.0,
+    "opponent_cash": 38943.0,
+    "candidate_result": "win",
+    "candidate_metrics": {
+      "hands_productive_actions": 1398,
+      "hands_move_actions": 2801,
+      "productive_share_of_nonpass_actions": 0.3329,
+      "productive_by_op": {
+        "PICKUP": 187,
+        "BUILD_PASTURE": 4,
+        "PLACE": 5,
+        "PLANT": 111,
+        "WATER": 470,
+        "CARE": 154,
+        "COLLECT_FERTILIZER": 89,
+        "FEED": 98,
+        "DROP": 67,
+        "HARVEST": 210,
+        "BUILD_COOP": 2,
+        "DIG": 1
+      },
+      "care_due_animal_days": 186,
+      "care_served_animal_days": 171,
+      "feed_due_animal_days": 186,
+      "feed_served_animal_days": 180,
+      "animal_escapes": 0,
+      "crop_harvest_actions": {
+        "WHEAT": 102,
+        "WOOL": 24,
+        "MILK": 21,
+        "MELON": 18,
+        "EGG": 28,
+        "STRAWBERRY": 37
+      },
+      "harvested_units": {
+        "WHEAT": 301,
+        "WOOL": 96,
+        "MILK": 70,
+        "MELON": 72,
+        "EGG": 58,
+        "STRAWBERRY": 46
+      },
+      "crop_decay_yield_units": {},
+      "ripe_crop_tile_days": {
+        "MELON": 239,
+        "WHEAT": 439,
+        "STRAWBERRY": 76
+      },
+      "unharvested_ripe_crop_tile_days": {
+        "MELON": 221,
+        "WHEAT": 337,
+        "STRAWBERRY": 39
+      },
+      "strawberry_water_actions": 104,
+      "strawberry_harvest_actions": 37,
+      "accepted_sales_units": {
+        "FERTILIZER": 131,
+        "WHEAT": 241,
+        "WOOL": 96,
+        "MILK": 70,
+        "MELON": 72,
+        "EGG": 58,
+        "STRAWBERRY": 46
+      },
+      "attempted_sales_units": {
+        "FERTILIZER": 131,
+        "WHEAT": 241,
+        "WOOL": 96,
+        "MILK": 70,
+        "MELON": 72,
+        "EGG": 58,
+        "STRAWBERRY": 46
+      },
+      "accepted_strawberry_sales_units": 46,
+      "attempted_strawberry_sales_units": 46,
+      "strawberry_live_hours": 4656,
+      "strawberry_counts_by_day": {
+        "0": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 6
+        },
+        "1": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "2": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "3": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 10
+        },
+        "4": {
+          "strawberry": 0,
+          "wheat": 8,
+          "melon": 10
+        },
+        "5": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "6": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "7": {
+          "strawberry": 9,
+          "wheat": 15,
+          "melon": 10
+        },
+        "8": {
+          "strawberry": 11,
+          "wheat": 15,
+          "melon": 10
+        },
+        "9": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "10": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "11": {
+          "strawberry": 12,
+          "wheat": 15,
+          "melon": 10
+        },
+        "12": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "13": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "14": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "15": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "16": {
+          "strawberry": 12,
+          "wheat": 14,
+          "melon": 9
+        },
+        "17": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "18": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "19": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "20": {
+          "strawberry": 12,
+          "wheat": 14,
+          "melon": 9
+        },
+        "21": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "22": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "23": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "24": {
+          "strawberry": 3,
+          "wheat": 17,
+          "melon": 5
+        },
+        "25": {
+          "strawberry": 1,
+          "wheat": 17,
+          "melon": 2
+        },
+        "26": {
+          "strawberry": 0,
+          "wheat": 15,
+          "melon": 1
+        },
+        "27": {
+          "strawberry": 0,
+          "wheat": 11,
+          "melon": 0
+        },
+        "28": {
+          "strawberry": 0,
+          "wheat": 7,
+          "melon": 0
+        }
+      }
+    }
+  },
+  {
+    "opponent": "V56",
+    "seed": 92802,
+    "candidate_seat": 0,
+    "cash": 55651.0,
+    "opponent_cash": 125434.0,
+    "candidate_result": "loss",
+    "candidate_metrics": {
+      "hands_productive_actions": 1365,
+      "hands_move_actions": 2816,
+      "productive_share_of_nonpass_actions": 0.3265,
+      "productive_by_op": {
+        "PICKUP": 186,
+        "BUILD_PASTURE": 4,
+        "PLACE": 6,
+        "PLANT": 112,
+        "WATER": 465,
+        "CARE": 154,
+        "COLLECT_FERTILIZER": 88,
+        "FEED": 97,
+        "DROP": 48,
+        "HARVEST": 200,
+        "DIG": 3,
+        "BUILD_COOP": 2
+      },
+      "care_due_animal_days": 185,
+      "care_served_animal_days": 172,
+      "feed_due_animal_days": 185,
+      "feed_served_animal_days": 179,
+      "animal_escapes": 0,
+      "crop_harvest_actions": {
+        "WHEAT": 97,
+        "WOOL": 24,
+        "MILK": 22,
+        "MELON": 18,
+        "EGG": 27,
+        "STRAWBERRY": 32
+      },
+      "harvested_units": {
+        "WHEAT": 284,
+        "WOOL": 97,
+        "MILK": 70,
+        "MELON": 72,
+        "EGG": 58,
+        "STRAWBERRY": 42
+      },
+      "crop_decay_yield_units": {},
+      "ripe_crop_tile_days": {
+        "MELON": 240,
+        "WHEAT": 423,
+        "STRAWBERRY": 69
+      },
+      "unharvested_ripe_crop_tile_days": {
+        "MELON": 222,
+        "WHEAT": 326,
+        "STRAWBERRY": 37
+      },
+      "strawberry_water_actions": 104,
+      "strawberry_harvest_actions": 32,
+      "accepted_sales_units": {
+        "FERTILIZER": 115,
+        "WHEAT": 232,
+        "WOOL": 97,
+        "MILK": 70,
+        "MELON": 72,
+        "EGG": 58,
+        "STRAWBERRY": 42
+      },
+      "attempted_sales_units": {
+        "FERTILIZER": 115,
+        "WHEAT": 232,
+        "WOOL": 97,
+        "MILK": 70,
+        "MELON": 72,
+        "EGG": 58,
+        "STRAWBERRY": 42
+      },
+      "accepted_strawberry_sales_units": 42,
+      "attempted_strawberry_sales_units": 42,
+      "strawberry_live_hours": 4663,
+      "strawberry_counts_by_day": {
+        "0": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 6
+        },
+        "1": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "2": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "3": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 10
+        },
+        "4": {
+          "strawberry": 0,
+          "wheat": 7,
+          "melon": 10
+        },
+        "5": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "6": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "7": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "8": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "9": {
+          "strawberry": 8,
+          "wheat": 13,
+          "melon": 10
+        },
+        "10": {
+          "strawberry": 11,
+          "wheat": 17,
+          "melon": 10
+        },
+        "11": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "12": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "13": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 7
+        },
+        "14": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "15": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "16": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "17": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "18": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "19": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "20": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "21": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "22": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "23": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "24": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 4
+        },
+        "25": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 3
+        },
+        "26": {
+          "strawberry": 4,
+          "wheat": 12,
+          "melon": 2
+        },
+        "27": {
+          "strawberry": 1,
+          "wheat": 12,
+          "melon": 0
+        },
+        "28": {
+          "strawberry": 0,
+          "wheat": 8,
+          "melon": 0
+        }
+      }
+    }
+  },
+  {
+    "opponent": "V56",
+    "seed": 92802,
+    "candidate_seat": 1,
+    "cash": 55651.0,
+    "opponent_cash": 125434.0,
+    "candidate_result": "loss",
+    "candidate_metrics": {
+      "hands_productive_actions": 1365,
+      "hands_move_actions": 2816,
+      "productive_share_of_nonpass_actions": 0.3265,
+      "productive_by_op": {
+        "PICKUP": 186,
+        "BUILD_PASTURE": 4,
+        "PLACE": 6,
+        "PLANT": 112,
+        "WATER": 465,
+        "CARE": 154,
+        "COLLECT_FERTILIZER": 88,
+        "FEED": 97,
+        "DROP": 48,
+        "HARVEST": 200,
+        "DIG": 3,
+        "BUILD_COOP": 2
+      },
+      "care_due_animal_days": 185,
+      "care_served_animal_days": 172,
+      "feed_due_animal_days": 185,
+      "feed_served_animal_days": 179,
+      "animal_escapes": 0,
+      "crop_harvest_actions": {
+        "WHEAT": 97,
+        "WOOL": 24,
+        "MILK": 22,
+        "MELON": 18,
+        "EGG": 27,
+        "STRAWBERRY": 32
+      },
+      "harvested_units": {
+        "WHEAT": 284,
+        "WOOL": 97,
+        "MILK": 70,
+        "MELON": 72,
+        "EGG": 58,
+        "STRAWBERRY": 42
+      },
+      "crop_decay_yield_units": {},
+      "ripe_crop_tile_days": {
+        "MELON": 240,
+        "WHEAT": 423,
+        "STRAWBERRY": 69
+      },
+      "unharvested_ripe_crop_tile_days": {
+        "MELON": 222,
+        "WHEAT": 326,
+        "STRAWBERRY": 37
+      },
+      "strawberry_water_actions": 104,
+      "strawberry_harvest_actions": 32,
+      "accepted_sales_units": {
+        "FERTILIZER": 115,
+        "WHEAT": 232,
+        "WOOL": 97,
+        "MILK": 70,
+        "MELON": 72,
+        "EGG": 58,
+        "STRAWBERRY": 42
+      },
+      "attempted_sales_units": {
+        "FERTILIZER": 115,
+        "WHEAT": 232,
+        "WOOL": 97,
+        "MILK": 70,
+        "MELON": 72,
+        "EGG": 58,
+        "STRAWBERRY": 42
+      },
+      "accepted_strawberry_sales_units": 42,
+      "attempted_strawberry_sales_units": 42,
+      "strawberry_live_hours": 4663,
+      "strawberry_counts_by_day": {
+        "0": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 6
+        },
+        "1": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "2": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "3": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 10
+        },
+        "4": {
+          "strawberry": 0,
+          "wheat": 7,
+          "melon": 10
+        },
+        "5": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "6": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "7": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "8": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "9": {
+          "strawberry": 8,
+          "wheat": 13,
+          "melon": 10
+        },
+        "10": {
+          "strawberry": 11,
+          "wheat": 17,
+          "melon": 10
+        },
+        "11": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "12": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "13": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 7
+        },
+        "14": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "15": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "16": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "17": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "18": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "19": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "20": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "21": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "22": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "23": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "24": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 4
+        },
+        "25": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 3
+        },
+        "26": {
+          "strawberry": 4,
+          "wheat": 12,
+          "melon": 2
+        },
+        "27": {
+          "strawberry": 1,
+          "wheat": 12,
+          "melon": 0
+        },
+        "28": {
+          "strawberry": 0,
+          "wheat": 8,
+          "melon": 0
+        }
+      }
+    }
+  },
+  {
+    "opponent": "V56",
+    "seed": 92804,
+    "candidate_seat": 0,
+    "cash": 54837.0,
+    "opponent_cash": 146882.0,
+    "candidate_result": "loss",
+    "candidate_metrics": {
+      "hands_productive_actions": 1368,
+      "hands_move_actions": 2832,
+      "productive_share_of_nonpass_actions": 0.3257,
+      "productive_by_op": {
+        "PICKUP": 160,
+        "BUILD_PASTURE": 4,
+        "PLACE": 6,
+        "PLANT": 114,
+        "WATER": 477,
+        "CARE": 142,
+        "COLLECT_FERTILIZER": 94,
+        "FEED": 98,
+        "DROP": 58,
+        "HARVEST": 209,
+        "DIG": 4,
+        "BUILD_COOP": 2
+      },
+      "care_due_animal_days": 186,
+      "care_served_animal_days": 169,
+      "feed_due_animal_days": 186,
+      "feed_served_animal_days": 180,
+      "animal_escapes": 0,
+      "crop_harvest_actions": {
+        "WHEAT": 100,
+        "WOOL": 24,
+        "MILK": 22,
+        "MELON": 18,
+        "EGG": 27,
+        "STRAWBERRY": 37
+      },
+      "harvested_units": {
+        "WHEAT": 297,
+        "WOOL": 93,
+        "MILK": 67,
+        "MELON": 72,
+        "EGG": 60,
+        "STRAWBERRY": 38
+      },
+      "crop_decay_yield_units": {
+        "WHEAT": 1
+      },
+      "ripe_crop_tile_days": {
+        "MELON": 239,
+        "WHEAT": 441,
+        "STRAWBERRY": 69
+      },
+      "unharvested_ripe_crop_tile_days": {
+        "MELON": 221,
+        "WHEAT": 341,
+        "STRAWBERRY": 32
+      },
+      "strawberry_water_actions": 103,
+      "strawberry_harvest_actions": 37,
+      "accepted_sales_units": {
+        "FERTILIZER": 139,
+        "WHEAT": 228,
+        "WOOL": 93,
+        "MILK": 67,
+        "MELON": 72,
+        "EGG": 60,
+        "STRAWBERRY": 38
+      },
+      "attempted_sales_units": {
+        "FERTILIZER": 139,
+        "WHEAT": 228,
+        "WOOL": 93,
+        "MILK": 67,
+        "MELON": 72,
+        "EGG": 60,
+        "STRAWBERRY": 38
+      },
+      "accepted_strawberry_sales_units": 38,
+      "attempted_strawberry_sales_units": 38,
+      "strawberry_live_hours": 4661,
+      "strawberry_counts_by_day": {
+        "0": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 6
+        },
+        "1": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "2": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "3": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 10
+        },
+        "4": {
+          "strawberry": 0,
+          "wheat": 7,
+          "melon": 10
+        },
+        "5": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "6": {
+          "strawberry": 0,
+          "wheat": 13,
+          "melon": 10
+        },
+        "7": {
+          "strawberry": 11,
+          "wheat": 16,
+          "melon": 10
+        },
+        "8": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "9": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "10": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "11": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "12": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "13": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 8
+        },
+        "14": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "15": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "16": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "17": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "18": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "19": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "20": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "21": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "22": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "23": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "24": {
+          "strawberry": 1,
+          "wheat": 17,
+          "melon": 4
+        },
+        "25": {
+          "strawberry": 0,
+          "wheat": 17,
+          "melon": 2
+        },
+        "26": {
+          "strawberry": 0,
+          "wheat": 15,
+          "melon": 2
+        },
+        "27": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 0
+        },
+        "28": {
+          "strawberry": 0,
+          "wheat": 4,
+          "melon": 0
+        }
+      }
+    }
+  },
+  {
+    "opponent": "V56",
+    "seed": 92804,
+    "candidate_seat": 1,
+    "cash": 54837.0,
+    "opponent_cash": 146882.0,
+    "candidate_result": "loss",
+    "candidate_metrics": {
+      "hands_productive_actions": 1368,
+      "hands_move_actions": 2832,
+      "productive_share_of_nonpass_actions": 0.3257,
+      "productive_by_op": {
+        "PICKUP": 160,
+        "BUILD_PASTURE": 4,
+        "PLACE": 6,
+        "PLANT": 114,
+        "WATER": 477,
+        "CARE": 142,
+        "COLLECT_FERTILIZER": 94,
+        "FEED": 98,
+        "DROP": 58,
+        "HARVEST": 209,
+        "DIG": 4,
+        "BUILD_COOP": 2
+      },
+      "care_due_animal_days": 186,
+      "care_served_animal_days": 169,
+      "feed_due_animal_days": 186,
+      "feed_served_animal_days": 180,
+      "animal_escapes": 0,
+      "crop_harvest_actions": {
+        "WHEAT": 100,
+        "WOOL": 24,
+        "MILK": 22,
+        "MELON": 18,
+        "EGG": 27,
+        "STRAWBERRY": 37
+      },
+      "harvested_units": {
+        "WHEAT": 297,
+        "WOOL": 93,
+        "MILK": 67,
+        "MELON": 72,
+        "EGG": 60,
+        "STRAWBERRY": 38
+      },
+      "crop_decay_yield_units": {
+        "WHEAT": 1
+      },
+      "ripe_crop_tile_days": {
+        "MELON": 239,
+        "WHEAT": 441,
+        "STRAWBERRY": 69
+      },
+      "unharvested_ripe_crop_tile_days": {
+        "MELON": 221,
+        "WHEAT": 341,
+        "STRAWBERRY": 32
+      },
+      "strawberry_water_actions": 103,
+      "strawberry_harvest_actions": 37,
+      "accepted_sales_units": {
+        "FERTILIZER": 139,
+        "WHEAT": 228,
+        "WOOL": 93,
+        "MILK": 67,
+        "MELON": 72,
+        "EGG": 60,
+        "STRAWBERRY": 38
+      },
+      "attempted_sales_units": {
+        "FERTILIZER": 139,
+        "WHEAT": 228,
+        "WOOL": 93,
+        "MILK": 67,
+        "MELON": 72,
+        "EGG": 60,
+        "STRAWBERRY": 38
+      },
+      "accepted_strawberry_sales_units": 38,
+      "attempted_strawberry_sales_units": 38,
+      "strawberry_live_hours": 4661,
+      "strawberry_counts_by_day": {
+        "0": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 6
+        },
+        "1": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "2": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "3": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 10
+        },
+        "4": {
+          "strawberry": 0,
+          "wheat": 7,
+          "melon": 10
+        },
+        "5": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "6": {
+          "strawberry": 0,
+          "wheat": 13,
+          "melon": 10
+        },
+        "7": {
+          "strawberry": 11,
+          "wheat": 16,
+          "melon": 10
+        },
+        "8": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "9": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "10": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "11": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "12": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "13": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 8
+        },
+        "14": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "15": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "16": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "17": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "18": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "19": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "20": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "21": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "22": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "23": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "24": {
+          "strawberry": 1,
+          "wheat": 17,
+          "melon": 4
+        },
+        "25": {
+          "strawberry": 0,
+          "wheat": 17,
+          "melon": 2
+        },
+        "26": {
+          "strawberry": 0,
+          "wheat": 15,
+          "melon": 2
+        },
+        "27": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 0
+        },
+        "28": {
+          "strawberry": 0,
+          "wheat": 4,
+          "melon": 0
+        }
+      }
+    }
+  },
+  {
+    "opponent": "V69",
+    "seed": 92802,
+    "candidate_seat": 0,
+    "cash": 57871.0,
+    "opponent_cash": 43775.0,
+    "candidate_result": "win",
+    "candidate_metrics": {
+      "hands_productive_actions": 1400,
+      "hands_move_actions": 2802,
+      "productive_share_of_nonpass_actions": 0.3332,
+      "productive_by_op": {
+        "PICKUP": 187,
+        "BUILD_PASTURE": 4,
+        "PLACE": 5,
+        "PLANT": 111,
+        "WATER": 470,
+        "CARE": 153,
+        "COLLECT_FERTILIZER": 89,
+        "FEED": 99,
+        "DROP": 68,
+        "HARVEST": 210,
+        "BUILD_COOP": 2,
+        "DIG": 2
+      },
+      "care_due_animal_days": 186,
+      "care_served_animal_days": 171,
+      "feed_due_animal_days": 186,
+      "feed_served_animal_days": 180,
+      "animal_escapes": 0,
+      "crop_harvest_actions": {
+        "WHEAT": 102,
+        "WOOL": 24,
+        "MILK": 21,
+        "MELON": 18,
+        "EGG": 28,
+        "STRAWBERRY": 37
+      },
+      "harvested_units": {
+        "WHEAT": 302,
+        "WOOL": 96,
+        "MILK": 70,
+        "MELON": 72,
+        "EGG": 58,
+        "STRAWBERRY": 46
+      },
+      "crop_decay_yield_units": {},
+      "ripe_crop_tile_days": {
+        "MELON": 239,
+        "WHEAT": 439,
+        "STRAWBERRY": 76
+      },
+      "unharvested_ripe_crop_tile_days": {
+        "MELON": 221,
+        "WHEAT": 337,
+        "STRAWBERRY": 39
+      },
+      "strawberry_water_actions": 104,
+      "strawberry_harvest_actions": 37,
+      "accepted_sales_units": {
+        "FERTILIZER": 131,
+        "WHEAT": 240,
+        "WOOL": 96,
+        "MILK": 70,
+        "MELON": 72,
+        "EGG": 58,
+        "STRAWBERRY": 46
+      },
+      "attempted_sales_units": {
+        "FERTILIZER": 131,
+        "WHEAT": 240,
+        "WOOL": 96,
+        "MILK": 70,
+        "MELON": 72,
+        "EGG": 58,
+        "STRAWBERRY": 46
+      },
+      "accepted_strawberry_sales_units": 46,
+      "attempted_strawberry_sales_units": 46,
+      "strawberry_live_hours": 4656,
+      "strawberry_counts_by_day": {
+        "0": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 6
+        },
+        "1": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "2": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "3": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 10
+        },
+        "4": {
+          "strawberry": 0,
+          "wheat": 8,
+          "melon": 10
+        },
+        "5": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "6": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "7": {
+          "strawberry": 9,
+          "wheat": 15,
+          "melon": 10
+        },
+        "8": {
+          "strawberry": 11,
+          "wheat": 15,
+          "melon": 10
+        },
+        "9": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "10": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "11": {
+          "strawberry": 12,
+          "wheat": 15,
+          "melon": 10
+        },
+        "12": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "13": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "14": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "15": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "16": {
+          "strawberry": 12,
+          "wheat": 14,
+          "melon": 9
+        },
+        "17": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "18": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "19": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "20": {
+          "strawberry": 12,
+          "wheat": 14,
+          "melon": 9
+        },
+        "21": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "22": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "23": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "24": {
+          "strawberry": 3,
+          "wheat": 17,
+          "melon": 5
+        },
+        "25": {
+          "strawberry": 1,
+          "wheat": 17,
+          "melon": 2
+        },
+        "26": {
+          "strawberry": 0,
+          "wheat": 15,
+          "melon": 1
+        },
+        "27": {
+          "strawberry": 0,
+          "wheat": 11,
+          "melon": 0
+        },
+        "28": {
+          "strawberry": 0,
+          "wheat": 7,
+          "melon": 0
+        }
+      }
+    }
+  },
+  {
+    "opponent": "V69",
+    "seed": 92802,
+    "candidate_seat": 1,
+    "cash": 66381.0,
+    "opponent_cash": 55556.0,
+    "candidate_result": "win",
+    "candidate_metrics": {
+      "hands_productive_actions": 1363,
+      "hands_move_actions": 2876,
+      "productive_share_of_nonpass_actions": 0.3215,
+      "productive_by_op": {
+        "PICKUP": 215,
+        "BUILD_PASTURE": 4,
+        "PLACE": 5,
+        "PLANT": 101,
+        "WATER": 439,
+        "CARE": 151,
+        "COLLECT_FERTILIZER": 91,
+        "FEED": 100,
+        "DROP": 57,
+        "HARVEST": 191,
+        "BUILD_COOP": 2,
+        "DIG": 7
+      },
+      "care_due_animal_days": 186,
+      "care_served_animal_days": 169,
+      "feed_due_animal_days": 186,
+      "feed_served_animal_days": 180,
+      "animal_escapes": 0,
+      "crop_harvest_actions": {
+        "WHEAT": 86,
+        "WOOL": 24,
+        "MILK": 21,
+        "MELON": 16,
+        "EGG": 25,
+        "STRAWBERRY": 42
+      },
+      "harvested_units": {
+        "WHEAT": 256,
+        "WOOL": 95,
+        "MILK": 70,
+        "MELON": 64,
+        "EGG": 57,
+        "STRAWBERRY": 42
+      },
+      "crop_decay_yield_units": {},
+      "ripe_crop_tile_days": {
+        "MELON": 242,
+        "WHEAT": 385,
+        "STRAWBERRY": 59
+      },
+      "unharvested_ripe_crop_tile_days": {
+        "MELON": 226,
+        "WHEAT": 299,
+        "STRAWBERRY": 17
+      },
+      "strawberry_water_actions": 105,
+      "strawberry_harvest_actions": 42,
+      "accepted_sales_units": {
+        "FERTILIZER": 109,
+        "WHEAT": 206,
+        "WOOL": 95,
+        "MILK": 70,
+        "MELON": 64,
+        "EGG": 57,
+        "STRAWBERRY": 42
+      },
+      "attempted_sales_units": {
+        "FERTILIZER": 109,
+        "WHEAT": 206,
+        "WOOL": 95,
+        "MILK": 70,
+        "MELON": 64,
+        "EGG": 57,
+        "STRAWBERRY": 42
+      },
+      "accepted_strawberry_sales_units": 42,
+      "attempted_strawberry_sales_units": 42,
+      "strawberry_live_hours": 4658,
+      "strawberry_counts_by_day": {
+        "0": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 6
+        },
+        "1": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "2": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "3": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 10
+        },
+        "4": {
+          "strawberry": 0,
+          "wheat": 8,
+          "melon": 10
+        },
+        "5": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "6": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "7": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "8": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "9": {
+          "strawberry": 6,
+          "wheat": 17,
+          "melon": 10
+        },
+        "10": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "11": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "12": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 6
+        },
+        "13": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 5
+        },
+        "14": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "15": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "16": {
+          "strawberry": 12,
+          "wheat": 15,
+          "melon": 9
+        },
+        "17": {
+          "strawberry": 12,
+          "wheat": 12,
+          "melon": 9
+        },
+        "18": {
+          "strawberry": 12,
+          "wheat": 13,
+          "melon": 9
+        },
+        "19": {
+          "strawberry": 12,
+          "wheat": 13,
+          "melon": 9
+        },
+        "20": {
+          "strawberry": 12,
+          "wheat": 13,
+          "melon": 9
+        },
+        "21": {
+          "strawberry": 12,
+          "wheat": 13,
+          "melon": 9
+        },
+        "22": {
+          "strawberry": 12,
+          "wheat": 13,
+          "melon": 9
+        },
+        "23": {
+          "strawberry": 12,
+          "wheat": 13,
+          "melon": 9
+        },
+        "24": {
+          "strawberry": 12,
+          "wheat": 13,
+          "melon": 7
+        },
+        "25": {
+          "strawberry": 12,
+          "wheat": 12,
+          "melon": 5
+        },
+        "26": {
+          "strawberry": 6,
+          "wheat": 11,
+          "melon": 1
+        },
+        "27": {
+          "strawberry": 0,
+          "wheat": 11,
+          "melon": 0
+        },
+        "28": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 0
+        }
+      }
+    }
+  },
+  {
+    "opponent": "V69",
+    "seed": 92804,
+    "candidate_seat": 0,
+    "cash": 74891.0,
+    "opponent_cash": 59507.0,
+    "candidate_result": "win",
+    "candidate_metrics": {
+      "hands_productive_actions": 1398,
+      "hands_move_actions": 2801,
+      "productive_share_of_nonpass_actions": 0.3329,
+      "productive_by_op": {
+        "PICKUP": 187,
+        "BUILD_PASTURE": 4,
+        "PLACE": 5,
+        "PLANT": 111,
+        "WATER": 470,
+        "CARE": 154,
+        "COLLECT_FERTILIZER": 89,
+        "FEED": 98,
+        "DROP": 67,
+        "HARVEST": 210,
+        "BUILD_COOP": 2,
+        "DIG": 1
+      },
+      "care_due_animal_days": 186,
+      "care_served_animal_days": 171,
+      "feed_due_animal_days": 186,
+      "feed_served_animal_days": 180,
+      "animal_escapes": 0,
+      "crop_harvest_actions": {
+        "WHEAT": 102,
+        "WOOL": 24,
+        "MILK": 21,
+        "MELON": 18,
+        "EGG": 28,
+        "STRAWBERRY": 37
+      },
+      "harvested_units": {
+        "WHEAT": 301,
+        "WOOL": 96,
+        "MILK": 70,
+        "MELON": 72,
+        "EGG": 58,
+        "STRAWBERRY": 46
+      },
+      "crop_decay_yield_units": {},
+      "ripe_crop_tile_days": {
+        "MELON": 239,
+        "WHEAT": 439,
+        "STRAWBERRY": 76
+      },
+      "unharvested_ripe_crop_tile_days": {
+        "MELON": 221,
+        "WHEAT": 337,
+        "STRAWBERRY": 39
+      },
+      "strawberry_water_actions": 104,
+      "strawberry_harvest_actions": 37,
+      "accepted_sales_units": {
+        "FERTILIZER": 131,
+        "WHEAT": 241,
+        "WOOL": 96,
+        "MILK": 70,
+        "MELON": 72,
+        "EGG": 58,
+        "STRAWBERRY": 46
+      },
+      "attempted_sales_units": {
+        "FERTILIZER": 131,
+        "WHEAT": 241,
+        "WOOL": 96,
+        "MILK": 70,
+        "MELON": 72,
+        "EGG": 58,
+        "STRAWBERRY": 46
+      },
+      "accepted_strawberry_sales_units": 46,
+      "attempted_strawberry_sales_units": 46,
+      "strawberry_live_hours": 4656,
+      "strawberry_counts_by_day": {
+        "0": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 6
+        },
+        "1": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "2": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "3": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 10
+        },
+        "4": {
+          "strawberry": 0,
+          "wheat": 8,
+          "melon": 10
+        },
+        "5": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "6": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "7": {
+          "strawberry": 9,
+          "wheat": 15,
+          "melon": 10
+        },
+        "8": {
+          "strawberry": 11,
+          "wheat": 15,
+          "melon": 10
+        },
+        "9": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "10": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "11": {
+          "strawberry": 12,
+          "wheat": 15,
+          "melon": 10
+        },
+        "12": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "13": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "14": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "15": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "16": {
+          "strawberry": 12,
+          "wheat": 14,
+          "melon": 9
+        },
+        "17": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "18": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "19": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "20": {
+          "strawberry": 12,
+          "wheat": 14,
+          "melon": 9
+        },
+        "21": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "22": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "23": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "24": {
+          "strawberry": 3,
+          "wheat": 17,
+          "melon": 5
+        },
+        "25": {
+          "strawberry": 1,
+          "wheat": 17,
+          "melon": 2
+        },
+        "26": {
+          "strawberry": 0,
+          "wheat": 15,
+          "melon": 1
+        },
+        "27": {
+          "strawberry": 0,
+          "wheat": 11,
+          "melon": 0
+        },
+        "28": {
+          "strawberry": 0,
+          "wheat": 7,
+          "melon": 0
+        }
+      }
+    }
+  },
+  {
+    "opponent": "V69",
+    "seed": 92804,
+    "candidate_seat": 1,
+    "cash": 74891.0,
+    "opponent_cash": 59507.0,
+    "candidate_result": "win",
+    "candidate_metrics": {
+      "hands_productive_actions": 1398,
+      "hands_move_actions": 2801,
+      "productive_share_of_nonpass_actions": 0.3329,
+      "productive_by_op": {
+        "PICKUP": 187,
+        "BUILD_PASTURE": 4,
+        "PLACE": 5,
+        "PLANT": 111,
+        "WATER": 470,
+        "CARE": 154,
+        "COLLECT_FERTILIZER": 89,
+        "FEED": 98,
+        "DROP": 67,
+        "HARVEST": 210,
+        "BUILD_COOP": 2,
+        "DIG": 1
+      },
+      "care_due_animal_days": 186,
+      "care_served_animal_days": 171,
+      "feed_due_animal_days": 186,
+      "feed_served_animal_days": 180,
+      "animal_escapes": 0,
+      "crop_harvest_actions": {
+        "WHEAT": 102,
+        "WOOL": 24,
+        "MILK": 21,
+        "MELON": 18,
+        "EGG": 28,
+        "STRAWBERRY": 37
+      },
+      "harvested_units": {
+        "WHEAT": 301,
+        "WOOL": 96,
+        "MILK": 70,
+        "MELON": 72,
+        "EGG": 58,
+        "STRAWBERRY": 46
+      },
+      "crop_decay_yield_units": {},
+      "ripe_crop_tile_days": {
+        "MELON": 239,
+        "WHEAT": 439,
+        "STRAWBERRY": 76
+      },
+      "unharvested_ripe_crop_tile_days": {
+        "MELON": 221,
+        "WHEAT": 337,
+        "STRAWBERRY": 39
+      },
+      "strawberry_water_actions": 104,
+      "strawberry_harvest_actions": 37,
+      "accepted_sales_units": {
+        "FERTILIZER": 131,
+        "WHEAT": 241,
+        "WOOL": 96,
+        "MILK": 70,
+        "MELON": 72,
+        "EGG": 58,
+        "STRAWBERRY": 46
+      },
+      "attempted_sales_units": {
+        "FERTILIZER": 131,
+        "WHEAT": 241,
+        "WOOL": 96,
+        "MILK": 70,
+        "MELON": 72,
+        "EGG": 58,
+        "STRAWBERRY": 46
+      },
+      "accepted_strawberry_sales_units": 46,
+      "attempted_strawberry_sales_units": 46,
+      "strawberry_live_hours": 4656,
+      "strawberry_counts_by_day": {
+        "0": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 6
+        },
+        "1": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "2": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 9
+        },
+        "3": {
+          "strawberry": 0,
+          "wheat": 10,
+          "melon": 10
+        },
+        "4": {
+          "strawberry": 0,
+          "wheat": 8,
+          "melon": 10
+        },
+        "5": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "6": {
+          "strawberry": 0,
+          "wheat": 9,
+          "melon": 10
+        },
+        "7": {
+          "strawberry": 9,
+          "wheat": 15,
+          "melon": 10
+        },
+        "8": {
+          "strawberry": 11,
+          "wheat": 15,
+          "melon": 10
+        },
+        "9": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "10": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 10
+        },
+        "11": {
+          "strawberry": 12,
+          "wheat": 15,
+          "melon": 10
+        },
+        "12": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "13": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 8
+        },
+        "14": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "15": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "16": {
+          "strawberry": 12,
+          "wheat": 14,
+          "melon": 9
+        },
+        "17": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "18": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "19": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "20": {
+          "strawberry": 12,
+          "wheat": 14,
+          "melon": 9
+        },
+        "21": {
+          "strawberry": 12,
+          "wheat": 16,
+          "melon": 9
+        },
+        "22": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "23": {
+          "strawberry": 12,
+          "wheat": 17,
+          "melon": 9
+        },
+        "24": {
+          "strawberry": 3,
+          "wheat": 17,
+          "melon": 5
+        },
+        "25": {
+          "strawberry": 1,
+          "wheat": 17,
+          "melon": 2
+        },
+        "26": {
+          "strawberry": 0,
+          "wheat": 15,
+          "melon": 1
+        },
+        "27": {
+          "strawberry": 0,
+          "wheat": 11,
+          "melon": 0
+        },
+        "28": {
+          "strawberry": 0,
+          "wheat": 7,
+          "melon": 0
+        }
+      }
+    }
+  }
+]

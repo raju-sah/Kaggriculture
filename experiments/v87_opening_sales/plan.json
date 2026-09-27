@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "candidate": "experiments/v87_opening_sales/candidate.py",
+  "candidate_sha256": "2c2c8d8d4c2fe9a8d6e4437b232e62b4441e426be977d59228d3a7d4fd1459e6",
+  "base_agent": "agents/v56_agent.py",
+  "base_agent_sha256": "d9e9670921b62afedfa8cbc7086d2a2ec19e153ee26006cef477eadd462bd19c",
+  "opponents": {
+    "v50": "experiments/v50_agent.py",
+    "v56": "agents/v56_agent.py"
+  },
+  "seeds": [92802, 94110, 94111, 94112, 94113, 94114, 94400, 94401],
+  "seed_status": "all already spent; >=6 prior saved games each except 9411x which have >=4",
+  "repeats": 1,
+  "seats": "both (ab and ba) for every opponent",
+  "replay_policy": "all",
+  "output_dir": "experiments/v87_opening_sales/runs/screen_92802",
+  "engine": "kaggle_environments 1.32.7, exact loader via simulation.tournament",
+  "predeclared_gate_both_seats": {
+    "zero_errors": true,
+    "actual_changed_actions": "candidate must differ from frozen V56 on the same seed/seat in both seat orders",
+    "accepted_early_sales_increase": "accepted sales over days 0-5 must exceed frozen V56 on the same seed and seat",
+    "positive_paired_margin": "candidate final coins - opponent final coins must be > 0 in BOTH seat orders",
+    "on_failure": "reject the branch; no retune, no rerun, no fresh seed"
+  },
+  "notes": "Gate is fixed before the run. Any failure rejects. A pass only authorises a broader panel, not a submission."
+}

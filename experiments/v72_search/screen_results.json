@@ -1,0 +1,215 @@
+{
+  "screen_wall_seconds": 199.57110602300963,
+  "rows": [
+    {
+      "variant": "gate100_land12",
+      "opponent": "V56",
+      "phase": "screen_v56",
+      "games": 4,
+      "wins": 0,
+      "errors": 0,
+      "mean_candidate_cash": 49496.0,
+      "mean_margin": -76454.0,
+      "mean_direct_production_actions": 1486.5,
+      "per_seed": {
+        "92802": {
+          "cash": 45652.0,
+          "margin": -61121.0,
+          "production": 1476.0
+        },
+        "94700": {
+          "cash": 53340.0,
+          "margin": -91787.0,
+          "production": 1497.0
+        }
+      },
+      "mean_game_runtime_seconds": 20.573614049506432,
+      "wall_seconds": 46.96815234501264,
+      "candidate_sha256": "1e92e937965a6b98af5b0b80873800094fa97bc06d3fa716a9ae654501c03bba",
+      "report": "experiments/v72_search/runs/screen_v56_gate100_land12/report.json",
+      "cash_lift_vs_v70_same_seeds": -8898.0,
+      "margin_lift_vs_v70_same_seeds": 3762.5,
+      "production_lift_vs_v70_same_seeds": 93.0
+    },
+    {
+      "variant": "gate150_land10",
+      "opponent": "V56",
+      "phase": "screen_v56",
+      "games": 4,
+      "wins": 0,
+      "errors": 0,
+      "mean_candidate_cash": 47514.5,
+      "mean_margin": -78252.5,
+      "mean_direct_production_actions": 1583.0,
+      "per_seed": {
+        "92802": {
+          "cash": 41426.0,
+          "margin": -58201.0,
+          "production": 1537.0
+        },
+        "94700": {
+          "cash": 53603.0,
+          "margin": -98304.0,
+          "production": 1629.0
+        }
+      },
+      "mean_game_runtime_seconds": 31.999440391999087,
+      "wall_seconds": 69.4961698030238,
+      "candidate_sha256": "fc5de8db250e25c67b24aef778166e217b04febc27d083991932a9d76f3c2935",
+      "report": "experiments/v72_search/runs/screen_v56_gate150_land10/report.json",
+      "cash_lift_vs_v70_same_seeds": -10879.5,
+      "margin_lift_vs_v70_same_seeds": 1964.0,
+      "production_lift_vs_v70_same_seeds": 189.5
+    },
+    {
+      "variant": "gate150_land12",
+      "opponent": "V56",
+      "phase": "screen_v56",
+      "games": 4,
+      "wins": 0,
+      "errors": 0,
+      "mean_candidate_cash": 49209.0,
+      "mean_margin": -76427.25,
+      "mean_direct_production_actions": 1439.0,
+      "per_seed": {
+        "92802": {
+          "cash": 45078.0,
+          "margin": -61067.5,
+          "production": 1381.0
+        },
+        "94700": {
+          "cash": 53340.0,
+          "margin": -91787.0,
+          "production": 1497.0
+        }
+      },
+      "mean_game_runtime_seconds": 29.76181002249359,
+      "wall_seconds": 65.27978718801751,
+      "candidate_sha256": "c6bae3ded53a0abd2d1e01f5b11296637b80fe855bcbc6956ac59341bb558403",
+      "report": "experiments/v72_search/runs/screen_v56_gate150_land12/report.json",
+      "cash_lift_vs_v70_same_seeds": -9185.0,
+      "margin_lift_vs_v70_same_seeds": 3789.25,
+      "production_lift_vs_v70_same_seeds": 45.5
+    },
+    {
+      "variant": "gate150_land8",
+      "opponent": "V56",
+      "phase": "screen_v56",
+      "games": 4,
+      "wins": 0,
+      "errors": 0,
+      "mean_candidate_cash": 43801.5,
+      "mean_margin": -89565.5,
+      "mean_direct_production_actions": 1435.25,
+      "per_seed": {
+        "92802": {
+          "cash": 35060.0,
+          "margin": -80034.0,
+          "production": 1350.5
+        },
+        "94700": {
+          "cash": 52543.0,
+          "margin": -99097.0,
+          "production": 1520.0
+        }
+      },
+      "mean_game_runtime_seconds": 21.82453368325514,
+      "wall_seconds": 49.44196645100601,
+      "candidate_sha256": "2e121dbc01f5b5ea4af2a7b94255214e7b33e6308395d7833aed3b16f158253a",
+      "report": "experiments/v72_search/runs/screen_v56_gate150_land8/report.json",
+      "cash_lift_vs_v70_same_seeds": -14592.5,
+      "margin_lift_vs_v70_same_seeds": -9349.0,
+      "production_lift_vs_v70_same_seeds": 41.75
+    },
+    {
+      "variant": "gate200_land10",
+      "opponent": "V56",
+      "phase": "screen_v56",
+      "games": 4,
+      "wins": 0,
+      "errors": 0,
+      "mean_candidate_cash": 43446.5,
+      "mean_margin": -82013.0,
+      "mean_direct_production_actions": 1366.5,
+      "per_seed": {
+        "92802": {
+          "cash": 44464.0,
+          "margin": -75099.0,
+          "production": 1254.0
+        },
+        "94700": {
+          "cash": 42429.0,
+          "margin": -88927.0,
+          "production": 1479.0
+        }
+      },
+      "mean_game_runtime_seconds": 23.99728534899623,
+      "wall_seconds": 52.93183896999108,
+      "candidate_sha256": "cd667e1f6c5049ca06fb48c3cc883a4540f63bb4aea4b3124a3648e3ef04386b",
+      "report": "experiments/v72_search/runs/screen_v56_gate200_land10/report.json",
+      "cash_lift_vs_v70_same_seeds": -14947.5,
+      "margin_lift_vs_v70_same_seeds": -1796.5,
+      "production_lift_vs_v70_same_seeds": -27.0
+    },
+    {
+      "variant": "gate200_land12",
+      "opponent": "V56",
+      "phase": "screen_v56",
+      "games": 4,
+      "wins": 0,
+      "errors": 0,
+      "mean_candidate_cash": 47469.0,
+      "mean_margin": -85590.0,
+      "mean_direct_production_actions": 1375.0,
+      "per_seed": {
+        "92802": {
+          "cash": 44464.0,
+          "margin": -75099.0,
+          "production": 1254.0
+        },
+        "94700": {
+          "cash": 50474.0,
+          "margin": -96081.0,
+          "production": 1496.0
+        }
+      },
+      "mean_game_runtime_seconds": 13.516897243498533,
+      "wall_seconds": 30.171635297010653,
+      "candidate_sha256": "714bad24dd18fe93fad1d45eb78d4027d69b218d5d839155bdc67a75648a82ec",
+      "report": "experiments/v72_search/runs/screen_v56_gate200_land12/report.json",
+      "cash_lift_vs_v70_same_seeds": -10925.0,
+      "margin_lift_vs_v70_same_seeds": -5373.5,
+      "production_lift_vs_v70_same_seeds": -18.5
+    },
+    {
+      "variant": "gate200_land8",
+      "opponent": "V56",
+      "phase": "screen_v56",
+      "games": 4,
+      "wins": 0,
+      "errors": 0,
+      "mean_candidate_cash": 43446.5,
+      "mean_margin": -82013.0,
+      "mean_direct_production_actions": 1366.5,
+      "per_seed": {
+        "92802": {
+          "cash": 44464.0,
+          "margin": -75099.0,
+          "production": 1254.0
+        },
+        "94700": {
+          "cash": 42429.0,
+          "margin": -88927.0,
+          "production": 1479.0
+        }
+      },
+      "mean_game_runtime_seconds": 24.089002372253162,
+      "wall_seconds": 56.2547009740083,
+      "candidate_sha256": "a002a4b2d1f98453105bfeb4bde4c3c3c3d8dc645c5930c28588a3347b35f4ce",
+      "report": "experiments/v72_search/runs/screen_v56_gate200_land8/report.json",
+      "cash_lift_vs_v70_same_seeds": -14947.5,
+      "margin_lift_vs_v70_same_seeds": -1796.5,
+      "production_lift_vs_v70_same_seeds": -27.0
+    }
+  ]
+}

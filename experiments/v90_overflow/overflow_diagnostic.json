@@ -1,0 +1,5516 @@
+[
+ {
+  "game_id": "v50-seed-92802-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v81_expert_switch/runs/screen_92802/replays/v50-seed-92802-ab-repeat-0.json",
+  "seed": 92802,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 88632.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 863.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v81_expert_switch/runs/screen_92802/replays/v50-seed-92802-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    18,
+    19,
+    20,
+    22,
+    24,
+    25,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 65182.0,
+   "lost_by_day_d6_23": {
+    "17": 3,
+    "18": 23,
+    "19": 8,
+    "21": 6,
+    "23": 31
+   },
+   "lost_day_by_product": {
+    "17": {
+     "WHEAT": 3
+    },
+    "18": {
+     "FERTILIZER": 1,
+     "WHEAT": 22
+    },
+    "19": {
+     "WHEAT": 8
+    },
+    "21": {
+     "WHEAT": 6
+    },
+    "23": {
+     "FERTILIZER": 4,
+     "STRAWBERRY": 8,
+     "WHEAT": 15,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 71,
+   "lost_day_value_d6_23": 2818.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v81_expert_switch/runs/screen_92802/replays/v50-seed-92802-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 18,
+    "11": 44,
+    "12": 44,
+    "13": 62,
+    "14": 66,
+    "15": 79,
+    "16": 94,
+    "17": 99,
+    "18": 100,
+    "19": 100,
+    "20": 100,
+    "21": 72,
+    "22": 100,
+    "23": 89,
+    "6": 20,
+    "7": 21,
+    "8": 16,
+    "9": 27
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    21
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-92802-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v81_expert_switch/runs/screen_92802/replays/v50-seed-92802-ba-repeat-0.json",
+  "seed": 92802,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 88632.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 863.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v81_expert_switch/runs/screen_92802/replays/v50-seed-92802-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    18,
+    19,
+    20,
+    22,
+    24,
+    25,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 65182.0,
+   "lost_by_day_d6_23": {
+    "17": 3,
+    "18": 23,
+    "19": 8,
+    "21": 6,
+    "23": 31
+   },
+   "lost_day_by_product": {
+    "17": {
+     "WHEAT": 3
+    },
+    "18": {
+     "FERTILIZER": 1,
+     "WHEAT": 22
+    },
+    "19": {
+     "WHEAT": 8
+    },
+    "21": {
+     "WHEAT": 6
+    },
+    "23": {
+     "FERTILIZER": 4,
+     "STRAWBERRY": 8,
+     "WHEAT": 15,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 71,
+   "lost_day_value_d6_23": 2818.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v81_expert_switch/runs/screen_92802/replays/v50-seed-92802-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 18,
+    "11": 44,
+    "12": 44,
+    "13": 62,
+    "14": 66,
+    "15": 79,
+    "16": 94,
+    "17": 99,
+    "18": 100,
+    "19": 100,
+    "20": 100,
+    "21": 72,
+    "22": 100,
+    "23": 89,
+    "6": 20,
+    "7": 21,
+    "8": 16,
+    "9": 27
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    21
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-93700-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-93700-ab-repeat-0.json",
+  "seed": 93700,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 90041.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 618.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-93700-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 104063.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-93700-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-93700-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-93700-ba-repeat-0.json",
+  "seed": 93700,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 90041.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 618.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-93700-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 104063.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-93700-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-94700-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v61_cashflow/pre_submit_spent94700/replays/v50-seed-94700-ab-repeat-0.json",
+  "seed": 94700,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 145322.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1213.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v61_cashflow/pre_submit_spent94700/replays/v50-seed-94700-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [],
+   "final_cash": 14024.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 46,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v61_cashflow/pre_submit_spent94700/replays/v50-seed-94700-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 7,
+    "11": 11,
+    "12": 39,
+    "13": 46,
+    "14": 24,
+    "15": 6,
+    "16": 9,
+    "17": 7,
+    "18": 13,
+    "19": 8,
+    "20": 14,
+    "21": 13,
+    "22": 14,
+    "23": 13,
+    "6": 3,
+    "7": 5,
+    "8": 8,
+    "9": 11
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-94700-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v61_cashflow/pre_submit_spent94700/replays/v50-seed-94700-ba-repeat-0.json",
+  "seed": 94700,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 145322.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1213.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v61_cashflow/pre_submit_spent94700/replays/v50-seed-94700-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [],
+   "final_cash": 14024.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 46,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v61_cashflow/pre_submit_spent94700/replays/v50-seed-94700-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 7,
+    "11": 11,
+    "12": 39,
+    "13": 46,
+    "14": 24,
+    "15": 6,
+    "16": 9,
+    "17": 7,
+    "18": 13,
+    "19": 8,
+    "20": 14,
+    "21": 13,
+    "22": 14,
+    "23": 13,
+    "6": 3,
+    "7": 5,
+    "8": 8,
+    "9": 11
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95100-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_route_rules/spent95100/replays/v50-seed-95100-ab-repeat-0.json",
+  "seed": 95100,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 172304.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1915.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_route_rules/spent95100/replays/v50-seed-95100-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [],
+   "final_cash": 5217.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 20,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_route_rules/spent95100/replays/v50-seed-95100-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 0,
+    "11": 12,
+    "12": 0,
+    "13": 0,
+    "14": 0,
+    "15": 4,
+    "16": 20,
+    "17": 0,
+    "18": 0,
+    "19": 4,
+    "20": 4,
+    "21": 0,
+    "22": 3,
+    "23": 7,
+    "6": 8,
+    "7": 0,
+    "8": 0,
+    "9": 0
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95100-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_route_rules/spent95100/replays/v50-seed-95100-ba-repeat-0.json",
+  "seed": 95100,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 172304.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1915.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_route_rules/spent95100/replays/v50-seed-95100-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [],
+   "final_cash": 5217.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 20,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_route_rules/spent95100/replays/v50-seed-95100-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 0,
+    "11": 12,
+    "12": 0,
+    "13": 0,
+    "14": 0,
+    "15": 4,
+    "16": 20,
+    "17": 0,
+    "18": 0,
+    "19": 4,
+    "20": 4,
+    "21": 0,
+    "22": 3,
+    "23": 7,
+    "6": 8,
+    "7": 0,
+    "8": 0,
+    "9": 0
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95200-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/strong_economy/append_spent95200/replays/v50-seed-95200-ab-repeat-0.json",
+  "seed": 95200,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 84823.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 742.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/strong_economy/append_spent95200/replays/v50-seed-95200-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 103346.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/strong_economy/append_spent95200/replays/v50-seed-95200-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95200-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/strong_economy/append_spent95200/replays/v50-seed-95200-ba-repeat-0.json",
+  "seed": 95200,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 84823.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 742.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/strong_economy/append_spent95200/replays/v50-seed-95200-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 103346.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v58_validation/strong_economy/append_spent95200/replays/v50-seed-95200-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95300-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-95300-ab-repeat-0.json",
+  "seed": 95300,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 138968.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1179.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-95300-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 114720.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-95300-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95300-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-95300-ba-repeat-0.json",
+  "seed": 95300,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 138968.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1179.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-95300-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 114720.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-95300-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95301-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-95301-ab-repeat-0.json",
+  "seed": 95301,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 134893.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1292.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-95301-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+   ],
+   "final_cash": 75090.0,
+   "lost_by_day_d6_23": {
+    "17": 17,
+    "18": 8,
+    "19": 17,
+    "20": 29,
+    "21": 19,
+    "22": 7,
+    "23": 19
+   },
+   "lost_day_by_product": {
+    "17": {
+     "FERTILIZER": 1,
+     "WHEAT": 16
+    },
+    "18": {
+     "MILK": 5,
+     "WHEAT": 3
+    },
+    "19": {
+     "FERTILIZER": 4,
+     "MILK": 3,
+     "WHEAT": 10
+    },
+    "20": {
+     "FERTILIZER": 4,
+     "MILK": 3,
+     "WHEAT": 22
+    },
+    "21": {
+     "STRAWBERRY": 3,
+     "WHEAT": 14,
+     "WOOL": 2
+    },
+    "22": {
+     "FERTILIZER": 1,
+     "WHEAT": 6
+    },
+    "23": {
+     "FERTILIZER": 3,
+     "WHEAT": 16
+    }
+   },
+   "lost_day_units_d6_23": 116,
+   "lost_day_value_d6_23": 8117.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-95301-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 35,
+    "11": 68,
+    "12": 73,
+    "13": 69,
+    "14": 66,
+    "15": 88,
+    "16": 93,
+    "17": 99,
+    "18": 100,
+    "19": 100,
+    "20": 100,
+    "21": 100,
+    "22": 100,
+    "23": 100,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 25
+   },
+   "shed_mismatch_count": 4,
+   "shed_mismatch_days": [
+    17,
+    18,
+    21,
+    24
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95301-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-95301-ba-repeat-0.json",
+  "seed": 95301,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 104053.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 602.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-95301-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    26
+   ],
+   "final_cash": 122291.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-95301-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 39,
+    "15": 52,
+    "16": 53,
+    "17": 56,
+    "18": 67,
+    "19": 71,
+    "20": 70,
+    "21": 96,
+    "22": 99,
+    "23": 87,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95302-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-95302-ab-repeat-0.json",
+  "seed": 95302,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 133409.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1226.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-95302-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 102842.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-95302-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95302-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-95302-ba-repeat-0.json",
+  "seed": 95302,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 133409.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1226.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-95302-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 102842.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v89_impact_ablation/runs/panel_92802/replays/v50-seed-95302-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95500-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/smoke95500b/replays/v50-seed-95500-ab-repeat-0.json",
+  "seed": 95500,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 107383.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 837.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/smoke95500b/replays/v50-seed-95500-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    25,
+    26,
+    27
+   ],
+   "final_cash": 143035.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/smoke95500b/replays/v50-seed-95500-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 72,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95500-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/smoke95500b/replays/v50-seed-95500-ba-repeat-0.json",
+  "seed": 95500,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 107383.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 837.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/smoke95500b/replays/v50-seed-95500-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    25,
+    26,
+    27
+   ],
+   "final_cash": 143035.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/smoke95500b/replays/v50-seed-95500-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 72,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95501-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95501-ab-repeat-0.json",
+  "seed": 95501,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 65724.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 387.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95501-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 77785.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95501-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95501-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95501-ba-repeat-0.json",
+  "seed": 95501,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 65724.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 387.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95501-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 77785.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95501-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95502-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95502-ab-repeat-0.json",
+  "seed": 95502,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 86275.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 602.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95502-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    25,
+    26,
+    27
+   ],
+   "final_cash": 98218.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95502-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 72,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95502-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95502-ba-repeat-0.json",
+  "seed": 95502,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 86275.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 602.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95502-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    25,
+    26,
+    27
+   ],
+   "final_cash": 98218.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95502-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 72,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95503-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95503-ab-repeat-0.json",
+  "seed": 95503,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 73756.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1000.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95503-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 60396.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95503-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95503-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95503-ba-repeat-0.json",
+  "seed": 95503,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 73756.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1000.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95503-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 60396.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95503-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95504-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95504-ab-repeat-0.json",
+  "seed": 95504,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 59964.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 621.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95504-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 66490.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95504-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95504-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95504-ba-repeat-0.json",
+  "seed": 95504,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 59964.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 621.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95504-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 66490.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95504-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95505-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95505-ab-repeat-0.json",
+  "seed": 95505,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 122141.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 909.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95505-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    25,
+    26,
+    27
+   ],
+   "final_cash": 149559.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95505-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 81,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95505-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95505-ba-repeat-0.json",
+  "seed": 95505,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 122141.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 909.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95505-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    25,
+    26,
+    27
+   ],
+   "final_cash": 149559.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95505-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 81,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95506-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95506-ab-repeat-0.json",
+  "seed": 95506,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 103704.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1125.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95506-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 106907.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95506-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95506-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95506-ba-repeat-0.json",
+  "seed": 95506,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 103704.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1125.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95506-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 106907.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95506-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95507-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95507-ab-repeat-0.json",
+  "seed": 95507,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 101712.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 813.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95507-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    25,
+    26,
+    27
+   ],
+   "final_cash": 120739.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95507-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 72,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95507-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95507-ba-repeat-0.json",
+  "seed": 95507,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 101712.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 813.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95507-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    25,
+    26,
+    27
+   ],
+   "final_cash": 120739.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95507-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 72,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95508-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95508-ab-repeat-0.json",
+  "seed": 95508,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 140373.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1303.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95508-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 107810.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95508-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95508-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95508-ba-repeat-0.json",
+  "seed": 95508,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 141958.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1348.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95508-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    24,
+    25,
+    26
+   ],
+   "final_cash": 107693.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95508-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 38,
+    "11": 57,
+    "12": 53,
+    "13": 32,
+    "14": 40,
+    "15": 49,
+    "16": 55,
+    "17": 57,
+    "18": 69,
+    "19": 74,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 92,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95509-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95509-ab-repeat-0.json",
+  "seed": 95509,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 81764.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 825.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95509-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    26
+   ],
+   "final_cash": 97010.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95509-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 39,
+    "15": 52,
+    "16": 53,
+    "17": 56,
+    "18": 67,
+    "19": 71,
+    "20": 70,
+    "21": 96,
+    "22": 99,
+    "23": 87,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95509-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95509-ba-repeat-0.json",
+  "seed": 95509,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 81752.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 825.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95509-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 97029.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95509-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95510-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95510-ab-repeat-0.json",
+  "seed": 95510,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 68074.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 505.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95510-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 85128.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95510-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95510-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95510-ba-repeat-0.json",
+  "seed": 95510,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 68074.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 505.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95510-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 85128.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95510-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95511-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95511-ab-repeat-0.json",
+  "seed": 95511,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 120561.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 994.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95511-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    25,
+    26,
+    27
+   ],
+   "final_cash": 146975.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95511-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 72,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95511-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95511-ba-repeat-0.json",
+  "seed": 95511,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 119684.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 930.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95511-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    25,
+    26
+   ],
+   "final_cash": 140308.0,
+   "lost_by_day_d6_23": {
+    "21": 3
+   },
+   "lost_day_by_product": {
+    "21": {
+     "WHEAT": 3
+    }
+   },
+   "lost_day_units_d6_23": 3,
+   "lost_day_value_d6_23": 129.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95511-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 38,
+    "11": 57,
+    "12": 51,
+    "13": 30,
+    "14": 40,
+    "15": 48,
+    "16": 53,
+    "17": 57,
+    "18": 75,
+    "19": 73,
+    "20": 72,
+    "21": 99,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    21
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95512-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95512-ab-repeat-0.json",
+  "seed": 95512,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 120152.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1105.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95512-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    25,
+    26,
+    27
+   ],
+   "final_cash": 142237.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95512-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 81,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95512-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95512-ba-repeat-0.json",
+  "seed": 95512,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 121739.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1128.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95512-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    25,
+    26
+   ],
+   "final_cash": 135234.0,
+   "lost_by_day_d6_23": {
+    "21": 3
+   },
+   "lost_day_by_product": {
+    "21": {
+     "WHEAT": 3
+    }
+   },
+   "lost_day_units_d6_23": 3,
+   "lost_day_value_d6_23": 123.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95512-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 38,
+    "11": 57,
+    "12": 51,
+    "13": 30,
+    "14": 40,
+    "15": 48,
+    "16": 53,
+    "17": 57,
+    "18": 75,
+    "19": 76,
+    "20": 72,
+    "21": 99,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    21
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95513-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95513-ab-repeat-0.json",
+  "seed": 95513,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 93228.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1205.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95513-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    26,
+    27
+   ],
+   "final_cash": 93827.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95513-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 72,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95513-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95513-ba-repeat-0.json",
+  "seed": 95513,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 93228.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1205.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95513-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    26,
+    27
+   ],
+   "final_cash": 93827.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95513-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 72,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95514-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95514-ab-repeat-0.json",
+  "seed": 95514,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 94531.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 773.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95514-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    25,
+    26,
+    27
+   ],
+   "final_cash": 113436.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95514-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 72,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95514-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95514-ba-repeat-0.json",
+  "seed": 95514,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 94531.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 773.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95514-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    25,
+    26,
+    27
+   ],
+   "final_cash": 113436.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95514-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 72,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95515-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95515-ab-repeat-0.json",
+  "seed": 95515,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 92812.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1170.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95515-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    26,
+    27
+   ],
+   "final_cash": 76328.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95515-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 72,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95515-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95515-ba-repeat-0.json",
+  "seed": 95515,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 92812.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1170.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95515-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    26,
+    27
+   ],
+   "final_cash": 76328.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95515-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 72,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95516-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95516-ab-repeat-0.json",
+  "seed": 95516,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 110781.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1220.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95516-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 81949.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95516-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95516-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95516-ba-repeat-0.json",
+  "seed": 95516,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 110781.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1220.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95516-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    22,
+    26
+   ],
+   "final_cash": 81949.0,
+   "lost_by_day_d6_23": {},
+   "lost_day_by_product": {},
+   "lost_day_units_d6_23": 0,
+   "lost_day_value_d6_23": 0.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95516-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 68,
+    "19": 72,
+    "20": 71,
+    "21": 97,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  }
+ },
+ {
+  "game_id": "v50-seed-95517-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95517-ab-repeat-0.json",
+  "seed": 95517,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 103047.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1165.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95517-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    26,
+    27
+   ],
+   "final_cash": 104136.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95517-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 72,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95517-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95517-ba-repeat-0.json",
+  "seed": 95517,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 103047.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1165.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95517-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    26,
+    27
+   ],
+   "final_cash": 104136.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95517-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 72,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95518-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95518-ab-repeat-0.json",
+  "seed": 95518,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 134113.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1538.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95518-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    26,
+    27
+   ],
+   "final_cash": 94672.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95518-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 72,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95518-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95518-ba-repeat-0.json",
+  "seed": 95518,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 134113.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 1538.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95518-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    26,
+    27
+   ],
+   "final_cash": 94672.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95518-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 72,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95519-ab-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95519-ab-repeat-0.json",
+  "seed": 95519,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 122417.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 954.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95519-ab-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    25,
+    26,
+    27
+   ],
+   "final_cash": 147511.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95519-ab-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 72,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ },
+ {
+  "game_id": "v50-seed-95519-ba-repeat-0",
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95519-ba-repeat-0.json",
+  "seed": 95519,
+  "v50": {
+   "days_at_capacity": [
+    24,
+    26,
+    27,
+    28
+   ],
+   "final_cash": 122417.0,
+   "lost_by_day_d6_23": {
+    "23": 16
+   },
+   "lost_day_by_product": {
+    "23": {
+     "FERTILIZER": 5,
+     "STRAWBERRY": 3,
+     "WHEAT": 4,
+     "WOOL": 4
+    }
+   },
+   "lost_day_units_d6_23": 16,
+   "lost_day_value_d6_23": 954.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95519-ba-repeat-0.json",
+   "seat": 0,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 10,
+    "11": 36,
+    "12": 34,
+    "13": 52,
+    "14": 50,
+    "15": 57,
+    "16": 76,
+    "17": 68,
+    "18": 72,
+    "19": 83,
+    "20": 92,
+    "21": 64,
+    "22": 95,
+    "23": 67,
+    "6": 18,
+    "7": 10,
+    "8": 11,
+    "9": 24
+   },
+   "shed_mismatch_count": 0,
+   "shed_mismatch_days": []
+  },
+  "v56": {
+   "days_at_capacity": [
+    21,
+    22,
+    25,
+    26,
+    27
+   ],
+   "final_cash": 147511.0,
+   "lost_by_day_d6_23": {
+    "20": 1
+   },
+   "lost_day_by_product": {
+    "20": {
+     "FERTILIZER": 1
+    }
+   },
+   "lost_day_units_d6_23": 1,
+   "lost_day_value_d6_23": 33.0,
+   "lost_drop_units_d6_23": 0,
+   "peak_shed": 100,
+   "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v59_state_teacher/dev95501_95519/replays/v50-seed-95519-ba-repeat-0.json",
+   "seat": 1,
+   "shed_capacity": 100,
+   "shed_level_by_day": {
+    "10": 40,
+    "11": 59,
+    "12": 55,
+    "13": 34,
+    "14": 40,
+    "15": 53,
+    "16": 54,
+    "17": 57,
+    "18": 80,
+    "19": 72,
+    "20": 71,
+    "21": 100,
+    "22": 100,
+    "23": 88,
+    "6": 20,
+    "7": 19,
+    "8": 12,
+    "9": 28
+   },
+   "shed_mismatch_count": 1,
+   "shed_mismatch_days": [
+    20
+   ]
+  }
+ }
+]

@@ -1,0 +1,1169 @@
+[
+ {
+  "accepted_by_day": {
+   "0": {
+    "WHEAT": 449
+   },
+   "1": {
+    "FERTILIZER": 299
+   },
+   "10": {
+    "FERTILIZER": 765,
+    "MELON": 14267,
+    "MILK": 1593,
+    "WHEAT": 230
+   },
+   "11": {
+    "EGG": 202,
+    "FERTILIZER": 1023,
+    "MILK": 620,
+    "WHEAT": 710
+   },
+   "12": {
+    "FERTILIZER": 1078,
+    "MILK": 569,
+    "WHEAT": 696,
+    "WOOL": 1900
+   },
+   "13": {
+    "FERTILIZER": 1091,
+    "MILK": 475,
+    "WHEAT": 152
+   },
+   "14": {
+    "EGG": 705,
+    "FERTILIZER": 811,
+    "MILK": 228,
+    "WHEAT": 39,
+    "WOOL": 2857
+   },
+   "15": {
+    "EGG": 528,
+    "FERTILIZER": 595,
+    "MILK": 1005,
+    "STRAWBERRY": 1516,
+    "WHEAT": 156
+   },
+   "16": {
+    "EGG": 772,
+    "FERTILIZER": 599,
+    "MILK": 104,
+    "STRAWBERRY": 2875,
+    "WHEAT": 238,
+    "WOOL": 1193
+   },
+   "17": {
+    "EGG": 420,
+    "FERTILIZER": 338,
+    "MILK": 45,
+    "STRAWBERRY": 2603,
+    "WHEAT": 280,
+    "WOOL": 480
+   },
+   "18": {
+    "EGG": 588,
+    "FERTILIZER": 633,
+    "MILK": 202,
+    "STRAWBERRY": 2007,
+    "WHEAT": 400,
+    "WOOL": 482
+   },
+   "19": {
+    "EGG": 581,
+    "FERTILIZER": 261,
+    "MILK": 65,
+    "STRAWBERRY": 1215,
+    "WHEAT": 160,
+    "WOOL": 242
+   },
+   "2": {
+    "FERTILIZER": 490,
+    "WHEAT": 60
+   },
+   "20": {
+    "EGG": 492,
+    "FERTILIZER": 179,
+    "MILK": 51,
+    "STRAWBERRY": 266,
+    "WHEAT": 240
+   },
+   "21": {
+    "EGG": 656,
+    "FERTILIZER": 442,
+    "MILK": 67,
+    "STRAWBERRY": 44,
+    "WHEAT": 1044,
+    "WOOL": 976
+   },
+   "22": {
+    "EGG": 574,
+    "FERTILIZER": 550,
+    "MILK": 179,
+    "STRAWBERRY": 41,
+    "WHEAT": 743,
+    "WOOL": 738
+   },
+   "23": {
+    "EGG": 527,
+    "FERTILIZER": 514,
+    "MILK": 71,
+    "STRAWBERRY": 31,
+    "WHEAT": 989
+   },
+   "24": {
+    "EGG": 480,
+    "FERTILIZER": 220,
+    "MILK": 109,
+    "STRAWBERRY": 49,
+    "WHEAT": 813,
+    "WOOL": 1243
+   },
+   "25": {
+    "EGG": 680,
+    "FERTILIZER": 479,
+    "MILK": 123,
+    "STRAWBERRY": 93,
+    "WHEAT": 1279,
+    "WOOL": 498
+   },
+   "26": {
+    "EGG": 320,
+    "FERTILIZER": 408,
+    "MILK": 212,
+    "STRAWBERRY": 56,
+    "TOMATO": 3214,
+    "WHEAT": 1066
+   },
+   "27": {
+    "EGG": 480,
+    "FERTILIZER": 493,
+    "MILK": 352,
+    "STRAWBERRY": 190,
+    "TOMATO": 2728,
+    "WHEAT": 1113,
+    "WOOL": 1004
+   },
+   "28": {
+    "CARROT": 1285,
+    "EGG": 400,
+    "FERTILIZER": 268,
+    "MILK": 313,
+    "STRAWBERRY": 109,
+    "TOMATO": 2364,
+    "WHEAT": 679,
+    "WOOL": 502
+   },
+   "29": {
+    "CARROT": 3872,
+    "EGG": 960,
+    "FERTILIZER": 192,
+    "MILK": 493,
+    "TOMATO": 2008,
+    "WHEAT": 1344,
+    "WOOL": 505
+   },
+   "3": {
+    "FERTILIZER": 385,
+    "WHEAT": 118
+   },
+   "4": {
+    "FERTILIZER": 565,
+    "WHEAT": 58
+   },
+   "5": {
+    "FERTILIZER": 551,
+    "WHEAT": 60
+   },
+   "6": {
+    "FERTILIZER": 716,
+    "WHEAT": 282,
+    "WOOL": 2770
+   },
+   "7": {
+    "FERTILIZER": 780
+   },
+   "8": {
+    "FERTILIZER": 915,
+    "MILK": 1910,
+    "WHEAT": 136
+   },
+   "9": {
+    "FERTILIZER": 948,
+    "WHEAT": 144,
+    "WOOL": 1876
+   }
+  },
+  "accepted_units_by_day": {
+   "0": {
+    "WHEAT": 15
+   },
+   "1": {
+    "FERTILIZER": 3
+   },
+   "10": {
+    "FERTILIZER": 10,
+    "MELON": 72,
+    "MILK": 12,
+    "WHEAT": 6
+   },
+   "11": {
+    "EGG": 4,
+    "FERTILIZER": 14,
+    "MILK": 6,
+    "WHEAT": 18
+   },
+   "12": {
+    "FERTILIZER": 16,
+    "MILK": 6,
+    "WHEAT": 18,
+    "WOOL": 8
+   },
+   "13": {
+    "FERTILIZER": 18,
+    "MILK": 6,
+    "WHEAT": 4
+   },
+   "14": {
+    "EGG": 15,
+    "FERTILIZER": 15,
+    "MILK": 3,
+    "WHEAT": 1,
+    "WOOL": 12
+   },
+   "15": {
+    "EGG": 12,
+    "FERTILIZER": 12,
+    "MILK": 21,
+    "STRAWBERRY": 8,
+    "WHEAT": 4
+   },
+   "16": {
+    "EGG": 18,
+    "FERTILIZER": 13,
+    "MILK": 6,
+    "STRAWBERRY": 16,
+    "WHEAT": 6,
+    "WOOL": 5
+   },
+   "17": {
+    "EGG": 10,
+    "FERTILIZER": 8,
+    "MILK": 3,
+    "STRAWBERRY": 16,
+    "WHEAT": 7,
+    "WOOL": 2
+   },
+   "18": {
+    "EGG": 14,
+    "FERTILIZER": 17,
+    "MILK": 12,
+    "STRAWBERRY": 16,
+    "WHEAT": 10,
+    "WOOL": 2
+   },
+   "19": {
+    "EGG": 14,
+    "FERTILIZER": 8,
+    "MILK": 9,
+    "STRAWBERRY": 18,
+    "WHEAT": 4,
+    "WOOL": 1
+   },
+   "2": {
+    "FERTILIZER": 5,
+    "WHEAT": 2
+   },
+   "20": {
+    "EGG": 12,
+    "FERTILIZER": 5,
+    "MILK": 9,
+    "STRAWBERRY": 24,
+    "WHEAT": 6
+   },
+   "21": {
+    "EGG": 16,
+    "FERTILIZER": 13,
+    "MILK": 6,
+    "STRAWBERRY": 30,
+    "WHEAT": 26,
+    "WOOL": 4
+   },
+   "22": {
+    "EGG": 14,
+    "FERTILIZER": 18,
+    "MILK": 11,
+    "STRAWBERRY": 23,
+    "WHEAT": 19,
+    "WOOL": 3
+   },
+   "23": {
+    "EGG": 13,
+    "FERTILIZER": 20,
+    "MILK": 3,
+    "STRAWBERRY": 21,
+    "WHEAT": 26
+   },
+   "24": {
+    "EGG": 12,
+    "FERTILIZER": 9,
+    "MILK": 7,
+    "STRAWBERRY": 24,
+    "WHEAT": 22,
+    "WOOL": 5
+   },
+   "25": {
+    "EGG": 17,
+    "FERTILIZER": 16,
+    "MILK": 8,
+    "STRAWBERRY": 12,
+    "WHEAT": 36,
+    "WOOL": 2
+   },
+   "26": {
+    "EGG": 8,
+    "FERTILIZER": 14,
+    "MILK": 9,
+    "STRAWBERRY": 21,
+    "TOMATO": 20,
+    "WHEAT": 33
+   },
+   "27": {
+    "EGG": 12,
+    "FERTILIZER": 19,
+    "MILK": 12,
+    "STRAWBERRY": 6,
+    "TOMATO": 20,
+    "WHEAT": 43,
+    "WOOL": 4
+   },
+   "28": {
+    "CARROT": 21,
+    "EGG": 10,
+    "FERTILIZER": 11,
+    "MILK": 11,
+    "STRAWBERRY": 20,
+    "TOMATO": 20,
+    "WHEAT": 31,
+    "WOOL": 2
+   },
+   "29": {
+    "CARROT": 69,
+    "EGG": 24,
+    "FERTILIZER": 9,
+    "MILK": 13,
+    "TOMATO": 20,
+    "WHEAT": 64,
+    "WOOL": 2
+   },
+   "3": {
+    "FERTILIZER": 4,
+    "WHEAT": 4
+   },
+   "4": {
+    "FERTILIZER": 6,
+    "WHEAT": 2
+   },
+   "5": {
+    "FERTILIZER": 6,
+    "WHEAT": 2
+   },
+   "6": {
+    "FERTILIZER": 8,
+    "WHEAT": 9,
+    "WOOL": 12
+   },
+   "7": {
+    "FERTILIZER": 9
+   },
+   "8": {
+    "FERTILIZER": 11,
+    "MILK": 12,
+    "WHEAT": 4
+   },
+   "9": {
+    "FERTILIZER": 12,
+    "WHEAT": 4,
+    "WOOL": 8
+   }
+  },
+  "early_0_5_accepted_units": 49,
+  "early_0_5_ordered_units": 49,
+  "early_0_5_proceeds": 3035,
+  "early_0_5_rejected_units": 0,
+  "early_0_5_rejection_rate": 0.0,
+  "final_cash": 71344.0,
+  "ordered_by_day": {
+   "0": {
+    "WHEAT": 15
+   },
+   "1": {
+    "FERTILIZER": 3
+   },
+   "10": {
+    "FERTILIZER": 10,
+    "MELON": 72,
+    "MILK": 12,
+    "WHEAT": 6
+   },
+   "11": {
+    "EGG": 4,
+    "FERTILIZER": 14,
+    "MILK": 6,
+    "WHEAT": 18
+   },
+   "12": {
+    "FERTILIZER": 16,
+    "MILK": 6,
+    "WHEAT": 18,
+    "WOOL": 8
+   },
+   "13": {
+    "FERTILIZER": 18,
+    "MILK": 6,
+    "WHEAT": 4
+   },
+   "14": {
+    "EGG": 15,
+    "FERTILIZER": 15,
+    "MILK": 3,
+    "WHEAT": 1,
+    "WOOL": 12
+   },
+   "15": {
+    "EGG": 12,
+    "FERTILIZER": 12,
+    "MILK": 21,
+    "STRAWBERRY": 8,
+    "WHEAT": 4
+   },
+   "16": {
+    "EGG": 18,
+    "FERTILIZER": 13,
+    "MILK": 6,
+    "STRAWBERRY": 16,
+    "WHEAT": 6,
+    "WOOL": 5
+   },
+   "17": {
+    "EGG": 10,
+    "FERTILIZER": 8,
+    "MILK": 3,
+    "STRAWBERRY": 16,
+    "WHEAT": 7,
+    "WOOL": 2
+   },
+   "18": {
+    "EGG": 14,
+    "FERTILIZER": 17,
+    "MILK": 12,
+    "STRAWBERRY": 16,
+    "WHEAT": 10,
+    "WOOL": 2
+   },
+   "19": {
+    "EGG": 14,
+    "FERTILIZER": 8,
+    "MILK": 9,
+    "STRAWBERRY": 18,
+    "WHEAT": 4,
+    "WOOL": 1
+   },
+   "2": {
+    "FERTILIZER": 5,
+    "WHEAT": 2
+   },
+   "20": {
+    "EGG": 12,
+    "FERTILIZER": 5,
+    "MILK": 9,
+    "STRAWBERRY": 24,
+    "WHEAT": 6
+   },
+   "21": {
+    "EGG": 16,
+    "FERTILIZER": 13,
+    "MILK": 6,
+    "STRAWBERRY": 30,
+    "WHEAT": 26,
+    "WOOL": 4
+   },
+   "22": {
+    "EGG": 14,
+    "FERTILIZER": 18,
+    "MILK": 11,
+    "STRAWBERRY": 23,
+    "WHEAT": 19,
+    "WOOL": 3
+   },
+   "23": {
+    "EGG": 13,
+    "FERTILIZER": 20,
+    "MILK": 3,
+    "STRAWBERRY": 21,
+    "WHEAT": 26
+   },
+   "24": {
+    "EGG": 12,
+    "FERTILIZER": 9,
+    "MILK": 7,
+    "STRAWBERRY": 24,
+    "WHEAT": 22,
+    "WOOL": 5
+   },
+   "25": {
+    "EGG": 17,
+    "FERTILIZER": 16,
+    "MILK": 8,
+    "STRAWBERRY": 12,
+    "WHEAT": 36,
+    "WOOL": 2
+   },
+   "26": {
+    "EGG": 8,
+    "FERTILIZER": 14,
+    "MILK": 9,
+    "STRAWBERRY": 21,
+    "TOMATO": 20,
+    "WHEAT": 33
+   },
+   "27": {
+    "EGG": 12,
+    "FERTILIZER": 29,
+    "MILK": 12,
+    "STRAWBERRY": 6,
+    "TOMATO": 20,
+    "WHEAT": 52,
+    "WOOL": 4
+   },
+   "28": {
+    "CARROT": 21,
+    "EGG": 10,
+    "FERTILIZER": 11,
+    "MILK": 11,
+    "STRAWBERRY": 20,
+    "TOMATO": 20,
+    "WHEAT": 37,
+    "WOOL": 2
+   },
+   "29": {
+    "CARROT": 69,
+    "EGG": 24,
+    "FERTILIZER": 9,
+    "MILK": 13,
+    "TOMATO": 20,
+    "WHEAT": 64,
+    "WOOL": 2
+   },
+   "3": {
+    "FERTILIZER": 4,
+    "WHEAT": 4
+   },
+   "4": {
+    "FERTILIZER": 6,
+    "WHEAT": 2
+   },
+   "5": {
+    "FERTILIZER": 6,
+    "WHEAT": 2
+   },
+   "6": {
+    "FERTILIZER": 8,
+    "WHEAT": 9,
+    "WOOL": 12
+   },
+   "7": {
+    "FERTILIZER": 9
+   },
+   "8": {
+    "FERTILIZER": 11,
+    "MILK": 12,
+    "WHEAT": 4
+   },
+   "9": {
+    "FERTILIZER": 12,
+    "WHEAT": 4,
+    "WOOL": 8
+   }
+  },
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/runs/v58_validation_original_route/baseline/replays/v56-seed-94400-ab-repeat-0.json",
+  "seat": 0,
+  "seed": "94400",
+  "total_proceeds": 106516
+ },
+ {
+  "accepted_by_day": {
+   "0": {
+    "WHEAT": 449
+   },
+   "1": {
+    "FERTILIZER": 299
+   },
+   "10": {
+    "FERTILIZER": 778,
+    "MELON": 17237,
+    "MILK": 2374,
+    "WHEAT": 216
+   },
+   "11": {
+    "EGG": 204,
+    "FERTILIZER": 1052,
+    "MILK": 1081,
+    "WHEAT": 668
+   },
+   "12": {
+    "FERTILIZER": 1135,
+    "MILK": 1018,
+    "WHEAT": 646,
+    "WOOL": 1150
+   },
+   "13": {
+    "FERTILIZER": 1190,
+    "MILK": 891,
+    "WHEAT": 140
+   },
+   "14": {
+    "EGG": 794,
+    "FERTILIZER": 926,
+    "MILK": 436,
+    "WHEAT": 36
+   },
+   "15": {
+    "EGG": 636,
+    "FERTILIZER": 703,
+    "MILK": 2364,
+    "STRAWBERRY": 1670,
+    "WHEAT": 148
+   },
+   "16": {
+    "EGG": 954,
+    "FERTILIZER": 734,
+    "MILK": 469,
+    "STRAWBERRY": 3297,
+    "WHEAT": 222,
+    "WOOL": 786
+   },
+   "17": {
+    "EGG": 528,
+    "FERTILIZER": 435,
+    "MILK": 203,
+    "STRAWBERRY": 3211,
+    "WHEAT": 259
+   },
+   "18": {
+    "EGG": 742,
+    "FERTILIZER": 867,
+    "MILK": 1133,
+    "STRAWBERRY": 3118,
+    "WHEAT": 370,
+    "WOOL": 409
+   },
+   "19": {
+    "EGG": 738,
+    "FERTILIZER": 381,
+    "MILK": 181,
+    "STRAWBERRY": 3389,
+    "WHEAT": 148,
+    "WOOL": 215
+   },
+   "2": {
+    "FERTILIZER": 490,
+    "WHEAT": 60
+   },
+   "20": {
+    "EGG": 633,
+    "FERTILIZER": 260,
+    "MILK": 130,
+    "STRAWBERRY": 4264,
+    "WHEAT": 222
+   },
+   "21": {
+    "EGG": 790,
+    "FERTILIZER": 666,
+    "MILK": 56,
+    "STRAWBERRY": 4810,
+    "WHEAT": 944
+   },
+   "22": {
+    "EGG": 736,
+    "FERTILIZER": 904,
+    "MILK": 179,
+    "STRAWBERRY": 2531,
+    "WHEAT": 660,
+    "WOOL": 696
+   },
+   "23": {
+    "EGG": 680,
+    "FERTILIZER": 951,
+    "MILK": 108,
+    "STRAWBERRY": 1834,
+    "WHEAT": 867
+   },
+   "24": {
+    "EGG": 632,
+    "FERTILIZER": 432,
+    "MILK": 249,
+    "STRAWBERRY": 1018,
+    "WHEAT": 697,
+    "WOOL": 709
+   },
+   "25": {
+    "EGG": 899,
+    "FERTILIZER": 885,
+    "MILK": 129,
+    "STRAWBERRY": 389,
+    "WHEAT": 1052,
+    "WOOL": 472
+   },
+   "26": {
+    "EGG": 424,
+    "FERTILIZER": 787,
+    "MILK": 150,
+    "STRAWBERRY": 303,
+    "TOMATO": 1188,
+    "WHEAT": 743
+   },
+   "27": {
+    "EGG": 648,
+    "FERTILIZER": 935,
+    "MILK": 375,
+    "STRAWBERRY": 328,
+    "TOMATO": 923,
+    "WHEAT": 919
+   },
+   "28": {
+    "CARROT": 1445,
+    "EGG": 546,
+    "FERTILIZER": 606,
+    "MILK": 116,
+    "STRAWBERRY": 399,
+    "TOMATO": 804,
+    "WHEAT": 651,
+    "WOOL": 480
+   },
+   "29": {
+    "CARROT": 4438,
+    "EGG": 1319,
+    "FERTILIZER": 474,
+    "MILK": 226,
+    "TOMATO": 670,
+    "WHEAT": 1314
+   },
+   "3": {
+    "FERTILIZER": 385,
+    "WHEAT": 118
+   },
+   "4": {
+    "FERTILIZER": 565,
+    "WHEAT": 58
+   },
+   "5": {
+    "FERTILIZER": 551,
+    "WHEAT": 60
+   },
+   "6": {
+    "FERTILIZER": 716,
+    "WHEAT": 278,
+    "WOOL": 2413
+   },
+   "7": {
+    "FERTILIZER": 780
+   },
+   "8": {
+    "FERTILIZER": 920,
+    "MILK": 2343,
+    "WHEAT": 130
+   },
+   "9": {
+    "FERTILIZER": 962,
+    "WHEAT": 137,
+    "WOOL": 1396
+   }
+  },
+  "accepted_units_by_day": {
+   "0": {
+    "WHEAT": 15
+   },
+   "1": {
+    "FERTILIZER": 3
+   },
+   "10": {
+    "FERTILIZER": 10,
+    "MELON": 72,
+    "MILK": 12,
+    "WHEAT": 6
+   },
+   "11": {
+    "EGG": 4,
+    "FERTILIZER": 14,
+    "MILK": 6,
+    "WHEAT": 18
+   },
+   "12": {
+    "FERTILIZER": 16,
+    "MILK": 6,
+    "WHEAT": 18,
+    "WOOL": 8
+   },
+   "13": {
+    "FERTILIZER": 18,
+    "MILK": 6,
+    "WHEAT": 4
+   },
+   "14": {
+    "EGG": 15,
+    "FERTILIZER": 15,
+    "MILK": 3,
+    "WHEAT": 1
+   },
+   "15": {
+    "EGG": 12,
+    "FERTILIZER": 12,
+    "MILK": 21,
+    "STRAWBERRY": 8,
+    "WHEAT": 4
+   },
+   "16": {
+    "EGG": 18,
+    "FERTILIZER": 13,
+    "MILK": 6,
+    "STRAWBERRY": 16,
+    "WHEAT": 6,
+    "WOOL": 5
+   },
+   "17": {
+    "EGG": 10,
+    "FERTILIZER": 8,
+    "MILK": 3,
+    "STRAWBERRY": 16,
+    "WHEAT": 7
+   },
+   "18": {
+    "EGG": 14,
+    "FERTILIZER": 17,
+    "MILK": 24,
+    "STRAWBERRY": 16,
+    "WHEAT": 10,
+    "WOOL": 2
+   },
+   "19": {
+    "EGG": 14,
+    "FERTILIZER": 8,
+    "MILK": 9,
+    "STRAWBERRY": 18,
+    "WHEAT": 4,
+    "WOOL": 1
+   },
+   "2": {
+    "FERTILIZER": 5,
+    "WHEAT": 2
+   },
+   "20": {
+    "EGG": 12,
+    "FERTILIZER": 5,
+    "MILK": 9,
+    "STRAWBERRY": 24,
+    "WHEAT": 6
+   },
+   "21": {
+    "EGG": 15,
+    "FERTILIZER": 13,
+    "MILK": 14,
+    "STRAWBERRY": 30,
+    "WHEAT": 26
+   },
+   "22": {
+    "EGG": 14,
+    "FERTILIZER": 18,
+    "MILK": 11,
+    "STRAWBERRY": 23,
+    "WHEAT": 19,
+    "WOOL": 3
+   },
+   "23": {
+    "EGG": 13,
+    "FERTILIZER": 20,
+    "MILK": 3,
+    "STRAWBERRY": 21,
+    "WHEAT": 26
+   },
+   "24": {
+    "EGG": 12,
+    "FERTILIZER": 9,
+    "MILK": 11,
+    "STRAWBERRY": 24,
+    "WHEAT": 22,
+    "WOOL": 3
+   },
+   "25": {
+    "EGG": 17,
+    "FERTILIZER": 16,
+    "MILK": 8,
+    "STRAWBERRY": 12,
+    "WHEAT": 36,
+    "WOOL": 2
+   },
+   "26": {
+    "EGG": 8,
+    "FERTILIZER": 14,
+    "MILK": 9,
+    "STRAWBERRY": 21,
+    "TOMATO": 20,
+    "WHEAT": 33
+   },
+   "27": {
+    "EGG": 12,
+    "FERTILIZER": 17,
+    "MILK": 20,
+    "STRAWBERRY": 6,
+    "TOMATO": 20,
+    "WHEAT": 43
+   },
+   "28": {
+    "CARROT": 21,
+    "EGG": 10,
+    "FERTILIZER": 11,
+    "MILK": 11,
+    "STRAWBERRY": 20,
+    "TOMATO": 20,
+    "WHEAT": 31,
+    "WOOL": 2
+   },
+   "29": {
+    "CARROT": 69,
+    "EGG": 24,
+    "FERTILIZER": 9,
+    "MILK": 17,
+    "TOMATO": 20,
+    "WHEAT": 64
+   },
+   "3": {
+    "FERTILIZER": 4,
+    "WHEAT": 4
+   },
+   "4": {
+    "FERTILIZER": 6,
+    "WHEAT": 2
+   },
+   "5": {
+    "FERTILIZER": 6,
+    "WHEAT": 2
+   },
+   "6": {
+    "FERTILIZER": 8,
+    "WHEAT": 9,
+    "WOOL": 12
+   },
+   "7": {
+    "FERTILIZER": 9
+   },
+   "8": {
+    "FERTILIZER": 11,
+    "MILK": 12,
+    "WHEAT": 4
+   },
+   "9": {
+    "FERTILIZER": 12,
+    "WHEAT": 4,
+    "WOOL": 8
+   }
+  },
+  "early_0_5_accepted_units": 49,
+  "early_0_5_ordered_units": 49,
+  "early_0_5_proceeds": 3035,
+  "early_0_5_rejected_units": 0,
+  "early_0_5_rejection_rate": 0.0,
+  "final_cash": 87735.0,
+  "ordered_by_day": {
+   "0": {
+    "WHEAT": 15
+   },
+   "1": {
+    "FERTILIZER": 3
+   },
+   "10": {
+    "FERTILIZER": 10,
+    "MELON": 72,
+    "MILK": 12,
+    "WHEAT": 6
+   },
+   "11": {
+    "EGG": 4,
+    "FERTILIZER": 14,
+    "MILK": 6,
+    "WHEAT": 18
+   },
+   "12": {
+    "FERTILIZER": 16,
+    "MILK": 6,
+    "WHEAT": 18,
+    "WOOL": 8
+   },
+   "13": {
+    "FERTILIZER": 18,
+    "MILK": 6,
+    "WHEAT": 4
+   },
+   "14": {
+    "EGG": 15,
+    "FERTILIZER": 15,
+    "MILK": 3,
+    "WHEAT": 1
+   },
+   "15": {
+    "EGG": 12,
+    "FERTILIZER": 12,
+    "MILK": 21,
+    "STRAWBERRY": 8,
+    "WHEAT": 4
+   },
+   "16": {
+    "EGG": 18,
+    "FERTILIZER": 13,
+    "MILK": 6,
+    "STRAWBERRY": 16,
+    "WHEAT": 6,
+    "WOOL": 5
+   },
+   "17": {
+    "EGG": 10,
+    "FERTILIZER": 8,
+    "MILK": 3,
+    "STRAWBERRY": 16,
+    "WHEAT": 7
+   },
+   "18": {
+    "EGG": 14,
+    "FERTILIZER": 17,
+    "MILK": 24,
+    "STRAWBERRY": 16,
+    "WHEAT": 10,
+    "WOOL": 2
+   },
+   "19": {
+    "EGG": 14,
+    "FERTILIZER": 8,
+    "MILK": 9,
+    "STRAWBERRY": 18,
+    "WHEAT": 4,
+    "WOOL": 1
+   },
+   "2": {
+    "FERTILIZER": 5,
+    "WHEAT": 2
+   },
+   "20": {
+    "EGG": 12,
+    "FERTILIZER": 5,
+    "MILK": 9,
+    "STRAWBERRY": 24,
+    "WHEAT": 6
+   },
+   "21": {
+    "EGG": 15,
+    "FERTILIZER": 13,
+    "MILK": 14,
+    "STRAWBERRY": 30,
+    "WHEAT": 26
+   },
+   "22": {
+    "EGG": 14,
+    "FERTILIZER": 18,
+    "MILK": 11,
+    "STRAWBERRY": 23,
+    "WHEAT": 19,
+    "WOOL": 3
+   },
+   "23": {
+    "EGG": 13,
+    "FERTILIZER": 20,
+    "MILK": 3,
+    "STRAWBERRY": 21,
+    "WHEAT": 26
+   },
+   "24": {
+    "EGG": 12,
+    "FERTILIZER": 9,
+    "MILK": 11,
+    "STRAWBERRY": 24,
+    "WHEAT": 22,
+    "WOOL": 3
+   },
+   "25": {
+    "EGG": 17,
+    "FERTILIZER": 16,
+    "MILK": 8,
+    "STRAWBERRY": 12,
+    "WHEAT": 36,
+    "WOOL": 2
+   },
+   "26": {
+    "EGG": 8,
+    "FERTILIZER": 14,
+    "MILK": 9,
+    "STRAWBERRY": 21,
+    "TOMATO": 20,
+    "WHEAT": 33
+   },
+   "27": {
+    "EGG": 12,
+    "FERTILIZER": 27,
+    "MILK": 20,
+    "STRAWBERRY": 6,
+    "TOMATO": 20,
+    "WHEAT": 52
+   },
+   "28": {
+    "CARROT": 21,
+    "EGG": 10,
+    "FERTILIZER": 11,
+    "MILK": 11,
+    "STRAWBERRY": 20,
+    "TOMATO": 20,
+    "WHEAT": 37,
+    "WOOL": 2
+   },
+   "29": {
+    "CARROT": 69,
+    "EGG": 24,
+    "FERTILIZER": 9,
+    "MILK": 17,
+    "TOMATO": 20,
+    "WHEAT": 64
+   },
+   "3": {
+    "FERTILIZER": 4,
+    "WHEAT": 4
+   },
+   "4": {
+    "FERTILIZER": 6,
+    "WHEAT": 2
+   },
+   "5": {
+    "FERTILIZER": 6,
+    "WHEAT": 2
+   },
+   "6": {
+    "FERTILIZER": 8,
+    "WHEAT": 9,
+    "WOOL": 12
+   },
+   "7": {
+    "FERTILIZER": 9
+   },
+   "8": {
+    "FERTILIZER": 11,
+    "MILK": 12,
+    "WHEAT": 4
+   },
+   "9": {
+    "FERTILIZER": 12,
+    "WHEAT": 4,
+    "WOOL": 8
+   }
+  },
+  "replay": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/runs/v58_validation_original_route/baseline/replays/v56-seed-94401-ab-repeat-0.json",
+  "seat": 0,
+  "seed": "94401",
+  "total_proceeds": 125087
+ }
+]

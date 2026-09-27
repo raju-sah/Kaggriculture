@@ -1,0 +1,8955 @@
+[
+  {
+    "file": "episode-114158802-replay.json",
+    "episode_id": 114158802,
+    "cohort": "original_10",
+    "seed": 1998328556,
+    "rajusah_seat": 0,
+    "opponent": "tmgf",
+    "rajusah_score": 108954.0,
+    "opponent_score": 74637.0,
+    "margin": 34317,
+    "outcome": "W",
+    "phase_cash_raj_opponent": {
+      "5": [
+        910,
+        109
+      ],
+      "10": [
+        17694,
+        2452
+      ],
+      "15": [
+        25305,
+        10788
+      ],
+      "20": [
+        55764,
+        35665
+      ],
+      "23": [
+        71132,
+        51067
+      ],
+      "25": [
+        79875,
+        52267
+      ],
+      "27": [
+        90893,
+        65055
+      ],
+      "29": [
+        108954,
+        74637
+      ]
+    },
+    "snapshots": {
+      "10": [
+        {
+          "cash": 17694,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 12
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 10
+          },
+          "shops": [
+            "PET_CAFE",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 110,
+            "WOOL": 154,
+            "EGG": 52,
+            "STRAWBERRY": 181,
+            "WHEAT": 36,
+            "FERTILIZER": 85
+          }
+        },
+        {
+          "cash": 2452,
+          "hands": 10,
+          "crops": {
+            "MELON": 4,
+            "STRAWBERRY": 37
+          },
+          "animals": {
+            "COW": 3,
+            "SHEEP": 2
+          },
+          "shops": [
+            "PET_CAFE",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 110,
+            "WOOL": 154,
+            "EGG": 52,
+            "STRAWBERRY": 181,
+            "WHEAT": 36,
+            "FERTILIZER": 85
+          }
+        }
+      ],
+      "15": [
+        {
+          "cash": 25305,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PET_CAFE",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 120,
+            "WOOL": 1,
+            "EGG": 55,
+            "STRAWBERRY": 221,
+            "WHEAT": 41,
+            "FERTILIZER": 71
+          }
+        },
+        {
+          "cash": 10788,
+          "hands": 10,
+          "crops": {
+            "MELON": 5,
+            "STRAWBERRY": 38
+          },
+          "animals": {
+            "COW": 3,
+            "SHEEP": 2
+          },
+          "shops": [
+            "PET_CAFE",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 120,
+            "WOOL": 1,
+            "EGG": 55,
+            "STRAWBERRY": 221,
+            "WHEAT": 41,
+            "FERTILIZER": 71
+          }
+        }
+      ],
+      "20": [
+        {
+          "cash": 55764,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PET_CAFE",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "PET_CAFE"
+          ],
+          "quotes": {
+            "MILK": 105,
+            "WOOL": 5,
+            "EGG": 57,
+            "STRAWBERRY": 183,
+            "WHEAT": 43,
+            "FERTILIZER": 61
+          }
+        },
+        {
+          "cash": 35665,
+          "hands": 10,
+          "crops": {
+            "CARROT": 2,
+            "MELON": 3,
+            "STRAWBERRY": 37
+          },
+          "animals": {
+            "COW": 3,
+            "SHEEP": 2
+          },
+          "shops": [
+            "PET_CAFE",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "PET_CAFE"
+          ],
+          "quotes": {
+            "MILK": 105,
+            "WOOL": 5,
+            "EGG": 57,
+            "STRAWBERRY": 183,
+            "WHEAT": 43,
+            "FERTILIZER": 61
+          }
+        }
+      ],
+      "23": [
+        {
+          "cash": 71132,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 38
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PET_CAFE",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 169,
+            "WOOL": 5,
+            "EGG": 58,
+            "STRAWBERRY": 145,
+            "WHEAT": 44,
+            "FERTILIZER": 54
+          }
+        },
+        {
+          "cash": 51067,
+          "hands": 10,
+          "crops": {
+            "CARROT": 12,
+            "STRAWBERRY": 28
+          },
+          "animals": {
+            "COW": 3,
+            "SHEEP": 2
+          },
+          "shops": [
+            "PET_CAFE",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 169,
+            "WOOL": 5,
+            "EGG": 58,
+            "STRAWBERRY": 145,
+            "WHEAT": 44,
+            "FERTILIZER": 54
+          }
+        }
+      ],
+      "27": [
+        {
+          "cash": 90893,
+          "hands": 11,
+          "crops": {
+            "CARROT": 27,
+            "STRAWBERRY": 4,
+            "WHEAT": 17
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PET_CAFE",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 210,
+            "WOOL": 1,
+            "EGG": 61,
+            "STRAWBERRY": 175,
+            "WHEAT": 44,
+            "FERTILIZER": 47
+          }
+        },
+        {
+          "cash": 65055,
+          "hands": 10,
+          "crops": {
+            "CARROT": 30,
+            "STRAWBERRY": 1
+          },
+          "animals": {
+            "COW": 3,
+            "SHEEP": 2
+          },
+          "shops": [
+            "PET_CAFE",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 210,
+            "WOOL": 1,
+            "EGG": 61,
+            "STRAWBERRY": 175,
+            "WHEAT": 44,
+            "FERTILIZER": 47
+          }
+        }
+      ],
+      "29": [
+        {
+          "cash": 108954,
+          "hands": 11,
+          "crops": {},
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PET_CAFE",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 220,
+            "WOOL": 1,
+            "EGG": 63,
+            "STRAWBERRY": 202,
+            "WHEAT": 42,
+            "FERTILIZER": 41
+          }
+        },
+        {
+          "cash": 74637,
+          "hands": 6,
+          "crops": {
+            "CARROT": 2
+          },
+          "animals": {
+            "COW": 3,
+            "SHEEP": 2
+          },
+          "shops": [
+            "PET_CAFE",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 220,
+            "WOOL": 1,
+            "EGG": 63,
+            "STRAWBERRY": 202,
+            "WHEAT": 42,
+            "FERTILIZER": 41
+          }
+        }
+      ]
+    },
+    "guard": {
+      "base_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          16
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          11
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "wrapped_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "logged_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "shed_units": 4,
+      "carried_units": 91,
+      "base_wheat_fertilizer_buys": 27,
+      "projection_with_harvest_allowance": 128,
+      "fired": true,
+      "logged_action_matches_recomputed_v92": true,
+      "base_call_matches_logged_next_frame": false
+    },
+    "loader_reproduction": {
+      "matched_actions": 719,
+      "checked_actions": 719,
+      "mismatch_steps": [],
+      "missing_step_observations_reconstructed": 0,
+      "step_reconstruction": "step = day * turnsPerDay + hour"
+    },
+    "animal_purchases_rajusah": [
+      {
+        "step": 1,
+        "day": 0,
+        "hour": 1,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 65,
+        "day": 2,
+        "hour": 17,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 88,
+        "day": 3,
+        "hour": 16,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 150,
+        "day": 6,
+        "hour": 6,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 173,
+        "day": 7,
+        "hour": 5,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 178,
+        "day": 7,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 196,
+        "day": 8,
+        "hour": 4,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 216,
+        "day": 9,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 250,
+        "day": 10,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 251,
+        "day": 10,
+        "hour": 11,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 264,
+        "day": 11,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    ],
+    "settlement": {
+      "accepted_sales_cash_raj_opponent": [
+        136926.0,
+        89798.0
+      ],
+      "accepted_sales_by_item_raj": {
+        "CARROT": 5442.0,
+        "FERTILIZER": 21477.0,
+        "MELON": 17270.0,
+        "MILK": 23464.0,
+        "STRAWBERRY": 45654.0,
+        "WHEAT": 16819.0,
+        "WOOL": 6800.0
+      },
+      "accepted_sales_by_item_opponent": {
+        "CARROT": 10987.0,
+        "FERTILIZER": 1847.0,
+        "MELON": 12341.0,
+        "MILK": 15225.0,
+        "STRAWBERRY": 45051.0,
+        "WHEAT": 252.0,
+        "WOOL": 4095.0
+      },
+      "product_buys_raj": {
+        "FERTILIZER": 2578.0,
+        "WHEAT": 5499.0
+      },
+      "animal_buys_raj": {
+        "COW": 2400.0,
+        "SHEEP": 5500.0
+      },
+      "cash_mismatches_by_seat": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "file": "episode-114160308-replay.json",
+    "episode_id": 114160308,
+    "cohort": "original_10",
+    "seed": 419105615,
+    "rajusah_seat": 1,
+    "opponent": "Aussie lover",
+    "rajusah_score": 118573.0,
+    "opponent_score": 100177.0,
+    "margin": 18396,
+    "outcome": "W",
+    "phase_cash_raj_opponent": {
+      "5": [
+        900,
+        40
+      ],
+      "10": [
+        17891,
+        4670
+      ],
+      "15": [
+        25093,
+        5372
+      ],
+      "20": [
+        59723,
+        16183
+      ],
+      "23": [
+        79549,
+        40568
+      ],
+      "25": [
+        89987,
+        60919
+      ],
+      "27": [
+        101272,
+        77763
+      ],
+      "29": [
+        118573,
+        100177
+      ]
+    },
+    "snapshots": {
+      "10": [
+        {
+          "cash": 17891,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 12
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 10
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 135,
+            "WOOL": 167,
+            "EGG": 51,
+            "STRAWBERRY": 204,
+            "WHEAT": 38,
+            "FERTILIZER": 80
+          }
+        },
+        {
+          "cash": 4670,
+          "hands": 7,
+          "crops": {
+            "CARROT": 1,
+            "MELON": 1,
+            "STRAWBERRY": 8
+          },
+          "animals": {
+            "COW": 7,
+            "SHEEP": 6
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 135,
+            "WOOL": 167,
+            "EGG": 51,
+            "STRAWBERRY": 204,
+            "WHEAT": 38,
+            "FERTILIZER": 80
+          }
+        }
+      ],
+      "15": [
+        {
+          "cash": 25093,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 139,
+            "WOOL": 1,
+            "EGG": 51,
+            "STRAWBERRY": 246,
+            "WHEAT": 44,
+            "FERTILIZER": 61
+          }
+        },
+        {
+          "cash": 5372,
+          "hands": 10,
+          "crops": {
+            "MELON": 1,
+            "STRAWBERRY": 52,
+            "WHEAT": 4
+          },
+          "animals": {
+            "COW": 12,
+            "SHEEP": 3
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 139,
+            "WOOL": 1,
+            "EGG": 51,
+            "STRAWBERRY": 246,
+            "WHEAT": 44,
+            "FERTILIZER": 61
+          }
+        }
+      ],
+      "20": [
+        {
+          "cash": 59723,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 80,
+            "WOOL": 5,
+            "EGG": 55,
+            "STRAWBERRY": 255,
+            "WHEAT": 46,
+            "FERTILIZER": 43
+          }
+        },
+        {
+          "cash": 16183,
+          "hands": 10,
+          "crops": {
+            "STRAWBERRY": 49,
+            "WHEAT": 6
+          },
+          "animals": {
+            "COW": 12,
+            "SHEEP": 3
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 80,
+            "WOOL": 5,
+            "EGG": 55,
+            "STRAWBERRY": 255,
+            "WHEAT": 46,
+            "FERTILIZER": 43
+          }
+        }
+      ],
+      "23": [
+        {
+          "cash": 79549,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 38
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "BAKERY",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 87,
+            "WOOL": 5,
+            "EGG": 57,
+            "STRAWBERRY": 242,
+            "WHEAT": 48,
+            "FERTILIZER": 36
+          }
+        },
+        {
+          "cash": 40568,
+          "hands": 10,
+          "crops": {
+            "STRAWBERRY": 45,
+            "WHEAT": 9
+          },
+          "animals": {
+            "COW": 11,
+            "SHEEP": 3
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "BAKERY",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 87,
+            "WOOL": 5,
+            "EGG": 57,
+            "STRAWBERRY": 242,
+            "WHEAT": 48,
+            "FERTILIZER": 36
+          }
+        }
+      ],
+      "27": [
+        {
+          "cash": 101272,
+          "hands": 11,
+          "crops": {
+            "CARROT": 27,
+            "STRAWBERRY": 4,
+            "WHEAT": 17
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "BAKERY",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP"
+          ],
+          "quotes": {
+            "MILK": 158,
+            "WOOL": 1,
+            "EGG": 60,
+            "STRAWBERRY": 232,
+            "WHEAT": 49,
+            "FERTILIZER": 29
+          }
+        },
+        {
+          "cash": 77763,
+          "hands": 10,
+          "crops": {
+            "CARROT": 1,
+            "STRAWBERRY": 41,
+            "WHEAT": 13
+          },
+          "animals": {
+            "COW": 9,
+            "SHEEP": 3
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "BAKERY",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP"
+          ],
+          "quotes": {
+            "MILK": 158,
+            "WOOL": 1,
+            "EGG": 60,
+            "STRAWBERRY": 232,
+            "WHEAT": 49,
+            "FERTILIZER": 29
+          }
+        }
+      ],
+      "29": [
+        {
+          "cash": 118573,
+          "hands": 11,
+          "crops": {},
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "BAKERY",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP"
+          ],
+          "quotes": {
+            "MILK": 147,
+            "WOOL": 1,
+            "EGG": 62,
+            "STRAWBERRY": 232,
+            "WHEAT": 48,
+            "FERTILIZER": 24
+          }
+        },
+        {
+          "cash": 100177,
+          "hands": 10,
+          "crops": {
+            "STRAWBERRY": 5
+          },
+          "animals": {
+            "COW": 9,
+            "SHEEP": 2
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "BAKERY",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP"
+          ],
+          "quotes": {
+            "MILK": 147,
+            "WOOL": 1,
+            "EGG": 62,
+            "STRAWBERRY": 232,
+            "WHEAT": 48,
+            "FERTILIZER": 24
+          }
+        }
+      ]
+    },
+    "guard": {
+      "base_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          16
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          11
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "wrapped_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "logged_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "shed_units": 4,
+      "carried_units": 91,
+      "base_wheat_fertilizer_buys": 27,
+      "projection_with_harvest_allowance": 128,
+      "fired": true,
+      "logged_action_matches_recomputed_v92": true,
+      "base_call_matches_logged_next_frame": false
+    },
+    "loader_reproduction": {
+      "matched_actions": 719,
+      "checked_actions": 719,
+      "mismatch_steps": [],
+      "missing_step_observations_reconstructed": 719,
+      "step_reconstruction": "step = day * turnsPerDay + hour"
+    },
+    "animal_purchases_rajusah": [
+      {
+        "step": 1,
+        "day": 0,
+        "hour": 1,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 65,
+        "day": 2,
+        "hour": 17,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 88,
+        "day": 3,
+        "hour": 16,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 150,
+        "day": 6,
+        "hour": 6,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 173,
+        "day": 7,
+        "hour": 5,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 178,
+        "day": 7,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 196,
+        "day": 8,
+        "hour": 4,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 216,
+        "day": 9,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 250,
+        "day": 10,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 251,
+        "day": 10,
+        "hour": 11,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 264,
+        "day": 11,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    ],
+    "settlement": {
+      "accepted_sales_cash_raj_opponent": [
+        146027.0,
+        129196.0
+      ],
+      "accepted_sales_by_item_raj": {
+        "CARROT": 4518.0,
+        "FERTILIZER": 17874.0,
+        "MELON": 17056.0,
+        "MILK": 20893.0,
+        "STRAWBERRY": 60804.0,
+        "WHEAT": 18317.0,
+        "WOOL": 6565.0
+      },
+      "accepted_sales_by_item_opponent": {
+        "CARROT": 1123.0,
+        "FERTILIZER": 7583.0,
+        "MELON": 10474.0,
+        "MILK": 23648.0,
+        "STRAWBERRY": 76509.0,
+        "WHEAT": 5535.0,
+        "WOOL": 4324.0
+      },
+      "product_buys_raj": {
+        "FERTILIZER": 1811.0,
+        "WHEAT": 5748.0
+      },
+      "animal_buys_raj": {
+        "COW": 2400.0,
+        "SHEEP": 5500.0
+      },
+      "cash_mismatches_by_seat": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "file": "episode-114161728-replay.json",
+    "episode_id": 114161728,
+    "cohort": "original_10",
+    "seed": 164747411,
+    "rajusah_seat": 0,
+    "opponent": "Shaun the Sheep ",
+    "rajusah_score": 143561.0,
+    "opponent_score": 9665.0,
+    "margin": 133896,
+    "outcome": "W",
+    "phase_cash_raj_opponent": {
+      "5": [
+        885,
+        404
+      ],
+      "10": [
+        18763,
+        3952
+      ],
+      "15": [
+        30832,
+        2238
+      ],
+      "20": [
+        70274,
+        1862
+      ],
+      "23": [
+        94640,
+        2974
+      ],
+      "25": [
+        108591,
+        4526
+      ],
+      "27": [
+        122924,
+        5407
+      ],
+      "29": [
+        143561,
+        9665
+      ]
+    },
+    "snapshots": {
+      "10": [
+        {
+          "cash": 18763,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 12
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 10
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 220,
+            "WOOL": 158,
+            "EGG": 51,
+            "STRAWBERRY": 191,
+            "WHEAT": 36,
+            "FERTILIZER": 83
+          }
+        },
+        {
+          "cash": 3952,
+          "hands": 8,
+          "crops": {
+            "MELON": 1,
+            "STRAWBERRY": 3,
+            "WHEAT": 2
+          },
+          "animals": {
+            "SHEEP": 2
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 220,
+            "WOOL": 158,
+            "EGG": 51,
+            "STRAWBERRY": 191,
+            "WHEAT": 36,
+            "FERTILIZER": 83
+          }
+        }
+      ],
+      "15": [
+        {
+          "cash": 30832,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 249,
+            "WOOL": 1,
+            "EGG": 51,
+            "STRAWBERRY": 228,
+            "WHEAT": 39,
+            "FERTILIZER": 67
+          }
+        },
+        {
+          "cash": 2238,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 5,
+            "WHEAT": 3
+          },
+          "animals": {
+            "SHEEP": 2
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 249,
+            "WOOL": 1,
+            "EGG": 51,
+            "STRAWBERRY": 228,
+            "WHEAT": 39,
+            "FERTILIZER": 67
+          }
+        }
+      ],
+      "20": [
+        {
+          "cash": 70274,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 268,
+            "WOOL": 1,
+            "EGG": 52,
+            "STRAWBERRY": 239,
+            "WHEAT": 39,
+            "FERTILIZER": 55
+          }
+        },
+        {
+          "cash": 1862,
+          "hands": 11,
+          "crops": {
+            "CARROT": 7,
+            "STRAWBERRY": 5,
+            "TOMATO": 1,
+            "WHEAT": 2
+          },
+          "animals": {
+            "SHEEP": 2
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 268,
+            "WOOL": 1,
+            "EGG": 52,
+            "STRAWBERRY": 239,
+            "WHEAT": 39,
+            "FERTILIZER": 55
+          }
+        }
+      ],
+      "23": [
+        {
+          "cash": 94640,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 38
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "BRUNCH_SPOT",
+            "YARN_STORE"
+          ],
+          "quotes": {
+            "MILK": 280,
+            "WOOL": 77,
+            "EGG": 54,
+            "STRAWBERRY": 245,
+            "WHEAT": 40,
+            "FERTILIZER": 48
+          }
+        },
+        {
+          "cash": 2974,
+          "hands": 11,
+          "crops": {
+            "CARROT": 7,
+            "STRAWBERRY": 5,
+            "TOMATO": 1,
+            "WHEAT": 2
+          },
+          "animals": {
+            "SHEEP": 2
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "BRUNCH_SPOT",
+            "YARN_STORE"
+          ],
+          "quotes": {
+            "MILK": 280,
+            "WOOL": 77,
+            "EGG": 54,
+            "STRAWBERRY": 245,
+            "WHEAT": 40,
+            "FERTILIZER": 48
+          }
+        }
+      ],
+      "27": [
+        {
+          "cash": 122924,
+          "hands": 11,
+          "crops": {
+            "CARROT": 27,
+            "STRAWBERRY": 4,
+            "WHEAT": 17
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "BRUNCH_SPOT",
+            "YARN_STORE",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 295,
+            "WOOL": 66,
+            "EGG": 57,
+            "STRAWBERRY": 261,
+            "WHEAT": 39,
+            "FERTILIZER": 39
+          }
+        },
+        {
+          "cash": 5407,
+          "hands": 11,
+          "crops": {
+            "CARROT": 6,
+            "STRAWBERRY": 1,
+            "TOMATO": 1,
+            "WHEAT": 8
+          },
+          "animals": {
+            "SHEEP": 2
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "BRUNCH_SPOT",
+            "YARN_STORE",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 295,
+            "WOOL": 66,
+            "EGG": 57,
+            "STRAWBERRY": 261,
+            "WHEAT": 39,
+            "FERTILIZER": 39
+          }
+        }
+      ],
+      "29": [
+        {
+          "cash": 143561,
+          "hands": 11,
+          "crops": {},
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "BRUNCH_SPOT",
+            "YARN_STORE",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 301,
+            "WOOL": 18,
+            "EGG": 58,
+            "STRAWBERRY": 269,
+            "WHEAT": 35,
+            "FERTILIZER": 34
+          }
+        },
+        {
+          "cash": 9665,
+          "hands": 10,
+          "crops": {
+            "STRAWBERRY": 1,
+            "TOMATO": 1,
+            "WHEAT": 1
+          },
+          "animals": {},
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "BRUNCH_SPOT",
+            "YARN_STORE",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 301,
+            "WOOL": 18,
+            "EGG": 58,
+            "STRAWBERRY": 269,
+            "WHEAT": 35,
+            "FERTILIZER": 34
+          }
+        }
+      ]
+    },
+    "guard": {
+      "base_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          16
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          11
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "wrapped_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "logged_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "shed_units": 4,
+      "carried_units": 91,
+      "base_wheat_fertilizer_buys": 27,
+      "projection_with_harvest_allowance": 128,
+      "fired": true,
+      "logged_action_matches_recomputed_v92": true,
+      "base_call_matches_logged_next_frame": false
+    },
+    "loader_reproduction": {
+      "matched_actions": 719,
+      "checked_actions": 719,
+      "mismatch_steps": [],
+      "missing_step_observations_reconstructed": 0,
+      "step_reconstruction": "step = day * turnsPerDay + hour"
+    },
+    "animal_purchases_rajusah": [
+      {
+        "step": 1,
+        "day": 0,
+        "hour": 1,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 65,
+        "day": 2,
+        "hour": 17,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 88,
+        "day": 3,
+        "hour": 16,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 150,
+        "day": 6,
+        "hour": 6,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 173,
+        "day": 7,
+        "hour": 5,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 178,
+        "day": 7,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 196,
+        "day": 8,
+        "hour": 4,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 216,
+        "day": 9,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 250,
+        "day": 10,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 251,
+        "day": 10,
+        "hour": 11,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 264,
+        "day": 11,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    ],
+    "settlement": {
+      "accepted_sales_cash_raj_opponent": [
+        171066.0,
+        28382.0
+      ],
+      "accepted_sales_by_item_raj": {
+        "CARROT": 4816.0,
+        "FERTILIZER": 20012.0,
+        "MELON": 16819.0,
+        "MILK": 42299.0,
+        "STRAWBERRY": 60406.0,
+        "WHEAT": 15222.0,
+        "WOOL": 11492.0
+      },
+      "accepted_sales_by_item_opponent": {
+        "CARROT": 3460.0,
+        "FERTILIZER": 4380.0,
+        "MELON": 4633.0,
+        "STRAWBERRY": 5966.0,
+        "TOMATO": 292.0,
+        "WHEAT": 5707.0,
+        "WOOL": 3944.0
+      },
+      "product_buys_raj": {
+        "FERTILIZER": 2283.0,
+        "WHEAT": 5327.0
+      },
+      "animal_buys_raj": {
+        "COW": 2400.0,
+        "SHEEP": 5500.0
+      },
+      "cash_mismatches_by_seat": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "file": "episode-114163744-replay.json",
+    "episode_id": 114163744,
+    "cohort": "original_10",
+    "seed": 831472709,
+    "rajusah_seat": 0,
+    "opponent": "K.nosaka",
+    "rajusah_score": 65582.0,
+    "opponent_score": 54880.0,
+    "margin": 10702,
+    "outcome": "W",
+    "phase_cash_raj_opponent": {
+      "5": [
+        884,
+        183
+      ],
+      "10": [
+        17117,
+        6337
+      ],
+      "15": [
+        22558,
+        13533
+      ],
+      "20": [
+        43671,
+        32061
+      ],
+      "23": [
+        47014,
+        36298
+      ],
+      "25": [
+        48851,
+        39294
+      ],
+      "27": [
+        53764,
+        41232
+      ],
+      "29": [
+        65582,
+        54880
+      ]
+    },
+    "snapshots": {
+      "10": [
+        {
+          "cash": 17117,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 12
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 10
+          },
+          "shops": [
+            "BAKERY",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 160,
+            "WOOL": 72,
+            "EGG": 54,
+            "STRAWBERRY": 160,
+            "WHEAT": 36,
+            "FERTILIZER": 77
+          }
+        },
+        {
+          "cash": 6337,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 32,
+            "WHEAT": 8
+          },
+          "animals": {
+            "COW": 11,
+            "SHEEP": 4
+          },
+          "shops": [
+            "BAKERY",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 160,
+            "WOOL": 72,
+            "EGG": 54,
+            "STRAWBERRY": 160,
+            "WHEAT": 36,
+            "FERTILIZER": 77
+          }
+        }
+      ],
+      "15": [
+        {
+          "cash": 22558,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "BAKERY",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 95,
+            "WOOL": 1,
+            "EGG": 57,
+            "STRAWBERRY": 194,
+            "WHEAT": 41,
+            "FERTILIZER": 52
+          }
+        },
+        {
+          "cash": 13533,
+          "hands": 11,
+          "crops": {
+            "MELON": 4,
+            "STRAWBERRY": 40,
+            "WHEAT": 15
+          },
+          "animals": {
+            "COW": 11,
+            "SHEEP": 4
+          },
+          "shops": [
+            "BAKERY",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 95,
+            "WOOL": 1,
+            "EGG": 57,
+            "STRAWBERRY": 194,
+            "WHEAT": 41,
+            "FERTILIZER": 52
+          }
+        }
+      ],
+      "20": [
+        {
+          "cash": 43671,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "BAKERY",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 15,
+            "WOOL": 1,
+            "EGG": 63,
+            "STRAWBERRY": 91,
+            "WHEAT": 43,
+            "FERTILIZER": 37
+          }
+        },
+        {
+          "cash": 32061,
+          "hands": 12,
+          "crops": {
+            "MELON": 4,
+            "STRAWBERRY": 37,
+            "WHEAT": 18
+          },
+          "animals": {
+            "COW": 11,
+            "SHEEP": 4
+          },
+          "shops": [
+            "BAKERY",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 15,
+            "WOOL": 1,
+            "EGG": 63,
+            "STRAWBERRY": 91,
+            "WHEAT": 43,
+            "FERTILIZER": 37
+          }
+        }
+      ],
+      "23": [
+        {
+          "cash": 47014,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 38
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "BAKERY",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 5,
+            "WOOL": 1,
+            "EGG": 67,
+            "STRAWBERRY": 18,
+            "WHEAT": 44,
+            "FERTILIZER": 24
+          }
+        },
+        {
+          "cash": 36298,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 27,
+            "WHEAT": 29
+          },
+          "animals": {
+            "COW": 11,
+            "SHEEP": 4
+          },
+          "shops": [
+            "BAKERY",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 5,
+            "WOOL": 1,
+            "EGG": 67,
+            "STRAWBERRY": 18,
+            "WHEAT": 44,
+            "FERTILIZER": 24
+          }
+        }
+      ],
+      "27": [
+        {
+          "cash": 53764,
+          "hands": 11,
+          "crops": {
+            "CARROT": 27,
+            "STRAWBERRY": 4,
+            "WHEAT": 17
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "BAKERY",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "ICE_CREAM_SHOP"
+          ],
+          "quotes": {
+            "MILK": 13,
+            "WOOL": 1,
+            "EGG": 72,
+            "STRAWBERRY": 120,
+            "WHEAT": 43,
+            "FERTILIZER": 7
+          }
+        },
+        {
+          "cash": 41232,
+          "hands": 13,
+          "crops": {
+            "CARROT": 12,
+            "WHEAT": 48
+          },
+          "animals": {
+            "COW": 11,
+            "SHEEP": 4
+          },
+          "shops": [
+            "BAKERY",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "ICE_CREAM_SHOP"
+          ],
+          "quotes": {
+            "MILK": 13,
+            "WOOL": 1,
+            "EGG": 72,
+            "STRAWBERRY": 120,
+            "WHEAT": 43,
+            "FERTILIZER": 7
+          }
+        }
+      ],
+      "29": [
+        {
+          "cash": 65582,
+          "hands": 11,
+          "crops": {},
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "BAKERY",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "ICE_CREAM_SHOP"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 1,
+            "EGG": 78,
+            "STRAWBERRY": 154,
+            "WHEAT": 37,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "cash": 54880,
+          "hands": 9,
+          "crops": {
+            "WHEAT": 12
+          },
+          "animals": {
+            "COW": 11,
+            "SHEEP": 4
+          },
+          "shops": [
+            "BAKERY",
+            "PET_CAFE",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "ICE_CREAM_SHOP"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 1,
+            "EGG": 78,
+            "STRAWBERRY": 154,
+            "WHEAT": 37,
+            "FERTILIZER": 1
+          }
+        }
+      ]
+    },
+    "guard": {
+      "base_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          16
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          11
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "wrapped_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "logged_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "shed_units": 4,
+      "carried_units": 91,
+      "base_wheat_fertilizer_buys": 27,
+      "projection_with_harvest_allowance": 128,
+      "fired": true,
+      "logged_action_matches_recomputed_v92": true,
+      "base_call_matches_logged_next_frame": false
+    },
+    "loader_reproduction": {
+      "matched_actions": 719,
+      "checked_actions": 719,
+      "mismatch_steps": [],
+      "missing_step_observations_reconstructed": 0,
+      "step_reconstruction": "step = day * turnsPerDay + hour"
+    },
+    "animal_purchases_rajusah": [
+      {
+        "step": 1,
+        "day": 0,
+        "hour": 1,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 65,
+        "day": 2,
+        "hour": 17,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 88,
+        "day": 3,
+        "hour": 16,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 150,
+        "day": 6,
+        "hour": 6,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 173,
+        "day": 7,
+        "hour": 5,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 178,
+        "day": 7,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 196,
+        "day": 8,
+        "hour": 4,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 216,
+        "day": 9,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 250,
+        "day": 10,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 251,
+        "day": 10,
+        "hour": 11,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 264,
+        "day": 11,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    ],
+    "settlement": {
+      "accepted_sales_cash_raj_opponent": [
+        92200.0,
+        79877.0
+      ],
+      "accepted_sales_by_item_raj": {
+        "CARROT": 4767.0,
+        "FERTILIZER": 14902.0,
+        "MELON": 15958.0,
+        "MILK": 11214.0,
+        "STRAWBERRY": 24330.0,
+        "WHEAT": 16469.0,
+        "WOOL": 4560.0
+      },
+      "accepted_sales_by_item_opponent": {
+        "CARROT": 2933.0,
+        "FERTILIZER": 11395.0,
+        "MELON": 12776.0,
+        "MILK": 7729.0,
+        "STRAWBERRY": 31109.0,
+        "WHEAT": 7945.0,
+        "WOOL": 5990.0
+      },
+      "product_buys_raj": {
+        "FERTILIZER": 1212.0,
+        "WHEAT": 5511.0
+      },
+      "animal_buys_raj": {
+        "COW": 2400.0,
+        "SHEEP": 5500.0
+      },
+      "cash_mismatches_by_seat": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "file": "episode-114164630-replay.json",
+    "episode_id": 114164630,
+    "cohort": "original_10",
+    "seed": 1097968809,
+    "rajusah_seat": 1,
+    "opponent": "cheezyp",
+    "rajusah_score": 109923.0,
+    "opponent_score": 79330.0,
+    "margin": 30593,
+    "outcome": "W",
+    "phase_cash_raj_opponent": {
+      "5": [
+        880,
+        465
+      ],
+      "10": [
+        16311,
+        14773
+      ],
+      "15": [
+        28740,
+        25126
+      ],
+      "20": [
+        50512,
+        36510
+      ],
+      "23": [
+        61745,
+        45047
+      ],
+      "25": [
+        71576,
+        55049
+      ],
+      "27": [
+        77716,
+        59961
+      ],
+      "29": [
+        109923,
+        79330
+      ]
+    },
+    "snapshots": {
+      "10": [
+        {
+          "cash": 16311,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 12
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 10
+          },
+          "shops": [
+            "YARN_STORE",
+            "PET_CAFE",
+            "PET_CAFE"
+          ],
+          "quotes": {
+            "MILK": 103,
+            "WOOL": 236,
+            "EGG": 51,
+            "STRAWBERRY": 148,
+            "WHEAT": 35,
+            "FERTILIZER": 76
+          }
+        },
+        {
+          "cash": 14773,
+          "hands": 11,
+          "crops": {
+            "MELON": 1,
+            "STRAWBERRY": 19,
+            "WHEAT": 11
+          },
+          "animals": {
+            "COW": 4,
+            "SHEEP": 8
+          },
+          "shops": [
+            "YARN_STORE",
+            "PET_CAFE",
+            "PET_CAFE"
+          ],
+          "quotes": {
+            "MILK": 103,
+            "WOOL": 236,
+            "EGG": 51,
+            "STRAWBERRY": 148,
+            "WHEAT": 35,
+            "FERTILIZER": 76
+          }
+        }
+      ],
+      "15": [
+        {
+          "cash": 28740,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "YARN_STORE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "YARN_STORE"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 235,
+            "EGG": 51,
+            "STRAWBERRY": 144,
+            "WHEAT": 37,
+            "FERTILIZER": 53
+          }
+        },
+        {
+          "cash": 25126,
+          "hands": 11,
+          "crops": {
+            "MELON": 2,
+            "STRAWBERRY": 37,
+            "WHEAT": 24
+          },
+          "animals": {
+            "COW": 4,
+            "SHEEP": 8
+          },
+          "shops": [
+            "YARN_STORE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "YARN_STORE"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 235,
+            "EGG": 51,
+            "STRAWBERRY": 144,
+            "WHEAT": 37,
+            "FERTILIZER": 53
+          }
+        }
+      ],
+      "20": [
+        {
+          "cash": 50512,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "YARN_STORE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "YARN_STORE",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 238,
+            "EGG": 51,
+            "STRAWBERRY": 1,
+            "WHEAT": 31,
+            "FERTILIZER": 36
+          }
+        },
+        {
+          "cash": 36510,
+          "hands": 12,
+          "crops": {
+            "MELON": 2,
+            "STRAWBERRY": 37,
+            "WHEAT": 24
+          },
+          "animals": {
+            "COW": 4,
+            "SHEEP": 8
+          },
+          "shops": [
+            "YARN_STORE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "YARN_STORE",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 238,
+            "EGG": 51,
+            "STRAWBERRY": 1,
+            "WHEAT": 31,
+            "FERTILIZER": 36
+          }
+        }
+      ],
+      "23": [
+        {
+          "cash": 61745,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 38
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "YARN_STORE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 3,
+            "WOOL": 238,
+            "EGG": 51,
+            "STRAWBERRY": 5,
+            "WHEAT": 23,
+            "FERTILIZER": 22
+          }
+        },
+        {
+          "cash": 45047,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 27,
+            "WHEAT": 35
+          },
+          "animals": {
+            "COW": 4,
+            "SHEEP": 8
+          },
+          "shops": [
+            "YARN_STORE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 3,
+            "WOOL": 238,
+            "EGG": 51,
+            "STRAWBERRY": 5,
+            "WHEAT": 23,
+            "FERTILIZER": 22
+          }
+        }
+      ],
+      "27": [
+        {
+          "cash": 77716,
+          "hands": 11,
+          "crops": {
+            "CARROT": 27,
+            "STRAWBERRY": 4,
+            "WHEAT": 17
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "YARN_STORE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 28,
+            "WOOL": 237,
+            "EGG": 52,
+            "STRAWBERRY": 26,
+            "WHEAT": 21,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "cash": 59961,
+          "hands": 11,
+          "crops": {
+            "CARROT": 7,
+            "STRAWBERRY": 14,
+            "WHEAT": 41
+          },
+          "animals": {
+            "COW": 4,
+            "SHEEP": 8
+          },
+          "shops": [
+            "YARN_STORE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 28,
+            "WOOL": 237,
+            "EGG": 52,
+            "STRAWBERRY": 26,
+            "WHEAT": 21,
+            "FERTILIZER": 5
+          }
+        }
+      ],
+      "29": [
+        {
+          "cash": 109923,
+          "hands": 11,
+          "crops": {},
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "YARN_STORE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 231,
+            "EGG": 52,
+            "STRAWBERRY": 22,
+            "WHEAT": 20,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "cash": 79330,
+          "hands": 11,
+          "crops": {
+            "CARROT": 1,
+            "WHEAT": 1
+          },
+          "animals": {
+            "COW": 3,
+            "SHEEP": 8
+          },
+          "shops": [
+            "YARN_STORE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "PET_CAFE",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 231,
+            "EGG": 52,
+            "STRAWBERRY": 22,
+            "WHEAT": 20,
+            "FERTILIZER": 1
+          }
+        }
+      ]
+    },
+    "guard": {
+      "base_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          16
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          11
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "wrapped_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "logged_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "shed_units": 4,
+      "carried_units": 91,
+      "base_wheat_fertilizer_buys": 27,
+      "projection_with_harvest_allowance": 128,
+      "fired": true,
+      "logged_action_matches_recomputed_v92": true,
+      "base_call_matches_logged_next_frame": false
+    },
+    "loader_reproduction": {
+      "matched_actions": 719,
+      "checked_actions": 719,
+      "mismatch_steps": [],
+      "missing_step_observations_reconstructed": 719,
+      "step_reconstruction": "step = day * turnsPerDay + hour"
+    },
+    "animal_purchases_rajusah": [
+      {
+        "step": 1,
+        "day": 0,
+        "hour": 1,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 65,
+        "day": 2,
+        "hour": 17,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 88,
+        "day": 3,
+        "hour": 16,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 150,
+        "day": 6,
+        "hour": 6,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 173,
+        "day": 7,
+        "hour": 5,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 178,
+        "day": 7,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 196,
+        "day": 8,
+        "hour": 4,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 216,
+        "day": 9,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 250,
+        "day": 10,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 251,
+        "day": 10,
+        "hour": 11,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 264,
+        "day": 11,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    ],
+    "settlement": {
+      "accepted_sales_cash_raj_opponent": [
+        135532.0,
+        117118.0
+      ],
+      "accepted_sales_by_item_raj": {
+        "CARROT": 20620.0,
+        "FERTILIZER": 14633.0,
+        "MELON": 14231.0,
+        "MILK": 5764.0,
+        "STRAWBERRY": 4177.0,
+        "WHEAT": 9609.0,
+        "WOOL": 66498.0
+      },
+      "accepted_sales_by_item_opponent": {
+        "CARROT": 3976.0,
+        "FERTILIZER": 20905.0,
+        "MELON": 15484.0,
+        "MILK": 4307.0,
+        "STRAWBERRY": 4535.0,
+        "WHEAT": 17443.0,
+        "WOOL": 50468.0
+      },
+      "product_buys_raj": {
+        "FERTILIZER": 1169.0,
+        "WHEAT": 4545.0
+      },
+      "animal_buys_raj": {
+        "COW": 2400.0,
+        "SHEEP": 5500.0
+      },
+      "cash_mismatches_by_seat": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "file": "episode-114166061-replay.json",
+    "episode_id": 114166061,
+    "cohort": "original_10",
+    "seed": 1702012845,
+    "rajusah_seat": 1,
+    "opponent": "Kumar Saurabh",
+    "rajusah_score": 106894.0,
+    "opponent_score": 129600.0,
+    "margin": -22706,
+    "outcome": "L",
+    "phase_cash_raj_opponent": {
+      "5": [
+        871,
+        811
+      ],
+      "10": [
+        16888,
+        14964
+      ],
+      "15": [
+        24742,
+        32140
+      ],
+      "20": [
+        57621,
+        64111
+      ],
+      "23": [
+        73721,
+        85630
+      ],
+      "25": [
+        81993,
+        97941
+      ],
+      "27": [
+        91747,
+        110741
+      ],
+      "29": [
+        106894,
+        129600
+      ]
+    },
+    "snapshots": {
+      "10": [
+        {
+          "cash": 16888,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 12
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 10
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "ICE_CREAM_SHOP"
+          ],
+          "quotes": {
+            "MILK": 205,
+            "WOOL": 151,
+            "EGG": 51,
+            "STRAWBERRY": 181,
+            "WHEAT": 39,
+            "FERTILIZER": 76
+          }
+        },
+        {
+          "cash": 14964,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 12
+          },
+          "animals": {
+            "COW": 8,
+            "GOOSE": 2,
+            "SHEEP": 6
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "ICE_CREAM_SHOP"
+          ],
+          "quotes": {
+            "MILK": 205,
+            "WOOL": 151,
+            "EGG": 51,
+            "STRAWBERRY": 181,
+            "WHEAT": 39,
+            "FERTILIZER": 76
+          }
+        }
+      ],
+      "15": [
+        {
+          "cash": 24742,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 204,
+            "WOOL": 1,
+            "EGG": 51,
+            "STRAWBERRY": 217,
+            "WHEAT": 43,
+            "FERTILIZER": 48
+          }
+        },
+        {
+          "cash": 32140,
+          "hands": 10,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 24
+          },
+          "animals": {
+            "COW": 8,
+            "GOOSE": 3,
+            "SHEEP": 6
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 204,
+            "WOOL": 1,
+            "EGG": 51,
+            "STRAWBERRY": 217,
+            "WHEAT": 43,
+            "FERTILIZER": 48
+          }
+        }
+      ],
+      "20": [
+        {
+          "cash": 57621,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "BAKERY",
+            "ICE_CREAM_SHOP"
+          ],
+          "quotes": {
+            "MILK": 217,
+            "WOOL": 1,
+            "EGG": 52,
+            "STRAWBERRY": 181,
+            "WHEAT": 44,
+            "FERTILIZER": 28
+          }
+        },
+        {
+          "cash": 64111,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 8,
+            "GOOSE": 3,
+            "SHEEP": 6
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "BAKERY",
+            "ICE_CREAM_SHOP"
+          ],
+          "quotes": {
+            "MILK": 217,
+            "WOOL": 1,
+            "EGG": 52,
+            "STRAWBERRY": 181,
+            "WHEAT": 44,
+            "FERTILIZER": 28
+          }
+        }
+      ],
+      "23": [
+        {
+          "cash": 73721,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 38
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "BAKERY",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 230,
+            "WOOL": 1,
+            "EGG": 53,
+            "STRAWBERRY": 144,
+            "WHEAT": 46,
+            "FERTILIZER": 12
+          }
+        },
+        {
+          "cash": 85630,
+          "hands": 10,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 38
+          },
+          "animals": {
+            "COW": 8,
+            "GOOSE": 3,
+            "SHEEP": 6
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "BAKERY",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 230,
+            "WOOL": 1,
+            "EGG": 53,
+            "STRAWBERRY": 144,
+            "WHEAT": 46,
+            "FERTILIZER": 12
+          }
+        }
+      ],
+      "27": [
+        {
+          "cash": 91747,
+          "hands": 11,
+          "crops": {
+            "CARROT": 27,
+            "STRAWBERRY": 4,
+            "WHEAT": 17
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "BAKERY",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "PIZZA_SHOP"
+          ],
+          "quotes": {
+            "MILK": 252,
+            "WOOL": 1,
+            "EGG": 55,
+            "STRAWBERRY": 151,
+            "WHEAT": 45,
+            "FERTILIZER": 2
+          }
+        },
+        {
+          "cash": 110741,
+          "hands": 10,
+          "crops": {
+            "CARROT": 26,
+            "STRAWBERRY": 4,
+            "WHEAT": 18
+          },
+          "animals": {
+            "COW": 8,
+            "GOOSE": 3,
+            "SHEEP": 6
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "BAKERY",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "PIZZA_SHOP"
+          ],
+          "quotes": {
+            "MILK": 252,
+            "WOOL": 1,
+            "EGG": 55,
+            "STRAWBERRY": 151,
+            "WHEAT": 45,
+            "FERTILIZER": 2
+          }
+        }
+      ],
+      "29": [
+        {
+          "cash": 106894,
+          "hands": 11,
+          "crops": {},
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "BAKERY",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "PIZZA_SHOP"
+          ],
+          "quotes": {
+            "MILK": 257,
+            "WOOL": 1,
+            "EGG": 56,
+            "STRAWBERRY": 170,
+            "WHEAT": 43,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "cash": 129600,
+          "hands": 11,
+          "crops": {},
+          "animals": {
+            "COW": 8,
+            "GOOSE": 3,
+            "SHEEP": 6
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "FARMERS_MARKET",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "BAKERY",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "PIZZA_SHOP"
+          ],
+          "quotes": {
+            "MILK": 257,
+            "WOOL": 1,
+            "EGG": 56,
+            "STRAWBERRY": 170,
+            "WHEAT": 43,
+            "FERTILIZER": 1
+          }
+        }
+      ]
+    },
+    "guard": {
+      "base_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          16
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          11
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "wrapped_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "logged_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "shed_units": 4,
+      "carried_units": 91,
+      "base_wheat_fertilizer_buys": 27,
+      "projection_with_harvest_allowance": 128,
+      "fired": true,
+      "logged_action_matches_recomputed_v92": true,
+      "base_call_matches_logged_next_frame": false
+    },
+    "loader_reproduction": {
+      "matched_actions": 719,
+      "checked_actions": 719,
+      "mismatch_steps": [],
+      "missing_step_observations_reconstructed": 719,
+      "step_reconstruction": "step = day * turnsPerDay + hour"
+    },
+    "animal_purchases_rajusah": [
+      {
+        "step": 1,
+        "day": 0,
+        "hour": 1,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 65,
+        "day": 2,
+        "hour": 17,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 88,
+        "day": 3,
+        "hour": 16,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 150,
+        "day": 6,
+        "hour": 6,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 173,
+        "day": 7,
+        "hour": 5,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 178,
+        "day": 7,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 196,
+        "day": 8,
+        "hour": 4,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 216,
+        "day": 9,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 250,
+        "day": 10,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 251,
+        "day": 10,
+        "hour": 11,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 264,
+        "day": 11,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    ],
+    "settlement": {
+      "accepted_sales_cash_raj_opponent": [
+        133341.0,
+        153999.0
+      ],
+      "accepted_sales_by_item_raj": {
+        "CARROT": 3382.0,
+        "FERTILIZER": 13108.0,
+        "MELON": 14231.0,
+        "MILK": 36239.0,
+        "STRAWBERRY": 42952.0,
+        "WHEAT": 17283.0,
+        "WOOL": 6146.0
+      },
+      "accepted_sales_by_item_opponent": {
+        "CARROT": 3562.0,
+        "EGG": 4152.0,
+        "FERTILIZER": 14642.0,
+        "MELON": 14278.0,
+        "MILK": 55231.0,
+        "STRAWBERRY": 44563.0,
+        "WHEAT": 12766.0,
+        "WOOL": 4805.0
+      },
+      "product_buys_raj": {
+        "FERTILIZER": 817.0,
+        "WHEAT": 5735.0
+      },
+      "animal_buys_raj": {
+        "COW": 2400.0,
+        "SHEEP": 5500.0
+      },
+      "cash_mismatches_by_seat": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "file": "episode-114167570-replay.json",
+    "episode_id": 114167570,
+    "cohort": "original_10",
+    "seed": 863991434,
+    "rajusah_seat": 0,
+    "opponent": "薄和叶 Lv.INF",
+    "rajusah_score": 94832.0,
+    "opponent_score": 103932.0,
+    "margin": -9100,
+    "outcome": "L",
+    "phase_cash_raj_opponent": {
+      "5": [
+        880,
+        848
+      ],
+      "10": [
+        17157,
+        16843
+      ],
+      "15": [
+        25393,
+        32005
+      ],
+      "20": [
+        57106,
+        63503
+      ],
+      "23": [
+        71154,
+        79763
+      ],
+      "25": [
+        76396,
+        87314
+      ],
+      "27": [
+        82570,
+        93953
+      ],
+      "29": [
+        94832,
+        103932
+      ]
+    },
+    "snapshots": {
+      "10": [
+        {
+          "cash": 17157,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 12
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 10
+          },
+          "shops": [
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 216,
+            "WOOL": 151,
+            "EGG": 51,
+            "STRAWBERRY": 199,
+            "WHEAT": 37,
+            "FERTILIZER": 76
+          }
+        },
+        {
+          "cash": 16843,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 21,
+            "WHEAT": 13
+          },
+          "animals": {
+            "COW": 9,
+            "SHEEP": 4
+          },
+          "shops": [
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 216,
+            "WOOL": 151,
+            "EGG": 51,
+            "STRAWBERRY": 199,
+            "WHEAT": 37,
+            "FERTILIZER": 76
+          }
+        }
+      ],
+      "15": [
+        {
+          "cash": 25393,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BAKERY",
+            "FARMERS_MARKET",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 199,
+            "WOOL": 1,
+            "EGG": 54,
+            "STRAWBERRY": 230,
+            "WHEAT": 41,
+            "FERTILIZER": 51
+          }
+        },
+        {
+          "cash": 32005,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 38,
+            "WHEAT": 23
+          },
+          "animals": {
+            "COW": 9,
+            "SHEEP": 5
+          },
+          "shops": [
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BAKERY",
+            "FARMERS_MARKET",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 199,
+            "WOOL": 1,
+            "EGG": 54,
+            "STRAWBERRY": 230,
+            "WHEAT": 41,
+            "FERTILIZER": 51
+          }
+        }
+      ],
+      "20": [
+        {
+          "cash": 57106,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BAKERY",
+            "FARMERS_MARKET",
+            "BAKERY",
+            "PET_CAFE"
+          ],
+          "quotes": {
+            "MILK": 118,
+            "WOOL": 1,
+            "EGG": 58,
+            "STRAWBERRY": 187,
+            "WHEAT": 42,
+            "FERTILIZER": 34
+          }
+        },
+        {
+          "cash": 63503,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 38,
+            "WHEAT": 23
+          },
+          "animals": {
+            "COW": 9,
+            "SHEEP": 5
+          },
+          "shops": [
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BAKERY",
+            "FARMERS_MARKET",
+            "BAKERY",
+            "PET_CAFE"
+          ],
+          "quotes": {
+            "MILK": 118,
+            "WOOL": 1,
+            "EGG": 58,
+            "STRAWBERRY": 187,
+            "WHEAT": 42,
+            "FERTILIZER": 34
+          }
+        }
+      ],
+      "23": [
+        {
+          "cash": 71154,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 38
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BAKERY",
+            "FARMERS_MARKET",
+            "BAKERY",
+            "PET_CAFE",
+            "ICE_CREAM_SHOP"
+          ],
+          "quotes": {
+            "MILK": 105,
+            "WOOL": 1,
+            "EGG": 60,
+            "STRAWBERRY": 137,
+            "WHEAT": 43,
+            "FERTILIZER": 20
+          }
+        },
+        {
+          "cash": 79763,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 26,
+            "WHEAT": 35
+          },
+          "animals": {
+            "COW": 9,
+            "SHEEP": 5
+          },
+          "shops": [
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BAKERY",
+            "FARMERS_MARKET",
+            "BAKERY",
+            "PET_CAFE",
+            "ICE_CREAM_SHOP"
+          ],
+          "quotes": {
+            "MILK": 105,
+            "WOOL": 1,
+            "EGG": 60,
+            "STRAWBERRY": 137,
+            "WHEAT": 43,
+            "FERTILIZER": 20
+          }
+        }
+      ],
+      "27": [
+        {
+          "cash": 82570,
+          "hands": 11,
+          "crops": {
+            "CARROT": 27,
+            "STRAWBERRY": 4,
+            "WHEAT": 17
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BAKERY",
+            "FARMERS_MARKET",
+            "BAKERY",
+            "PET_CAFE",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 78,
+            "WOOL": 1,
+            "EGG": 65,
+            "STRAWBERRY": 118,
+            "WHEAT": 42,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "cash": 93953,
+          "hands": 11,
+          "crops": {
+            "CARROT": 4,
+            "STRAWBERRY": 15,
+            "WHEAT": 40
+          },
+          "animals": {
+            "COW": 9,
+            "SHEEP": 5
+          },
+          "shops": [
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BAKERY",
+            "FARMERS_MARKET",
+            "BAKERY",
+            "PET_CAFE",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 78,
+            "WOOL": 1,
+            "EGG": 65,
+            "STRAWBERRY": 118,
+            "WHEAT": 42,
+            "FERTILIZER": 4
+          }
+        }
+      ],
+      "29": [
+        {
+          "cash": 94832,
+          "hands": 11,
+          "crops": {},
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BAKERY",
+            "FARMERS_MARKET",
+            "BAKERY",
+            "PET_CAFE",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 68,
+            "WOOL": 1,
+            "EGG": 67,
+            "STRAWBERRY": 154,
+            "WHEAT": 36,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "cash": 103932,
+          "hands": 11,
+          "crops": {},
+          "animals": {
+            "COW": 9,
+            "SHEEP": 5
+          },
+          "shops": [
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BAKERY",
+            "FARMERS_MARKET",
+            "BAKERY",
+            "PET_CAFE",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 68,
+            "WOOL": 1,
+            "EGG": 67,
+            "STRAWBERRY": 154,
+            "WHEAT": 36,
+            "FERTILIZER": 1
+          }
+        }
+      ]
+    },
+    "guard": {
+      "base_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          16
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          11
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "wrapped_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "logged_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "shed_units": 4,
+      "carried_units": 91,
+      "base_wheat_fertilizer_buys": 27,
+      "projection_with_harvest_allowance": 128,
+      "fired": true,
+      "logged_action_matches_recomputed_v92": true,
+      "base_call_matches_logged_next_frame": false
+    },
+    "loader_reproduction": {
+      "matched_actions": 719,
+      "checked_actions": 719,
+      "mismatch_steps": [],
+      "missing_step_observations_reconstructed": 0,
+      "step_reconstruction": "step = day * turnsPerDay + hour"
+    },
+    "animal_purchases_rajusah": [
+      {
+        "step": 1,
+        "day": 0,
+        "hour": 1,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 65,
+        "day": 2,
+        "hour": 17,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 88,
+        "day": 3,
+        "hour": 16,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 150,
+        "day": 6,
+        "hour": 6,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 173,
+        "day": 7,
+        "hour": 5,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 178,
+        "day": 7,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 196,
+        "day": 8,
+        "hour": 4,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 216,
+        "day": 9,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 250,
+        "day": 10,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 251,
+        "day": 10,
+        "hour": 11,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 264,
+        "day": 11,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    ],
+    "settlement": {
+      "accepted_sales_cash_raj_opponent": [
+        121295.0,
+        130543.0
+      ],
+      "accepted_sales_by_item_raj": {
+        "CARROT": 4290.0,
+        "FERTILIZER": 14280.0,
+        "MELON": 14275.0,
+        "MILK": 25053.0,
+        "STRAWBERRY": 41190.0,
+        "WHEAT": 16078.0,
+        "WOOL": 6129.0
+      },
+      "accepted_sales_by_item_opponent": {
+        "CARROT": 639.0,
+        "FERTILIZER": 14614.0,
+        "MELON": 14242.0,
+        "MILK": 38523.0,
+        "STRAWBERRY": 43146.0,
+        "WHEAT": 14521.0,
+        "WOOL": 4858.0
+      },
+      "product_buys_raj": {
+        "FERTILIZER": 1101.0,
+        "WHEAT": 5467.0
+      },
+      "animal_buys_raj": {
+        "COW": 2400.0,
+        "SHEEP": 5500.0
+      },
+      "cash_mismatches_by_seat": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "file": "episode-114169079-replay.json",
+    "episode_id": 114169079,
+    "cohort": "original_10",
+    "seed": 330915169,
+    "rajusah_seat": 0,
+    "opponent": "xamad",
+    "rajusah_score": 111185.0,
+    "opponent_score": 133273.0,
+    "margin": -22088,
+    "outcome": "L",
+    "phase_cash_raj_opponent": {
+      "5": [
+        885,
+        840
+      ],
+      "10": [
+        17195,
+        16772
+      ],
+      "15": [
+        25918,
+        32092
+      ],
+      "20": [
+        60708,
+        66389
+      ],
+      "23": [
+        78141,
+        89635
+      ],
+      "25": [
+        86498,
+        102749
+      ],
+      "27": [
+        95475,
+        116508
+      ],
+      "29": [
+        111185,
+        133273
+      ]
+    },
+    "snapshots": {
+      "10": [
+        {
+          "cash": 17195,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 12
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 10
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP"
+          ],
+          "quotes": {
+            "MILK": 224,
+            "WOOL": 151,
+            "EGG": 51,
+            "STRAWBERRY": 199,
+            "WHEAT": 39,
+            "FERTILIZER": 76
+          }
+        },
+        {
+          "cash": 16772,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 21,
+            "WHEAT": 13
+          },
+          "animals": {
+            "COW": 9,
+            "SHEEP": 4
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP"
+          ],
+          "quotes": {
+            "MILK": 224,
+            "WOOL": 151,
+            "EGG": 51,
+            "STRAWBERRY": 199,
+            "WHEAT": 39,
+            "FERTILIZER": 76
+          }
+        }
+      ],
+      "15": [
+        {
+          "cash": 25918,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 228,
+            "WOOL": 1,
+            "EGG": 51,
+            "STRAWBERRY": 224,
+            "WHEAT": 43,
+            "FERTILIZER": 51
+          }
+        },
+        {
+          "cash": 32092,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 38,
+            "WHEAT": 23
+          },
+          "animals": {
+            "COW": 9,
+            "SHEEP": 5
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 228,
+            "WOOL": 1,
+            "EGG": 51,
+            "STRAWBERRY": 224,
+            "WHEAT": 43,
+            "FERTILIZER": 51
+          }
+        }
+      ],
+      "20": [
+        {
+          "cash": 60708,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 233,
+            "WOOL": 1,
+            "EGG": 51,
+            "STRAWBERRY": 187,
+            "WHEAT": 44,
+            "FERTILIZER": 35
+          }
+        },
+        {
+          "cash": 66389,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 38,
+            "WHEAT": 23
+          },
+          "animals": {
+            "COW": 9,
+            "SHEEP": 5
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 233,
+            "WOOL": 1,
+            "EGG": 51,
+            "STRAWBERRY": 187,
+            "WHEAT": 44,
+            "FERTILIZER": 35
+          }
+        }
+      ],
+      "23": [
+        {
+          "cash": 78141,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 38
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE"
+          ],
+          "quotes": {
+            "MILK": 239,
+            "WOOL": 31,
+            "EGG": 51,
+            "STRAWBERRY": 150,
+            "WHEAT": 44,
+            "FERTILIZER": 20
+          }
+        },
+        {
+          "cash": 89635,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 26,
+            "WHEAT": 35
+          },
+          "animals": {
+            "COW": 9,
+            "SHEEP": 5
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE"
+          ],
+          "quotes": {
+            "MILK": 239,
+            "WOOL": 31,
+            "EGG": 51,
+            "STRAWBERRY": 150,
+            "WHEAT": 44,
+            "FERTILIZER": 20
+          }
+        }
+      ],
+      "27": [
+        {
+          "cash": 95475,
+          "hands": 11,
+          "crops": {
+            "CARROT": 27,
+            "STRAWBERRY": 4,
+            "WHEAT": 17
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 246,
+            "WOOL": 24,
+            "EGG": 53,
+            "STRAWBERRY": 118,
+            "WHEAT": 42,
+            "FERTILIZER": 5
+          }
+        },
+        {
+          "cash": 116508,
+          "hands": 11,
+          "crops": {
+            "CARROT": 4,
+            "STRAWBERRY": 15,
+            "WHEAT": 40
+          },
+          "animals": {
+            "COW": 9,
+            "SHEEP": 5
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 246,
+            "WOOL": 24,
+            "EGG": 53,
+            "STRAWBERRY": 118,
+            "WHEAT": 42,
+            "FERTILIZER": 5
+          }
+        }
+      ],
+      "29": [
+        {
+          "cash": 111185,
+          "hands": 11,
+          "crops": {},
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 247,
+            "WOOL": 1,
+            "EGG": 54,
+            "STRAWBERRY": 154,
+            "WHEAT": 36,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "cash": 133273,
+          "hands": 11,
+          "crops": {},
+          "animals": {
+            "COW": 9,
+            "SHEEP": 5
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 247,
+            "WOOL": 1,
+            "EGG": 54,
+            "STRAWBERRY": 154,
+            "WHEAT": 36,
+            "FERTILIZER": 1
+          }
+        }
+      ]
+    },
+    "guard": {
+      "base_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          16
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          11
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "wrapped_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "logged_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "shed_units": 4,
+      "carried_units": 91,
+      "base_wheat_fertilizer_buys": 27,
+      "projection_with_harvest_allowance": 128,
+      "fired": true,
+      "logged_action_matches_recomputed_v92": true,
+      "base_call_matches_logged_next_frame": false
+    },
+    "loader_reproduction": {
+      "matched_actions": 719,
+      "checked_actions": 719,
+      "mismatch_steps": [],
+      "missing_step_observations_reconstructed": 0,
+      "step_reconstruction": "step = day * turnsPerDay + hour"
+    },
+    "animal_purchases_rajusah": [
+      {
+        "step": 1,
+        "day": 0,
+        "hour": 1,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 65,
+        "day": 2,
+        "hour": 17,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 88,
+        "day": 3,
+        "hour": 16,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 150,
+        "day": 6,
+        "hour": 6,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 173,
+        "day": 7,
+        "hour": 5,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 178,
+        "day": 7,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 196,
+        "day": 8,
+        "hour": 4,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 216,
+        "day": 9,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 250,
+        "day": 10,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 251,
+        "day": 10,
+        "hour": 11,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 264,
+        "day": 11,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    ],
+    "settlement": {
+      "accepted_sales_cash_raj_opponent": [
+        137840.0,
+        160165.0
+      ],
+      "accepted_sales_by_item_raj": {
+        "CARROT": 4634.0,
+        "FERTILIZER": 14406.0,
+        "MELON": 14275.0,
+        "MILK": 38237.0,
+        "STRAWBERRY": 42505.0,
+        "WHEAT": 16410.0,
+        "WOOL": 7373.0
+      },
+      "accepted_sales_by_item_opponent": {
+        "CARROT": 691.0,
+        "FERTILIZER": 14556.0,
+        "MELON": 14242.0,
+        "MILK": 63688.0,
+        "STRAWBERRY": 45412.0,
+        "WHEAT": 14917.0,
+        "WOOL": 6659.0
+      },
+      "product_buys_raj": {
+        "FERTILIZER": 1117.0,
+        "WHEAT": 5643.0
+      },
+      "animal_buys_raj": {
+        "COW": 2400.0,
+        "SHEEP": 5500.0
+      },
+      "cash_mismatches_by_seat": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "file": "episode-114170594-replay.json",
+    "episode_id": 114170594,
+    "cohort": "original_10",
+    "seed": 1897397530,
+    "rajusah_seat": 0,
+    "opponent": "Azizii Gill",
+    "rajusah_score": 108933.0,
+    "opponent_score": 59589.0,
+    "margin": 49344,
+    "outcome": "W",
+    "phase_cash_raj_opponent": {
+      "5": [
+        890,
+        1
+      ],
+      "10": [
+        18745,
+        5451
+      ],
+      "15": [
+        36192,
+        19454
+      ],
+      "20": [
+        61736,
+        37945
+      ],
+      "23": [
+        73722,
+        40848
+      ],
+      "25": [
+        84614,
+        44595
+      ],
+      "27": [
+        91735,
+        53100
+      ],
+      "29": [
+        108933,
+        59589
+      ]
+    },
+    "snapshots": {
+      "10": [
+        {
+          "cash": 18745,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 12
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 10
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "YARN_STORE"
+          ],
+          "quotes": {
+            "MILK": 210,
+            "WOOL": 174,
+            "EGG": 51,
+            "STRAWBERRY": 148,
+            "WHEAT": 36,
+            "FERTILIZER": 76
+          }
+        },
+        {
+          "cash": 5451,
+          "hands": 14,
+          "crops": {
+            "MELON": 12,
+            "STRAWBERRY": 31,
+            "WHEAT": 13
+          },
+          "animals": {
+            "COW": 8,
+            "SHEEP": 4
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "YARN_STORE"
+          ],
+          "quotes": {
+            "MILK": 210,
+            "WOOL": 174,
+            "EGG": 51,
+            "STRAWBERRY": 148,
+            "WHEAT": 36,
+            "FERTILIZER": 76
+          }
+        }
+      ],
+      "15": [
+        {
+          "cash": 36192,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "YARN_STORE",
+            "YARN_STORE",
+            "YARN_STORE"
+          ],
+          "quotes": {
+            "MILK": 154,
+            "WOOL": 231,
+            "EGG": 51,
+            "STRAWBERRY": 147,
+            "WHEAT": 39,
+            "FERTILIZER": 53
+          }
+        },
+        {
+          "cash": 19454,
+          "hands": 9,
+          "crops": {
+            "MELON": 12,
+            "STRAWBERRY": 36,
+            "WHEAT": 13
+          },
+          "animals": {
+            "COW": 8,
+            "SHEEP": 4
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "YARN_STORE",
+            "YARN_STORE",
+            "YARN_STORE"
+          ],
+          "quotes": {
+            "MILK": 154,
+            "WOOL": 231,
+            "EGG": 51,
+            "STRAWBERRY": 147,
+            "WHEAT": 39,
+            "FERTILIZER": 53
+          }
+        }
+      ],
+      "20": [
+        {
+          "cash": 61736,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "YARN_STORE",
+            "YARN_STORE",
+            "YARN_STORE",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 242,
+            "EGG": 52,
+            "STRAWBERRY": 1,
+            "WHEAT": 39,
+            "FERTILIZER": 40
+          }
+        },
+        {
+          "cash": 37945,
+          "hands": 14,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 26
+          },
+          "animals": {
+            "COW": 8,
+            "SHEEP": 4
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "YARN_STORE",
+            "YARN_STORE",
+            "YARN_STORE",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 242,
+            "EGG": 52,
+            "STRAWBERRY": 1,
+            "WHEAT": 39,
+            "FERTILIZER": 40
+          }
+        }
+      ],
+      "23": [
+        {
+          "cash": 73722,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 38
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "YARN_STORE",
+            "YARN_STORE",
+            "YARN_STORE",
+            "BAKERY",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 11,
+            "WOOL": 245,
+            "EGG": 54,
+            "STRAWBERRY": 3,
+            "WHEAT": 39,
+            "FERTILIZER": 28
+          }
+        },
+        {
+          "cash": 40848,
+          "hands": 14,
+          "crops": {
+            "STRAWBERRY": 18,
+            "WHEAT": 44
+          },
+          "animals": {
+            "COW": 8,
+            "SHEEP": 4
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "YARN_STORE",
+            "YARN_STORE",
+            "YARN_STORE",
+            "BAKERY",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 11,
+            "WOOL": 245,
+            "EGG": 54,
+            "STRAWBERRY": 3,
+            "WHEAT": 39,
+            "FERTILIZER": 28
+          }
+        }
+      ],
+      "27": [
+        {
+          "cash": 91735,
+          "hands": 11,
+          "crops": {
+            "CARROT": 27,
+            "STRAWBERRY": 4,
+            "WHEAT": 17
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "YARN_STORE",
+            "YARN_STORE",
+            "YARN_STORE",
+            "BAKERY",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 247,
+            "EGG": 55,
+            "STRAWBERRY": 7,
+            "WHEAT": 33,
+            "FERTILIZER": 12
+          }
+        },
+        {
+          "cash": 53100,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 5,
+            "WHEAT": 39
+          },
+          "animals": {
+            "COW": 8,
+            "SHEEP": 4
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "YARN_STORE",
+            "YARN_STORE",
+            "YARN_STORE",
+            "BAKERY",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 247,
+            "EGG": 55,
+            "STRAWBERRY": 7,
+            "WHEAT": 33,
+            "FERTILIZER": 12
+          }
+        }
+      ],
+      "29": [
+        {
+          "cash": 108933,
+          "hands": 11,
+          "crops": {},
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "YARN_STORE",
+            "YARN_STORE",
+            "YARN_STORE",
+            "BAKERY",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 248,
+            "EGG": 56,
+            "STRAWBERRY": 39,
+            "WHEAT": 21,
+            "FERTILIZER": 2
+          }
+        },
+        {
+          "cash": 59589,
+          "hands": 10,
+          "crops": {},
+          "animals": {
+            "COW": 8,
+            "SHEEP": 4
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "YARN_STORE",
+            "YARN_STORE",
+            "YARN_STORE",
+            "BAKERY",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 248,
+            "EGG": 56,
+            "STRAWBERRY": 39,
+            "WHEAT": 21,
+            "FERTILIZER": 2
+          }
+        }
+      ]
+    },
+    "guard": {
+      "base_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          16
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          11
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "wrapped_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "logged_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "shed_units": 4,
+      "carried_units": 91,
+      "base_wheat_fertilizer_buys": 27,
+      "projection_with_harvest_allowance": 128,
+      "fired": true,
+      "logged_action_matches_recomputed_v92": true,
+      "base_call_matches_logged_next_frame": false
+    },
+    "loader_reproduction": {
+      "matched_actions": 719,
+      "checked_actions": 719,
+      "mismatch_steps": [],
+      "missing_step_observations_reconstructed": 0,
+      "step_reconstruction": "step = day * turnsPerDay + hour"
+    },
+    "animal_purchases_rajusah": [
+      {
+        "step": 1,
+        "day": 0,
+        "hour": 1,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 65,
+        "day": 2,
+        "hour": 17,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 88,
+        "day": 3,
+        "hour": 16,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 150,
+        "day": 6,
+        "hour": 6,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 173,
+        "day": 7,
+        "hour": 5,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 178,
+        "day": 7,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 196,
+        "day": 8,
+        "hour": 4,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 216,
+        "day": 9,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 250,
+        "day": 10,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 251,
+        "day": 10,
+        "hour": 11,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 264,
+        "day": 11,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    ],
+    "settlement": {
+      "accepted_sales_cash_raj_opponent": [
+        135457.0,
+        84956.0
+      ],
+      "accepted_sales_by_item_raj": {
+        "CARROT": 4805.0,
+        "FERTILIZER": 15454.0,
+        "MELON": 16839.0,
+        "MILK": 15385.0,
+        "STRAWBERRY": 3758.0,
+        "WHEAT": 13166.0,
+        "WOOL": 66050.0
+      },
+      "accepted_sales_by_item_opponent": {
+        "FERTILIZER": 10972.0,
+        "MELON": 14294.0,
+        "MILK": 13491.0,
+        "STRAWBERRY": 3508.0,
+        "WHEAT": 13307.0,
+        "WOOL": 29384.0
+      },
+      "product_buys_raj": {
+        "FERTILIZER": 1387.0,
+        "WHEAT": 5242.0
+      },
+      "animal_buys_raj": {
+        "COW": 2400.0,
+        "SHEEP": 5500.0
+      },
+      "cash_mismatches_by_seat": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "file": "episode-114172061-replay.json",
+    "episode_id": 114172061,
+    "cohort": "original_10",
+    "seed": 273155470,
+    "rajusah_seat": 0,
+    "opponent": "Сергей Мизин",
+    "rajusah_score": 74508.0,
+    "opponent_score": 59274.0,
+    "margin": 15234,
+    "outcome": "W",
+    "phase_cash_raj_opponent": {
+      "5": [
+        884,
+        149
+      ],
+      "10": [
+        18159,
+        5483
+      ],
+      "15": [
+        24617,
+        21190
+      ],
+      "20": [
+        45614,
+        35315
+      ],
+      "23": [
+        53778,
+        39822
+      ],
+      "25": [
+        57601,
+        41948
+      ],
+      "27": [
+        62934,
+        46671
+      ],
+      "29": [
+        74508,
+        59274
+      ]
+    },
+    "snapshots": {
+      "10": [
+        {
+          "cash": 18159,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 12
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 10
+          },
+          "shops": [
+            "BAKERY",
+            "PIZZA_SHOP",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 129,
+            "WOOL": 179,
+            "EGG": 54,
+            "STRAWBERRY": 148,
+            "WHEAT": 39,
+            "FERTILIZER": 74
+          }
+        },
+        {
+          "cash": 5483,
+          "hands": 7,
+          "crops": {
+            "MELON": 12,
+            "STRAWBERRY": 6,
+            "TOMATO": 4
+          },
+          "animals": {
+            "COW": 4,
+            "GOOSE": 10,
+            "SHEEP": 2
+          },
+          "shops": [
+            "BAKERY",
+            "PIZZA_SHOP",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 129,
+            "WOOL": 179,
+            "EGG": 54,
+            "STRAWBERRY": 148,
+            "WHEAT": 39,
+            "FERTILIZER": 74
+          }
+        }
+      ],
+      "15": [
+        {
+          "cash": 24617,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "BAKERY",
+            "PIZZA_SHOP",
+            "BAKERY",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 76,
+            "WOOL": 1,
+            "EGG": 55,
+            "STRAWBERRY": 174,
+            "WHEAT": 46,
+            "FERTILIZER": 48
+          }
+        },
+        {
+          "cash": 21190,
+          "hands": 8,
+          "crops": {
+            "MELON": 6,
+            "STRAWBERRY": 19,
+            "TOMATO": 9
+          },
+          "animals": {
+            "COW": 4,
+            "GOOSE": 10,
+            "SHEEP": 2
+          },
+          "shops": [
+            "BAKERY",
+            "PIZZA_SHOP",
+            "BAKERY",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 76,
+            "WOOL": 1,
+            "EGG": 55,
+            "STRAWBERRY": 174,
+            "WHEAT": 46,
+            "FERTILIZER": 48
+          }
+        }
+      ],
+      "20": [
+        {
+          "cash": 45614,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "BAKERY",
+            "PIZZA_SHOP",
+            "BAKERY",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 11,
+            "WOOL": 5,
+            "EGG": 55,
+            "STRAWBERRY": 141,
+            "WHEAT": 50,
+            "FERTILIZER": 25
+          }
+        },
+        {
+          "cash": 35315,
+          "hands": 8,
+          "crops": {
+            "STRAWBERRY": 17,
+            "TOMATO": 17
+          },
+          "animals": {
+            "COW": 4,
+            "GOOSE": 10,
+            "SHEEP": 2
+          },
+          "shops": [
+            "BAKERY",
+            "PIZZA_SHOP",
+            "BAKERY",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 11,
+            "WOOL": 5,
+            "EGG": 55,
+            "STRAWBERRY": 141,
+            "WHEAT": 50,
+            "FERTILIZER": 25
+          }
+        }
+      ],
+      "23": [
+        {
+          "cash": 53778,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 38
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "BAKERY",
+            "PIZZA_SHOP",
+            "BAKERY",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "PET_CAFE"
+          ],
+          "quotes": {
+            "MILK": 7,
+            "WOOL": 5,
+            "EGG": 55,
+            "STRAWBERRY": 87,
+            "WHEAT": 52,
+            "FERTILIZER": 10
+          }
+        },
+        {
+          "cash": 39822,
+          "hands": 9,
+          "crops": {
+            "STRAWBERRY": 14,
+            "TOMATO": 13,
+            "WHEAT": 4
+          },
+          "animals": {
+            "COW": 4,
+            "GOOSE": 10,
+            "SHEEP": 2
+          },
+          "shops": [
+            "BAKERY",
+            "PIZZA_SHOP",
+            "BAKERY",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "PET_CAFE"
+          ],
+          "quotes": {
+            "MILK": 7,
+            "WOOL": 5,
+            "EGG": 55,
+            "STRAWBERRY": 87,
+            "WHEAT": 52,
+            "FERTILIZER": 10
+          }
+        }
+      ],
+      "27": [
+        {
+          "cash": 62934,
+          "hands": 11,
+          "crops": {
+            "CARROT": 27,
+            "STRAWBERRY": 4,
+            "WHEAT": 17
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "BAKERY",
+            "PIZZA_SHOP",
+            "BAKERY",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "PET_CAFE",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 1,
+            "EGG": 56,
+            "STRAWBERRY": 107,
+            "WHEAT": 54,
+            "FERTILIZER": 2
+          }
+        },
+        {
+          "cash": 46671,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 12,
+            "TOMATO": 12,
+            "WHEAT": 10
+          },
+          "animals": {
+            "COW": 4,
+            "GOOSE": 10,
+            "SHEEP": 2
+          },
+          "shops": [
+            "BAKERY",
+            "PIZZA_SHOP",
+            "BAKERY",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "PET_CAFE",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 1,
+            "EGG": 56,
+            "STRAWBERRY": 107,
+            "WHEAT": 54,
+            "FERTILIZER": 2
+          }
+        }
+      ],
+      "29": [
+        {
+          "cash": 74508,
+          "hands": 11,
+          "crops": {},
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "BAKERY",
+            "PIZZA_SHOP",
+            "BAKERY",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "PET_CAFE",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 1,
+            "EGG": 55,
+            "STRAWBERRY": 87,
+            "WHEAT": 53,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "cash": 59274,
+          "hands": 10,
+          "crops": {
+            "STRAWBERRY": 9,
+            "TOMATO": 8
+          },
+          "animals": {
+            "COW": 4,
+            "GOOSE": 10,
+            "SHEEP": 2
+          },
+          "shops": [
+            "BAKERY",
+            "PIZZA_SHOP",
+            "BAKERY",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "FARMERS_MARKET",
+            "PET_CAFE",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 1,
+            "EGG": 55,
+            "STRAWBERRY": 87,
+            "WHEAT": 53,
+            "FERTILIZER": 1
+          }
+        }
+      ]
+    },
+    "guard": {
+      "base_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          16
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          11
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "wrapped_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "logged_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "shed_units": 4,
+      "carried_units": 91,
+      "base_wheat_fertilizer_buys": 27,
+      "projection_with_harvest_allowance": 128,
+      "fired": true,
+      "logged_action_matches_recomputed_v92": true,
+      "base_call_matches_logged_next_frame": false
+    },
+    "loader_reproduction": {
+      "matched_actions": 719,
+      "checked_actions": 719,
+      "mismatch_steps": [],
+      "missing_step_observations_reconstructed": 0,
+      "step_reconstruction": "step = day * turnsPerDay + hour"
+    },
+    "animal_purchases_rajusah": [
+      {
+        "step": 1,
+        "day": 0,
+        "hour": 1,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 65,
+        "day": 2,
+        "hour": 17,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 88,
+        "day": 3,
+        "hour": 16,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 150,
+        "day": 6,
+        "hour": 6,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 173,
+        "day": 7,
+        "hour": 5,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 178,
+        "day": 7,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 196,
+        "day": 8,
+        "hour": 4,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 216,
+        "day": 9,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 250,
+        "day": 10,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 251,
+        "day": 10,
+        "hour": 11,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 264,
+        "day": 11,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    ],
+    "settlement": {
+      "accepted_sales_cash_raj_opponent": [
+        101104.0,
+        85440.0
+      ],
+      "accepted_sales_by_item_raj": {
+        "CARROT": 4437.0,
+        "FERTILIZER": 12727.0,
+        "MELON": 17056.0,
+        "MILK": 9586.0,
+        "STRAWBERRY": 30005.0,
+        "WHEAT": 19988.0,
+        "WOOL": 7305.0
+      },
+      "accepted_sales_by_item_opponent": {
+        "EGG": 20464.0,
+        "FERTILIZER": 13523.0,
+        "MELON": 13427.0,
+        "MILK": 9294.0,
+        "STRAWBERRY": 10923.0,
+        "TOMATO": 10815.0,
+        "WHEAT": 3310.0,
+        "WOOL": 3684.0
+      },
+      "product_buys_raj": {
+        "FERTILIZER": 695.0,
+        "WHEAT": 6006.0
+      },
+      "animal_buys_raj": {
+        "COW": 2400.0,
+        "SHEEP": 5500.0
+      },
+      "cash_mismatches_by_seat": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "file": "episode-114173483-replay.json",
+    "episode_id": 114173483,
+    "cohort": "out_of_sample",
+    "seed": 1278772047,
+    "rajusah_seat": 0,
+    "opponent": "straw_Yu",
+    "rajusah_score": 69972.0,
+    "opponent_score": 80842.0,
+    "margin": -10870,
+    "outcome": "L",
+    "phase_cash_raj_opponent": {
+      "5": [
+        878,
+        307
+      ],
+      "10": [
+        17126,
+        16558
+      ],
+      "15": [
+        25338,
+        30313
+      ],
+      "20": [
+        46212,
+        48912
+      ],
+      "23": [
+        50573,
+        56914
+      ],
+      "25": [
+        53479,
+        61968
+      ],
+      "27": [
+        58560,
+        68680
+      ],
+      "29": [
+        69972,
+        80842
+      ]
+    },
+    "snapshots": {
+      "10": [
+        {
+          "cash": 17126,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 12
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 10
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE"
+          ],
+          "quotes": {
+            "MILK": 216,
+            "WOOL": 151,
+            "EGG": 51,
+            "STRAWBERRY": 148,
+            "WHEAT": 39,
+            "FERTILIZER": 76
+          }
+        },
+        {
+          "cash": 16558,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 19,
+            "WHEAT": 13
+          },
+          "animals": {
+            "COW": 9,
+            "SHEEP": 4
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE"
+          ],
+          "quotes": {
+            "MILK": 216,
+            "WOOL": 151,
+            "EGG": 51,
+            "STRAWBERRY": 148,
+            "WHEAT": 39,
+            "FERTILIZER": 76
+          }
+        }
+      ],
+      "15": [
+        {
+          "cash": 25338,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 199,
+            "WOOL": 1,
+            "EGG": 51,
+            "STRAWBERRY": 172,
+            "WHEAT": 43,
+            "FERTILIZER": 51
+          }
+        },
+        {
+          "cash": 30313,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 36,
+            "WHEAT": 23
+          },
+          "animals": {
+            "COW": 9,
+            "SHEEP": 5
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 199,
+            "WOOL": 1,
+            "EGG": 51,
+            "STRAWBERRY": 172,
+            "WHEAT": 43,
+            "FERTILIZER": 51
+          }
+        }
+      ],
+      "20": [
+        {
+          "cash": 46212,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP"
+          ],
+          "quotes": {
+            "MILK": 156,
+            "WOOL": 1,
+            "EGG": 53,
+            "STRAWBERRY": 1,
+            "WHEAT": 44,
+            "FERTILIZER": 34
+          }
+        },
+        {
+          "cash": 48912,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 36,
+            "WHEAT": 23
+          },
+          "animals": {
+            "COW": 9,
+            "SHEEP": 5
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP"
+          ],
+          "quotes": {
+            "MILK": 156,
+            "WOOL": 1,
+            "EGG": 53,
+            "STRAWBERRY": 1,
+            "WHEAT": 44,
+            "FERTILIZER": 34
+          }
+        }
+      ],
+      "23": [
+        {
+          "cash": 50573,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 38
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 143,
+            "WOOL": 1,
+            "EGG": 56,
+            "STRAWBERRY": 7,
+            "WHEAT": 45,
+            "FERTILIZER": 20
+          }
+        },
+        {
+          "cash": 56914,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 26,
+            "WHEAT": 35
+          },
+          "animals": {
+            "COW": 9,
+            "SHEEP": 5
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 143,
+            "WOOL": 1,
+            "EGG": 56,
+            "STRAWBERRY": 7,
+            "WHEAT": 45,
+            "FERTILIZER": 20
+          }
+        }
+      ],
+      "27": [
+        {
+          "cash": 58560,
+          "hands": 11,
+          "crops": {
+            "CARROT": 27,
+            "STRAWBERRY": 4,
+            "WHEAT": 17
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "BAKERY",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 116,
+            "WOOL": 1,
+            "EGG": 60,
+            "STRAWBERRY": 64,
+            "WHEAT": 44,
+            "FERTILIZER": 4
+          }
+        },
+        {
+          "cash": 68680,
+          "hands": 11,
+          "crops": {
+            "CARROT": 38,
+            "STRAWBERRY": 15,
+            "WHEAT": 6
+          },
+          "animals": {
+            "COW": 9,
+            "SHEEP": 5
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "BAKERY",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 116,
+            "WOOL": 1,
+            "EGG": 60,
+            "STRAWBERRY": 64,
+            "WHEAT": 44,
+            "FERTILIZER": 4
+          }
+        }
+      ],
+      "29": [
+        {
+          "cash": 69972,
+          "hands": 11,
+          "crops": {},
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "BAKERY",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 105,
+            "WOOL": 1,
+            "EGG": 63,
+            "STRAWBERRY": 80,
+            "WHEAT": 42,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "cash": 80842,
+          "hands": 11,
+          "crops": {},
+          "animals": {
+            "COW": 9,
+            "SHEEP": 5
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "PET_CAFE",
+            "FARMERS_MARKET",
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "BAKERY",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 105,
+            "WOOL": 1,
+            "EGG": 63,
+            "STRAWBERRY": 80,
+            "WHEAT": 42,
+            "FERTILIZER": 1
+          }
+        }
+      ]
+    },
+    "guard": {
+      "base_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          16
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          11
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "wrapped_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "logged_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "shed_units": 4,
+      "carried_units": 91,
+      "base_wheat_fertilizer_buys": 27,
+      "projection_with_harvest_allowance": 128,
+      "fired": true,
+      "logged_action_matches_recomputed_v92": true,
+      "base_call_matches_logged_next_frame": false
+    },
+    "loader_reproduction": {
+      "matched_actions": 719,
+      "checked_actions": 719,
+      "mismatch_steps": [],
+      "missing_step_observations_reconstructed": 0,
+      "step_reconstruction": "step = day * turnsPerDay + hour"
+    },
+    "animal_purchases_rajusah": [
+      {
+        "step": 1,
+        "day": 0,
+        "hour": 1,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 65,
+        "day": 2,
+        "hour": 17,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 88,
+        "day": 3,
+        "hour": 16,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 150,
+        "day": 6,
+        "hour": 6,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 173,
+        "day": 7,
+        "hour": 5,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 178,
+        "day": 7,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 196,
+        "day": 8,
+        "hour": 4,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 216,
+        "day": 9,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 250,
+        "day": 10,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 251,
+        "day": 10,
+        "hour": 11,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 264,
+        "day": 11,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    ],
+    "settlement": {
+      "accepted_sales_cash_raj_opponent": [
+        96604.0,
+        107855.0
+      ],
+      "accepted_sales_by_item_raj": {
+        "CARROT": 4752.0,
+        "FERTILIZER": 14260.0,
+        "MELON": 14275.0,
+        "MILK": 27525.0,
+        "STRAWBERRY": 12814.0,
+        "WHEAT": 16849.0,
+        "WOOL": 6129.0
+      },
+      "accepted_sales_by_item_opponent": {
+        "CARROT": 5681.0,
+        "FERTILIZER": 14589.0,
+        "MELON": 14242.0,
+        "MILK": 43318.0,
+        "STRAWBERRY": 11919.0,
+        "WHEAT": 13299.0,
+        "WOOL": 4807.0
+      },
+      "product_buys_raj": {
+        "FERTILIZER": 1075.0,
+        "WHEAT": 5662.0
+      },
+      "animal_buys_raj": {
+        "COW": 2400.0,
+        "SHEEP": 5500.0
+      },
+      "cash_mismatches_by_seat": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "file": "episode-114175006-replay.json",
+    "episode_id": 114175006,
+    "cohort": "out_of_sample",
+    "seed": 1450683461,
+    "rajusah_seat": 1,
+    "opponent": "Efrain Garay",
+    "rajusah_score": 96245.0,
+    "opponent_score": 66369.0,
+    "margin": 29876,
+    "outcome": "W",
+    "phase_cash_raj_opponent": {
+      "5": [
+        896,
+        292
+      ],
+      "10": [
+        19162,
+        13578
+      ],
+      "15": [
+        35889,
+        16461
+      ],
+      "20": [
+        68883,
+        40286
+      ],
+      "23": [
+        74452,
+        46677
+      ],
+      "25": [
+        78220,
+        49264
+      ],
+      "27": [
+        84519,
+        54256
+      ],
+      "29": [
+        96245,
+        66369
+      ]
+    },
+    "snapshots": {
+      "10": [
+        {
+          "cash": 19162,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 12
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 10
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 203,
+            "WOOL": 230,
+            "EGG": 51,
+            "STRAWBERRY": 160,
+            "WHEAT": 37,
+            "FERTILIZER": 78
+          }
+        },
+        {
+          "cash": 13578,
+          "hands": 11,
+          "crops": {
+            "MELON": 5,
+            "STRAWBERRY": 11,
+            "WHEAT": 8
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 6
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 203,
+            "WOOL": 230,
+            "EGG": 51,
+            "STRAWBERRY": 160,
+            "WHEAT": 37,
+            "FERTILIZER": 78
+          }
+        }
+      ],
+      "15": [
+        {
+          "cash": 35889,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT",
+            "BAKERY",
+            "PIZZA_SHOP"
+          ],
+          "quotes": {
+            "MILK": 158,
+            "WOOL": 226,
+            "EGG": 55,
+            "STRAWBERRY": 184,
+            "WHEAT": 43,
+            "FERTILIZER": 51
+          }
+        },
+        {
+          "cash": 16461,
+          "hands": 12,
+          "crops": {
+            "MELON": 5,
+            "STRAWBERRY": 34,
+            "WHEAT": 17
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 10
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT",
+            "BAKERY",
+            "PIZZA_SHOP"
+          ],
+          "quotes": {
+            "MILK": 158,
+            "WOOL": 226,
+            "EGG": 55,
+            "STRAWBERRY": 184,
+            "WHEAT": 43,
+            "FERTILIZER": 51
+          }
+        }
+      ],
+      "20": [
+        {
+          "cash": 68883,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT",
+            "BAKERY",
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP"
+          ],
+          "quotes": {
+            "MILK": 124,
+            "WOOL": 77,
+            "EGG": 59,
+            "STRAWBERRY": 47,
+            "WHEAT": 46,
+            "FERTILIZER": 27
+          }
+        },
+        {
+          "cash": 40286,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 34
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 12
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT",
+            "BAKERY",
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP"
+          ],
+          "quotes": {
+            "MILK": 124,
+            "WOOL": 77,
+            "EGG": 59,
+            "STRAWBERRY": 47,
+            "WHEAT": 46,
+            "FERTILIZER": 27
+          }
+        }
+      ],
+      "23": [
+        {
+          "cash": 74452,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 38
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT",
+            "BAKERY",
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 191,
+            "WOOL": 24,
+            "EGG": 61,
+            "STRAWBERRY": 7,
+            "WHEAT": 46,
+            "FERTILIZER": 14
+          }
+        },
+        {
+          "cash": 46677,
+          "hands": 12,
+          "crops": {
+            "CARROT": 2,
+            "STRAWBERRY": 27,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 12
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT",
+            "BAKERY",
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 191,
+            "WOOL": 24,
+            "EGG": 61,
+            "STRAWBERRY": 7,
+            "WHEAT": 46,
+            "FERTILIZER": 14
+          }
+        }
+      ],
+      "27": [
+        {
+          "cash": 84519,
+          "hands": 11,
+          "crops": {
+            "CARROT": 27,
+            "STRAWBERRY": 4,
+            "WHEAT": 17
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT",
+            "BAKERY",
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 222,
+            "WOOL": 55,
+            "EGG": 66,
+            "STRAWBERRY": 20,
+            "WHEAT": 47,
+            "FERTILIZER": 2
+          }
+        },
+        {
+          "cash": 54256,
+          "hands": 11,
+          "crops": {
+            "CARROT": 1,
+            "STRAWBERRY": 20,
+            "WHEAT": 38
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 12
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT",
+            "BAKERY",
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 222,
+            "WOOL": 55,
+            "EGG": 66,
+            "STRAWBERRY": 20,
+            "WHEAT": 47,
+            "FERTILIZER": 2
+          }
+        }
+      ],
+      "29": [
+        {
+          "cash": 96245,
+          "hands": 11,
+          "crops": {},
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT",
+            "BAKERY",
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 224,
+            "WOOL": 1,
+            "EGG": 68,
+            "STRAWBERRY": 57,
+            "WHEAT": 43,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "cash": 66369,
+          "hands": 8,
+          "crops": {},
+          "animals": {
+            "COW": 6,
+            "SHEEP": 9
+          },
+          "shops": [
+            "PIZZA_SHOP",
+            "YARN_STORE",
+            "BRUNCH_SPOT",
+            "BAKERY",
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 224,
+            "WOOL": 1,
+            "EGG": 68,
+            "STRAWBERRY": 57,
+            "WHEAT": 43,
+            "FERTILIZER": 1
+          }
+        }
+      ]
+    },
+    "guard": {
+      "base_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          16
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          11
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "wrapped_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "logged_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "shed_units": 4,
+      "carried_units": 91,
+      "base_wheat_fertilizer_buys": 27,
+      "projection_with_harvest_allowance": 128,
+      "fired": true,
+      "logged_action_matches_recomputed_v92": true,
+      "base_call_matches_logged_next_frame": false
+    },
+    "loader_reproduction": {
+      "matched_actions": 719,
+      "checked_actions": 719,
+      "mismatch_steps": [],
+      "missing_step_observations_reconstructed": 719,
+      "step_reconstruction": "step = day * turnsPerDay + hour"
+    },
+    "animal_purchases_rajusah": [
+      {
+        "step": 1,
+        "day": 0,
+        "hour": 1,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 65,
+        "day": 2,
+        "hour": 17,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 88,
+        "day": 3,
+        "hour": 16,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 150,
+        "day": 6,
+        "hour": 6,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 173,
+        "day": 7,
+        "hour": 5,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 178,
+        "day": 7,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 196,
+        "day": 8,
+        "hour": 4,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 216,
+        "day": 9,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 250,
+        "day": 10,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 251,
+        "day": 10,
+        "hour": 11,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 264,
+        "day": 11,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    ],
+    "settlement": {
+      "accepted_sales_cash_raj_opponent": [
+        122652.0,
+        134211.0
+      ],
+      "accepted_sales_by_item_raj": {
+        "CARROT": 2601.0,
+        "FERTILIZER": 13685.0,
+        "MELON": 16064.0,
+        "MILK": 28387.0,
+        "STRAWBERRY": 15521.0,
+        "WHEAT": 17664.0,
+        "WOOL": 28730.0
+      },
+      "accepted_sales_by_item_opponent": {
+        "CARROT": 74.0,
+        "FERTILIZER": 12298.0,
+        "MELON": 13919.0,
+        "MILK": 33076.0,
+        "STRAWBERRY": 7348.0,
+        "WHEAT": 45656.0,
+        "WOOL": 21840.0
+      },
+      "product_buys_raj": {
+        "FERTILIZER": 862.0,
+        "WHEAT": 5650.0
+      },
+      "animal_buys_raj": {
+        "COW": 2400.0,
+        "SHEEP": 5500.0
+      },
+      "cash_mismatches_by_seat": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "file": "episode-114176499-replay.json",
+    "episode_id": 114176499,
+    "cohort": "out_of_sample",
+    "seed": 571027910,
+    "rajusah_seat": 1,
+    "opponent": "Harini Panigrahi",
+    "rajusah_score": 125089.0,
+    "opponent_score": 126593.0,
+    "margin": -1504,
+    "outcome": "L",
+    "phase_cash_raj_opponent": {
+      "5": [
+        896,
+        52
+      ],
+      "10": [
+        18493,
+        12911
+      ],
+      "15": [
+        27487,
+        20117
+      ],
+      "20": [
+        65208,
+        46014
+      ],
+      "23": [
+        87005,
+        75174
+      ],
+      "25": [
+        98327,
+        94056
+      ],
+      "27": [
+        109579,
+        108312
+      ],
+      "29": [
+        125089,
+        126593
+      ]
+    },
+    "snapshots": {
+      "10": [
+        {
+          "cash": 18493,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 12
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 10
+          },
+          "shops": [
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 197,
+            "WOOL": 151,
+            "EGG": 54,
+            "STRAWBERRY": 204,
+            "WHEAT": 37,
+            "FERTILIZER": 78
+          }
+        },
+        {
+          "cash": 12911,
+          "hands": 11,
+          "crops": {
+            "MELON": 8,
+            "STRAWBERRY": 11,
+            "WHEAT": 9
+          },
+          "animals": {
+            "COW": 8,
+            "SHEEP": 4
+          },
+          "shops": [
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP"
+          ],
+          "quotes": {
+            "MILK": 197,
+            "WOOL": 151,
+            "EGG": 54,
+            "STRAWBERRY": 204,
+            "WHEAT": 37,
+            "FERTILIZER": 78
+          }
+        }
+      ],
+      "15": [
+        {
+          "cash": 27487,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 208,
+            "WOOL": 1,
+            "EGG": 56,
+            "STRAWBERRY": 245,
+            "WHEAT": 43,
+            "FERTILIZER": 53
+          }
+        },
+        {
+          "cash": 20117,
+          "hands": 12,
+          "crops": {
+            "MELON": 8,
+            "STRAWBERRY": 33,
+            "WHEAT": 16
+          },
+          "animals": {
+            "COW": 10,
+            "SHEEP": 4
+          },
+          "shops": [
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 208,
+            "WOOL": 1,
+            "EGG": 56,
+            "STRAWBERRY": 245,
+            "WHEAT": 43,
+            "FERTILIZER": 53
+          }
+        }
+      ],
+      "20": [
+        {
+          "cash": 65208,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 185,
+            "WOOL": 5,
+            "EGG": 60,
+            "STRAWBERRY": 253,
+            "WHEAT": 45,
+            "FERTILIZER": 32
+          }
+        },
+        {
+          "cash": 46014,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 24
+          },
+          "animals": {
+            "COW": 10,
+            "SHEEP": 4
+          },
+          "shops": [
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 185,
+            "WOOL": 5,
+            "EGG": 60,
+            "STRAWBERRY": 253,
+            "WHEAT": 45,
+            "FERTILIZER": 32
+          }
+        }
+      ],
+      "23": [
+        {
+          "cash": 87005,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 38
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "YARN_STORE"
+          ],
+          "quotes": {
+            "MILK": 185,
+            "WOOL": 37,
+            "EGG": 62,
+            "STRAWBERRY": 242,
+            "WHEAT": 46,
+            "FERTILIZER": 20
+          }
+        },
+        {
+          "cash": 75174,
+          "hands": 12,
+          "crops": {
+            "CARROT": 3,
+            "STRAWBERRY": 26,
+            "WHEAT": 24
+          },
+          "animals": {
+            "COW": 10,
+            "SHEEP": 4
+          },
+          "shops": [
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "YARN_STORE"
+          ],
+          "quotes": {
+            "MILK": 185,
+            "WOOL": 37,
+            "EGG": 62,
+            "STRAWBERRY": 242,
+            "WHEAT": 46,
+            "FERTILIZER": 20
+          }
+        }
+      ],
+      "27": [
+        {
+          "cash": 109579,
+          "hands": 11,
+          "crops": {
+            "CARROT": 27,
+            "STRAWBERRY": 4,
+            "WHEAT": 17
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "PET_CAFE"
+          ],
+          "quotes": {
+            "MILK": 156,
+            "WOOL": 31,
+            "EGG": 65,
+            "STRAWBERRY": 240,
+            "WHEAT": 46,
+            "FERTILIZER": 6
+          }
+        },
+        {
+          "cash": 108312,
+          "hands": 11,
+          "crops": {
+            "CARROT": 1,
+            "STRAWBERRY": 18,
+            "WHEAT": 36
+          },
+          "animals": {
+            "COW": 10,
+            "SHEEP": 4
+          },
+          "shops": [
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "PET_CAFE"
+          ],
+          "quotes": {
+            "MILK": 156,
+            "WOOL": 31,
+            "EGG": 65,
+            "STRAWBERRY": 240,
+            "WHEAT": 46,
+            "FERTILIZER": 6
+          }
+        }
+      ],
+      "29": [
+        {
+          "cash": 125089,
+          "hands": 11,
+          "crops": {},
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "PET_CAFE"
+          ],
+          "quotes": {
+            "MILK": 89,
+            "WOOL": 1,
+            "EGG": 67,
+            "STRAWBERRY": 247,
+            "WHEAT": 42,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "cash": 126593,
+          "hands": 8,
+          "crops": {
+            "WHEAT": 1
+          },
+          "animals": {
+            "COW": 10,
+            "SHEEP": 4
+          },
+          "shops": [
+            "BRUNCH_SPOT",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "PET_CAFE"
+          ],
+          "quotes": {
+            "MILK": 89,
+            "WOOL": 1,
+            "EGG": 67,
+            "STRAWBERRY": 247,
+            "WHEAT": 42,
+            "FERTILIZER": 1
+          }
+        }
+      ]
+    },
+    "guard": {
+      "base_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          16
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          11
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "wrapped_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "logged_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "shed_units": 4,
+      "carried_units": 91,
+      "base_wheat_fertilizer_buys": 27,
+      "projection_with_harvest_allowance": 128,
+      "fired": true,
+      "logged_action_matches_recomputed_v92": true,
+      "base_call_matches_logged_next_frame": false
+    },
+    "loader_reproduction": {
+      "matched_actions": 719,
+      "checked_actions": 719,
+      "mismatch_steps": [],
+      "missing_step_observations_reconstructed": 719,
+      "step_reconstruction": "step = day * turnsPerDay + hour"
+    },
+    "animal_purchases_rajusah": [
+      {
+        "step": 1,
+        "day": 0,
+        "hour": 1,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 65,
+        "day": 2,
+        "hour": 17,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 88,
+        "day": 3,
+        "hour": 16,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 150,
+        "day": 6,
+        "hour": 6,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 173,
+        "day": 7,
+        "hour": 5,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 178,
+        "day": 7,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 196,
+        "day": 8,
+        "hour": 4,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 216,
+        "day": 9,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 250,
+        "day": 10,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 251,
+        "day": 10,
+        "hour": 11,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 264,
+        "day": 11,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    ],
+    "settlement": {
+      "accepted_sales_cash_raj_opponent": [
+        151764.0,
+        167410.0
+      ],
+      "accepted_sales_by_item_raj": {
+        "CARROT": 3561.0,
+        "FERTILIZER": 14516.0,
+        "MELON": 16064.0,
+        "MILK": 30032.0,
+        "STRAWBERRY": 61154.0,
+        "WHEAT": 17329.0,
+        "WOOL": 9108.0
+      },
+      "accepted_sales_by_item_opponent": {
+        "CARROT": 652.0,
+        "FERTILIZER": 11656.0,
+        "MELON": 13949.0,
+        "MILK": 48471.0,
+        "STRAWBERRY": 61614.0,
+        "WHEAT": 26344.0,
+        "WOOL": 4724.0
+      },
+      "product_buys_raj": {
+        "FERTILIZER": 1103.0,
+        "WHEAT": 5677.0
+      },
+      "animal_buys_raj": {
+        "COW": 2400.0,
+        "SHEEP": 5500.0
+      },
+      "cash_mismatches_by_seat": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "file": "episode-114177946-replay.json",
+    "episode_id": 114177946,
+    "cohort": "out_of_sample",
+    "seed": 1711615265,
+    "rajusah_seat": 1,
+    "opponent": "Raoul Biagioni",
+    "rajusah_score": 123853.0,
+    "opponent_score": 86868.0,
+    "margin": 36985,
+    "outcome": "W",
+    "phase_cash_raj_opponent": {
+      "5": [
+        896,
+        292
+      ],
+      "10": [
+        17647,
+        13007
+      ],
+      "15": [
+        30532,
+        12139
+      ],
+      "20": [
+        69691,
+        36062
+      ],
+      "23": [
+        90299,
+        57738
+      ],
+      "25": [
+        100086,
+        67463
+      ],
+      "27": [
+        109059,
+        77148
+      ],
+      "29": [
+        123853,
+        86868
+      ]
+    },
+    "snapshots": {
+      "10": [
+        {
+          "cash": 17647,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 12
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 10
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 110,
+            "WOOL": 230,
+            "EGG": 51,
+            "STRAWBERRY": 191,
+            "WHEAT": 37,
+            "FERTILIZER": 78
+          }
+        },
+        {
+          "cash": 13007,
+          "hands": 11,
+          "crops": {
+            "MELON": 5,
+            "STRAWBERRY": 11,
+            "WHEAT": 8
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 6
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 110,
+            "WOOL": 230,
+            "EGG": 51,
+            "STRAWBERRY": 191,
+            "WHEAT": 37,
+            "FERTILIZER": 78
+          }
+        }
+      ],
+      "15": [
+        {
+          "cash": 30532,
+          "hands": 11,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 32,
+            "WOOL": 226,
+            "EGG": 51,
+            "STRAWBERRY": 228,
+            "WHEAT": 42,
+            "FERTILIZER": 51
+          }
+        },
+        {
+          "cash": 12139,
+          "hands": 12,
+          "crops": {
+            "MELON": 5,
+            "STRAWBERRY": 34,
+            "WHEAT": 17
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 10
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "quotes": {
+            "MILK": 32,
+            "WOOL": 226,
+            "EGG": 51,
+            "STRAWBERRY": 228,
+            "WHEAT": 42,
+            "FERTILIZER": 51
+          }
+        }
+      ],
+      "20": [
+        {
+          "cash": 69691,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 25
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "YARN_STORE"
+          ],
+          "quotes": {
+            "MILK": 11,
+            "WOOL": 192,
+            "EGG": 53,
+            "STRAWBERRY": 220,
+            "WHEAT": 44,
+            "FERTILIZER": 29
+          }
+        },
+        {
+          "cash": 36062,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 33,
+            "WHEAT": 35
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 12
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "YARN_STORE"
+          ],
+          "quotes": {
+            "MILK": 11,
+            "WOOL": 192,
+            "EGG": 53,
+            "STRAWBERRY": 220,
+            "WHEAT": 44,
+            "FERTILIZER": 29
+          }
+        }
+      ],
+      "23": [
+        {
+          "cash": 90299,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 20,
+            "WHEAT": 38
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "YARN_STORE",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 7,
+            "WOOL": 107,
+            "EGG": 56,
+            "STRAWBERRY": 199,
+            "WHEAT": 44,
+            "FERTILIZER": 14
+          }
+        },
+        {
+          "cash": 57738,
+          "hands": 12,
+          "crops": {
+            "STRAWBERRY": 28,
+            "WHEAT": 19
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 12
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "YARN_STORE",
+            "BAKERY"
+          ],
+          "quotes": {
+            "MILK": 7,
+            "WOOL": 107,
+            "EGG": 56,
+            "STRAWBERRY": 199,
+            "WHEAT": 44,
+            "FERTILIZER": 14
+          }
+        }
+      ],
+      "27": [
+        {
+          "cash": 109059,
+          "hands": 11,
+          "crops": {
+            "CARROT": 27,
+            "STRAWBERRY": 4,
+            "WHEAT": 17
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "YARN_STORE",
+            "BAKERY",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 82,
+            "EGG": 59,
+            "STRAWBERRY": 185,
+            "WHEAT": 45,
+            "FERTILIZER": 2
+          }
+        },
+        {
+          "cash": 77148,
+          "hands": 11,
+          "crops": {
+            "CARROT": 1,
+            "STRAWBERRY": 19,
+            "WHEAT": 33
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 12
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "YARN_STORE",
+            "BAKERY",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 82,
+            "EGG": 59,
+            "STRAWBERRY": 185,
+            "WHEAT": 45,
+            "FERTILIZER": 2
+          }
+        }
+      ],
+      "29": [
+        {
+          "cash": 123853,
+          "hands": 11,
+          "crops": {},
+          "animals": {
+            "COW": 6,
+            "SHEEP": 11
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "YARN_STORE",
+            "BAKERY",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 11,
+            "EGG": 60,
+            "STRAWBERRY": 196,
+            "WHEAT": 40,
+            "FERTILIZER": 1
+          }
+        },
+        {
+          "cash": 86868,
+          "hands": 8,
+          "crops": {
+            "STRAWBERRY": 1
+          },
+          "animals": {
+            "COW": 6,
+            "SHEEP": 8
+          },
+          "shops": [
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP",
+            "BRUNCH_SPOT",
+            "YARN_STORE",
+            "BAKERY",
+            "FARMERS_MARKET"
+          ],
+          "quotes": {
+            "MILK": 1,
+            "WOOL": 11,
+            "EGG": 60,
+            "STRAWBERRY": 196,
+            "WHEAT": 40,
+            "FERTILIZER": 1
+          }
+        }
+      ]
+    },
+    "guard": {
+      "base_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          16
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          11
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "wrapped_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "logged_market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          8
+        ]
+      ],
+      "shed_units": 4,
+      "carried_units": 91,
+      "base_wheat_fertilizer_buys": 27,
+      "projection_with_harvest_allowance": 128,
+      "fired": true,
+      "logged_action_matches_recomputed_v92": true,
+      "base_call_matches_logged_next_frame": false
+    },
+    "loader_reproduction": {
+      "matched_actions": 719,
+      "checked_actions": 719,
+      "mismatch_steps": [],
+      "missing_step_observations_reconstructed": 719,
+      "step_reconstruction": "step = day * turnsPerDay + hour"
+    },
+    "animal_purchases_rajusah": [
+      {
+        "step": 1,
+        "day": 0,
+        "hour": 1,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 65,
+        "day": 2,
+        "hour": 17,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 88,
+        "day": 3,
+        "hour": 16,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 150,
+        "day": 6,
+        "hour": 6,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 173,
+        "day": 7,
+        "hour": 5,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 178,
+        "day": 7,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 196,
+        "day": 8,
+        "hour": 4,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 216,
+        "day": 9,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 250,
+        "day": 10,
+        "hour": 10,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      },
+      {
+        "step": 251,
+        "day": 10,
+        "hour": 11,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      },
+      {
+        "step": 264,
+        "day": 11,
+        "hour": 0,
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ]
+      }
+    ],
+    "settlement": {
+      "accepted_sales_cash_raj_opponent": [
+        150194.0,
+        147291.0
+      ],
+      "accepted_sales_by_item_raj": {
+        "CARROT": 4778.0,
+        "FERTILIZER": 13812.0,
+        "MELON": 16064.0,
+        "MILK": 5817.0,
+        "STRAWBERRY": 52022.0,
+        "WHEAT": 16892.0,
+        "WOOL": 40809.0
+      },
+      "accepted_sales_by_item_opponent": {
+        "CARROT": 240.0,
+        "FERTILIZER": 12203.0,
+        "MELON": 13919.0,
+        "MILK": 4653.0,
+        "STRAWBERRY": 44547.0,
+        "WHEAT": 36868.0,
+        "WOOL": 34861.0
+      },
+      "product_buys_raj": {
+        "FERTILIZER": 898.0,
+        "WHEAT": 5548.0
+      },
+      "animal_buys_raj": {
+        "COW": 2400.0,
+        "SHEEP": 5500.0
+      },
+      "cash_mismatches_by_seat": [
+        0,
+        0
+      ]
+    }
+  }
+]
