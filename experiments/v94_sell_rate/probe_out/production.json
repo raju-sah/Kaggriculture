@@ -1,0 +1,8934 @@
+[
+  {
+    "episode_id": 114158802,
+    "unit_action_counts": {
+      "PASS": 686,
+      "NORTH": 938,
+      "SOUTH": 577,
+      "PICKUP": 156,
+      "WEST": 904,
+      "BUILD_PASTURE": 17,
+      "PLACE": 112,
+      "PLANT": 239,
+      "CARE": 397,
+      "WATER": 1096,
+      "FEED": 346,
+      "COLLECT_FERTILIZER": 377,
+      "EAST": 620,
+      "HARVEST": 464,
+      "DROP": 29,
+      "DIG": 36,
+      "BUILD_COOP": 2,
+      "FERTILIZE": 100
+    },
+    "market_action_counts": {
+      "BUY_PRODUCT": 44,
+      "SELL": 256,
+      "BUY_SEED": 188,
+      "HIRE": 281,
+      "BUY_ANIMAL": 12,
+      "BUY_LAND": 2
+    },
+    "peak_tiles": {
+      "WHEAT": 41,
+      "MELON": 12,
+      "STRAWBERRY": 33,
+      "CARROT": 26
+    },
+    "peak_yield_hist": {
+      "WHEAT": {
+        "2": 5,
+        "1": 27,
+        "3": 5,
+        "5": 3,
+        "4": 1
+      },
+      "MELON": {
+        "1": 12
+      },
+      "STRAWBERRY": {
+        "0": 33
+      },
+      "CARROT": {
+        "1": 26
+      }
+    },
+    "final_tiles": {
+      "CARROT": 13,
+      "WHEAT": 8
+    },
+    "final_yield_hist": {
+      "CARROT": {
+        "3": 5,
+        "2": 6,
+        "1": 2
+      },
+      "WHEAT": {
+        "1": 8
+      }
+    },
+    "final_weeds": 0,
+    "max_weeds": 1,
+    "timeline": [
+      {
+        "day": 0,
+        "tiles": {},
+        "yields": {},
+        "weeds": 0
+      },
+      {
+        "day": 1,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 2,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 3,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3,
+            "2": 5
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 4,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 5,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 6,
+        "tiles": {
+          "WHEAT": 3,
+          "STRAWBERRY": 4,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3
+          },
+          "STRAWBERRY": {
+            "0": 4
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 7,
+        "tiles": {
+          "STRAWBERRY": 12,
+          "MELON": 12,
+          "WHEAT": 5
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 12
+          },
+          "MELON": {
+            "2": 12
+          },
+          "WHEAT": {
+            "1": 5
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 8,
+        "tiles": {
+          "WHEAT": 9,
+          "STRAWBERRY": 16,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 9
+          },
+          "STRAWBERRY": {
+            "0": 16
+          },
+          "MELON": {
+            "3": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 9,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "4": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 10,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "5": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 11,
+        "tiles": {
+          "WHEAT": 12,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 11,
+            "2": 1
+          },
+          "STRAWBERRY": {
+            "0": 20
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 12,
+        "tiles": {
+          "STRAWBERRY": 33,
+          "WHEAT": 20
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 33
+          },
+          "WHEAT": {
+            "1": 18,
+            "2": 2
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 13,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 14,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 10
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 15,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 8,
+            "1": 13,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "0": 29,
+            "2": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 16,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 5,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 25,
+            "2": 8
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 17,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 2,
+            "5": 1,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 18,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 5,
+            "1": 14,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 19,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 7,
+            "5": 1,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 20,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 13,
+            "3": 6,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 21,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 7,
+            "1": 12,
+            "3": 5,
+            "5": 1
+          },
+          "STRAWBERRY": {
+            "1": 5,
+            "2": 16,
+            "0": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 22,
+        "tiles": {
+          "WHEAT": 30,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 6,
+            "1": 17,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 10,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 1
+      },
+      {
+        "day": 23,
+        "tiles": {
+          "WHEAT": 31,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 6,
+            "3": 4,
+            "4": 2
+          },
+          "STRAWBERRY": {
+            "0": 11,
+            "1": 3,
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 24,
+        "tiles": {
+          "WHEAT": 38,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 22,
+            "3": 10,
+            "2": 5,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "2": 3,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 25,
+        "tiles": {
+          "WHEAT": 41,
+          "STRAWBERRY": 17
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 5,
+            "1": 27,
+            "3": 5,
+            "5": 3,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "0": 4,
+            "2": 12,
+            "1": 1
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 26,
+        "tiles": {
+          "CARROT": 14,
+          "WHEAT": 31,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 14
+          },
+          "WHEAT": {
+            "1": 13,
+            "2": 7,
+            "3": 9,
+            "5": 2
+          },
+          "STRAWBERRY": {
+            "0": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 27,
+        "tiles": {
+          "CARROT": 26,
+          "WHEAT": 19,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 26
+          },
+          "WHEAT": {
+            "2": 7,
+            "3": 8,
+            "5": 4
+          },
+          "STRAWBERRY": {
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 28,
+        "tiles": {
+          "CARROT": 25,
+          "WHEAT": 17,
+          "STRAWBERRY": 4
+        },
+        "yields": {
+          "CARROT": {
+            "2": 9,
+            "1": 15,
+            "3": 1
+          },
+          "WHEAT": {
+            "2": 2,
+            "5": 4,
+            "1": 8,
+            "4": 2,
+            "3": 1
+          },
+          "STRAWBERRY": {
+            "0": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 29,
+        "tiles": {
+          "CARROT": 13,
+          "WHEAT": 8
+        },
+        "yields": {
+          "CARROT": {
+            "3": 5,
+            "2": 6,
+            "1": 2
+          },
+          "WHEAT": {
+            "1": 8
+          }
+        },
+        "weeds": 0
+      }
+    ]
+  },
+  {
+    "episode_id": 114160308,
+    "unit_action_counts": {
+      "PASS": 686,
+      "NORTH": 938,
+      "SOUTH": 577,
+      "PICKUP": 156,
+      "WEST": 904,
+      "BUILD_PASTURE": 17,
+      "PLACE": 112,
+      "PLANT": 239,
+      "CARE": 397,
+      "WATER": 1096,
+      "FEED": 346,
+      "COLLECT_FERTILIZER": 377,
+      "EAST": 620,
+      "HARVEST": 464,
+      "DROP": 29,
+      "DIG": 36,
+      "BUILD_COOP": 2,
+      "FERTILIZE": 100
+    },
+    "market_action_counts": {
+      "BUY_PRODUCT": 44,
+      "SELL": 256,
+      "BUY_SEED": 188,
+      "HIRE": 281,
+      "BUY_ANIMAL": 12,
+      "BUY_LAND": 2
+    },
+    "peak_tiles": {
+      "WHEAT": 41,
+      "MELON": 12,
+      "STRAWBERRY": 33,
+      "CARROT": 26
+    },
+    "peak_yield_hist": {
+      "WHEAT": {
+        "2": 5,
+        "1": 27,
+        "3": 5,
+        "5": 3,
+        "4": 1
+      },
+      "MELON": {
+        "1": 12
+      },
+      "STRAWBERRY": {
+        "0": 33
+      },
+      "CARROT": {
+        "1": 26
+      }
+    },
+    "final_tiles": {
+      "CARROT": 13,
+      "WHEAT": 8
+    },
+    "final_yield_hist": {
+      "CARROT": {
+        "3": 5,
+        "2": 6,
+        "1": 2
+      },
+      "WHEAT": {
+        "1": 8
+      }
+    },
+    "final_weeds": 0,
+    "max_weeds": 1,
+    "timeline": [
+      {
+        "day": 0,
+        "tiles": {},
+        "yields": {},
+        "weeds": 0
+      },
+      {
+        "day": 1,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 2,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 3,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3,
+            "2": 5
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 4,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 5,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 6,
+        "tiles": {
+          "WHEAT": 3,
+          "STRAWBERRY": 4,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3
+          },
+          "STRAWBERRY": {
+            "0": 4
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 7,
+        "tiles": {
+          "STRAWBERRY": 12,
+          "MELON": 12,
+          "WHEAT": 5
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 12
+          },
+          "MELON": {
+            "2": 12
+          },
+          "WHEAT": {
+            "1": 5
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 8,
+        "tiles": {
+          "WHEAT": 9,
+          "STRAWBERRY": 16,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 9
+          },
+          "STRAWBERRY": {
+            "0": 16
+          },
+          "MELON": {
+            "3": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 9,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "4": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 10,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "5": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 11,
+        "tiles": {
+          "WHEAT": 12,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 11,
+            "2": 1
+          },
+          "STRAWBERRY": {
+            "0": 20
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 12,
+        "tiles": {
+          "STRAWBERRY": 33,
+          "WHEAT": 20
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 33
+          },
+          "WHEAT": {
+            "1": 18,
+            "2": 2
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 13,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 14,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 10
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 15,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 8,
+            "1": 13,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "0": 29,
+            "2": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 16,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 5,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 25,
+            "2": 8
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 17,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 2,
+            "5": 1,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 18,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 5,
+            "1": 14,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 19,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 7,
+            "5": 1,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 20,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 13,
+            "3": 6,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 21,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 7,
+            "1": 12,
+            "3": 5,
+            "5": 1
+          },
+          "STRAWBERRY": {
+            "1": 5,
+            "2": 16,
+            "0": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 22,
+        "tiles": {
+          "WHEAT": 30,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 6,
+            "1": 17,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 10,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 1
+      },
+      {
+        "day": 23,
+        "tiles": {
+          "WHEAT": 31,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 6,
+            "3": 4,
+            "4": 2
+          },
+          "STRAWBERRY": {
+            "0": 11,
+            "1": 3,
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 24,
+        "tiles": {
+          "WHEAT": 38,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 22,
+            "3": 10,
+            "2": 5,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "2": 3,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 25,
+        "tiles": {
+          "WHEAT": 41,
+          "STRAWBERRY": 17
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 5,
+            "1": 27,
+            "3": 5,
+            "5": 3,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "0": 4,
+            "2": 12,
+            "1": 1
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 26,
+        "tiles": {
+          "CARROT": 14,
+          "WHEAT": 31,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 14
+          },
+          "WHEAT": {
+            "1": 13,
+            "2": 7,
+            "3": 9,
+            "5": 2
+          },
+          "STRAWBERRY": {
+            "0": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 27,
+        "tiles": {
+          "CARROT": 26,
+          "WHEAT": 19,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 26
+          },
+          "WHEAT": {
+            "2": 7,
+            "3": 8,
+            "5": 4
+          },
+          "STRAWBERRY": {
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 28,
+        "tiles": {
+          "CARROT": 25,
+          "WHEAT": 17,
+          "STRAWBERRY": 4
+        },
+        "yields": {
+          "CARROT": {
+            "2": 9,
+            "1": 15,
+            "3": 1
+          },
+          "WHEAT": {
+            "2": 2,
+            "5": 4,
+            "1": 8,
+            "4": 2,
+            "3": 1
+          },
+          "STRAWBERRY": {
+            "0": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 29,
+        "tiles": {
+          "CARROT": 13,
+          "WHEAT": 8
+        },
+        "yields": {
+          "CARROT": {
+            "3": 5,
+            "2": 6,
+            "1": 2
+          },
+          "WHEAT": {
+            "1": 8
+          }
+        },
+        "weeds": 0
+      }
+    ]
+  },
+  {
+    "episode_id": 114161728,
+    "unit_action_counts": {
+      "PASS": 685,
+      "NORTH": 938,
+      "SOUTH": 577,
+      "PICKUP": 156,
+      "WEST": 904,
+      "BUILD_PASTURE": 17,
+      "PLACE": 112,
+      "PLANT": 239,
+      "CARE": 397,
+      "WATER": 1096,
+      "FEED": 346,
+      "COLLECT_FERTILIZER": 377,
+      "EAST": 620,
+      "HARVEST": 464,
+      "DROP": 29,
+      "DIG": 37,
+      "BUILD_COOP": 2,
+      "FERTILIZE": 100
+    },
+    "market_action_counts": {
+      "BUY_PRODUCT": 44,
+      "SELL": 256,
+      "BUY_SEED": 188,
+      "HIRE": 281,
+      "BUY_ANIMAL": 12,
+      "BUY_LAND": 2
+    },
+    "peak_tiles": {
+      "WHEAT": 41,
+      "MELON": 12,
+      "STRAWBERRY": 33,
+      "CARROT": 26
+    },
+    "peak_yield_hist": {
+      "WHEAT": {
+        "2": 5,
+        "1": 27,
+        "3": 5,
+        "5": 3,
+        "4": 1
+      },
+      "MELON": {
+        "1": 12
+      },
+      "STRAWBERRY": {
+        "0": 33
+      },
+      "CARROT": {
+        "1": 26
+      }
+    },
+    "final_tiles": {
+      "CARROT": 13,
+      "WHEAT": 8
+    },
+    "final_yield_hist": {
+      "CARROT": {
+        "3": 5,
+        "2": 6,
+        "1": 2
+      },
+      "WHEAT": {
+        "1": 8
+      }
+    },
+    "final_weeds": 0,
+    "max_weeds": 1,
+    "timeline": [
+      {
+        "day": 0,
+        "tiles": {},
+        "yields": {},
+        "weeds": 0
+      },
+      {
+        "day": 1,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 2,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 3,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3,
+            "2": 5
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 4,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 5,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 6,
+        "tiles": {
+          "WHEAT": 3,
+          "STRAWBERRY": 4,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3
+          },
+          "STRAWBERRY": {
+            "0": 4
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 7,
+        "tiles": {
+          "STRAWBERRY": 12,
+          "MELON": 12,
+          "WHEAT": 5
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 12
+          },
+          "MELON": {
+            "2": 12
+          },
+          "WHEAT": {
+            "1": 5
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 8,
+        "tiles": {
+          "WHEAT": 9,
+          "STRAWBERRY": 16,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 9
+          },
+          "STRAWBERRY": {
+            "0": 16
+          },
+          "MELON": {
+            "3": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 9,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "4": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 10,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "5": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 11,
+        "tiles": {
+          "WHEAT": 12,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 11,
+            "2": 1
+          },
+          "STRAWBERRY": {
+            "0": 20
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 12,
+        "tiles": {
+          "STRAWBERRY": 33,
+          "WHEAT": 20
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 33
+          },
+          "WHEAT": {
+            "1": 18,
+            "2": 2
+          }
+        },
+        "weeds": 1
+      },
+      {
+        "day": 13,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 14,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 10
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 15,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 8,
+            "1": 13,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "0": 29,
+            "2": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 16,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 5,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 25,
+            "2": 8
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 17,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 2,
+            "5": 1,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 18,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 5,
+            "1": 14,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 19,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 7,
+            "5": 1,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 20,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 13,
+            "3": 6,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 21,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 7,
+            "1": 12,
+            "3": 5,
+            "5": 1
+          },
+          "STRAWBERRY": {
+            "1": 5,
+            "2": 16,
+            "0": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 22,
+        "tiles": {
+          "WHEAT": 30,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 6,
+            "1": 17,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 10,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 1
+      },
+      {
+        "day": 23,
+        "tiles": {
+          "WHEAT": 31,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 6,
+            "3": 4,
+            "4": 2
+          },
+          "STRAWBERRY": {
+            "0": 11,
+            "1": 3,
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 24,
+        "tiles": {
+          "WHEAT": 38,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 22,
+            "3": 10,
+            "2": 5,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "2": 3,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 25,
+        "tiles": {
+          "WHEAT": 41,
+          "STRAWBERRY": 17
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 5,
+            "1": 27,
+            "3": 5,
+            "5": 3,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "0": 4,
+            "2": 12,
+            "1": 1
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 26,
+        "tiles": {
+          "CARROT": 14,
+          "WHEAT": 31,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 14
+          },
+          "WHEAT": {
+            "1": 13,
+            "2": 7,
+            "3": 9,
+            "5": 2
+          },
+          "STRAWBERRY": {
+            "0": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 27,
+        "tiles": {
+          "CARROT": 26,
+          "WHEAT": 19,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 26
+          },
+          "WHEAT": {
+            "2": 7,
+            "3": 8,
+            "5": 4
+          },
+          "STRAWBERRY": {
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 28,
+        "tiles": {
+          "CARROT": 25,
+          "WHEAT": 17,
+          "STRAWBERRY": 4
+        },
+        "yields": {
+          "CARROT": {
+            "2": 9,
+            "1": 15,
+            "3": 1
+          },
+          "WHEAT": {
+            "2": 2,
+            "5": 4,
+            "1": 8,
+            "4": 2,
+            "3": 1
+          },
+          "STRAWBERRY": {
+            "0": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 29,
+        "tiles": {
+          "CARROT": 13,
+          "WHEAT": 8
+        },
+        "yields": {
+          "CARROT": {
+            "3": 5,
+            "2": 6,
+            "1": 2
+          },
+          "WHEAT": {
+            "1": 8
+          }
+        },
+        "weeds": 0
+      }
+    ]
+  },
+  {
+    "episode_id": 114163744,
+    "unit_action_counts": {
+      "PASS": 686,
+      "NORTH": 938,
+      "SOUTH": 577,
+      "PICKUP": 156,
+      "WEST": 904,
+      "BUILD_PASTURE": 17,
+      "PLACE": 112,
+      "PLANT": 239,
+      "CARE": 397,
+      "WATER": 1096,
+      "FEED": 346,
+      "COLLECT_FERTILIZER": 377,
+      "EAST": 620,
+      "HARVEST": 464,
+      "DROP": 29,
+      "DIG": 36,
+      "BUILD_COOP": 2,
+      "FERTILIZE": 100
+    },
+    "market_action_counts": {
+      "BUY_PRODUCT": 44,
+      "SELL": 256,
+      "BUY_SEED": 188,
+      "HIRE": 281,
+      "BUY_ANIMAL": 12,
+      "BUY_LAND": 2
+    },
+    "peak_tiles": {
+      "WHEAT": 41,
+      "MELON": 12,
+      "STRAWBERRY": 33,
+      "CARROT": 26
+    },
+    "peak_yield_hist": {
+      "WHEAT": {
+        "2": 5,
+        "1": 27,
+        "3": 5,
+        "5": 3,
+        "4": 1
+      },
+      "MELON": {
+        "1": 12
+      },
+      "STRAWBERRY": {
+        "0": 33
+      },
+      "CARROT": {
+        "1": 26
+      }
+    },
+    "final_tiles": {
+      "CARROT": 13,
+      "WHEAT": 8
+    },
+    "final_yield_hist": {
+      "CARROT": {
+        "3": 5,
+        "2": 6,
+        "1": 2
+      },
+      "WHEAT": {
+        "1": 8
+      }
+    },
+    "final_weeds": 0,
+    "max_weeds": 1,
+    "timeline": [
+      {
+        "day": 0,
+        "tiles": {},
+        "yields": {},
+        "weeds": 0
+      },
+      {
+        "day": 1,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 2,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 3,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3,
+            "2": 5
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 4,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 5,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 6,
+        "tiles": {
+          "WHEAT": 3,
+          "STRAWBERRY": 4,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3
+          },
+          "STRAWBERRY": {
+            "0": 4
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 7,
+        "tiles": {
+          "STRAWBERRY": 12,
+          "MELON": 12,
+          "WHEAT": 5
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 12
+          },
+          "MELON": {
+            "2": 12
+          },
+          "WHEAT": {
+            "1": 5
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 8,
+        "tiles": {
+          "WHEAT": 9,
+          "STRAWBERRY": 16,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 9
+          },
+          "STRAWBERRY": {
+            "0": 16
+          },
+          "MELON": {
+            "3": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 9,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "4": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 10,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "5": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 11,
+        "tiles": {
+          "WHEAT": 12,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 11,
+            "2": 1
+          },
+          "STRAWBERRY": {
+            "0": 20
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 12,
+        "tiles": {
+          "STRAWBERRY": 33,
+          "WHEAT": 20
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 33
+          },
+          "WHEAT": {
+            "1": 18,
+            "2": 2
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 13,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 14,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 10
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 15,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 8,
+            "1": 13,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "0": 29,
+            "2": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 16,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 5,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 25,
+            "2": 8
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 17,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 2,
+            "5": 1,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 18,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 5,
+            "1": 14,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 19,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 7,
+            "5": 1,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 20,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 13,
+            "3": 6,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 21,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 7,
+            "1": 12,
+            "3": 5,
+            "5": 1
+          },
+          "STRAWBERRY": {
+            "1": 5,
+            "2": 16,
+            "0": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 22,
+        "tiles": {
+          "WHEAT": 30,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 6,
+            "1": 17,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 10,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 1
+      },
+      {
+        "day": 23,
+        "tiles": {
+          "WHEAT": 31,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 6,
+            "3": 4,
+            "4": 2
+          },
+          "STRAWBERRY": {
+            "0": 11,
+            "1": 3,
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 24,
+        "tiles": {
+          "WHEAT": 38,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 22,
+            "3": 10,
+            "2": 5,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "2": 3,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 25,
+        "tiles": {
+          "WHEAT": 41,
+          "STRAWBERRY": 17
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 5,
+            "1": 27,
+            "3": 5,
+            "5": 3,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "0": 4,
+            "2": 12,
+            "1": 1
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 26,
+        "tiles": {
+          "CARROT": 14,
+          "WHEAT": 31,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 14
+          },
+          "WHEAT": {
+            "1": 13,
+            "2": 7,
+            "3": 9,
+            "5": 2
+          },
+          "STRAWBERRY": {
+            "0": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 27,
+        "tiles": {
+          "CARROT": 26,
+          "WHEAT": 19,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 26
+          },
+          "WHEAT": {
+            "2": 7,
+            "3": 8,
+            "5": 4
+          },
+          "STRAWBERRY": {
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 28,
+        "tiles": {
+          "CARROT": 25,
+          "WHEAT": 17,
+          "STRAWBERRY": 4
+        },
+        "yields": {
+          "CARROT": {
+            "2": 9,
+            "1": 15,
+            "3": 1
+          },
+          "WHEAT": {
+            "2": 2,
+            "5": 4,
+            "1": 8,
+            "4": 2,
+            "3": 1
+          },
+          "STRAWBERRY": {
+            "0": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 29,
+        "tiles": {
+          "CARROT": 13,
+          "WHEAT": 8
+        },
+        "yields": {
+          "CARROT": {
+            "3": 5,
+            "2": 6,
+            "1": 2
+          },
+          "WHEAT": {
+            "1": 8
+          }
+        },
+        "weeds": 0
+      }
+    ]
+  },
+  {
+    "episode_id": 114164630,
+    "unit_action_counts": {
+      "PASS": 686,
+      "NORTH": 938,
+      "SOUTH": 577,
+      "PICKUP": 156,
+      "WEST": 904,
+      "BUILD_PASTURE": 17,
+      "PLACE": 112,
+      "PLANT": 239,
+      "CARE": 397,
+      "WATER": 1096,
+      "FEED": 346,
+      "COLLECT_FERTILIZER": 377,
+      "EAST": 620,
+      "HARVEST": 464,
+      "DROP": 29,
+      "DIG": 36,
+      "BUILD_COOP": 2,
+      "FERTILIZE": 100
+    },
+    "market_action_counts": {
+      "BUY_PRODUCT": 44,
+      "SELL": 256,
+      "BUY_SEED": 188,
+      "HIRE": 281,
+      "BUY_ANIMAL": 12,
+      "BUY_LAND": 2
+    },
+    "peak_tiles": {
+      "WHEAT": 41,
+      "MELON": 12,
+      "STRAWBERRY": 33,
+      "CARROT": 26
+    },
+    "peak_yield_hist": {
+      "WHEAT": {
+        "2": 5,
+        "1": 27,
+        "3": 5,
+        "5": 3,
+        "4": 1
+      },
+      "MELON": {
+        "1": 12
+      },
+      "STRAWBERRY": {
+        "0": 33
+      },
+      "CARROT": {
+        "1": 26
+      }
+    },
+    "final_tiles": {
+      "CARROT": 13,
+      "WHEAT": 8
+    },
+    "final_yield_hist": {
+      "CARROT": {
+        "3": 5,
+        "2": 6,
+        "1": 2
+      },
+      "WHEAT": {
+        "1": 8
+      }
+    },
+    "final_weeds": 0,
+    "max_weeds": 1,
+    "timeline": [
+      {
+        "day": 0,
+        "tiles": {},
+        "yields": {},
+        "weeds": 0
+      },
+      {
+        "day": 1,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 2,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 3,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3,
+            "2": 5
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 4,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 5,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 6,
+        "tiles": {
+          "WHEAT": 3,
+          "STRAWBERRY": 4,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3
+          },
+          "STRAWBERRY": {
+            "0": 4
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 7,
+        "tiles": {
+          "STRAWBERRY": 12,
+          "MELON": 12,
+          "WHEAT": 5
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 12
+          },
+          "MELON": {
+            "2": 12
+          },
+          "WHEAT": {
+            "1": 5
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 8,
+        "tiles": {
+          "WHEAT": 9,
+          "STRAWBERRY": 16,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 9
+          },
+          "STRAWBERRY": {
+            "0": 16
+          },
+          "MELON": {
+            "3": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 9,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "4": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 10,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "5": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 11,
+        "tiles": {
+          "WHEAT": 12,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 11,
+            "2": 1
+          },
+          "STRAWBERRY": {
+            "0": 20
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 12,
+        "tiles": {
+          "STRAWBERRY": 33,
+          "WHEAT": 20
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 33
+          },
+          "WHEAT": {
+            "1": 18,
+            "2": 2
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 13,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 14,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 10
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 15,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 8,
+            "1": 13,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "0": 29,
+            "2": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 16,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 5,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 25,
+            "2": 8
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 17,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 2,
+            "5": 1,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 18,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 5,
+            "1": 14,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 19,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 7,
+            "5": 1,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 20,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 13,
+            "3": 6,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 21,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 7,
+            "1": 12,
+            "3": 5,
+            "5": 1
+          },
+          "STRAWBERRY": {
+            "1": 5,
+            "2": 16,
+            "0": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 22,
+        "tiles": {
+          "WHEAT": 30,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 6,
+            "1": 17,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 10,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 1
+      },
+      {
+        "day": 23,
+        "tiles": {
+          "WHEAT": 31,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 6,
+            "3": 4,
+            "4": 2
+          },
+          "STRAWBERRY": {
+            "0": 11,
+            "1": 3,
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 24,
+        "tiles": {
+          "WHEAT": 38,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 22,
+            "3": 10,
+            "2": 5,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "2": 3,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 25,
+        "tiles": {
+          "WHEAT": 41,
+          "STRAWBERRY": 17
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 5,
+            "1": 27,
+            "3": 5,
+            "5": 3,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "0": 4,
+            "2": 12,
+            "1": 1
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 26,
+        "tiles": {
+          "CARROT": 14,
+          "WHEAT": 31,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 14
+          },
+          "WHEAT": {
+            "1": 13,
+            "2": 7,
+            "3": 9,
+            "5": 2
+          },
+          "STRAWBERRY": {
+            "0": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 27,
+        "tiles": {
+          "CARROT": 26,
+          "WHEAT": 19,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 26
+          },
+          "WHEAT": {
+            "2": 7,
+            "3": 8,
+            "5": 4
+          },
+          "STRAWBERRY": {
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 28,
+        "tiles": {
+          "CARROT": 25,
+          "WHEAT": 17,
+          "STRAWBERRY": 4
+        },
+        "yields": {
+          "CARROT": {
+            "2": 9,
+            "1": 15,
+            "3": 1
+          },
+          "WHEAT": {
+            "2": 2,
+            "5": 4,
+            "1": 8,
+            "4": 2,
+            "3": 1
+          },
+          "STRAWBERRY": {
+            "0": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 29,
+        "tiles": {
+          "CARROT": 13,
+          "WHEAT": 8
+        },
+        "yields": {
+          "CARROT": {
+            "3": 5,
+            "2": 6,
+            "1": 2
+          },
+          "WHEAT": {
+            "1": 8
+          }
+        },
+        "weeds": 0
+      }
+    ]
+  },
+  {
+    "episode_id": 114166061,
+    "unit_action_counts": {
+      "PASS": 685,
+      "NORTH": 938,
+      "SOUTH": 577,
+      "PICKUP": 156,
+      "WEST": 904,
+      "BUILD_PASTURE": 17,
+      "PLACE": 112,
+      "PLANT": 239,
+      "CARE": 397,
+      "WATER": 1096,
+      "FEED": 346,
+      "COLLECT_FERTILIZER": 377,
+      "EAST": 620,
+      "DIG": 37,
+      "HARVEST": 464,
+      "DROP": 29,
+      "BUILD_COOP": 2,
+      "FERTILIZE": 100
+    },
+    "market_action_counts": {
+      "BUY_PRODUCT": 44,
+      "SELL": 256,
+      "BUY_SEED": 188,
+      "HIRE": 281,
+      "BUY_ANIMAL": 12,
+      "BUY_LAND": 2
+    },
+    "peak_tiles": {
+      "WHEAT": 41,
+      "MELON": 12,
+      "STRAWBERRY": 33,
+      "CARROT": 26
+    },
+    "peak_yield_hist": {
+      "WHEAT": {
+        "2": 5,
+        "1": 27,
+        "3": 5,
+        "5": 3,
+        "4": 1
+      },
+      "MELON": {
+        "1": 12
+      },
+      "STRAWBERRY": {
+        "0": 33
+      },
+      "CARROT": {
+        "1": 26
+      }
+    },
+    "final_tiles": {
+      "CARROT": 13,
+      "WHEAT": 8
+    },
+    "final_yield_hist": {
+      "CARROT": {
+        "3": 5,
+        "2": 6,
+        "1": 2
+      },
+      "WHEAT": {
+        "1": 8
+      }
+    },
+    "final_weeds": 0,
+    "max_weeds": 1,
+    "timeline": [
+      {
+        "day": 0,
+        "tiles": {},
+        "yields": {},
+        "weeds": 0
+      },
+      {
+        "day": 1,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 1
+      },
+      {
+        "day": 2,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 3,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3,
+            "2": 5
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 4,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 5,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 6,
+        "tiles": {
+          "WHEAT": 3,
+          "STRAWBERRY": 4,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3
+          },
+          "STRAWBERRY": {
+            "0": 4
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 7,
+        "tiles": {
+          "STRAWBERRY": 12,
+          "MELON": 12,
+          "WHEAT": 5
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 12
+          },
+          "MELON": {
+            "2": 12
+          },
+          "WHEAT": {
+            "1": 5
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 8,
+        "tiles": {
+          "WHEAT": 9,
+          "STRAWBERRY": 16,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 9
+          },
+          "STRAWBERRY": {
+            "0": 16
+          },
+          "MELON": {
+            "3": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 9,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "4": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 10,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "5": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 11,
+        "tiles": {
+          "WHEAT": 12,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 11,
+            "2": 1
+          },
+          "STRAWBERRY": {
+            "0": 20
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 12,
+        "tiles": {
+          "STRAWBERRY": 33,
+          "WHEAT": 20
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 33
+          },
+          "WHEAT": {
+            "1": 18,
+            "2": 2
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 13,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 14,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 10
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 15,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 8,
+            "1": 13,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "0": 29,
+            "2": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 16,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 5,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 25,
+            "2": 8
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 17,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 2,
+            "5": 1,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 18,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 5,
+            "1": 14,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 19,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 7,
+            "5": 1,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 20,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 13,
+            "3": 6,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 21,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 7,
+            "1": 12,
+            "3": 5,
+            "5": 1
+          },
+          "STRAWBERRY": {
+            "1": 5,
+            "2": 16,
+            "0": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 22,
+        "tiles": {
+          "WHEAT": 30,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 6,
+            "1": 17,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 10,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 1
+      },
+      {
+        "day": 23,
+        "tiles": {
+          "WHEAT": 31,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 6,
+            "3": 4,
+            "4": 2
+          },
+          "STRAWBERRY": {
+            "0": 11,
+            "1": 3,
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 24,
+        "tiles": {
+          "WHEAT": 38,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 22,
+            "3": 10,
+            "2": 5,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "2": 3,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 25,
+        "tiles": {
+          "WHEAT": 41,
+          "STRAWBERRY": 17
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 5,
+            "1": 27,
+            "3": 5,
+            "5": 3,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "0": 4,
+            "2": 12,
+            "1": 1
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 26,
+        "tiles": {
+          "CARROT": 14,
+          "WHEAT": 31,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 14
+          },
+          "WHEAT": {
+            "1": 13,
+            "2": 7,
+            "3": 9,
+            "5": 2
+          },
+          "STRAWBERRY": {
+            "0": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 27,
+        "tiles": {
+          "CARROT": 26,
+          "WHEAT": 19,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 26
+          },
+          "WHEAT": {
+            "2": 7,
+            "3": 8,
+            "5": 4
+          },
+          "STRAWBERRY": {
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 28,
+        "tiles": {
+          "CARROT": 25,
+          "WHEAT": 17,
+          "STRAWBERRY": 4
+        },
+        "yields": {
+          "CARROT": {
+            "2": 9,
+            "1": 15,
+            "3": 1
+          },
+          "WHEAT": {
+            "2": 2,
+            "5": 4,
+            "1": 8,
+            "4": 2,
+            "3": 1
+          },
+          "STRAWBERRY": {
+            "0": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 29,
+        "tiles": {
+          "CARROT": 13,
+          "WHEAT": 8
+        },
+        "yields": {
+          "CARROT": {
+            "3": 5,
+            "2": 6,
+            "1": 2
+          },
+          "WHEAT": {
+            "1": 8
+          }
+        },
+        "weeds": 0
+      }
+    ]
+  },
+  {
+    "episode_id": 114167570,
+    "unit_action_counts": {
+      "PASS": 686,
+      "NORTH": 938,
+      "SOUTH": 577,
+      "PICKUP": 156,
+      "WEST": 904,
+      "BUILD_PASTURE": 17,
+      "PLACE": 112,
+      "PLANT": 239,
+      "CARE": 397,
+      "WATER": 1096,
+      "FEED": 346,
+      "COLLECT_FERTILIZER": 377,
+      "EAST": 620,
+      "HARVEST": 464,
+      "DROP": 29,
+      "DIG": 36,
+      "BUILD_COOP": 2,
+      "FERTILIZE": 100
+    },
+    "market_action_counts": {
+      "BUY_PRODUCT": 44,
+      "SELL": 256,
+      "BUY_SEED": 188,
+      "HIRE": 281,
+      "BUY_ANIMAL": 12,
+      "BUY_LAND": 2
+    },
+    "peak_tiles": {
+      "WHEAT": 41,
+      "MELON": 12,
+      "STRAWBERRY": 33,
+      "CARROT": 26
+    },
+    "peak_yield_hist": {
+      "WHEAT": {
+        "2": 5,
+        "1": 27,
+        "3": 5,
+        "5": 3,
+        "4": 1
+      },
+      "MELON": {
+        "1": 12
+      },
+      "STRAWBERRY": {
+        "0": 33
+      },
+      "CARROT": {
+        "1": 26
+      }
+    },
+    "final_tiles": {
+      "CARROT": 13,
+      "WHEAT": 8
+    },
+    "final_yield_hist": {
+      "CARROT": {
+        "3": 5,
+        "2": 6,
+        "1": 2
+      },
+      "WHEAT": {
+        "1": 8
+      }
+    },
+    "final_weeds": 0,
+    "max_weeds": 1,
+    "timeline": [
+      {
+        "day": 0,
+        "tiles": {},
+        "yields": {},
+        "weeds": 0
+      },
+      {
+        "day": 1,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 2,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 3,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3,
+            "2": 5
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 4,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 5,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 6,
+        "tiles": {
+          "WHEAT": 3,
+          "STRAWBERRY": 4,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3
+          },
+          "STRAWBERRY": {
+            "0": 4
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 7,
+        "tiles": {
+          "STRAWBERRY": 12,
+          "MELON": 12,
+          "WHEAT": 5
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 12
+          },
+          "MELON": {
+            "2": 12
+          },
+          "WHEAT": {
+            "1": 5
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 8,
+        "tiles": {
+          "WHEAT": 9,
+          "STRAWBERRY": 16,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 9
+          },
+          "STRAWBERRY": {
+            "0": 16
+          },
+          "MELON": {
+            "3": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 9,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "4": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 10,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "5": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 11,
+        "tiles": {
+          "WHEAT": 12,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 11,
+            "2": 1
+          },
+          "STRAWBERRY": {
+            "0": 20
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 12,
+        "tiles": {
+          "STRAWBERRY": 33,
+          "WHEAT": 20
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 33
+          },
+          "WHEAT": {
+            "1": 18,
+            "2": 2
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 13,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 14,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 10
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 15,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 8,
+            "1": 13,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "0": 29,
+            "2": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 16,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 5,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 25,
+            "2": 8
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 17,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 2,
+            "5": 1,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 18,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 5,
+            "1": 14,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 19,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 7,
+            "5": 1,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 20,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 13,
+            "3": 6,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 21,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 7,
+            "1": 12,
+            "3": 5,
+            "5": 1
+          },
+          "STRAWBERRY": {
+            "1": 5,
+            "2": 16,
+            "0": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 22,
+        "tiles": {
+          "WHEAT": 30,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 6,
+            "1": 17,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 10,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 1
+      },
+      {
+        "day": 23,
+        "tiles": {
+          "WHEAT": 31,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 6,
+            "3": 4,
+            "4": 2
+          },
+          "STRAWBERRY": {
+            "0": 11,
+            "1": 3,
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 24,
+        "tiles": {
+          "WHEAT": 38,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 22,
+            "3": 10,
+            "2": 5,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "2": 3,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 25,
+        "tiles": {
+          "WHEAT": 41,
+          "STRAWBERRY": 17
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 5,
+            "1": 27,
+            "3": 5,
+            "5": 3,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "0": 4,
+            "2": 12,
+            "1": 1
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 26,
+        "tiles": {
+          "CARROT": 14,
+          "WHEAT": 31,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 14
+          },
+          "WHEAT": {
+            "1": 13,
+            "2": 7,
+            "3": 9,
+            "5": 2
+          },
+          "STRAWBERRY": {
+            "0": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 27,
+        "tiles": {
+          "CARROT": 26,
+          "WHEAT": 19,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 26
+          },
+          "WHEAT": {
+            "2": 7,
+            "3": 8,
+            "5": 4
+          },
+          "STRAWBERRY": {
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 28,
+        "tiles": {
+          "CARROT": 25,
+          "WHEAT": 17,
+          "STRAWBERRY": 4
+        },
+        "yields": {
+          "CARROT": {
+            "2": 9,
+            "1": 15,
+            "3": 1
+          },
+          "WHEAT": {
+            "2": 2,
+            "5": 4,
+            "1": 8,
+            "4": 2,
+            "3": 1
+          },
+          "STRAWBERRY": {
+            "0": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 29,
+        "tiles": {
+          "CARROT": 13,
+          "WHEAT": 8
+        },
+        "yields": {
+          "CARROT": {
+            "3": 5,
+            "2": 6,
+            "1": 2
+          },
+          "WHEAT": {
+            "1": 8
+          }
+        },
+        "weeds": 0
+      }
+    ]
+  },
+  {
+    "episode_id": 114169079,
+    "unit_action_counts": {
+      "PASS": 686,
+      "NORTH": 938,
+      "SOUTH": 577,
+      "PICKUP": 156,
+      "WEST": 904,
+      "BUILD_PASTURE": 17,
+      "PLACE": 112,
+      "PLANT": 239,
+      "CARE": 397,
+      "WATER": 1096,
+      "FEED": 346,
+      "COLLECT_FERTILIZER": 377,
+      "EAST": 620,
+      "HARVEST": 464,
+      "DROP": 29,
+      "DIG": 36,
+      "BUILD_COOP": 2,
+      "FERTILIZE": 100
+    },
+    "market_action_counts": {
+      "BUY_PRODUCT": 44,
+      "SELL": 256,
+      "BUY_SEED": 188,
+      "HIRE": 281,
+      "BUY_ANIMAL": 12,
+      "BUY_LAND": 2
+    },
+    "peak_tiles": {
+      "WHEAT": 41,
+      "MELON": 12,
+      "STRAWBERRY": 33,
+      "CARROT": 26
+    },
+    "peak_yield_hist": {
+      "WHEAT": {
+        "2": 5,
+        "1": 27,
+        "3": 5,
+        "5": 3,
+        "4": 1
+      },
+      "MELON": {
+        "1": 12
+      },
+      "STRAWBERRY": {
+        "0": 33
+      },
+      "CARROT": {
+        "1": 26
+      }
+    },
+    "final_tiles": {
+      "CARROT": 13,
+      "WHEAT": 8
+    },
+    "final_yield_hist": {
+      "CARROT": {
+        "3": 5,
+        "2": 6,
+        "1": 2
+      },
+      "WHEAT": {
+        "1": 8
+      }
+    },
+    "final_weeds": 0,
+    "max_weeds": 1,
+    "timeline": [
+      {
+        "day": 0,
+        "tiles": {},
+        "yields": {},
+        "weeds": 0
+      },
+      {
+        "day": 1,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 2,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 3,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3,
+            "2": 5
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 4,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 5,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 6,
+        "tiles": {
+          "WHEAT": 3,
+          "STRAWBERRY": 4,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3
+          },
+          "STRAWBERRY": {
+            "0": 4
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 7,
+        "tiles": {
+          "STRAWBERRY": 12,
+          "MELON": 12,
+          "WHEAT": 5
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 12
+          },
+          "MELON": {
+            "2": 12
+          },
+          "WHEAT": {
+            "1": 5
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 8,
+        "tiles": {
+          "WHEAT": 9,
+          "STRAWBERRY": 16,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 9
+          },
+          "STRAWBERRY": {
+            "0": 16
+          },
+          "MELON": {
+            "3": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 9,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "4": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 10,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "5": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 11,
+        "tiles": {
+          "WHEAT": 12,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 11,
+            "2": 1
+          },
+          "STRAWBERRY": {
+            "0": 20
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 12,
+        "tiles": {
+          "STRAWBERRY": 33,
+          "WHEAT": 20
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 33
+          },
+          "WHEAT": {
+            "1": 18,
+            "2": 2
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 13,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 14,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 10
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 15,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 8,
+            "1": 13,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "0": 29,
+            "2": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 16,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 5,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 25,
+            "2": 8
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 17,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 2,
+            "5": 1,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 18,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 5,
+            "1": 14,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 19,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 7,
+            "5": 1,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 20,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 13,
+            "3": 6,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 21,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 7,
+            "1": 12,
+            "3": 5,
+            "5": 1
+          },
+          "STRAWBERRY": {
+            "1": 5,
+            "2": 16,
+            "0": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 22,
+        "tiles": {
+          "WHEAT": 30,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 6,
+            "1": 17,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 10,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 1
+      },
+      {
+        "day": 23,
+        "tiles": {
+          "WHEAT": 31,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 6,
+            "3": 4,
+            "4": 2
+          },
+          "STRAWBERRY": {
+            "0": 11,
+            "1": 3,
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 24,
+        "tiles": {
+          "WHEAT": 38,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 22,
+            "3": 10,
+            "2": 5,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "2": 3,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 25,
+        "tiles": {
+          "WHEAT": 41,
+          "STRAWBERRY": 17
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 5,
+            "1": 27,
+            "3": 5,
+            "5": 3,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "0": 4,
+            "2": 12,
+            "1": 1
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 26,
+        "tiles": {
+          "CARROT": 14,
+          "WHEAT": 31,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 14
+          },
+          "WHEAT": {
+            "1": 13,
+            "2": 7,
+            "3": 9,
+            "5": 2
+          },
+          "STRAWBERRY": {
+            "0": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 27,
+        "tiles": {
+          "CARROT": 26,
+          "WHEAT": 19,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 26
+          },
+          "WHEAT": {
+            "2": 7,
+            "3": 8,
+            "5": 4
+          },
+          "STRAWBERRY": {
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 28,
+        "tiles": {
+          "CARROT": 25,
+          "WHEAT": 17,
+          "STRAWBERRY": 4
+        },
+        "yields": {
+          "CARROT": {
+            "2": 9,
+            "1": 15,
+            "3": 1
+          },
+          "WHEAT": {
+            "2": 2,
+            "5": 4,
+            "1": 8,
+            "4": 2,
+            "3": 1
+          },
+          "STRAWBERRY": {
+            "0": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 29,
+        "tiles": {
+          "CARROT": 13,
+          "WHEAT": 8
+        },
+        "yields": {
+          "CARROT": {
+            "3": 5,
+            "2": 6,
+            "1": 2
+          },
+          "WHEAT": {
+            "1": 8
+          }
+        },
+        "weeds": 0
+      }
+    ]
+  },
+  {
+    "episode_id": 114170594,
+    "unit_action_counts": {
+      "PASS": 686,
+      "NORTH": 938,
+      "SOUTH": 577,
+      "PICKUP": 156,
+      "WEST": 904,
+      "BUILD_PASTURE": 17,
+      "PLACE": 112,
+      "PLANT": 239,
+      "CARE": 397,
+      "WATER": 1096,
+      "FEED": 346,
+      "COLLECT_FERTILIZER": 377,
+      "EAST": 620,
+      "HARVEST": 464,
+      "DROP": 29,
+      "DIG": 36,
+      "BUILD_COOP": 2,
+      "FERTILIZE": 100
+    },
+    "market_action_counts": {
+      "BUY_PRODUCT": 44,
+      "SELL": 256,
+      "BUY_SEED": 188,
+      "HIRE": 281,
+      "BUY_ANIMAL": 12,
+      "BUY_LAND": 2
+    },
+    "peak_tiles": {
+      "WHEAT": 41,
+      "MELON": 12,
+      "STRAWBERRY": 33,
+      "CARROT": 26
+    },
+    "peak_yield_hist": {
+      "WHEAT": {
+        "2": 5,
+        "1": 27,
+        "3": 5,
+        "5": 3,
+        "4": 1
+      },
+      "MELON": {
+        "1": 12
+      },
+      "STRAWBERRY": {
+        "0": 33
+      },
+      "CARROT": {
+        "1": 26
+      }
+    },
+    "final_tiles": {
+      "CARROT": 13,
+      "WHEAT": 8
+    },
+    "final_yield_hist": {
+      "CARROT": {
+        "3": 5,
+        "2": 6,
+        "1": 2
+      },
+      "WHEAT": {
+        "1": 8
+      }
+    },
+    "final_weeds": 0,
+    "max_weeds": 1,
+    "timeline": [
+      {
+        "day": 0,
+        "tiles": {},
+        "yields": {},
+        "weeds": 0
+      },
+      {
+        "day": 1,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 2,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 3,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3,
+            "2": 5
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 4,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 5,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 6,
+        "tiles": {
+          "WHEAT": 3,
+          "STRAWBERRY": 4,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3
+          },
+          "STRAWBERRY": {
+            "0": 4
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 7,
+        "tiles": {
+          "STRAWBERRY": 12,
+          "MELON": 12,
+          "WHEAT": 5
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 12
+          },
+          "MELON": {
+            "2": 12
+          },
+          "WHEAT": {
+            "1": 5
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 8,
+        "tiles": {
+          "WHEAT": 9,
+          "STRAWBERRY": 16,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 9
+          },
+          "STRAWBERRY": {
+            "0": 16
+          },
+          "MELON": {
+            "3": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 9,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "4": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 10,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "5": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 11,
+        "tiles": {
+          "WHEAT": 12,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 11,
+            "2": 1
+          },
+          "STRAWBERRY": {
+            "0": 20
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 12,
+        "tiles": {
+          "STRAWBERRY": 33,
+          "WHEAT": 20
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 33
+          },
+          "WHEAT": {
+            "1": 18,
+            "2": 2
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 13,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 14,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 10
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 15,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 8,
+            "1": 13,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "0": 29,
+            "2": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 16,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 5,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 25,
+            "2": 8
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 17,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 2,
+            "5": 1,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 18,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 5,
+            "1": 14,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 19,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 7,
+            "5": 1,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 20,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 13,
+            "3": 6,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 21,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 7,
+            "1": 12,
+            "3": 5,
+            "5": 1
+          },
+          "STRAWBERRY": {
+            "1": 5,
+            "2": 16,
+            "0": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 22,
+        "tiles": {
+          "WHEAT": 30,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 6,
+            "1": 17,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 10,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 1
+      },
+      {
+        "day": 23,
+        "tiles": {
+          "WHEAT": 31,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 6,
+            "3": 4,
+            "4": 2
+          },
+          "STRAWBERRY": {
+            "0": 11,
+            "1": 3,
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 24,
+        "tiles": {
+          "WHEAT": 38,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 22,
+            "3": 10,
+            "2": 5,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "2": 3,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 25,
+        "tiles": {
+          "WHEAT": 41,
+          "STRAWBERRY": 17
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 5,
+            "1": 27,
+            "3": 5,
+            "5": 3,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "0": 4,
+            "2": 12,
+            "1": 1
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 26,
+        "tiles": {
+          "CARROT": 14,
+          "WHEAT": 31,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 14
+          },
+          "WHEAT": {
+            "1": 13,
+            "2": 7,
+            "3": 9,
+            "5": 2
+          },
+          "STRAWBERRY": {
+            "0": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 27,
+        "tiles": {
+          "CARROT": 26,
+          "WHEAT": 19,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 26
+          },
+          "WHEAT": {
+            "2": 7,
+            "3": 8,
+            "5": 4
+          },
+          "STRAWBERRY": {
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 28,
+        "tiles": {
+          "CARROT": 25,
+          "WHEAT": 17,
+          "STRAWBERRY": 4
+        },
+        "yields": {
+          "CARROT": {
+            "2": 9,
+            "1": 15,
+            "3": 1
+          },
+          "WHEAT": {
+            "2": 2,
+            "5": 4,
+            "1": 8,
+            "4": 2,
+            "3": 1
+          },
+          "STRAWBERRY": {
+            "0": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 29,
+        "tiles": {
+          "CARROT": 13,
+          "WHEAT": 8
+        },
+        "yields": {
+          "CARROT": {
+            "3": 5,
+            "2": 6,
+            "1": 2
+          },
+          "WHEAT": {
+            "1": 8
+          }
+        },
+        "weeds": 0
+      }
+    ]
+  },
+  {
+    "episode_id": 114172061,
+    "unit_action_counts": {
+      "PASS": 686,
+      "NORTH": 938,
+      "SOUTH": 577,
+      "PICKUP": 156,
+      "WEST": 904,
+      "BUILD_PASTURE": 17,
+      "PLACE": 112,
+      "PLANT": 239,
+      "CARE": 397,
+      "WATER": 1096,
+      "FEED": 346,
+      "COLLECT_FERTILIZER": 377,
+      "EAST": 620,
+      "HARVEST": 464,
+      "DROP": 29,
+      "DIG": 36,
+      "BUILD_COOP": 2,
+      "FERTILIZE": 100
+    },
+    "market_action_counts": {
+      "BUY_PRODUCT": 44,
+      "SELL": 256,
+      "BUY_SEED": 188,
+      "HIRE": 281,
+      "BUY_ANIMAL": 12,
+      "BUY_LAND": 2
+    },
+    "peak_tiles": {
+      "WHEAT": 41,
+      "MELON": 12,
+      "STRAWBERRY": 33,
+      "CARROT": 26
+    },
+    "peak_yield_hist": {
+      "WHEAT": {
+        "2": 5,
+        "1": 27,
+        "3": 5,
+        "5": 3,
+        "4": 1
+      },
+      "MELON": {
+        "1": 12
+      },
+      "STRAWBERRY": {
+        "0": 33
+      },
+      "CARROT": {
+        "1": 26
+      }
+    },
+    "final_tiles": {
+      "CARROT": 13,
+      "WHEAT": 8
+    },
+    "final_yield_hist": {
+      "CARROT": {
+        "3": 5,
+        "2": 6,
+        "1": 2
+      },
+      "WHEAT": {
+        "1": 8
+      }
+    },
+    "final_weeds": 1,
+    "max_weeds": 1,
+    "timeline": [
+      {
+        "day": 0,
+        "tiles": {},
+        "yields": {},
+        "weeds": 0
+      },
+      {
+        "day": 1,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 2,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 3,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3,
+            "2": 5
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 4,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 5,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 6,
+        "tiles": {
+          "WHEAT": 3,
+          "STRAWBERRY": 4,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3
+          },
+          "STRAWBERRY": {
+            "0": 4
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 7,
+        "tiles": {
+          "STRAWBERRY": 12,
+          "MELON": 12,
+          "WHEAT": 5
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 12
+          },
+          "MELON": {
+            "2": 12
+          },
+          "WHEAT": {
+            "1": 5
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 8,
+        "tiles": {
+          "WHEAT": 9,
+          "STRAWBERRY": 16,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 9
+          },
+          "STRAWBERRY": {
+            "0": 16
+          },
+          "MELON": {
+            "3": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 9,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "4": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 10,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "5": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 11,
+        "tiles": {
+          "WHEAT": 12,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 11,
+            "2": 1
+          },
+          "STRAWBERRY": {
+            "0": 20
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 12,
+        "tiles": {
+          "STRAWBERRY": 33,
+          "WHEAT": 20
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 33
+          },
+          "WHEAT": {
+            "1": 18,
+            "2": 2
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 13,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 14,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 10
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 15,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 8,
+            "1": 13,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "0": 29,
+            "2": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 16,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 5,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 25,
+            "2": 8
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 17,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 2,
+            "5": 1,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 18,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 5,
+            "1": 14,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 19,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 7,
+            "5": 1,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 20,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 13,
+            "3": 6,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 21,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 7,
+            "1": 12,
+            "3": 5,
+            "5": 1
+          },
+          "STRAWBERRY": {
+            "1": 5,
+            "2": 16,
+            "0": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 22,
+        "tiles": {
+          "WHEAT": 30,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 6,
+            "1": 17,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 10,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 1
+      },
+      {
+        "day": 23,
+        "tiles": {
+          "WHEAT": 31,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 6,
+            "3": 4,
+            "4": 2
+          },
+          "STRAWBERRY": {
+            "0": 11,
+            "1": 3,
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 24,
+        "tiles": {
+          "WHEAT": 38,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 22,
+            "3": 10,
+            "2": 5,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "2": 3,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 25,
+        "tiles": {
+          "WHEAT": 41,
+          "STRAWBERRY": 17
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 5,
+            "1": 27,
+            "3": 5,
+            "5": 3,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "0": 4,
+            "2": 12,
+            "1": 1
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 26,
+        "tiles": {
+          "CARROT": 14,
+          "WHEAT": 31,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 14
+          },
+          "WHEAT": {
+            "1": 13,
+            "2": 7,
+            "3": 9,
+            "5": 2
+          },
+          "STRAWBERRY": {
+            "0": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 27,
+        "tiles": {
+          "CARROT": 26,
+          "WHEAT": 19,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 26
+          },
+          "WHEAT": {
+            "2": 7,
+            "3": 8,
+            "5": 4
+          },
+          "STRAWBERRY": {
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 28,
+        "tiles": {
+          "CARROT": 25,
+          "WHEAT": 17,
+          "STRAWBERRY": 4
+        },
+        "yields": {
+          "CARROT": {
+            "2": 9,
+            "1": 15,
+            "3": 1
+          },
+          "WHEAT": {
+            "2": 2,
+            "5": 4,
+            "1": 8,
+            "4": 2,
+            "3": 1
+          },
+          "STRAWBERRY": {
+            "0": 4
+          }
+        },
+        "weeds": 1
+      },
+      {
+        "day": 29,
+        "tiles": {
+          "CARROT": 13,
+          "WHEAT": 8
+        },
+        "yields": {
+          "CARROT": {
+            "3": 5,
+            "2": 6,
+            "1": 2
+          },
+          "WHEAT": {
+            "1": 8
+          }
+        },
+        "weeds": 1
+      }
+    ]
+  },
+  {
+    "episode_id": 114173483,
+    "unit_action_counts": {
+      "PASS": 686,
+      "NORTH": 938,
+      "SOUTH": 577,
+      "PICKUP": 156,
+      "WEST": 904,
+      "BUILD_PASTURE": 17,
+      "PLACE": 112,
+      "PLANT": 239,
+      "CARE": 397,
+      "WATER": 1096,
+      "FEED": 346,
+      "COLLECT_FERTILIZER": 377,
+      "EAST": 620,
+      "HARVEST": 464,
+      "DROP": 29,
+      "DIG": 36,
+      "BUILD_COOP": 2,
+      "FERTILIZE": 100
+    },
+    "market_action_counts": {
+      "BUY_PRODUCT": 44,
+      "SELL": 256,
+      "BUY_SEED": 188,
+      "HIRE": 281,
+      "BUY_ANIMAL": 12,
+      "BUY_LAND": 2
+    },
+    "peak_tiles": {
+      "WHEAT": 41,
+      "MELON": 12,
+      "STRAWBERRY": 33,
+      "CARROT": 26
+    },
+    "peak_yield_hist": {
+      "WHEAT": {
+        "2": 5,
+        "1": 27,
+        "3": 5,
+        "5": 3,
+        "4": 1
+      },
+      "MELON": {
+        "1": 12
+      },
+      "STRAWBERRY": {
+        "0": 33
+      },
+      "CARROT": {
+        "1": 26
+      }
+    },
+    "final_tiles": {
+      "CARROT": 13,
+      "WHEAT": 8
+    },
+    "final_yield_hist": {
+      "CARROT": {
+        "3": 5,
+        "2": 6,
+        "1": 2
+      },
+      "WHEAT": {
+        "1": 8
+      }
+    },
+    "final_weeds": 0,
+    "max_weeds": 1,
+    "timeline": [
+      {
+        "day": 0,
+        "tiles": {},
+        "yields": {},
+        "weeds": 0
+      },
+      {
+        "day": 1,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 2,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 3,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3,
+            "2": 5
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 4,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 5,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 6,
+        "tiles": {
+          "WHEAT": 3,
+          "STRAWBERRY": 4,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3
+          },
+          "STRAWBERRY": {
+            "0": 4
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 7,
+        "tiles": {
+          "STRAWBERRY": 12,
+          "MELON": 12,
+          "WHEAT": 5
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 12
+          },
+          "MELON": {
+            "2": 12
+          },
+          "WHEAT": {
+            "1": 5
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 8,
+        "tiles": {
+          "WHEAT": 9,
+          "STRAWBERRY": 16,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 9
+          },
+          "STRAWBERRY": {
+            "0": 16
+          },
+          "MELON": {
+            "3": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 9,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "4": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 10,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "5": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 11,
+        "tiles": {
+          "WHEAT": 12,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 11,
+            "2": 1
+          },
+          "STRAWBERRY": {
+            "0": 20
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 12,
+        "tiles": {
+          "STRAWBERRY": 33,
+          "WHEAT": 20
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 33
+          },
+          "WHEAT": {
+            "1": 18,
+            "2": 2
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 13,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 14,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 10
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 15,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 8,
+            "1": 13,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "0": 29,
+            "2": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 16,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 5,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 25,
+            "2": 8
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 17,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 2,
+            "5": 1,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 18,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 5,
+            "1": 14,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 19,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 7,
+            "5": 1,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 20,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 13,
+            "3": 6,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 21,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 7,
+            "1": 12,
+            "3": 5,
+            "5": 1
+          },
+          "STRAWBERRY": {
+            "1": 5,
+            "2": 16,
+            "0": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 22,
+        "tiles": {
+          "WHEAT": 30,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 6,
+            "1": 17,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 10,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 1
+      },
+      {
+        "day": 23,
+        "tiles": {
+          "WHEAT": 31,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 6,
+            "3": 4,
+            "4": 2
+          },
+          "STRAWBERRY": {
+            "0": 11,
+            "1": 3,
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 24,
+        "tiles": {
+          "WHEAT": 38,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 22,
+            "3": 10,
+            "2": 5,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "2": 3,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 25,
+        "tiles": {
+          "WHEAT": 41,
+          "STRAWBERRY": 17
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 5,
+            "1": 27,
+            "3": 5,
+            "5": 3,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "0": 4,
+            "2": 12,
+            "1": 1
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 26,
+        "tiles": {
+          "CARROT": 14,
+          "WHEAT": 31,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 14
+          },
+          "WHEAT": {
+            "1": 13,
+            "2": 7,
+            "3": 9,
+            "5": 2
+          },
+          "STRAWBERRY": {
+            "0": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 27,
+        "tiles": {
+          "CARROT": 26,
+          "WHEAT": 19,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 26
+          },
+          "WHEAT": {
+            "2": 7,
+            "3": 8,
+            "5": 4
+          },
+          "STRAWBERRY": {
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 28,
+        "tiles": {
+          "CARROT": 25,
+          "WHEAT": 17,
+          "STRAWBERRY": 4
+        },
+        "yields": {
+          "CARROT": {
+            "2": 9,
+            "1": 15,
+            "3": 1
+          },
+          "WHEAT": {
+            "2": 2,
+            "5": 4,
+            "1": 8,
+            "4": 2,
+            "3": 1
+          },
+          "STRAWBERRY": {
+            "0": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 29,
+        "tiles": {
+          "CARROT": 13,
+          "WHEAT": 8
+        },
+        "yields": {
+          "CARROT": {
+            "3": 5,
+            "2": 6,
+            "1": 2
+          },
+          "WHEAT": {
+            "1": 8
+          }
+        },
+        "weeds": 0
+      }
+    ]
+  },
+  {
+    "episode_id": 114175006,
+    "unit_action_counts": {
+      "PASS": 686,
+      "NORTH": 938,
+      "SOUTH": 577,
+      "PICKUP": 156,
+      "WEST": 904,
+      "BUILD_PASTURE": 17,
+      "PLACE": 112,
+      "PLANT": 239,
+      "CARE": 397,
+      "WATER": 1096,
+      "FEED": 346,
+      "COLLECT_FERTILIZER": 377,
+      "EAST": 620,
+      "HARVEST": 464,
+      "DROP": 29,
+      "DIG": 36,
+      "BUILD_COOP": 2,
+      "FERTILIZE": 100
+    },
+    "market_action_counts": {
+      "BUY_PRODUCT": 44,
+      "SELL": 256,
+      "BUY_SEED": 188,
+      "HIRE": 281,
+      "BUY_ANIMAL": 12,
+      "BUY_LAND": 2
+    },
+    "peak_tiles": {
+      "WHEAT": 41,
+      "MELON": 12,
+      "STRAWBERRY": 33,
+      "CARROT": 26
+    },
+    "peak_yield_hist": {
+      "WHEAT": {
+        "2": 5,
+        "1": 27,
+        "3": 5,
+        "5": 3,
+        "4": 1
+      },
+      "MELON": {
+        "1": 12
+      },
+      "STRAWBERRY": {
+        "0": 33
+      },
+      "CARROT": {
+        "1": 26
+      }
+    },
+    "final_tiles": {
+      "CARROT": 13,
+      "WHEAT": 8
+    },
+    "final_yield_hist": {
+      "CARROT": {
+        "3": 5,
+        "2": 6,
+        "1": 2
+      },
+      "WHEAT": {
+        "1": 8
+      }
+    },
+    "final_weeds": 1,
+    "max_weeds": 1,
+    "timeline": [
+      {
+        "day": 0,
+        "tiles": {},
+        "yields": {},
+        "weeds": 0
+      },
+      {
+        "day": 1,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 2,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 3,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3,
+            "2": 5
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 4,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 5,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 6,
+        "tiles": {
+          "WHEAT": 3,
+          "STRAWBERRY": 4,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3
+          },
+          "STRAWBERRY": {
+            "0": 4
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 7,
+        "tiles": {
+          "STRAWBERRY": 12,
+          "MELON": 12,
+          "WHEAT": 5
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 12
+          },
+          "MELON": {
+            "2": 12
+          },
+          "WHEAT": {
+            "1": 5
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 8,
+        "tiles": {
+          "WHEAT": 9,
+          "STRAWBERRY": 16,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 9
+          },
+          "STRAWBERRY": {
+            "0": 16
+          },
+          "MELON": {
+            "3": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 9,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "4": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 10,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "5": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 11,
+        "tiles": {
+          "WHEAT": 12,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 11,
+            "2": 1
+          },
+          "STRAWBERRY": {
+            "0": 20
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 12,
+        "tiles": {
+          "STRAWBERRY": 33,
+          "WHEAT": 20
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 33
+          },
+          "WHEAT": {
+            "1": 18,
+            "2": 2
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 13,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 14,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 10
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 15,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 8,
+            "1": 13,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "0": 29,
+            "2": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 16,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 5,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 25,
+            "2": 8
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 17,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 2,
+            "5": 1,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 18,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 5,
+            "1": 14,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 19,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 7,
+            "5": 1,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 20,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 13,
+            "3": 6,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 21,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 7,
+            "1": 12,
+            "3": 5,
+            "5": 1
+          },
+          "STRAWBERRY": {
+            "1": 5,
+            "2": 16,
+            "0": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 22,
+        "tiles": {
+          "WHEAT": 30,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 6,
+            "1": 17,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 10,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 1
+      },
+      {
+        "day": 23,
+        "tiles": {
+          "WHEAT": 31,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 6,
+            "3": 4,
+            "4": 2
+          },
+          "STRAWBERRY": {
+            "0": 11,
+            "1": 3,
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 24,
+        "tiles": {
+          "WHEAT": 38,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 22,
+            "3": 10,
+            "2": 5,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "2": 3,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 25,
+        "tiles": {
+          "WHEAT": 41,
+          "STRAWBERRY": 17
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 5,
+            "1": 27,
+            "3": 5,
+            "5": 3,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "0": 4,
+            "2": 12,
+            "1": 1
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 26,
+        "tiles": {
+          "CARROT": 14,
+          "WHEAT": 31,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 14
+          },
+          "WHEAT": {
+            "1": 13,
+            "2": 7,
+            "3": 9,
+            "5": 2
+          },
+          "STRAWBERRY": {
+            "0": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 27,
+        "tiles": {
+          "CARROT": 26,
+          "WHEAT": 19,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 26
+          },
+          "WHEAT": {
+            "2": 7,
+            "3": 8,
+            "5": 4
+          },
+          "STRAWBERRY": {
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 28,
+        "tiles": {
+          "CARROT": 25,
+          "WHEAT": 17,
+          "STRAWBERRY": 4
+        },
+        "yields": {
+          "CARROT": {
+            "2": 9,
+            "1": 15,
+            "3": 1
+          },
+          "WHEAT": {
+            "2": 2,
+            "5": 4,
+            "1": 8,
+            "4": 2,
+            "3": 1
+          },
+          "STRAWBERRY": {
+            "0": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 29,
+        "tiles": {
+          "CARROT": 13,
+          "WHEAT": 8
+        },
+        "yields": {
+          "CARROT": {
+            "3": 5,
+            "2": 6,
+            "1": 2
+          },
+          "WHEAT": {
+            "1": 8
+          }
+        },
+        "weeds": 1
+      }
+    ]
+  },
+  {
+    "episode_id": 114176499,
+    "unit_action_counts": {
+      "PASS": 686,
+      "NORTH": 938,
+      "SOUTH": 577,
+      "PICKUP": 156,
+      "WEST": 904,
+      "BUILD_PASTURE": 17,
+      "PLACE": 112,
+      "PLANT": 239,
+      "CARE": 397,
+      "WATER": 1096,
+      "FEED": 346,
+      "COLLECT_FERTILIZER": 377,
+      "EAST": 620,
+      "HARVEST": 464,
+      "DROP": 29,
+      "DIG": 36,
+      "BUILD_COOP": 2,
+      "FERTILIZE": 100
+    },
+    "market_action_counts": {
+      "BUY_PRODUCT": 44,
+      "SELL": 256,
+      "BUY_SEED": 188,
+      "HIRE": 281,
+      "BUY_ANIMAL": 12,
+      "BUY_LAND": 2
+    },
+    "peak_tiles": {
+      "WHEAT": 41,
+      "MELON": 12,
+      "STRAWBERRY": 33,
+      "CARROT": 26
+    },
+    "peak_yield_hist": {
+      "WHEAT": {
+        "2": 5,
+        "1": 27,
+        "3": 5,
+        "5": 3,
+        "4": 1
+      },
+      "MELON": {
+        "1": 12
+      },
+      "STRAWBERRY": {
+        "0": 33
+      },
+      "CARROT": {
+        "1": 26
+      }
+    },
+    "final_tiles": {
+      "CARROT": 13,
+      "WHEAT": 8
+    },
+    "final_yield_hist": {
+      "CARROT": {
+        "3": 5,
+        "2": 6,
+        "1": 2
+      },
+      "WHEAT": {
+        "1": 8
+      }
+    },
+    "final_weeds": 1,
+    "max_weeds": 1,
+    "timeline": [
+      {
+        "day": 0,
+        "tiles": {},
+        "yields": {},
+        "weeds": 0
+      },
+      {
+        "day": 1,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 2,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 3,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3,
+            "2": 5
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 4,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 5,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 6,
+        "tiles": {
+          "WHEAT": 3,
+          "STRAWBERRY": 4,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3
+          },
+          "STRAWBERRY": {
+            "0": 4
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 7,
+        "tiles": {
+          "STRAWBERRY": 12,
+          "MELON": 12,
+          "WHEAT": 5
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 12
+          },
+          "MELON": {
+            "2": 12
+          },
+          "WHEAT": {
+            "1": 5
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 8,
+        "tiles": {
+          "WHEAT": 9,
+          "STRAWBERRY": 16,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 9
+          },
+          "STRAWBERRY": {
+            "0": 16
+          },
+          "MELON": {
+            "3": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 9,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "4": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 10,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "5": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 11,
+        "tiles": {
+          "WHEAT": 12,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 11,
+            "2": 1
+          },
+          "STRAWBERRY": {
+            "0": 20
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 12,
+        "tiles": {
+          "STRAWBERRY": 33,
+          "WHEAT": 20
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 33
+          },
+          "WHEAT": {
+            "1": 18,
+            "2": 2
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 13,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 14,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 10
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 15,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 8,
+            "1": 13,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "0": 29,
+            "2": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 16,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 5,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 25,
+            "2": 8
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 17,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 2,
+            "5": 1,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 18,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 5,
+            "1": 14,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 19,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 7,
+            "5": 1,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 20,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 13,
+            "3": 6,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 21,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 7,
+            "1": 12,
+            "3": 5,
+            "5": 1
+          },
+          "STRAWBERRY": {
+            "1": 5,
+            "2": 16,
+            "0": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 22,
+        "tiles": {
+          "WHEAT": 30,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 6,
+            "1": 17,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 10,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 1
+      },
+      {
+        "day": 23,
+        "tiles": {
+          "WHEAT": 31,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 6,
+            "3": 4,
+            "4": 2
+          },
+          "STRAWBERRY": {
+            "0": 11,
+            "1": 3,
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 24,
+        "tiles": {
+          "WHEAT": 38,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 22,
+            "3": 10,
+            "2": 5,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "2": 3,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 25,
+        "tiles": {
+          "WHEAT": 41,
+          "STRAWBERRY": 17
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 5,
+            "1": 27,
+            "3": 5,
+            "5": 3,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "0": 4,
+            "2": 12,
+            "1": 1
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 26,
+        "tiles": {
+          "CARROT": 14,
+          "WHEAT": 31,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 14
+          },
+          "WHEAT": {
+            "1": 13,
+            "2": 7,
+            "3": 9,
+            "5": 2
+          },
+          "STRAWBERRY": {
+            "0": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 27,
+        "tiles": {
+          "CARROT": 26,
+          "WHEAT": 19,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 26
+          },
+          "WHEAT": {
+            "2": 7,
+            "3": 8,
+            "5": 4
+          },
+          "STRAWBERRY": {
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 28,
+        "tiles": {
+          "CARROT": 25,
+          "WHEAT": 17,
+          "STRAWBERRY": 4
+        },
+        "yields": {
+          "CARROT": {
+            "2": 9,
+            "1": 15,
+            "3": 1
+          },
+          "WHEAT": {
+            "2": 2,
+            "5": 4,
+            "1": 8,
+            "4": 2,
+            "3": 1
+          },
+          "STRAWBERRY": {
+            "0": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 29,
+        "tiles": {
+          "CARROT": 13,
+          "WHEAT": 8
+        },
+        "yields": {
+          "CARROT": {
+            "3": 5,
+            "2": 6,
+            "1": 2
+          },
+          "WHEAT": {
+            "1": 8
+          }
+        },
+        "weeds": 1
+      }
+    ]
+  },
+  {
+    "episode_id": 114177946,
+    "unit_action_counts": {
+      "PASS": 686,
+      "NORTH": 938,
+      "SOUTH": 577,
+      "PICKUP": 156,
+      "WEST": 904,
+      "BUILD_PASTURE": 17,
+      "PLACE": 112,
+      "PLANT": 239,
+      "CARE": 397,
+      "WATER": 1096,
+      "FEED": 346,
+      "COLLECT_FERTILIZER": 377,
+      "EAST": 620,
+      "HARVEST": 464,
+      "DROP": 29,
+      "DIG": 36,
+      "BUILD_COOP": 2,
+      "FERTILIZE": 100
+    },
+    "market_action_counts": {
+      "BUY_PRODUCT": 44,
+      "SELL": 256,
+      "BUY_SEED": 188,
+      "HIRE": 281,
+      "BUY_ANIMAL": 12,
+      "BUY_LAND": 2
+    },
+    "peak_tiles": {
+      "WHEAT": 41,
+      "MELON": 12,
+      "STRAWBERRY": 33,
+      "CARROT": 26
+    },
+    "peak_yield_hist": {
+      "WHEAT": {
+        "2": 5,
+        "1": 27,
+        "3": 5,
+        "5": 3,
+        "4": 1
+      },
+      "MELON": {
+        "1": 12
+      },
+      "STRAWBERRY": {
+        "0": 33
+      },
+      "CARROT": {
+        "1": 26
+      }
+    },
+    "final_tiles": {
+      "CARROT": 13,
+      "WHEAT": 8
+    },
+    "final_yield_hist": {
+      "CARROT": {
+        "3": 5,
+        "2": 6,
+        "1": 2
+      },
+      "WHEAT": {
+        "1": 8
+      }
+    },
+    "final_weeds": 0,
+    "max_weeds": 1,
+    "timeline": [
+      {
+        "day": 0,
+        "tiles": {},
+        "yields": {},
+        "weeds": 0
+      },
+      {
+        "day": 1,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 2,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 8
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 3,
+        "tiles": {
+          "WHEAT": 8,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3,
+            "2": 5
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 4,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 5,
+        "tiles": {
+          "WHEAT": 7,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 7
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 6,
+        "tiles": {
+          "WHEAT": 3,
+          "STRAWBERRY": 4,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 3
+          },
+          "STRAWBERRY": {
+            "0": 4
+          },
+          "MELON": {
+            "1": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 7,
+        "tiles": {
+          "STRAWBERRY": 12,
+          "MELON": 12,
+          "WHEAT": 5
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 12
+          },
+          "MELON": {
+            "2": 12
+          },
+          "WHEAT": {
+            "1": 5
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 8,
+        "tiles": {
+          "WHEAT": 9,
+          "STRAWBERRY": 16,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 9
+          },
+          "STRAWBERRY": {
+            "0": 16
+          },
+          "MELON": {
+            "3": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 9,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "4": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 10,
+        "tiles": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 5
+          },
+          "STRAWBERRY": {
+            "0": 20
+          },
+          "MELON": {
+            "5": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 11,
+        "tiles": {
+          "WHEAT": 12,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 11,
+            "2": 1
+          },
+          "STRAWBERRY": {
+            "0": 20
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 12,
+        "tiles": {
+          "STRAWBERRY": 33,
+          "WHEAT": 20
+        },
+        "yields": {
+          "STRAWBERRY": {
+            "0": 33
+          },
+          "WHEAT": {
+            "1": 18,
+            "2": 2
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 13,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 14,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 10
+          },
+          "STRAWBERRY": {
+            "0": 33
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 15,
+        "tiles": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 8,
+            "1": 13,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "0": 29,
+            "2": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 16,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 5,
+            "2": 5
+          },
+          "STRAWBERRY": {
+            "0": 25,
+            "2": 8
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 17,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 15,
+            "3": 2,
+            "5": 1,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 18,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 5,
+            "1": 14,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 19,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 14,
+            "2": 7,
+            "5": 1,
+            "3": 3
+          },
+          "STRAWBERRY": {
+            "2": 8,
+            "0": 25
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 20,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 13,
+            "3": 6,
+            "2": 6
+          },
+          "STRAWBERRY": {
+            "0": 21,
+            "2": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 21,
+        "tiles": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 7,
+            "1": 12,
+            "3": 5,
+            "5": 1
+          },
+          "STRAWBERRY": {
+            "1": 5,
+            "2": 16,
+            "0": 12
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 22,
+        "tiles": {
+          "WHEAT": 30,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "3": 6,
+            "1": 17,
+            "2": 7
+          },
+          "STRAWBERRY": {
+            "2": 10,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 1
+      },
+      {
+        "day": 23,
+        "tiles": {
+          "WHEAT": 31,
+          "STRAWBERRY": 27
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 19,
+            "2": 6,
+            "3": 4,
+            "4": 2
+          },
+          "STRAWBERRY": {
+            "0": 11,
+            "1": 3,
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 24,
+        "tiles": {
+          "WHEAT": 38,
+          "STRAWBERRY": 20
+        },
+        "yields": {
+          "WHEAT": {
+            "1": 22,
+            "3": 10,
+            "2": 5,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "2": 3,
+            "1": 1,
+            "0": 16
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 25,
+        "tiles": {
+          "WHEAT": 41,
+          "STRAWBERRY": 17
+        },
+        "yields": {
+          "WHEAT": {
+            "2": 5,
+            "1": 27,
+            "3": 5,
+            "5": 3,
+            "4": 1
+          },
+          "STRAWBERRY": {
+            "0": 4,
+            "2": 12,
+            "1": 1
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 26,
+        "tiles": {
+          "CARROT": 14,
+          "WHEAT": 31,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 14
+          },
+          "WHEAT": {
+            "1": 13,
+            "2": 7,
+            "3": 9,
+            "5": 2
+          },
+          "STRAWBERRY": {
+            "0": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 27,
+        "tiles": {
+          "CARROT": 26,
+          "WHEAT": 19,
+          "STRAWBERRY": 13
+        },
+        "yields": {
+          "CARROT": {
+            "1": 26
+          },
+          "WHEAT": {
+            "2": 7,
+            "3": 8,
+            "5": 4
+          },
+          "STRAWBERRY": {
+            "2": 13
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 28,
+        "tiles": {
+          "CARROT": 25,
+          "WHEAT": 17,
+          "STRAWBERRY": 4
+        },
+        "yields": {
+          "CARROT": {
+            "2": 9,
+            "1": 15,
+            "3": 1
+          },
+          "WHEAT": {
+            "2": 2,
+            "5": 4,
+            "1": 8,
+            "4": 2,
+            "3": 1
+          },
+          "STRAWBERRY": {
+            "0": 4
+          }
+        },
+        "weeds": 0
+      },
+      {
+        "day": 29,
+        "tiles": {
+          "CARROT": 13,
+          "WHEAT": 8
+        },
+        "yields": {
+          "CARROT": {
+            "3": 5,
+            "2": 6,
+            "1": 2
+          },
+          "WHEAT": {
+            "1": 8
+          }
+        },
+        "weeds": 0
+      }
+    ]
+  }
+]

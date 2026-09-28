@@ -1,0 +1,276 @@
+[
+  {
+    "episode_id": 114158802,
+    "cash_mismatches": 0,
+    "wool_quote_max": 218,
+    "wool_quote_final": 1,
+    "wool_sold": 282,
+    "floor_sales": 221,
+    "above_sales": 61,
+    "cash_from_floor": 221,
+    "best_later_for_floor_units": 4,
+    "total_recoverable_if_ideal_timing": 840,
+    "mean_recoverable_per_floor_unit": 3.8,
+    "shed_blocked_buys_total": 0,
+    "shed_at_wool_sell_turns_max": 89,
+    "carried_max": 84,
+    "floor_sale_step_range": [
+      344,
+      718
+    ]
+  },
+  {
+    "episode_id": 114160308,
+    "cash_mismatches": 0,
+    "wool_quote_max": 218,
+    "wool_quote_final": 1,
+    "wool_sold": 282,
+    "floor_sales": 228,
+    "above_sales": 54,
+    "cash_from_floor": 228,
+    "best_later_for_floor_units": 4,
+    "total_recoverable_if_ideal_timing": 868,
+    "mean_recoverable_per_floor_unit": 3.81,
+    "shed_blocked_buys_total": 0,
+    "shed_at_wool_sell_turns_max": 89,
+    "carried_max": 84,
+    "floor_sale_step_range": [
+      343,
+      718
+    ]
+  },
+  {
+    "episode_id": 114161728,
+    "cash_mismatches": 0,
+    "wool_quote_max": 218,
+    "wool_quote_final": 18,
+    "wool_sold": 282,
+    "floor_sales": 120,
+    "above_sales": 162,
+    "cash_from_floor": 120,
+    "best_later_for_floor_units": 81,
+    "total_recoverable_if_ideal_timing": 9496,
+    "mean_recoverable_per_floor_unit": 79.13,
+    "shed_blocked_buys_total": 0,
+    "shed_at_wool_sell_turns_max": 89,
+    "carried_max": 84,
+    "floor_sale_step_range": [
+      364,
+      688
+    ]
+  },
+  {
+    "episode_id": 114163744,
+    "cash_mismatches": 0,
+    "wool_quote_max": 218,
+    "wool_quote_final": 1,
+    "wool_sold": 282,
+    "floor_sales": 239,
+    "above_sales": 43,
+    "cash_from_floor": 239,
+    "best_later_for_floor_units": 10,
+    "total_recoverable_if_ideal_timing": 954,
+    "mean_recoverable_per_floor_unit": 3.99,
+    "shed_blocked_buys_total": 0,
+    "shed_at_wool_sell_turns_max": 89,
+    "carried_max": 84,
+    "floor_sale_step_range": [
+      297,
+      718
+    ]
+  },
+  {
+    "episode_id": 114164630,
+    "cash_mismatches": 0,
+    "wool_quote_max": 239,
+    "wool_quote_final": 231,
+    "wool_sold": 282,
+    "floor_sales": 0,
+    "above_sales": 282,
+    "cash_from_floor": 0,
+    "best_later_for_floor_units": 0,
+    "total_recoverable_if_ideal_timing": 0,
+    "mean_recoverable_per_floor_unit": 0.0,
+    "shed_blocked_buys_total": 0,
+    "shed_at_wool_sell_turns_max": 89,
+    "carried_max": 84,
+    "floor_sale_step_range": null
+  },
+  {
+    "episode_id": 114166061,
+    "cash_mismatches": 0,
+    "wool_quote_max": 218,
+    "wool_quote_final": 1,
+    "wool_sold": 282,
+    "floor_sales": 235,
+    "above_sales": 47,
+    "cash_from_floor": 235,
+    "best_later_for_floor_units": 4,
+    "total_recoverable_if_ideal_timing": 892,
+    "mean_recoverable_per_floor_unit": 3.8,
+    "shed_blocked_buys_total": 0,
+    "shed_at_wool_sell_turns_max": 89,
+    "carried_max": 84,
+    "floor_sale_step_range": [
+      343,
+      718
+    ]
+  },
+  {
+    "episode_id": 114167570,
+    "cash_mismatches": 0,
+    "wool_quote_max": 218,
+    "wool_quote_final": 1,
+    "wool_sold": 282,
+    "floor_sales": 232,
+    "above_sales": 50,
+    "cash_from_floor": 232,
+    "best_later_for_floor_units": 4,
+    "total_recoverable_if_ideal_timing": 880,
+    "mean_recoverable_per_floor_unit": 3.79,
+    "shed_blocked_buys_total": 0,
+    "shed_at_wool_sell_turns_max": 89,
+    "carried_max": 84,
+    "floor_sale_step_range": [
+      343,
+      718
+    ]
+  },
+  {
+    "episode_id": 114169079,
+    "cash_mismatches": 0,
+    "wool_quote_max": 218,
+    "wool_quote_final": 1,
+    "wool_sold": 282,
+    "floor_sales": 172,
+    "above_sales": 110,
+    "cash_from_floor": 172,
+    "best_later_for_floor_units": 76,
+    "total_recoverable_if_ideal_timing": 11960,
+    "mean_recoverable_per_floor_unit": 69.53,
+    "shed_blocked_buys_total": 0,
+    "shed_at_wool_sell_turns_max": 89,
+    "carried_max": 84,
+    "floor_sale_step_range": [
+      343,
+      711
+    ]
+  },
+  {
+    "episode_id": 114170594,
+    "cash_mismatches": 0,
+    "wool_quote_max": 248,
+    "wool_quote_final": 248,
+    "wool_sold": 282,
+    "floor_sales": 0,
+    "above_sales": 282,
+    "cash_from_floor": 0,
+    "best_later_for_floor_units": 0,
+    "total_recoverable_if_ideal_timing": 0,
+    "mean_recoverable_per_floor_unit": 0.0,
+    "shed_blocked_buys_total": 0,
+    "shed_at_wool_sell_turns_max": 89,
+    "carried_max": 84,
+    "floor_sale_step_range": null
+  },
+  {
+    "episode_id": 114172061,
+    "cash_mismatches": 0,
+    "wool_quote_max": 218,
+    "wool_quote_final": 1,
+    "wool_sold": 282,
+    "floor_sales": 218,
+    "above_sales": 64,
+    "cash_from_floor": 218,
+    "best_later_for_floor_units": 4,
+    "total_recoverable_if_ideal_timing": 828,
+    "mean_recoverable_per_floor_unit": 3.8,
+    "shed_blocked_buys_total": 0,
+    "shed_at_wool_sell_turns_max": 89,
+    "carried_max": 84,
+    "floor_sale_step_range": [
+      344,
+      718
+    ]
+  },
+  {
+    "episode_id": 114173483,
+    "cash_mismatches": 0,
+    "wool_quote_max": 218,
+    "wool_quote_final": 1,
+    "wool_sold": 282,
+    "floor_sales": 232,
+    "above_sales": 50,
+    "cash_from_floor": 232,
+    "best_later_for_floor_units": 4,
+    "total_recoverable_if_ideal_timing": 880,
+    "mean_recoverable_per_floor_unit": 3.79,
+    "shed_blocked_buys_total": 0,
+    "shed_at_wool_sell_turns_max": 89,
+    "carried_max": 84,
+    "floor_sale_step_range": [
+      343,
+      718
+    ]
+  },
+  {
+    "episode_id": 114175006,
+    "cash_mismatches": 0,
+    "wool_quote_max": 233,
+    "wool_quote_final": 1,
+    "wool_sold": 282,
+    "floor_sales": 76,
+    "above_sales": 206,
+    "cash_from_floor": 76,
+    "best_later_for_floor_units": 76,
+    "total_recoverable_if_ideal_timing": 4713,
+    "mean_recoverable_per_floor_unit": 62.01,
+    "shed_blocked_buys_total": 0,
+    "shed_at_wool_sell_turns_max": 89,
+    "carried_max": 84,
+    "floor_sale_step_range": [
+      480,
+      718
+    ]
+  },
+  {
+    "episode_id": 114176499,
+    "cash_mismatches": 0,
+    "wool_quote_max": 218,
+    "wool_quote_final": 1,
+    "wool_sold": 282,
+    "floor_sales": 148,
+    "above_sales": 134,
+    "cash_from_floor": 148,
+    "best_later_for_floor_units": 76,
+    "total_recoverable_if_ideal_timing": 10382,
+    "mean_recoverable_per_floor_unit": 70.15,
+    "shed_blocked_buys_total": 0,
+    "shed_at_wool_sell_turns_max": 89,
+    "carried_max": 84,
+    "floor_sale_step_range": [
+      364,
+      718
+    ]
+  },
+  {
+    "episode_id": 114177946,
+    "cash_mismatches": 0,
+    "wool_quote_max": 233,
+    "wool_quote_final": 11,
+    "wool_sold": 282,
+    "floor_sales": 16,
+    "above_sales": 266,
+    "cash_from_floor": 16,
+    "best_later_for_floor_units": 132,
+    "total_recoverable_if_ideal_timing": 1980,
+    "mean_recoverable_per_floor_unit": 123.75,
+    "shed_blocked_buys_total": 0,
+    "shed_at_wool_sell_turns_max": 89,
+    "carried_max": 84,
+    "floor_sale_step_range": [
+      600,
+      672
+    ]
+  }
+]

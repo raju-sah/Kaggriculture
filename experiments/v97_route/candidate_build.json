@@ -1,0 +1,8 @@
+{
+  "candidate": "/home/raju/AI-ML Projects/Kaggle Competition/Kaggriculture/experiments/v97_route/candidate.py",
+  "sha256": "cca2e17db514c44a24eed38c8b86b06ee27431cfc3dd44ef713d6110495bc82b",
+  "v92_source_sha256": "0d5d356baa25703f1a7b753527d1b39e1c7d63478985913be5b3c2550261b806",
+  "v92_file_sha256": "0d5d356baa25703f1a7b753527d1b39e1c7d63478985913be5b3c2550261b806",
+  "route_overlay_sha256": "c561c4d98e2dd8c536aeee765f0cadd11b6401a4f0a0a9cfac2703556c08ca64",
+  "checks_passed": true
+}

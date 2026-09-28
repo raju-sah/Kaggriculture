@@ -1,0 +1,42 @@
+[
+  {
+    "episode_id": null,
+    "cash_mismatches": 0,
+    "displaced_actions": {
+      "PASS->HARVEST": 4
+    },
+    "extra_harvest_units": 10,
+    "extra_harvest_by_crop": {
+      "WHEAT": 10
+    },
+    "sold_units_by_product": {
+      "WHEAT": 396,
+      "FERTILIZER": 317,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    }
+  },
+  {
+    "episode_id": null,
+    "cash_mismatches": 0,
+    "displaced_actions": {
+      "PASS->HARVEST": 18
+    },
+    "extra_harvest_units": 10,
+    "extra_harvest_by_crop": {
+      "WHEAT": 10
+    },
+    "sold_units_by_product": {
+      "WHEAT": 396,
+      "FERTILIZER": 317,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    }
+  }
+]

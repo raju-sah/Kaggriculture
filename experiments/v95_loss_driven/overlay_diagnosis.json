@@ -1,0 +1,1014 @@
+[
+  {
+    "file": "v92-seed-92600-ab-repeat-0.json",
+    "episode_seed": 92600,
+    "cash_mismatches": 0,
+    "reward": 99425.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  },
+  {
+    "file": "v92-seed-92600-ba-repeat-0.json",
+    "episode_seed": 92600,
+    "cash_mismatches": 0,
+    "reward": 99425.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  },
+  {
+    "file": "v92-seed-92601-ab-repeat-0.json",
+    "episode_seed": 92601,
+    "cash_mismatches": 0,
+    "reward": 89442.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  },
+  {
+    "file": "v92-seed-92601-ba-repeat-0.json",
+    "episode_seed": 92601,
+    "cash_mismatches": 0,
+    "reward": 89442.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  },
+  {
+    "file": "v92-seed-92602-ab-repeat-0.json",
+    "episode_seed": 92602,
+    "cash_mismatches": 0,
+    "reward": 120459.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  },
+  {
+    "file": "v92-seed-92602-ba-repeat-0.json",
+    "episode_seed": 92602,
+    "cash_mismatches": 0,
+    "reward": 120459.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  },
+  {
+    "file": "v92-seed-92603-ab-repeat-0.json",
+    "episode_seed": 92603,
+    "cash_mismatches": 0,
+    "reward": 84619.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  },
+  {
+    "file": "v92-seed-92603-ba-repeat-0.json",
+    "episode_seed": 92603,
+    "cash_mismatches": 0,
+    "reward": 84619.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  },
+  {
+    "file": "v92-seed-92604-ab-repeat-0.json",
+    "episode_seed": 92604,
+    "cash_mismatches": 0,
+    "reward": 91299.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  },
+  {
+    "file": "v92-seed-92604-ba-repeat-0.json",
+    "episode_seed": 92604,
+    "cash_mismatches": 0,
+    "reward": 91299.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  },
+  {
+    "file": "v92-seed-92802-ab-repeat-0.json",
+    "episode_seed": 92802,
+    "cash_mismatches": 0,
+    "reward": 77897.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  },
+  {
+    "file": "v92-seed-92802-ba-repeat-0.json",
+    "episode_seed": 92802,
+    "cash_mismatches": 0,
+    "reward": 77897.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  },
+  {
+    "file": "v92-seed-93700-ab-repeat-0.json",
+    "episode_seed": 93700,
+    "cash_mismatches": 0,
+    "reward": 89973.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  },
+  {
+    "file": "v92-seed-93700-ba-repeat-0.json",
+    "episode_seed": 93700,
+    "cash_mismatches": 0,
+    "reward": 89973.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  },
+  {
+    "file": "v92-seed-94700-ab-repeat-0.json",
+    "episode_seed": 94700,
+    "cash_mismatches": 0,
+    "reward": 70580.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  },
+  {
+    "file": "v92-seed-94700-ba-repeat-0.json",
+    "episode_seed": 94700,
+    "cash_mismatches": 0,
+    "reward": 70580.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  },
+  {
+    "file": "v92-seed-95100-ab-repeat-0.json",
+    "episode_seed": 95100,
+    "cash_mismatches": 0,
+    "reward": 92647.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  },
+  {
+    "file": "v92-seed-95100-ba-repeat-0.json",
+    "episode_seed": 95100,
+    "cash_mismatches": 0,
+    "reward": 92647.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  },
+  {
+    "file": "v92-seed-95200-ab-repeat-0.json",
+    "episode_seed": 95200,
+    "cash_mismatches": 0,
+    "reward": 89830.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  },
+  {
+    "file": "v92-seed-95200-ba-repeat-0.json",
+    "episode_seed": 95200,
+    "cash_mismatches": 0,
+    "reward": 89830.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  },
+  {
+    "file": "v92-seed-95300-ab-repeat-0.json",
+    "episode_seed": 95300,
+    "cash_mismatches": 0,
+    "reward": 105478.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  },
+  {
+    "file": "v92-seed-95300-ba-repeat-0.json",
+    "episode_seed": 95300,
+    "cash_mismatches": 0,
+    "reward": 105478.0,
+    "fert_events_by_crop": {
+      "WHEAT": 34,
+      "STRAWBERRY": 61,
+      "CARROT": 7
+    },
+    "fert_by_watered": {
+      "CARROT|watered=False": 6,
+      "CARROT|watered=True": 1,
+      "STRAWBERRY|watered=False": 61,
+      "WHEAT|watered=False": 31,
+      "WHEAT|watered=True": 3
+    },
+    "fert_by_yield_at_apply": {
+      "CARROT|y=1": 6,
+      "CARROT|y=2": 1,
+      "STRAWBERRY|y=0": 61,
+      "WHEAT|y=1": 26,
+      "WHEAT|y=2": 8
+    },
+    "fert_active_vs_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    },
+    "harvest_units_by_crop": {
+      "WHEAT": 597,
+      "MELON": 72,
+      "STRAWBERRY": 247,
+      "CARROT": 82
+    },
+    "harvest_from_fertilized_tiles": {
+      "WHEAT": 100,
+      "STRAWBERRY": 120,
+      "CARROT": 28
+    },
+    "fert_already_active_or_new": {
+      "CARROT|newly_fert": 7,
+      "STRAWBERRY|newly_fert": 61,
+      "WHEAT|newly_fert": 34
+    }
+  }
+]

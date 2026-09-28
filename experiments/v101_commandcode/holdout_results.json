@@ -1,0 +1,41 @@
+{
+  "v50": {
+    "errors": 0,
+    "games": 48,
+    "losses": 6,
+    "mean_margin": 2087.4583333333335,
+    "median_margin": 1846.0,
+    "seat_swap_identical": true,
+    "seeds": 24,
+    "ties": 0,
+    "wins": 18,
+    "worst_margin": -1695.0,
+    "worst_seed": 170023
+  },
+  "v56": {
+    "errors": 0,
+    "games": 48,
+    "losses": 16,
+    "mean_margin": -2657.0833333333335,
+    "median_margin": -10442.5,
+    "seat_swap_identical": false,
+    "seeds": 24,
+    "ties": 0,
+    "wins": 8,
+    "worst_margin": -41415.0,
+    "worst_seed": 170005
+  },
+  "v92": {
+    "errors": 0,
+    "games": 48,
+    "losses": 8,
+    "mean_margin": 1447.0,
+    "median_margin": 1452.5,
+    "seat_swap_identical": true,
+    "seeds": 24,
+    "ties": 3,
+    "wins": 13,
+    "worst_margin": -2437.0,
+    "worst_seed": 170010
+  }
+}

@@ -1,0 +1,3253 @@
+[
+  {
+    "episode_id": 114158802,
+    "seat": 0,
+    "outcome": "W",
+    "cash_mismatches": 0,
+    "deleted_units_total": 4,
+    "deleted_by_item": {
+      "WHEAT": 2,
+      "FERTILIZER": 2
+    },
+    "deleted_events": [
+      {
+        "day": 26,
+        "item": "WHEAT",
+        "lost": 2
+      },
+      {
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost": 2
+      }
+    ],
+    "recorded_series": [
+      {
+        "day": 0,
+        "shed": 0,
+        "carried": 0,
+        "total": 0,
+        "spare": 100
+      },
+      {
+        "day": 1,
+        "shed": 3,
+        "carried": 0,
+        "total": 3,
+        "spare": 97
+      },
+      {
+        "day": 2,
+        "shed": 7,
+        "carried": 0,
+        "total": 7,
+        "spare": 93
+      },
+      {
+        "day": 3,
+        "shed": 6,
+        "carried": 0,
+        "total": 6,
+        "spare": 94
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 0,
+        "total": 12,
+        "spare": 88
+      },
+      {
+        "day": 5,
+        "shed": 17,
+        "carried": 0,
+        "total": 17,
+        "spare": 83
+      },
+      {
+        "day": 6,
+        "shed": 18,
+        "carried": 0,
+        "total": 18,
+        "spare": 82
+      },
+      {
+        "day": 7,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 8,
+        "shed": 11,
+        "carried": 0,
+        "total": 11,
+        "spare": 89
+      },
+      {
+        "day": 9,
+        "shed": 24,
+        "carried": 0,
+        "total": 24,
+        "spare": 76
+      },
+      {
+        "day": 10,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 11,
+        "shed": 36,
+        "carried": 0,
+        "total": 36,
+        "spare": 64
+      },
+      {
+        "day": 12,
+        "shed": 34,
+        "carried": 0,
+        "total": 34,
+        "spare": 66
+      },
+      {
+        "day": 13,
+        "shed": 52,
+        "carried": 0,
+        "total": 52,
+        "spare": 48
+      },
+      {
+        "day": 14,
+        "shed": 50,
+        "carried": 0,
+        "total": 50,
+        "spare": 50
+      },
+      {
+        "day": 15,
+        "shed": 57,
+        "carried": 0,
+        "total": 57,
+        "spare": 43
+      },
+      {
+        "day": 16,
+        "shed": 76,
+        "carried": 0,
+        "total": 76,
+        "spare": 24
+      },
+      {
+        "day": 17,
+        "shed": 68,
+        "carried": 0,
+        "total": 68,
+        "spare": 32
+      },
+      {
+        "day": 18,
+        "shed": 72,
+        "carried": 0,
+        "total": 72,
+        "spare": 28
+      },
+      {
+        "day": 19,
+        "shed": 83,
+        "carried": 0,
+        "total": 83,
+        "spare": 17
+      },
+      {
+        "day": 20,
+        "shed": 92,
+        "carried": 0,
+        "total": 92,
+        "spare": 8
+      },
+      {
+        "day": 21,
+        "shed": 64,
+        "carried": 0,
+        "total": 64,
+        "spare": 36
+      },
+      {
+        "day": 22,
+        "shed": 95,
+        "carried": 0,
+        "total": 95,
+        "spare": 5
+      },
+      {
+        "day": 23,
+        "shed": 67,
+        "carried": 0,
+        "total": 67,
+        "spare": 33
+      },
+      {
+        "day": 24,
+        "shed": 97,
+        "carried": 0,
+        "total": 97,
+        "spare": 3
+      },
+      {
+        "day": 25,
+        "shed": 90,
+        "carried": 0,
+        "total": 90,
+        "spare": 10
+      },
+      {
+        "day": 26,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 27,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 28,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 29,
+        "shed": 79,
+        "carried": 0,
+        "total": 79,
+        "spare": 21
+      }
+    ]
+  },
+  {
+    "episode_id": 114160308,
+    "seat": 1,
+    "outcome": "W",
+    "cash_mismatches": 0,
+    "deleted_units_total": 2,
+    "deleted_by_item": {
+      "FERTILIZER": 2
+    },
+    "deleted_events": [
+      {
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost": 2
+      }
+    ],
+    "recorded_series": [
+      {
+        "day": 0,
+        "shed": 0,
+        "carried": 0,
+        "total": 0,
+        "spare": 100
+      },
+      {
+        "day": 1,
+        "shed": 3,
+        "carried": 0,
+        "total": 3,
+        "spare": 97
+      },
+      {
+        "day": 2,
+        "shed": 7,
+        "carried": 0,
+        "total": 7,
+        "spare": 93
+      },
+      {
+        "day": 3,
+        "shed": 6,
+        "carried": 0,
+        "total": 6,
+        "spare": 94
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 0,
+        "total": 12,
+        "spare": 88
+      },
+      {
+        "day": 5,
+        "shed": 17,
+        "carried": 0,
+        "total": 17,
+        "spare": 83
+      },
+      {
+        "day": 6,
+        "shed": 18,
+        "carried": 0,
+        "total": 18,
+        "spare": 82
+      },
+      {
+        "day": 7,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 8,
+        "shed": 11,
+        "carried": 0,
+        "total": 11,
+        "spare": 89
+      },
+      {
+        "day": 9,
+        "shed": 24,
+        "carried": 0,
+        "total": 24,
+        "spare": 76
+      },
+      {
+        "day": 10,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 11,
+        "shed": 36,
+        "carried": 0,
+        "total": 36,
+        "spare": 64
+      },
+      {
+        "day": 12,
+        "shed": 34,
+        "carried": 0,
+        "total": 34,
+        "spare": 66
+      },
+      {
+        "day": 13,
+        "shed": 52,
+        "carried": 0,
+        "total": 52,
+        "spare": 48
+      },
+      {
+        "day": 14,
+        "shed": 50,
+        "carried": 0,
+        "total": 50,
+        "spare": 50
+      },
+      {
+        "day": 15,
+        "shed": 57,
+        "carried": 0,
+        "total": 57,
+        "spare": 43
+      },
+      {
+        "day": 16,
+        "shed": 76,
+        "carried": 0,
+        "total": 76,
+        "spare": 24
+      },
+      {
+        "day": 17,
+        "shed": 68,
+        "carried": 0,
+        "total": 68,
+        "spare": 32
+      },
+      {
+        "day": 18,
+        "shed": 72,
+        "carried": 0,
+        "total": 72,
+        "spare": 28
+      },
+      {
+        "day": 19,
+        "shed": 83,
+        "carried": 0,
+        "total": 83,
+        "spare": 17
+      },
+      {
+        "day": 20,
+        "shed": 92,
+        "carried": 0,
+        "total": 92,
+        "spare": 8
+      },
+      {
+        "day": 21,
+        "shed": 64,
+        "carried": 0,
+        "total": 64,
+        "spare": 36
+      },
+      {
+        "day": 22,
+        "shed": 95,
+        "carried": 0,
+        "total": 95,
+        "spare": 5
+      },
+      {
+        "day": 23,
+        "shed": 67,
+        "carried": 0,
+        "total": 67,
+        "spare": 33
+      },
+      {
+        "day": 24,
+        "shed": 97,
+        "carried": 0,
+        "total": 97,
+        "spare": 3
+      },
+      {
+        "day": 25,
+        "shed": 90,
+        "carried": 0,
+        "total": 90,
+        "spare": 10
+      },
+      {
+        "day": 26,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 27,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 28,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 29,
+        "shed": 79,
+        "carried": 0,
+        "total": 79,
+        "spare": 21
+      }
+    ]
+  },
+  {
+    "episode_id": 114161728,
+    "seat": 0,
+    "outcome": "W",
+    "cash_mismatches": 0,
+    "deleted_units_total": 2,
+    "deleted_by_item": {
+      "FERTILIZER": 2
+    },
+    "deleted_events": [
+      {
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost": 2
+      }
+    ],
+    "recorded_series": [
+      {
+        "day": 0,
+        "shed": 0,
+        "carried": 0,
+        "total": 0,
+        "spare": 100
+      },
+      {
+        "day": 1,
+        "shed": 3,
+        "carried": 0,
+        "total": 3,
+        "spare": 97
+      },
+      {
+        "day": 2,
+        "shed": 8,
+        "carried": 0,
+        "total": 8,
+        "spare": 92
+      },
+      {
+        "day": 3,
+        "shed": 7,
+        "carried": 0,
+        "total": 7,
+        "spare": 93
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 0,
+        "total": 12,
+        "spare": 88
+      },
+      {
+        "day": 5,
+        "shed": 17,
+        "carried": 0,
+        "total": 17,
+        "spare": 83
+      },
+      {
+        "day": 6,
+        "shed": 18,
+        "carried": 0,
+        "total": 18,
+        "spare": 82
+      },
+      {
+        "day": 7,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 8,
+        "shed": 11,
+        "carried": 0,
+        "total": 11,
+        "spare": 89
+      },
+      {
+        "day": 9,
+        "shed": 24,
+        "carried": 0,
+        "total": 24,
+        "spare": 76
+      },
+      {
+        "day": 10,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 11,
+        "shed": 36,
+        "carried": 0,
+        "total": 36,
+        "spare": 64
+      },
+      {
+        "day": 12,
+        "shed": 34,
+        "carried": 0,
+        "total": 34,
+        "spare": 66
+      },
+      {
+        "day": 13,
+        "shed": 52,
+        "carried": 0,
+        "total": 52,
+        "spare": 48
+      },
+      {
+        "day": 14,
+        "shed": 50,
+        "carried": 0,
+        "total": 50,
+        "spare": 50
+      },
+      {
+        "day": 15,
+        "shed": 57,
+        "carried": 0,
+        "total": 57,
+        "spare": 43
+      },
+      {
+        "day": 16,
+        "shed": 76,
+        "carried": 0,
+        "total": 76,
+        "spare": 24
+      },
+      {
+        "day": 17,
+        "shed": 68,
+        "carried": 0,
+        "total": 68,
+        "spare": 32
+      },
+      {
+        "day": 18,
+        "shed": 72,
+        "carried": 0,
+        "total": 72,
+        "spare": 28
+      },
+      {
+        "day": 19,
+        "shed": 83,
+        "carried": 0,
+        "total": 83,
+        "spare": 17
+      },
+      {
+        "day": 20,
+        "shed": 92,
+        "carried": 0,
+        "total": 92,
+        "spare": 8
+      },
+      {
+        "day": 21,
+        "shed": 64,
+        "carried": 0,
+        "total": 64,
+        "spare": 36
+      },
+      {
+        "day": 22,
+        "shed": 95,
+        "carried": 0,
+        "total": 95,
+        "spare": 5
+      },
+      {
+        "day": 23,
+        "shed": 67,
+        "carried": 0,
+        "total": 67,
+        "spare": 33
+      },
+      {
+        "day": 24,
+        "shed": 97,
+        "carried": 0,
+        "total": 97,
+        "spare": 3
+      },
+      {
+        "day": 25,
+        "shed": 90,
+        "carried": 0,
+        "total": 90,
+        "spare": 10
+      },
+      {
+        "day": 26,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 27,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 28,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 29,
+        "shed": 79,
+        "carried": 0,
+        "total": 79,
+        "spare": 21
+      }
+    ]
+  },
+  {
+    "episode_id": 114163744,
+    "seat": 0,
+    "outcome": "W",
+    "cash_mismatches": 0,
+    "deleted_units_total": 2,
+    "deleted_by_item": {
+      "FERTILIZER": 2
+    },
+    "deleted_events": [
+      {
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost": 2
+      }
+    ],
+    "recorded_series": [
+      {
+        "day": 0,
+        "shed": 0,
+        "carried": 0,
+        "total": 0,
+        "spare": 100
+      },
+      {
+        "day": 1,
+        "shed": 3,
+        "carried": 0,
+        "total": 3,
+        "spare": 97
+      },
+      {
+        "day": 2,
+        "shed": 7,
+        "carried": 0,
+        "total": 7,
+        "spare": 93
+      },
+      {
+        "day": 3,
+        "shed": 6,
+        "carried": 0,
+        "total": 6,
+        "spare": 94
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 0,
+        "total": 12,
+        "spare": 88
+      },
+      {
+        "day": 5,
+        "shed": 17,
+        "carried": 0,
+        "total": 17,
+        "spare": 83
+      },
+      {
+        "day": 6,
+        "shed": 18,
+        "carried": 0,
+        "total": 18,
+        "spare": 82
+      },
+      {
+        "day": 7,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 8,
+        "shed": 11,
+        "carried": 0,
+        "total": 11,
+        "spare": 89
+      },
+      {
+        "day": 9,
+        "shed": 24,
+        "carried": 0,
+        "total": 24,
+        "spare": 76
+      },
+      {
+        "day": 10,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 11,
+        "shed": 36,
+        "carried": 0,
+        "total": 36,
+        "spare": 64
+      },
+      {
+        "day": 12,
+        "shed": 34,
+        "carried": 0,
+        "total": 34,
+        "spare": 66
+      },
+      {
+        "day": 13,
+        "shed": 52,
+        "carried": 0,
+        "total": 52,
+        "spare": 48
+      },
+      {
+        "day": 14,
+        "shed": 50,
+        "carried": 0,
+        "total": 50,
+        "spare": 50
+      },
+      {
+        "day": 15,
+        "shed": 57,
+        "carried": 0,
+        "total": 57,
+        "spare": 43
+      },
+      {
+        "day": 16,
+        "shed": 76,
+        "carried": 0,
+        "total": 76,
+        "spare": 24
+      },
+      {
+        "day": 17,
+        "shed": 68,
+        "carried": 0,
+        "total": 68,
+        "spare": 32
+      },
+      {
+        "day": 18,
+        "shed": 72,
+        "carried": 0,
+        "total": 72,
+        "spare": 28
+      },
+      {
+        "day": 19,
+        "shed": 83,
+        "carried": 0,
+        "total": 83,
+        "spare": 17
+      },
+      {
+        "day": 20,
+        "shed": 92,
+        "carried": 0,
+        "total": 92,
+        "spare": 8
+      },
+      {
+        "day": 21,
+        "shed": 64,
+        "carried": 0,
+        "total": 64,
+        "spare": 36
+      },
+      {
+        "day": 22,
+        "shed": 95,
+        "carried": 0,
+        "total": 95,
+        "spare": 5
+      },
+      {
+        "day": 23,
+        "shed": 67,
+        "carried": 0,
+        "total": 67,
+        "spare": 33
+      },
+      {
+        "day": 24,
+        "shed": 97,
+        "carried": 0,
+        "total": 97,
+        "spare": 3
+      },
+      {
+        "day": 25,
+        "shed": 90,
+        "carried": 0,
+        "total": 90,
+        "spare": 10
+      },
+      {
+        "day": 26,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 27,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 28,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 29,
+        "shed": 79,
+        "carried": 0,
+        "total": 79,
+        "spare": 21
+      }
+    ]
+  },
+  {
+    "episode_id": 114164630,
+    "seat": 1,
+    "outcome": "W",
+    "cash_mismatches": 0,
+    "deleted_units_total": 2,
+    "deleted_by_item": {
+      "FERTILIZER": 2
+    },
+    "deleted_events": [
+      {
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost": 2
+      }
+    ],
+    "recorded_series": [
+      {
+        "day": 0,
+        "shed": 0,
+        "carried": 0,
+        "total": 0,
+        "spare": 100
+      },
+      {
+        "day": 1,
+        "shed": 3,
+        "carried": 0,
+        "total": 3,
+        "spare": 97
+      },
+      {
+        "day": 2,
+        "shed": 7,
+        "carried": 0,
+        "total": 7,
+        "spare": 93
+      },
+      {
+        "day": 3,
+        "shed": 6,
+        "carried": 0,
+        "total": 6,
+        "spare": 94
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 0,
+        "total": 12,
+        "spare": 88
+      },
+      {
+        "day": 5,
+        "shed": 17,
+        "carried": 0,
+        "total": 17,
+        "spare": 83
+      },
+      {
+        "day": 6,
+        "shed": 18,
+        "carried": 0,
+        "total": 18,
+        "spare": 82
+      },
+      {
+        "day": 7,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 8,
+        "shed": 11,
+        "carried": 0,
+        "total": 11,
+        "spare": 89
+      },
+      {
+        "day": 9,
+        "shed": 24,
+        "carried": 0,
+        "total": 24,
+        "spare": 76
+      },
+      {
+        "day": 10,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 11,
+        "shed": 36,
+        "carried": 0,
+        "total": 36,
+        "spare": 64
+      },
+      {
+        "day": 12,
+        "shed": 34,
+        "carried": 0,
+        "total": 34,
+        "spare": 66
+      },
+      {
+        "day": 13,
+        "shed": 52,
+        "carried": 0,
+        "total": 52,
+        "spare": 48
+      },
+      {
+        "day": 14,
+        "shed": 50,
+        "carried": 0,
+        "total": 50,
+        "spare": 50
+      },
+      {
+        "day": 15,
+        "shed": 57,
+        "carried": 0,
+        "total": 57,
+        "spare": 43
+      },
+      {
+        "day": 16,
+        "shed": 76,
+        "carried": 0,
+        "total": 76,
+        "spare": 24
+      },
+      {
+        "day": 17,
+        "shed": 68,
+        "carried": 0,
+        "total": 68,
+        "spare": 32
+      },
+      {
+        "day": 18,
+        "shed": 72,
+        "carried": 0,
+        "total": 72,
+        "spare": 28
+      },
+      {
+        "day": 19,
+        "shed": 83,
+        "carried": 0,
+        "total": 83,
+        "spare": 17
+      },
+      {
+        "day": 20,
+        "shed": 92,
+        "carried": 0,
+        "total": 92,
+        "spare": 8
+      },
+      {
+        "day": 21,
+        "shed": 64,
+        "carried": 0,
+        "total": 64,
+        "spare": 36
+      },
+      {
+        "day": 22,
+        "shed": 95,
+        "carried": 0,
+        "total": 95,
+        "spare": 5
+      },
+      {
+        "day": 23,
+        "shed": 67,
+        "carried": 0,
+        "total": 67,
+        "spare": 33
+      },
+      {
+        "day": 24,
+        "shed": 97,
+        "carried": 0,
+        "total": 97,
+        "spare": 3
+      },
+      {
+        "day": 25,
+        "shed": 90,
+        "carried": 0,
+        "total": 90,
+        "spare": 10
+      },
+      {
+        "day": 26,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 27,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 28,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 29,
+        "shed": 79,
+        "carried": 0,
+        "total": 79,
+        "spare": 21
+      }
+    ]
+  },
+  {
+    "episode_id": 114166061,
+    "seat": 1,
+    "outcome": "L",
+    "cash_mismatches": 0,
+    "deleted_units_total": 9,
+    "deleted_by_item": {
+      "FERTILIZER": 8,
+      "WHEAT": 1
+    },
+    "deleted_events": [
+      {
+        "day": 25,
+        "item": "FERTILIZER",
+        "lost": 1
+      },
+      {
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost": 2
+      },
+      {
+        "day": 28,
+        "item": "FERTILIZER",
+        "lost": 5
+      },
+      {
+        "day": 28,
+        "item": "WHEAT",
+        "lost": 1
+      }
+    ],
+    "recorded_series": [
+      {
+        "day": 0,
+        "shed": 0,
+        "carried": 0,
+        "total": 0,
+        "spare": 100
+      },
+      {
+        "day": 1,
+        "shed": 3,
+        "carried": 0,
+        "total": 3,
+        "spare": 97
+      },
+      {
+        "day": 2,
+        "shed": 7,
+        "carried": 0,
+        "total": 7,
+        "spare": 93
+      },
+      {
+        "day": 3,
+        "shed": 6,
+        "carried": 0,
+        "total": 6,
+        "spare": 94
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 0,
+        "total": 12,
+        "spare": 88
+      },
+      {
+        "day": 5,
+        "shed": 17,
+        "carried": 0,
+        "total": 17,
+        "spare": 83
+      },
+      {
+        "day": 6,
+        "shed": 18,
+        "carried": 0,
+        "total": 18,
+        "spare": 82
+      },
+      {
+        "day": 7,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 8,
+        "shed": 11,
+        "carried": 0,
+        "total": 11,
+        "spare": 89
+      },
+      {
+        "day": 9,
+        "shed": 24,
+        "carried": 0,
+        "total": 24,
+        "spare": 76
+      },
+      {
+        "day": 10,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 11,
+        "shed": 36,
+        "carried": 0,
+        "total": 36,
+        "spare": 64
+      },
+      {
+        "day": 12,
+        "shed": 34,
+        "carried": 0,
+        "total": 34,
+        "spare": 66
+      },
+      {
+        "day": 13,
+        "shed": 52,
+        "carried": 0,
+        "total": 52,
+        "spare": 48
+      },
+      {
+        "day": 14,
+        "shed": 50,
+        "carried": 0,
+        "total": 50,
+        "spare": 50
+      },
+      {
+        "day": 15,
+        "shed": 57,
+        "carried": 0,
+        "total": 57,
+        "spare": 43
+      },
+      {
+        "day": 16,
+        "shed": 76,
+        "carried": 0,
+        "total": 76,
+        "spare": 24
+      },
+      {
+        "day": 17,
+        "shed": 68,
+        "carried": 0,
+        "total": 68,
+        "spare": 32
+      },
+      {
+        "day": 18,
+        "shed": 72,
+        "carried": 0,
+        "total": 72,
+        "spare": 28
+      },
+      {
+        "day": 19,
+        "shed": 83,
+        "carried": 0,
+        "total": 83,
+        "spare": 17
+      },
+      {
+        "day": 20,
+        "shed": 92,
+        "carried": 0,
+        "total": 92,
+        "spare": 8
+      },
+      {
+        "day": 21,
+        "shed": 64,
+        "carried": 0,
+        "total": 64,
+        "spare": 36
+      },
+      {
+        "day": 22,
+        "shed": 95,
+        "carried": 0,
+        "total": 95,
+        "spare": 5
+      },
+      {
+        "day": 23,
+        "shed": 67,
+        "carried": 0,
+        "total": 67,
+        "spare": 33
+      },
+      {
+        "day": 24,
+        "shed": 97,
+        "carried": 0,
+        "total": 97,
+        "spare": 3
+      },
+      {
+        "day": 25,
+        "shed": 90,
+        "carried": 0,
+        "total": 90,
+        "spare": 10
+      },
+      {
+        "day": 26,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 27,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 28,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 29,
+        "shed": 79,
+        "carried": 0,
+        "total": 79,
+        "spare": 21
+      }
+    ]
+  },
+  {
+    "episode_id": 114167570,
+    "seat": 0,
+    "outcome": "L",
+    "cash_mismatches": 0,
+    "deleted_units_total": 2,
+    "deleted_by_item": {
+      "FERTILIZER": 2
+    },
+    "deleted_events": [
+      {
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost": 2
+      }
+    ],
+    "recorded_series": [
+      {
+        "day": 0,
+        "shed": 0,
+        "carried": 0,
+        "total": 0,
+        "spare": 100
+      },
+      {
+        "day": 1,
+        "shed": 3,
+        "carried": 0,
+        "total": 3,
+        "spare": 97
+      },
+      {
+        "day": 2,
+        "shed": 7,
+        "carried": 0,
+        "total": 7,
+        "spare": 93
+      },
+      {
+        "day": 3,
+        "shed": 6,
+        "carried": 0,
+        "total": 6,
+        "spare": 94
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 0,
+        "total": 12,
+        "spare": 88
+      },
+      {
+        "day": 5,
+        "shed": 17,
+        "carried": 0,
+        "total": 17,
+        "spare": 83
+      },
+      {
+        "day": 6,
+        "shed": 18,
+        "carried": 0,
+        "total": 18,
+        "spare": 82
+      },
+      {
+        "day": 7,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 8,
+        "shed": 11,
+        "carried": 0,
+        "total": 11,
+        "spare": 89
+      },
+      {
+        "day": 9,
+        "shed": 24,
+        "carried": 0,
+        "total": 24,
+        "spare": 76
+      },
+      {
+        "day": 10,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 11,
+        "shed": 36,
+        "carried": 0,
+        "total": 36,
+        "spare": 64
+      },
+      {
+        "day": 12,
+        "shed": 34,
+        "carried": 0,
+        "total": 34,
+        "spare": 66
+      },
+      {
+        "day": 13,
+        "shed": 52,
+        "carried": 0,
+        "total": 52,
+        "spare": 48
+      },
+      {
+        "day": 14,
+        "shed": 50,
+        "carried": 0,
+        "total": 50,
+        "spare": 50
+      },
+      {
+        "day": 15,
+        "shed": 57,
+        "carried": 0,
+        "total": 57,
+        "spare": 43
+      },
+      {
+        "day": 16,
+        "shed": 76,
+        "carried": 0,
+        "total": 76,
+        "spare": 24
+      },
+      {
+        "day": 17,
+        "shed": 68,
+        "carried": 0,
+        "total": 68,
+        "spare": 32
+      },
+      {
+        "day": 18,
+        "shed": 72,
+        "carried": 0,
+        "total": 72,
+        "spare": 28
+      },
+      {
+        "day": 19,
+        "shed": 83,
+        "carried": 0,
+        "total": 83,
+        "spare": 17
+      },
+      {
+        "day": 20,
+        "shed": 92,
+        "carried": 0,
+        "total": 92,
+        "spare": 8
+      },
+      {
+        "day": 21,
+        "shed": 64,
+        "carried": 0,
+        "total": 64,
+        "spare": 36
+      },
+      {
+        "day": 22,
+        "shed": 95,
+        "carried": 0,
+        "total": 95,
+        "spare": 5
+      },
+      {
+        "day": 23,
+        "shed": 67,
+        "carried": 0,
+        "total": 67,
+        "spare": 33
+      },
+      {
+        "day": 24,
+        "shed": 97,
+        "carried": 0,
+        "total": 97,
+        "spare": 3
+      },
+      {
+        "day": 25,
+        "shed": 90,
+        "carried": 0,
+        "total": 90,
+        "spare": 10
+      },
+      {
+        "day": 26,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 27,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 28,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 29,
+        "shed": 79,
+        "carried": 0,
+        "total": 79,
+        "spare": 21
+      }
+    ]
+  },
+  {
+    "episode_id": 114169079,
+    "seat": 0,
+    "outcome": "L",
+    "cash_mismatches": 0,
+    "deleted_units_total": 2,
+    "deleted_by_item": {
+      "FERTILIZER": 2
+    },
+    "deleted_events": [
+      {
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost": 2
+      }
+    ],
+    "recorded_series": [
+      {
+        "day": 0,
+        "shed": 0,
+        "carried": 0,
+        "total": 0,
+        "spare": 100
+      },
+      {
+        "day": 1,
+        "shed": 3,
+        "carried": 0,
+        "total": 3,
+        "spare": 97
+      },
+      {
+        "day": 2,
+        "shed": 7,
+        "carried": 0,
+        "total": 7,
+        "spare": 93
+      },
+      {
+        "day": 3,
+        "shed": 6,
+        "carried": 0,
+        "total": 6,
+        "spare": 94
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 0,
+        "total": 12,
+        "spare": 88
+      },
+      {
+        "day": 5,
+        "shed": 17,
+        "carried": 0,
+        "total": 17,
+        "spare": 83
+      },
+      {
+        "day": 6,
+        "shed": 18,
+        "carried": 0,
+        "total": 18,
+        "spare": 82
+      },
+      {
+        "day": 7,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 8,
+        "shed": 11,
+        "carried": 0,
+        "total": 11,
+        "spare": 89
+      },
+      {
+        "day": 9,
+        "shed": 24,
+        "carried": 0,
+        "total": 24,
+        "spare": 76
+      },
+      {
+        "day": 10,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 11,
+        "shed": 36,
+        "carried": 0,
+        "total": 36,
+        "spare": 64
+      },
+      {
+        "day": 12,
+        "shed": 34,
+        "carried": 0,
+        "total": 34,
+        "spare": 66
+      },
+      {
+        "day": 13,
+        "shed": 52,
+        "carried": 0,
+        "total": 52,
+        "spare": 48
+      },
+      {
+        "day": 14,
+        "shed": 50,
+        "carried": 0,
+        "total": 50,
+        "spare": 50
+      },
+      {
+        "day": 15,
+        "shed": 57,
+        "carried": 0,
+        "total": 57,
+        "spare": 43
+      },
+      {
+        "day": 16,
+        "shed": 76,
+        "carried": 0,
+        "total": 76,
+        "spare": 24
+      },
+      {
+        "day": 17,
+        "shed": 68,
+        "carried": 0,
+        "total": 68,
+        "spare": 32
+      },
+      {
+        "day": 18,
+        "shed": 72,
+        "carried": 0,
+        "total": 72,
+        "spare": 28
+      },
+      {
+        "day": 19,
+        "shed": 83,
+        "carried": 0,
+        "total": 83,
+        "spare": 17
+      },
+      {
+        "day": 20,
+        "shed": 92,
+        "carried": 0,
+        "total": 92,
+        "spare": 8
+      },
+      {
+        "day": 21,
+        "shed": 64,
+        "carried": 0,
+        "total": 64,
+        "spare": 36
+      },
+      {
+        "day": 22,
+        "shed": 95,
+        "carried": 0,
+        "total": 95,
+        "spare": 5
+      },
+      {
+        "day": 23,
+        "shed": 67,
+        "carried": 0,
+        "total": 67,
+        "spare": 33
+      },
+      {
+        "day": 24,
+        "shed": 97,
+        "carried": 0,
+        "total": 97,
+        "spare": 3
+      },
+      {
+        "day": 25,
+        "shed": 90,
+        "carried": 0,
+        "total": 90,
+        "spare": 10
+      },
+      {
+        "day": 26,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 27,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 28,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 29,
+        "shed": 79,
+        "carried": 0,
+        "total": 79,
+        "spare": 21
+      }
+    ]
+  },
+  {
+    "episode_id": 114170594,
+    "seat": 0,
+    "outcome": "W",
+    "cash_mismatches": 0,
+    "deleted_units_total": 2,
+    "deleted_by_item": {
+      "FERTILIZER": 2
+    },
+    "deleted_events": [
+      {
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost": 2
+      }
+    ],
+    "recorded_series": [
+      {
+        "day": 0,
+        "shed": 0,
+        "carried": 0,
+        "total": 0,
+        "spare": 100
+      },
+      {
+        "day": 1,
+        "shed": 3,
+        "carried": 0,
+        "total": 3,
+        "spare": 97
+      },
+      {
+        "day": 2,
+        "shed": 7,
+        "carried": 0,
+        "total": 7,
+        "spare": 93
+      },
+      {
+        "day": 3,
+        "shed": 6,
+        "carried": 0,
+        "total": 6,
+        "spare": 94
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 0,
+        "total": 12,
+        "spare": 88
+      },
+      {
+        "day": 5,
+        "shed": 17,
+        "carried": 0,
+        "total": 17,
+        "spare": 83
+      },
+      {
+        "day": 6,
+        "shed": 18,
+        "carried": 0,
+        "total": 18,
+        "spare": 82
+      },
+      {
+        "day": 7,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 8,
+        "shed": 11,
+        "carried": 0,
+        "total": 11,
+        "spare": 89
+      },
+      {
+        "day": 9,
+        "shed": 24,
+        "carried": 0,
+        "total": 24,
+        "spare": 76
+      },
+      {
+        "day": 10,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 11,
+        "shed": 36,
+        "carried": 0,
+        "total": 36,
+        "spare": 64
+      },
+      {
+        "day": 12,
+        "shed": 34,
+        "carried": 0,
+        "total": 34,
+        "spare": 66
+      },
+      {
+        "day": 13,
+        "shed": 52,
+        "carried": 0,
+        "total": 52,
+        "spare": 48
+      },
+      {
+        "day": 14,
+        "shed": 50,
+        "carried": 0,
+        "total": 50,
+        "spare": 50
+      },
+      {
+        "day": 15,
+        "shed": 57,
+        "carried": 0,
+        "total": 57,
+        "spare": 43
+      },
+      {
+        "day": 16,
+        "shed": 76,
+        "carried": 0,
+        "total": 76,
+        "spare": 24
+      },
+      {
+        "day": 17,
+        "shed": 68,
+        "carried": 0,
+        "total": 68,
+        "spare": 32
+      },
+      {
+        "day": 18,
+        "shed": 72,
+        "carried": 0,
+        "total": 72,
+        "spare": 28
+      },
+      {
+        "day": 19,
+        "shed": 83,
+        "carried": 0,
+        "total": 83,
+        "spare": 17
+      },
+      {
+        "day": 20,
+        "shed": 92,
+        "carried": 0,
+        "total": 92,
+        "spare": 8
+      },
+      {
+        "day": 21,
+        "shed": 64,
+        "carried": 0,
+        "total": 64,
+        "spare": 36
+      },
+      {
+        "day": 22,
+        "shed": 95,
+        "carried": 0,
+        "total": 95,
+        "spare": 5
+      },
+      {
+        "day": 23,
+        "shed": 67,
+        "carried": 0,
+        "total": 67,
+        "spare": 33
+      },
+      {
+        "day": 24,
+        "shed": 97,
+        "carried": 0,
+        "total": 97,
+        "spare": 3
+      },
+      {
+        "day": 25,
+        "shed": 90,
+        "carried": 0,
+        "total": 90,
+        "spare": 10
+      },
+      {
+        "day": 26,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 27,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 28,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 29,
+        "shed": 79,
+        "carried": 0,
+        "total": 79,
+        "spare": 21
+      }
+    ]
+  },
+  {
+    "episode_id": 114172061,
+    "seat": 0,
+    "outcome": "W",
+    "cash_mismatches": 0,
+    "deleted_units_total": 2,
+    "deleted_by_item": {
+      "FERTILIZER": 2
+    },
+    "deleted_events": [
+      {
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost": 2
+      }
+    ],
+    "recorded_series": [
+      {
+        "day": 0,
+        "shed": 0,
+        "carried": 0,
+        "total": 0,
+        "spare": 100
+      },
+      {
+        "day": 1,
+        "shed": 3,
+        "carried": 0,
+        "total": 3,
+        "spare": 97
+      },
+      {
+        "day": 2,
+        "shed": 7,
+        "carried": 0,
+        "total": 7,
+        "spare": 93
+      },
+      {
+        "day": 3,
+        "shed": 6,
+        "carried": 0,
+        "total": 6,
+        "spare": 94
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 0,
+        "total": 12,
+        "spare": 88
+      },
+      {
+        "day": 5,
+        "shed": 17,
+        "carried": 0,
+        "total": 17,
+        "spare": 83
+      },
+      {
+        "day": 6,
+        "shed": 18,
+        "carried": 0,
+        "total": 18,
+        "spare": 82
+      },
+      {
+        "day": 7,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 8,
+        "shed": 11,
+        "carried": 0,
+        "total": 11,
+        "spare": 89
+      },
+      {
+        "day": 9,
+        "shed": 24,
+        "carried": 0,
+        "total": 24,
+        "spare": 76
+      },
+      {
+        "day": 10,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 11,
+        "shed": 36,
+        "carried": 0,
+        "total": 36,
+        "spare": 64
+      },
+      {
+        "day": 12,
+        "shed": 34,
+        "carried": 0,
+        "total": 34,
+        "spare": 66
+      },
+      {
+        "day": 13,
+        "shed": 52,
+        "carried": 0,
+        "total": 52,
+        "spare": 48
+      },
+      {
+        "day": 14,
+        "shed": 50,
+        "carried": 0,
+        "total": 50,
+        "spare": 50
+      },
+      {
+        "day": 15,
+        "shed": 57,
+        "carried": 0,
+        "total": 57,
+        "spare": 43
+      },
+      {
+        "day": 16,
+        "shed": 76,
+        "carried": 0,
+        "total": 76,
+        "spare": 24
+      },
+      {
+        "day": 17,
+        "shed": 68,
+        "carried": 0,
+        "total": 68,
+        "spare": 32
+      },
+      {
+        "day": 18,
+        "shed": 72,
+        "carried": 0,
+        "total": 72,
+        "spare": 28
+      },
+      {
+        "day": 19,
+        "shed": 83,
+        "carried": 0,
+        "total": 83,
+        "spare": 17
+      },
+      {
+        "day": 20,
+        "shed": 92,
+        "carried": 0,
+        "total": 92,
+        "spare": 8
+      },
+      {
+        "day": 21,
+        "shed": 64,
+        "carried": 0,
+        "total": 64,
+        "spare": 36
+      },
+      {
+        "day": 22,
+        "shed": 95,
+        "carried": 0,
+        "total": 95,
+        "spare": 5
+      },
+      {
+        "day": 23,
+        "shed": 67,
+        "carried": 0,
+        "total": 67,
+        "spare": 33
+      },
+      {
+        "day": 24,
+        "shed": 97,
+        "carried": 0,
+        "total": 97,
+        "spare": 3
+      },
+      {
+        "day": 25,
+        "shed": 90,
+        "carried": 0,
+        "total": 90,
+        "spare": 10
+      },
+      {
+        "day": 26,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 27,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 28,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 29,
+        "shed": 79,
+        "carried": 0,
+        "total": 79,
+        "spare": 21
+      }
+    ]
+  },
+  {
+    "episode_id": 114173483,
+    "seat": 0,
+    "outcome": "L",
+    "cash_mismatches": 0,
+    "deleted_units_total": 2,
+    "deleted_by_item": {
+      "FERTILIZER": 2
+    },
+    "deleted_events": [
+      {
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost": 2
+      }
+    ],
+    "recorded_series": [
+      {
+        "day": 0,
+        "shed": 0,
+        "carried": 0,
+        "total": 0,
+        "spare": 100
+      },
+      {
+        "day": 1,
+        "shed": 3,
+        "carried": 0,
+        "total": 3,
+        "spare": 97
+      },
+      {
+        "day": 2,
+        "shed": 7,
+        "carried": 0,
+        "total": 7,
+        "spare": 93
+      },
+      {
+        "day": 3,
+        "shed": 6,
+        "carried": 0,
+        "total": 6,
+        "spare": 94
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 0,
+        "total": 12,
+        "spare": 88
+      },
+      {
+        "day": 5,
+        "shed": 17,
+        "carried": 0,
+        "total": 17,
+        "spare": 83
+      },
+      {
+        "day": 6,
+        "shed": 18,
+        "carried": 0,
+        "total": 18,
+        "spare": 82
+      },
+      {
+        "day": 7,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 8,
+        "shed": 11,
+        "carried": 0,
+        "total": 11,
+        "spare": 89
+      },
+      {
+        "day": 9,
+        "shed": 24,
+        "carried": 0,
+        "total": 24,
+        "spare": 76
+      },
+      {
+        "day": 10,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 11,
+        "shed": 36,
+        "carried": 0,
+        "total": 36,
+        "spare": 64
+      },
+      {
+        "day": 12,
+        "shed": 34,
+        "carried": 0,
+        "total": 34,
+        "spare": 66
+      },
+      {
+        "day": 13,
+        "shed": 52,
+        "carried": 0,
+        "total": 52,
+        "spare": 48
+      },
+      {
+        "day": 14,
+        "shed": 50,
+        "carried": 0,
+        "total": 50,
+        "spare": 50
+      },
+      {
+        "day": 15,
+        "shed": 57,
+        "carried": 0,
+        "total": 57,
+        "spare": 43
+      },
+      {
+        "day": 16,
+        "shed": 76,
+        "carried": 0,
+        "total": 76,
+        "spare": 24
+      },
+      {
+        "day": 17,
+        "shed": 68,
+        "carried": 0,
+        "total": 68,
+        "spare": 32
+      },
+      {
+        "day": 18,
+        "shed": 72,
+        "carried": 0,
+        "total": 72,
+        "spare": 28
+      },
+      {
+        "day": 19,
+        "shed": 83,
+        "carried": 0,
+        "total": 83,
+        "spare": 17
+      },
+      {
+        "day": 20,
+        "shed": 92,
+        "carried": 0,
+        "total": 92,
+        "spare": 8
+      },
+      {
+        "day": 21,
+        "shed": 64,
+        "carried": 0,
+        "total": 64,
+        "spare": 36
+      },
+      {
+        "day": 22,
+        "shed": 95,
+        "carried": 0,
+        "total": 95,
+        "spare": 5
+      },
+      {
+        "day": 23,
+        "shed": 67,
+        "carried": 0,
+        "total": 67,
+        "spare": 33
+      },
+      {
+        "day": 24,
+        "shed": 97,
+        "carried": 0,
+        "total": 97,
+        "spare": 3
+      },
+      {
+        "day": 25,
+        "shed": 90,
+        "carried": 0,
+        "total": 90,
+        "spare": 10
+      },
+      {
+        "day": 26,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 27,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 28,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 29,
+        "shed": 79,
+        "carried": 0,
+        "total": 79,
+        "spare": 21
+      }
+    ]
+  },
+  {
+    "episode_id": 114175006,
+    "seat": 1,
+    "outcome": "W",
+    "cash_mismatches": 0,
+    "deleted_units_total": 10,
+    "deleted_by_item": {
+      "FERTILIZER": 3,
+      "CARROT": 1,
+      "WHEAT": 6
+    },
+    "deleted_events": [
+      {
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost": 2
+      },
+      {
+        "day": 28,
+        "item": "CARROT",
+        "lost": 1
+      },
+      {
+        "day": 28,
+        "item": "FERTILIZER",
+        "lost": 1
+      },
+      {
+        "day": 28,
+        "item": "WHEAT",
+        "lost": 6
+      }
+    ],
+    "recorded_series": [
+      {
+        "day": 0,
+        "shed": 0,
+        "carried": 0,
+        "total": 0,
+        "spare": 100
+      },
+      {
+        "day": 1,
+        "shed": 3,
+        "carried": 0,
+        "total": 3,
+        "spare": 97
+      },
+      {
+        "day": 2,
+        "shed": 7,
+        "carried": 0,
+        "total": 7,
+        "spare": 93
+      },
+      {
+        "day": 3,
+        "shed": 6,
+        "carried": 0,
+        "total": 6,
+        "spare": 94
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 0,
+        "total": 12,
+        "spare": 88
+      },
+      {
+        "day": 5,
+        "shed": 17,
+        "carried": 0,
+        "total": 17,
+        "spare": 83
+      },
+      {
+        "day": 6,
+        "shed": 18,
+        "carried": 0,
+        "total": 18,
+        "spare": 82
+      },
+      {
+        "day": 7,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 8,
+        "shed": 11,
+        "carried": 0,
+        "total": 11,
+        "spare": 89
+      },
+      {
+        "day": 9,
+        "shed": 24,
+        "carried": 0,
+        "total": 24,
+        "spare": 76
+      },
+      {
+        "day": 10,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 11,
+        "shed": 36,
+        "carried": 0,
+        "total": 36,
+        "spare": 64
+      },
+      {
+        "day": 12,
+        "shed": 34,
+        "carried": 0,
+        "total": 34,
+        "spare": 66
+      },
+      {
+        "day": 13,
+        "shed": 52,
+        "carried": 0,
+        "total": 52,
+        "spare": 48
+      },
+      {
+        "day": 14,
+        "shed": 50,
+        "carried": 0,
+        "total": 50,
+        "spare": 50
+      },
+      {
+        "day": 15,
+        "shed": 57,
+        "carried": 0,
+        "total": 57,
+        "spare": 43
+      },
+      {
+        "day": 16,
+        "shed": 76,
+        "carried": 0,
+        "total": 76,
+        "spare": 24
+      },
+      {
+        "day": 17,
+        "shed": 68,
+        "carried": 0,
+        "total": 68,
+        "spare": 32
+      },
+      {
+        "day": 18,
+        "shed": 72,
+        "carried": 0,
+        "total": 72,
+        "spare": 28
+      },
+      {
+        "day": 19,
+        "shed": 83,
+        "carried": 0,
+        "total": 83,
+        "spare": 17
+      },
+      {
+        "day": 20,
+        "shed": 92,
+        "carried": 0,
+        "total": 92,
+        "spare": 8
+      },
+      {
+        "day": 21,
+        "shed": 64,
+        "carried": 0,
+        "total": 64,
+        "spare": 36
+      },
+      {
+        "day": 22,
+        "shed": 95,
+        "carried": 0,
+        "total": 95,
+        "spare": 5
+      },
+      {
+        "day": 23,
+        "shed": 67,
+        "carried": 0,
+        "total": 67,
+        "spare": 33
+      },
+      {
+        "day": 24,
+        "shed": 97,
+        "carried": 0,
+        "total": 97,
+        "spare": 3
+      },
+      {
+        "day": 25,
+        "shed": 90,
+        "carried": 0,
+        "total": 90,
+        "spare": 10
+      },
+      {
+        "day": 26,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 27,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 28,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 29,
+        "shed": 79,
+        "carried": 0,
+        "total": 79,
+        "spare": 21
+      }
+    ]
+  },
+  {
+    "episode_id": 114176499,
+    "seat": 1,
+    "outcome": "L",
+    "cash_mismatches": 0,
+    "deleted_units_total": 2,
+    "deleted_by_item": {
+      "FERTILIZER": 2
+    },
+    "deleted_events": [
+      {
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost": 2
+      }
+    ],
+    "recorded_series": [
+      {
+        "day": 0,
+        "shed": 0,
+        "carried": 0,
+        "total": 0,
+        "spare": 100
+      },
+      {
+        "day": 1,
+        "shed": 3,
+        "carried": 0,
+        "total": 3,
+        "spare": 97
+      },
+      {
+        "day": 2,
+        "shed": 7,
+        "carried": 0,
+        "total": 7,
+        "spare": 93
+      },
+      {
+        "day": 3,
+        "shed": 6,
+        "carried": 0,
+        "total": 6,
+        "spare": 94
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 0,
+        "total": 12,
+        "spare": 88
+      },
+      {
+        "day": 5,
+        "shed": 17,
+        "carried": 0,
+        "total": 17,
+        "spare": 83
+      },
+      {
+        "day": 6,
+        "shed": 18,
+        "carried": 0,
+        "total": 18,
+        "spare": 82
+      },
+      {
+        "day": 7,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 8,
+        "shed": 11,
+        "carried": 0,
+        "total": 11,
+        "spare": 89
+      },
+      {
+        "day": 9,
+        "shed": 24,
+        "carried": 0,
+        "total": 24,
+        "spare": 76
+      },
+      {
+        "day": 10,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 11,
+        "shed": 36,
+        "carried": 0,
+        "total": 36,
+        "spare": 64
+      },
+      {
+        "day": 12,
+        "shed": 34,
+        "carried": 0,
+        "total": 34,
+        "spare": 66
+      },
+      {
+        "day": 13,
+        "shed": 52,
+        "carried": 0,
+        "total": 52,
+        "spare": 48
+      },
+      {
+        "day": 14,
+        "shed": 50,
+        "carried": 0,
+        "total": 50,
+        "spare": 50
+      },
+      {
+        "day": 15,
+        "shed": 57,
+        "carried": 0,
+        "total": 57,
+        "spare": 43
+      },
+      {
+        "day": 16,
+        "shed": 76,
+        "carried": 0,
+        "total": 76,
+        "spare": 24
+      },
+      {
+        "day": 17,
+        "shed": 68,
+        "carried": 0,
+        "total": 68,
+        "spare": 32
+      },
+      {
+        "day": 18,
+        "shed": 72,
+        "carried": 0,
+        "total": 72,
+        "spare": 28
+      },
+      {
+        "day": 19,
+        "shed": 83,
+        "carried": 0,
+        "total": 83,
+        "spare": 17
+      },
+      {
+        "day": 20,
+        "shed": 92,
+        "carried": 0,
+        "total": 92,
+        "spare": 8
+      },
+      {
+        "day": 21,
+        "shed": 64,
+        "carried": 0,
+        "total": 64,
+        "spare": 36
+      },
+      {
+        "day": 22,
+        "shed": 95,
+        "carried": 0,
+        "total": 95,
+        "spare": 5
+      },
+      {
+        "day": 23,
+        "shed": 67,
+        "carried": 0,
+        "total": 67,
+        "spare": 33
+      },
+      {
+        "day": 24,
+        "shed": 97,
+        "carried": 0,
+        "total": 97,
+        "spare": 3
+      },
+      {
+        "day": 25,
+        "shed": 90,
+        "carried": 0,
+        "total": 90,
+        "spare": 10
+      },
+      {
+        "day": 26,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 27,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 28,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 29,
+        "shed": 79,
+        "carried": 0,
+        "total": 79,
+        "spare": 21
+      }
+    ]
+  },
+  {
+    "episode_id": 114177946,
+    "seat": 1,
+    "outcome": "W",
+    "cash_mismatches": 0,
+    "deleted_units_total": 9,
+    "deleted_by_item": {
+      "FERTILIZER": 2,
+      "WHEAT": 7
+    },
+    "deleted_events": [
+      {
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost": 2
+      },
+      {
+        "day": 28,
+        "item": "WHEAT",
+        "lost": 7
+      }
+    ],
+    "recorded_series": [
+      {
+        "day": 0,
+        "shed": 0,
+        "carried": 0,
+        "total": 0,
+        "spare": 100
+      },
+      {
+        "day": 1,
+        "shed": 3,
+        "carried": 0,
+        "total": 3,
+        "spare": 97
+      },
+      {
+        "day": 2,
+        "shed": 7,
+        "carried": 0,
+        "total": 7,
+        "spare": 93
+      },
+      {
+        "day": 3,
+        "shed": 6,
+        "carried": 0,
+        "total": 6,
+        "spare": 94
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 0,
+        "total": 12,
+        "spare": 88
+      },
+      {
+        "day": 5,
+        "shed": 17,
+        "carried": 0,
+        "total": 17,
+        "spare": 83
+      },
+      {
+        "day": 6,
+        "shed": 18,
+        "carried": 0,
+        "total": 18,
+        "spare": 82
+      },
+      {
+        "day": 7,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 8,
+        "shed": 11,
+        "carried": 0,
+        "total": 11,
+        "spare": 89
+      },
+      {
+        "day": 9,
+        "shed": 24,
+        "carried": 0,
+        "total": 24,
+        "spare": 76
+      },
+      {
+        "day": 10,
+        "shed": 10,
+        "carried": 0,
+        "total": 10,
+        "spare": 90
+      },
+      {
+        "day": 11,
+        "shed": 36,
+        "carried": 0,
+        "total": 36,
+        "spare": 64
+      },
+      {
+        "day": 12,
+        "shed": 34,
+        "carried": 0,
+        "total": 34,
+        "spare": 66
+      },
+      {
+        "day": 13,
+        "shed": 52,
+        "carried": 0,
+        "total": 52,
+        "spare": 48
+      },
+      {
+        "day": 14,
+        "shed": 50,
+        "carried": 0,
+        "total": 50,
+        "spare": 50
+      },
+      {
+        "day": 15,
+        "shed": 57,
+        "carried": 0,
+        "total": 57,
+        "spare": 43
+      },
+      {
+        "day": 16,
+        "shed": 76,
+        "carried": 0,
+        "total": 76,
+        "spare": 24
+      },
+      {
+        "day": 17,
+        "shed": 68,
+        "carried": 0,
+        "total": 68,
+        "spare": 32
+      },
+      {
+        "day": 18,
+        "shed": 72,
+        "carried": 0,
+        "total": 72,
+        "spare": 28
+      },
+      {
+        "day": 19,
+        "shed": 83,
+        "carried": 0,
+        "total": 83,
+        "spare": 17
+      },
+      {
+        "day": 20,
+        "shed": 92,
+        "carried": 0,
+        "total": 92,
+        "spare": 8
+      },
+      {
+        "day": 21,
+        "shed": 64,
+        "carried": 0,
+        "total": 64,
+        "spare": 36
+      },
+      {
+        "day": 22,
+        "shed": 95,
+        "carried": 0,
+        "total": 95,
+        "spare": 5
+      },
+      {
+        "day": 23,
+        "shed": 67,
+        "carried": 0,
+        "total": 67,
+        "spare": 33
+      },
+      {
+        "day": 24,
+        "shed": 97,
+        "carried": 0,
+        "total": 97,
+        "spare": 3
+      },
+      {
+        "day": 25,
+        "shed": 90,
+        "carried": 0,
+        "total": 90,
+        "spare": 10
+      },
+      {
+        "day": 26,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 27,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 28,
+        "shed": 100,
+        "carried": 0,
+        "total": 100,
+        "spare": 0
+      },
+      {
+        "day": 29,
+        "shed": 79,
+        "carried": 0,
+        "total": 79,
+        "spare": 21
+      }
+    ]
+  }
+]

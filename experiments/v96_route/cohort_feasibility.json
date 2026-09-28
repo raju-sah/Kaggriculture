@@ -1,0 +1,5508 @@
+[
+  {
+    "episode_id": 114158802,
+    "cash_mismatches": 0,
+    "animals_bought": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_placed": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_unplaced_at_end": 0,
+    "builds_by_day": {},
+    "shed_animals_by_day": {
+      "0": {
+        "pasture": 0,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "1": {
+        "pasture": 4,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "2": {
+        "pasture": 5,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "3": {
+        "pasture": 5,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "4": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "5": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "6": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "7": {
+        "pasture": 13,
+        "pasture_free": 5,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "8": {
+        "pasture": 13,
+        "pasture_free": 3,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "9": {
+        "pasture": 13,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "10": {
+        "pasture": 13,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "11": {
+        "pasture": 17,
+        "pasture_free": 1,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "12": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "13": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "14": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "15": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "16": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "17": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "18": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "19": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "20": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "21": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "22": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "23": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "24": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "25": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "26": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "27": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "28": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "29": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      }
+    },
+    "vacant_pasture_days": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        7,
+        5,
+        0
+      ],
+      [
+        8,
+        3,
+        0
+      ],
+      [
+        9,
+        1,
+        0
+      ],
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        11,
+        1,
+        0
+      ],
+      [
+        12,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0
+      ],
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        0
+      ],
+      [
+        17,
+        0,
+        0
+      ],
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        19,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        21,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0
+      ],
+      [
+        23,
+        0,
+        0
+      ],
+      [
+        24,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0
+      ],
+      [
+        26,
+        0,
+        0
+      ],
+      [
+        27,
+        0,
+        0
+      ],
+      [
+        28,
+        0,
+        0
+      ],
+      [
+        29,
+        0,
+        0
+      ]
+    ],
+    "wheat_units_bought_by_day": {
+      "0": 20,
+      "1": 7,
+      "4": 6,
+      "7": 9,
+      "8": 17,
+      "10": 17,
+      "11": 15,
+      "12": 20,
+      "13": 2,
+      "21": 9,
+      "23": 4,
+      "25": 9,
+      "26": 15
+    }
+  },
+  {
+    "episode_id": 114160308,
+    "cash_mismatches": 0,
+    "animals_bought": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_placed": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_unplaced_at_end": 0,
+    "builds_by_day": {},
+    "shed_animals_by_day": {
+      "0": {
+        "pasture": 0,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "1": {
+        "pasture": 4,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "2": {
+        "pasture": 5,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "3": {
+        "pasture": 5,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "4": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "5": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "6": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "7": {
+        "pasture": 13,
+        "pasture_free": 5,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "8": {
+        "pasture": 13,
+        "pasture_free": 3,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "9": {
+        "pasture": 13,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "10": {
+        "pasture": 13,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "11": {
+        "pasture": 17,
+        "pasture_free": 1,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "12": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "13": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "14": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "15": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "16": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "17": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "18": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "19": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "20": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "21": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "22": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "23": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "24": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "25": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "26": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "27": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "28": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "29": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      }
+    },
+    "vacant_pasture_days": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        7,
+        5,
+        0
+      ],
+      [
+        8,
+        3,
+        0
+      ],
+      [
+        9,
+        1,
+        0
+      ],
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        11,
+        1,
+        0
+      ],
+      [
+        12,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0
+      ],
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        0
+      ],
+      [
+        17,
+        0,
+        0
+      ],
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        19,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        21,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0
+      ],
+      [
+        23,
+        0,
+        0
+      ],
+      [
+        24,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0
+      ],
+      [
+        26,
+        0,
+        0
+      ],
+      [
+        27,
+        0,
+        0
+      ],
+      [
+        28,
+        0,
+        0
+      ],
+      [
+        29,
+        0,
+        0
+      ]
+    ],
+    "wheat_units_bought_by_day": {
+      "0": 20,
+      "1": 7,
+      "4": 6,
+      "7": 9,
+      "8": 17,
+      "10": 17,
+      "11": 15,
+      "12": 20,
+      "13": 2,
+      "21": 9,
+      "23": 4,
+      "25": 9,
+      "26": 15
+    }
+  },
+  {
+    "episode_id": 114161728,
+    "cash_mismatches": 0,
+    "animals_bought": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_placed": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_unplaced_at_end": 0,
+    "builds_by_day": {},
+    "shed_animals_by_day": {
+      "0": {
+        "pasture": 0,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "1": {
+        "pasture": 4,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "2": {
+        "pasture": 5,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "3": {
+        "pasture": 5,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "4": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "5": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "6": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "7": {
+        "pasture": 13,
+        "pasture_free": 5,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "8": {
+        "pasture": 13,
+        "pasture_free": 3,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "9": {
+        "pasture": 13,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "10": {
+        "pasture": 13,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "11": {
+        "pasture": 17,
+        "pasture_free": 1,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "12": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "13": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "14": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "15": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "16": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "17": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "18": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "19": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "20": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "21": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "22": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "23": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "24": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "25": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "26": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "27": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "28": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "29": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      }
+    },
+    "vacant_pasture_days": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        7,
+        5,
+        0
+      ],
+      [
+        8,
+        3,
+        0
+      ],
+      [
+        9,
+        1,
+        0
+      ],
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        11,
+        1,
+        0
+      ],
+      [
+        12,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0
+      ],
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        0
+      ],
+      [
+        17,
+        0,
+        0
+      ],
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        19,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        21,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0
+      ],
+      [
+        23,
+        0,
+        0
+      ],
+      [
+        24,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0
+      ],
+      [
+        26,
+        0,
+        0
+      ],
+      [
+        27,
+        0,
+        0
+      ],
+      [
+        28,
+        0,
+        0
+      ],
+      [
+        29,
+        0,
+        0
+      ]
+    ],
+    "wheat_units_bought_by_day": {
+      "0": 20,
+      "1": 8,
+      "4": 6,
+      "7": 9,
+      "8": 17,
+      "10": 17,
+      "11": 15,
+      "12": 20,
+      "13": 2,
+      "21": 9,
+      "23": 4,
+      "25": 9,
+      "26": 15
+    }
+  },
+  {
+    "episode_id": 114163744,
+    "cash_mismatches": 0,
+    "animals_bought": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_placed": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_unplaced_at_end": 0,
+    "builds_by_day": {},
+    "shed_animals_by_day": {
+      "0": {
+        "pasture": 0,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "1": {
+        "pasture": 4,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "2": {
+        "pasture": 5,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "3": {
+        "pasture": 5,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "4": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "5": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "6": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "7": {
+        "pasture": 13,
+        "pasture_free": 5,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "8": {
+        "pasture": 13,
+        "pasture_free": 3,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "9": {
+        "pasture": 13,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "10": {
+        "pasture": 13,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "11": {
+        "pasture": 17,
+        "pasture_free": 1,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "12": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "13": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "14": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "15": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "16": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "17": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "18": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "19": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "20": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "21": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "22": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "23": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "24": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "25": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "26": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "27": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "28": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "29": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      }
+    },
+    "vacant_pasture_days": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        7,
+        5,
+        0
+      ],
+      [
+        8,
+        3,
+        0
+      ],
+      [
+        9,
+        1,
+        0
+      ],
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        11,
+        1,
+        0
+      ],
+      [
+        12,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0
+      ],
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        0
+      ],
+      [
+        17,
+        0,
+        0
+      ],
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        19,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        21,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0
+      ],
+      [
+        23,
+        0,
+        0
+      ],
+      [
+        24,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0
+      ],
+      [
+        26,
+        0,
+        0
+      ],
+      [
+        27,
+        0,
+        0
+      ],
+      [
+        28,
+        0,
+        0
+      ],
+      [
+        29,
+        0,
+        0
+      ]
+    ],
+    "wheat_units_bought_by_day": {
+      "0": 20,
+      "1": 7,
+      "4": 6,
+      "7": 9,
+      "8": 17,
+      "10": 17,
+      "11": 15,
+      "12": 20,
+      "13": 2,
+      "21": 9,
+      "23": 4,
+      "25": 9,
+      "26": 15
+    }
+  },
+  {
+    "episode_id": 114164630,
+    "cash_mismatches": 0,
+    "animals_bought": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_placed": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_unplaced_at_end": 0,
+    "builds_by_day": {},
+    "shed_animals_by_day": {
+      "0": {
+        "pasture": 0,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "1": {
+        "pasture": 4,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "2": {
+        "pasture": 5,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "3": {
+        "pasture": 5,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "4": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "5": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "6": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "7": {
+        "pasture": 13,
+        "pasture_free": 5,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "8": {
+        "pasture": 13,
+        "pasture_free": 3,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "9": {
+        "pasture": 13,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "10": {
+        "pasture": 13,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "11": {
+        "pasture": 17,
+        "pasture_free": 1,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "12": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "13": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "14": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "15": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "16": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "17": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "18": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "19": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "20": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "21": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "22": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "23": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "24": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "25": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "26": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "27": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "28": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "29": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      }
+    },
+    "vacant_pasture_days": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        7,
+        5,
+        0
+      ],
+      [
+        8,
+        3,
+        0
+      ],
+      [
+        9,
+        1,
+        0
+      ],
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        11,
+        1,
+        0
+      ],
+      [
+        12,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0
+      ],
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        0
+      ],
+      [
+        17,
+        0,
+        0
+      ],
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        19,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        21,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0
+      ],
+      [
+        23,
+        0,
+        0
+      ],
+      [
+        24,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0
+      ],
+      [
+        26,
+        0,
+        0
+      ],
+      [
+        27,
+        0,
+        0
+      ],
+      [
+        28,
+        0,
+        0
+      ],
+      [
+        29,
+        0,
+        0
+      ]
+    ],
+    "wheat_units_bought_by_day": {
+      "0": 20,
+      "1": 7,
+      "4": 6,
+      "7": 9,
+      "8": 17,
+      "10": 17,
+      "11": 15,
+      "12": 20,
+      "13": 2,
+      "21": 9,
+      "23": 4,
+      "25": 9,
+      "26": 15
+    }
+  },
+  {
+    "episode_id": 114166061,
+    "cash_mismatches": 0,
+    "animals_bought": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_placed": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_unplaced_at_end": 0,
+    "builds_by_day": {},
+    "shed_animals_by_day": {
+      "0": {
+        "pasture": 0,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "1": {
+        "pasture": 4,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "2": {
+        "pasture": 5,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "3": {
+        "pasture": 5,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "4": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "5": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "6": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "7": {
+        "pasture": 13,
+        "pasture_free": 5,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "8": {
+        "pasture": 13,
+        "pasture_free": 3,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "9": {
+        "pasture": 13,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "10": {
+        "pasture": 13,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "11": {
+        "pasture": 17,
+        "pasture_free": 1,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "12": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "13": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "14": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "15": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "16": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "17": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "18": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "19": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "20": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "21": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "22": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "23": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "24": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "25": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "26": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "27": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "28": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "29": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      }
+    },
+    "vacant_pasture_days": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        7,
+        5,
+        0
+      ],
+      [
+        8,
+        3,
+        0
+      ],
+      [
+        9,
+        1,
+        0
+      ],
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        11,
+        1,
+        0
+      ],
+      [
+        12,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0
+      ],
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        0
+      ],
+      [
+        17,
+        0,
+        0
+      ],
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        19,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        21,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0
+      ],
+      [
+        23,
+        0,
+        0
+      ],
+      [
+        24,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0
+      ],
+      [
+        26,
+        0,
+        0
+      ],
+      [
+        27,
+        0,
+        0
+      ],
+      [
+        28,
+        0,
+        0
+      ],
+      [
+        29,
+        0,
+        0
+      ]
+    ],
+    "wheat_units_bought_by_day": {
+      "0": 20,
+      "1": 7,
+      "4": 6,
+      "7": 9,
+      "8": 17,
+      "10": 17,
+      "11": 15,
+      "12": 20,
+      "13": 2,
+      "21": 9,
+      "23": 4,
+      "25": 9,
+      "26": 15
+    }
+  },
+  {
+    "episode_id": 114167570,
+    "cash_mismatches": 0,
+    "animals_bought": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_placed": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_unplaced_at_end": 0,
+    "builds_by_day": {},
+    "shed_animals_by_day": {
+      "0": {
+        "pasture": 0,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "1": {
+        "pasture": 4,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "2": {
+        "pasture": 5,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "3": {
+        "pasture": 5,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "4": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "5": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "6": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "7": {
+        "pasture": 13,
+        "pasture_free": 5,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "8": {
+        "pasture": 13,
+        "pasture_free": 3,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "9": {
+        "pasture": 13,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "10": {
+        "pasture": 13,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "11": {
+        "pasture": 17,
+        "pasture_free": 1,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "12": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "13": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "14": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "15": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "16": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "17": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "18": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "19": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "20": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "21": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "22": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "23": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "24": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "25": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "26": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "27": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "28": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "29": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      }
+    },
+    "vacant_pasture_days": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        7,
+        5,
+        0
+      ],
+      [
+        8,
+        3,
+        0
+      ],
+      [
+        9,
+        1,
+        0
+      ],
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        11,
+        1,
+        0
+      ],
+      [
+        12,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0
+      ],
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        0
+      ],
+      [
+        17,
+        0,
+        0
+      ],
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        19,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        21,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0
+      ],
+      [
+        23,
+        0,
+        0
+      ],
+      [
+        24,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0
+      ],
+      [
+        26,
+        0,
+        0
+      ],
+      [
+        27,
+        0,
+        0
+      ],
+      [
+        28,
+        0,
+        0
+      ],
+      [
+        29,
+        0,
+        0
+      ]
+    ],
+    "wheat_units_bought_by_day": {
+      "0": 20,
+      "1": 7,
+      "4": 6,
+      "7": 9,
+      "8": 17,
+      "10": 17,
+      "11": 15,
+      "12": 20,
+      "13": 2,
+      "21": 9,
+      "23": 4,
+      "25": 9,
+      "26": 15
+    }
+  },
+  {
+    "episode_id": 114169079,
+    "cash_mismatches": 0,
+    "animals_bought": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_placed": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_unplaced_at_end": 0,
+    "builds_by_day": {},
+    "shed_animals_by_day": {
+      "0": {
+        "pasture": 0,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "1": {
+        "pasture": 4,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "2": {
+        "pasture": 5,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "3": {
+        "pasture": 5,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "4": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "5": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "6": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "7": {
+        "pasture": 13,
+        "pasture_free": 5,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "8": {
+        "pasture": 13,
+        "pasture_free": 3,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "9": {
+        "pasture": 13,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "10": {
+        "pasture": 13,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "11": {
+        "pasture": 17,
+        "pasture_free": 1,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "12": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "13": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "14": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "15": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "16": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "17": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "18": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "19": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "20": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "21": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "22": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "23": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "24": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "25": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "26": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "27": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "28": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "29": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      }
+    },
+    "vacant_pasture_days": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        7,
+        5,
+        0
+      ],
+      [
+        8,
+        3,
+        0
+      ],
+      [
+        9,
+        1,
+        0
+      ],
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        11,
+        1,
+        0
+      ],
+      [
+        12,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0
+      ],
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        0
+      ],
+      [
+        17,
+        0,
+        0
+      ],
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        19,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        21,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0
+      ],
+      [
+        23,
+        0,
+        0
+      ],
+      [
+        24,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0
+      ],
+      [
+        26,
+        0,
+        0
+      ],
+      [
+        27,
+        0,
+        0
+      ],
+      [
+        28,
+        0,
+        0
+      ],
+      [
+        29,
+        0,
+        0
+      ]
+    ],
+    "wheat_units_bought_by_day": {
+      "0": 20,
+      "1": 7,
+      "4": 6,
+      "7": 9,
+      "8": 17,
+      "10": 17,
+      "11": 15,
+      "12": 20,
+      "13": 2,
+      "21": 9,
+      "23": 4,
+      "25": 9,
+      "26": 15
+    }
+  },
+  {
+    "episode_id": 114170594,
+    "cash_mismatches": 0,
+    "animals_bought": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_placed": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_unplaced_at_end": 0,
+    "builds_by_day": {},
+    "shed_animals_by_day": {
+      "0": {
+        "pasture": 0,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "1": {
+        "pasture": 4,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "2": {
+        "pasture": 5,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "3": {
+        "pasture": 5,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "4": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "5": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "6": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "7": {
+        "pasture": 13,
+        "pasture_free": 5,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "8": {
+        "pasture": 13,
+        "pasture_free": 3,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "9": {
+        "pasture": 13,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "10": {
+        "pasture": 13,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "11": {
+        "pasture": 17,
+        "pasture_free": 1,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "12": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "13": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "14": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "15": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "16": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "17": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "18": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "19": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "20": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "21": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "22": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "23": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "24": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "25": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "26": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "27": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "28": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "29": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      }
+    },
+    "vacant_pasture_days": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        7,
+        5,
+        0
+      ],
+      [
+        8,
+        3,
+        0
+      ],
+      [
+        9,
+        1,
+        0
+      ],
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        11,
+        1,
+        0
+      ],
+      [
+        12,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0
+      ],
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        0
+      ],
+      [
+        17,
+        0,
+        0
+      ],
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        19,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        21,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0
+      ],
+      [
+        23,
+        0,
+        0
+      ],
+      [
+        24,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0
+      ],
+      [
+        26,
+        0,
+        0
+      ],
+      [
+        27,
+        0,
+        0
+      ],
+      [
+        28,
+        0,
+        0
+      ],
+      [
+        29,
+        0,
+        0
+      ]
+    ],
+    "wheat_units_bought_by_day": {
+      "0": 20,
+      "1": 7,
+      "4": 6,
+      "7": 9,
+      "8": 17,
+      "10": 17,
+      "11": 15,
+      "12": 20,
+      "13": 2,
+      "21": 9,
+      "23": 4,
+      "25": 9,
+      "26": 15
+    }
+  },
+  {
+    "episode_id": 114172061,
+    "cash_mismatches": 0,
+    "animals_bought": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_placed": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_unplaced_at_end": 0,
+    "builds_by_day": {
+      "28": {
+        "COOP": 1
+      }
+    },
+    "shed_animals_by_day": {
+      "0": {
+        "pasture": 0,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "1": {
+        "pasture": 4,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "2": {
+        "pasture": 5,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "3": {
+        "pasture": 5,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "4": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "5": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "6": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "7": {
+        "pasture": 13,
+        "pasture_free": 5,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "8": {
+        "pasture": 13,
+        "pasture_free": 3,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "9": {
+        "pasture": 13,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "10": {
+        "pasture": 13,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "11": {
+        "pasture": 17,
+        "pasture_free": 1,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "12": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "13": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "14": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "15": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "16": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "17": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "18": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "19": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "20": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "21": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "22": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "23": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "24": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "25": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "26": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "27": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "28": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "29": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      }
+    },
+    "vacant_pasture_days": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        7,
+        5,
+        0
+      ],
+      [
+        8,
+        3,
+        0
+      ],
+      [
+        9,
+        1,
+        0
+      ],
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        11,
+        1,
+        0
+      ],
+      [
+        12,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0
+      ],
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        0
+      ],
+      [
+        17,
+        0,
+        0
+      ],
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        19,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        21,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0
+      ],
+      [
+        23,
+        0,
+        0
+      ],
+      [
+        24,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0
+      ],
+      [
+        26,
+        0,
+        0
+      ],
+      [
+        27,
+        0,
+        0
+      ],
+      [
+        28,
+        0,
+        0
+      ],
+      [
+        29,
+        0,
+        0
+      ]
+    ],
+    "wheat_units_bought_by_day": {
+      "0": 20,
+      "1": 7,
+      "4": 6,
+      "7": 9,
+      "8": 17,
+      "10": 17,
+      "11": 15,
+      "12": 20,
+      "13": 2,
+      "21": 9,
+      "23": 4,
+      "25": 9,
+      "26": 15
+    }
+  },
+  {
+    "episode_id": 114173483,
+    "cash_mismatches": 0,
+    "animals_bought": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_placed": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_unplaced_at_end": 0,
+    "builds_by_day": {},
+    "shed_animals_by_day": {
+      "0": {
+        "pasture": 0,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "1": {
+        "pasture": 4,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "2": {
+        "pasture": 5,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "3": {
+        "pasture": 5,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "4": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "5": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "6": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "7": {
+        "pasture": 13,
+        "pasture_free": 5,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "8": {
+        "pasture": 13,
+        "pasture_free": 3,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "9": {
+        "pasture": 13,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "10": {
+        "pasture": 13,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "11": {
+        "pasture": 17,
+        "pasture_free": 1,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "12": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "13": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "14": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "15": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "16": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "17": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "18": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "19": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "20": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "21": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "22": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "23": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "24": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "25": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "26": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "27": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "28": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "29": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      }
+    },
+    "vacant_pasture_days": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        7,
+        5,
+        0
+      ],
+      [
+        8,
+        3,
+        0
+      ],
+      [
+        9,
+        1,
+        0
+      ],
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        11,
+        1,
+        0
+      ],
+      [
+        12,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0
+      ],
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        0
+      ],
+      [
+        17,
+        0,
+        0
+      ],
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        19,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        21,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0
+      ],
+      [
+        23,
+        0,
+        0
+      ],
+      [
+        24,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0
+      ],
+      [
+        26,
+        0,
+        0
+      ],
+      [
+        27,
+        0,
+        0
+      ],
+      [
+        28,
+        0,
+        0
+      ],
+      [
+        29,
+        0,
+        0
+      ]
+    ],
+    "wheat_units_bought_by_day": {
+      "0": 20,
+      "1": 7,
+      "4": 6,
+      "7": 9,
+      "8": 17,
+      "10": 17,
+      "11": 15,
+      "12": 20,
+      "13": 2,
+      "21": 9,
+      "23": 4,
+      "25": 9,
+      "26": 15
+    }
+  },
+  {
+    "episode_id": 114175006,
+    "cash_mismatches": 0,
+    "animals_bought": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_placed": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_unplaced_at_end": 0,
+    "builds_by_day": {},
+    "shed_animals_by_day": {
+      "0": {
+        "pasture": 0,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "1": {
+        "pasture": 4,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "2": {
+        "pasture": 5,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "3": {
+        "pasture": 5,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "4": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "5": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "6": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "7": {
+        "pasture": 13,
+        "pasture_free": 5,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "8": {
+        "pasture": 13,
+        "pasture_free": 3,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "9": {
+        "pasture": 13,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "10": {
+        "pasture": 13,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "11": {
+        "pasture": 17,
+        "pasture_free": 1,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "12": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "13": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "14": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "15": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "16": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "17": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "18": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "19": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "20": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "21": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "22": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "23": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "24": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "25": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "26": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "27": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "28": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "29": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      }
+    },
+    "vacant_pasture_days": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        7,
+        5,
+        0
+      ],
+      [
+        8,
+        3,
+        0
+      ],
+      [
+        9,
+        1,
+        0
+      ],
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        11,
+        1,
+        0
+      ],
+      [
+        12,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0
+      ],
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        0
+      ],
+      [
+        17,
+        0,
+        0
+      ],
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        19,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        21,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0
+      ],
+      [
+        23,
+        0,
+        0
+      ],
+      [
+        24,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0
+      ],
+      [
+        26,
+        0,
+        0
+      ],
+      [
+        27,
+        0,
+        0
+      ],
+      [
+        28,
+        0,
+        0
+      ],
+      [
+        29,
+        0,
+        0
+      ]
+    ],
+    "wheat_units_bought_by_day": {
+      "0": 20,
+      "1": 7,
+      "4": 6,
+      "7": 9,
+      "8": 17,
+      "10": 17,
+      "11": 15,
+      "12": 20,
+      "13": 2,
+      "21": 9,
+      "23": 4,
+      "25": 9,
+      "26": 15
+    }
+  },
+  {
+    "episode_id": 114176499,
+    "cash_mismatches": 0,
+    "animals_bought": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_placed": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_unplaced_at_end": 0,
+    "builds_by_day": {},
+    "shed_animals_by_day": {
+      "0": {
+        "pasture": 0,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "1": {
+        "pasture": 4,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "2": {
+        "pasture": 5,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "3": {
+        "pasture": 5,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "4": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "5": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "6": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "7": {
+        "pasture": 13,
+        "pasture_free": 5,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "8": {
+        "pasture": 13,
+        "pasture_free": 3,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "9": {
+        "pasture": 13,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "10": {
+        "pasture": 13,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "11": {
+        "pasture": 17,
+        "pasture_free": 1,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "12": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "13": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "14": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "15": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "16": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "17": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "18": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "19": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "20": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "21": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "22": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "23": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "24": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "25": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "26": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "27": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "28": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "29": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      }
+    },
+    "vacant_pasture_days": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        7,
+        5,
+        0
+      ],
+      [
+        8,
+        3,
+        0
+      ],
+      [
+        9,
+        1,
+        0
+      ],
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        11,
+        1,
+        0
+      ],
+      [
+        12,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0
+      ],
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        0
+      ],
+      [
+        17,
+        0,
+        0
+      ],
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        19,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        21,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0
+      ],
+      [
+        23,
+        0,
+        0
+      ],
+      [
+        24,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0
+      ],
+      [
+        26,
+        0,
+        0
+      ],
+      [
+        27,
+        0,
+        0
+      ],
+      [
+        28,
+        0,
+        0
+      ],
+      [
+        29,
+        0,
+        0
+      ]
+    ],
+    "wheat_units_bought_by_day": {
+      "0": 20,
+      "1": 7,
+      "4": 6,
+      "7": 9,
+      "8": 17,
+      "10": 17,
+      "11": 15,
+      "12": 20,
+      "13": 2,
+      "21": 9,
+      "23": 4,
+      "25": 9,
+      "26": 15
+    }
+  },
+  {
+    "episode_id": 114177946,
+    "cash_mismatches": 0,
+    "animals_bought": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_placed": {
+      "COW": 6,
+      "SHEEP": 11
+    },
+    "animals_unplaced_at_end": 0,
+    "builds_by_day": {},
+    "shed_animals_by_day": {
+      "0": {
+        "pasture": 0,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "1": {
+        "pasture": 4,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "2": {
+        "pasture": 5,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "3": {
+        "pasture": 5,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "4": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "5": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "6": {
+        "pasture": 6,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "7": {
+        "pasture": 13,
+        "pasture_free": 5,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "8": {
+        "pasture": 13,
+        "pasture_free": 3,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "9": {
+        "pasture": 13,
+        "pasture_free": 1,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "10": {
+        "pasture": 13,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "11": {
+        "pasture": 17,
+        "pasture_free": 1,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "12": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "13": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "14": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "15": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      },
+      "16": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "17": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "18": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "19": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "20": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "21": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "22": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "23": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "24": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "25": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "26": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "27": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "28": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 0,
+        "coop_free": 0,
+        "shed_animals": 0
+      },
+      "29": {
+        "pasture": 17,
+        "pasture_free": 0,
+        "coop": 1,
+        "coop_free": 1,
+        "shed_animals": 0
+      }
+    },
+    "vacant_pasture_days": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        7,
+        5,
+        0
+      ],
+      [
+        8,
+        3,
+        0
+      ],
+      [
+        9,
+        1,
+        0
+      ],
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        11,
+        1,
+        0
+      ],
+      [
+        12,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0
+      ],
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        0
+      ],
+      [
+        17,
+        0,
+        0
+      ],
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        19,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        21,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0
+      ],
+      [
+        23,
+        0,
+        0
+      ],
+      [
+        24,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0
+      ],
+      [
+        26,
+        0,
+        0
+      ],
+      [
+        27,
+        0,
+        0
+      ],
+      [
+        28,
+        0,
+        0
+      ],
+      [
+        29,
+        0,
+        0
+      ]
+    ],
+    "wheat_units_bought_by_day": {
+      "0": 20,
+      "1": 7,
+      "4": 6,
+      "7": 9,
+      "8": 17,
+      "10": 17,
+      "11": 15,
+      "12": 20,
+      "13": 2,
+      "21": 9,
+      "23": 4,
+      "25": 9,
+      "26": 15
+    }
+  }
+]

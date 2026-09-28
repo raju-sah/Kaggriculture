@@ -1,0 +1,612 @@
+[
+  {
+    "file": "episode-114158802-replay.json",
+    "episode_id": 114158802,
+    "opponent": "tmgf",
+    "outcome": "W",
+    "margin": 34317,
+    "cash_mismatches_rajusah": 0,
+    "cash_mismatches_total": 0,
+    "total_lost_units": 2,
+    "total_quote_value": 94,
+    "discard_by_day": {
+      "27": {
+        "lost_units": 2,
+        "quote_value": 94.0,
+        "items": {
+          "FERTILIZER": 2
+        }
+      }
+    },
+    "discard_detail": [
+      {
+        "step": 671,
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost_units": 2,
+        "quote": 47,
+        "quote_value": 94,
+        "shed_after": 100
+      }
+    ],
+    "accepted_sale_units_by_item": {
+      "CARROT": 240,
+      "FERTILIZER": 339,
+      "MELON": 150,
+      "MILK": 271,
+      "STRAWBERRY": 492,
+      "WHEAT": 405,
+      "WOOL": 349
+    },
+    "accepted_sale_cash_by_item": {
+      "CARROT": 16429.0,
+      "FERTILIZER": 23324.0,
+      "MELON": 29611.0,
+      "MILK": 38689.0,
+      "STRAWBERRY": 90705.0,
+      "WHEAT": 17071.0,
+      "WOOL": 10895.0
+    },
+    "accepted_sale_cash_total": 226724.0
+  },
+  {
+    "file": "episode-114160308-replay.json",
+    "episode_id": 114160308,
+    "opponent": "Aussie lover",
+    "outcome": "W",
+    "margin": 18396,
+    "cash_mismatches_rajusah": 0,
+    "cash_mismatches_total": 0,
+    "total_lost_units": 2,
+    "total_quote_value": 58,
+    "discard_by_day": {
+      "27": {
+        "lost_units": 2,
+        "quote_value": 58.0,
+        "items": {
+          "FERTILIZER": 2
+        }
+      }
+    },
+    "discard_detail": [
+      {
+        "step": 671,
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost_units": 2,
+        "quote": 29,
+        "quote_value": 58,
+        "shed_after": 100
+      }
+    ],
+    "accepted_sale_units_by_item": {},
+    "accepted_sale_cash_by_item": {},
+    "accepted_sale_cash_total": 0
+  },
+  {
+    "file": "episode-114161728-replay.json",
+    "episode_id": 114161728,
+    "opponent": "Shaun the Sheep ",
+    "outcome": "W",
+    "margin": 133896,
+    "cash_mismatches_rajusah": 0,
+    "cash_mismatches_total": 0,
+    "total_lost_units": 2,
+    "total_quote_value": 78,
+    "discard_by_day": {
+      "27": {
+        "lost_units": 2,
+        "quote_value": 78.0,
+        "items": {
+          "FERTILIZER": 2
+        }
+      }
+    },
+    "discard_detail": [
+      {
+        "step": 671,
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost_units": 2,
+        "quote": 39,
+        "quote_value": 78,
+        "shed_after": 100
+      }
+    ],
+    "accepted_sale_units_by_item": {
+      "CARROT": 142,
+      "FERTILIZER": 375,
+      "MELON": 92,
+      "MILK": 164,
+      "STRAWBERRY": 273,
+      "TOMATO": 4,
+      "WHEAT": 554,
+      "WOOL": 314
+    },
+    "accepted_sale_cash_by_item": {
+      "CARROT": 8276.0,
+      "FERTILIZER": 24392.0,
+      "MELON": 21452.0,
+      "MILK": 42299.0,
+      "STRAWBERRY": 66372.0,
+      "TOMATO": 292.0,
+      "WHEAT": 20929.0,
+      "WOOL": 15436.0
+    },
+    "accepted_sale_cash_total": 199448.0
+  },
+  {
+    "file": "episode-114163744-replay.json",
+    "episode_id": 114163744,
+    "opponent": "K.nosaka",
+    "outcome": "W",
+    "margin": 10702,
+    "cash_mismatches_rajusah": 0,
+    "cash_mismatches_total": 0,
+    "total_lost_units": 2,
+    "total_quote_value": 14,
+    "discard_by_day": {
+      "27": {
+        "lost_units": 2,
+        "quote_value": 14.0,
+        "items": {
+          "FERTILIZER": 2
+        }
+      }
+    },
+    "discard_detail": [
+      {
+        "step": 671,
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost_units": 2,
+        "quote": 7,
+        "quote_value": 14,
+        "shed_after": 100
+      }
+    ],
+    "accepted_sale_units_by_item": {
+      "CARROT": 139,
+      "FERTILIZER": 576,
+      "MELON": 138,
+      "MILK": 428,
+      "STRAWBERRY": 560,
+      "WHEAT": 594,
+      "WOOL": 409
+    },
+    "accepted_sale_cash_by_item": {
+      "CARROT": 7700.0,
+      "FERTILIZER": 26297.0,
+      "MELON": 28734.0,
+      "MILK": 18943.0,
+      "STRAWBERRY": 55439.0,
+      "WHEAT": 24414.0,
+      "WOOL": 10550.0
+    },
+    "accepted_sale_cash_total": 172077.0
+  },
+  {
+    "file": "episode-114164630-replay.json",
+    "episode_id": 114164630,
+    "opponent": "cheezyp",
+    "outcome": "W",
+    "margin": 30593,
+    "cash_mismatches_rajusah": 0,
+    "cash_mismatches_total": 0,
+    "total_lost_units": 2,
+    "total_quote_value": 10,
+    "discard_by_day": {
+      "27": {
+        "lost_units": 2,
+        "quote_value": 10.0,
+        "items": {
+          "FERTILIZER": 2
+        }
+      }
+    },
+    "discard_detail": [
+      {
+        "step": 671,
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost_units": 2,
+        "quote": 5,
+        "quote_value": 10,
+        "shed_after": 100
+      }
+    ],
+    "accepted_sale_units_by_item": {},
+    "accepted_sale_cash_by_item": {},
+    "accepted_sale_cash_total": 0
+  },
+  {
+    "file": "episode-114166061-replay.json",
+    "episode_id": 114166061,
+    "opponent": "Kumar Saurabh",
+    "outcome": "L",
+    "margin": -22706,
+    "cash_mismatches_rajusah": 0,
+    "cash_mismatches_total": 0,
+    "total_lost_units": 2,
+    "total_quote_value": 4,
+    "discard_by_day": {
+      "27": {
+        "lost_units": 2,
+        "quote_value": 4.0,
+        "items": {
+          "FERTILIZER": 2
+        }
+      }
+    },
+    "discard_detail": [
+      {
+        "step": 671,
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost_units": 2,
+        "quote": 2,
+        "quote_value": 4,
+        "shed_after": 100
+      }
+    ],
+    "accepted_sale_units_by_item": {},
+    "accepted_sale_cash_by_item": {},
+    "accepted_sale_cash_total": 0
+  },
+  {
+    "file": "episode-114167570-replay.json",
+    "episode_id": 114167570,
+    "opponent": "\u8584\u548c\u53f6 Lv.INF",
+    "outcome": "L",
+    "margin": -9100,
+    "cash_mismatches_rajusah": 0,
+    "cash_mismatches_total": 0,
+    "total_lost_units": 2,
+    "total_quote_value": 8,
+    "discard_by_day": {
+      "27": {
+        "lost_units": 2,
+        "quote_value": 8.0,
+        "items": {
+          "FERTILIZER": 2
+        }
+      }
+    },
+    "discard_detail": [
+      {
+        "step": 671,
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost_units": 2,
+        "quote": 4,
+        "quote_value": 8,
+        "shed_after": 100
+      }
+    ],
+    "accepted_sale_units_by_item": {
+      "CARROT": 94,
+      "FERTILIZER": 643,
+      "MELON": 144,
+      "MILK": 434,
+      "STRAWBERRY": 518,
+      "WHEAT": 768,
+      "WOOL": 420
+    },
+    "accepted_sale_cash_by_item": {
+      "CARROT": 4929.0,
+      "FERTILIZER": 28894.0,
+      "MELON": 28517.0,
+      "MILK": 63576.0,
+      "STRAWBERRY": 84336.0,
+      "WHEAT": 30599.0,
+      "WOOL": 10987.0
+    },
+    "accepted_sale_cash_total": 251838.0
+  },
+  {
+    "file": "episode-114169079-replay.json",
+    "episode_id": 114169079,
+    "opponent": "xamad",
+    "outcome": "L",
+    "margin": -22088,
+    "cash_mismatches_rajusah": 0,
+    "cash_mismatches_total": 0,
+    "total_lost_units": 2,
+    "total_quote_value": 10,
+    "discard_by_day": {
+      "27": {
+        "lost_units": 2,
+        "quote_value": 10.0,
+        "items": {
+          "FERTILIZER": 2
+        }
+      }
+    },
+    "discard_detail": [
+      {
+        "step": 671,
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost_units": 2,
+        "quote": 5,
+        "quote_value": 10,
+        "shed_after": 100
+      }
+    ],
+    "accepted_sale_units_by_item": {
+      "CARROT": 94,
+      "FERTILIZER": 642,
+      "MELON": 144,
+      "MILK": 434,
+      "STRAWBERRY": 518,
+      "WHEAT": 768,
+      "WOOL": 420
+    },
+    "accepted_sale_cash_by_item": {
+      "CARROT": 5325.0,
+      "FERTILIZER": 28962.0,
+      "MELON": 28517.0,
+      "MILK": 101925.0,
+      "STRAWBERRY": 87917.0,
+      "WHEAT": 31327.0,
+      "WOOL": 14032.0
+    },
+    "accepted_sale_cash_total": 298005.0
+  },
+  {
+    "file": "episode-114170594-replay.json",
+    "episode_id": 114170594,
+    "opponent": "Azizii Gill",
+    "outcome": "W",
+    "margin": 49344,
+    "cash_mismatches_rajusah": 0,
+    "cash_mismatches_total": 0,
+    "total_lost_units": 2,
+    "total_quote_value": 24,
+    "discard_by_day": {
+      "27": {
+        "lost_units": 2,
+        "quote_value": 24.0,
+        "items": {
+          "FERTILIZER": 2
+        }
+      }
+    },
+    "discard_detail": [
+      {
+        "step": 671,
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost_units": 2,
+        "quote": 12,
+        "quote_value": 24,
+        "shed_after": 100
+      }
+    ],
+    "accepted_sale_units_by_item": {
+      "CARROT": 82,
+      "FERTILIZER": 535,
+      "MELON": 174,
+      "MILK": 379,
+      "STRAWBERRY": 534,
+      "WHEAT": 827,
+      "WOOL": 414
+    },
+    "accepted_sale_cash_by_item": {
+      "CARROT": 4805.0,
+      "FERTILIZER": 26426.0,
+      "MELON": 31133.0,
+      "MILK": 28876.0,
+      "STRAWBERRY": 7266.0,
+      "WHEAT": 26473.0,
+      "WOOL": 95434.0
+    },
+    "accepted_sale_cash_total": 220413.0
+  },
+  {
+    "file": "episode-114172061-replay.json",
+    "episode_id": 114172061,
+    "opponent": "\u0421\u0435\u0440\u0433\u0435\u0439 \u041c\u0438\u0437\u0438\u043d",
+    "outcome": "W",
+    "margin": 15234,
+    "cash_mismatches_rajusah": 0,
+    "cash_mismatches_total": 0,
+    "total_lost_units": 2,
+    "total_quote_value": 2,
+    "discard_by_day": {
+      "27": {
+        "lost_units": 2,
+        "quote_value": 2.0,
+        "items": {
+          "FERTILIZER": 2
+        }
+      }
+    },
+    "discard_detail": [
+      {
+        "step": 671,
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost_units": 2,
+        "quote": 1,
+        "quote_value": 2,
+        "shed_after": 100
+      }
+    ],
+    "accepted_sale_units_by_item": {
+      "CARROT": 82,
+      "EGG": 374,
+      "FERTILIZER": 646,
+      "MELON": 168,
+      "MILK": 308,
+      "STRAWBERRY": 353,
+      "TOMATO": 134,
+      "WHEAT": 469,
+      "WOOL": 346
+    },
+    "accepted_sale_cash_by_item": {
+      "CARROT": 4437.0,
+      "EGG": 20464.0,
+      "FERTILIZER": 26250.0,
+      "MELON": 30483.0,
+      "MILK": 18880.0,
+      "STRAWBERRY": 40928.0,
+      "TOMATO": 10815.0,
+      "WHEAT": 23298.0,
+      "WOOL": 10989.0
+    },
+    "accepted_sale_cash_total": 186544.0
+  },
+  {
+    "file": "episode-114173483-replay.json",
+    "episode_id": 114173483,
+    "opponent": "straw_Yu",
+    "outcome": "L",
+    "margin": -10870,
+    "cash_mismatches_rajusah": 0,
+    "cash_mismatches_total": 0,
+    "total_lost_units": 2,
+    "total_quote_value": 8,
+    "discard_by_day": {
+      "27": {
+        "lost_units": 2,
+        "quote_value": 8.0,
+        "items": {
+          "FERTILIZER": 2
+        }
+      }
+    },
+    "discard_detail": [
+      {
+        "step": 671,
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost_units": 2,
+        "quote": 4,
+        "quote_value": 8,
+        "shed_after": 100
+      }
+    ],
+    "accepted_sale_units_by_item": {
+      "CARROT": 181,
+      "FERTILIZER": 653,
+      "MELON": 144,
+      "MILK": 434,
+      "STRAWBERRY": 502,
+      "WHEAT": 714,
+      "WOOL": 369
+    },
+    "accepted_sale_cash_by_item": {
+      "CARROT": 10433.0,
+      "FERTILIZER": 28849.0,
+      "MELON": 28517.0,
+      "MILK": 70843.0,
+      "STRAWBERRY": 24733.0,
+      "WHEAT": 30148.0,
+      "WOOL": 10936.0
+    },
+    "accepted_sale_cash_total": 204459.0
+  },
+  {
+    "file": "episode-114175006-replay.json",
+    "episode_id": 114175006,
+    "opponent": "Efrain Garay",
+    "outcome": "W",
+    "margin": 29876,
+    "cash_mismatches_rajusah": 0,
+    "cash_mismatches_total": 0,
+    "total_lost_units": 2,
+    "total_quote_value": 4,
+    "discard_by_day": {
+      "27": {
+        "lost_units": 2,
+        "quote_value": 4.0,
+        "items": {
+          "FERTILIZER": 2
+        }
+      }
+    },
+    "discard_detail": [
+      {
+        "step": 671,
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost_units": 2,
+        "quote": 2,
+        "quote_value": 4,
+        "shed_after": 100
+      }
+    ],
+    "accepted_sale_units_by_item": {},
+    "accepted_sale_cash_by_item": {},
+    "accepted_sale_cash_total": 0
+  },
+  {
+    "file": "episode-114176499-replay.json",
+    "episode_id": 114176499,
+    "opponent": "Harini Panigrahi",
+    "outcome": "L",
+    "margin": -1504,
+    "cash_mismatches_rajusah": 0,
+    "cash_mismatches_total": 0,
+    "total_lost_units": 2,
+    "total_quote_value": 12,
+    "discard_by_day": {
+      "27": {
+        "lost_units": 2,
+        "quote_value": 12.0,
+        "items": {
+          "FERTILIZER": 2
+        }
+      }
+    },
+    "discard_detail": [
+      {
+        "step": 671,
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost_units": 2,
+        "quote": 6,
+        "quote_value": 12,
+        "shed_after": 100
+      }
+    ],
+    "accepted_sale_units_by_item": {},
+    "accepted_sale_cash_by_item": {},
+    "accepted_sale_cash_total": 0
+  },
+  {
+    "file": "episode-114177946-replay.json",
+    "episode_id": 114177946,
+    "opponent": "Raoul Biagioni",
+    "outcome": "W",
+    "margin": 36985,
+    "cash_mismatches_rajusah": 0,
+    "cash_mismatches_total": 0,
+    "total_lost_units": 2,
+    "total_quote_value": 4,
+    "discard_by_day": {
+      "27": {
+        "lost_units": 2,
+        "quote_value": 4.0,
+        "items": {
+          "FERTILIZER": 2
+        }
+      }
+    },
+    "discard_detail": [
+      {
+        "step": 671,
+        "day": 27,
+        "item": "FERTILIZER",
+        "lost_units": 2,
+        "quote": 2,
+        "quote_value": 4,
+        "shed_after": 100
+      }
+    ],
+    "accepted_sale_units_by_item": {},
+    "accepted_sale_cash_by_item": {},
+    "accepted_sale_cash_total": 0
+  }
+]

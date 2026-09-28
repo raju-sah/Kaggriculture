@@ -1,0 +1,4678 @@
+[
+  {
+    "file": "episode-114158802-replay.json",
+    "episode_id": 114158802,
+    "opponent": "tmgf",
+    "outcome": "W",
+    "margin": 34317,
+    "rajusah_score": 108954.0,
+    "cash_mismatches": 0,
+    "ledger": {
+      "WHEAT": {
+        "harvested": 595,
+        "bought": 150,
+        "sold_units": 399,
+        "sold_cash": 16819.0,
+        "avg_price": 42.15,
+        "quote_high": 45,
+        "quote_low": 25,
+        "fed_or_fertilized": 346,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "CARROT": {
+        "harvested": 82,
+        "bought": 0,
+        "sold_units": 82,
+        "sold_cash": 5442.0,
+        "avg_price": 66.37,
+        "quote_high": 74,
+        "quote_low": 35,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "TOMATO": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 74,
+        "quote_low": 60,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "STRAWBERRY": {
+        "harvested": 249,
+        "bought": 0,
+        "sold_units": 249,
+        "sold_cash": 45654.0,
+        "avg_price": 183.35,
+        "quote_high": 223,
+        "quote_low": 114,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MELON": {
+        "harvested": 72,
+        "bought": 0,
+        "sold_units": 72,
+        "sold_cash": 17270.0,
+        "avg_price": 239.86,
+        "quote_high": 272,
+        "quote_low": 89,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "EGG": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 63,
+        "quote_low": 50,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MILK": {
+        "harvested": 164,
+        "bought": 0,
+        "sold_units": 164,
+        "sold_cash": 23464.0,
+        "avg_price": 143.07,
+        "quote_high": 224,
+        "quote_low": 95,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "WOOL": {
+        "harvested": 282,
+        "bought": 0,
+        "sold_units": 282,
+        "sold_cash": 6800.0,
+        "avg_price": 24.11,
+        "quote_high": 218,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "FERTILIZER": {
+        "harvested": 0,
+        "bought": 46,
+        "sold_units": 317,
+        "sold_cash": 21477.0,
+        "avg_price": 67.75,
+        "quote_high": 100,
+        "quote_low": 42,
+        "fed_or_fertilized": 100,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      }
+    },
+    "total_sold_cash": 136926.0,
+    "buy_product_cash_spent": 8077.0,
+    "daily_sold_cash": {
+      "0": 427.0,
+      "1": 300.0,
+      "2": 553.0,
+      "3": 602.0,
+      "4": 634.0,
+      "5": 534.0,
+      "6": 3257.0,
+      "7": 632.0,
+      "8": 3068.0,
+      "9": 2920.0,
+      "10": 16165.0,
+      "11": 4183.0,
+      "12": 4060.0,
+      "13": 2256.0,
+      "14": 2267.0,
+      "15": 2017.0,
+      "16": 7457.0,
+      "17": 5555.0,
+      "18": 7691.0,
+      "19": 4428.0,
+      "20": 7629.0,
+      "21": 5790.0,
+      "22": 8708.0,
+      "23": 3333.0,
+      "24": 5063.0,
+      "25": 6245.0,
+      "26": 6556.0,
+      "27": 6467.0,
+      "28": 8403.0,
+      "29": 9726.0
+    },
+    "daily_sold_units": {
+      "0": {
+        "WHEAT": 15
+      },
+      "1": {
+        "FERTILIZER": 3
+      },
+      "2": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "3": {
+        "WHEAT": 7,
+        "FERTILIZER": 4
+      },
+      "4": {
+        "FERTILIZER": 6,
+        "WHEAT": 2
+      },
+      "5": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "6": {
+        "WHEAT": 7,
+        "FERTILIZER": 6,
+        "WOOL": 12
+      },
+      "7": {
+        "FERTILIZER": 7
+      },
+      "8": {
+        "FERTILIZER": 10,
+        "MILK": 12,
+        "WHEAT": 3
+      },
+      "9": {
+        "WHEAT": 7,
+        "FERTILIZER": 14,
+        "WOOL": 8
+      },
+      "10": {
+        "MELON": 60,
+        "MILK": 11
+      },
+      "11": {
+        "MELON": 12,
+        "FERTILIZER": 13,
+        "MILK": 6
+      },
+      "12": {
+        "FERTILIZER": 16,
+        "WOOL": 16,
+        "MILK": 6
+      },
+      "13": {
+        "WOOL": 4,
+        "FERTILIZER": 17,
+        "MILK": 6
+      },
+      "14": {
+        "FERTILIZER": 13,
+        "WHEAT": 2,
+        "MILK": 9,
+        "WOOL": 11
+      },
+      "15": {
+        "FERTILIZER": 14,
+        "WOOL": 19,
+        "WHEAT": 6,
+        "MILK": 6
+      },
+      "16": {
+        "MILK": 9,
+        "FERTILIZER": 12,
+        "STRAWBERRY": 24,
+        "WOOL": 18,
+        "WHEAT": 7
+      },
+      "17": {
+        "MILK": 9,
+        "FERTILIZER": 13,
+        "WHEAT": 3,
+        "WOOL": 16,
+        "STRAWBERRY": 16
+      },
+      "18": {
+        "WOOL": 10,
+        "FERTILIZER": 12,
+        "WHEAT": 2,
+        "MILK": 15,
+        "STRAWBERRY": 24
+      },
+      "19": {
+        "WOOL": 12,
+        "MILK": 6,
+        "WHEAT": 11,
+        "FERTILIZER": 2,
+        "STRAWBERRY": 16
+      },
+      "20": {
+        "WOOL": 12,
+        "MILK": 9,
+        "FERTILIZER": 14,
+        "WHEAT": 28,
+        "STRAWBERRY": 24
+      },
+      "21": {
+        "WOOL": 12,
+        "WHEAT": 3,
+        "MILK": 6,
+        "FERTILIZER": 14,
+        "STRAWBERRY": 24
+      },
+      "22": {
+        "WOOL": 16,
+        "MILK": 8,
+        "STRAWBERRY": 34,
+        "FERTILIZER": 16,
+        "WHEAT": 30
+      },
+      "23": {
+        "FERTILIZER": 17,
+        "WHEAT": 14,
+        "WOOL": 16,
+        "MILK": 4,
+        "STRAWBERRY": 8
+      },
+      "24": {
+        "WOOL": 21,
+        "FERTILIZER": 10,
+        "WHEAT": 20,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "25": {
+        "STRAWBERRY": 17,
+        "WOOL": 20,
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "MILK": 6
+      },
+      "26": {
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "WOOL": 15,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "27": {
+        "FERTILIZER": 19,
+        "WHEAT": 63,
+        "MILK": 8,
+        "STRAWBERRY": 6,
+        "WOOL": 4
+      },
+      "28": {
+        "WOOL": 28,
+        "FERTILIZER": 11,
+        "MILK": 8,
+        "CARROT": 7,
+        "WHEAT": 49,
+        "STRAWBERRY": 20
+      },
+      "29": {
+        "WHEAT": 56,
+        "CARROT": 75,
+        "FERTILIZER": 14,
+        "WOOL": 12,
+        "MILK": 8
+      }
+    }
+  },
+  {
+    "file": "episode-114160308-replay.json",
+    "episode_id": 114160308,
+    "opponent": "Aussie lover",
+    "outcome": "W",
+    "margin": 18396,
+    "rajusah_score": 118573.0,
+    "cash_mismatches": 0,
+    "ledger": {
+      "WHEAT": {
+        "harvested": 595,
+        "bought": 150,
+        "sold_units": 399,
+        "sold_cash": 18317.0,
+        "avg_price": 45.91,
+        "quote_high": 50,
+        "quote_low": 25,
+        "fed_or_fertilized": 346,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "CARROT": {
+        "harvested": 82,
+        "bought": 0,
+        "sold_units": 82,
+        "sold_cash": 4518.0,
+        "avg_price": 55.1,
+        "quote_high": 57,
+        "quote_low": 32,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "TOMATO": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 189,
+        "quote_low": 60,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "STRAWBERRY": {
+        "harvested": 249,
+        "bought": 0,
+        "sold_units": 249,
+        "sold_cash": 60804.0,
+        "avg_price": 244.19,
+        "quote_high": 260,
+        "quote_low": 120,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MELON": {
+        "harvested": 72,
+        "bought": 0,
+        "sold_units": 72,
+        "sold_cash": 17056.0,
+        "avg_price": 236.89,
+        "quote_high": 272,
+        "quote_low": 120,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "EGG": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 62,
+        "quote_low": 50,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MILK": {
+        "harvested": 164,
+        "bought": 0,
+        "sold_units": 164,
+        "sold_cash": 20893.0,
+        "avg_price": 127.4,
+        "quote_high": 186,
+        "quote_low": 59,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "WOOL": {
+        "harvested": 282,
+        "bought": 0,
+        "sold_units": 282,
+        "sold_cash": 6565.0,
+        "avg_price": 23.28,
+        "quote_high": 218,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "FERTILIZER": {
+        "harvested": 0,
+        "bought": 46,
+        "sold_units": 317,
+        "sold_cash": 17874.0,
+        "avg_price": 56.38,
+        "quote_high": 100,
+        "quote_low": 24,
+        "fed_or_fertilized": 100,
+        "discarded": 2,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      }
+    },
+    "total_sold_cash": 146027.0,
+    "buy_product_cash_spent": 7559.0,
+    "daily_sold_cash": {
+      "0": 427.0,
+      "1": 300.0,
+      "2": 552.0,
+      "3": 595.0,
+      "4": 632.0,
+      "5": 529.0,
+      "6": 3252.0,
+      "7": 628.0,
+      "8": 3063.0,
+      "9": 2947.0,
+      "10": 16373.0,
+      "11": 4025.0,
+      "12": 3968.0,
+      "13": 2248.0,
+      "14": 2160.0,
+      "15": 2028.0,
+      "16": 8152.0,
+      "17": 6047.0,
+      "18": 8517.0,
+      "19": 5256.0,
+      "20": 8853.0,
+      "21": 7343.0,
+      "22": 11293.0,
+      "23": 3553.0,
+      "24": 6008.0,
+      "25": 6733.0,
+      "26": 6786.0,
+      "27": 6435.0,
+      "28": 8801.0,
+      "29": 8523.0
+    },
+    "daily_sold_units": {
+      "0": {
+        "WHEAT": 15
+      },
+      "1": {
+        "FERTILIZER": 3
+      },
+      "2": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "3": {
+        "WHEAT": 7,
+        "FERTILIZER": 4
+      },
+      "4": {
+        "FERTILIZER": 6,
+        "WHEAT": 2
+      },
+      "5": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "6": {
+        "WHEAT": 7,
+        "FERTILIZER": 6,
+        "WOOL": 12
+      },
+      "7": {
+        "FERTILIZER": 7
+      },
+      "8": {
+        "FERTILIZER": 10,
+        "MILK": 12,
+        "WHEAT": 3
+      },
+      "9": {
+        "WHEAT": 7,
+        "FERTILIZER": 14,
+        "WOOL": 8
+      },
+      "10": {
+        "MELON": 60,
+        "MILK": 11
+      },
+      "11": {
+        "MELON": 12,
+        "FERTILIZER": 13,
+        "MILK": 6
+      },
+      "12": {
+        "FERTILIZER": 16,
+        "WOOL": 16,
+        "MILK": 6
+      },
+      "13": {
+        "WOOL": 4,
+        "FERTILIZER": 17,
+        "MILK": 6
+      },
+      "14": {
+        "FERTILIZER": 13,
+        "WHEAT": 2,
+        "MILK": 9,
+        "WOOL": 11
+      },
+      "15": {
+        "FERTILIZER": 14,
+        "WOOL": 19,
+        "WHEAT": 6,
+        "MILK": 6
+      },
+      "16": {
+        "MILK": 9,
+        "FERTILIZER": 12,
+        "WOOL": 18,
+        "STRAWBERRY": 24,
+        "WHEAT": 7
+      },
+      "17": {
+        "MILK": 9,
+        "FERTILIZER": 13,
+        "WHEAT": 3,
+        "WOOL": 16,
+        "STRAWBERRY": 16
+      },
+      "18": {
+        "WOOL": 10,
+        "FERTILIZER": 12,
+        "WHEAT": 2,
+        "MILK": 15,
+        "STRAWBERRY": 24
+      },
+      "19": {
+        "WOOL": 12,
+        "MILK": 6,
+        "FERTILIZER": 2,
+        "WHEAT": 11,
+        "STRAWBERRY": 16
+      },
+      "20": {
+        "WOOL": 12,
+        "MILK": 9,
+        "FERTILIZER": 14,
+        "WHEAT": 28,
+        "STRAWBERRY": 24
+      },
+      "21": {
+        "WOOL": 12,
+        "WHEAT": 3,
+        "MILK": 6,
+        "FERTILIZER": 14,
+        "STRAWBERRY": 24
+      },
+      "22": {
+        "WOOL": 16,
+        "MILK": 8,
+        "FERTILIZER": 16,
+        "STRAWBERRY": 34,
+        "WHEAT": 30
+      },
+      "23": {
+        "FERTILIZER": 17,
+        "WOOL": 16,
+        "WHEAT": 14,
+        "MILK": 4,
+        "STRAWBERRY": 8
+      },
+      "24": {
+        "WOOL": 21,
+        "FERTILIZER": 10,
+        "WHEAT": 20,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "25": {
+        "STRAWBERRY": 17,
+        "WOOL": 20,
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "MILK": 6
+      },
+      "26": {
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "WOOL": 15,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "27": {
+        "FERTILIZER": 19,
+        "WHEAT": 63,
+        "MILK": 8,
+        "WOOL": 4,
+        "STRAWBERRY": 6
+      },
+      "28": {
+        "WOOL": 28,
+        "FERTILIZER": 11,
+        "MILK": 8,
+        "WHEAT": 49,
+        "CARROT": 7,
+        "STRAWBERRY": 20
+      },
+      "29": {
+        "WHEAT": 56,
+        "CARROT": 75,
+        "FERTILIZER": 14,
+        "WOOL": 12,
+        "MILK": 8
+      }
+    }
+  },
+  {
+    "file": "episode-114161728-replay.json",
+    "episode_id": 114161728,
+    "opponent": "Shaun the Sheep ",
+    "outcome": "W",
+    "margin": 133896,
+    "rajusah_score": 143561.0,
+    "cash_mismatches": 0,
+    "ledger": {
+      "WHEAT": {
+        "harvested": 595,
+        "bought": 151,
+        "sold_units": 400,
+        "sold_cash": 15222.0,
+        "avg_price": 38.05,
+        "quote_high": 41,
+        "quote_low": 25,
+        "fed_or_fertilized": 346,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "CARROT": {
+        "harvested": 82,
+        "bought": 0,
+        "sold_units": 82,
+        "sold_cash": 4816.0,
+        "avg_price": 58.73,
+        "quote_high": 61,
+        "quote_low": 35,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "TOMATO": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 74,
+        "quote_low": 60,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "STRAWBERRY": {
+        "harvested": 249,
+        "bought": 0,
+        "sold_units": 249,
+        "sold_cash": 60406.0,
+        "avg_price": 242.59,
+        "quote_high": 269,
+        "quote_low": 120,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MELON": {
+        "harvested": 72,
+        "bought": 0,
+        "sold_units": 72,
+        "sold_cash": 16819.0,
+        "avg_price": 233.6,
+        "quote_high": 272,
+        "quote_low": 186,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "EGG": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 58,
+        "quote_low": 50,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MILK": {
+        "harvested": 164,
+        "bought": 0,
+        "sold_units": 164,
+        "sold_cash": 42299.0,
+        "avg_price": 257.92,
+        "quote_high": 303,
+        "quote_low": 160,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "WOOL": {
+        "harvested": 282,
+        "bought": 0,
+        "sold_units": 282,
+        "sold_cash": 11492.0,
+        "avg_price": 40.75,
+        "quote_high": 218,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "FERTILIZER": {
+        "harvested": 0,
+        "bought": 46,
+        "sold_units": 317,
+        "sold_cash": 20012.0,
+        "avg_price": 63.13,
+        "quote_high": 100,
+        "quote_low": 35,
+        "fed_or_fertilized": 100,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      }
+    },
+    "total_sold_cash": 171066.0,
+    "buy_product_cash_spent": 7610.0,
+    "daily_sold_cash": {
+      "0": 433.0,
+      "1": 298.0,
+      "2": 548.0,
+      "3": 623.0,
+      "4": 626.0,
+      "5": 525.0,
+      "6": 3199.0,
+      "7": 627.0,
+      "8": 3506.0,
+      "9": 2872.0,
+      "10": 16921.0,
+      "11": 4718.0,
+      "12": 4806.0,
+      "13": 3056.0,
+      "14": 3881.0,
+      "15": 2741.0,
+      "16": 8803.0,
+      "17": 6971.0,
+      "18": 10381.0,
+      "19": 5970.0,
+      "20": 10101.0,
+      "21": 8299.0,
+      "22": 13209.0,
+      "23": 4679.0,
+      "24": 7965.0,
+      "25": 8377.0,
+      "26": 8703.0,
+      "27": 7478.0,
+      "28": 10902.0,
+      "29": 9848.0
+    },
+    "daily_sold_units": {
+      "0": {
+        "WHEAT": 15
+      },
+      "1": {
+        "FERTILIZER": 3
+      },
+      "2": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "3": {
+        "WHEAT": 8,
+        "FERTILIZER": 4
+      },
+      "4": {
+        "FERTILIZER": 6,
+        "WHEAT": 2
+      },
+      "5": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "6": {
+        "WHEAT": 7,
+        "FERTILIZER": 6,
+        "WOOL": 12
+      },
+      "7": {
+        "FERTILIZER": 7
+      },
+      "8": {
+        "FERTILIZER": 10,
+        "MILK": 12,
+        "WHEAT": 3
+      },
+      "9": {
+        "WHEAT": 7,
+        "FERTILIZER": 14,
+        "WOOL": 8
+      },
+      "10": {
+        "MELON": 60,
+        "MILK": 11
+      },
+      "11": {
+        "MELON": 12,
+        "FERTILIZER": 13,
+        "MILK": 6
+      },
+      "12": {
+        "FERTILIZER": 16,
+        "WOOL": 16,
+        "MILK": 6
+      },
+      "13": {
+        "WOOL": 4,
+        "FERTILIZER": 17,
+        "MILK": 6
+      },
+      "14": {
+        "FERTILIZER": 13,
+        "WHEAT": 2,
+        "MILK": 9,
+        "WOOL": 11
+      },
+      "15": {
+        "FERTILIZER": 14,
+        "WOOL": 19,
+        "WHEAT": 6,
+        "MILK": 6
+      },
+      "16": {
+        "MILK": 9,
+        "FERTILIZER": 12,
+        "WOOL": 18,
+        "STRAWBERRY": 24,
+        "WHEAT": 7
+      },
+      "17": {
+        "MILK": 9,
+        "FERTILIZER": 13,
+        "WHEAT": 3,
+        "WOOL": 16,
+        "STRAWBERRY": 16
+      },
+      "18": {
+        "WOOL": 10,
+        "FERTILIZER": 12,
+        "WHEAT": 2,
+        "MILK": 15,
+        "STRAWBERRY": 24
+      },
+      "19": {
+        "WOOL": 12,
+        "MILK": 6,
+        "FERTILIZER": 2,
+        "WHEAT": 11,
+        "STRAWBERRY": 16
+      },
+      "20": {
+        "WOOL": 12,
+        "FERTILIZER": 14,
+        "MILK": 9,
+        "WHEAT": 28,
+        "STRAWBERRY": 24
+      },
+      "21": {
+        "WOOL": 12,
+        "WHEAT": 3,
+        "FERTILIZER": 14,
+        "MILK": 6,
+        "STRAWBERRY": 24
+      },
+      "22": {
+        "WOOL": 16,
+        "FERTILIZER": 16,
+        "STRAWBERRY": 34,
+        "MILK": 8,
+        "WHEAT": 30
+      },
+      "23": {
+        "WOOL": 16,
+        "FERTILIZER": 17,
+        "WHEAT": 14,
+        "MILK": 4,
+        "STRAWBERRY": 8
+      },
+      "24": {
+        "WOOL": 21,
+        "FERTILIZER": 10,
+        "WHEAT": 20,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "25": {
+        "WOOL": 20,
+        "STRAWBERRY": 17,
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "MILK": 6
+      },
+      "26": {
+        "WHEAT": 30,
+        "WOOL": 15,
+        "FERTILIZER": 15,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "27": {
+        "FERTILIZER": 19,
+        "WHEAT": 63,
+        "MILK": 8,
+        "WOOL": 4,
+        "STRAWBERRY": 6
+      },
+      "28": {
+        "WOOL": 28,
+        "FERTILIZER": 11,
+        "MILK": 8,
+        "CARROT": 7,
+        "WHEAT": 49,
+        "STRAWBERRY": 20
+      },
+      "29": {
+        "WHEAT": 56,
+        "CARROT": 75,
+        "FERTILIZER": 14,
+        "WOOL": 12,
+        "MILK": 8
+      }
+    }
+  },
+  {
+    "file": "episode-114163744-replay.json",
+    "episode_id": 114163744,
+    "opponent": "K.nosaka",
+    "outcome": "W",
+    "margin": 10702,
+    "rajusah_score": 65582.0,
+    "cash_mismatches": 0,
+    "ledger": {
+      "WHEAT": {
+        "harvested": 595,
+        "bought": 150,
+        "sold_units": 399,
+        "sold_cash": 16469.0,
+        "avg_price": 41.28,
+        "quote_high": 45,
+        "quote_low": 25,
+        "fed_or_fertilized": 346,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "CARROT": {
+        "harvested": 82,
+        "bought": 0,
+        "sold_units": 82,
+        "sold_cash": 4767.0,
+        "avg_price": 58.13,
+        "quote_high": 61,
+        "quote_low": 35,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "TOMATO": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 70,
+        "quote_low": 60,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "STRAWBERRY": {
+        "harvested": 249,
+        "bought": 0,
+        "sold_units": 249,
+        "sold_cash": 24330.0,
+        "avg_price": 97.71,
+        "quote_high": 196,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MELON": {
+        "harvested": 72,
+        "bought": 0,
+        "sold_units": 72,
+        "sold_cash": 15958.0,
+        "avg_price": 221.64,
+        "quote_high": 272,
+        "quote_low": 131,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "EGG": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 78,
+        "quote_low": 50,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MILK": {
+        "harvested": 164,
+        "bought": 0,
+        "sold_units": 164,
+        "sold_cash": 11214.0,
+        "avg_price": 68.38,
+        "quote_high": 186,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "WOOL": {
+        "harvested": 282,
+        "bought": 0,
+        "sold_units": 282,
+        "sold_cash": 4560.0,
+        "avg_price": 16.17,
+        "quote_high": 218,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "FERTILIZER": {
+        "harvested": 0,
+        "bought": 46,
+        "sold_units": 317,
+        "sold_cash": 14902.0,
+        "avg_price": 47.01,
+        "quote_high": 100,
+        "quote_low": 1,
+        "fed_or_fertilized": 100,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      }
+    },
+    "total_sold_cash": 92200.0,
+    "buy_product_cash_spent": 6723.0,
+    "daily_sold_cash": {
+      "0": 436.0,
+      "1": 300.0,
+      "2": 551.0,
+      "3": 603.0,
+      "4": 630.0,
+      "5": 526.0,
+      "6": 3255.0,
+      "7": 620.0,
+      "8": 3038.0,
+      "9": 2569.0,
+      "10": 16001.0,
+      "11": 3860.0,
+      "12": 2726.0,
+      "13": 1989.0,
+      "14": 2237.0,
+      "15": 1722.0,
+      "16": 6282.0,
+      "17": 4004.0,
+      "18": 4867.0,
+      "19": 3195.0,
+      "20": 4739.0,
+      "21": 2222.0,
+      "22": 2166.0,
+      "23": 1323.0,
+      "24": 1242.0,
+      "25": 2624.0,
+      "26": 2781.0,
+      "27": 3797.0,
+      "28": 5309.0,
+      "29": 6586.0
+    },
+    "daily_sold_units": {
+      "0": {
+        "WHEAT": 15
+      },
+      "1": {
+        "FERTILIZER": 3
+      },
+      "2": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "3": {
+        "WHEAT": 7,
+        "FERTILIZER": 4
+      },
+      "4": {
+        "FERTILIZER": 6,
+        "WHEAT": 2
+      },
+      "5": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "6": {
+        "WHEAT": 7,
+        "FERTILIZER": 6,
+        "WOOL": 12
+      },
+      "7": {
+        "FERTILIZER": 7
+      },
+      "8": {
+        "FERTILIZER": 10,
+        "MILK": 12,
+        "WHEAT": 3
+      },
+      "9": {
+        "WHEAT": 7,
+        "FERTILIZER": 14,
+        "WOOL": 8
+      },
+      "10": {
+        "MELON": 60,
+        "MILK": 11
+      },
+      "11": {
+        "MELON": 12,
+        "FERTILIZER": 13,
+        "MILK": 6
+      },
+      "12": {
+        "FERTILIZER": 16,
+        "WOOL": 16,
+        "MILK": 6
+      },
+      "13": {
+        "FERTILIZER": 17,
+        "WOOL": 4,
+        "MILK": 6
+      },
+      "14": {
+        "FERTILIZER": 13,
+        "WHEAT": 2,
+        "MILK": 9,
+        "WOOL": 11
+      },
+      "15": {
+        "FERTILIZER": 14,
+        "WOOL": 19,
+        "WHEAT": 6,
+        "MILK": 6
+      },
+      "16": {
+        "MILK": 9,
+        "FERTILIZER": 12,
+        "STRAWBERRY": 24,
+        "WOOL": 18,
+        "WHEAT": 7
+      },
+      "17": {
+        "MILK": 9,
+        "FERTILIZER": 13,
+        "WHEAT": 3,
+        "WOOL": 16,
+        "STRAWBERRY": 16
+      },
+      "18": {
+        "WOOL": 10,
+        "FERTILIZER": 12,
+        "WHEAT": 2,
+        "MILK": 15,
+        "STRAWBERRY": 24
+      },
+      "19": {
+        "WOOL": 12,
+        "MILK": 6,
+        "WHEAT": 11,
+        "FERTILIZER": 2,
+        "STRAWBERRY": 16
+      },
+      "20": {
+        "WOOL": 12,
+        "MILK": 9,
+        "FERTILIZER": 14,
+        "WHEAT": 28,
+        "STRAWBERRY": 24
+      },
+      "21": {
+        "WOOL": 12,
+        "WHEAT": 3,
+        "MILK": 6,
+        "FERTILIZER": 14,
+        "STRAWBERRY": 24
+      },
+      "22": {
+        "WOOL": 16,
+        "STRAWBERRY": 34,
+        "MILK": 8,
+        "FERTILIZER": 16,
+        "WHEAT": 30
+      },
+      "23": {
+        "FERTILIZER": 17,
+        "WHEAT": 14,
+        "WOOL": 16,
+        "MILK": 4,
+        "STRAWBERRY": 8
+      },
+      "24": {
+        "WOOL": 21,
+        "FERTILIZER": 10,
+        "WHEAT": 20,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "25": {
+        "STRAWBERRY": 17,
+        "WOOL": 20,
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "MILK": 6
+      },
+      "26": {
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "WOOL": 15,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "27": {
+        "FERTILIZER": 19,
+        "WHEAT": 63,
+        "MILK": 8,
+        "STRAWBERRY": 6,
+        "WOOL": 4
+      },
+      "28": {
+        "WOOL": 28,
+        "FERTILIZER": 11,
+        "MILK": 8,
+        "WHEAT": 49,
+        "CARROT": 7,
+        "STRAWBERRY": 20
+      },
+      "29": {
+        "WHEAT": 56,
+        "CARROT": 75,
+        "FERTILIZER": 14,
+        "WOOL": 12,
+        "MILK": 8
+      }
+    }
+  },
+  {
+    "file": "episode-114164630-replay.json",
+    "episode_id": 114164630,
+    "opponent": "cheezyp",
+    "outcome": "W",
+    "margin": 30593,
+    "rajusah_score": 109923.0,
+    "cash_mismatches": 0,
+    "ledger": {
+      "WHEAT": {
+        "harvested": 595,
+        "bought": 150,
+        "sold_units": 399,
+        "sold_cash": 9609.0,
+        "avg_price": 24.08,
+        "quote_high": 38,
+        "quote_low": 20,
+        "fed_or_fertilized": 346,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "CARROT": {
+        "harvested": 82,
+        "bought": 0,
+        "sold_units": 82,
+        "sold_cash": 20620.0,
+        "avg_price": 251.46,
+        "quote_high": 276,
+        "quote_low": 35,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "TOMATO": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 72,
+        "quote_low": 60,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "STRAWBERRY": {
+        "harvested": 249,
+        "bought": 0,
+        "sold_units": 249,
+        "sold_cash": 4177.0,
+        "avg_price": 16.78,
+        "quote_high": 154,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MELON": {
+        "harvested": 72,
+        "bought": 0,
+        "sold_units": 72,
+        "sold_cash": 14231.0,
+        "avg_price": 197.65,
+        "quote_high": 272,
+        "quote_low": 76,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "EGG": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 52,
+        "quote_low": 50,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MILK": {
+        "harvested": 164,
+        "bought": 0,
+        "sold_units": 164,
+        "sold_cash": 5764.0,
+        "avg_price": 35.15,
+        "quote_high": 186,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "WOOL": {
+        "harvested": 282,
+        "bought": 0,
+        "sold_units": 282,
+        "sold_cash": 66498.0,
+        "avg_price": 235.81,
+        "quote_high": 239,
+        "quote_low": 200,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "FERTILIZER": {
+        "harvested": 0,
+        "bought": 46,
+        "sold_units": 317,
+        "sold_cash": 14633.0,
+        "avg_price": 46.16,
+        "quote_high": 100,
+        "quote_low": 1,
+        "fed_or_fertilized": 100,
+        "discarded": 2,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      }
+    },
+    "total_sold_cash": 135532.0,
+    "buy_product_cash_spent": 5714.0,
+    "daily_sold_cash": {
+      "0": 427.0,
+      "1": 299.0,
+      "2": 551.0,
+      "3": 590.0,
+      "4": 623.0,
+      "5": 515.0,
+      "6": 3506.0,
+      "7": 610.0,
+      "8": 2887.0,
+      "9": 3211.0,
+      "10": 14378.0,
+      "11": 2778.0,
+      "12": 5340.0,
+      "13": 2312.0,
+      "14": 3567.0,
+      "15": 5483.0,
+      "16": 7875.0,
+      "17": 5186.0,
+      "18": 3022.0,
+      "19": 3317.0,
+      "20": 4313.0,
+      "21": 3519.0,
+      "22": 5128.0,
+      "23": 4639.0,
+      "24": 5738.0,
+      "25": 5832.0,
+      "26": 4519.0,
+      "27": 2885.0,
+      "28": 9602.0,
+      "29": 22880.0
+    },
+    "daily_sold_units": {
+      "0": {
+        "WHEAT": 15
+      },
+      "1": {
+        "FERTILIZER": 3
+      },
+      "2": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "3": {
+        "WHEAT": 7,
+        "FERTILIZER": 4
+      },
+      "4": {
+        "FERTILIZER": 6,
+        "WHEAT": 2
+      },
+      "5": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "6": {
+        "WHEAT": 7,
+        "FERTILIZER": 6,
+        "WOOL": 12
+      },
+      "7": {
+        "FERTILIZER": 7
+      },
+      "8": {
+        "FERTILIZER": 10,
+        "MILK": 12,
+        "WHEAT": 3
+      },
+      "9": {
+        "WHEAT": 7,
+        "FERTILIZER": 14,
+        "WOOL": 8
+      },
+      "10": {
+        "MELON": 60,
+        "MILK": 11
+      },
+      "11": {
+        "MELON": 12,
+        "FERTILIZER": 13,
+        "MILK": 6
+      },
+      "12": {
+        "FERTILIZER": 16,
+        "MILK": 6,
+        "WOOL": 16
+      },
+      "13": {
+        "FERTILIZER": 17,
+        "WOOL": 4,
+        "MILK": 6
+      },
+      "14": {
+        "FERTILIZER": 13,
+        "WHEAT": 2,
+        "MILK": 9,
+        "WOOL": 11
+      },
+      "15": {
+        "FERTILIZER": 14,
+        "WOOL": 19,
+        "WHEAT": 6,
+        "MILK": 6
+      },
+      "16": {
+        "MILK": 9,
+        "STRAWBERRY": 24,
+        "FERTILIZER": 12,
+        "WHEAT": 7,
+        "WOOL": 18
+      },
+      "17": {
+        "MILK": 9,
+        "FERTILIZER": 13,
+        "WHEAT": 3,
+        "WOOL": 16,
+        "STRAWBERRY": 16
+      },
+      "18": {
+        "WOOL": 10,
+        "FERTILIZER": 12,
+        "WHEAT": 2,
+        "MILK": 15,
+        "STRAWBERRY": 24
+      },
+      "19": {
+        "WOOL": 12,
+        "MILK": 6,
+        "FERTILIZER": 2,
+        "WHEAT": 11,
+        "STRAWBERRY": 16
+      },
+      "20": {
+        "WOOL": 12,
+        "FERTILIZER": 14,
+        "MILK": 9,
+        "WHEAT": 28,
+        "STRAWBERRY": 24
+      },
+      "21": {
+        "WOOL": 12,
+        "WHEAT": 3,
+        "FERTILIZER": 14,
+        "MILK": 6,
+        "STRAWBERRY": 24
+      },
+      "22": {
+        "WOOL": 16,
+        "MILK": 8,
+        "STRAWBERRY": 34,
+        "FERTILIZER": 16,
+        "WHEAT": 30
+      },
+      "23": {
+        "FERTILIZER": 17,
+        "WOOL": 16,
+        "WHEAT": 14,
+        "MILK": 4,
+        "STRAWBERRY": 8
+      },
+      "24": {
+        "WOOL": 21,
+        "FERTILIZER": 10,
+        "WHEAT": 20,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "25": {
+        "STRAWBERRY": 17,
+        "WOOL": 20,
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "MILK": 6
+      },
+      "26": {
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "WOOL": 15,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "27": {
+        "FERTILIZER": 19,
+        "WHEAT": 63,
+        "MILK": 8,
+        "STRAWBERRY": 6,
+        "WOOL": 4
+      },
+      "28": {
+        "WOOL": 28,
+        "FERTILIZER": 11,
+        "MILK": 8,
+        "CARROT": 7,
+        "WHEAT": 49,
+        "STRAWBERRY": 20
+      },
+      "29": {
+        "WHEAT": 56,
+        "CARROT": 75,
+        "FERTILIZER": 14,
+        "WOOL": 12,
+        "MILK": 8
+      }
+    }
+  },
+  {
+    "file": "episode-114166061-replay.json",
+    "episode_id": 114166061,
+    "opponent": "Kumar Saurabh",
+    "outcome": "L",
+    "margin": -22706,
+    "rajusah_score": 106894.0,
+    "cash_mismatches": 0,
+    "ledger": {
+      "WHEAT": {
+        "harvested": 595,
+        "bought": 150,
+        "sold_units": 399,
+        "sold_cash": 17283.0,
+        "avg_price": 43.32,
+        "quote_high": 46,
+        "quote_low": 25,
+        "fed_or_fertilized": 346,
+        "discarded": 1,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "CARROT": {
+        "harvested": 82,
+        "bought": 0,
+        "sold_units": 82,
+        "sold_cash": 3382.0,
+        "avg_price": 41.24,
+        "quote_high": 48,
+        "quote_low": 35,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "TOMATO": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 247,
+        "quote_low": 60,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "STRAWBERRY": {
+        "harvested": 249,
+        "bought": 0,
+        "sold_units": 249,
+        "sold_cash": 42952.0,
+        "avg_price": 172.5,
+        "quote_high": 220,
+        "quote_low": 112,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MELON": {
+        "harvested": 72,
+        "bought": 0,
+        "sold_units": 72,
+        "sold_cash": 14231.0,
+        "avg_price": 197.65,
+        "quote_high": 272,
+        "quote_low": 76,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "EGG": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 56,
+        "quote_low": 50,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MILK": {
+        "harvested": 164,
+        "bought": 0,
+        "sold_units": 164,
+        "sold_cash": 36239.0,
+        "avg_price": 220.97,
+        "quote_high": 267,
+        "quote_low": 160,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "WOOL": {
+        "harvested": 282,
+        "bought": 0,
+        "sold_units": 282,
+        "sold_cash": 6146.0,
+        "avg_price": 21.79,
+        "quote_high": 218,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "FERTILIZER": {
+        "harvested": 0,
+        "bought": 46,
+        "sold_units": 317,
+        "sold_cash": 13108.0,
+        "avg_price": 41.35,
+        "quote_high": 100,
+        "quote_low": 1,
+        "fed_or_fertilized": 100,
+        "discarded": 8,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      }
+    },
+    "total_sold_cash": 133341.0,
+    "buy_product_cash_spent": 6552.0,
+    "daily_sold_cash": {
+      "0": 439.0,
+      "1": 299.0,
+      "2": 550.0,
+      "3": 595.0,
+      "4": 624.0,
+      "5": 522.0,
+      "6": 3104.0,
+      "7": 607.0,
+      "8": 3469.0,
+      "9": 2799.0,
+      "10": 15313.0,
+      "11": 3449.0,
+      "12": 4256.0,
+      "13": 2431.0,
+      "14": 2715.0,
+      "15": 2236.0,
+      "16": 7827.0,
+      "17": 5888.0,
+      "18": 8636.0,
+      "19": 4967.0,
+      "20": 8132.0,
+      "21": 6042.0,
+      "22": 8661.0,
+      "23": 3054.0,
+      "24": 4926.0,
+      "25": 5180.0,
+      "26": 5406.0,
+      "27": 6008.0,
+      "28": 7587.0,
+      "29": 7619.0
+    },
+    "daily_sold_units": {
+      "0": {
+        "WHEAT": 15
+      },
+      "1": {
+        "FERTILIZER": 3
+      },
+      "2": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "3": {
+        "WHEAT": 7,
+        "FERTILIZER": 4
+      },
+      "4": {
+        "FERTILIZER": 6,
+        "WHEAT": 2
+      },
+      "5": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "6": {
+        "WHEAT": 7,
+        "FERTILIZER": 6,
+        "WOOL": 12
+      },
+      "7": {
+        "FERTILIZER": 7
+      },
+      "8": {
+        "FERTILIZER": 10,
+        "MILK": 12,
+        "WHEAT": 3
+      },
+      "9": {
+        "WHEAT": 7,
+        "FERTILIZER": 14,
+        "WOOL": 8
+      },
+      "10": {
+        "MELON": 60,
+        "MILK": 11
+      },
+      "11": {
+        "MELON": 12,
+        "FERTILIZER": 13,
+        "MILK": 6
+      },
+      "12": {
+        "FERTILIZER": 16,
+        "WOOL": 16,
+        "MILK": 6
+      },
+      "13": {
+        "WOOL": 4,
+        "FERTILIZER": 17,
+        "MILK": 6
+      },
+      "14": {
+        "FERTILIZER": 13,
+        "WHEAT": 2,
+        "MILK": 9,
+        "WOOL": 11
+      },
+      "15": {
+        "FERTILIZER": 14,
+        "WOOL": 19,
+        "WHEAT": 6,
+        "MILK": 6
+      },
+      "16": {
+        "MILK": 9,
+        "FERTILIZER": 12,
+        "STRAWBERRY": 24,
+        "WOOL": 18,
+        "WHEAT": 7
+      },
+      "17": {
+        "MILK": 9,
+        "FERTILIZER": 13,
+        "WHEAT": 3,
+        "WOOL": 16,
+        "STRAWBERRY": 16
+      },
+      "18": {
+        "WOOL": 10,
+        "FERTILIZER": 12,
+        "WHEAT": 2,
+        "MILK": 15,
+        "STRAWBERRY": 24
+      },
+      "19": {
+        "WOOL": 12,
+        "MILK": 6,
+        "WHEAT": 11,
+        "FERTILIZER": 2,
+        "STRAWBERRY": 16
+      },
+      "20": {
+        "WOOL": 12,
+        "MILK": 9,
+        "FERTILIZER": 14,
+        "WHEAT": 28,
+        "STRAWBERRY": 24
+      },
+      "21": {
+        "WOOL": 12,
+        "WHEAT": 3,
+        "FERTILIZER": 14,
+        "MILK": 6,
+        "STRAWBERRY": 24
+      },
+      "22": {
+        "WOOL": 16,
+        "STRAWBERRY": 34,
+        "FERTILIZER": 16,
+        "MILK": 8,
+        "WHEAT": 30
+      },
+      "23": {
+        "FERTILIZER": 17,
+        "WOOL": 16,
+        "WHEAT": 14,
+        "MILK": 4,
+        "STRAWBERRY": 8
+      },
+      "24": {
+        "WOOL": 21,
+        "FERTILIZER": 10,
+        "WHEAT": 20,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "25": {
+        "STRAWBERRY": 17,
+        "WOOL": 20,
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "MILK": 6
+      },
+      "26": {
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "WOOL": 15,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "27": {
+        "WHEAT": 63,
+        "FERTILIZER": 19,
+        "MILK": 8,
+        "STRAWBERRY": 6,
+        "WOOL": 4
+      },
+      "28": {
+        "WOOL": 28,
+        "FERTILIZER": 11,
+        "MILK": 8,
+        "CARROT": 7,
+        "WHEAT": 49,
+        "STRAWBERRY": 20
+      },
+      "29": {
+        "WHEAT": 56,
+        "CARROT": 75,
+        "FERTILIZER": 14,
+        "WOOL": 12,
+        "MILK": 8
+      }
+    }
+  },
+  {
+    "file": "episode-114167570-replay.json",
+    "episode_id": 114167570,
+    "opponent": "\u8584\u548c\u53f6 Lv.INF",
+    "outcome": "L",
+    "margin": -9100,
+    "rajusah_score": 94832.0,
+    "cash_mismatches": 0,
+    "ledger": {
+      "WHEAT": {
+        "harvested": 595,
+        "bought": 150,
+        "sold_units": 399,
+        "sold_cash": 16078.0,
+        "avg_price": 40.3,
+        "quote_high": 43,
+        "quote_low": 25,
+        "fed_or_fertilized": 346,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "CARROT": {
+        "harvested": 82,
+        "bought": 0,
+        "sold_units": 82,
+        "sold_cash": 4290.0,
+        "avg_price": 52.32,
+        "quote_high": 55,
+        "quote_low": 35,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "TOMATO": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 77,
+        "quote_low": 60,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "STRAWBERRY": {
+        "harvested": 249,
+        "bought": 0,
+        "sold_units": 249,
+        "sold_cash": 41190.0,
+        "avg_price": 165.42,
+        "quote_high": 232,
+        "quote_low": 59,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MELON": {
+        "harvested": 72,
+        "bought": 0,
+        "sold_units": 72,
+        "sold_cash": 14275.0,
+        "avg_price": 198.26,
+        "quote_high": 272,
+        "quote_low": 76,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "EGG": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 67,
+        "quote_low": 50,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MILK": {
+        "harvested": 164,
+        "bought": 0,
+        "sold_units": 164,
+        "sold_cash": 25053.0,
+        "avg_price": 152.76,
+        "quote_high": 228,
+        "quote_low": 68,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "WOOL": {
+        "harvested": 282,
+        "bought": 0,
+        "sold_units": 282,
+        "sold_cash": 6129.0,
+        "avg_price": 21.73,
+        "quote_high": 218,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "FERTILIZER": {
+        "harvested": 0,
+        "bought": 46,
+        "sold_units": 317,
+        "sold_cash": 14280.0,
+        "avg_price": 45.05,
+        "quote_high": 100,
+        "quote_low": 1,
+        "fed_or_fertilized": 100,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      }
+    },
+    "total_sold_cash": 121295.0,
+    "buy_product_cash_spent": 6568.0,
+    "daily_sold_cash": {
+      "0": 438.0,
+      "1": 299.0,
+      "2": 551.0,
+      "3": 589.0,
+      "4": 623.0,
+      "5": 520.0,
+      "6": 3154.0,
+      "7": 609.0,
+      "8": 3531.0,
+      "9": 2717.0,
+      "10": 15483.0,
+      "11": 3527.0,
+      "12": 4218.0,
+      "13": 2522.0,
+      "14": 2826.0,
+      "15": 2296.0,
+      "16": 8125.0,
+      "17": 5816.0,
+      "18": 7920.0,
+      "19": 4677.0,
+      "20": 7449.0,
+      "21": 5666.0,
+      "22": 7875.0,
+      "23": 2511.0,
+      "24": 3416.0,
+      "25": 3772.0,
+      "26": 3453.0,
+      "27": 4364.0,
+      "28": 5620.0,
+      "29": 6728.0
+    },
+    "daily_sold_units": {
+      "0": {
+        "WHEAT": 15
+      },
+      "1": {
+        "FERTILIZER": 3
+      },
+      "2": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "3": {
+        "WHEAT": 7,
+        "FERTILIZER": 4
+      },
+      "4": {
+        "FERTILIZER": 6,
+        "WHEAT": 2
+      },
+      "5": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "6": {
+        "FERTILIZER": 6,
+        "WHEAT": 7,
+        "WOOL": 12
+      },
+      "7": {
+        "FERTILIZER": 7
+      },
+      "8": {
+        "FERTILIZER": 10,
+        "MILK": 12,
+        "WHEAT": 3
+      },
+      "9": {
+        "WHEAT": 7,
+        "FERTILIZER": 14,
+        "WOOL": 8
+      },
+      "10": {
+        "MELON": 60,
+        "MILK": 11
+      },
+      "11": {
+        "MELON": 12,
+        "FERTILIZER": 13,
+        "MILK": 6
+      },
+      "12": {
+        "FERTILIZER": 16,
+        "WOOL": 16,
+        "MILK": 6
+      },
+      "13": {
+        "WOOL": 4,
+        "FERTILIZER": 17,
+        "MILK": 6
+      },
+      "14": {
+        "FERTILIZER": 13,
+        "WHEAT": 2,
+        "MILK": 9,
+        "WOOL": 11
+      },
+      "15": {
+        "FERTILIZER": 14,
+        "WOOL": 19,
+        "WHEAT": 6,
+        "MILK": 6
+      },
+      "16": {
+        "MILK": 9,
+        "FERTILIZER": 12,
+        "STRAWBERRY": 24,
+        "WOOL": 18,
+        "WHEAT": 7
+      },
+      "17": {
+        "MILK": 9,
+        "FERTILIZER": 13,
+        "WHEAT": 3,
+        "WOOL": 16,
+        "STRAWBERRY": 16
+      },
+      "18": {
+        "WOOL": 10,
+        "FERTILIZER": 12,
+        "WHEAT": 2,
+        "MILK": 15,
+        "STRAWBERRY": 24
+      },
+      "19": {
+        "WOOL": 12,
+        "MILK": 6,
+        "FERTILIZER": 2,
+        "WHEAT": 11,
+        "STRAWBERRY": 16
+      },
+      "20": {
+        "WOOL": 12,
+        "MILK": 9,
+        "FERTILIZER": 14,
+        "WHEAT": 28,
+        "STRAWBERRY": 24
+      },
+      "21": {
+        "WOOL": 12,
+        "WHEAT": 3,
+        "MILK": 6,
+        "FERTILIZER": 14,
+        "STRAWBERRY": 24
+      },
+      "22": {
+        "WOOL": 16,
+        "MILK": 8,
+        "STRAWBERRY": 34,
+        "FERTILIZER": 16,
+        "WHEAT": 30
+      },
+      "23": {
+        "FERTILIZER": 17,
+        "WOOL": 16,
+        "WHEAT": 14,
+        "MILK": 4,
+        "STRAWBERRY": 8
+      },
+      "24": {
+        "WOOL": 21,
+        "FERTILIZER": 10,
+        "WHEAT": 20,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "25": {
+        "STRAWBERRY": 17,
+        "WOOL": 20,
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "MILK": 6
+      },
+      "26": {
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "WOOL": 15,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "27": {
+        "FERTILIZER": 19,
+        "WHEAT": 63,
+        "MILK": 8,
+        "STRAWBERRY": 6,
+        "WOOL": 4
+      },
+      "28": {
+        "WOOL": 28,
+        "FERTILIZER": 11,
+        "MILK": 8,
+        "WHEAT": 49,
+        "CARROT": 7,
+        "STRAWBERRY": 20
+      },
+      "29": {
+        "WHEAT": 56,
+        "CARROT": 75,
+        "FERTILIZER": 14,
+        "WOOL": 12,
+        "MILK": 8
+      }
+    }
+  },
+  {
+    "file": "episode-114169079-replay.json",
+    "episode_id": 114169079,
+    "opponent": "xamad",
+    "outcome": "L",
+    "margin": -22088,
+    "rajusah_score": 111185.0,
+    "cash_mismatches": 0,
+    "ledger": {
+      "WHEAT": {
+        "harvested": 595,
+        "bought": 150,
+        "sold_units": 399,
+        "sold_cash": 16410.0,
+        "avg_price": 41.13,
+        "quote_high": 45,
+        "quote_low": 25,
+        "fed_or_fertilized": 346,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "CARROT": {
+        "harvested": 82,
+        "bought": 0,
+        "sold_units": 82,
+        "sold_cash": 4634.0,
+        "avg_price": 56.51,
+        "quote_high": 59,
+        "quote_low": 35,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "TOMATO": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 100,
+        "quote_low": 60,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "STRAWBERRY": {
+        "harvested": 249,
+        "bought": 0,
+        "sold_units": 249,
+        "sold_cash": 42505.0,
+        "avg_price": 170.7,
+        "quote_high": 226,
+        "quote_low": 85,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MELON": {
+        "harvested": 72,
+        "bought": 0,
+        "sold_units": 72,
+        "sold_cash": 14275.0,
+        "avg_price": 198.26,
+        "quote_high": 272,
+        "quote_low": 76,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "EGG": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 54,
+        "quote_low": 50,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MILK": {
+        "harvested": 164,
+        "bought": 0,
+        "sold_units": 164,
+        "sold_cash": 38237.0,
+        "avg_price": 233.15,
+        "quote_high": 253,
+        "quote_low": 160,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "WOOL": {
+        "harvested": 282,
+        "bought": 0,
+        "sold_units": 282,
+        "sold_cash": 7373.0,
+        "avg_price": 26.15,
+        "quote_high": 218,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "FERTILIZER": {
+        "harvested": 0,
+        "bought": 46,
+        "sold_units": 317,
+        "sold_cash": 14406.0,
+        "avg_price": 45.44,
+        "quote_high": 100,
+        "quote_low": 1,
+        "fed_or_fertilized": 100,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      }
+    },
+    "total_sold_cash": 137840.0,
+    "buy_product_cash_spent": 6760.0,
+    "daily_sold_cash": {
+      "0": 427.0,
+      "1": 299.0,
+      "2": 551.0,
+      "3": 595.0,
+      "4": 625.0,
+      "5": 522.0,
+      "6": 3168.0,
+      "7": 609.0,
+      "8": 3537.0,
+      "9": 2733.0,
+      "10": 15545.0,
+      "11": 3578.0,
+      "12": 4311.0,
+      "13": 2614.0,
+      "14": 3004.0,
+      "15": 2451.0,
+      "16": 8296.0,
+      "17": 6276.0,
+      "18": 9079.0,
+      "19": 5218.0,
+      "20": 8549.0,
+      "21": 6422.0,
+      "22": 9439.0,
+      "23": 3260.0,
+      "24": 5251.0,
+      "25": 5062.0,
+      "26": 4959.0,
+      "27": 5664.0,
+      "28": 7300.0,
+      "29": 8496.0
+    },
+    "daily_sold_units": {
+      "0": {
+        "WHEAT": 15
+      },
+      "1": {
+        "FERTILIZER": 3
+      },
+      "2": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "3": {
+        "WHEAT": 7,
+        "FERTILIZER": 4
+      },
+      "4": {
+        "FERTILIZER": 6,
+        "WHEAT": 2
+      },
+      "5": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "6": {
+        "FERTILIZER": 6,
+        "WHEAT": 7,
+        "WOOL": 12
+      },
+      "7": {
+        "FERTILIZER": 7
+      },
+      "8": {
+        "FERTILIZER": 10,
+        "MILK": 12,
+        "WHEAT": 3
+      },
+      "9": {
+        "WHEAT": 7,
+        "FERTILIZER": 14,
+        "WOOL": 8
+      },
+      "10": {
+        "MELON": 60,
+        "MILK": 11
+      },
+      "11": {
+        "MELON": 12,
+        "FERTILIZER": 13,
+        "MILK": 6
+      },
+      "12": {
+        "FERTILIZER": 16,
+        "WOOL": 16,
+        "MILK": 6
+      },
+      "13": {
+        "WOOL": 4,
+        "FERTILIZER": 17,
+        "MILK": 6
+      },
+      "14": {
+        "FERTILIZER": 13,
+        "WHEAT": 2,
+        "MILK": 9,
+        "WOOL": 11
+      },
+      "15": {
+        "FERTILIZER": 14,
+        "WHEAT": 6,
+        "WOOL": 19,
+        "MILK": 6
+      },
+      "16": {
+        "MILK": 9,
+        "FERTILIZER": 12,
+        "STRAWBERRY": 24,
+        "WOOL": 18,
+        "WHEAT": 7
+      },
+      "17": {
+        "MILK": 9,
+        "FERTILIZER": 13,
+        "WHEAT": 3,
+        "WOOL": 16,
+        "STRAWBERRY": 16
+      },
+      "18": {
+        "WOOL": 10,
+        "FERTILIZER": 12,
+        "WHEAT": 2,
+        "MILK": 15,
+        "STRAWBERRY": 24
+      },
+      "19": {
+        "WOOL": 12,
+        "MILK": 6,
+        "FERTILIZER": 2,
+        "WHEAT": 11,
+        "STRAWBERRY": 16
+      },
+      "20": {
+        "WOOL": 12,
+        "MILK": 9,
+        "FERTILIZER": 14,
+        "WHEAT": 28,
+        "STRAWBERRY": 24
+      },
+      "21": {
+        "WOOL": 12,
+        "WHEAT": 3,
+        "FERTILIZER": 14,
+        "MILK": 6,
+        "STRAWBERRY": 24
+      },
+      "22": {
+        "WOOL": 16,
+        "STRAWBERRY": 34,
+        "FERTILIZER": 16,
+        "MILK": 8,
+        "WHEAT": 30
+      },
+      "23": {
+        "WOOL": 16,
+        "FERTILIZER": 17,
+        "WHEAT": 14,
+        "MILK": 4,
+        "STRAWBERRY": 8
+      },
+      "24": {
+        "WOOL": 21,
+        "FERTILIZER": 10,
+        "WHEAT": 20,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "25": {
+        "WOOL": 20,
+        "STRAWBERRY": 17,
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "MILK": 6
+      },
+      "26": {
+        "WHEAT": 30,
+        "WOOL": 15,
+        "FERTILIZER": 15,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "27": {
+        "FERTILIZER": 19,
+        "WHEAT": 63,
+        "MILK": 8,
+        "WOOL": 4,
+        "STRAWBERRY": 6
+      },
+      "28": {
+        "WOOL": 28,
+        "FERTILIZER": 11,
+        "MILK": 8,
+        "WHEAT": 49,
+        "CARROT": 7,
+        "STRAWBERRY": 20
+      },
+      "29": {
+        "WHEAT": 56,
+        "CARROT": 75,
+        "FERTILIZER": 14,
+        "WOOL": 12,
+        "MILK": 8
+      }
+    }
+  },
+  {
+    "file": "episode-114170594-replay.json",
+    "episode_id": 114170594,
+    "opponent": "Azizii Gill",
+    "outcome": "W",
+    "margin": 49344,
+    "rajusah_score": 108933.0,
+    "cash_mismatches": 0,
+    "ledger": {
+      "WHEAT": {
+        "harvested": 595,
+        "bought": 150,
+        "sold_units": 399,
+        "sold_cash": 13166.0,
+        "avg_price": 33.0,
+        "quote_high": 41,
+        "quote_low": 21,
+        "fed_or_fertilized": 346,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "CARROT": {
+        "harvested": 82,
+        "bought": 0,
+        "sold_units": 82,
+        "sold_cash": 4805.0,
+        "avg_price": 58.6,
+        "quote_high": 61,
+        "quote_low": 35,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "TOMATO": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 91,
+        "quote_low": 60,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "STRAWBERRY": {
+        "harvested": 249,
+        "bought": 0,
+        "sold_units": 249,
+        "sold_cash": 3758.0,
+        "avg_price": 15.09,
+        "quote_high": 151,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MELON": {
+        "harvested": 72,
+        "bought": 0,
+        "sold_units": 72,
+        "sold_cash": 16839.0,
+        "avg_price": 233.88,
+        "quote_high": 272,
+        "quote_low": 19,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "EGG": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 56,
+        "quote_low": 50,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MILK": {
+        "harvested": 164,
+        "bought": 0,
+        "sold_units": 164,
+        "sold_cash": 15385.0,
+        "avg_price": 93.81,
+        "quote_high": 216,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "WOOL": {
+        "harvested": 282,
+        "bought": 0,
+        "sold_units": 282,
+        "sold_cash": 66050.0,
+        "avg_price": 234.22,
+        "quote_high": 248,
+        "quote_low": 144,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "FERTILIZER": {
+        "harvested": 0,
+        "bought": 46,
+        "sold_units": 317,
+        "sold_cash": 15454.0,
+        "avg_price": 48.75,
+        "quote_high": 100,
+        "quote_low": 3,
+        "fed_or_fertilized": 100,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      }
+    },
+    "total_sold_cash": 135457.0,
+    "buy_product_cash_spent": 6629.0,
+    "daily_sold_cash": {
+      "0": 453.0,
+      "1": 300.0,
+      "2": 551.0,
+      "3": 601.0,
+      "4": 628.0,
+      "5": 525.0,
+      "6": 3252.0,
+      "7": 613.0,
+      "8": 3480.0,
+      "9": 2727.0,
+      "10": 17038.0,
+      "11": 4376.0,
+      "12": 5480.0,
+      "13": 3125.0,
+      "14": 5148.0,
+      "15": 6391.0,
+      "16": 8874.0,
+      "17": 6241.0,
+      "18": 4072.0,
+      "19": 3601.0,
+      "20": 4699.0,
+      "21": 3619.0,
+      "22": 5704.0,
+      "23": 5033.0,
+      "24": 6315.0,
+      "25": 6591.0,
+      "26": 5122.0,
+      "27": 3532.0,
+      "28": 8726.0,
+      "29": 8640.0
+    },
+    "daily_sold_units": {
+      "0": {
+        "WHEAT": 15
+      },
+      "1": {
+        "FERTILIZER": 3
+      },
+      "2": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "3": {
+        "WHEAT": 7,
+        "FERTILIZER": 4
+      },
+      "4": {
+        "FERTILIZER": 6,
+        "WHEAT": 2
+      },
+      "5": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "6": {
+        "WHEAT": 7,
+        "FERTILIZER": 6,
+        "WOOL": 12
+      },
+      "7": {
+        "FERTILIZER": 7
+      },
+      "8": {
+        "FERTILIZER": 10,
+        "MILK": 12,
+        "WHEAT": 3
+      },
+      "9": {
+        "WHEAT": 7,
+        "FERTILIZER": 14,
+        "WOOL": 8
+      },
+      "10": {
+        "MELON": 60,
+        "MILK": 11
+      },
+      "11": {
+        "MELON": 12,
+        "FERTILIZER": 13,
+        "MILK": 6
+      },
+      "12": {
+        "FERTILIZER": 16,
+        "WOOL": 16,
+        "MILK": 6
+      },
+      "13": {
+        "FERTILIZER": 17,
+        "WOOL": 4,
+        "MILK": 6
+      },
+      "14": {
+        "FERTILIZER": 13,
+        "WHEAT": 2,
+        "MILK": 9,
+        "WOOL": 11
+      },
+      "15": {
+        "FERTILIZER": 14,
+        "WOOL": 19,
+        "WHEAT": 6,
+        "MILK": 6
+      },
+      "16": {
+        "MILK": 9,
+        "STRAWBERRY": 24,
+        "FERTILIZER": 12,
+        "WOOL": 18,
+        "WHEAT": 7
+      },
+      "17": {
+        "MILK": 9,
+        "FERTILIZER": 13,
+        "WHEAT": 3,
+        "WOOL": 16,
+        "STRAWBERRY": 16
+      },
+      "18": {
+        "WOOL": 10,
+        "FERTILIZER": 12,
+        "WHEAT": 2,
+        "MILK": 15,
+        "STRAWBERRY": 24
+      },
+      "19": {
+        "WOOL": 12,
+        "MILK": 6,
+        "WHEAT": 11,
+        "FERTILIZER": 2,
+        "STRAWBERRY": 16
+      },
+      "20": {
+        "WOOL": 12,
+        "MILK": 9,
+        "FERTILIZER": 14,
+        "WHEAT": 28,
+        "STRAWBERRY": 24
+      },
+      "21": {
+        "WOOL": 12,
+        "WHEAT": 3,
+        "FERTILIZER": 14,
+        "MILK": 6,
+        "STRAWBERRY": 24
+      },
+      "22": {
+        "WOOL": 16,
+        "MILK": 8,
+        "STRAWBERRY": 34,
+        "FERTILIZER": 16,
+        "WHEAT": 30
+      },
+      "23": {
+        "FERTILIZER": 17,
+        "WOOL": 16,
+        "WHEAT": 14,
+        "MILK": 4,
+        "STRAWBERRY": 8
+      },
+      "24": {
+        "WOOL": 21,
+        "FERTILIZER": 10,
+        "WHEAT": 20,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "25": {
+        "STRAWBERRY": 17,
+        "WOOL": 20,
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "MILK": 6
+      },
+      "26": {
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "WOOL": 15,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "27": {
+        "FERTILIZER": 19,
+        "WHEAT": 63,
+        "MILK": 8,
+        "STRAWBERRY": 6,
+        "WOOL": 4
+      },
+      "28": {
+        "WOOL": 28,
+        "FERTILIZER": 11,
+        "MILK": 8,
+        "WHEAT": 49,
+        "CARROT": 7,
+        "STRAWBERRY": 20
+      },
+      "29": {
+        "WHEAT": 56,
+        "CARROT": 75,
+        "FERTILIZER": 14,
+        "WOOL": 12,
+        "MILK": 8
+      }
+    }
+  },
+  {
+    "file": "episode-114172061-replay.json",
+    "episode_id": 114172061,
+    "opponent": "\u0421\u0435\u0440\u0433\u0435\u0439 \u041c\u0438\u0437\u0438\u043d",
+    "outcome": "W",
+    "margin": 15234,
+    "rajusah_score": 74508.0,
+    "cash_mismatches": 0,
+    "ledger": {
+      "WHEAT": {
+        "harvested": 595,
+        "bought": 150,
+        "sold_units": 399,
+        "sold_cash": 19988.0,
+        "avg_price": 50.1,
+        "quote_high": 54,
+        "quote_low": 25,
+        "fed_or_fertilized": 346,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "CARROT": {
+        "harvested": 82,
+        "bought": 0,
+        "sold_units": 82,
+        "sold_cash": 4437.0,
+        "avg_price": 54.11,
+        "quote_high": 56,
+        "quote_low": 35,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "TOMATO": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 88,
+        "quote_low": 60,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "STRAWBERRY": {
+        "harvested": 249,
+        "bought": 0,
+        "sold_units": 249,
+        "sold_cash": 30005.0,
+        "avg_price": 120.5,
+        "quote_high": 174,
+        "quote_low": 47,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MELON": {
+        "harvested": 72,
+        "bought": 0,
+        "sold_units": 72,
+        "sold_cash": 17056.0,
+        "avg_price": 236.89,
+        "quote_high": 272,
+        "quote_low": 34,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "EGG": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 56,
+        "quote_low": 50,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MILK": {
+        "harvested": 164,
+        "bought": 0,
+        "sold_units": 164,
+        "sold_cash": 9586.0,
+        "avg_price": 58.45,
+        "quote_high": 201,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "WOOL": {
+        "harvested": 282,
+        "bought": 0,
+        "sold_units": 282,
+        "sold_cash": 7305.0,
+        "avg_price": 25.9,
+        "quote_high": 218,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "FERTILIZER": {
+        "harvested": 0,
+        "bought": 46,
+        "sold_units": 317,
+        "sold_cash": 12727.0,
+        "avg_price": 40.15,
+        "quote_high": 100,
+        "quote_low": 1,
+        "fed_or_fertilized": 100,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      }
+    },
+    "total_sold_cash": 101104.0,
+    "buy_product_cash_spent": 6701.0,
+    "daily_sold_cash": {
+      "0": 427.0,
+      "1": 300.0,
+      "2": 550.0,
+      "3": 601.0,
+      "4": 623.0,
+      "5": 521.0,
+      "6": 3243.0,
+      "7": 607.0,
+      "8": 3285.0,
+      "9": 2902.0,
+      "10": 16535.0,
+      "11": 3947.0,
+      "12": 4185.0,
+      "13": 1993.0,
+      "14": 2085.0,
+      "15": 1470.0,
+      "16": 5538.0,
+      "17": 3885.0,
+      "18": 4776.0,
+      "19": 3206.0,
+      "20": 5541.0,
+      "21": 3746.0,
+      "22": 5075.0,
+      "23": 1665.0,
+      "24": 2393.0,
+      "25": 3307.0,
+      "26": 2974.0,
+      "27": 4172.0,
+      "28": 4382.0,
+      "29": 7170.0
+    },
+    "daily_sold_units": {
+      "0": {
+        "WHEAT": 15
+      },
+      "1": {
+        "FERTILIZER": 3
+      },
+      "2": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "3": {
+        "WHEAT": 7,
+        "FERTILIZER": 4
+      },
+      "4": {
+        "FERTILIZER": 6,
+        "WHEAT": 2
+      },
+      "5": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "6": {
+        "WHEAT": 7,
+        "FERTILIZER": 6,
+        "WOOL": 12
+      },
+      "7": {
+        "FERTILIZER": 7
+      },
+      "8": {
+        "FERTILIZER": 10,
+        "MILK": 12,
+        "WHEAT": 3
+      },
+      "9": {
+        "WHEAT": 7,
+        "FERTILIZER": 14,
+        "WOOL": 8
+      },
+      "10": {
+        "MELON": 60,
+        "MILK": 11
+      },
+      "11": {
+        "MELON": 12,
+        "FERTILIZER": 13,
+        "MILK": 6
+      },
+      "12": {
+        "FERTILIZER": 16,
+        "WOOL": 16,
+        "MILK": 6
+      },
+      "13": {
+        "WOOL": 4,
+        "FERTILIZER": 17,
+        "MILK": 6
+      },
+      "14": {
+        "FERTILIZER": 13,
+        "WHEAT": 2,
+        "MILK": 9,
+        "WOOL": 11
+      },
+      "15": {
+        "FERTILIZER": 14,
+        "WOOL": 19,
+        "WHEAT": 6,
+        "MILK": 6
+      },
+      "16": {
+        "MILK": 9,
+        "STRAWBERRY": 24,
+        "FERTILIZER": 12,
+        "WOOL": 18,
+        "WHEAT": 7
+      },
+      "17": {
+        "MILK": 9,
+        "FERTILIZER": 13,
+        "WHEAT": 3,
+        "WOOL": 16,
+        "STRAWBERRY": 16
+      },
+      "18": {
+        "WOOL": 10,
+        "FERTILIZER": 12,
+        "WHEAT": 2,
+        "MILK": 15,
+        "STRAWBERRY": 24
+      },
+      "19": {
+        "WOOL": 12,
+        "MILK": 6,
+        "WHEAT": 11,
+        "FERTILIZER": 2,
+        "STRAWBERRY": 16
+      },
+      "20": {
+        "WOOL": 12,
+        "MILK": 9,
+        "FERTILIZER": 14,
+        "WHEAT": 28,
+        "STRAWBERRY": 24
+      },
+      "21": {
+        "WOOL": 12,
+        "WHEAT": 3,
+        "FERTILIZER": 14,
+        "MILK": 6,
+        "STRAWBERRY": 24
+      },
+      "22": {
+        "WOOL": 16,
+        "STRAWBERRY": 34,
+        "MILK": 8,
+        "FERTILIZER": 16,
+        "WHEAT": 30
+      },
+      "23": {
+        "FERTILIZER": 17,
+        "WOOL": 16,
+        "WHEAT": 14,
+        "MILK": 4,
+        "STRAWBERRY": 8
+      },
+      "24": {
+        "WOOL": 21,
+        "FERTILIZER": 10,
+        "WHEAT": 20,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "25": {
+        "STRAWBERRY": 17,
+        "WOOL": 20,
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "MILK": 6
+      },
+      "26": {
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "WOOL": 15,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "27": {
+        "WHEAT": 63,
+        "FERTILIZER": 19,
+        "MILK": 8,
+        "STRAWBERRY": 6,
+        "WOOL": 4
+      },
+      "28": {
+        "WOOL": 28,
+        "MILK": 8,
+        "FERTILIZER": 11,
+        "WHEAT": 49,
+        "CARROT": 7,
+        "STRAWBERRY": 20
+      },
+      "29": {
+        "WHEAT": 56,
+        "CARROT": 75,
+        "FERTILIZER": 14,
+        "WOOL": 12,
+        "MILK": 8
+      }
+    }
+  },
+  {
+    "file": "episode-114173483-replay.json",
+    "episode_id": 114173483,
+    "opponent": "straw_Yu",
+    "outcome": "L",
+    "margin": -10870,
+    "rajusah_score": 69972.0,
+    "cash_mismatches": 0,
+    "ledger": {
+      "WHEAT": {
+        "harvested": 595,
+        "bought": 150,
+        "sold_units": 399,
+        "sold_cash": 16849.0,
+        "avg_price": 42.23,
+        "quote_high": 45,
+        "quote_low": 25,
+        "fed_or_fertilized": 346,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "CARROT": {
+        "harvested": 82,
+        "bought": 0,
+        "sold_units": 82,
+        "sold_cash": 4752.0,
+        "avg_price": 57.95,
+        "quote_high": 63,
+        "quote_low": 35,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "TOMATO": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 399,
+        "quote_low": 60,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "STRAWBERRY": {
+        "harvested": 249,
+        "bought": 0,
+        "sold_units": 249,
+        "sold_cash": 12814.0,
+        "avg_price": 51.46,
+        "quote_high": 177,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MELON": {
+        "harvested": 72,
+        "bought": 0,
+        "sold_units": 72,
+        "sold_cash": 14275.0,
+        "avg_price": 198.26,
+        "quote_high": 272,
+        "quote_low": 76,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "EGG": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 63,
+        "quote_low": 50,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MILK": {
+        "harvested": 164,
+        "bought": 0,
+        "sold_units": 164,
+        "sold_cash": 27525.0,
+        "avg_price": 167.84,
+        "quote_high": 228,
+        "quote_low": 101,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "WOOL": {
+        "harvested": 282,
+        "bought": 0,
+        "sold_units": 282,
+        "sold_cash": 6129.0,
+        "avg_price": 21.73,
+        "quote_high": 218,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "FERTILIZER": {
+        "harvested": 0,
+        "bought": 46,
+        "sold_units": 317,
+        "sold_cash": 14260.0,
+        "avg_price": 44.98,
+        "quote_high": 100,
+        "quote_low": 1,
+        "fed_or_fertilized": 100,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      }
+    },
+    "total_sold_cash": 96604.0,
+    "buy_product_cash_spent": 6737.0,
+    "daily_sold_cash": {
+      "0": 427.0,
+      "1": 298.0,
+      "2": 550.0,
+      "3": 595.0,
+      "4": 625.0,
+      "5": 522.0,
+      "6": 3168.0,
+      "7": 609.0,
+      "8": 3537.0,
+      "9": 2736.0,
+      "10": 15483.0,
+      "11": 3527.0,
+      "12": 4241.0,
+      "13": 2522.0,
+      "14": 2828.0,
+      "15": 2302.0,
+      "16": 6647.0,
+      "17": 4734.0,
+      "18": 5661.0,
+      "19": 2537.0,
+      "20": 3682.0,
+      "21": 1530.0,
+      "22": 3006.0,
+      "23": 1748.0,
+      "24": 1866.0,
+      "25": 3000.0,
+      "26": 2271.0,
+      "27": 4472.0,
+      "28": 3890.0,
+      "29": 7590.0
+    },
+    "daily_sold_units": {
+      "0": {
+        "WHEAT": 15
+      },
+      "1": {
+        "FERTILIZER": 3
+      },
+      "2": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "3": {
+        "WHEAT": 7,
+        "FERTILIZER": 4
+      },
+      "4": {
+        "FERTILIZER": 6,
+        "WHEAT": 2
+      },
+      "5": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "6": {
+        "FERTILIZER": 6,
+        "WHEAT": 7,
+        "WOOL": 12
+      },
+      "7": {
+        "FERTILIZER": 7
+      },
+      "8": {
+        "FERTILIZER": 10,
+        "MILK": 12,
+        "WHEAT": 3
+      },
+      "9": {
+        "WHEAT": 7,
+        "FERTILIZER": 14,
+        "WOOL": 8
+      },
+      "10": {
+        "MELON": 60,
+        "MILK": 11
+      },
+      "11": {
+        "MELON": 12,
+        "FERTILIZER": 13,
+        "MILK": 6
+      },
+      "12": {
+        "FERTILIZER": 16,
+        "WOOL": 16,
+        "MILK": 6
+      },
+      "13": {
+        "WOOL": 4,
+        "FERTILIZER": 17,
+        "MILK": 6
+      },
+      "14": {
+        "FERTILIZER": 13,
+        "WHEAT": 2,
+        "MILK": 9,
+        "WOOL": 11
+      },
+      "15": {
+        "FERTILIZER": 14,
+        "WOOL": 19,
+        "WHEAT": 6,
+        "MILK": 6
+      },
+      "16": {
+        "MILK": 9,
+        "STRAWBERRY": 24,
+        "FERTILIZER": 12,
+        "WOOL": 18,
+        "WHEAT": 7
+      },
+      "17": {
+        "MILK": 9,
+        "FERTILIZER": 13,
+        "WHEAT": 3,
+        "WOOL": 16,
+        "STRAWBERRY": 16
+      },
+      "18": {
+        "WOOL": 10,
+        "FERTILIZER": 12,
+        "WHEAT": 2,
+        "MILK": 15,
+        "STRAWBERRY": 24
+      },
+      "19": {
+        "WOOL": 12,
+        "MILK": 6,
+        "WHEAT": 11,
+        "FERTILIZER": 2,
+        "STRAWBERRY": 16
+      },
+      "20": {
+        "WOOL": 12,
+        "MILK": 9,
+        "FERTILIZER": 14,
+        "WHEAT": 28,
+        "STRAWBERRY": 24
+      },
+      "21": {
+        "WOOL": 12,
+        "WHEAT": 3,
+        "MILK": 6,
+        "FERTILIZER": 14,
+        "STRAWBERRY": 24
+      },
+      "22": {
+        "WOOL": 16,
+        "STRAWBERRY": 34,
+        "MILK": 8,
+        "FERTILIZER": 16,
+        "WHEAT": 30
+      },
+      "23": {
+        "FERTILIZER": 17,
+        "WOOL": 16,
+        "WHEAT": 14,
+        "MILK": 4,
+        "STRAWBERRY": 8
+      },
+      "24": {
+        "WOOL": 21,
+        "FERTILIZER": 10,
+        "WHEAT": 20,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "25": {
+        "STRAWBERRY": 17,
+        "WOOL": 20,
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "MILK": 6
+      },
+      "26": {
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "WOOL": 15,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "27": {
+        "FERTILIZER": 19,
+        "WHEAT": 63,
+        "MILK": 8,
+        "STRAWBERRY": 6,
+        "WOOL": 4
+      },
+      "28": {
+        "WOOL": 28,
+        "FERTILIZER": 11,
+        "MILK": 8,
+        "WHEAT": 49,
+        "CARROT": 7,
+        "STRAWBERRY": 20
+      },
+      "29": {
+        "WHEAT": 56,
+        "CARROT": 75,
+        "FERTILIZER": 14,
+        "WOOL": 12,
+        "MILK": 8
+      }
+    }
+  },
+  {
+    "file": "episode-114175006-replay.json",
+    "episode_id": 114175006,
+    "opponent": "Efrain Garay",
+    "outcome": "W",
+    "margin": 29876,
+    "rajusah_score": 96245.0,
+    "cash_mismatches": 0,
+    "ledger": {
+      "WHEAT": {
+        "harvested": 595,
+        "bought": 150,
+        "sold_units": 399,
+        "sold_cash": 17664.0,
+        "avg_price": 44.27,
+        "quote_high": 48,
+        "quote_low": 25,
+        "fed_or_fertilized": 346,
+        "discarded": 6,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "CARROT": {
+        "harvested": 82,
+        "bought": 0,
+        "sold_units": 82,
+        "sold_cash": 2601.0,
+        "avg_price": 31.72,
+        "quote_high": 37,
+        "quote_low": 27,
+        "fed_or_fertilized": 0,
+        "discarded": 1,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "TOMATO": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 126,
+        "quote_low": 60,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "STRAWBERRY": {
+        "harvested": 249,
+        "bought": 0,
+        "sold_units": 249,
+        "sold_cash": 15521.0,
+        "avg_price": 62.33,
+        "quote_high": 184,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MELON": {
+        "harvested": 72,
+        "bought": 0,
+        "sold_units": 72,
+        "sold_cash": 16064.0,
+        "avg_price": 223.11,
+        "quote_high": 272,
+        "quote_low": 7,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "EGG": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 68,
+        "quote_low": 50,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MILK": {
+        "harvested": 164,
+        "bought": 0,
+        "sold_units": 164,
+        "sold_cash": 28387.0,
+        "avg_price": 173.09,
+        "quote_high": 235,
+        "quote_low": 93,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "WOOL": {
+        "harvested": 282,
+        "bought": 0,
+        "sold_units": 282,
+        "sold_cash": 28730.0,
+        "avg_price": 101.88,
+        "quote_high": 233,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "FERTILIZER": {
+        "harvested": 0,
+        "bought": 46,
+        "sold_units": 317,
+        "sold_cash": 13685.0,
+        "avg_price": 43.17,
+        "quote_high": 100,
+        "quote_low": 1,
+        "fed_or_fertilized": 100,
+        "discarded": 3,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      }
+    },
+    "total_sold_cash": 122652.0,
+    "buy_product_cash_spent": 6512.0,
+    "daily_sold_cash": {
+      "0": 427.0,
+      "1": 300.0,
+      "2": 552.0,
+      "3": 597.0,
+      "4": 632.0,
+      "5": 527.0,
+      "6": 3208.0,
+      "7": 619.0,
+      "8": 3433.0,
+      "9": 3188.0,
+      "10": 17062.0,
+      "11": 3445.0,
+      "12": 6034.0,
+      "13": 3174.0,
+      "14": 4858.0,
+      "15": 6378.0,
+      "16": 10275.0,
+      "17": 7597.0,
+      "18": 7848.0,
+      "19": 4838.0,
+      "20": 4736.0,
+      "21": 2166.0,
+      "22": 3392.0,
+      "23": 1955.0,
+      "24": 2369.0,
+      "25": 3270.0,
+      "26": 2859.0,
+      "27": 5146.0,
+      "28": 4773.0,
+      "29": 6994.0
+    },
+    "daily_sold_units": {
+      "0": {
+        "WHEAT": 15
+      },
+      "1": {
+        "FERTILIZER": 3
+      },
+      "2": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "3": {
+        "WHEAT": 7,
+        "FERTILIZER": 4
+      },
+      "4": {
+        "FERTILIZER": 6,
+        "WHEAT": 2
+      },
+      "5": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "6": {
+        "WHEAT": 7,
+        "FERTILIZER": 6,
+        "WOOL": 12
+      },
+      "7": {
+        "FERTILIZER": 7
+      },
+      "8": {
+        "FERTILIZER": 10,
+        "MILK": 12,
+        "WHEAT": 3
+      },
+      "9": {
+        "WHEAT": 7,
+        "FERTILIZER": 14,
+        "WOOL": 8
+      },
+      "10": {
+        "MELON": 60,
+        "MILK": 11
+      },
+      "11": {
+        "MELON": 12,
+        "FERTILIZER": 13,
+        "MILK": 6
+      },
+      "12": {
+        "FERTILIZER": 16,
+        "MILK": 6,
+        "WOOL": 16
+      },
+      "13": {
+        "FERTILIZER": 17,
+        "WOOL": 4,
+        "MILK": 6
+      },
+      "14": {
+        "FERTILIZER": 13,
+        "WHEAT": 2,
+        "MILK": 9,
+        "WOOL": 11
+      },
+      "15": {
+        "FERTILIZER": 14,
+        "WOOL": 19,
+        "WHEAT": 6,
+        "MILK": 6
+      },
+      "16": {
+        "MILK": 9,
+        "STRAWBERRY": 24,
+        "FERTILIZER": 12,
+        "WOOL": 18,
+        "WHEAT": 7
+      },
+      "17": {
+        "MILK": 9,
+        "FERTILIZER": 13,
+        "WHEAT": 3,
+        "WOOL": 16,
+        "STRAWBERRY": 16
+      },
+      "18": {
+        "WOOL": 10,
+        "FERTILIZER": 12,
+        "WHEAT": 2,
+        "MILK": 15,
+        "STRAWBERRY": 24
+      },
+      "19": {
+        "WOOL": 12,
+        "MILK": 6,
+        "WHEAT": 11,
+        "FERTILIZER": 2,
+        "STRAWBERRY": 16
+      },
+      "20": {
+        "WOOL": 12,
+        "MILK": 9,
+        "FERTILIZER": 14,
+        "WHEAT": 28,
+        "STRAWBERRY": 24
+      },
+      "21": {
+        "WOOL": 12,
+        "WHEAT": 3,
+        "MILK": 6,
+        "FERTILIZER": 14,
+        "STRAWBERRY": 24
+      },
+      "22": {
+        "WOOL": 16,
+        "MILK": 8,
+        "STRAWBERRY": 34,
+        "FERTILIZER": 16,
+        "WHEAT": 30
+      },
+      "23": {
+        "WOOL": 16,
+        "FERTILIZER": 17,
+        "WHEAT": 14,
+        "MILK": 4,
+        "STRAWBERRY": 8
+      },
+      "24": {
+        "WOOL": 21,
+        "FERTILIZER": 10,
+        "WHEAT": 20,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "25": {
+        "WOOL": 20,
+        "STRAWBERRY": 17,
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "MILK": 6
+      },
+      "26": {
+        "WHEAT": 30,
+        "WOOL": 15,
+        "FERTILIZER": 15,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "27": {
+        "WHEAT": 63,
+        "FERTILIZER": 19,
+        "MILK": 8,
+        "WOOL": 4,
+        "STRAWBERRY": 6
+      },
+      "28": {
+        "WOOL": 28,
+        "MILK": 8,
+        "FERTILIZER": 11,
+        "WHEAT": 49,
+        "CARROT": 7,
+        "STRAWBERRY": 20
+      },
+      "29": {
+        "WHEAT": 56,
+        "CARROT": 75,
+        "FERTILIZER": 14,
+        "WOOL": 12,
+        "MILK": 8
+      }
+    }
+  },
+  {
+    "file": "episode-114176499-replay.json",
+    "episode_id": 114176499,
+    "opponent": "Harini Panigrahi",
+    "outcome": "L",
+    "margin": -1504,
+    "rajusah_score": 125089.0,
+    "cash_mismatches": 0,
+    "ledger": {
+      "WHEAT": {
+        "harvested": 595,
+        "bought": 150,
+        "sold_units": 399,
+        "sold_cash": 17329.0,
+        "avg_price": 43.43,
+        "quote_high": 47,
+        "quote_low": 25,
+        "fed_or_fertilized": 346,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "CARROT": {
+        "harvested": 82,
+        "bought": 0,
+        "sold_units": 82,
+        "sold_cash": 3561.0,
+        "avg_price": 43.43,
+        "quote_high": 46,
+        "quote_low": 35,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "TOMATO": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 72,
+        "quote_low": 60,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "STRAWBERRY": {
+        "harvested": 249,
+        "bought": 0,
+        "sold_units": 249,
+        "sold_cash": 61154.0,
+        "avg_price": 245.6,
+        "quote_high": 258,
+        "quote_low": 120,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MELON": {
+        "harvested": 72,
+        "bought": 0,
+        "sold_units": 72,
+        "sold_cash": 16064.0,
+        "avg_price": 223.11,
+        "quote_high": 272,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "EGG": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 67,
+        "quote_low": 50,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MILK": {
+        "harvested": 164,
+        "bought": 0,
+        "sold_units": 164,
+        "sold_cash": 30032.0,
+        "avg_price": 183.12,
+        "quote_high": 214,
+        "quote_low": 95,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "WOOL": {
+        "harvested": 282,
+        "bought": 0,
+        "sold_units": 282,
+        "sold_cash": 9108.0,
+        "avg_price": 32.3,
+        "quote_high": 218,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "FERTILIZER": {
+        "harvested": 0,
+        "bought": 46,
+        "sold_units": 317,
+        "sold_cash": 14516.0,
+        "avg_price": 45.79,
+        "quote_high": 100,
+        "quote_low": 1,
+        "fed_or_fertilized": 100,
+        "discarded": 2,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      }
+    },
+    "total_sold_cash": 151764.0,
+    "buy_product_cash_spent": 6780.0,
+    "daily_sold_cash": {
+      "0": 427.0,
+      "1": 300.0,
+      "2": 552.0,
+      "3": 597.0,
+      "4": 632.0,
+      "5": 527.0,
+      "6": 3140.0,
+      "7": 619.0,
+      "8": 3303.0,
+      "9": 2824.0,
+      "10": 16985.0,
+      "11": 3419.0,
+      "12": 4428.0,
+      "13": 2691.0,
+      "14": 3336.0,
+      "15": 2293.0,
+      "16": 8642.0,
+      "17": 6633.0,
+      "18": 9697.0,
+      "19": 5837.0,
+      "20": 9400.0,
+      "21": 7790.0,
+      "22": 11881.0,
+      "23": 3980.0,
+      "24": 6466.0,
+      "25": 6838.0,
+      "26": 6926.0,
+      "27": 6041.0,
+      "28": 8577.0,
+      "29": 6983.0
+    },
+    "daily_sold_units": {
+      "0": {
+        "WHEAT": 15
+      },
+      "1": {
+        "FERTILIZER": 3
+      },
+      "2": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "3": {
+        "WHEAT": 7,
+        "FERTILIZER": 4
+      },
+      "4": {
+        "FERTILIZER": 6,
+        "WHEAT": 2
+      },
+      "5": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "6": {
+        "WHEAT": 7,
+        "FERTILIZER": 6,
+        "WOOL": 12
+      },
+      "7": {
+        "FERTILIZER": 7
+      },
+      "8": {
+        "FERTILIZER": 10,
+        "MILK": 12,
+        "WHEAT": 3
+      },
+      "9": {
+        "WHEAT": 7,
+        "FERTILIZER": 14,
+        "WOOL": 8
+      },
+      "10": {
+        "MELON": 60,
+        "MILK": 11
+      },
+      "11": {
+        "MELON": 12,
+        "FERTILIZER": 13,
+        "MILK": 6
+      },
+      "12": {
+        "FERTILIZER": 16,
+        "WOOL": 16,
+        "MILK": 6
+      },
+      "13": {
+        "WOOL": 4,
+        "FERTILIZER": 17,
+        "MILK": 6
+      },
+      "14": {
+        "FERTILIZER": 13,
+        "WHEAT": 2,
+        "MILK": 9,
+        "WOOL": 11
+      },
+      "15": {
+        "FERTILIZER": 14,
+        "WHEAT": 6,
+        "WOOL": 19,
+        "MILK": 6
+      },
+      "16": {
+        "MILK": 9,
+        "FERTILIZER": 12,
+        "STRAWBERRY": 24,
+        "WOOL": 18,
+        "WHEAT": 7
+      },
+      "17": {
+        "MILK": 9,
+        "FERTILIZER": 13,
+        "WHEAT": 3,
+        "WOOL": 16,
+        "STRAWBERRY": 16
+      },
+      "18": {
+        "WOOL": 10,
+        "FERTILIZER": 12,
+        "WHEAT": 2,
+        "MILK": 15,
+        "STRAWBERRY": 24
+      },
+      "19": {
+        "WOOL": 12,
+        "MILK": 6,
+        "WHEAT": 11,
+        "FERTILIZER": 2,
+        "STRAWBERRY": 16
+      },
+      "20": {
+        "WOOL": 12,
+        "MILK": 9,
+        "FERTILIZER": 14,
+        "WHEAT": 28,
+        "STRAWBERRY": 24
+      },
+      "21": {
+        "WOOL": 12,
+        "WHEAT": 3,
+        "MILK": 6,
+        "FERTILIZER": 14,
+        "STRAWBERRY": 24
+      },
+      "22": {
+        "WOOL": 16,
+        "MILK": 8,
+        "FERTILIZER": 16,
+        "STRAWBERRY": 34,
+        "WHEAT": 30
+      },
+      "23": {
+        "WOOL": 16,
+        "FERTILIZER": 17,
+        "WHEAT": 14,
+        "MILK": 4,
+        "STRAWBERRY": 8
+      },
+      "24": {
+        "WOOL": 21,
+        "FERTILIZER": 10,
+        "WHEAT": 20,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "25": {
+        "WOOL": 20,
+        "STRAWBERRY": 17,
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "MILK": 6
+      },
+      "26": {
+        "WHEAT": 30,
+        "WOOL": 15,
+        "FERTILIZER": 15,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "27": {
+        "FERTILIZER": 19,
+        "WHEAT": 63,
+        "MILK": 8,
+        "WOOL": 4,
+        "STRAWBERRY": 6
+      },
+      "28": {
+        "WOOL": 28,
+        "FERTILIZER": 11,
+        "MILK": 8,
+        "WHEAT": 49,
+        "CARROT": 7,
+        "STRAWBERRY": 20
+      },
+      "29": {
+        "WHEAT": 56,
+        "CARROT": 75,
+        "FERTILIZER": 14,
+        "WOOL": 12,
+        "MILK": 8
+      }
+    }
+  },
+  {
+    "file": "episode-114177946-replay.json",
+    "episode_id": 114177946,
+    "opponent": "Raoul Biagioni",
+    "outcome": "W",
+    "margin": 36985,
+    "rajusah_score": 123853.0,
+    "cash_mismatches": 0,
+    "ledger": {
+      "WHEAT": {
+        "harvested": 595,
+        "bought": 150,
+        "sold_units": 399,
+        "sold_cash": 16892.0,
+        "avg_price": 42.34,
+        "quote_high": 45,
+        "quote_low": 25,
+        "fed_or_fertilized": 346,
+        "discarded": 7,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "CARROT": {
+        "harvested": 82,
+        "bought": 0,
+        "sold_units": 82,
+        "sold_cash": 4778.0,
+        "avg_price": 58.27,
+        "quote_high": 61,
+        "quote_low": 35,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "TOMATO": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 216,
+        "quote_low": 60,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "STRAWBERRY": {
+        "harvested": 249,
+        "bought": 0,
+        "sold_units": 249,
+        "sold_cash": 52022.0,
+        "avg_price": 208.92,
+        "quote_high": 233,
+        "quote_low": 120,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MELON": {
+        "harvested": 72,
+        "bought": 0,
+        "sold_units": 72,
+        "sold_cash": 16064.0,
+        "avg_price": 223.11,
+        "quote_high": 272,
+        "quote_low": 7,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "EGG": {
+        "harvested": 0,
+        "bought": 0,
+        "sold_units": 0,
+        "sold_cash": 0,
+        "avg_price": null,
+        "quote_high": 60,
+        "quote_low": 50,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "MILK": {
+        "harvested": 164,
+        "bought": 0,
+        "sold_units": 164,
+        "sold_cash": 5817.0,
+        "avg_price": 35.47,
+        "quote_high": 186,
+        "quote_low": 1,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "WOOL": {
+        "harvested": 282,
+        "bought": 0,
+        "sold_units": 282,
+        "sold_cash": 40809.0,
+        "avg_price": 144.71,
+        "quote_high": 233,
+        "quote_low": 18,
+        "fed_or_fertilized": 0,
+        "discarded": 0,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      },
+      "FERTILIZER": {
+        "harvested": 0,
+        "bought": 46,
+        "sold_units": 317,
+        "sold_cash": 13812.0,
+        "avg_price": 43.57,
+        "quote_high": 100,
+        "quote_low": 1,
+        "fed_or_fertilized": 100,
+        "discarded": 2,
+        "in_shed_at_end": 0,
+        "carried_at_end": 0
+      }
+    },
+    "total_sold_cash": 150194.0,
+    "buy_product_cash_spent": 6446.0,
+    "daily_sold_cash": {
+      "0": 427.0,
+      "1": 300.0,
+      "2": 552.0,
+      "3": 597.0,
+      "4": 632.0,
+      "5": 527.0,
+      "6": 3208.0,
+      "7": 619.0,
+      "8": 2838.0,
+      "9": 3188.0,
+      "10": 16142.0,
+      "11": 2824.0,
+      "12": 5330.0,
+      "13": 2454.0,
+      "14": 3823.0,
+      "15": 5612.0,
+      "16": 10374.0,
+      "17": 7520.0,
+      "18": 8009.0,
+      "19": 6322.0,
+      "20": 8895.0,
+      "21": 7761.0,
+      "22": 10926.0,
+      "23": 4188.0,
+      "24": 6064.0,
+      "25": 5585.0,
+      "26": 6331.0,
+      "27": 4285.0,
+      "28": 7164.0,
+      "29": 7697.0
+    },
+    "daily_sold_units": {
+      "0": {
+        "WHEAT": 15
+      },
+      "1": {
+        "FERTILIZER": 3
+      },
+      "2": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "3": {
+        "WHEAT": 7,
+        "FERTILIZER": 4
+      },
+      "4": {
+        "FERTILIZER": 6,
+        "WHEAT": 2
+      },
+      "5": {
+        "FERTILIZER": 5,
+        "WHEAT": 2
+      },
+      "6": {
+        "WHEAT": 7,
+        "FERTILIZER": 6,
+        "WOOL": 12
+      },
+      "7": {
+        "FERTILIZER": 7
+      },
+      "8": {
+        "FERTILIZER": 10,
+        "MILK": 12,
+        "WHEAT": 3
+      },
+      "9": {
+        "WHEAT": 7,
+        "FERTILIZER": 14,
+        "WOOL": 8
+      },
+      "10": {
+        "MELON": 60,
+        "MILK": 11
+      },
+      "11": {
+        "MELON": 12,
+        "FERTILIZER": 13,
+        "MILK": 6
+      },
+      "12": {
+        "FERTILIZER": 16,
+        "MILK": 6,
+        "WOOL": 16
+      },
+      "13": {
+        "FERTILIZER": 17,
+        "WOOL": 4,
+        "MILK": 6
+      },
+      "14": {
+        "FERTILIZER": 13,
+        "WHEAT": 2,
+        "MILK": 9,
+        "WOOL": 11
+      },
+      "15": {
+        "FERTILIZER": 14,
+        "WOOL": 19,
+        "WHEAT": 6,
+        "MILK": 6
+      },
+      "16": {
+        "MILK": 9,
+        "FERTILIZER": 12,
+        "WOOL": 18,
+        "STRAWBERRY": 24,
+        "WHEAT": 7
+      },
+      "17": {
+        "MILK": 9,
+        "FERTILIZER": 13,
+        "WHEAT": 3,
+        "WOOL": 16,
+        "STRAWBERRY": 16
+      },
+      "18": {
+        "WOOL": 10,
+        "FERTILIZER": 12,
+        "WHEAT": 2,
+        "MILK": 15,
+        "STRAWBERRY": 24
+      },
+      "19": {
+        "WOOL": 12,
+        "MILK": 6,
+        "WHEAT": 11,
+        "FERTILIZER": 2,
+        "STRAWBERRY": 16
+      },
+      "20": {
+        "WOOL": 12,
+        "FERTILIZER": 14,
+        "MILK": 9,
+        "WHEAT": 28,
+        "STRAWBERRY": 24
+      },
+      "21": {
+        "WOOL": 12,
+        "WHEAT": 3,
+        "FERTILIZER": 14,
+        "MILK": 6,
+        "STRAWBERRY": 24
+      },
+      "22": {
+        "WOOL": 16,
+        "STRAWBERRY": 34,
+        "FERTILIZER": 16,
+        "MILK": 8,
+        "WHEAT": 30
+      },
+      "23": {
+        "WOOL": 16,
+        "FERTILIZER": 17,
+        "WHEAT": 14,
+        "MILK": 4,
+        "STRAWBERRY": 8
+      },
+      "24": {
+        "WOOL": 21,
+        "FERTILIZER": 10,
+        "WHEAT": 20,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "25": {
+        "WOOL": 20,
+        "STRAWBERRY": 17,
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "MILK": 6
+      },
+      "26": {
+        "WHEAT": 30,
+        "FERTILIZER": 15,
+        "WOOL": 15,
+        "STRAWBERRY": 18,
+        "MILK": 6
+      },
+      "27": {
+        "WHEAT": 63,
+        "FERTILIZER": 19,
+        "MILK": 8,
+        "WOOL": 4,
+        "STRAWBERRY": 6
+      },
+      "28": {
+        "WOOL": 28,
+        "MILK": 8,
+        "FERTILIZER": 11,
+        "WHEAT": 49,
+        "CARROT": 7,
+        "STRAWBERRY": 20
+      },
+      "29": {
+        "WHEAT": 56,
+        "CARROT": 75,
+        "FERTILIZER": 14,
+        "WOOL": 12,
+        "MILK": 8
+      }
+    }
+  }
+]

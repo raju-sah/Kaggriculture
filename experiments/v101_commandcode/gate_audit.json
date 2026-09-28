@@ -1,0 +1,76 @@
+{
+  "checks": [
+    {
+      "criterion": "candidate unchanged since freeze",
+      "detail": "sha256 8c572b9027ca4f5a0d656d1b1dd6fb74b4b121bd67c69b97aef16d66e21052e7",
+      "pass": true
+    },
+    {
+      "criterion": "gate file unchanged since precommit",
+      "detail": "sha256 33f90dd83c31293bc3cbcbc30b4c56de07f380083d66599e540096c692ac311e",
+      "pass": true
+    },
+    {
+      "criterion": "v92: 24 seeds x 2 seats, no errors",
+      "detail": "48 games, 0 errors, seat-swap identical True",
+      "pass": true
+    },
+    {
+      "criterion": "v50: 24 seeds x 2 seats, no errors",
+      "detail": "48 games, 0 errors, seat-swap identical True",
+      "pass": true
+    },
+    {
+      "criterion": "v56: 24 seeds x 2 seats, no errors",
+      "detail": "48 games, 0 errors, seat-swap identical True",
+      "pass": true
+    },
+    {
+      "criterion": "score rate > 0.55",
+      "detail": "0.604",
+      "pass": true
+    },
+    {
+      "criterion": "mean margin > +$300",
+      "detail": "$+1,447",
+      "pass": true
+    },
+    {
+      "criterion": "rule fires on >= 6 distinct holdout seeds",
+      "detail": "21/24 seeds: 170001, 170002, 170003, 170004, 170005, 170006, 170008, 170010, 170011, 170012, 170013, 170014, 170015, 170016, 170017, 170018, 170019, 170020, 170022, 170023, 170024",
+      "pass": true
+    },
+    {
+      "criterion": "score rate > 0.55",
+      "detail": "0.750",
+      "pass": true
+    },
+    {
+      "criterion": "mean margin > +$300",
+      "detail": "$+2,087",
+      "pass": true
+    },
+    {
+      "criterion": "score rate > 0.45",
+      "detail": "0.333",
+      "pass": false
+    },
+    {
+      "criterion": "mean margin > 0",
+      "detail": "$-2,657",
+      "pass": false
+    },
+    {
+      "criterion": "lifecycle audit present",
+      "detail": "lifecycle_results_holdout.json missing",
+      "pass": false
+    },
+    {
+      "criterion": "no V92 regression worse than -$2,000",
+      "detail": "worst seed 170010 at $-2,437",
+      "pass": false
+    }
+  ],
+  "passed": 10,
+  "total": 14
+}

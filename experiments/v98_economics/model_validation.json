@@ -1,0 +1,20 @@
+{
+  "validation": {
+    "observed_milk": 164.0,
+    "model_milk_cared": 78,
+    "model_milk_uncared": 41,
+    "observed_wool": 282.0,
+    "model_wool_cared": 102,
+    "model_wool_uncared": 38,
+    "milk_ratio_cared": 0.476,
+    "wool_ratio_cared": 0.362,
+    "model_never_overstates": true,
+    "same_order_of_magnitude": true
+  },
+  "observed": {
+    "milk": 164.0,
+    "wool": 282.0,
+    "strawberry": 249.0,
+    "melon": 72.0
+  }
+}

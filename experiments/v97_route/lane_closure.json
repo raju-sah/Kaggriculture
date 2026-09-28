@@ -1,0 +1,123 @@
+{
+  "gates": {
+    "actor_turns": 30996,
+    "blocked: action is a duty": 14939,
+    "blocked: own tile is dirty": 9085,
+    "passes: action + tile": 6972,
+    "blocked: no target in reach": 6972
+  },
+  "per_game": [
+    {
+      "episode_id": 114158802,
+      "actor_turns": 2214,
+      "blocked: action is a duty": 1067,
+      "blocked: own tile is dirty": 649,
+      "passes: action + tile": 498,
+      "blocked: no target in reach": 498
+    },
+    {
+      "episode_id": 114160308,
+      "actor_turns": 2214,
+      "blocked: action is a duty": 1067,
+      "blocked: own tile is dirty": 649,
+      "passes: action + tile": 498,
+      "blocked: no target in reach": 498
+    },
+    {
+      "episode_id": 114161728,
+      "actor_turns": 2214,
+      "blocked: action is a duty": 1068,
+      "blocked: own tile is dirty": 648,
+      "passes: action + tile": 498,
+      "blocked: no target in reach": 498
+    },
+    {
+      "episode_id": 114163744,
+      "actor_turns": 2214,
+      "blocked: action is a duty": 1067,
+      "blocked: own tile is dirty": 649,
+      "passes: action + tile": 498,
+      "blocked: no target in reach": 498
+    },
+    {
+      "episode_id": 114164630,
+      "actor_turns": 2214,
+      "blocked: action is a duty": 1067,
+      "blocked: own tile is dirty": 649,
+      "passes: action + tile": 498,
+      "blocked: no target in reach": 498
+    },
+    {
+      "episode_id": 114166061,
+      "actor_turns": 2214,
+      "blocked: action is a duty": 1067,
+      "blocked: own tile is dirty": 649,
+      "passes: action + tile": 498,
+      "blocked: no target in reach": 498
+    },
+    {
+      "episode_id": 114167570,
+      "actor_turns": 2214,
+      "blocked: action is a duty": 1067,
+      "blocked: own tile is dirty": 649,
+      "passes: action + tile": 498,
+      "blocked: no target in reach": 498
+    },
+    {
+      "episode_id": 114169079,
+      "actor_turns": 2214,
+      "blocked: action is a duty": 1067,
+      "blocked: own tile is dirty": 649,
+      "passes: action + tile": 498,
+      "blocked: no target in reach": 498
+    },
+    {
+      "episode_id": 114170594,
+      "actor_turns": 2214,
+      "blocked: action is a duty": 1067,
+      "blocked: own tile is dirty": 649,
+      "passes: action + tile": 498,
+      "blocked: no target in reach": 498
+    },
+    {
+      "episode_id": 114172061,
+      "actor_turns": 2214,
+      "blocked: action is a duty": 1067,
+      "blocked: own tile is dirty": 649,
+      "passes: action + tile": 498,
+      "blocked: no target in reach": 498
+    },
+    {
+      "episode_id": 114173483,
+      "actor_turns": 2214,
+      "blocked: action is a duty": 1067,
+      "blocked: own tile is dirty": 649,
+      "passes: action + tile": 498,
+      "blocked: no target in reach": 498
+    },
+    {
+      "episode_id": 114175006,
+      "actor_turns": 2214,
+      "blocked: action is a duty": 1067,
+      "blocked: own tile is dirty": 649,
+      "passes: action + tile": 498,
+      "blocked: no target in reach": 498
+    },
+    {
+      "episode_id": 114176499,
+      "actor_turns": 2214,
+      "blocked: action is a duty": 1067,
+      "blocked: own tile is dirty": 649,
+      "passes: action + tile": 498,
+      "blocked: no target in reach": 498
+    },
+    {
+      "episode_id": 114177946,
+      "actor_turns": 2214,
+      "blocked: action is a duty": 1067,
+      "blocked: own tile is dirty": 649,
+      "passes: action + tile": 498,
+      "blocked: no target in reach": 498
+    }
+  ]
+}

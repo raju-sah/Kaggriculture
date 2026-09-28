@@ -1,0 +1,2186 @@
+[
+  {
+    "episode_id": 114158802,
+    "cash_mismatches": 0,
+    "deleted_units_rajusah": 2,
+    "eod_shed": [
+      {
+        "day": 0,
+        "shed": 3,
+        "carried": 0
+      },
+      {
+        "day": 1,
+        "shed": 6,
+        "carried": 1
+      },
+      {
+        "day": 2,
+        "shed": 0,
+        "carried": 6
+      },
+      {
+        "day": 3,
+        "shed": 0,
+        "carried": 12
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 5
+      },
+      {
+        "day": 5,
+        "shed": 8,
+        "carried": 10
+      },
+      {
+        "day": 6,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 7,
+        "shed": 9,
+        "carried": 2
+      },
+      {
+        "day": 8,
+        "shed": 10,
+        "carried": 14
+      },
+      {
+        "day": 9,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 10,
+        "shed": 11,
+        "carried": 25
+      },
+      {
+        "day": 11,
+        "shed": 11,
+        "carried": 23
+      },
+      {
+        "day": 12,
+        "shed": 21,
+        "carried": 31
+      },
+      {
+        "day": 13,
+        "shed": 13,
+        "carried": 37
+      },
+      {
+        "day": 14,
+        "shed": 19,
+        "carried": 38
+      },
+      {
+        "day": 15,
+        "shed": 16,
+        "carried": 60
+      },
+      {
+        "day": 16,
+        "shed": 15,
+        "carried": 53
+      },
+      {
+        "day": 17,
+        "shed": 28,
+        "carried": 44
+      },
+      {
+        "day": 18,
+        "shed": 26,
+        "carried": 57
+      },
+      {
+        "day": 19,
+        "shed": 28,
+        "carried": 64
+      },
+      {
+        "day": 20,
+        "shed": 1,
+        "carried": 63
+      },
+      {
+        "day": 21,
+        "shed": 18,
+        "carried": 77
+      },
+      {
+        "day": 22,
+        "shed": 0,
+        "carried": 67
+      },
+      {
+        "day": 23,
+        "shed": 4,
+        "carried": 93
+      },
+      {
+        "day": 24,
+        "shed": 3,
+        "carried": 87
+      },
+      {
+        "day": 25,
+        "shed": 9,
+        "carried": 91
+      },
+      {
+        "day": 26,
+        "shed": 25,
+        "carried": 75
+      },
+      {
+        "day": 27,
+        "shed": 0,
+        "carried": 102
+      },
+      {
+        "day": 28,
+        "shed": 0,
+        "carried": 79
+      }
+    ],
+    "max_shed_at_eod": 28,
+    "max_carried_at_eod": 102,
+    "max_shed_plus_carried": 102,
+    "days_shed_plus_carried_over_cap": 1
+  },
+  {
+    "episode_id": 114160308,
+    "cash_mismatches": 0,
+    "deleted_units_rajusah": 2,
+    "eod_shed": [
+      {
+        "day": 0,
+        "shed": 3,
+        "carried": 0
+      },
+      {
+        "day": 1,
+        "shed": 6,
+        "carried": 1
+      },
+      {
+        "day": 2,
+        "shed": 0,
+        "carried": 6
+      },
+      {
+        "day": 3,
+        "shed": 0,
+        "carried": 12
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 5
+      },
+      {
+        "day": 5,
+        "shed": 8,
+        "carried": 10
+      },
+      {
+        "day": 6,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 7,
+        "shed": 9,
+        "carried": 2
+      },
+      {
+        "day": 8,
+        "shed": 10,
+        "carried": 14
+      },
+      {
+        "day": 9,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 10,
+        "shed": 11,
+        "carried": 25
+      },
+      {
+        "day": 11,
+        "shed": 11,
+        "carried": 23
+      },
+      {
+        "day": 12,
+        "shed": 21,
+        "carried": 31
+      },
+      {
+        "day": 13,
+        "shed": 13,
+        "carried": 37
+      },
+      {
+        "day": 14,
+        "shed": 19,
+        "carried": 38
+      },
+      {
+        "day": 15,
+        "shed": 16,
+        "carried": 60
+      },
+      {
+        "day": 16,
+        "shed": 15,
+        "carried": 53
+      },
+      {
+        "day": 17,
+        "shed": 28,
+        "carried": 44
+      },
+      {
+        "day": 18,
+        "shed": 26,
+        "carried": 57
+      },
+      {
+        "day": 19,
+        "shed": 28,
+        "carried": 64
+      },
+      {
+        "day": 20,
+        "shed": 1,
+        "carried": 63
+      },
+      {
+        "day": 21,
+        "shed": 18,
+        "carried": 77
+      },
+      {
+        "day": 22,
+        "shed": 0,
+        "carried": 67
+      },
+      {
+        "day": 23,
+        "shed": 4,
+        "carried": 93
+      },
+      {
+        "day": 24,
+        "shed": 3,
+        "carried": 87
+      },
+      {
+        "day": 25,
+        "shed": 9,
+        "carried": 91
+      },
+      {
+        "day": 26,
+        "shed": 25,
+        "carried": 75
+      },
+      {
+        "day": 27,
+        "shed": 0,
+        "carried": 102
+      },
+      {
+        "day": 28,
+        "shed": 0,
+        "carried": 79
+      }
+    ],
+    "max_shed_at_eod": 28,
+    "max_carried_at_eod": 102,
+    "max_shed_plus_carried": 102,
+    "days_shed_plus_carried_over_cap": 1
+  },
+  {
+    "episode_id": 114161728,
+    "cash_mismatches": 0,
+    "deleted_units_rajusah": 2,
+    "eod_shed": [
+      {
+        "day": 0,
+        "shed": 3,
+        "carried": 0
+      },
+      {
+        "day": 1,
+        "shed": 7,
+        "carried": 1
+      },
+      {
+        "day": 2,
+        "shed": 1,
+        "carried": 6
+      },
+      {
+        "day": 3,
+        "shed": 0,
+        "carried": 12
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 5
+      },
+      {
+        "day": 5,
+        "shed": 8,
+        "carried": 10
+      },
+      {
+        "day": 6,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 7,
+        "shed": 9,
+        "carried": 2
+      },
+      {
+        "day": 8,
+        "shed": 10,
+        "carried": 14
+      },
+      {
+        "day": 9,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 10,
+        "shed": 11,
+        "carried": 25
+      },
+      {
+        "day": 11,
+        "shed": 11,
+        "carried": 23
+      },
+      {
+        "day": 12,
+        "shed": 21,
+        "carried": 31
+      },
+      {
+        "day": 13,
+        "shed": 13,
+        "carried": 37
+      },
+      {
+        "day": 14,
+        "shed": 19,
+        "carried": 38
+      },
+      {
+        "day": 15,
+        "shed": 16,
+        "carried": 60
+      },
+      {
+        "day": 16,
+        "shed": 15,
+        "carried": 53
+      },
+      {
+        "day": 17,
+        "shed": 28,
+        "carried": 44
+      },
+      {
+        "day": 18,
+        "shed": 26,
+        "carried": 57
+      },
+      {
+        "day": 19,
+        "shed": 28,
+        "carried": 64
+      },
+      {
+        "day": 20,
+        "shed": 1,
+        "carried": 63
+      },
+      {
+        "day": 21,
+        "shed": 18,
+        "carried": 77
+      },
+      {
+        "day": 22,
+        "shed": 0,
+        "carried": 67
+      },
+      {
+        "day": 23,
+        "shed": 4,
+        "carried": 93
+      },
+      {
+        "day": 24,
+        "shed": 3,
+        "carried": 87
+      },
+      {
+        "day": 25,
+        "shed": 9,
+        "carried": 91
+      },
+      {
+        "day": 26,
+        "shed": 25,
+        "carried": 75
+      },
+      {
+        "day": 27,
+        "shed": 0,
+        "carried": 102
+      },
+      {
+        "day": 28,
+        "shed": 0,
+        "carried": 79
+      }
+    ],
+    "max_shed_at_eod": 28,
+    "max_carried_at_eod": 102,
+    "max_shed_plus_carried": 102,
+    "days_shed_plus_carried_over_cap": 1
+  },
+  {
+    "episode_id": 114163744,
+    "cash_mismatches": 0,
+    "deleted_units_rajusah": 2,
+    "eod_shed": [
+      {
+        "day": 0,
+        "shed": 3,
+        "carried": 0
+      },
+      {
+        "day": 1,
+        "shed": 6,
+        "carried": 1
+      },
+      {
+        "day": 2,
+        "shed": 0,
+        "carried": 6
+      },
+      {
+        "day": 3,
+        "shed": 0,
+        "carried": 12
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 5
+      },
+      {
+        "day": 5,
+        "shed": 8,
+        "carried": 10
+      },
+      {
+        "day": 6,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 7,
+        "shed": 9,
+        "carried": 2
+      },
+      {
+        "day": 8,
+        "shed": 10,
+        "carried": 14
+      },
+      {
+        "day": 9,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 10,
+        "shed": 11,
+        "carried": 25
+      },
+      {
+        "day": 11,
+        "shed": 11,
+        "carried": 23
+      },
+      {
+        "day": 12,
+        "shed": 21,
+        "carried": 31
+      },
+      {
+        "day": 13,
+        "shed": 13,
+        "carried": 37
+      },
+      {
+        "day": 14,
+        "shed": 19,
+        "carried": 38
+      },
+      {
+        "day": 15,
+        "shed": 16,
+        "carried": 60
+      },
+      {
+        "day": 16,
+        "shed": 15,
+        "carried": 53
+      },
+      {
+        "day": 17,
+        "shed": 28,
+        "carried": 44
+      },
+      {
+        "day": 18,
+        "shed": 26,
+        "carried": 57
+      },
+      {
+        "day": 19,
+        "shed": 28,
+        "carried": 64
+      },
+      {
+        "day": 20,
+        "shed": 1,
+        "carried": 63
+      },
+      {
+        "day": 21,
+        "shed": 18,
+        "carried": 77
+      },
+      {
+        "day": 22,
+        "shed": 0,
+        "carried": 67
+      },
+      {
+        "day": 23,
+        "shed": 4,
+        "carried": 93
+      },
+      {
+        "day": 24,
+        "shed": 3,
+        "carried": 87
+      },
+      {
+        "day": 25,
+        "shed": 9,
+        "carried": 91
+      },
+      {
+        "day": 26,
+        "shed": 25,
+        "carried": 75
+      },
+      {
+        "day": 27,
+        "shed": 0,
+        "carried": 102
+      },
+      {
+        "day": 28,
+        "shed": 0,
+        "carried": 79
+      }
+    ],
+    "max_shed_at_eod": 28,
+    "max_carried_at_eod": 102,
+    "max_shed_plus_carried": 102,
+    "days_shed_plus_carried_over_cap": 1
+  },
+  {
+    "episode_id": 114164630,
+    "cash_mismatches": 0,
+    "deleted_units_rajusah": 2,
+    "eod_shed": [
+      {
+        "day": 0,
+        "shed": 3,
+        "carried": 0
+      },
+      {
+        "day": 1,
+        "shed": 6,
+        "carried": 1
+      },
+      {
+        "day": 2,
+        "shed": 0,
+        "carried": 6
+      },
+      {
+        "day": 3,
+        "shed": 0,
+        "carried": 12
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 5
+      },
+      {
+        "day": 5,
+        "shed": 8,
+        "carried": 10
+      },
+      {
+        "day": 6,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 7,
+        "shed": 9,
+        "carried": 2
+      },
+      {
+        "day": 8,
+        "shed": 10,
+        "carried": 14
+      },
+      {
+        "day": 9,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 10,
+        "shed": 11,
+        "carried": 25
+      },
+      {
+        "day": 11,
+        "shed": 11,
+        "carried": 23
+      },
+      {
+        "day": 12,
+        "shed": 21,
+        "carried": 31
+      },
+      {
+        "day": 13,
+        "shed": 13,
+        "carried": 37
+      },
+      {
+        "day": 14,
+        "shed": 19,
+        "carried": 38
+      },
+      {
+        "day": 15,
+        "shed": 16,
+        "carried": 60
+      },
+      {
+        "day": 16,
+        "shed": 15,
+        "carried": 53
+      },
+      {
+        "day": 17,
+        "shed": 28,
+        "carried": 44
+      },
+      {
+        "day": 18,
+        "shed": 26,
+        "carried": 57
+      },
+      {
+        "day": 19,
+        "shed": 28,
+        "carried": 64
+      },
+      {
+        "day": 20,
+        "shed": 1,
+        "carried": 63
+      },
+      {
+        "day": 21,
+        "shed": 18,
+        "carried": 77
+      },
+      {
+        "day": 22,
+        "shed": 0,
+        "carried": 67
+      },
+      {
+        "day": 23,
+        "shed": 4,
+        "carried": 93
+      },
+      {
+        "day": 24,
+        "shed": 3,
+        "carried": 87
+      },
+      {
+        "day": 25,
+        "shed": 9,
+        "carried": 91
+      },
+      {
+        "day": 26,
+        "shed": 25,
+        "carried": 75
+      },
+      {
+        "day": 27,
+        "shed": 0,
+        "carried": 102
+      },
+      {
+        "day": 28,
+        "shed": 0,
+        "carried": 79
+      }
+    ],
+    "max_shed_at_eod": 28,
+    "max_carried_at_eod": 102,
+    "max_shed_plus_carried": 102,
+    "days_shed_plus_carried_over_cap": 1
+  },
+  {
+    "episode_id": 114166061,
+    "cash_mismatches": 0,
+    "deleted_units_rajusah": 2,
+    "eod_shed": [
+      {
+        "day": 0,
+        "shed": 3,
+        "carried": 0
+      },
+      {
+        "day": 1,
+        "shed": 6,
+        "carried": 1
+      },
+      {
+        "day": 2,
+        "shed": 0,
+        "carried": 6
+      },
+      {
+        "day": 3,
+        "shed": 0,
+        "carried": 12
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 5
+      },
+      {
+        "day": 5,
+        "shed": 8,
+        "carried": 10
+      },
+      {
+        "day": 6,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 7,
+        "shed": 9,
+        "carried": 2
+      },
+      {
+        "day": 8,
+        "shed": 10,
+        "carried": 14
+      },
+      {
+        "day": 9,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 10,
+        "shed": 11,
+        "carried": 25
+      },
+      {
+        "day": 11,
+        "shed": 11,
+        "carried": 23
+      },
+      {
+        "day": 12,
+        "shed": 21,
+        "carried": 31
+      },
+      {
+        "day": 13,
+        "shed": 13,
+        "carried": 37
+      },
+      {
+        "day": 14,
+        "shed": 19,
+        "carried": 38
+      },
+      {
+        "day": 15,
+        "shed": 16,
+        "carried": 60
+      },
+      {
+        "day": 16,
+        "shed": 15,
+        "carried": 53
+      },
+      {
+        "day": 17,
+        "shed": 28,
+        "carried": 44
+      },
+      {
+        "day": 18,
+        "shed": 26,
+        "carried": 57
+      },
+      {
+        "day": 19,
+        "shed": 28,
+        "carried": 64
+      },
+      {
+        "day": 20,
+        "shed": 1,
+        "carried": 63
+      },
+      {
+        "day": 21,
+        "shed": 18,
+        "carried": 77
+      },
+      {
+        "day": 22,
+        "shed": 0,
+        "carried": 67
+      },
+      {
+        "day": 23,
+        "shed": 4,
+        "carried": 93
+      },
+      {
+        "day": 24,
+        "shed": 3,
+        "carried": 87
+      },
+      {
+        "day": 25,
+        "shed": 9,
+        "carried": 91
+      },
+      {
+        "day": 26,
+        "shed": 25,
+        "carried": 75
+      },
+      {
+        "day": 27,
+        "shed": 0,
+        "carried": 102
+      },
+      {
+        "day": 28,
+        "shed": 0,
+        "carried": 79
+      }
+    ],
+    "max_shed_at_eod": 28,
+    "max_carried_at_eod": 102,
+    "max_shed_plus_carried": 102,
+    "days_shed_plus_carried_over_cap": 1
+  },
+  {
+    "episode_id": 114167570,
+    "cash_mismatches": 0,
+    "deleted_units_rajusah": 2,
+    "eod_shed": [
+      {
+        "day": 0,
+        "shed": 3,
+        "carried": 0
+      },
+      {
+        "day": 1,
+        "shed": 6,
+        "carried": 1
+      },
+      {
+        "day": 2,
+        "shed": 0,
+        "carried": 6
+      },
+      {
+        "day": 3,
+        "shed": 0,
+        "carried": 12
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 5
+      },
+      {
+        "day": 5,
+        "shed": 8,
+        "carried": 10
+      },
+      {
+        "day": 6,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 7,
+        "shed": 9,
+        "carried": 2
+      },
+      {
+        "day": 8,
+        "shed": 10,
+        "carried": 14
+      },
+      {
+        "day": 9,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 10,
+        "shed": 11,
+        "carried": 25
+      },
+      {
+        "day": 11,
+        "shed": 11,
+        "carried": 23
+      },
+      {
+        "day": 12,
+        "shed": 21,
+        "carried": 31
+      },
+      {
+        "day": 13,
+        "shed": 13,
+        "carried": 37
+      },
+      {
+        "day": 14,
+        "shed": 19,
+        "carried": 38
+      },
+      {
+        "day": 15,
+        "shed": 16,
+        "carried": 60
+      },
+      {
+        "day": 16,
+        "shed": 15,
+        "carried": 53
+      },
+      {
+        "day": 17,
+        "shed": 28,
+        "carried": 44
+      },
+      {
+        "day": 18,
+        "shed": 26,
+        "carried": 57
+      },
+      {
+        "day": 19,
+        "shed": 28,
+        "carried": 64
+      },
+      {
+        "day": 20,
+        "shed": 1,
+        "carried": 63
+      },
+      {
+        "day": 21,
+        "shed": 18,
+        "carried": 77
+      },
+      {
+        "day": 22,
+        "shed": 0,
+        "carried": 67
+      },
+      {
+        "day": 23,
+        "shed": 4,
+        "carried": 93
+      },
+      {
+        "day": 24,
+        "shed": 3,
+        "carried": 87
+      },
+      {
+        "day": 25,
+        "shed": 9,
+        "carried": 91
+      },
+      {
+        "day": 26,
+        "shed": 25,
+        "carried": 75
+      },
+      {
+        "day": 27,
+        "shed": 0,
+        "carried": 102
+      },
+      {
+        "day": 28,
+        "shed": 0,
+        "carried": 79
+      }
+    ],
+    "max_shed_at_eod": 28,
+    "max_carried_at_eod": 102,
+    "max_shed_plus_carried": 102,
+    "days_shed_plus_carried_over_cap": 1
+  },
+  {
+    "episode_id": 114169079,
+    "cash_mismatches": 0,
+    "deleted_units_rajusah": 2,
+    "eod_shed": [
+      {
+        "day": 0,
+        "shed": 3,
+        "carried": 0
+      },
+      {
+        "day": 1,
+        "shed": 6,
+        "carried": 1
+      },
+      {
+        "day": 2,
+        "shed": 0,
+        "carried": 6
+      },
+      {
+        "day": 3,
+        "shed": 0,
+        "carried": 12
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 5
+      },
+      {
+        "day": 5,
+        "shed": 8,
+        "carried": 10
+      },
+      {
+        "day": 6,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 7,
+        "shed": 9,
+        "carried": 2
+      },
+      {
+        "day": 8,
+        "shed": 10,
+        "carried": 14
+      },
+      {
+        "day": 9,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 10,
+        "shed": 11,
+        "carried": 25
+      },
+      {
+        "day": 11,
+        "shed": 11,
+        "carried": 23
+      },
+      {
+        "day": 12,
+        "shed": 21,
+        "carried": 31
+      },
+      {
+        "day": 13,
+        "shed": 13,
+        "carried": 37
+      },
+      {
+        "day": 14,
+        "shed": 19,
+        "carried": 38
+      },
+      {
+        "day": 15,
+        "shed": 16,
+        "carried": 60
+      },
+      {
+        "day": 16,
+        "shed": 15,
+        "carried": 53
+      },
+      {
+        "day": 17,
+        "shed": 28,
+        "carried": 44
+      },
+      {
+        "day": 18,
+        "shed": 26,
+        "carried": 57
+      },
+      {
+        "day": 19,
+        "shed": 28,
+        "carried": 64
+      },
+      {
+        "day": 20,
+        "shed": 1,
+        "carried": 63
+      },
+      {
+        "day": 21,
+        "shed": 18,
+        "carried": 77
+      },
+      {
+        "day": 22,
+        "shed": 0,
+        "carried": 67
+      },
+      {
+        "day": 23,
+        "shed": 4,
+        "carried": 93
+      },
+      {
+        "day": 24,
+        "shed": 3,
+        "carried": 87
+      },
+      {
+        "day": 25,
+        "shed": 9,
+        "carried": 91
+      },
+      {
+        "day": 26,
+        "shed": 25,
+        "carried": 75
+      },
+      {
+        "day": 27,
+        "shed": 0,
+        "carried": 102
+      },
+      {
+        "day": 28,
+        "shed": 0,
+        "carried": 79
+      }
+    ],
+    "max_shed_at_eod": 28,
+    "max_carried_at_eod": 102,
+    "max_shed_plus_carried": 102,
+    "days_shed_plus_carried_over_cap": 1
+  },
+  {
+    "episode_id": 114170594,
+    "cash_mismatches": 0,
+    "deleted_units_rajusah": 2,
+    "eod_shed": [
+      {
+        "day": 0,
+        "shed": 3,
+        "carried": 0
+      },
+      {
+        "day": 1,
+        "shed": 6,
+        "carried": 1
+      },
+      {
+        "day": 2,
+        "shed": 0,
+        "carried": 6
+      },
+      {
+        "day": 3,
+        "shed": 0,
+        "carried": 12
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 5
+      },
+      {
+        "day": 5,
+        "shed": 8,
+        "carried": 10
+      },
+      {
+        "day": 6,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 7,
+        "shed": 9,
+        "carried": 2
+      },
+      {
+        "day": 8,
+        "shed": 10,
+        "carried": 14
+      },
+      {
+        "day": 9,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 10,
+        "shed": 11,
+        "carried": 25
+      },
+      {
+        "day": 11,
+        "shed": 11,
+        "carried": 23
+      },
+      {
+        "day": 12,
+        "shed": 21,
+        "carried": 31
+      },
+      {
+        "day": 13,
+        "shed": 13,
+        "carried": 37
+      },
+      {
+        "day": 14,
+        "shed": 19,
+        "carried": 38
+      },
+      {
+        "day": 15,
+        "shed": 16,
+        "carried": 60
+      },
+      {
+        "day": 16,
+        "shed": 15,
+        "carried": 53
+      },
+      {
+        "day": 17,
+        "shed": 28,
+        "carried": 44
+      },
+      {
+        "day": 18,
+        "shed": 26,
+        "carried": 57
+      },
+      {
+        "day": 19,
+        "shed": 28,
+        "carried": 64
+      },
+      {
+        "day": 20,
+        "shed": 1,
+        "carried": 63
+      },
+      {
+        "day": 21,
+        "shed": 18,
+        "carried": 77
+      },
+      {
+        "day": 22,
+        "shed": 0,
+        "carried": 67
+      },
+      {
+        "day": 23,
+        "shed": 4,
+        "carried": 93
+      },
+      {
+        "day": 24,
+        "shed": 3,
+        "carried": 87
+      },
+      {
+        "day": 25,
+        "shed": 9,
+        "carried": 91
+      },
+      {
+        "day": 26,
+        "shed": 25,
+        "carried": 75
+      },
+      {
+        "day": 27,
+        "shed": 0,
+        "carried": 102
+      },
+      {
+        "day": 28,
+        "shed": 0,
+        "carried": 79
+      }
+    ],
+    "max_shed_at_eod": 28,
+    "max_carried_at_eod": 102,
+    "max_shed_plus_carried": 102,
+    "days_shed_plus_carried_over_cap": 1
+  },
+  {
+    "episode_id": 114172061,
+    "cash_mismatches": 0,
+    "deleted_units_rajusah": 2,
+    "eod_shed": [
+      {
+        "day": 0,
+        "shed": 3,
+        "carried": 0
+      },
+      {
+        "day": 1,
+        "shed": 6,
+        "carried": 1
+      },
+      {
+        "day": 2,
+        "shed": 0,
+        "carried": 6
+      },
+      {
+        "day": 3,
+        "shed": 0,
+        "carried": 12
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 5
+      },
+      {
+        "day": 5,
+        "shed": 8,
+        "carried": 10
+      },
+      {
+        "day": 6,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 7,
+        "shed": 9,
+        "carried": 2
+      },
+      {
+        "day": 8,
+        "shed": 10,
+        "carried": 14
+      },
+      {
+        "day": 9,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 10,
+        "shed": 11,
+        "carried": 25
+      },
+      {
+        "day": 11,
+        "shed": 11,
+        "carried": 23
+      },
+      {
+        "day": 12,
+        "shed": 21,
+        "carried": 31
+      },
+      {
+        "day": 13,
+        "shed": 13,
+        "carried": 37
+      },
+      {
+        "day": 14,
+        "shed": 19,
+        "carried": 38
+      },
+      {
+        "day": 15,
+        "shed": 16,
+        "carried": 60
+      },
+      {
+        "day": 16,
+        "shed": 15,
+        "carried": 53
+      },
+      {
+        "day": 17,
+        "shed": 28,
+        "carried": 44
+      },
+      {
+        "day": 18,
+        "shed": 26,
+        "carried": 57
+      },
+      {
+        "day": 19,
+        "shed": 28,
+        "carried": 64
+      },
+      {
+        "day": 20,
+        "shed": 1,
+        "carried": 63
+      },
+      {
+        "day": 21,
+        "shed": 18,
+        "carried": 77
+      },
+      {
+        "day": 22,
+        "shed": 0,
+        "carried": 67
+      },
+      {
+        "day": 23,
+        "shed": 4,
+        "carried": 93
+      },
+      {
+        "day": 24,
+        "shed": 3,
+        "carried": 87
+      },
+      {
+        "day": 25,
+        "shed": 9,
+        "carried": 91
+      },
+      {
+        "day": 26,
+        "shed": 25,
+        "carried": 75
+      },
+      {
+        "day": 27,
+        "shed": 0,
+        "carried": 102
+      },
+      {
+        "day": 28,
+        "shed": 0,
+        "carried": 79
+      }
+    ],
+    "max_shed_at_eod": 28,
+    "max_carried_at_eod": 102,
+    "max_shed_plus_carried": 102,
+    "days_shed_plus_carried_over_cap": 1
+  },
+  {
+    "episode_id": 114173483,
+    "cash_mismatches": 0,
+    "deleted_units_rajusah": 2,
+    "eod_shed": [
+      {
+        "day": 0,
+        "shed": 3,
+        "carried": 0
+      },
+      {
+        "day": 1,
+        "shed": 6,
+        "carried": 1
+      },
+      {
+        "day": 2,
+        "shed": 0,
+        "carried": 6
+      },
+      {
+        "day": 3,
+        "shed": 0,
+        "carried": 12
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 5
+      },
+      {
+        "day": 5,
+        "shed": 8,
+        "carried": 10
+      },
+      {
+        "day": 6,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 7,
+        "shed": 9,
+        "carried": 2
+      },
+      {
+        "day": 8,
+        "shed": 10,
+        "carried": 14
+      },
+      {
+        "day": 9,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 10,
+        "shed": 11,
+        "carried": 25
+      },
+      {
+        "day": 11,
+        "shed": 11,
+        "carried": 23
+      },
+      {
+        "day": 12,
+        "shed": 21,
+        "carried": 31
+      },
+      {
+        "day": 13,
+        "shed": 13,
+        "carried": 37
+      },
+      {
+        "day": 14,
+        "shed": 19,
+        "carried": 38
+      },
+      {
+        "day": 15,
+        "shed": 16,
+        "carried": 60
+      },
+      {
+        "day": 16,
+        "shed": 15,
+        "carried": 53
+      },
+      {
+        "day": 17,
+        "shed": 28,
+        "carried": 44
+      },
+      {
+        "day": 18,
+        "shed": 26,
+        "carried": 57
+      },
+      {
+        "day": 19,
+        "shed": 28,
+        "carried": 64
+      },
+      {
+        "day": 20,
+        "shed": 1,
+        "carried": 63
+      },
+      {
+        "day": 21,
+        "shed": 18,
+        "carried": 77
+      },
+      {
+        "day": 22,
+        "shed": 0,
+        "carried": 67
+      },
+      {
+        "day": 23,
+        "shed": 4,
+        "carried": 93
+      },
+      {
+        "day": 24,
+        "shed": 3,
+        "carried": 87
+      },
+      {
+        "day": 25,
+        "shed": 9,
+        "carried": 91
+      },
+      {
+        "day": 26,
+        "shed": 25,
+        "carried": 75
+      },
+      {
+        "day": 27,
+        "shed": 0,
+        "carried": 102
+      },
+      {
+        "day": 28,
+        "shed": 0,
+        "carried": 79
+      }
+    ],
+    "max_shed_at_eod": 28,
+    "max_carried_at_eod": 102,
+    "max_shed_plus_carried": 102,
+    "days_shed_plus_carried_over_cap": 1
+  },
+  {
+    "episode_id": 114175006,
+    "cash_mismatches": 0,
+    "deleted_units_rajusah": 2,
+    "eod_shed": [
+      {
+        "day": 0,
+        "shed": 3,
+        "carried": 0
+      },
+      {
+        "day": 1,
+        "shed": 6,
+        "carried": 1
+      },
+      {
+        "day": 2,
+        "shed": 0,
+        "carried": 6
+      },
+      {
+        "day": 3,
+        "shed": 0,
+        "carried": 12
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 5
+      },
+      {
+        "day": 5,
+        "shed": 8,
+        "carried": 10
+      },
+      {
+        "day": 6,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 7,
+        "shed": 9,
+        "carried": 2
+      },
+      {
+        "day": 8,
+        "shed": 10,
+        "carried": 14
+      },
+      {
+        "day": 9,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 10,
+        "shed": 11,
+        "carried": 25
+      },
+      {
+        "day": 11,
+        "shed": 11,
+        "carried": 23
+      },
+      {
+        "day": 12,
+        "shed": 21,
+        "carried": 31
+      },
+      {
+        "day": 13,
+        "shed": 13,
+        "carried": 37
+      },
+      {
+        "day": 14,
+        "shed": 19,
+        "carried": 38
+      },
+      {
+        "day": 15,
+        "shed": 16,
+        "carried": 60
+      },
+      {
+        "day": 16,
+        "shed": 15,
+        "carried": 53
+      },
+      {
+        "day": 17,
+        "shed": 28,
+        "carried": 44
+      },
+      {
+        "day": 18,
+        "shed": 26,
+        "carried": 57
+      },
+      {
+        "day": 19,
+        "shed": 28,
+        "carried": 64
+      },
+      {
+        "day": 20,
+        "shed": 1,
+        "carried": 63
+      },
+      {
+        "day": 21,
+        "shed": 18,
+        "carried": 77
+      },
+      {
+        "day": 22,
+        "shed": 0,
+        "carried": 67
+      },
+      {
+        "day": 23,
+        "shed": 4,
+        "carried": 93
+      },
+      {
+        "day": 24,
+        "shed": 3,
+        "carried": 87
+      },
+      {
+        "day": 25,
+        "shed": 9,
+        "carried": 91
+      },
+      {
+        "day": 26,
+        "shed": 25,
+        "carried": 75
+      },
+      {
+        "day": 27,
+        "shed": 0,
+        "carried": 102
+      },
+      {
+        "day": 28,
+        "shed": 0,
+        "carried": 79
+      }
+    ],
+    "max_shed_at_eod": 28,
+    "max_carried_at_eod": 102,
+    "max_shed_plus_carried": 102,
+    "days_shed_plus_carried_over_cap": 1
+  },
+  {
+    "episode_id": 114176499,
+    "cash_mismatches": 0,
+    "deleted_units_rajusah": 2,
+    "eod_shed": [
+      {
+        "day": 0,
+        "shed": 3,
+        "carried": 0
+      },
+      {
+        "day": 1,
+        "shed": 6,
+        "carried": 1
+      },
+      {
+        "day": 2,
+        "shed": 0,
+        "carried": 6
+      },
+      {
+        "day": 3,
+        "shed": 0,
+        "carried": 12
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 5
+      },
+      {
+        "day": 5,
+        "shed": 8,
+        "carried": 10
+      },
+      {
+        "day": 6,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 7,
+        "shed": 9,
+        "carried": 2
+      },
+      {
+        "day": 8,
+        "shed": 10,
+        "carried": 14
+      },
+      {
+        "day": 9,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 10,
+        "shed": 11,
+        "carried": 25
+      },
+      {
+        "day": 11,
+        "shed": 11,
+        "carried": 23
+      },
+      {
+        "day": 12,
+        "shed": 21,
+        "carried": 31
+      },
+      {
+        "day": 13,
+        "shed": 13,
+        "carried": 37
+      },
+      {
+        "day": 14,
+        "shed": 19,
+        "carried": 38
+      },
+      {
+        "day": 15,
+        "shed": 16,
+        "carried": 60
+      },
+      {
+        "day": 16,
+        "shed": 15,
+        "carried": 53
+      },
+      {
+        "day": 17,
+        "shed": 28,
+        "carried": 44
+      },
+      {
+        "day": 18,
+        "shed": 26,
+        "carried": 57
+      },
+      {
+        "day": 19,
+        "shed": 28,
+        "carried": 64
+      },
+      {
+        "day": 20,
+        "shed": 1,
+        "carried": 63
+      },
+      {
+        "day": 21,
+        "shed": 18,
+        "carried": 77
+      },
+      {
+        "day": 22,
+        "shed": 0,
+        "carried": 67
+      },
+      {
+        "day": 23,
+        "shed": 4,
+        "carried": 93
+      },
+      {
+        "day": 24,
+        "shed": 3,
+        "carried": 87
+      },
+      {
+        "day": 25,
+        "shed": 9,
+        "carried": 91
+      },
+      {
+        "day": 26,
+        "shed": 25,
+        "carried": 75
+      },
+      {
+        "day": 27,
+        "shed": 0,
+        "carried": 102
+      },
+      {
+        "day": 28,
+        "shed": 0,
+        "carried": 79
+      }
+    ],
+    "max_shed_at_eod": 28,
+    "max_carried_at_eod": 102,
+    "max_shed_plus_carried": 102,
+    "days_shed_plus_carried_over_cap": 1
+  },
+  {
+    "episode_id": 114177946,
+    "cash_mismatches": 0,
+    "deleted_units_rajusah": 2,
+    "eod_shed": [
+      {
+        "day": 0,
+        "shed": 3,
+        "carried": 0
+      },
+      {
+        "day": 1,
+        "shed": 6,
+        "carried": 1
+      },
+      {
+        "day": 2,
+        "shed": 0,
+        "carried": 6
+      },
+      {
+        "day": 3,
+        "shed": 0,
+        "carried": 12
+      },
+      {
+        "day": 4,
+        "shed": 12,
+        "carried": 5
+      },
+      {
+        "day": 5,
+        "shed": 8,
+        "carried": 10
+      },
+      {
+        "day": 6,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 7,
+        "shed": 9,
+        "carried": 2
+      },
+      {
+        "day": 8,
+        "shed": 10,
+        "carried": 14
+      },
+      {
+        "day": 9,
+        "shed": 2,
+        "carried": 8
+      },
+      {
+        "day": 10,
+        "shed": 11,
+        "carried": 25
+      },
+      {
+        "day": 11,
+        "shed": 11,
+        "carried": 23
+      },
+      {
+        "day": 12,
+        "shed": 21,
+        "carried": 31
+      },
+      {
+        "day": 13,
+        "shed": 13,
+        "carried": 37
+      },
+      {
+        "day": 14,
+        "shed": 19,
+        "carried": 38
+      },
+      {
+        "day": 15,
+        "shed": 16,
+        "carried": 60
+      },
+      {
+        "day": 16,
+        "shed": 15,
+        "carried": 53
+      },
+      {
+        "day": 17,
+        "shed": 28,
+        "carried": 44
+      },
+      {
+        "day": 18,
+        "shed": 26,
+        "carried": 57
+      },
+      {
+        "day": 19,
+        "shed": 28,
+        "carried": 64
+      },
+      {
+        "day": 20,
+        "shed": 1,
+        "carried": 63
+      },
+      {
+        "day": 21,
+        "shed": 18,
+        "carried": 77
+      },
+      {
+        "day": 22,
+        "shed": 0,
+        "carried": 67
+      },
+      {
+        "day": 23,
+        "shed": 4,
+        "carried": 93
+      },
+      {
+        "day": 24,
+        "shed": 3,
+        "carried": 87
+      },
+      {
+        "day": 25,
+        "shed": 9,
+        "carried": 91
+      },
+      {
+        "day": 26,
+        "shed": 25,
+        "carried": 75
+      },
+      {
+        "day": 27,
+        "shed": 0,
+        "carried": 102
+      },
+      {
+        "day": 28,
+        "shed": 0,
+        "carried": 79
+      }
+    ],
+    "max_shed_at_eod": 28,
+    "max_carried_at_eod": 102,
+    "max_shed_plus_carried": 102,
+    "days_shed_plus_carried_over_cap": 1
+  }
+]

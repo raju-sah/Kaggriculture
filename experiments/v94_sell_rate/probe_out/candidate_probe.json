@@ -1,0 +1,44 @@
+[
+  {
+    "seed": 92600,
+    "cand": "C2_shed_safe_hold",
+    "v92_coins": 103164.0,
+    "cand_coins": 87845.0,
+    "delta": -15319.0
+  },
+  {
+    "seed": 92600,
+    "cand": "C3_shed_capped_buy",
+    "v92_coins": 99143.0,
+    "cand_coins": 99143.0,
+    "delta": 0.0
+  },
+  {
+    "seed": 94700,
+    "cand": "C2_shed_safe_hold",
+    "v92_coins": 71772.0,
+    "cand_coins": 68945.0,
+    "delta": -2827.0
+  },
+  {
+    "seed": 94700,
+    "cand": "C3_shed_capped_buy",
+    "v92_coins": 70544.0,
+    "cand_coins": 70544.0,
+    "delta": 0.0
+  },
+  {
+    "seed": 95200,
+    "cand": "C2_shed_safe_hold",
+    "v92_coins": 92708.0,
+    "cand_coins": 85540.0,
+    "delta": -7168.0
+  },
+  {
+    "seed": 95200,
+    "cand": "C3_shed_capped_buy",
+    "v92_coins": 89742.0,
+    "cand_coins": 89742.0,
+    "delta": 0.0
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "experiment": "V93 ADAPTIVE ADAPTIVE-WOOL-QUOTE-FLOOR GATE",
+  "candidate": "experiments/v93_adaptive/candidate.py",
+  "candidate_sha256": "fa81a78e79d1d3639f036102a212f84c9334971bc34b7d1e1f11c1d53591c8d5",
+  "incumbent": "experiments/v92_overflow_guard/candidate.py",
+  "incumbent_sha256": "0d5d356baa25703f1a7b753527d1b39e1c7d63478985913be5b3c2550261b806",
+  "ladder_opponent": "agents/v56_agent.py",
+  "ladder_opponent_sha256": "d9e9670921b62afedfa8cbc7086d2a2ec19e153ee26006cef477eadd462bd19c",
+  "seed_policy": {
+    "kind": "ALREADY-SPENT ONLY",
+    "rationale": "The brief requires paired games on already-spent seeds. Reusing a seed that has dozens of prior games costs zero new evidence and cannot inflate the result the way a fresh seed could. Every seed below has >=22 prior saved games and has already faced V56.",
+    "explicitly_not_used": "93000-93011 are consumed by the V92 holdout and are excluded entirely.",
+    "verification": "counts taken from experiments/**/games.jsonl (6302 game records, 716 distinct seeds) before this plan was frozen",
+    "prior_games_per_seed": {
+      "94700": 230, "92802": 102, "93700": 54, "95300": 62, "95200": 60, "95100": 48,
+      "92600": 32, "92601": 32, "92602": 32, "92603": 32, "92604": 32
+    }
+  },
+  "seeds": [94700, 92802, 93700, 95300, 95200, 95100, 92600, 92601, 92602, 92603, 92604],
+  "repeats": 1,
+  "seats": "both ab and ba for every pairing",
+  "games": {
+    "arm_A_v93_vs_v92": 22,
+    "arm_B_v93_vs_v56": 22,
+    "control_v92_vs_v56": 22
+  },
+  "runner": ".venv/bin/python -m simulation.tournament (exact Kaggle loader, pinned kaggriculture 1.32.7)",
+  "replay_policy": "errors",
+  "predeclared_gate": {
+    "frozen_before_any_v93_game": true,
+    "1_zero_errors": "candidate_errors + opponent_errors + infrastructure_errors + timeouts == 0 across every run in both arms and the control",
+    "2_action_diff_fires": "count of turns where V93's submitted market list differs from V92's must be > 0, and every difference must be confined to WOOL SELL quantity. A run where the overlay never fires is an INVALID test, not a win.",
+    "3_arm_A_no_regression_vs_incumbent": "vs V92: wins+draws >= losses, and median paired coin margin >= 0",
+    "4_arm_B_no_score_rate_regression_vs_v56": "V93 score rate vs V56 within 5 percentage points of the matched frozen V92-vs-V56 control score rate on the same seeds in the same seats, and median paired coin margin vs V56 not negative by more than 5% of the control median margin",
+    "5_honest_sizing": "report effect with confidence interval and raw per-game numbers; if the interval straddles zero the result is reported INCONCLUSIVE, not a pass",
+    "on_pass": "report to root reviewer with artifact paths and hashes; root decides any Kaggle submission",
+    "on_fail": "NO-GO. no retune, no rerun on different seeds, no submission."
+  }
+}

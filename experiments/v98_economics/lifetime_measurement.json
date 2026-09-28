@@ -1,0 +1,884 @@
+[
+  {
+    "episode_id": 114158802,
+    "outcome": "W",
+    "cash_mismatches": 0,
+    "produced_units": {
+      "WHEAT": 595,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "harvest_events": {
+      "WHEAT": 166,
+      "WOOL": 65,
+      "MILK": 57,
+      "MELON": 12,
+      "STRAWBERRY": 130,
+      "CARROT": 28
+    },
+    "sold_units": {
+      "WHEAT": 399,
+      "FERTILIZER": 317,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "sold_cash": {
+      "WHEAT": 16819.0,
+      "FERTILIZER": 21477.0,
+      "WOOL": 6800.0,
+      "MILK": 23464.0,
+      "MELON": 17270.0,
+      "STRAWBERRY": 45654.0,
+      "CARROT": 5442.0
+    },
+    "by_source": {
+      "WHEAT": {
+        "plant": 166
+      },
+      "WOOL": {
+        "animal": 65
+      },
+      "MILK": {
+        "animal": 57
+      },
+      "MELON": {
+        "plant": 12
+      },
+      "STRAWBERRY": {
+        "plant": 130
+      },
+      "CARROT": {
+        "plant": 28
+      }
+    },
+    "final_animals": {
+      "SHEEP": 11,
+      "COW": 6
+    }
+  },
+  {
+    "episode_id": 114160308,
+    "outcome": "W",
+    "cash_mismatches": 0,
+    "produced_units": {
+      "WHEAT": 595,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "harvest_events": {
+      "WHEAT": 166,
+      "WOOL": 65,
+      "MILK": 57,
+      "MELON": 12,
+      "STRAWBERRY": 130,
+      "CARROT": 28
+    },
+    "sold_units": {
+      "WHEAT": 399,
+      "FERTILIZER": 317,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "sold_cash": {
+      "WHEAT": 18317.0,
+      "FERTILIZER": 17874.0,
+      "WOOL": 6565.0,
+      "MILK": 20893.0,
+      "MELON": 17056.0,
+      "STRAWBERRY": 60804.0,
+      "CARROT": 4518.0
+    },
+    "by_source": {
+      "WHEAT": {
+        "plant": 166
+      },
+      "WOOL": {
+        "animal": 65
+      },
+      "MILK": {
+        "animal": 57
+      },
+      "MELON": {
+        "plant": 12
+      },
+      "STRAWBERRY": {
+        "plant": 130
+      },
+      "CARROT": {
+        "plant": 28
+      }
+    },
+    "final_animals": {
+      "SHEEP": 11,
+      "COW": 6
+    }
+  },
+  {
+    "episode_id": 114161728,
+    "outcome": "W",
+    "cash_mismatches": 0,
+    "produced_units": {
+      "WHEAT": 595,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "harvest_events": {
+      "WHEAT": 166,
+      "WOOL": 65,
+      "MILK": 57,
+      "MELON": 12,
+      "STRAWBERRY": 130,
+      "CARROT": 28
+    },
+    "sold_units": {
+      "WHEAT": 400,
+      "FERTILIZER": 317,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "sold_cash": {
+      "WHEAT": 15222.0,
+      "FERTILIZER": 20012.0,
+      "WOOL": 11492.0,
+      "MILK": 42299.0,
+      "MELON": 16819.0,
+      "STRAWBERRY": 60406.0,
+      "CARROT": 4816.0
+    },
+    "by_source": {
+      "WHEAT": {
+        "plant": 166
+      },
+      "WOOL": {
+        "animal": 65
+      },
+      "MILK": {
+        "animal": 57
+      },
+      "MELON": {
+        "plant": 12
+      },
+      "STRAWBERRY": {
+        "plant": 130
+      },
+      "CARROT": {
+        "plant": 28
+      }
+    },
+    "final_animals": {
+      "SHEEP": 11,
+      "COW": 6
+    }
+  },
+  {
+    "episode_id": 114163744,
+    "outcome": "W",
+    "cash_mismatches": 0,
+    "produced_units": {
+      "WHEAT": 595,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "harvest_events": {
+      "WHEAT": 166,
+      "WOOL": 65,
+      "MILK": 57,
+      "MELON": 12,
+      "STRAWBERRY": 130,
+      "CARROT": 28
+    },
+    "sold_units": {
+      "WHEAT": 399,
+      "FERTILIZER": 317,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "sold_cash": {
+      "WHEAT": 16469.0,
+      "FERTILIZER": 14902.0,
+      "WOOL": 4560.0,
+      "MILK": 11214.0,
+      "MELON": 15958.0,
+      "STRAWBERRY": 24330.0,
+      "CARROT": 4767.0
+    },
+    "by_source": {
+      "WHEAT": {
+        "plant": 166
+      },
+      "WOOL": {
+        "animal": 65
+      },
+      "MILK": {
+        "animal": 57
+      },
+      "MELON": {
+        "plant": 12
+      },
+      "STRAWBERRY": {
+        "plant": 130
+      },
+      "CARROT": {
+        "plant": 28
+      }
+    },
+    "final_animals": {
+      "SHEEP": 11,
+      "COW": 6
+    }
+  },
+  {
+    "episode_id": 114164630,
+    "outcome": "W",
+    "cash_mismatches": 0,
+    "produced_units": {
+      "WHEAT": 595,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "harvest_events": {
+      "WHEAT": 166,
+      "WOOL": 65,
+      "MILK": 57,
+      "MELON": 12,
+      "STRAWBERRY": 130,
+      "CARROT": 28
+    },
+    "sold_units": {
+      "WHEAT": 399,
+      "FERTILIZER": 317,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "sold_cash": {
+      "WHEAT": 9609.0,
+      "FERTILIZER": 14633.0,
+      "WOOL": 66498.0,
+      "MILK": 5764.0,
+      "MELON": 14231.0,
+      "STRAWBERRY": 4177.0,
+      "CARROT": 20620.0
+    },
+    "by_source": {
+      "WHEAT": {
+        "plant": 166
+      },
+      "WOOL": {
+        "animal": 65
+      },
+      "MILK": {
+        "animal": 57
+      },
+      "MELON": {
+        "plant": 12
+      },
+      "STRAWBERRY": {
+        "plant": 130
+      },
+      "CARROT": {
+        "plant": 28
+      }
+    },
+    "final_animals": {
+      "SHEEP": 11,
+      "COW": 6
+    }
+  },
+  {
+    "episode_id": 114166061,
+    "outcome": "L",
+    "cash_mismatches": 0,
+    "produced_units": {
+      "WHEAT": 595,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "harvest_events": {
+      "WHEAT": 166,
+      "WOOL": 65,
+      "MILK": 57,
+      "MELON": 12,
+      "STRAWBERRY": 130,
+      "CARROT": 28
+    },
+    "sold_units": {
+      "WHEAT": 399,
+      "FERTILIZER": 317,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "sold_cash": {
+      "WHEAT": 17283.0,
+      "FERTILIZER": 13108.0,
+      "WOOL": 6146.0,
+      "MILK": 36239.0,
+      "MELON": 14231.0,
+      "STRAWBERRY": 42952.0,
+      "CARROT": 3382.0
+    },
+    "by_source": {
+      "WHEAT": {
+        "plant": 166
+      },
+      "WOOL": {
+        "animal": 65
+      },
+      "MILK": {
+        "animal": 57
+      },
+      "MELON": {
+        "plant": 12
+      },
+      "STRAWBERRY": {
+        "plant": 130
+      },
+      "CARROT": {
+        "plant": 28
+      }
+    },
+    "final_animals": {
+      "SHEEP": 11,
+      "COW": 6
+    }
+  },
+  {
+    "episode_id": 114167570,
+    "outcome": "L",
+    "cash_mismatches": 0,
+    "produced_units": {
+      "WHEAT": 595,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "harvest_events": {
+      "WHEAT": 166,
+      "WOOL": 65,
+      "MILK": 57,
+      "MELON": 12,
+      "STRAWBERRY": 130,
+      "CARROT": 28
+    },
+    "sold_units": {
+      "WHEAT": 399,
+      "FERTILIZER": 317,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "sold_cash": {
+      "WHEAT": 16078.0,
+      "FERTILIZER": 14280.0,
+      "WOOL": 6129.0,
+      "MILK": 25053.0,
+      "MELON": 14275.0,
+      "STRAWBERRY": 41190.0,
+      "CARROT": 4290.0
+    },
+    "by_source": {
+      "WHEAT": {
+        "plant": 166
+      },
+      "WOOL": {
+        "animal": 65
+      },
+      "MILK": {
+        "animal": 57
+      },
+      "MELON": {
+        "plant": 12
+      },
+      "STRAWBERRY": {
+        "plant": 130
+      },
+      "CARROT": {
+        "plant": 28
+      }
+    },
+    "final_animals": {
+      "SHEEP": 11,
+      "COW": 6
+    }
+  },
+  {
+    "episode_id": 114169079,
+    "outcome": "L",
+    "cash_mismatches": 0,
+    "produced_units": {
+      "WHEAT": 595,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "harvest_events": {
+      "WHEAT": 166,
+      "WOOL": 65,
+      "MILK": 57,
+      "MELON": 12,
+      "STRAWBERRY": 130,
+      "CARROT": 28
+    },
+    "sold_units": {
+      "WHEAT": 399,
+      "FERTILIZER": 317,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "sold_cash": {
+      "WHEAT": 16410.0,
+      "FERTILIZER": 14406.0,
+      "WOOL": 7373.0,
+      "MILK": 38237.0,
+      "MELON": 14275.0,
+      "STRAWBERRY": 42505.0,
+      "CARROT": 4634.0
+    },
+    "by_source": {
+      "WHEAT": {
+        "plant": 166
+      },
+      "WOOL": {
+        "animal": 65
+      },
+      "MILK": {
+        "animal": 57
+      },
+      "MELON": {
+        "plant": 12
+      },
+      "STRAWBERRY": {
+        "plant": 130
+      },
+      "CARROT": {
+        "plant": 28
+      }
+    },
+    "final_animals": {
+      "SHEEP": 11,
+      "COW": 6
+    }
+  },
+  {
+    "episode_id": 114170594,
+    "outcome": "W",
+    "cash_mismatches": 0,
+    "produced_units": {
+      "WHEAT": 595,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "harvest_events": {
+      "WHEAT": 166,
+      "WOOL": 65,
+      "MILK": 57,
+      "MELON": 12,
+      "STRAWBERRY": 130,
+      "CARROT": 28
+    },
+    "sold_units": {
+      "WHEAT": 399,
+      "FERTILIZER": 317,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "sold_cash": {
+      "WHEAT": 13166.0,
+      "FERTILIZER": 15454.0,
+      "WOOL": 66050.0,
+      "MILK": 15385.0,
+      "MELON": 16839.0,
+      "STRAWBERRY": 3758.0,
+      "CARROT": 4805.0
+    },
+    "by_source": {
+      "WHEAT": {
+        "plant": 166
+      },
+      "WOOL": {
+        "animal": 65
+      },
+      "MILK": {
+        "animal": 57
+      },
+      "MELON": {
+        "plant": 12
+      },
+      "STRAWBERRY": {
+        "plant": 130
+      },
+      "CARROT": {
+        "plant": 28
+      }
+    },
+    "final_animals": {
+      "SHEEP": 11,
+      "COW": 6
+    }
+  },
+  {
+    "episode_id": 114172061,
+    "outcome": "W",
+    "cash_mismatches": 0,
+    "produced_units": {
+      "WHEAT": 595,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "harvest_events": {
+      "WHEAT": 166,
+      "WOOL": 65,
+      "MILK": 57,
+      "MELON": 12,
+      "STRAWBERRY": 130,
+      "CARROT": 28
+    },
+    "sold_units": {
+      "WHEAT": 399,
+      "FERTILIZER": 317,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "sold_cash": {
+      "WHEAT": 19988.0,
+      "FERTILIZER": 12727.0,
+      "WOOL": 7305.0,
+      "MILK": 9586.0,
+      "MELON": 17056.0,
+      "STRAWBERRY": 30005.0,
+      "CARROT": 4437.0
+    },
+    "by_source": {
+      "WHEAT": {
+        "plant": 166
+      },
+      "WOOL": {
+        "animal": 65
+      },
+      "MILK": {
+        "animal": 57
+      },
+      "MELON": {
+        "plant": 12
+      },
+      "STRAWBERRY": {
+        "plant": 130
+      },
+      "CARROT": {
+        "plant": 28
+      }
+    },
+    "final_animals": {
+      "SHEEP": 11,
+      "COW": 6
+    }
+  },
+  {
+    "episode_id": 114173483,
+    "outcome": "L",
+    "cash_mismatches": 0,
+    "produced_units": {
+      "WHEAT": 595,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "harvest_events": {
+      "WHEAT": 166,
+      "WOOL": 65,
+      "MILK": 57,
+      "MELON": 12,
+      "STRAWBERRY": 130,
+      "CARROT": 28
+    },
+    "sold_units": {
+      "WHEAT": 399,
+      "FERTILIZER": 317,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "sold_cash": {
+      "WHEAT": 16849.0,
+      "FERTILIZER": 14260.0,
+      "WOOL": 6129.0,
+      "MILK": 27525.0,
+      "MELON": 14275.0,
+      "STRAWBERRY": 12814.0,
+      "CARROT": 4752.0
+    },
+    "by_source": {
+      "WHEAT": {
+        "plant": 166
+      },
+      "WOOL": {
+        "animal": 65
+      },
+      "MILK": {
+        "animal": 57
+      },
+      "MELON": {
+        "plant": 12
+      },
+      "STRAWBERRY": {
+        "plant": 130
+      },
+      "CARROT": {
+        "plant": 28
+      }
+    },
+    "final_animals": {
+      "SHEEP": 11,
+      "COW": 6
+    }
+  },
+  {
+    "episode_id": 114175006,
+    "outcome": "W",
+    "cash_mismatches": 0,
+    "produced_units": {
+      "WHEAT": 595,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "harvest_events": {
+      "WHEAT": 166,
+      "WOOL": 65,
+      "MILK": 57,
+      "MELON": 12,
+      "STRAWBERRY": 130,
+      "CARROT": 28
+    },
+    "sold_units": {
+      "WHEAT": 399,
+      "FERTILIZER": 317,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "sold_cash": {
+      "WHEAT": 17664.0,
+      "FERTILIZER": 13685.0,
+      "WOOL": 28730.0,
+      "MILK": 28387.0,
+      "MELON": 16064.0,
+      "STRAWBERRY": 15521.0,
+      "CARROT": 2601.0
+    },
+    "by_source": {
+      "WHEAT": {
+        "plant": 166
+      },
+      "WOOL": {
+        "animal": 65
+      },
+      "MILK": {
+        "animal": 57
+      },
+      "MELON": {
+        "plant": 12
+      },
+      "STRAWBERRY": {
+        "plant": 130
+      },
+      "CARROT": {
+        "plant": 28
+      }
+    },
+    "final_animals": {
+      "SHEEP": 11,
+      "COW": 6
+    }
+  },
+  {
+    "episode_id": 114176499,
+    "outcome": "L",
+    "cash_mismatches": 0,
+    "produced_units": {
+      "WHEAT": 595,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "harvest_events": {
+      "WHEAT": 166,
+      "WOOL": 65,
+      "MILK": 57,
+      "MELON": 12,
+      "STRAWBERRY": 130,
+      "CARROT": 28
+    },
+    "sold_units": {
+      "WHEAT": 399,
+      "FERTILIZER": 317,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "sold_cash": {
+      "WHEAT": 17329.0,
+      "FERTILIZER": 14516.0,
+      "WOOL": 9108.0,
+      "MILK": 30032.0,
+      "MELON": 16064.0,
+      "STRAWBERRY": 61154.0,
+      "CARROT": 3561.0
+    },
+    "by_source": {
+      "WHEAT": {
+        "plant": 166
+      },
+      "WOOL": {
+        "animal": 65
+      },
+      "MILK": {
+        "animal": 57
+      },
+      "MELON": {
+        "plant": 12
+      },
+      "STRAWBERRY": {
+        "plant": 130
+      },
+      "CARROT": {
+        "plant": 28
+      }
+    },
+    "final_animals": {
+      "SHEEP": 11,
+      "COW": 6
+    }
+  },
+  {
+    "episode_id": 114177946,
+    "outcome": "W",
+    "cash_mismatches": 0,
+    "produced_units": {
+      "WHEAT": 595,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "harvest_events": {
+      "WHEAT": 166,
+      "WOOL": 65,
+      "MILK": 57,
+      "MELON": 12,
+      "STRAWBERRY": 130,
+      "CARROT": 28
+    },
+    "sold_units": {
+      "WHEAT": 399,
+      "FERTILIZER": 317,
+      "WOOL": 282,
+      "MILK": 164,
+      "MELON": 72,
+      "STRAWBERRY": 249,
+      "CARROT": 82
+    },
+    "sold_cash": {
+      "WHEAT": 16892.0,
+      "FERTILIZER": 13812.0,
+      "WOOL": 40809.0,
+      "MILK": 5817.0,
+      "MELON": 16064.0,
+      "STRAWBERRY": 52022.0,
+      "CARROT": 4778.0
+    },
+    "by_source": {
+      "WHEAT": {
+        "plant": 166
+      },
+      "WOOL": {
+        "animal": 65
+      },
+      "MILK": {
+        "animal": 57
+      },
+      "MELON": {
+        "plant": 12
+      },
+      "STRAWBERRY": {
+        "plant": 130
+      },
+      "CARROT": {
+        "plant": 28
+      }
+    },
+    "final_animals": {
+      "SHEEP": 11,
+      "COW": 6
+    }
+  }
+]

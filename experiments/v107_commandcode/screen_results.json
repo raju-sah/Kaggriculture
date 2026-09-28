@@ -1,0 +1,55 @@
+{
+  "candidate_sha": "7623988b6a1b2dff66759951f4843b5fd546ed1ded115597998817dc45953d0e",
+  "deltas": {
+    "v107_vs_v50_delta": {
+      "better": 6,
+      "delta_mean": 1158.3333333333333,
+      "delta_median": 182.0,
+      "worse": 1,
+      "worst": -744.0,
+      "worst_seed": 160006
+    },
+    "v107_vs_v56_delta": {
+      "better": 6,
+      "delta_mean": 1614.0416666666667,
+      "delta_median": 744.0,
+      "worse": 1,
+      "worst": -88.0,
+      "worst_seed": 160006
+    }
+  },
+  "seeds": [
+    160001,
+    160002,
+    160003,
+    160004,
+    160005,
+    160006,
+    160007,
+    160008,
+    160009,
+    160010,
+    160011,
+    160012
+  ],
+  "v107_vs_v50": {
+    "errors": 0,
+    "games": 24,
+    "seat_stable": true
+  },
+  "v107_vs_v56": {
+    "errors": 0,
+    "games": 24,
+    "seat_stable": false
+  },
+  "v50_self": {
+    "errors": 0,
+    "games": 24,
+    "seat_stable": true
+  },
+  "v50_vs_v56": {
+    "errors": 0,
+    "games": 24,
+    "seat_stable": false
+  }
+}

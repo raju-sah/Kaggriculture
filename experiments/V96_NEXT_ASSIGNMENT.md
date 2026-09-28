@@ -1,0 +1,19 @@
+# CommandCode assignment: V96 route-level search, four submissions conserved
+
+Continue in the visible CommandCode pane on the free model. The user wants a substantially stronger Kaggriculture agent, using lost-game evidence, and has four Kaggle submissions left. **Do not submit to Kaggle.** Codex must verify any release candidate before a submission slot is used.
+
+## Evidence to carry forward
+
+- V95's fertilizer overlays lost (v1 0–22, −$6,926 mean; v2 0–22, −$361 mean) or were a no-op (v3 22 draws). Read `experiments/v95_loss_driven/REPORT.md` and raw results. Do not repeat that overlay.
+- V94's original total-sales line was wrong; use the correction in `experiments/v95_loss_driven/v94_aggregate_correction.json` and the amended V94 report. The prior “shed+in-hand 102/100” claim traces to a seat-attribution bug and is **unconfirmed**; rederive it before using it as a premise.
+- The V92 own-farm actor-action counts are constant across official wins and losses because the route is nearly fixed. That does **not** prove there is no improvable decision; it means the next intervention must change a coherent production route or policy, not merely re-rank sales or displace one isolated action. Existing V80/V81 expert switching and V58 crop-rule attempts failed; read their reports before reusing those ideas.
+
+## V96 objective and process
+
+1. Audit a *specific* asset-to-cash deficit using correctly joined official losses and matched wins, plus the saved elite panel where relevant. Separate opponent advantage from our controllable production choices. Reconstruct accepted cash and unit production with the pinned engine; never count queued market slots as sales. Compare early asset timing (days 0–11) and mid-game throughput (days 12–23). Use `docs/V83_ELITE_MECHANISM.md` and `docs/V75_ELITE_CASHFLOW.md` as hypotheses, not causal proof.
+2. Investigate **at least two materially different route-level mechanisms** on already-spent seeds. Examples are an earlier self-financing animal/crop cohort with complete placement/feed/care service, and a state-driven worker/task route that converts more standing yield to sold cash. Choose mechanisms from the audit; do not force these examples if evidence points elsewhere. Each must alter actual actions, preserve lifecycle needs, and be runnable under the exact Kaggle loader. Do not stop after one weak overlay unless an engine invariant genuinely rules out the whole class.
+3. For each cheap probe, compare candidate *own cash* to unchanged V50 and V92 on the same seeds and seats, with V56 as an additional benchmark if useful. Explain accepted sales by product, input costs, animal survival, crop output, discarded/stranded units, and worker action validity. Screen for repeatable **positive** paired cash, not a single lucky win.
+4. If a route passes the cheap screen, freeze source hash and a promotion gate before broader games. Use a development panel and a separate untouched fresh holdout in both seats. Report all records, paired margins, errors, runtime, action differences, and uncertainty. Include games where the incumbent wins and loses. Do not tune on holdout results.
+5. Write `experiments/v96_*/REPORT.md` with exact candidate/source hashes, loss-to-change causal chain, all attempted mechanisms (including failures), per-seed results, and an explicit submit/no-submit recommendation. Keep code and evidence isolated under `experiments/v96_*/`; do not edit prior agents or `main.py`.
+
+Conserve the four submission slots. No public Kaggle test until Codex reviews a candidate. Do not expose `TYPESAFE_API_KEY`; Jev may assist an offline typed decision only if there is a concrete use, never as a runtime Kaggle dependency. The game simulations are CPU-bound; use Kaggle compute only if an actual scalable training step makes it worthwhile.

@@ -1,0 +1,272 @@
+{
+  "overall": {
+    "acts": 3192,
+    "moves": 2198,
+    "harvest": 224,
+    "drop": 770,
+    "noop": 0,
+    "legal_move": 2198,
+    "legal_harvest": 224,
+    "legal_drop": 518,
+    "target_products": {
+      "MILK": 84,
+      "WOOL": 42,
+      "WHEAT": 14,
+      "STRAWBERRY": 84
+    }
+  },
+  "per_game": [
+    {
+      "episode_id": 114158802,
+      "seat": 0,
+      "acts": 228,
+      "moves": 157,
+      "harvest": 16,
+      "drop": 55,
+      "legal_move": 157,
+      "legal_harvest": 16,
+      "legal_drop": 37,
+      "longest_errand_turns": 19,
+      "products": {
+        "MILK": 6,
+        "WOOL": 3,
+        "WHEAT": 1,
+        "STRAWBERRY": 6
+      }
+    },
+    {
+      "episode_id": 114160308,
+      "seat": 1,
+      "acts": 228,
+      "moves": 157,
+      "harvest": 16,
+      "drop": 55,
+      "legal_move": 157,
+      "legal_harvest": 16,
+      "legal_drop": 37,
+      "longest_errand_turns": 19,
+      "products": {
+        "MILK": 6,
+        "WOOL": 3,
+        "WHEAT": 1,
+        "STRAWBERRY": 6
+      }
+    },
+    {
+      "episode_id": 114161728,
+      "seat": 0,
+      "acts": 228,
+      "moves": 157,
+      "harvest": 16,
+      "drop": 55,
+      "legal_move": 157,
+      "legal_harvest": 16,
+      "legal_drop": 37,
+      "longest_errand_turns": 19,
+      "products": {
+        "MILK": 6,
+        "WOOL": 3,
+        "WHEAT": 1,
+        "STRAWBERRY": 6
+      }
+    },
+    {
+      "episode_id": 114163744,
+      "seat": 0,
+      "acts": 228,
+      "moves": 157,
+      "harvest": 16,
+      "drop": 55,
+      "legal_move": 157,
+      "legal_harvest": 16,
+      "legal_drop": 37,
+      "longest_errand_turns": 19,
+      "products": {
+        "MILK": 6,
+        "WOOL": 3,
+        "WHEAT": 1,
+        "STRAWBERRY": 6
+      }
+    },
+    {
+      "episode_id": 114164630,
+      "seat": 1,
+      "acts": 228,
+      "moves": 157,
+      "harvest": 16,
+      "drop": 55,
+      "legal_move": 157,
+      "legal_harvest": 16,
+      "legal_drop": 37,
+      "longest_errand_turns": 19,
+      "products": {
+        "MILK": 6,
+        "WOOL": 3,
+        "WHEAT": 1,
+        "STRAWBERRY": 6
+      }
+    },
+    {
+      "episode_id": 114166061,
+      "seat": 1,
+      "acts": 228,
+      "moves": 157,
+      "harvest": 16,
+      "drop": 55,
+      "legal_move": 157,
+      "legal_harvest": 16,
+      "legal_drop": 37,
+      "longest_errand_turns": 19,
+      "products": {
+        "MILK": 6,
+        "WOOL": 3,
+        "WHEAT": 1,
+        "STRAWBERRY": 6
+      }
+    },
+    {
+      "episode_id": 114167570,
+      "seat": 0,
+      "acts": 228,
+      "moves": 157,
+      "harvest": 16,
+      "drop": 55,
+      "legal_move": 157,
+      "legal_harvest": 16,
+      "legal_drop": 37,
+      "longest_errand_turns": 19,
+      "products": {
+        "MILK": 6,
+        "WOOL": 3,
+        "WHEAT": 1,
+        "STRAWBERRY": 6
+      }
+    },
+    {
+      "episode_id": 114169079,
+      "seat": 0,
+      "acts": 228,
+      "moves": 157,
+      "harvest": 16,
+      "drop": 55,
+      "legal_move": 157,
+      "legal_harvest": 16,
+      "legal_drop": 37,
+      "longest_errand_turns": 19,
+      "products": {
+        "MILK": 6,
+        "WOOL": 3,
+        "WHEAT": 1,
+        "STRAWBERRY": 6
+      }
+    },
+    {
+      "episode_id": 114170594,
+      "seat": 0,
+      "acts": 228,
+      "moves": 157,
+      "harvest": 16,
+      "drop": 55,
+      "legal_move": 157,
+      "legal_harvest": 16,
+      "legal_drop": 37,
+      "longest_errand_turns": 19,
+      "products": {
+        "MILK": 6,
+        "WOOL": 3,
+        "WHEAT": 1,
+        "STRAWBERRY": 6
+      }
+    },
+    {
+      "episode_id": 114172061,
+      "seat": 0,
+      "acts": 228,
+      "moves": 157,
+      "harvest": 16,
+      "drop": 55,
+      "legal_move": 157,
+      "legal_harvest": 16,
+      "legal_drop": 37,
+      "longest_errand_turns": 19,
+      "products": {
+        "MILK": 6,
+        "WOOL": 3,
+        "WHEAT": 1,
+        "STRAWBERRY": 6
+      }
+    },
+    {
+      "episode_id": 114173483,
+      "seat": 0,
+      "acts": 228,
+      "moves": 157,
+      "harvest": 16,
+      "drop": 55,
+      "legal_move": 157,
+      "legal_harvest": 16,
+      "legal_drop": 37,
+      "longest_errand_turns": 19,
+      "products": {
+        "MILK": 6,
+        "WOOL": 3,
+        "WHEAT": 1,
+        "STRAWBERRY": 6
+      }
+    },
+    {
+      "episode_id": 114175006,
+      "seat": 1,
+      "acts": 228,
+      "moves": 157,
+      "harvest": 16,
+      "drop": 55,
+      "legal_move": 157,
+      "legal_harvest": 16,
+      "legal_drop": 37,
+      "longest_errand_turns": 19,
+      "products": {
+        "MILK": 6,
+        "WOOL": 3,
+        "WHEAT": 1,
+        "STRAWBERRY": 6
+      }
+    },
+    {
+      "episode_id": 114176499,
+      "seat": 1,
+      "acts": 228,
+      "moves": 157,
+      "harvest": 16,
+      "drop": 55,
+      "legal_move": 157,
+      "legal_harvest": 16,
+      "legal_drop": 37,
+      "longest_errand_turns": 19,
+      "products": {
+        "MILK": 6,
+        "WOOL": 3,
+        "WHEAT": 1,
+        "STRAWBERRY": 6
+      }
+    },
+    {
+      "episode_id": 114177946,
+      "seat": 1,
+      "acts": 228,
+      "moves": 157,
+      "harvest": 16,
+      "drop": 55,
+      "legal_move": 157,
+      "legal_harvest": 16,
+      "legal_drop": 37,
+      "longest_errand_turns": 19,
+      "products": {
+        "MILK": 6,
+        "WOOL": 3,
+        "WHEAT": 1,
+        "STRAWBERRY": 6
+      }
+    }
+  ]
+}

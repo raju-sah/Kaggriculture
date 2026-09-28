@@ -1,0 +1,67 @@
+{
+  "source": "experiments/v94_sell_rate/probe_out/cash_reconciliation.json",
+  "rows": 14,
+  "identity_holds": true,
+  "max_abs_unexplained": 0.0,
+  "total_cash_mismatches": 0,
+  "sell_cash_total": 1832002.0,
+  "spend_total": 415898.0,
+  "spend_excl_hire": 338688.0,
+  "hire_cash": 77210.0,
+  "hire_orders": 3934,
+  "hire_per_game": 5515.0,
+  "hire_avg_per_order": 19.63,
+  "predicted_final_total": 1458104.0,
+  "reward_total": 1458104.0,
+  "sell_cash_by_product": {
+    "STRAWBERRY": 497292.0,
+    "MILK": 319895.0,
+    "WOOL": 273694.0,
+    "WHEAT": 228095.0,
+    "MELON": 220477.0,
+    "FERTILIZER": 215146.0,
+    "CARROT": 77403.0
+  },
+  "sell_cash_share": {
+    "STRAWBERRY": 27.14,
+    "MILK": 17.46,
+    "WOOL": 14.94,
+    "WHEAT": 12.45,
+    "MELON": 12.03,
+    "FERTILIZER": 11.74,
+    "CARROT": 4.23
+  },
+  "spend_by_category": {
+    "BUY_PRODUCT WHEAT": 77260.0,
+    "BUY_ANIMAL SHEEP": 77000.0,
+    "BUY_SEED STRAWBERRY": 46200.0,
+    "BUY_LAND": 42000.0,
+    "BUY_ANIMAL COW": 33600.0,
+    "BUY_SEED WHEAT": 23240.0,
+    "BUY_PRODUCT FERTILIZER": 18108.0,
+    "BUY_SEED MELON": 13440.0,
+    "BUY_SEED CARROT": 7840.0
+  },
+  "spend_share": {
+    "BUY_PRODUCT WHEAT": 18.58,
+    "BUY_ANIMAL SHEEP": 18.51,
+    "BUY_SEED STRAWBERRY": 11.11,
+    "BUY_LAND": 10.1,
+    "BUY_ANIMAL COW": 8.08,
+    "BUY_SEED WHEAT": 5.59,
+    "BUY_PRODUCT FERTILIZER": 4.35,
+    "BUY_SEED MELON": 3.23,
+    "BUY_SEED CARROT": 1.89
+  },
+  "corrections_vs_v94_report": {
+    "sell_cash_total": {
+      "v94_report": 3448243,
+      "correct": 1832002.0
+    },
+    "spend_total": {
+      "v94_report": 338688,
+      "correct": 415898.0
+    },
+    "note": "V94 quoted the BOTH-SEAT sum from cash_flow.json. The Rajusah cash identity denominator is cash_reconciliation.json, which is one row per episode. The $0.00 reconciliation result itself still holds on all 14."
+  }
+}

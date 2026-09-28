@@ -1,0 +1,478 @@
+[
+  {
+    "episode_id": 114158802,
+    "seat": 0,
+    "reward": 108954.0,
+    "land_buy_frames": 2,
+    "unlocked_quadrants": [
+      "NW",
+      "NE",
+      "SW"
+    ],
+    "final_planted": {},
+    "standing_yield": {},
+    "standing_yield_value_at_final_quote": 0,
+    "standing_detail": {},
+    "animal_standing_yield": {
+      "SHEEP": 0,
+      "COW": 0
+    },
+    "animal_yield_value_at_final_quote": 0.0,
+    "final_shed": {},
+    "final_shed_value_at_final_quote": 0,
+    "final_shed_detail": {},
+    "final_quotes": {
+      "CARROT": 62,
+      "EGG": 63,
+      "FERTILIZER": 41,
+      "MELON": 106,
+      "MILK": 220,
+      "STRAWBERRY": 202,
+      "TOMATO": 74,
+      "WHEAT": 42,
+      "WOOL": 1
+    }
+  },
+  {
+    "episode_id": 114160308,
+    "seat": 1,
+    "reward": 118573.0,
+    "land_buy_frames": 2,
+    "unlocked_quadrants": [
+      "NW",
+      "NE",
+      "SW"
+    ],
+    "final_planted": {},
+    "standing_yield": {},
+    "standing_yield_value_at_final_quote": 0,
+    "standing_detail": {},
+    "animal_standing_yield": {
+      "SHEEP": 0,
+      "COW": 0
+    },
+    "animal_yield_value_at_final_quote": 0.0,
+    "final_shed": {},
+    "final_shed_value_at_final_quote": 0,
+    "final_shed_detail": {},
+    "final_quotes": {
+      "CARROT": 52,
+      "EGG": 62,
+      "FERTILIZER": 24,
+      "MELON": 146,
+      "MILK": 147,
+      "STRAWBERRY": 232,
+      "TOMATO": 189,
+      "WHEAT": 48,
+      "WOOL": 1
+    }
+  },
+  {
+    "episode_id": 114161728,
+    "seat": 0,
+    "reward": 143561.0,
+    "land_buy_frames": 2,
+    "unlocked_quadrants": [
+      "NW",
+      "NE",
+      "SW"
+    ],
+    "final_planted": {},
+    "standing_yield": {},
+    "standing_yield_value_at_final_quote": 0,
+    "standing_detail": {},
+    "animal_standing_yield": {
+      "SHEEP": 0,
+      "COW": 0
+    },
+    "animal_yield_value_at_final_quote": 0.0,
+    "final_shed": {},
+    "final_shed_value_at_final_quote": 0,
+    "final_shed_detail": {},
+    "final_quotes": {
+      "CARROT": 56,
+      "EGG": 58,
+      "FERTILIZER": 34,
+      "MELON": 212,
+      "MILK": 301,
+      "STRAWBERRY": 269,
+      "TOMATO": 74,
+      "WHEAT": 35,
+      "WOOL": 18
+    }
+  },
+  {
+    "episode_id": 114163744,
+    "seat": 0,
+    "reward": 65582.0,
+    "land_buy_frames": 2,
+    "unlocked_quadrants": [
+      "NW",
+      "NE",
+      "SW"
+    ],
+    "final_planted": {},
+    "standing_yield": {},
+    "standing_yield_value_at_final_quote": 0,
+    "standing_detail": {},
+    "animal_standing_yield": {
+      "SHEEP": 0,
+      "COW": 0
+    },
+    "animal_yield_value_at_final_quote": 0.0,
+    "final_shed": {},
+    "final_shed_value_at_final_quote": 0,
+    "final_shed_detail": {},
+    "final_quotes": {
+      "CARROT": 53,
+      "EGG": 78,
+      "FERTILIZER": 1,
+      "MELON": 133,
+      "MILK": 1,
+      "STRAWBERRY": 154,
+      "TOMATO": 70,
+      "WHEAT": 37,
+      "WOOL": 1
+    }
+  },
+  {
+    "episode_id": 114164630,
+    "seat": 1,
+    "reward": 109923.0,
+    "land_buy_frames": 2,
+    "unlocked_quadrants": [
+      "NW",
+      "NE",
+      "SW"
+    ],
+    "final_planted": {},
+    "standing_yield": {},
+    "standing_yield_value_at_final_quote": 0,
+    "standing_detail": {},
+    "animal_standing_yield": {
+      "SHEEP": 0,
+      "COW": 0
+    },
+    "animal_yield_value_at_final_quote": 0.0,
+    "final_shed": {},
+    "final_shed_value_at_final_quote": 0,
+    "final_shed_detail": {},
+    "final_quotes": {
+      "CARROT": 227,
+      "EGG": 52,
+      "FERTILIZER": 1,
+      "MELON": 91,
+      "MILK": 1,
+      "STRAWBERRY": 22,
+      "TOMATO": 72,
+      "WHEAT": 20,
+      "WOOL": 231
+    }
+  },
+  {
+    "episode_id": 114166061,
+    "seat": 1,
+    "reward": 106894.0,
+    "land_buy_frames": 2,
+    "unlocked_quadrants": [
+      "NW",
+      "NE",
+      "SW"
+    ],
+    "final_planted": {},
+    "standing_yield": {},
+    "standing_yield_value_at_final_quote": 0,
+    "standing_detail": {},
+    "animal_standing_yield": {
+      "SHEEP": 0,
+      "COW": 0
+    },
+    "animal_yield_value_at_final_quote": 0.0,
+    "final_shed": {},
+    "final_shed_value_at_final_quote": 0,
+    "final_shed_detail": {},
+    "final_quotes": {
+      "CARROT": 36,
+      "EGG": 56,
+      "FERTILIZER": 1,
+      "MELON": 120,
+      "MILK": 257,
+      "STRAWBERRY": 170,
+      "TOMATO": 247,
+      "WHEAT": 43,
+      "WOOL": 1
+    }
+  },
+  {
+    "episode_id": 114167570,
+    "seat": 0,
+    "reward": 94832.0,
+    "land_buy_frames": 2,
+    "unlocked_quadrants": [
+      "NW",
+      "NE",
+      "SW"
+    ],
+    "final_planted": {},
+    "standing_yield": {},
+    "standing_yield_value_at_final_quote": 0,
+    "standing_detail": {},
+    "animal_standing_yield": {
+      "SHEEP": 0,
+      "COW": 0
+    },
+    "animal_yield_value_at_final_quote": 0.0,
+    "final_shed": {},
+    "final_shed_value_at_final_quote": 0,
+    "final_shed_detail": {},
+    "final_quotes": {
+      "CARROT": 50,
+      "EGG": 67,
+      "FERTILIZER": 1,
+      "MELON": 120,
+      "MILK": 68,
+      "STRAWBERRY": 154,
+      "TOMATO": 77,
+      "WHEAT": 36,
+      "WOOL": 1
+    }
+  },
+  {
+    "episode_id": 114169079,
+    "seat": 0,
+    "reward": 111185.0,
+    "land_buy_frames": 2,
+    "unlocked_quadrants": [
+      "NW",
+      "NE",
+      "SW"
+    ],
+    "final_planted": {},
+    "standing_yield": {},
+    "standing_yield_value_at_final_quote": 0,
+    "standing_detail": {},
+    "animal_standing_yield": {
+      "SHEEP": 0,
+      "COW": 0
+    },
+    "animal_yield_value_at_final_quote": 0.0,
+    "final_shed": {},
+    "final_shed_value_at_final_quote": 0,
+    "final_shed_detail": {},
+    "final_quotes": {
+      "CARROT": 54,
+      "EGG": 54,
+      "FERTILIZER": 1,
+      "MELON": 120,
+      "MILK": 247,
+      "STRAWBERRY": 154,
+      "TOMATO": 100,
+      "WHEAT": 36,
+      "WOOL": 1
+    }
+  },
+  {
+    "episode_id": 114170594,
+    "seat": 0,
+    "reward": 108933.0,
+    "land_buy_frames": 2,
+    "unlocked_quadrants": [
+      "NW",
+      "NE",
+      "SW"
+    ],
+    "final_planted": {},
+    "standing_yield": {},
+    "standing_yield_value_at_final_quote": 0,
+    "standing_detail": {},
+    "animal_standing_yield": {
+      "SHEEP": 0,
+      "COW": 0
+    },
+    "animal_yield_value_at_final_quote": 0.0,
+    "final_shed": {},
+    "final_shed_value_at_final_quote": 0,
+    "final_shed_detail": {},
+    "final_quotes": {
+      "CARROT": 56,
+      "EGG": 56,
+      "FERTILIZER": 2,
+      "MELON": 43,
+      "MILK": 1,
+      "STRAWBERRY": 39,
+      "TOMATO": 91,
+      "WHEAT": 21,
+      "WOOL": 248
+    }
+  },
+  {
+    "episode_id": 114172061,
+    "seat": 0,
+    "reward": 74508.0,
+    "land_buy_frames": 2,
+    "unlocked_quadrants": [
+      "NW",
+      "NE",
+      "SW"
+    ],
+    "final_planted": {},
+    "standing_yield": {},
+    "standing_yield_value_at_final_quote": 0,
+    "standing_detail": {},
+    "animal_standing_yield": {
+      "SHEEP": 0,
+      "COW": 0
+    },
+    "animal_yield_value_at_final_quote": 0.0,
+    "final_shed": {},
+    "final_shed_value_at_final_quote": 0,
+    "final_shed_detail": {},
+    "final_quotes": {
+      "CARROT": 52,
+      "EGG": 55,
+      "FERTILIZER": 1,
+      "MELON": 60,
+      "MILK": 1,
+      "STRAWBERRY": 87,
+      "TOMATO": 84,
+      "WHEAT": 53,
+      "WOOL": 1
+    }
+  },
+  {
+    "episode_id": 114173483,
+    "seat": 0,
+    "reward": 69972.0,
+    "land_buy_frames": 2,
+    "unlocked_quadrants": [
+      "NW",
+      "NE",
+      "SW"
+    ],
+    "final_planted": {},
+    "standing_yield": {},
+    "standing_yield_value_at_final_quote": 0,
+    "standing_detail": {},
+    "animal_standing_yield": {
+      "SHEEP": 0,
+      "COW": 0
+    },
+    "animal_yield_value_at_final_quote": 0.0,
+    "final_shed": {},
+    "final_shed_value_at_final_quote": 0,
+    "final_shed_detail": {},
+    "final_quotes": {
+      "CARROT": 51,
+      "EGG": 63,
+      "FERTILIZER": 1,
+      "MELON": 120,
+      "MILK": 105,
+      "STRAWBERRY": 80,
+      "TOMATO": 399,
+      "WHEAT": 42,
+      "WOOL": 1
+    }
+  },
+  {
+    "episode_id": 114175006,
+    "seat": 1,
+    "reward": 96245.0,
+    "land_buy_frames": 2,
+    "unlocked_quadrants": [
+      "NW",
+      "NE",
+      "SW"
+    ],
+    "final_planted": {},
+    "standing_yield": {},
+    "standing_yield_value_at_final_quote": 0,
+    "standing_detail": {},
+    "animal_standing_yield": {
+      "SHEEP": 0,
+      "COW": 0
+    },
+    "animal_yield_value_at_final_quote": 0.0,
+    "final_shed": {},
+    "final_shed_value_at_final_quote": 0,
+    "final_shed_detail": {},
+    "final_quotes": {
+      "CARROT": 27,
+      "EGG": 68,
+      "FERTILIZER": 1,
+      "MELON": 43,
+      "MILK": 224,
+      "STRAWBERRY": 57,
+      "TOMATO": 126,
+      "WHEAT": 43,
+      "WOOL": 1
+    }
+  },
+  {
+    "episode_id": 114176499,
+    "seat": 1,
+    "reward": 125089.0,
+    "land_buy_frames": 2,
+    "unlocked_quadrants": [
+      "NW",
+      "NE",
+      "SW"
+    ],
+    "final_planted": {},
+    "standing_yield": {},
+    "standing_yield_value_at_final_quote": 0,
+    "standing_detail": {},
+    "animal_standing_yield": {
+      "SHEEP": 0,
+      "COW": 0
+    },
+    "animal_yield_value_at_final_quote": 0.0,
+    "final_shed": {},
+    "final_shed_value_at_final_quote": 0,
+    "final_shed_detail": {},
+    "final_quotes": {
+      "CARROT": 41,
+      "EGG": 67,
+      "FERTILIZER": 1,
+      "MELON": 34,
+      "MILK": 89,
+      "STRAWBERRY": 247,
+      "TOMATO": 72,
+      "WHEAT": 42,
+      "WOOL": 1
+    }
+  },
+  {
+    "episode_id": 114177946,
+    "seat": 1,
+    "reward": 123853.0,
+    "land_buy_frames": 2,
+    "unlocked_quadrants": [
+      "NW",
+      "NE",
+      "SW"
+    ],
+    "final_planted": {},
+    "standing_yield": {},
+    "standing_yield_value_at_final_quote": 0,
+    "standing_detail": {},
+    "animal_standing_yield": {
+      "SHEEP": 0,
+      "COW": 0
+    },
+    "animal_yield_value_at_final_quote": 0.0,
+    "final_shed": {},
+    "final_shed_value_at_final_quote": 0,
+    "final_shed_detail": {},
+    "final_quotes": {
+      "CARROT": 56,
+      "EGG": 60,
+      "FERTILIZER": 1,
+      "MELON": 43,
+      "MILK": 1,
+      "STRAWBERRY": 196,
+      "TOMATO": 216,
+      "WHEAT": 40,
+      "WOOL": 11
+    }
+  }
+]
