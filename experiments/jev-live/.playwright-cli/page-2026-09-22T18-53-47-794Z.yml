@@ -1,0 +1,1320 @@
+- generic [ref=e1]:
+  - generic [aria-hidden] [ref=e2]:
+    - navigation [ref=e1238]:
+      - generic [ref=e5]:
+        - button [ref=e1239] [cursor=pointer]: menu
+        - link [ref=e1240] [cursor=pointer]:
+          - /url: "#site-content"
+          - text: Skip to content
+        - link [ref=e1241] [cursor=pointer]:
+          - /url: /
+      - button [ref=e1242] [cursor=pointer]:
+        - generic [ref=e18]: Create
+      - generic [ref=e21]:
+        - list [ref=e22]:
+          - listitem [ref=e1243]:
+            - link [ref=e1244] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e26]:
+                - generic [aria-hidden] [ref=e29]: explore
+                - paragraph [ref=e31]: Home
+          - listitem [ref=e1245]:
+            - link [ref=e1246] [cursor=pointer]:
+              - /url: /competitions
+              - generic [ref=e35]:
+                - generic [aria-hidden] [ref=e38]: emoji_events
+                - paragraph [ref=e40]: Competitions
+          - listitem [ref=e1247]:
+            - link [ref=e1248] [cursor=pointer]:
+              - /url: /benchmarks
+              - generic [ref=e45]:
+                - generic [aria-hidden] [ref=e48]: leaderboard
+                - paragraph [ref=e50]: Benchmarks
+          - listitem [ref=e1249]:
+            - link [ref=e1250] [cursor=pointer]:
+              - /url: /game-arena
+              - generic [ref=e54]:
+                - generic [aria-hidden] [ref=e57]: smart_toy
+                - paragraph [ref=e59]: Game Arena
+        - list [ref=e60]:
+          - listitem [ref=e1251]:
+            - generic [ref=e62]:
+              - link [ref=e1252] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e64]:
+                  - generic [aria-hidden] [ref=e67]: code
+                  - paragraph [ref=e69]: Data Hub
+              - button [ref=e1253] [cursor=pointer]: expand_more
+        - list [ref=e72]:
+          - listitem [ref=e1254]:
+            - generic [ref=e74]:
+              - link [ref=e1255] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e76]:
+                  - generic [aria-hidden] [ref=e79]: format_list_bulleted
+                  - paragraph [ref=e81]: More
+              - button [ref=e1256] [cursor=pointer]: expand_more
+    - navigation [ref=e1257]:
+      - generic [ref=e86]:
+        - generic [ref=e90]:
+          - generic [ref=e91]: search
+          - textbox [ref=e1258]:
+            - /placeholder: Search
+          - group [aria-hidden]
+        - generic [ref=e94]:
+          - link [ref=e1259] [cursor=pointer]:
+            - /url: /account/login?phase=startSignInTab&returnUrl=%2Fcompetitions%2Fkaggriculture%2Foverview
+            - button [ref=e1260]:
+              - generic [ref=e97]: Sign In
+          - link [ref=e1261] [cursor=pointer]:
+            - /url: /account/login?phase=startRegisterTab&returnUrl=%2Fcompetitions%2Fkaggriculture%2Foverview
+            - button [ref=e1262]:
+              - generic [ref=e100]: Register
+    - main [ref=e101]:
+      - generic [ref=e103]:
+        - generic [ref=e104]: Kaggle uses cookies from Google to deliver and enhance the quality of its services and to analyze traffic.
+        - generic [ref=e105]:
+          - link [ref=e1263] [cursor=pointer]:
+            - /url: /cookies
+            - generic [ref=e107]: Learn more
+          - generic [ref=e108] [cursor=pointer]: OK, Got it.
+      - generic [ref=e111]:
+        - generic [ref=e113]:
+          - generic [ref=e114]:
+            - link [ref=e1264] [cursor=pointer]:
+              - /url: /organizations/kaggle
+            - generic [ref=e120]:
+              - generic [ref=e121]: Kaggle
+              - generic [ref=e123]: · Featured Simulation Competition · 8 days to go
+            - generic [ref=e124]:
+              - button [ref=e1266] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e126]: chevron_right
+                - generic [ref=e127]: Play in Browser
+              - button [ref=e1267] [cursor=pointer]:
+                - generic [ref=e130]: Join Competition
+              - button [ref=e1268] [cursor=pointer]: more_horiz
+          - generic [ref=e134]:
+            - heading [level=1] [ref=e1269]: Kaggriculture
+            - paragraph [ref=e137]: Create an agent to play in this farming simulation and compete with others to maximize your income
+        - generic [ref=e141]:
+          - tablist [ref=e148]:
+            - tab [selected] [ref=e1270] [cursor=pointer]:
+              - generic [ref=e150]: Overview
+            - tab [ref=e1271] [cursor=pointer]:
+              - generic [ref=e152]: Data
+            - tab [ref=e1272] [cursor=pointer]:
+              - generic [ref=e154]: Code
+            - tab [ref=e1273] [cursor=pointer]:
+              - generic [ref=e156]: Models
+            - tab [ref=e1274] [cursor=pointer]:
+              - generic [ref=e158]: Discussion
+            - tab [ref=e1275] [cursor=pointer]:
+              - generic [ref=e160]: Leaderboard
+            - tab [ref=e1276] [cursor=pointer]:
+              - generic [ref=e162]: Rules
+          - separator [ref=e164]
+        - generic [ref=e166]:
+          - generic [ref=e167]:
+            - generic [ref=e168]:
+              - heading [level=2] [ref=e1277]: Overview
+              - paragraph [ref=e175]: In this competition, you will design, build, and deploy an autonomous AI agent to manage a virtual farm, navigate a dynamic economy, and compete head-to-head against other agents on a live leaderboard.
+            - generic [ref=e178]:
+              - generic [ref=e179]:
+                - generic [ref=e180]:
+                  - paragraph [ref=e181]: Start
+                  - generic [ref=e182]: 2 months ago
+                - generic [ref=e183]:
+                  - paragraph [ref=e184]: Close
+                  - generic [ref=e185]: 8 days to go
+              - generic [ref=e186]: Merger & Entry
+          - generic [ref=e198]:
+            - generic [ref=e200]:
+              - generic [ref=e201] [cursor=pointer]:
+                - generic [ref=e203]:
+                  - heading [level=3] [ref=e1278]: Description
+                  - button [ref=e1279]: link
+                - button [expanded] [ref=e1280]: keyboard_arrow_up
+              - generic [ref=e211]:
+                - paragraph [ref=e212]: This simulation competition is a turn-based farming game where two players compete on separate farms to see who can earn the most profit by the end of a 30-day season (720 turns).
+                - paragraph [ref=e213]: "Your agent acts as the main farmer and can strategically hire farm hands to scale up operations. To succeed, your agent must:"
+                - list [ref=e214]:
+                  - listitem [ref=e215]: Plant, water, fertilize, and harvest a variety of crops.
+                  - listitem [ref=e216]: Buy, feed, and care for animals to produce eggs, milk, and wool.
+                  - listitem [ref=e217]: Collect and utilize fertilizer to boost crop yields.
+                  - listitem [ref=e218]: Buy neighboring quadrants of land to expand your farm's footprint.
+                  - listitem [ref=e219]: Trade smart on a dynamic market where prices react to your sales and town demand.
+                - paragraph [ref=e220]: Kaggriculture represents a highly complex environment that models the exact same dynamics found in real-world supply chains, dynamic market pricing, and industrial resource allocation under uncertainty. Underlying mechanics like scheduling resources, optimizing labor, adjusting to supply/demand price changes, and making long-horizon capital investments, serve as a high-fidelity sandbox for training AI to solve complex enterprise operations.
+                - paragraph [ref=e221]
+            - generic [ref=e223]:
+              - generic [ref=e224] [cursor=pointer]:
+                - generic [ref=e226]:
+                  - heading [level=3] [ref=e1281]: Timeline
+                  - button [ref=e1282]: link
+                - button [expanded] [ref=e1283]: keyboard_arrow_up
+              - generic [ref=e234]:
+                - list [ref=e235]:
+                  - listitem [ref=e236]:
+                    - paragraph [ref=e237]:
+                      - strong [ref=e238]: July 29, 2026
+                      - text: "- Start Date."
+                  - listitem [ref=e239]:
+                    - paragraph [ref=e240]:
+                      - strong [ref=e241]: September 23, 2026
+                      - text: "- Entry Deadline. You must accept the competition rules before this date in order to compete."
+                  - listitem [ref=e242]:
+                    - paragraph [ref=e243]:
+                      - strong [ref=e244]: September 23, 2026
+                      - text: "- Team Merger Deadline. This is the last day participants may join or merge teams."
+                  - listitem [ref=e245]:
+                    - paragraph [ref=e246]:
+                      - strong [ref=e247]: September 30, 2026
+                      - text: "- Final Submission Deadline."
+                  - listitem [ref=e248]:
+                    - paragraph [ref=e249]:
+                      - strong [ref=e250]: October 1, 2026 to (approx) October 15, 2026
+                      - text: "- We will continue to run games, or until the leaderboard has reached convergence. At the conclusion of this period, the leaderboard is final."
+                - paragraph [ref=e251]:
+                  - text: All deadlines are at 11:59 PM UTC on the corresponding day unless otherwise noted.
+                  - emphasis [ref=e252]: The competition organizers reserve the right to update the contest timeline if they deem it necessary.
+            - generic [ref=e254]:
+              - generic [ref=e255] [cursor=pointer]:
+                - generic [ref=e257]:
+                  - heading [level=3] [ref=e1284]: Evaluation
+                  - button [ref=e1285]: link
+                - button [expanded] [ref=e1286]: keyboard_arrow_up
+              - generic [ref=e265]:
+                - paragraph [ref=e266]: Each day your team is able to submit up to 5 agents (bots) to the competition. Each submission will play Episodes (games) against other bots on the ladder that have a similar skill rating. Over time, skill ratings will go up with wins or down with losses, and even out with ties. To reduce the number of bots playing and ensure high-quality matching, only the latest 2 submissions are tracked. The latest 2 submissions are also used for final leaderboard evaluation.
+                - paragraph [ref=e267]: Every bot submitted will continue to play episodes until the end of the competition, with newer bots playing a much more frequent number of episodes. On the leaderboard, only your best-scoring bot will be shown, but you can track the progress of all of your submissions on your Submissions page.
+                - paragraph [ref=e268]:
+                  - text: When you upload a submission, a
+                  - strong [ref=e269]: Validation Episode
+                  - text: is run where your agent plays against a copy of itself to ensure it runs without errors. If the episode fails, the submission is marked as
+                  - code [ref=e270]: Error
+                  - text: ", and you can download the agent logs to debug. Otherwise, the submission is initialized with a default rating and joins the matchmaking pool."
+                - heading [level=2] [ref=e1287]: Ranking System
+                - paragraph [ref=e272]: "Each submission is assigned a skill rating. When your agent plays an episode against an opponent:"
+                - list [ref=e273]:
+                  - listitem [ref=e274]: Winning the match (having the most coins in the bank at the end of 720 turns) increases your skill rating, while losing decreases it.
+                  - listitem [ref=e275]: The amount your rating changes depends on the rating difference between you and your opponent. Beating a highly-rated agent will boost your rating more than beating a lower-rated one.
+                  - listitem [ref=e276]: Ties will generally pull ratings closer together.
+                  - listitem [ref=e277]: The actual coin difference in a match does not affect the rating change—only the win, loss, or tie outcome matters.
+                - heading [level=3] [ref=e1288]: Final Evaluation
+                - paragraph [ref=e279]: At the submission deadline, additional submissions will be locked. Games will continue to run for approximately two weeks to continue to reduce uncertainty, especially for new agents. A final Bradley-Terry tournament will be run on those episodes to produce the final leaderboard.
+            - generic [ref=e281]:
+              - generic [ref=e282] [cursor=pointer]:
+                - generic [ref=e284]:
+                  - heading [level=3] [ref=e1289]: Prizes
+                  - button [ref=e1290]: link
+                - button [expanded] [ref=e1291]: keyboard_arrow_up
+              - list [ref=e293]:
+                - listitem [ref=e294]: 1st Place - $5,000
+                - listitem [ref=e295]: 2nd Place - $5,000
+                - listitem [ref=e296]: 3rd Place - $5,000
+                - listitem [ref=e297]: 4th Place - $5,000
+                - listitem [ref=e298]: 5th Place - $5,000
+                - listitem [ref=e299]: 6th Place - $5,000
+                - listitem [ref=e300]: 7th Place - $5,000
+                - listitem [ref=e301]: 8th Place - $5,000
+                - listitem [ref=e302]: 9th Place - $5,000
+                - listitem [ref=e303]: 10th Place - $5,000
+            - generic [ref=e305]:
+              - generic [ref=e306] [cursor=pointer]:
+                - generic [ref=e308]:
+                  - heading [level=3] [ref=e1292]: How to Play
+                  - button [ref=e1293]: link
+                - button [expanded] [ref=e1294]: keyboard_arrow_up
+              - generic [ref=e316]:
+                - heading [level=2] [ref=e1295]: Overview
+                - paragraph [ref=e318]: Each player starts with an empty farm and a small amount of income (seed money, if you will). Each turn, they can perform actions such as moving around the board, purchasing seeds or livestock, planting seeds, watering plants, harvesting produce or animal products, and selling that produce at the market. The game runs for a fixed amount of time representing one season, and the winner is determined by who has the most money in the bank at the end.
+                - heading [level=2] [ref=e1296]: Object Types
+                - table [ref=e320]:
+                  - rowgroup [ref=e321]:
+                    - row [ref=e1297]:
+                      - columnheader [ref=e1298]: Type
+                      - columnheader [ref=e1299]: Yield Type
+                      - columnheader [ref=e1300]: Seed Cost
+                      - columnheader [ref=e1301]: Base Market Price
+                      - columnheader [ref=e1302]: Time to First Yield
+                      - columnheader [ref=e1303]: Time to Max Yield
+                      - columnheader [ref=e1304]: Subsequent Yields
+                      - columnheader [ref=e1305]: Max Yield
+                      - columnheader [ref=e1306]: Action Cost
+                      - columnheader [ref=e1307]: Yield / tile / day
+                  - rowgroup [ref=e333]:
+                    - row [ref=e1308]:
+                      - cell [ref=e1309]:
+                        - strong [ref=e336]: Wheat
+                      - cell [ref=e1310]: One-time
+                      - cell [ref=e1311]: "10"
+                      - cell [ref=e1312]: "25"
+                      - cell [ref=e1313]: 2 days
+                      - cell [ref=e1314]: 4 days
+                      - cell [ref=e1315]: none
+                      - cell [ref=e1316]: 6 (4 unfertilized)
+                      - cell [ref=e1317]: "1"
+                      - cell [ref=e1318]: "0.80"
+                    - row [ref=e1319]:
+                      - cell [ref=e1320]:
+                        - strong [ref=e348]: Carrot
+                      - cell [ref=e1321]: One-time
+                      - cell [ref=e1322]: "20"
+                      - cell [ref=e1323]: "35"
+                      - cell [ref=e1324]: 2 days
+                      - cell [ref=e1325]: 3 days
+                      - cell [ref=e1326]: none
+                      - cell [ref=e1327]: 4 (3 unfertilized)
+                      - cell [ref=e1328]: "1"
+                      - cell [ref=e1329]: "0.75"
+                    - row [ref=e1330]:
+                      - cell [ref=e1331]:
+                        - strong [ref=e360]: Tomato
+                      - cell [ref=e1332]: Ongoing
+                      - cell [ref=e1333]: "50"
+                      - cell [ref=e1334]: "60"
+                      - cell [ref=e1335]: 8 days
+                      - cell [ref=e1336]: 11 days
+                      - cell [ref=e1337]: every day ×4
+                      - cell [ref=e1338]: "4"
+                      - cell [ref=e1339]: "1"
+                      - cell [ref=e1340]: "0.33"
+                    - row [ref=e1341]:
+                      - cell [ref=e1342]:
+                        - strong [ref=e372]: Strawberry
+                      - cell [ref=e1343]: Ongoing
+                      - cell [ref=e1344]: "100"
+                      - cell [ref=e1345]: "120"
+                      - cell [ref=e1346]: 10 days
+                      - cell [ref=e1347]: 16 days
+                      - cell [ref=e1348]: every other day ×4
+                      - cell [ref=e1349]: "4"
+                      - cell [ref=e1350]: "1"
+                      - cell [ref=e1351]: "0.24"
+                    - row [ref=e1352]:
+                      - cell [ref=e1353]:
+                        - strong [ref=e384]: Melon
+                      - cell [ref=e1354]: One-time
+                      - cell [ref=e1355]: "80"
+                      - cell [ref=e1356]: "250"
+                      - cell [ref=e1357]: 10 days
+                      - cell [ref=e1358]: 10 days
+                      - cell [ref=e1359]: none
+                      - cell [ref=e1360]: "6"
+                      - cell [ref=e1361]: "1"
+                      - cell [ref=e1362]: "0.55"
+                    - row [ref=e1363]:
+                      - cell [ref=e1364]:
+                        - strong [ref=e396]: Goose/Egg
+                      - cell [ref=e1365]: Ongoing
+                      - cell [ref=e1366]: "300"
+                      - cell [ref=e1367]: "50"
+                      - cell [ref=e1368]: 4 days
+                      - cell [ref=e1369]: NA
+                      - cell [ref=e1370]: every day, indefinitely
+                      - cell [ref=e1371]: 4 held
+                      - cell [ref=e1372]: 1 + 1 (build coop)
+                      - cell [ref=e1373]: "1.00"
+                    - row [ref=e1374]:
+                      - cell [ref=e1375]:
+                        - strong [ref=e408]: Cow/Milk
+                      - cell [ref=e1376]: Ongoing
+                      - cell [ref=e1377]: "400"
+                      - cell [ref=e1378]: "160"
+                      - cell [ref=e1379]: 8 days
+                      - cell [ref=e1380]: NA
+                      - cell [ref=e1381]: every two days, indefinitely
+                      - cell [ref=e1382]: 6 held
+                      - cell [ref=e1383]: 1 + 1 (build pasture)
+                      - cell [ref=e1384]: "0.50"
+                    - row [ref=e1385]:
+                      - cell [ref=e1386]:
+                        - strong [ref=e420]: Sheep/Wool
+                      - cell [ref=e1387]: Ongoing
+                      - cell [ref=e1388]: "500"
+                      - cell [ref=e1389]: "200"
+                      - cell [ref=e1390]: 6 days
+                      - cell [ref=e1391]: NA
+                      - cell [ref=e1392]: every three days, indefinitely
+                      - cell [ref=e1393]: 6 held
+                      - cell [ref=e1394]: 1 + 1 (build pasture)
+                      - cell [ref=e1395]: "0.33"
+                    - row [ref=e1396]:
+                      - cell [ref=e1397]:
+                        - strong [ref=e432]: Fertilizer
+                      - cell [ref=e1398]: NA
+                      - cell [ref=e1399]: "100"
+                      - cell [ref=e1400]: X
+                      - cell [ref=e436]
+                      - cell [ref=e1401]: X
+                      - cell [ref=e1402]: X
+                      - cell [ref=e439]
+                      - cell [ref=e1403]: "1"
+                      - cell [ref=e441]
+                - paragraph [ref=e442]:
+                  - text: For crops, "Yield / tile / day" is total units harvested divided by the days the tile is occupied, watering daily and harvesting at peak yield. For animals it is the steady-state production rate (
+                  - code [ref=e443]: 1 / interval
+                  - text: ) once the first yield lands; animals keep producing for as long as they are fed, so there is no fixed occupancy to divide by. "Max Yield" for animals is
+                  - code [ref=e444]: max_held
+                  - text: ", the cap on"
+                  - emphasis [ref=e445]: unharvested
+                  - text: product sitting on the tile, not a lifetime total.
+                - paragraph [ref=e446]: "Crop \"Time to Max Yield\" is the age at which yield stops increasing under daily watering, which is not always the end of the bonus window:"
+                - list [ref=e447]:
+                  - listitem [ref=e448]:
+                    - strong [ref=e449]: Melon
+                    - text: "'s bonus window is ages 6–12, but base 1 plus one unit per watered day reaches the cap of 6 at age 10, so ages 11–12 add nothing. Fertilizing reaches the cap at age 8."
+                  - listitem [ref=e450]:
+                    - strong [ref=e451]: Wheat
+                    - text: and
+                    - strong [ref=e452]: Carrot
+                    - text: only reach their listed Max Yield of 6 and 4 with fertilizer; watering alone peaks at 4 and 3.
+                  - listitem [ref=e453]:
+                    - strong [ref=e454]: Tomato
+                    - text: and
+                    - strong [ref=e455]: Strawberry
+                    - text: are ongoing but
+                    - emphasis [ref=e456]: not
+                    - text: "indefinite: production is capped at 4 scheduled yields (tomato at ages 8–11, strawberry at ages 10, 12, 14, 16), after which the plant decays into a weed."
+                - paragraph [ref=e457]: All plants must be watered every day. They will turn into weeds if they are not watered for two successive days. All animals must be fed every day using wheat. They will escape and be unrecoverable if they are not fed for two successive days. Wheat is also available to buy at the market and can be purchased at the current market price.
+                - heading [level=2] [ref=e1404]: Actions
+                - paragraph [ref=e459]: Each turn, the player may take one action. There are 24 turns per day, and 30 days in the season - 720 total turns.
+                - heading [level=3] [ref=e1405]: Farmer / Farm Hand Action
+                - paragraph [ref=e461]: Each Farmer / Farm Hand can be given an action every turn. Farmer/Farm Hand CAN occupy the same space.
+                - heading [level=4] [ref=e1406]: Movement
+                - list [ref=e463]:
+                  - listitem [ref=e464]:
+                    - text: "NORTH, SOUTH, EAST, WEST — Move one cell in that direction. Moves off the edge of the board are no-ops. Locked tiles are passable: a unit may move onto and across unbought quadrants, but tile actions ("
+                    - code [ref=e465]: PLANT
+                    - text: ","
+                    - code [ref=e466]: WATER
+                    - text: ","
+                    - code [ref=e467]: BUILD_*
+                    - text: ", etc.) all no-op on a locked tile and consume nothing. The exception is the shed actions"
+                    - code [ref=e468]: PICKUP
+                    - text: ","
+                    - code [ref=e469]: DROP
+                    - text: ", and"
+                    - code [ref=e470]: PLACE
+                    - text: "-into-shed, which work from any shed-access tile even while that tile is locked — they use the tile only as a standing position and never change it."
+                - heading [level=4] [ref=e1407]: Shed
+                - paragraph [ref=e472]: Picks up an item from the shed (must be orthogonally adjacent) into the inventory
+                - list [ref=e473]:
+                  - listitem [ref=e474]:
+                    - text: PICKUP
+                    - code [ref=e475]: <item>
+                    - code [ref=e476]: "[n]"
+                    - text: — move up to
+                    - code [ref=e477]: "n"
+                    - text: of
+                    - code [ref=e478]: <item>
+                    - text: (default 1) from the shed into the active farmer/hand's inventory. Any item present in the shed is valid (animals, fertilizer, harvested produce, etc.). Seeds live in a separate slot and are never picked up —
+                    - code [ref=e479]: PLANT
+                    - text: consumes them directly.
+                  - listitem [ref=e480]:
+                    - text: DROP — orthogonally adjacent to the shed, dump the active farmer/hand's entire current inventory into the shed. Overflow past
+                    - code [ref=e481]: shedCapacity
+                    - text: is discarded. No-op if not shed-adjacent.
+                - heading [level=4] [ref=e1408]: Plants
+                - list [ref=e483]:
+                  - listitem [ref=e484]:
+                    - text: PLANT — Plant a seed purchased from the market
+                    - list [ref=e485]:
+                      - listitem [ref=e486]: Seeds are automatically available to all Farmers / Farm Hands
+                      - listitem [ref=e487]: If you try to plant too many in a specific turn, none are planted
+                      - listitem [ref=e488]: ie if you have 1 melon seed, but two units do the PLANT MELON command
+                  - listitem [ref=e489]: WATER — Water a plant. This only needs to be done once per day, and subsequent waterings on the same day are a no-op.
+                  - listitem [ref=e490]: HARVEST — Gather produce from a plant. If the plant does not have subsequent yields, it will be removed from the map. Each harvest action will yield at least one unit of the crop, with the potential of additional yield depending on watering and fertilizer (the formula differs by crop type — see harvest yields below). Harvested items are added to the inventory.
+                  - listitem [ref=e491]:
+                    - text: FERTILIZE — Fertilize a plant to increase its potential yield (see harvest yields below).
+                    - list [ref=e492]:
+                      - listitem [ref=e493]: Doubles the per-day yield bonus for the next 3 days. The bonus only applies on days the plant is also watered (basic needs first).
+                - heading [level=4] [ref=e1409]: Animals
+                - list [ref=e495]:
+                  - listitem [ref=e496]:
+                    - text: PLACE
+                    - code [ref=e497]: <item>
+                    - code [ref=e498]: "[n]"
+                    - text: "— Drop items from the active farmer/hand inventory into either a tile or the shed:"
+                    - list [ref=e499]:
+                      - listitem [ref=e500]:
+                        - strong [ref=e501]: Animal placement
+                        - text: ": standing on a matching unoccupied structure ("
+                        - code [ref=e502]: GOOSE
+                        - text: on a coop,
+                        - code [ref=e503]: SHEEP
+                        - text: /
+                        - code [ref=e504]: COW
+                        - text: on a pasture) places one animal from inventory onto the tile. The
+                        - code [ref=e505]: "n"
+                        - text: argument is ignored.
+                      - listitem [ref=e506]:
+                        - strong [ref=e507]: Shed drop
+                        - text: ": standing orthogonally adjacent to the shed moves up to"
+                        - code [ref=e508]: "n"
+                        - text: (default 1) of
+                        - code [ref=e509]: <item>
+                        - text: from inventory into the shed. Capped by
+                        - code [ref=e510]: shedCapacity
+                        - text: ; excess stays in inventory.
+                  - listitem [ref=e511]: FEED — Feed an animal using wheat (only needs to be done once per day)
+                  - listitem [ref=e512]: HARVEST — Collect the eggs/milk/wool produced by the animal.
+                  - listitem [ref=e513]: COLLECT_FERTILIZER — Collect 1 fertilizer from the animal. Every surviving animal makes 1 available at the end of each day, whether or not it was fed or cared for. Uncollected fertilizer does not accumulate, so an animal left alone for five days still yields 1 unit.
+                  - listitem [ref=e514]: CARE — Care for an animal (once per day, no-op if already cared for). See animal care below.
+                - heading [level=4] [ref=e1410]: Animal Care
+                - paragraph [ref=e516]: "CARE banks a yield bonus that is paid out on the animal's next scheduled production:"
+                - list [ref=e517]:
+                  - listitem [ref=e518]:
+                    - text: At end of day, if the animal was both fed AND cared for that day,
+                    - code [ref=e519]: pending_care_bonus
+                    - text: increments by 1. Days where the animal was unfed do not bank a bonus (basic needs first).
+                  - listitem [ref=e520]: On a scheduled production day, if the animal is fed, the entire banked bonus is added to that production's yield (in addition to the base 1) and the bank resets to 0.
+                  - listitem [ref=e521]: If the animal is unfed on the production day, the base 1 unit is still produced, but the banked bonus is not applied and the bank resets to 0.
+                  - listitem [ref=e522]:
+                    - code [ref=e523]: pending_care_bonus
+                    - text: is capped indirectly by the per-animal
+                    - code [ref=e524]: max_held
+                    - text: cap on
+                    - code [ref=e525]: yield_units
+                    - text: .
+                - heading [level=4] [ref=e1411]: Terrain
+                - list [ref=e527]:
+                  - listitem [ref=e528]: BUILD_COOP - adds a coop to an unoccupied tile
+                  - listitem [ref=e529]: BUILD_PASTURE - add pasture to an unoccupied tile
+                  - listitem [ref=e530]:
+                    - text: DIG — Remove a plant from a square to free up space OR remove a weed from a square (does not yield any produce) OR remove an
+                    - strong [ref=e531]: empty
+                    - text: goose coop / pasture. A coop or pasture with an animal on it cannot be dug; the DIG is a no-op.
+                - heading [level=4] [ref=e1412]: Other
+                - list [ref=e533]:
+                  - listitem [ref=e534]: PASS — Default if there is nothing to do (optional)
+                - heading [level=3] [ref=e1413]: Market Action
+                - paragraph [ref=e536]:
+                  - text: Each turn you can submit up to
+                  - code [ref=e537]: maxMarketOrdersPerTurn
+                  - text: (default 10) market actions; any orders past that limit are silently dropped. This is an ordered list and market orders will be processed in order simultaneously (one from each player) while both players have orders.
+                - list [ref=e538]:
+                  - listitem [ref=e539]:
+                    - text: BUY_SEED — Purchase N units of a single item from the market.
+                    - list [ref=e540]:
+                      - listitem [ref=e541]: BUY_SEED WHEAT 1
+                  - listitem [ref=e542]:
+                    - text: BUY_ANIMAL -
+                    - list [ref=e543]:
+                      - listitem [ref=e544]: BUY_ANIMAL GOOSE 1
+                  - listitem [ref=e545]:
+                    - text: BUY_PRODUCT
+                    - list [ref=e546]:
+                      - listitem [ref=e547]: BUY_PRODUCT WHEAT 1
+                      - listitem [ref=e548]: BUY_PRODUCT FERTILIZER 1
+                  - listitem [ref=e549]:
+                    - text: SELL — Sell N units of a single item to the market.
+                    - list [ref=e550]:
+                      - listitem [ref=e551]: SELL WHEAT 1
+                  - listitem [ref=e552]: HIRE — Hire a farm hand for the day. Cost increases for each extra hand hired on the same day.
+                  - listitem [ref=e553]:
+                    - text: BUY_LAND - unlock a new 5x5 segment of land to plant on. Increasing in cost.
+                    - list [ref=e554]:
+                      - listitem [ref=e555]: "Costs are: $1k, $2k, $4k"
+                - heading [level=2] [ref=e1414]: Watering / Animal Feed
+                - paragraph [ref=e557]: Plants (and animals) must be watered/fed a minimum of every other day. Watering only needs to be done once per day, and subsequent watering actions are a no-op. In the case of plants not watered for two consecutive days, at the end of the day they turn into a WEED. In the case of animals they escape (unrecoverable).
+                - paragraph [ref=e558]:
+                  - text: A new seed starts with
+                  - code [ref=e559]: consecutive_unwatered = 1
+                  - text: — the planting day itself counts as the first missed day. A seed planted and left unwatered that same day reaches 2 at the end-of-day refresh and becomes a weed that night, before it grows. There is no grace period for fresh plantings.
+                - paragraph [ref=e560]:
+                  - text: A newly placed animal starts with
+                  - code [ref=e561]: consecutive_unfed = 0
+                  - text: ", so it survives its first day unfed."
+                - paragraph [ref=e562]: Note that watering one-time yield plants during their yield window results in a higher yield. This is NOT true for ongoing yield plants/animals. See below.
+                - heading [level=2] [ref=e1415]: Harvest Yields
+                - paragraph [ref=e564]: Plants will potentially have higher yields based on how well they have been cared for.
+                - list [ref=e565]:
+                  - listitem [ref=e566]:
+                    - strong [ref=e567]: One-time crops
+                    - text: "(wheat, carrot, melon): Starting at half the plant's"
+                    - code [ref=e568]: max_yield_day
+                    - text: (Time to Max Yield) rounded up, watering during the bonus window will add one unit per day to the total harvestable yield.
+                    - list [ref=e569]:
+                      - listitem [ref=e570]: Fertilized plants add 2 per day instead.
+                  - listitem [ref=e571]:
+                    - strong [ref=e572]: Ongoing crops
+                    - text: "(tomato, strawberry): Scheduled production happens at fixed intervals. The base yield is 1 per scheduled production. If the plant is fertilized AND watered that day, yield is doubled to 2."
+                  - listitem [ref=e573]:
+                    - text: Once a plant has hit its maximum lifespan, the total yield available on the plant will reduce by 1 every other turn until it hits 0, at which point the plant becomes a weed.
+                    - list [ref=e574]:
+                      - listitem [ref=e575]:
+                        - strong [ref=e576]: One-time crops
+                        - text: reach max lifespan one day after
+                        - code [ref=e577]: max_yield_day
+                        - text: .
+                      - listitem [ref=e578]:
+                        - strong [ref=e579]: Ongoing crops
+                        - text: start decay one day after their cumulative production count reaches
+                        - code [ref=e580]: max_yield
+                        - text: (i.e. they've fired enough scheduled productions to hit the cap, regardless of whether the produce has been harvested).
+                - heading [level=2] [ref=e1416]: Map Features
+                - paragraph [ref=e582]: Each player has their own farm with a set number of squares. Players are unable to see the state of the other’s shed, but can see the state of their opponent’s farm.
+                - heading [level=3] [ref=e1417]: Farm Space
+                - list [ref=e584]:
+                  - listitem [ref=e585]:
+                    - text: The land near your farm is a
+                    - code [ref=e586]: boardSize
+                    - text: ×
+                    - code [ref=e587]: boardSize
+                    - text: grid (default 10×10), divided into four 5×5 quadrants. At first, your farm covers one quadrant (25% of the squares). For an increasingly large fee, you can buy the neighboring quadrants and eventually cover 100% of the squares.
+                  - listitem [ref=e588]: Each plant or animal occupies one square on the farm.
+                  - listitem [ref=e589]: Players can allocate these squares however they choose between crops and livestock. There are no specific limits per type.
+                  - listitem [ref=e590]: Weeds have a chance of spawning on any empty cells on the farm, and must be cleared before the land can be used for other purposes.
+                  - listitem [ref=e591]: Squares on the farm can be either a plant, a coop/pasture, a weed, or empty.
+                - heading [level=3] [ref=e1418]: Shed (Inventory)
+                - list [ref=e593]:
+                  - listitem [ref=e594]: Functions as an inventory for items that are harvested but not yet sold, or for seeds that have not yet been planted
+                  - listitem [ref=e595]: Farmer and hired farm hands will spawn at the shed at the start of each day
+                  - listitem [ref=e596]: Farmer and hired farm hands drop their inventory at the end of the day in the shed (if there is room)
+                  - listitem [ref=e597]:
+                    - text: Limited to 100 items, excluding seeds. Once the shed is full, any further items added (via
+                    - code [ref=e598]: PLACE
+                    - text: mid-day or end-of-day inventory drop) are discarded — there is no overflow holding area, so stockpiling on farmer/hand inventories does not bypass the cap.
+                - paragraph [ref=e599]:
+                  - text: The shed sits at the center of the board and is not a tile — it never appears in the
+                  - code [ref=e600]: tiles
+                  - text: array, whose only values are
+                  - code [ref=e601]: None
+                  - text: ","
+                  - code [ref=e602]: "\"LOCKED\""
+                  - text: ", and structure dicts. \"Orthogonally adjacent to the shed\" means standing on one of the four center tiles,"
+                  - code [ref=e603]: (half-1, half-1)
+                  - text: ","
+                  - code [ref=e604]: (half, half-1)
+                  - text: ","
+                  - code [ref=e605]: (half-1, half)
+                  - text: ","
+                  - code [ref=e606]: (half, half)
+                  - text: for
+                  - code [ref=e607]: half = boardSize // 2
+                  - text: . At the default
+                  - code [ref=e608]: boardSize = 10
+                  - text: those are
+                  - code [ref=e609]: (4,4)
+                  - text: ","
+                  - code [ref=e610]: (5,4)
+                  - text: ","
+                  - code [ref=e611]: (4,5)
+                  - text: ", and"
+                  - code [ref=e612]: (5,5)
+                  - text: ", one in each quadrant. Since only NW starts unlocked, three of those four tiles begin locked; the shed is reachable from all of them regardless, because the shed itself is never locked."
+                - heading [level=3] [ref=e1419]: Farmer/Farm Hand
+                - heading [level=4] [ref=e1420]: Hiring
+                - list [ref=e615]:
+                  - listitem [ref=e616]:
+                    - text: Hiring is a market order (
+                    - code [ref=e617]: HIRE
+                    - text: ). It costs more every time you want to hire an additional hand each day. At the end of the day all, hands drop inventory at the farm and disappear (need to be re-hired each day)
+                  - listitem [ref=e618]:
+                    - text: Cost is
+                    - code [ref=e619]: farmHandCostMult * fib(n)
+                    - text: where
+                    - code [ref=e620]: "n"
+                    - text: is the number of hires already made today (fib starts 1, 1, 2, 3, 5, 8, 13, …).
+                    - list [ref=e621]:
+                      - listitem [ref=e622]:
+                        - text: With the default
+                        - code [ref=e623]: farmHandCostMult = 1
+                        - text: ": 1, 1, 2, 3, 5, 8, 13, 21, etc… (resets at the start of each day)"
+                  - listitem [ref=e624]: A hired hand appears orthogonally adjacent to the shed in a free space following NWSE. If there are not open spaces, it looks for the one with the least occupants, breaking ties by NWSE preference
+                  - listitem [ref=e625]:
+                    - text: Spawn placement ignores whether the tile is locked. Since the main farmer starts on
+                    - code [ref=e626]: (4,4)
+                    - text: ", the least-occupied rule sends the first hire of each day to"
+                    - code [ref=e627]: (5,4)
+                    - text: ", which is locked until the NE quadrant is bought. Locked tiles are passable, so a hand spawned on one can move back to unlocked land."
+                - heading [level=4] [ref=e1421]: Inventory
+                - list [ref=e629]:
+                  - listitem [ref=e630]: When harvesting or picking items up, they are added to inventory.
+                  - listitem [ref=e631]: Can drop items in the shed
+                  - listitem [ref=e632]: At the end of the day, all items in all inventory will be added to shed inventory (if there is room). Anything that doesn't fit is discarded — overflow is lost.
+                - heading [level=3] [ref=e1422]: Town Buildings
+                - paragraph [ref=e634]:
+                  - text: As the season progresses, new shops unlock at regular intervals (every
+                  - code [ref=e635]: townShopUnlockInterval
+                  - text: days, default 3). Each unlock is drawn uniformly at random
+                  - strong [ref=e636]: with replacement
+                  - text: from the full shop table, so the same shop can unlock more than once — a season might end up with three bakeries and no yarn store. Once unlocked, a shop stays active for the rest of the game, and unlocking stops after 8 total instances. Total demand grows monotonically as more shops unlock.
+                - paragraph [ref=e637]:
+                  - text: Each unlocked shop
+                  - emphasis [ref=e638]: instance
+                  - text: consumes one of every product it demands every
+                  - code [ref=e639]: townShopSellInterval
+                  - text: turns (default 4). So with the default interval, a shop demanding wheat removes 6 wheat from the market per day, and two copies of that shop remove 12. Single-product shops consume 2x.
+                - paragraph [ref=e640]:
+                  - text: In addition, the town center consumes one of every product (excluding fertilizer) every
+                  - code [ref=e641]: townCenterSellInterval
+                  - text: turns (default 24, i.e. once per day). This rate is flat for the whole season — it does not ramp.
+                - table [ref=e642]:
+                  - rowgroup [ref=e643]:
+                    - row [ref=e1423]:
+                      - columnheader [ref=e1424]: Shop Type
+                      - columnheader [ref=e1425]: Increases Demand For
+                  - rowgroup [ref=e647]:
+                    - row [ref=e1426]:
+                      - cell [ref=e1427]: Bakery
+                      - cell [ref=e1428]: eggs, wheat
+                    - row [ref=e1429]:
+                      - cell [ref=e1430]: Pizza Shop
+                      - cell [ref=e1431]: milk, tomatoes, wheat
+                    - row [ref=e1432]:
+                      - cell [ref=e1433]: Brunch Spot
+                      - cell [ref=e1434]: eggs, wheat, strawberries
+                    - row [ref=e1435]:
+                      - cell [ref=e1436]: Yarn Store
+                      - cell [ref=e1437]: wool (2x)
+                    - row [ref=e1438]:
+                      - cell [ref=e1439]: Ice Cream Shop
+                      - cell [ref=e1440]: strawberries, milk, wheat
+                    - row [ref=e1441]:
+                      - cell [ref=e1442]: Pet Cafe
+                      - cell [ref=e1443]: carrots (2x)
+                    - row [ref=e1444]:
+                      - cell [ref=e1445]: Smoothie Shop
+                      - cell [ref=e1446]: strawberries, milk
+                    - row [ref=e1447]:
+                      - cell [ref=e1448]: Farmers Market
+                      - cell [ref=e1449]: wheat, carrots, tomatoes, strawberries
+                - heading [level=2] [ref=e1450]: Market Mechanics
+                - paragraph [ref=e673]: The market has an unlimited supply of seeds and animals at fixed prices. Sell prices, however, move dynamically per resource and persist across days.
+                - paragraph [ref=e674]:
+                  - text: Every product (and fertilizer) starts the game with a market inventory of
+                  - code [ref=e675]: I0 = 10,000
+                  - text: units, far above any single game's realistic production volume so that inventory is essentially guaranteed to stay positive. The sell price for a product is
+                  - code [ref=e676]: base
+                  - text: at
+                  - code [ref=e677]: I0
+                  - text: ", rises as inventory falls (players buying or town consumption draining supply), and falls as inventory grows (players selling)."
+                - heading [level=3] [ref=e1451]: Selling inventory to the market
+                - paragraph [ref=e679]:
+                  - text: Players can queue any number of sell or buy orders (for any quantity) in the market action list. Orders are processed concurrently across players, one unit at a time. For example, when both players issue
+                  - code [ref=e680]: SELL CARROT 10
+                  - text: first, we take the current carrot price, give both players that price for their first carrot, then add 2 carrots to the market (1 from each player) — which may shift the price — and repeat until both orders complete.
+                - paragraph [ref=e681]:
+                  - text: If the sell price has been driven down to
+                  - code [ref=e682]: $1
+                  - text: (the price floor), the unit is still purchased but is
+                  - emphasis [ref=e683]: not
+                  - text: added to market inventory, so the floor remains responsive to subsequent buys.
+                - heading [level=3] [ref=e1452]: Buying inventory from the market
+                - paragraph [ref=e685]:
+                  - text: Only
+                  - code [ref=e686]: WHEAT
+                  - text: and
+                  - code [ref=e687]: FERTILIZER
+                  - text: can be bought from the market via
+                  - code [ref=e688]: BUY_PRODUCT
+                  - text: "(other products are sold at the market but not bought back). Selling is unrestricted: every product, including fertilizer collected from animals, can be sold via"
+                  - code [ref=e689]: SELL
+                  - text: ". Two things drain market inventory: town buildings (town center and shops, which consume products for free) and player"
+                  - code [ref=e690]: BUY_PRODUCT
+                  - text: orders. Buy orders follow the same one-unit-at-a-time concurrent procedure as sell orders. If a player runs out of money mid-order, the order is stopped.
+                - paragraph [ref=e691]: The buy price is quoted at the post-buy inventory and the sell price is quoted at the pre-sell inventory, so an immediate buy followed by a sell of the same item against an otherwise-unchanged market nets exactly zero.
+                - heading [level=3] [ref=e1453]: The Price Function
+                - paragraph [ref=e693]:
+                  - text: For each resource the curve is defined by a base price, an anchor throughput
+                  - code [ref=e694]: T
+                  - text: ", and an independent"
+                  - strong [ref=e695]: shape function
+                  - text: +
+                  - strong [ref=e696]: target move
+                  - text: "for each side of the equilibrium:"
+                - code [ref=e698]: "price(inv) = base + sign · amp · f(|inv − I0|) sign = +1 if inv < I0 (scarcity → price up) sign = −1 if inv > I0 (glut → price down) amp = target · base / f(T) (derived; not stored) f ∈ { linear, sq, sqrt, log, log10, hinge } (log uses ln(1+x), so f(0)=0)"
+                - paragraph [ref=e699]:
+                  - text: Floored at
+                  - code [ref=e700]: $1
+                  - text: and rounded to the nearest dollar.
+                - paragraph [ref=e701]:
+                  - code [ref=e702]: hinge
+                  - text: is the one shape that depends on
+                  - code [ref=e703]: T
+                  - text: rather than on
+                  - code [ref=e704]: x
+                  - text: "alone: with"
+                  - code [ref=e705]: u = x / T
+                  - text: it evaluates to
+                  - code [ref=e706]: u + 8 · max(0, u − 1)²
+                  - text: . Below
+                  - code [ref=e707]: T
+                  - text: it is linear in
+                  - code [ref=e708]: u
+                  - text: ; above
+                  - code [ref=e709]: T
+                  - text: the quadratic term takes over and the price climbs steeply. Since
+                  - code [ref=e710]: f(T) = 1
+                  - text: by construction,
+                  - code [ref=e711]: target
+                  - text: keeps its usual meaning.
+                - paragraph [ref=e712]:
+                  - code [ref=e713]: T
+                  - text: "is the production capacity of a single 5×5 field over a 24-day window at optimal watering with no fertilizer (animal totals are pre-discounted by 30% to account for wheat-feed overhead, and allow one day to build the coop or pasture). The 24-day window is a calibration horizon, not the 30-day season length. It is shorter on purpose: the opening days are setup-heavy and yield little."
+                - paragraph [ref=e714]:
+                  - code [ref=e715]: target
+                  - text: says "moving
+                  - code [ref=e716]: T
+                  - text: units past
+                  - code [ref=e717]: I0
+                  - text: shifts the price by
+                  - code [ref=e718]: target × base
+                  - text: ." Picking different
+                  - code [ref=e719]: f
+                  - text: and
+                  - code [ref=e720]: target
+                  - text: "on each side lets resources with similar production profiles play very differently strategically — wheat panics on scarcity but absorbs gluts; melon barely reacts to scarcity but crashes hard on overproduction; wool mirrors melon at a smaller scale. Premium resources (base > $100: strawberry, melon, milk, wool) use"
+                  - code [ref=e721]: above_target > 1
+                  - text: ", so even modest gluts drive them straight to the $1 floor — bundling and timing sales matters more for these than for staples."
+                - paragraph [ref=e722]:
+                  - text: Carrot, tomato and egg use
+                  - code [ref=e723]: hinge
+                  - text: on the scarcity side, so their prices stay near base under ordinary demand and rise sharply once demand runs past
+                  - code [ref=e724]: T
+                  - text: . The town shops that consume them are listed in
+                  - code [ref=e725]: unlocked_shops
+                  - text: .
+                - list [ref=e726]:
+                  - listitem [ref=e727]:
+                    - strong [ref=e728]: Carrot
+                    - text: —
+                    - code [ref=e729]: hinge
+                    - text: at
+                    - code [ref=e730]: below_target
+                    - text: 1.00. Consumed by pet cafes (single-product, so each consumes double) and farmers markets.
+                  - listitem [ref=e731]:
+                    - strong [ref=e732]: Tomato
+                    - text: —
+                    - code [ref=e733]: hinge
+                    - text: at
+                    - code [ref=e734]: below_target
+                    - text: 0.40. Consumed by pizza shops and farmers markets.
+                  - listitem [ref=e735]:
+                    - strong [ref=e736]: Egg
+                    - text: —
+                    - code [ref=e737]: hinge
+                    - text: at
+                    - code [ref=e738]: below_target
+                    - text: 0.40. Consumed by bakeries and brunch spots.
+                - paragraph [ref=e739]:
+                  - text: Tomato and egg keep the
+                  - code [ref=e740]: below_target
+                  - text: of the
+                  - code [ref=e741]: linear
+                  - text: curves they replaced. Because
+                  - code [ref=e742]: linear
+                  - text: "'s amplitude already normalises to"
+                  - code [ref=e743]: x / T
+                  - text: ", which is exactly"
+                  - code [ref=e744]: hinge
+                  - text: "'s below-knee branch, their prices from"
+                  - code [ref=e745]: I0
+                  - text: down to
+                  - code [ref=e746]: I0 − T
+                  - text: are unchanged; the curves differ only past the knee.
+                - table [ref=e747]:
+                  - rowgroup [ref=e748]:
+                    - row [ref=e1454]:
+                      - columnheader [ref=e1455]: Resource
+                      - columnheader [ref=e1456]: Base
+                      - columnheader [ref=e1457]: I0
+                      - columnheader [ref=e1458]: T
+                      - columnheader [ref=e1459]: Below func
+                      - columnheader [ref=e1460]: Below target
+                      - columnheader [ref=e1461]: Above func
+                      - columnheader [ref=e1462]: Above target
+                      - columnheader [ref=e1463]: P(I0−T)
+                      - columnheader [ref=e1464]: P(I0+T)
+                      - columnheader [ref=e1465]: P(I0+2T)
+                  - rowgroup [ref=e761]:
+                    - row [ref=e1466]:
+                      - cell [ref=e1467]:
+                        - strong [ref=e764]: Wheat
+                      - cell [ref=e1468]: "25"
+                      - cell [ref=e1469]: 10,000
+                      - cell [ref=e1470]: "400"
+                      - cell [ref=e1471]: sqrt
+                      - cell [ref=e1472]: "0.80"
+                      - cell [ref=e1473]: log
+                      - cell [ref=e1474]: "0.20"
+                      - cell [ref=e1475]: $45
+                      - cell [ref=e1476]: $20
+                      - cell [ref=e1477]: $19
+                    - row [ref=e1478]:
+                      - cell [ref=e1479]:
+                        - strong [ref=e777]: Carrot
+                      - cell [ref=e1480]: "35"
+                      - cell [ref=e1481]: 10,000
+                      - cell [ref=e1482]: "450"
+                      - cell [ref=e1483]: hinge
+                      - cell [ref=e1484]: "1.00"
+                      - cell [ref=e1485]: sqrt
+                      - cell [ref=e1486]: "0.70"
+                      - cell [ref=e1487]: $70
+                      - cell [ref=e1488]: $10
+                      - cell [ref=e1489]: $1
+                    - row [ref=e1490]:
+                      - cell [ref=e1491]:
+                        - strong [ref=e790]: Tomato
+                      - cell [ref=e1492]: "60"
+                      - cell [ref=e1493]: 10,000
+                      - cell [ref=e1494]: "200"
+                      - cell [ref=e1495]: hinge
+                      - cell [ref=e1496]: "0.40"
+                      - cell [ref=e1497]: sqrt
+                      - cell [ref=e1498]: "0.60"
+                      - cell [ref=e1499]: $84
+                      - cell [ref=e1500]: $24
+                      - cell [ref=e1501]: $9
+                    - row [ref=e1502]:
+                      - cell [ref=e1503]:
+                        - strong [ref=e803]: Strawberry
+                      - cell [ref=e1504]: "120"
+                      - cell [ref=e1505]: 10,000
+                      - cell [ref=e1506]: "100"
+                      - cell [ref=e1507]: sqrt
+                      - cell [ref=e1508]: "0.70"
+                      - cell [ref=e1509]: linear
+                      - cell [ref=e1510]: "1.60"
+                      - cell [ref=e1511]: $204
+                      - cell [ref=e1512]: $1
+                      - cell [ref=e1513]: $1
+                    - row [ref=e1514]:
+                      - cell [ref=e1515]:
+                        - strong [ref=e816]: Melon
+                      - cell [ref=e1516]: "250"
+                      - cell [ref=e1517]: 10,000
+                      - cell [ref=e1518]: "300"
+                      - cell [ref=e1519]: log
+                      - cell [ref=e1520]: "0.20"
+                      - cell [ref=e1521]: sq
+                      - cell [ref=e1522]: "3.60"
+                      - cell [ref=e1523]: $300
+                      - cell [ref=e1524]: $1
+                      - cell [ref=e1525]: $1
+                    - row [ref=e1526]:
+                      - cell [ref=e1527]:
+                        - strong [ref=e829]: Egg
+                      - cell [ref=e1528]: "50"
+                      - cell [ref=e1529]: 10,000
+                      - cell [ref=e1530]: "332"
+                      - cell [ref=e1531]: hinge
+                      - cell [ref=e1532]: "0.40"
+                      - cell [ref=e1533]: log
+                      - cell [ref=e1534]: "0.20"
+                      - cell [ref=e1535]: $70
+                      - cell [ref=e1536]: $40
+                      - cell [ref=e1537]: $39
+                    - row [ref=e1538]:
+                      - cell [ref=e1539]:
+                        - strong [ref=e842]: Milk
+                      - cell [ref=e1540]: "160"
+                      - cell [ref=e1541]: 10,000
+                      - cell [ref=e1542]: "122"
+                      - cell [ref=e1543]: sqrt
+                      - cell [ref=e1544]: "0.60"
+                      - cell [ref=e1545]: linear
+                      - cell [ref=e1546]: "1.60"
+                      - cell [ref=e1547]: $256
+                      - cell [ref=e1548]: $1
+                      - cell [ref=e1549]: $1
+                    - row [ref=e1550]:
+                      - cell [ref=e1551]:
+                        - strong [ref=e855]: Wool
+                      - cell [ref=e1552]: "200"
+                      - cell [ref=e1553]: 10,000
+                      - cell [ref=e1554]: "105"
+                      - cell [ref=e1555]: log
+                      - cell [ref=e1556]: "0.20"
+                      - cell [ref=e1557]: sq
+                      - cell [ref=e1558]: "3.20"
+                      - cell [ref=e1559]: $240
+                      - cell [ref=e1560]: $1
+                      - cell [ref=e1561]: $1
+                    - row [ref=e1562]:
+                      - cell [ref=e1563]:
+                        - strong [ref=e868]: Fertilizer
+                      - cell [ref=e1564]: "100"
+                      - cell [ref=e1565]: 10,000
+                      - cell [ref=e1566]: "200"
+                      - cell [ref=e1567]: linear
+                      - cell [ref=e1568]: "0.40"
+                      - cell [ref=e1569]: linear
+                      - cell [ref=e1570]: "0.40"
+                      - cell [ref=e1571]: $140
+                      - cell [ref=e1572]: $60
+                      - cell [ref=e1573]: $20
+                - paragraph [ref=e879]:
+                  - text: The defaults live in
+                  - code [ref=e880]: MARKET_PARAMS
+                  - text: in
+                  - code [ref=e881]: kaggriculture.py
+                  - text: ". Per-resource overrides (sparse: any subset of"
+                  - code [ref=e882]: base
+                  - text: ","
+                  - code [ref=e883]: I0
+                  - text: ","
+                  - code [ref=e884]: T
+                  - text: ","
+                  - code [ref=e885]: below_func
+                  - text: ","
+                  - code [ref=e886]: below_target
+                  - text: ","
+                  - code [ref=e887]: above_func
+                  - text: ","
+                  - code [ref=e888]: above_target
+                  - text: ) can be supplied at episode creation via
+                  - code [ref=e889]: env.configuration["marketParams"]
+                  - text: without touching code, e.g.
+                  - code [ref=e890]: "{\"WOOL\": {\"above_target\": 0.95}}"
+                  - text: .
+                - heading [level=2] [ref=e1574]: Turn Processing Order
+                - list [ref=e892]:
+                  - listitem [ref=e893]:
+                    - strong [ref=e894]: Action validation
+                    - text: — verify action legality
+                  - listitem [ref=e895]:
+                    - strong [ref=e896]: Player actions
+                    - text: — record the actions taken by each player (happening simultaneously)
+                  - listitem [ref=e897]:
+                    - strong [ref=e898]: Market actions
+                    - text: "- process market queue in order by player (described above)"
+                  - listitem [ref=e899]:
+                    - strong [ref=e900]: Town buy actions
+                    - text: "- town center and shops reduce inventory"
+                  - listitem [ref=e901]:
+                    - strong [ref=e902]: Update observations
+                    - list [ref=e903]:
+                      - listitem [ref=e904]:
+                        - strong [ref=e905]: Day refresh
+                        - text: — if applicable, update the condition of plants and animals for a new day, and reset their fed/watered to condition to false
+                      - listitem [ref=e906]:
+                        - strong [ref=e907]: Market refresh
+                        - text: — modify the price of items on the market based on sells from previous turn
+                      - listitem [ref=e908]:
+                        - strong [ref=e909]: Income update
+                        - text: — update the player’s bank based on any buys or sells
+                      - listitem [ref=e910]:
+                        - strong [ref=e911]: Farm update
+                        - text: — clear plants that have been harvested, items from the inventory that have been used or sold, add new plants/animals to the farm, etc
+                - heading [level=2] [ref=e1575]: Win Conditions
+                - paragraph [ref=e913]: The win condition is simple- whoever has the greatest number of coins at the end of the season is the winner. It is also possible that the two players will tie.
+                - heading [level=2] [ref=e1576]: Reward
+                - paragraph [ref=e915]: The player who has the most money in the bank at the end of the game wins. Unsold items in the inventory do not count towards that total.
+                - heading [level=2] [ref=e1577]: Observation Format
+                - paragraph [ref=e917]: "The top-level observation passed to each agent:"
+                - code [ref=e919]: "{ \"player\": int, # 0 or 1 \"day\": int, # 0-indexed in-game day \"hour\": int, # 0-indexed turn within the day \"farms\": [farm, farm], # public per-player state, indexed by player id (shared) \"market\": { # shared \"inventory\": { \"WHEAT\": int, \"CARROT\": int, ... }, \"prices\": { \"WHEAT\": int, \"CARROT\": int, ... }, }, \"town\": { # shared \"unlocked_shops\": [\"BAKERY\", \"BAKERY\", ...], # may repeat; each entry consumes independently }, \"private\": { # this player only; opponent's private state is not visible \"shed\": { \"WHEAT\": int, \"GOOSE\": int, \"FERTILIZER\": int, ... }, \"seeds\": { \"WHEAT\": int, \"CARROT\": int, ... }, \"inventories\": [farmer_inv, hand_inv, ...], # [0] is the main farmer }, }"
+                - paragraph [ref=e920]:
+                  - text: Each
+                  - code [ref=e921]: farm
+                  - text: "dict (public, visible to both players):"
+                - code [ref=e923]: "{ \"money\": float, \"tiles\": [[tile, ...], ...], # tiles[y][x] \"farmer\": [x, y], \"hands\": [[x, y], ...], # hired hands for the current day \"unlocked_quadrants\": [\"NW\", ...], # subset of {\"NW\",\"NE\",\"SW\",\"SE\"} \"hires_today\": int, # used to price the next HIRE }"
+                - paragraph [ref=e924]:
+                  - text: A
+                  - code [ref=e925]: tile
+                  - text: "is one of:"
+                - list [ref=e926]:
+                  - listitem [ref=e927]:
+                    - code [ref=e928]: None
+                    - text: — empty unlocked tile
+                  - listitem [ref=e929]:
+                    - code [ref=e930]: "\"LOCKED\""
+                    - text: — tile in a quadrant the player has not yet bought
+                  - listitem [ref=e931]: "a plant dict:"
+                - code [ref=e933]: "{ \"kind\": \"PLANT\", \"crop\": \"WHEAT\" | \"CARROT\" | \"TOMATO\" | \"STRAWBERRY\" | \"MELON\", \"planted_day\": int, \"watered_today\": bool, # reset to False each end-of-day \"consecutive_unwatered\": int, # 2+ → tile turns to a weed \"yield_units\": int, # units currently harvestable \"max_lifespan_step\": int, # step at which decay begins; -1 for ongoing crops \"fertilized_until_day\": int, # last day fertilizer bonus applies; -1 if none }"
+                - list [ref=e934]:
+                  - listitem [ref=e935]:
+                    - text: "a weed dict:"
+                    - code [ref=e936]: "{\"kind\": \"WEED\"}"
+                  - listitem [ref=e937]: "an animal structure dict (coop/pasture, optionally occupied):"
+                - code [ref=e939]: "{ \"kind\": \"COOP\" | \"PASTURE\", \"animal\": \"GOOSE\" | \"COW\" | \"SHEEP\" | None, # None until PLACEd \"placed_day\": int, \"yield_units\": int, \"fed_today\": bool, \"consecutive_unfed\": int, # 2+ → animal escapes \"cared_today\": bool, \"fertilizer_available\": bool, # set at end-of-day for every surviving animal; cleared by COLLECT_FERTILIZER \"pending_care_bonus\": int, # banked CARE bonus, applied on the next yield tick }"
+                - heading [level=2] [ref=e1578]: Quick Start
+                - code [ref=e942]: "from kaggle_environments import make def my_agent(obs): # Buy one wheat seed on the very first turn, then PASS forever after. if obs.get(\"step\", 0) == 0: return {\"farmer\": [\"PASS\"], \"market\": [[\"BUY_SEED\", \"WHEAT\", 1]]} return {\"farmer\": [\"PASS\"], \"market\": []} env = make(\"kaggriculture\", configuration={\"episodeSteps\": 200}) env.run([my_agent, \"random\"]) env.render(mode=\"ipython\", width=800, height=800)"
+                - heading [level=2] [ref=e1579]: Configuration Defaults
+                - paragraph [ref=e944]: "Per-crop seed costs and per-product base prices are not configurable; they are documented in the Object Types and Price Function tables above. The configurable knobs are:"
+                - table [ref=e945]:
+                  - rowgroup [ref=e946]:
+                    - row [ref=e1580]:
+                      - columnheader [ref=e1581]: Parameter
+                      - columnheader [ref=e1582]: Default
+                      - columnheader [ref=e1583]: Description
+                  - rowgroup [ref=e951]:
+                    - row [ref=e1584]:
+                      - cell [ref=e1585]: episodeSteps
+                      - cell [ref=e1586]: "720"
+                      - cell [ref=e1587]: Total turns in the season (24 turns × 30 days)
+                    - row [ref=e1588]:
+                      - cell [ref=e1589]: boardSize
+                      - cell [ref=e1590]: "10"
+                      - cell [ref=e1591]: Width and height (in tiles) of each player's square farm. Advanced uses 10 = four 5x5 quadrants
+                    - row [ref=e1592]:
+                      - cell [ref=e1593]: startingMoney
+                      - cell [ref=e1594]: "3000"
+                      - cell [ref=e1595]: Coins each player starts with
+                    - row [ref=e1596]:
+                      - cell [ref=e1597]: maxMarketOrdersPerTurn
+                      - cell [ref=e1598]: "10"
+                      - cell [ref=e1599]: Maximum number of market orders processed per player per turn; extras are silently dropped
+                    - row [ref=e1600]:
+                      - cell [ref=e1601]: turnsPerDay
+                      - cell [ref=e1602]: "24"
+                      - cell [ref=e1603]: Number of turns that make up one in-game day
+                    - row [ref=e1604]:
+                      - cell [ref=e1605]: shedCapacity
+                      - cell [ref=e1606]: "100"
+                      - cell [ref=e1607]: Max non-seed items the shed can hold; overflow at end-of-day drop is discarded
+                    - row [ref=e1608]:
+                      - cell [ref=e1609]: weedSpawnChance
+                      - cell [ref=e1610]: "0.005"
+                      - cell [ref=e1611]: Per-tile probability of a weed spawning on an empty unlocked tile during end-of-day refresh
+                    - row [ref=e1612]:
+                      - cell [ref=e1613]: townShopUnlockInterval
+                      - cell [ref=e1614]: "3"
+                      - cell [ref=e1615]: Days between successive town shop unlocks (drawn with replacement, capped at 8 instances)
+                    - row [ref=e1616]:
+                      - cell [ref=e1617]: townShopSellInterval
+                      - cell [ref=e1618]: "4"
+                      - cell [ref=e1619]: Turns between consumption ticks by every unlocked town shop instance
+                    - row [ref=e1620]:
+                      - cell [ref=e1621]: townCenterSellInterval
+                      - cell [ref=e1622]: "24"
+                      - cell [ref=e1623]: Turns between consumption ticks by the town center (flat rate, once per day)
+                    - row [ref=e1624]:
+                      - cell [ref=e1625]: seed
+                      - cell [ref=e1626]: "null"
+                      - cell [ref=e1627]: Optional input seed for deterministic episode generation; cleared from config after read so it stays out of agent observations
+            - generic [ref=e997]:
+              - generic [ref=e998] [cursor=pointer]:
+                - generic [ref=e1000]:
+                  - heading [level=3] [ref=e1628]: "Getting Started: Test Locally & Submit"
+                  - button [ref=e1629]: link
+                - button [expanded] [ref=e1630]: keyboard_arrow_up
+              - generic [ref=e1008]:
+                - paragraph [ref=e1009]: This guide walks you through building an agent, testing it locally, and submitting it to this simulation competition.
+                - heading [level=3] [ref=e1631]: Test Locally
+                - paragraph [ref=e1011]: "Install the environment from PyPI (any recent release that includes Kaggriculture):"
+                - code [ref=e1013]: pip install -U kaggle-environments
+                - paragraph [ref=e1014]:
+                  - text: Run a game from Python or a notebook — you can pass agent functions directly, or paths to
+                  - code [ref=e1015]: .py
+                  - text: "files:"
+                - code [ref=e1017]: "from kaggle_environments import make env = make(\"kaggriculture\", configuration={\"episodeSteps\": 720}, debug=True) env.run([agent, \"random\"]) # or env.run([\"main.py\", \"random\"]) to load from a file # View result final = env.steps[-1] for i, s in enumerate(final): print(f\"Player {i}: reward={s.reward}, status={s.status}\") # Render in a notebook env.render(mode=\"ipython\", width=1200, height=800) # Or dump a replay JSON for the visualizer / offline analysis import json with open(\"replay.json\", \"w\") as f: json.dump(env.toJSON(), f)"
+                - paragraph [ref=e1018]:
+                  - text: "Three built-in agents are available by name:"
+                  - code [ref=e1019]: "\"pass\""
+                  - text: ","
+                  - code [ref=e1020]: "\"random\""
+                  - text: ", and"
+                  - code [ref=e1021]: "\"starter\""
+                  - text: (a deterministic baseline).
+                - heading [level=3] [ref=e1632]: Set Up the Kaggle CLI
+                - paragraph [ref=e1023]: "Install the CLI:"
+                - code [ref=e1025]: pip install kaggle
+                - paragraph [ref=e1026]:
+                  - text: You'll need a Kaggle account — sign up at
+                  - link [ref=e1633] [cursor=pointer]:
+                    - /url: https://www.kaggle.com
+                    - text: https://www.kaggle.com
+                  - text: if you don't have one. Then download your API credentials at
+                  - link [ref=e1634] [cursor=pointer]:
+                    - /url: https://www.kaggle.com/settings/api
+                    - text: https://www.kaggle.com/settings/api
+                  - text: by clicking
+                  - strong [ref=e1029]: "\"Generate New Token\""
+                  - text: under the "API" section.
+                - paragraph [ref=e1030]:
+                  - strong [ref=e1031]: "Recommended: API token file."
+                  - text: Save the token string to
+                  - code [ref=e1032]: ~/.kaggle/access_token
+                  - text: ":"
+                - code [ref=e1034]: "mkdir -p ~/.kaggle # Paste the token from the Kaggle settings UI into this file nano ~/.kaggle/access_token chmod 600 ~/.kaggle/access_token"
+                - paragraph [ref=e1035]: "Alternative auth methods:"
+                - list [ref=e1036]:
+                  - listitem [ref=e1037]:
+                    - strong [ref=e1038]: "OAuth (browser flow):"
+                    - code [ref=e1039]: kaggle auth login
+                  - listitem [ref=e1040]:
+                    - strong [ref=e1041]: "Environment variable:"
+                    - code [ref=e1042]: export KAGGLE_API_TOKEN=xxxxxxxxxxxxxx
+                - paragraph [ref=e1043]: "Verify the CLI is wired up:"
+                - code [ref=e1045]: kaggle competitions list -s "kaggriculture"
+                - heading [level=3] [ref=e1635]: Find the Competition
+                - code [ref=e1048]: kaggle competitions list -s "kaggriculture" kaggle competitions pages kaggriculture kaggle competitions pages kaggriculture --content
+                - heading [level=3] [ref=e1636]: Accept the Competition Rules
+                - paragraph [ref=e1050]:
+                  - text: Before submitting, you
+                  - strong [ref=e1051]: must
+                  - text: accept the rules on the Kaggle website. Navigate to
+                  - code [ref=e1052]: https://www.kaggle.com/competitions/kaggriculture
+                  - text: and click
+                  - strong [ref=e1053]: "\"Join Competition\""
+                  - text: .
+                - paragraph [ref=e1054]: "Verify you've joined:"
+                - code [ref=e1056]: kaggle competitions list --group entered
+                - heading [level=3] [ref=e1637]: Download Competition Data
+                - code [ref=e1059]:
+                  - text: kaggle competitions download kaggriculture -p kaggriculture-
+                  - generic [ref=e1060]: data
+                - heading [level=3] [ref=e1638]: Submit Your Agent
+                - paragraph [ref=e1062]:
+                  - text: Your submission must have a
+                  - code [ref=e1063]: main.py
+                  - text: at the root with an
+                  - code [ref=e1064]: agent
+                  - text: function.
+                - paragraph [ref=e1065]:
+                  - strong [ref=e1066]: "Single file agent:"
+                - code [ref=e1068]: kaggle competitions submit kaggriculture -f main.py -m "Wheat loop v1"
+                - paragraph [ref=e1069]:
+                  - strong [ref=e1070]: Multi-file agent
+                  - text: — bundle into a tar.gz with
+                  - code [ref=e1071]: main.py
+                  - text: "at the root:"
+                - code [ref=e1073]: tar -czf submission.tar.gz main.py helper.py model_weights.pkl kaggle competitions submit kaggriculture -f submission.tar.gz -m "Multi-file agent v1"
+                - paragraph [ref=e1074]:
+                  - strong [ref=e1075]: "Notebook submission:"
+                - code [ref=e1077]: kaggle competitions submit kaggriculture -k YOUR_USERNAME/kaggriculture-agent -f submission.tar.gz -v 1 -m "Notebook agent v1"
+                - heading [level=3] [ref=e1639]: Monitor Your Submission
+                - paragraph [ref=e1079]: "Check submission status:"
+                - code [ref=e1081]: kaggle competitions submissions kaggriculture
+                - paragraph [ref=e1082]: Note the submission ID from the output — you'll need it for episodes.
+                - heading [level=3] [ref=e1640]: List Episodes
+                - paragraph [ref=e1084]: "Once your submission has played some games:"
+                - code [ref=e1086]:
+                  - text: kaggle competitions episodes
+                  - generic [ref=e1087]: <SUBMISSION_ID>
+                - paragraph [ref=e1088]: "CSV output for scripting:"
+                - code [ref=e1090]:
+                  - text: kaggle competitions episodes
+                  - generic [ref=e1091]: <SUBMISSION_ID>
+                  - text: "-v"
+                - heading [level=3] [ref=e1641]: Download Replays and Logs
+                - paragraph [ref=e1093]: "Download the replay JSON for an episode (for visualization or analysis):"
+                - code [ref=e1095]: kaggle competitions replay <EPISODE_ID> kaggle competitions replay <EPISODE_ID> -p ./replays
+                - paragraph [ref=e1096]: "Download agent logs to debug your agent's behavior:"
+                - code [ref=e1098]: "# Logs for the first agent (index 0) kaggle competitions logs <EPISODE_ID> 0 # Logs for the second agent (index 1) kaggle competitions logs <EPISODE_ID> 1 -p ./logs"
+                - heading [level=3] [ref=e1642]: Check the Leaderboard
+                - code [ref=e1101]: kaggle competitions leaderboard kaggriculture -s
+                - heading [level=3] [ref=e1643]: Typical Workflow
+                - code [ref=e1104]: "# Test locally python -c \" from kaggle_environments import make env = make('kaggriculture', debug=True) env.run(['main.py', 'random']) print([(i, s.reward) for i, s in enumerate(env.steps[-1])]) \" # Submit kaggle competitions submit kaggriculture -f main.py -m \"v1\" # Check status kaggle competitions submissions kaggriculture # Review episodes kaggle competitions episodes <SUBMISSION_ID> # Download replay and logs kaggle competitions replay <EPISODE_ID> kaggle competitions logs <EPISODE_ID> 0 # Check leaderboard kaggle competitions leaderboard kaggriculture -s"
+            - generic [ref=e1106]:
+              - generic [ref=e1107] [cursor=pointer]:
+                - generic [ref=e1109]:
+                  - heading [level=3] [ref=e1644]: Quick Start Agent
+                  - button [ref=e1645]: link
+                - button [expanded] [ref=e1646]: keyboard_arrow_up
+              - generic [ref=e1117]:
+                - paragraph [ref=e1118]: "Below is a simple starter agent implementing a basic wheat loop:"
+                - code [ref=e1120]: "def agent(obs): player = obs[\"player\"] me = obs[\"farms\"][player] private = obs[\"private\"] fx, fy = me[\"farmer\"] tile = me[\"tiles\"][fy][fx] market = [] # Buy a wheat seed if we have none and have enough money if private[\"seeds\"].get(\"WHEAT\", 0) == 0 and me[\"money\"] >= 10: market.append([\"BUY_SEED\", \"WHEAT\", 1]) # Sell any wheat sitting in the shed wheat_in_shed = private[\"shed\"].get(\"WHEAT\", 0) if wheat_in_shed > 0: market.append([\"SELL\", \"WHEAT\", wheat_in_shed]) # If standing on an empty tile, plant wheat if tile is None and private[\"seeds\"].get(\"WHEAT\", 0) > 0: return {\"farmer\": [\"PLANT\", \"WHEAT\"], \"hands\": [], \"market\": market} # If standing on a plant, manage watering and harvesting if isinstance(tile, dict) and tile.get(\"kind\") == \"PLANT\": crop_age = obs[\"day\"] - tile[\"planted_day\"] if crop_age >= 2: # Wheat first_yield_day = 2 return {\"farmer\": [\"HARVEST\"], \"hands\": [], \"market\": market} if not tile[\"watered_today\"]: return {\"farmer\": [\"WATER\"], \"hands\": [], \"market\": market} return {\"farmer\": [\"PASS\"], \"hands\": [], \"market\": market}"
+            - generic [ref=e1122]:
+              - generic [ref=e1123] [cursor=pointer]:
+                - generic [ref=e1125]:
+                  - heading [level=3] [ref=e1647]: Frequently Asked Questions
+                  - button [ref=e1648]: link
+                - button [expanded] [ref=e1649]: keyboard_arrow_up
+              - generic [ref=e1133]:
+                - heading [level=3] [ref=e1650]: Submissions
+                - list [ref=e1135]:
+                  - listitem [ref=e1136]:
+                    - text: Submissions must be at most
+                    - strong [ref=e1137]: 100 MiB
+                  - listitem [ref=e1138]:
+                    - text: Daily submission limit
+                    - strong [ref=e1139]: "5"
+                  - listitem [ref=e1140]:
+                    - text: Only your most recent
+                    - strong [ref=e1141]: "2"
+                    - text: are active
+                  - listitem [ref=e1142]:
+                    - text: Your files will be located in
+                    - code [ref=e1143]: /kaggle_simulations/agent/
+                    - text: . Ensure all your file imports are set appropriately
+                - heading [level=3] [ref=e1651]: Submission Resources
+                - list [ref=e1145]:
+                  - listitem [ref=e1146]:
+                    - text: "HDD Space:"
+                    - strong [ref=e1147]: 8 GiB
+                  - listitem [ref=e1148]:
+                    - text: "RAM:"
+                    - strong [ref=e1149]: 6.5 GiB
+                  - listitem [ref=e1150]:
+                    - text: "vCPUs:"
+                    - strong [ref=e1151]: "1.6"
+                  - listitem [ref=e1152]:
+                    - text: "Submission Size Limit:"
+                    - strong [ref=e1153]: 100 MiB
+                - paragraph [ref=e1154]: "For questions about the environment OS or python env, please see:"
+                - list [ref=e1155]:
+                  - listitem [ref=e1156]:
+                    - link [ref=e1652] [cursor=pointer]:
+                      - /url: https://github.com/Kaggle/kaggle-environments/blob/master/docker/Dockerfile
+                      - text: Docker Image
+            - generic [ref=e1159]:
+              - generic [ref=e1160] [cursor=pointer]:
+                - generic [ref=e1162]:
+                  - heading [level=3] [ref=e1653]: Citation
+                  - button [ref=e1654]: link
+                - button [expanded] [ref=e1655]: keyboard_arrow_up
+              - generic [ref=e1169]:
+                - paragraph [ref=e1170]: Bovard Doerschuk-Tiberi, Domino Weir, and María Cruz. Kaggriculture. https://www.kaggle.com/competitions/kaggriculture, 2026. Kaggle.
+                - button [ref=e1656] [cursor=pointer]:
+                  - generic [ref=e1172]: Cite
+          - generic [ref=e1173]:
+            - generic [ref=e1174]:
+              - generic [ref=e1175]:
+                - generic [ref=e1176]:
+                  - heading [level=2] [ref=e1657]: Competition Host
+                  - paragraph [ref=e1178]: Kaggle
+                - link [ref=e1658] [cursor=pointer]:
+                  - /url: /organizations/kaggle
+              - generic [ref=e1186]:
+                - heading [level=2] [ref=e1660]: Prizes & Awards
+                - generic [ref=e1188]:
+                  - paragraph [ref=e1190]: $50,000
+                  - paragraph [ref=e1191]: Awards Points & Medals
+              - generic [ref=e1193]:
+                - heading [level=2] [ref=e1661]: Participation
+                - paragraph [ref=e1195]: 21,083 Entrants
+                - paragraph [ref=e1196]: 10,857 Participants
+                - paragraph [ref=e1197]: 9,854 Teams
+                - paragraph [ref=e1198]: 18,769 Submissions
+              - generic [ref=e1200]:
+                - heading [level=2] [ref=e1662]: Tags
+                - group [ref=e1663]:
+                  - link [ref=e1664] [cursor=pointer]:
+                    - /url: /competitions?tagIds=16151-Simulations
+                    - generic [ref=e1205]: Simulations
+                  - generic [ref=e1665] [cursor=pointer]: Custom Metric
+            - complementary [ref=e1208]:
+              - generic [ref=e1209]:
+                - generic [ref=e1210]: Table of Contents
+                - button [ref=e1666] [cursor=pointer]: collapse_all
+              - tablist [ref=e1215]:
+                - tab [ref=e1667] [cursor=pointer]:
+                  - generic [ref=e1217]: Overview
+                - tab [ref=e1668] [cursor=pointer]:
+                  - generic [ref=e1219]: Description
+                - tab [ref=e1669] [cursor=pointer]:
+                  - generic [ref=e1221]: Timeline
+                - tab [ref=e1670] [cursor=pointer]:
+                  - generic [ref=e1223]: Evaluation
+                - tab [ref=e1671] [cursor=pointer]:
+                  - generic [ref=e1225]: Prizes
+                - tab [ref=e1672] [cursor=pointer]:
+                  - generic [ref=e1227]: How to Play
+                - tab [ref=e1673] [cursor=pointer]:
+                  - generic [ref=e1229]: "Getting Started: Test Locally & Submit"
+                - tab [ref=e1674] [cursor=pointer]:
+                  - generic [ref=e1231]: Quick Start Agent
+                - tab [ref=e1675] [cursor=pointer]:
+                  - generic [ref=e1233]: Frequently Asked Questions
+                - tab [ref=e1676] [cursor=pointer]:
+                  - generic [ref=e1235]: Citation
+    - alert [ref=e1237]
+  - region "Play Kaggriculture" [ref=e1680]:
+    - generic [ref=e1681]:
+      - button "Close" [active] [ref=e1682] [cursor=pointer]: arrow_back
+      - heading "Play Kaggriculture" [level=1] [ref=e1683]
+    - separator [ref=e1684]
+    - iframe [ref=e1687]

@@ -1,0 +1,63 @@
+{
+  "bundled_entrypoint_sha256": "d82c430c9562b6b213b92899d4df59aa9b9b58bcc8bdf3522b9e819da03e083d",
+  "candidate": "Kaggriculture original observation-driven planner",
+  "created_at": "2026-09-26",
+  "engine": "kaggle-environments 1.32.7",
+  "evaluation_limit": "These are two seat-swapped games on one already-spent seed per opponent. The candidate lost both games against v50, v54, and v56. This is not top-ten evidence and is weaker than the existing official v56 submission evidence.",
+  "loader_smoke": {
+    "full_game_evidence": "all paired games below completed with both actors DONE and zero actor, infrastructure, or timeout errors",
+    "loader": "kaggle_environments.agent.get_last_callable",
+    "result": "passed; returned farmer/hands/market arrays when called on a seed-94700 replay observation"
+  },
+  "provenance": "Static review of this exact file found no replay action tape, replay/episode identifiers, foreign imports, filesystem or network reads. `_opening_layout` derives its opening field geometry from the live board, unlocked quadrant, and Manhattan travel cost. Remaining constants and the exception-only `_champion_agent` fallback align with the in-house exp-0043a predecessor at agents/deterministic_straw2_hand.py; the design and ablation are recorded in docs/RESEARCH_LOG.md. The archive contains only this standalone agent, README, and manifest; it excludes replay files.",
+  "source_path": "experiments/submission_candidate_20260926/original_planner.py",
+  "source_sha256": "d82c430c9562b6b213b92899d4df59aa9b9b58bcc8bdf3522b9e819da03e083d",
+  "spent_seed_94700_results": {
+    "exp0044": {
+      "candidate_coins": 43786,
+      "full_episode_runtime_seconds": [
+        17.036177105997922,
+        17.26263824501075
+      ],
+      "losses": 0,
+      "mean_margin": 2796,
+      "opponent_coins": 40990,
+      "wins": 2
+    },
+    "v50": {
+      "candidate_coins": 38685,
+      "full_episode_runtime_seconds": [
+        26.015575421013637,
+        25.170542409003247
+      ],
+      "losses": 2,
+      "mean_margin": -96127,
+      "opponent_coins": 134812,
+      "wins": 0
+    },
+    "v54": {
+      "candidate_coins": 38598,
+      "full_episode_runtime_seconds": [
+        25.357435990998056,
+        25.720359130005818
+      ],
+      "losses": 2,
+      "mean_margin": -79633,
+      "opponent_coins": 118231,
+      "wins": 0
+    },
+    "v56": {
+      "candidate_coins": 44930,
+      "full_episode_runtime_seconds": [
+        27.0796297309862,
+        28.729621398000745
+      ],
+      "losses": 2,
+      "mean_margin": -84547,
+      "opponent_coins": 129477,
+      "wins": 0
+    }
+  },
+  "standalone_entrypoint": "main.py",
+  "submission_status": "not submitted; this archive is prepared for the user only"
+}

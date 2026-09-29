@@ -1,0 +1,13 @@
+{
+  "archive": "kaggriculture_submission_candidate_20260926.zip",
+  "archive_sha256": "296b99977ec34cd5f8b063eee64c097e76c3634620523691bbf3265bff1ff3cd",
+  "contents": [
+    "README.md",
+    "main.py",
+    "manifest.json"
+  ],
+  "entrypoint": "main.py",
+  "entrypoint_sha256": "d82c430c9562b6b213b92899d4df59aa9b9b58bcc8bdf3522b9e819da03e083d",
+  "manifest": "manifest.json",
+  "not_submitted": true
+}
